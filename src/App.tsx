@@ -20,6 +20,7 @@ function App() {
         <nav className="nav-links" aria-label="Primary navigation">
           <a href="#projects">{copy.nav.projects}</a>
           <a href="#build-log">{copy.nav.buildLog}</a>
+          <a href="#resume">{copy.nav.resume}</a>
           <a href="#about">{copy.nav.about}</a>
           <a href="#contact">{copy.nav.contact}</a>
           <div className="language-switch" aria-label="Language switch">
@@ -96,6 +97,51 @@ function App() {
               </ul>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section id="resume" className="section-block resume-section">
+        <div className="section-heading">
+          <h2>{copy.nav.resume}</h2>
+        </div>
+        <div className="resume-grid">
+          <div className="resume-summary">
+            <p>{copy.resume.summary}</p>
+          </div>
+          <div className="resume-details">
+            <div className="resume-facts">
+              {Object.values(copy.resume.basics).map((field) => (
+                <div className="resume-fact" key={field.label}>
+                  <span>{field.label}</span>
+                  <strong>{field.value}</strong>
+                </div>
+              ))}
+            </div>
+            <div className="resume-subsection">
+              <h3>{language === 'en' ? 'Education' : '教育经历'}</h3>
+              {copy.resume.education.map((item) => (
+                <article className="resume-line" key={item.school}>
+                  <strong>{item.school}</strong>
+                  <span>{item.detail}</span>
+                </article>
+              ))}
+            </div>
+            <div className="resume-subsection">
+              <h3>{language === 'en' ? 'Skills' : '技术栈'}</h3>
+              <div className="skill-groups">
+                {copy.resume.skills.map((group) => (
+                  <div className="skill-group" key={group.group}>
+                    <span>{group.group}</span>
+                    <ul>
+                      {group.items.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

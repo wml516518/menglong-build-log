@@ -259,6 +259,92 @@ h1 {
   margin-bottom: 0;
 }
 
+.resume-grid {
+  display: grid;
+  grid-template-columns: 0.45fr 1fr;
+  gap: 56px;
+}
+
+.resume-summary p {
+  color: #3f3b35;
+  font-size: 20px;
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+.resume-details {
+  display: grid;
+  gap: 28px;
+}
+
+.resume-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid #171717;
+}
+
+.resume-fact {
+  display: grid;
+  gap: 7px;
+  border-bottom: 1px solid #d8d4ca;
+  padding: 14px 18px 14px 0;
+}
+
+.resume-fact span,
+.resume-line span,
+.skill-group span {
+  color: #777168;
+  font-size: 12px;
+}
+
+.resume-fact strong {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.resume-subsection {
+  display: grid;
+  gap: 14px;
+}
+
+.resume-subsection h3 {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.resume-line {
+  display: grid;
+  gap: 6px;
+  border-top: 1px solid #d8d4ca;
+  padding-top: 14px;
+}
+
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.skill-group {
+  border-top: 1px solid #d8d4ca;
+  padding-top: 14px;
+}
+
+.skill-group ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.skill-group li {
+  border: 1px solid #c8c2b7;
+  font-size: 12px;
+  padding: 6px 8px;
+}
+
 .contact-list {
   display: grid;
   gap: 14px;
@@ -290,6 +376,7 @@ h1 {
 
   .hero-section,
   .project-row,
+  .resume-grid,
   .two-column {
     grid-template-columns: 1fr;
   }
@@ -302,6 +389,11 @@ h1 {
   }
 
   .log-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-facts,
+  .skill-groups {
     grid-template-columns: 1fr;
   }
 }

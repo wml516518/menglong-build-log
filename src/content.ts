@@ -23,6 +23,7 @@ type SiteContent = {
   nav: {
     projects: string;
     buildLog: string;
+    resume: string;
     about: string;
     contact: string;
   };
@@ -44,6 +45,26 @@ type SiteContent = {
     allPosts: string;
   };
   about: string;
+  resume: {
+    basics: {
+      name: ResumeField;
+      gender: ResumeField;
+      birthDate: ResumeField;
+      location: ResumeField;
+      email: ResumeField;
+      github: ResumeField;
+      role: ResumeField;
+    };
+    summary: string;
+    education: {
+      school: string;
+      detail: string;
+    }[];
+    skills: {
+      group: string;
+      items: string[];
+    }[];
+  };
   projects: Project[];
   buildLogs: BuildLogEntry[];
   contact: {
@@ -54,6 +75,11 @@ type SiteContent = {
 };
 
 const storageKey = 'portfolio-language';
+
+type ResumeField = {
+  label: string;
+  value: string;
+};
 
 export function isLanguage(value: string | null): value is Language {
   return value === 'en' || value === 'zh';
@@ -77,6 +103,7 @@ export const content: Record<Language, SiteContent> = {
     nav: {
       projects: 'Projects',
       buildLog: 'Build Log',
+      resume: 'Resume',
       about: 'About',
       contact: 'Contact'
     },
@@ -100,6 +127,31 @@ export const content: Record<Language, SiteContent> = {
     },
     about:
       'I focus on full-stack development, AI products, and productivity tools. This site tracks my portfolio roadmap from a personal homepage to deployable AI applications.',
+    resume: {
+      basics: {
+        name: { label: 'Name', value: 'MengLong Wang' },
+        gender: { label: 'Gender', value: 'Male' },
+        birthDate: { label: 'Date of Birth', value: '1993.12.28' },
+        location: { label: 'Location', value: 'Shanghai, China' },
+        email: { label: 'Email', value: 'wml565868@gmail.com' },
+        github: { label: 'GitHub', value: 'github.com/wml516518' },
+        role: { label: 'Role', value: 'Full-stack Developer' }
+      },
+      summary:
+        'A full-stack developer based in Shanghai, focused on building practical web products, AI-enabled tools, and deployable engineering projects across frontend, backend, and DevOps workflows.',
+      education: [
+        {
+          school: 'Henan Finance University',
+          detail: 'Higher education background in finance and applied professional studies.'
+        }
+      ],
+      skills: [
+        { group: 'Frontend', items: ['Vue', 'React', 'TypeScript', 'Vite'] },
+        { group: 'Backend', items: ['C#', 'Python', 'Node.js'] },
+        { group: 'DevOps', items: ['Netlify', 'Render', 'Deployment workflows'] },
+        { group: 'Direction', items: ['Full-stack products', 'AI tools', 'Build logs'] }
+      ]
+    },
     projects: [
       {
         title: 'Personal Homepage + Build Log',
@@ -151,14 +203,15 @@ export const content: Record<Language, SiteContent> = {
       }
     ],
     contact: [
-      { label: 'GitHub', value: 'github.com', href: 'https://github.com/' },
-      { label: 'Email', value: 'Add your email', href: 'mailto:hello@example.com' }
+      { label: 'GitHub', value: 'github.com/wml516518', href: 'https://github.com/wml516518' },
+      { label: 'Email', value: 'wml565868@gmail.com', href: 'mailto:wml565868@gmail.com' }
     ]
   },
   zh: {
     nav: {
       projects: '项目',
       buildLog: '构建日志',
+      resume: '简历',
       about: '关于',
       contact: '联系'
     },
@@ -181,6 +234,31 @@ export const content: Record<Language, SiteContent> = {
     },
     about:
       '我专注于全栈开发、AI 产品和效率工具。这个网站会记录我的作品路线，从个人主页开始，逐步扩展到可部署的 AI 应用。',
+    resume: {
+      basics: {
+        name: { label: '姓名', value: 'MengLong Wang' },
+        gender: { label: '性别', value: '男' },
+        birthDate: { label: '出生日期', value: '1993.12.28' },
+        location: { label: '所在地', value: '中国上海' },
+        email: { label: '邮箱', value: 'wml565868@gmail.com' },
+        github: { label: 'GitHub', value: 'github.com/wml516518' },
+        role: { label: '定位', value: '全栈开发者' }
+      },
+      summary:
+        '我是一名位于上海的全栈开发者，关注实用 Web 产品、AI 工具和可部署工程项目，能力覆盖前端、后端与 DevOps 工作流。',
+      education: [
+        {
+          school: '河南财政金融学院',
+          detail: '具备财经与应用型专业教育背景。'
+        }
+      ],
+      skills: [
+        { group: '前端', items: ['Vue', 'React', 'TypeScript', 'Vite'] },
+        { group: '后端', items: ['C#', 'Python', 'Node.js'] },
+        { group: 'DevOps', items: ['Netlify', 'Render', '部署流程'] },
+        { group: '方向', items: ['全栈产品', 'AI 工具', '构建日志'] }
+      ]
+    },
     projects: [
       {
         title: '个人主页 + 构建日志',
@@ -231,8 +309,8 @@ export const content: Record<Language, SiteContent> = {
       }
     ],
     contact: [
-      { label: 'GitHub', value: 'github.com', href: 'https://github.com/' },
-      { label: '邮箱', value: '添加你的邮箱', href: 'mailto:hello@example.com' }
+      { label: 'GitHub', value: 'github.com/wml516518', href: 'https://github.com/wml516518' },
+      { label: '邮箱', value: 'wml565868@gmail.com', href: 'mailto:wml565868@gmail.com' }
     ]
   }
 };
