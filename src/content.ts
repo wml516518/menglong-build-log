@@ -302,19 +302,19 @@ export const content: Record<Language, SiteContent> = {
     projects: [
       {
         title: 'Personal Homepage + Build Log',
-        status: 'Live soon',
+        status: 'Live',
         summary: 'A bilingual portfolio front door and public project journal.',
         stack: ['React', 'Vite', 'TypeScript', 'Netlify'],
-        githubUrl: '',
-        liveUrl: ''
+        githubUrl: 'https://github.com/wml516518/menglong-build-log',
+        liveUrl: 'https://menglong-build-log.netlify.app'
       },
       {
         title: 'AI Chat Playground',
-        status: 'Next',
-        summary: 'A model-switching chat interface with a Render-hosted API layer.',
-        stack: ['React', 'Node or Python', 'Render'],
-        githubUrl: '',
-        liveUrl: ''
+        status: 'Live frontend',
+        summary: 'A streaming chat interface with prompt presets and a FastAPI backend layer.',
+        stack: ['React', 'FastAPI', 'Python', 'Render', 'Netlify'],
+        githubUrl: 'https://github.com/wml516518/ai-chat-playground',
+        liveUrl: 'https://ai-chat-playground-menglong.netlify.app'
       },
       {
         title: 'Knowledge Base Demo',
@@ -547,19 +547,19 @@ export const content: Record<Language, SiteContent> = {
     projects: [
       {
         title: '个人主页 + 构建日志',
-        status: '即将上线',
+        status: '已上线',
         summary: '一个中英双语的作品入口和公开项目记录。',
         stack: ['React', 'Vite', 'TypeScript', 'Netlify'],
-        githubUrl: '',
-        liveUrl: ''
+        githubUrl: 'https://github.com/wml516518/menglong-build-log',
+        liveUrl: 'https://menglong-build-log.netlify.app'
       },
       {
         title: 'AI Chat Playground',
-        status: '下一个',
-        summary: '支持模型切换的聊天界面，并使用 Render 部署后端 API。',
-        stack: ['React', 'Node 或 Python', 'Render'],
-        githubUrl: '',
-        liveUrl: ''
+        status: '前端已上线',
+        summary: '带 Prompt 预设和 FastAPI 后端层的流式 AI 聊天界面。',
+        stack: ['React', 'FastAPI', 'Python', 'Render', 'Netlify'],
+        githubUrl: 'https://github.com/wml516518/ai-chat-playground',
+        liveUrl: 'https://ai-chat-playground-menglong.netlify.app'
       },
       {
         title: '知识库问答 Demo',

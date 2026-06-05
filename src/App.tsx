@@ -95,6 +95,18 @@ function App() {
                   <li key={item}>{item}</li>
                 ))}
               </ul>
+              <div className="project-links">
+                {project.liveUrl ? (
+                  <a href={project.liveUrl} target="_blank" rel="noreferrer">
+                    Live
+                  </a>
+                ) : null}
+                {project.githubUrl ? (
+                  <a href={project.githubUrl} target="_blank" rel="noreferrer">
+                    GitHub
+                  </a>
+                ) : null}
+              </div>
             </article>
           ))}
         </div>

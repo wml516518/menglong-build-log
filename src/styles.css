@@ -215,7 +215,7 @@ h1 {
 
 .project-row {
   display: grid;
-  grid-template-columns: 0.9fr 1.2fr 0.9fr;
+  grid-template-columns: 0.8fr 1.1fr 0.9fr auto;
   gap: 28px;
   border-top: 1px solid #d8d4ca;
   padding: 22px 0;
@@ -244,6 +244,23 @@ h1 {
   border: 1px solid #c8c2b7;
   font-size: 12px;
   padding: 6px 8px;
+}
+
+.project-links {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.project-links a {
+  border: 1px solid #2a2723;
+  color: #1c1a17;
+  font-size: 12px;
+  font-weight: 700;
+  height: 32px;
+  line-height: 30px;
+  padding: 0 10px;
+  text-decoration: none;
 }
 
 .two-column {
@@ -487,6 +504,10 @@ h1 {
 
   .log-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-links {
+    justify-content: flex-start;
   }
 
   .resume-facts,
