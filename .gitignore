@@ -8,3 +8,6 @@ coverage/
 vite.config.d.ts
 vite.config.js
 .DS_Store
+
+# Local Netlify folder
+.netlify
