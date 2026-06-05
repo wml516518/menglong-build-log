@@ -141,7 +141,74 @@ function App() {
                 ))}
               </div>
             </div>
+            <div className="resume-subsection compact-list">
+              <h3>{language === 'en' ? 'Certifications' : '资格证书'}</h3>
+              <ul>
+                {copy.resume.certifications.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="resume-subsection compact-list">
+              <h3>{language === 'en' ? 'Languages' : '语言能力'}</h3>
+              <ul>
+                {copy.resume.languages.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section className="section-block resume-timeline">
+        <div className="section-heading">
+          <h2>{language === 'en' ? 'Experience' : '工作经历'}</h2>
+        </div>
+        <div className="timeline-list">
+          {copy.resume.experience.map((item) => (
+            <article className="timeline-item" key={`${item.company}-${item.period}`}>
+              <div>
+                <p>{item.period}</p>
+                <h3>{item.company}</h3>
+                <span>{item.role}</span>
+              </div>
+              <ul>
+                {item.highlights.map((highlight) => (
+                  <li key={highlight}>{highlight}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section-block resume-projects">
+        <div className="section-heading">
+          <h2>{language === 'en' ? 'Selected Projects' : '项目经验'}</h2>
+        </div>
+        <div className="resume-project-list">
+          {copy.resume.projects.map((project) => (
+            <article className="resume-project" key={`${project.name}-${project.period}`}>
+              <div className="resume-project-head">
+                <div>
+                  <p>{project.period}</p>
+                  <h3>{project.name}</h3>
+                </div>
+                <ul>
+                  {project.stack.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <p>{project.description}</p>
+              <ul className="project-highlights">
+                {project.highlights.map((highlight) => (
+                  <li key={highlight}>{highlight}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
         </div>
       </section>
 
