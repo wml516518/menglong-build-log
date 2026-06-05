@@ -317,12 +317,12 @@ export const content: Record<Language, SiteContent> = {
         liveUrl: 'https://ai-chat-playground-menglong.netlify.app'
       },
       {
-        title: 'Knowledge Base Demo',
-        status: 'Planned',
-        summary: 'A document Q&A demo for exploring practical RAG workflows.',
-        stack: ['React', 'Python', 'Vector Search'],
-        githubUrl: '',
-        liveUrl: ''
+        title: 'KnowledgeOps RAG',
+        status: 'Live frontend',
+        summary: 'A public document Q&A demo with FastAPI retrieval flow, Supabase pgvector storage, and deploy-ready AI service wiring.',
+        stack: ['React', 'FastAPI', 'Supabase', 'pgvector', 'DashScope', 'Render', 'Netlify'],
+        githubUrl: 'https://github.com/wml516518/knowledgeops-rag',
+        liveUrl: 'https://knowledgeops-rag-menglong.netlify.app'
       }
     ],
     buildLogs: [
@@ -342,11 +342,11 @@ export const content: Record<Language, SiteContent> = {
         relatedProject: 'AI Chat Playground'
       },
       {
-        date: 'Planned',
-        title: 'Knowledge base demo and document Q&A',
-        summary: 'Preparing a later project for document parsing, retrieval, and answer generation.',
+        date: '2026-06-05',
+        title: 'KnowledgeOps RAG document Q&A',
+        summary: 'Shipping the third portfolio project with upload parsing, vector retrieval, demo fallback UI, and Render/Netlify deployment.',
         tags: ['RAG', 'Python', 'Documents'],
-        relatedProject: 'Knowledge Base Demo'
+        relatedProject: 'KnowledgeOps RAG'
       }
     ],
     contact: [
@@ -562,12 +562,12 @@ export const content: Record<Language, SiteContent> = {
         liveUrl: 'https://ai-chat-playground-menglong.netlify.app'
       },
       {
-        title: '知识库问答 Demo',
-        status: '计划中',
-        summary: '用于展示文档解析、检索和回答生成的 RAG 工作流。',
-        stack: ['React', 'Python', 'Vector Search'],
-        githubUrl: '',
-        liveUrl: ''
+        title: 'KnowledgeOps RAG',
+        status: '前端已上线',
+        summary: '公开文档问答 Demo，包含 FastAPI 检索流程、Supabase pgvector 存储和可部署的 AI 服务接线。',
+        stack: ['React', 'FastAPI', 'Supabase', 'pgvector', 'DashScope', 'Render', 'Netlify'],
+        githubUrl: 'https://github.com/wml516518/knowledgeops-rag',
+        liveUrl: 'https://knowledgeops-rag-menglong.netlify.app'
       }
     ],
     buildLogs: [
@@ -586,11 +586,11 @@ export const content: Record<Language, SiteContent> = {
         relatedProject: 'AI Chat Playground'
       },
       {
-        date: '计划中',
-        title: '知识库问答 Demo',
-        summary: '为后续文档解析、检索和回答生成项目做准备。',
+        date: '2026-06-05',
+        title: 'KnowledgeOps RAG 文档问答',
+        summary: '完成第三个作品项目，覆盖上传解析、向量检索、Demo 降级界面，以及 Render/Netlify 部署。',
         tags: ['RAG', 'Python', '文档'],
-        relatedProject: '知识库问答 Demo'
+        relatedProject: 'KnowledgeOps RAG'
       }
     ],
     contact: [
