@@ -14,8 +14,33 @@ create table if not exists public.recipes (
   tips text not null default '',
   status text not null default 'draft' check (status in ('draft', 'published')),
   created_at timestamptz not null default now(),
-  updated_at timestamptz not null default now()
+  updated_at timestamptz not null default now(),
+  constraint recipes_ingredients_is_array check (jsonb_typeof(ingredients) = 'array'),
+  constraint recipes_steps_is_array check (jsonb_typeof(steps) = 'array')
 );
+
+do $$
+begin
+  if not exists (
+    select 1
+    from pg_constraint
+    where conname = 'recipes_ingredients_is_array'
+      and conrelid = 'public.recipes'::regclass
+  ) then
+    alter table public.recipes
+      add constraint recipes_ingredients_is_array check (jsonb_typeof(ingredients) = 'array');
+  end if;
+
+  if not exists (
+    select 1
+    from pg_constraint
+    where conname = 'recipes_steps_is_array'
+      and conrelid = 'public.recipes'::regclass
+  ) then
+    alter table public.recipes
+      add constraint recipes_steps_is_array check (jsonb_typeof(steps) = 'array');
+  end if;
+end $$;
 
 create table if not exists public.tags (
   id uuid primary key default gen_random_uuid(),
@@ -33,8 +58,10 @@ create table if not exists public.admin_users (
 );
 
 create index if not exists recipes_status_idx on public.recipes (status);
+create unique index if not exists recipes_title_key on public.recipes (title);
 create index if not exists recipes_budget_idx on public.recipes (budget_cents);
 create index if not exists recipes_cook_minutes_idx on public.recipes (cook_minutes);
+create index if not exists recipes_tags_gin_idx on public.recipes using gin (tags);
 create index if not exists tags_type_sort_idx on public.tags (type, sort_order);
 
 create or replace function public.set_updated_at()

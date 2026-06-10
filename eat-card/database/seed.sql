@@ -70,4 +70,14 @@ values
     '煮好后焖5分钟再拌匀。',
     'published'
   )
-on conflict do nothing;
+on conflict (title) do update
+set description = excluded.description,
+    budget_cents = excluded.budget_cents,
+    cook_minutes = excluded.cook_minutes,
+    servings = excluded.servings,
+    difficulty = excluded.difficulty,
+    tags = excluded.tags,
+    ingredients = excluded.ingredients,
+    steps = excluded.steps,
+    tips = excluded.tips,
+    status = excluded.status;
