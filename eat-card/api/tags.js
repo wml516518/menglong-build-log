@@ -11,6 +11,9 @@ export async function handler(event) {
     query.set('select', 'id,name,type,sort_order');
     query.set('order', 'type.asc,sort_order.asc,name.asc');
     const rows = await supabaseRequest(`tags?${query.toString()}`);
+    if (!Array.isArray(rows)) {
+      return json(502, { error: 'Invalid tags response' });
+    }
     return json(200, {
       tags: rows.map((row) => ({
         id: row.id,

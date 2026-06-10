@@ -23,4 +23,13 @@ describe('tags function', () => {
       { id: 'tag-2', name: '一人食', type: 'scenario', sortOrder: 10 }
     ]);
   });
+
+  it('returns 502 when Supabase returns a malformed tags response', async () => {
+    mockFetchJson({ unexpected: true });
+
+    const response = await handler(event() as never);
+
+    expect(response.statusCode).toBe(502);
+    expect(parseBody(response)).toEqual({ error: 'Invalid tags response' });
+  });
 });

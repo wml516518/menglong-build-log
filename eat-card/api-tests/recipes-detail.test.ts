@@ -40,4 +40,11 @@ describe('recipes-detail function', () => {
 
     expect(response.statusCode).toBe(404);
   });
+
+  it('returns 400 when id is missing', async () => {
+    const response = await handler(event() as never);
+
+    expect(response.statusCode).toBe(400);
+    expect(parseBody(response)).toEqual({ error: 'id is required' });
+  });
 });
