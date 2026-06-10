@@ -24,6 +24,14 @@ Stop before paying if:
 - Function calls or runtime exceed the free plan.
 - Team features, advanced deploy controls, or paid add-ons are needed.
 
+## Domain, DNS, ICP, and Certificates
+
+Stop before paying if:
+
+- A Netlify domain, custom domain registration, or paid DNS provider is needed.
+- ICP filing, commercial certificates, or managed certificate features are required.
+- Automatic HTTPS is not enough for the selected deployment or WeChat requirements.
+
 ## WeChat Mini Program
 
 Used for native mini program preview, upload, and release.
