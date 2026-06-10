@@ -35,18 +35,18 @@ export async function submitRecipe(event) {
   event.preventDefault();
 
   const form = event.currentTarget;
-  const status = document.querySelector('#statusMessage');
+  const status = document.querySelector('#status');
   const token = form.elements.adminToken.value.trim();
   const payload = buildRecipePayload(readFormValues(form));
 
   status.textContent = 'Saving recipe...';
 
   try {
-    const response = await fetch('/api/eat-card/admin/recipes', {
+    const response = await fetch('/.netlify/functions/admin-recipes', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${token}`
+        'x-admin-token': token
       },
       body: JSON.stringify(payload)
     });

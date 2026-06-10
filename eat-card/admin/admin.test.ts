@@ -1,5 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import { buildRecipePayload } from './app.js';
+import { afterEach, describe, expect, it, vi } from 'vitest';
+import { buildRecipePayload, submitRecipe } from './app.js';
+
+afterEach(() => {
+  vi.restoreAllMocks();
+  document.body.innerHTML = '';
+});
 
 describe('admin recipe payload', () => {
   it('converts textarea lines into arrays', () => {
@@ -44,5 +49,48 @@ describe('admin recipe payload', () => {
     expect(payload.tags).toEqual(['快手', '主食']);
     expect(payload.ingredients).toEqual(['米饭1碗', '鸡蛋2个']);
     expect(payload.steps).toEqual(['炒鸡蛋', '加入米饭']);
+  });
+
+  it('posts recipes to the admin functions endpoint with the admin token header', async () => {
+    document.body.innerHTML = `
+      <form id="recipeForm">
+        <input id="adminToken" name="adminToken" value=" secret-token ">
+        <input name="title" value="番茄肥牛饭">
+        <input name="description" value="下饭菜">
+        <input name="budgetCents" value="2200">
+        <input name="cookMinutes" value="15">
+        <input name="servings" value="1">
+        <select name="difficulty"><option value="easy" selected>Easy</option></select>
+        <input name="tags" value="一人食,下饭">
+        <textarea name="ingredients">肥牛卷150g
+番茄1个</textarea>
+        <textarea name="steps">番茄切块
+肥牛煮熟</textarea>
+        <textarea name="tips">可换鸡蛋</textarea>
+        <select name="status"><option value="draft" selected>Draft</option></select>
+      </form>
+      <p id="status" role="status"></p>
+    `;
+
+    const fetchMock = vi.spyOn(globalThis, 'fetch').mockResolvedValue({
+      ok: true,
+      json: async () => ({ title: '番茄肥牛饭' })
+    } as Response);
+
+    const form = document.querySelector('#recipeForm') as HTMLFormElement;
+    await submitRecipe({
+      preventDefault: vi.fn(),
+      currentTarget: form
+    } as unknown as SubmitEvent);
+
+    expect(fetchMock).toHaveBeenCalledWith('/.netlify/functions/admin-recipes', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-admin-token': 'secret-token'
+      },
+      body: expect.any(String)
+    });
+    expect(document.querySelector('#status')?.textContent).toBe('Saved 番茄肥牛饭');
   });
 });
