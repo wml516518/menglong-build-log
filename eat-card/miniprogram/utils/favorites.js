@@ -1,11 +1,25 @@
 const KEY = 'eat-card:favorites';
 
 function getFavorites() {
-  return wx.getStorageSync(KEY) || [];
+  try {
+    const favorites = wx.getStorageSync(KEY);
+    return Array.isArray(favorites) ? favorites : [];
+  } catch (error) {
+    return [];
+  }
 }
 
 function saveFavorites(favorites) {
-  wx.setStorageSync(KEY, favorites);
+  if (!Array.isArray(favorites)) {
+    return false;
+  }
+
+  try {
+    wx.setStorageSync(KEY, favorites);
+    return true;
+  } catch (error) {
+    return false;
+  }
 }
 
 function isFavorite(id) {
