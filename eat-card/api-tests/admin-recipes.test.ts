@@ -35,6 +35,69 @@ describe('admin recipe functions', () => {
     expect(response.statusCode).toBe(401);
   });
 
+  it('requires an admin token when listing recipes', async () => {
+    globalThis.fetch = vi.fn() as unknown as typeof fetch;
+
+    const response = await saveRecipe(event({
+      method: 'GET',
+      headers: { 'x-admin-token': 'wrong' }
+    }) as never);
+
+    expect(response.statusCode).toBe(401);
+    expect(globalThis.fetch).not.toHaveBeenCalled();
+  });
+
+  it('lists recipes for admin with stable recipe fields and filters', async () => {
+    mockFetchJson([
+      {
+        id: '00000000-0000-4000-8000-000000000001',
+        title: '番茄肥牛饭',
+        description: '15分钟的一人食下饭菜',
+        budget_cents: 2200,
+        cook_minutes: 15,
+        servings: 1,
+        difficulty: 'easy',
+        tags: ['一人食', '下饭'],
+        ingredients: ['肥牛卷150g'],
+        steps: ['番茄切块炒软'],
+        tips: '肥牛可以换成鸡蛋',
+        status: 'draft'
+      }
+    ]);
+
+    const response = await saveRecipe(event({
+      method: 'GET',
+      headers: { 'x-admin-token': 'admin-secret' },
+      query: {
+        search: '番茄',
+        status: 'draft',
+        tag: '一人食'
+      }
+    }) as never);
+
+    expect(response.statusCode).toBe(200);
+    expect(parseBody(response).recipes).toEqual([
+      {
+        id: '00000000-0000-4000-8000-000000000001',
+        title: '番茄肥牛饭',
+        description: '15分钟的一人食下饭菜',
+        budgetCents: 2200,
+        cookMinutes: 15,
+        servings: 1,
+        difficulty: 'easy',
+        tags: ['一人食', '下饭'],
+        ingredients: ['肥牛卷150g'],
+        steps: ['番茄切块炒软'],
+        tips: '肥牛可以换成鸡蛋',
+        status: 'draft'
+      }
+    ]);
+    expect(globalThis.fetch).toHaveBeenCalledWith(
+      'https://example.supabase.co/rest/v1/recipes?select=*&order=updated_at.desc&title=ilike.*%E7%95%AA%E8%8C%84*&status=eq.draft&tags=cs.%7B%E4%B8%80%E4%BA%BA%E9%A3%9F%7D',
+      expect.objectContaining({ method: 'GET' })
+    );
+  });
+
   it('rejects missing title with field errors', async () => {
     const response = await saveRecipe(event({
       method: 'POST',

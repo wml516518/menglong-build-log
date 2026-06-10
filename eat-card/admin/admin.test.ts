@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { buildRecipePayload, submitRecipe } from './app.js';
+import { buildRecipePayload, formatFieldErrors, submitRecipe } from './app.js';
 
 afterEach(() => {
   vi.restoreAllMocks();
@@ -51,6 +51,34 @@ describe('admin recipe payload', () => {
     expect(payload.steps).toEqual(['炒鸡蛋', '加入米饭']);
   });
 
+  it('includes an id when editing but omits the admin token from the recipe payload', () => {
+    const payload = buildRecipePayload({
+      id: '00000000-0000-4000-8000-000000000001',
+      adminToken: 'secret-token',
+      title: '  快手蛋炒饭  ',
+      description: '下饭菜',
+      budgetCents: '1200',
+      cookMinutes: '10',
+      servings: '2',
+      difficulty: 'normal',
+      tags: '快手',
+      ingredients: '米饭1碗',
+      steps: '炒鸡蛋',
+      tips: '',
+      status: 'draft'
+    });
+
+    expect(payload.id).toBe('00000000-0000-4000-8000-000000000001');
+    expect(payload).not.toHaveProperty('adminToken');
+  });
+
+  it('formats field validation errors for display', () => {
+    expect(formatFieldErrors({
+      title: 'Title is required',
+      ingredients: 'Add at least one ingredient'
+    })).toBe('Title: Title is required\nIngredients: Add at least one ingredient');
+  });
+
   it('posts recipes to the admin functions endpoint with the admin token header', async () => {
     document.body.innerHTML = `
       <form id="recipeForm">
@@ -83,6 +111,9 @@ describe('admin recipe payload', () => {
       currentTarget: form
     } as unknown as SubmitEvent);
 
+    const request = fetchMock.mock.calls[0][1] as RequestInit;
+    const body = JSON.parse(String(request.body));
+
     expect(fetchMock).toHaveBeenCalledWith('/.netlify/functions/admin-recipes', {
       method: 'POST',
       headers: {
@@ -91,6 +122,41 @@ describe('admin recipe payload', () => {
       },
       body: expect.any(String)
     });
+    expect(body).not.toHaveProperty('adminToken');
     expect(document.querySelector('#status')?.textContent).toBe('Saved 番茄肥牛饭');
+  });
+
+  it('displays API field validation errors returned from submit', async () => {
+    document.body.innerHTML = `
+      <form id="recipeForm">
+        <input id="adminToken" name="adminToken" value=" secret-token ">
+        <input name="title" value="">
+        <input name="description" value="下饭菜">
+        <input name="budgetCents" value="2200">
+        <input name="cookMinutes" value="15">
+        <input name="servings" value="1">
+        <select name="difficulty"><option value="easy" selected>Easy</option></select>
+        <input name="tags" value="一人食,下饭">
+        <textarea name="ingredients">肥牛卷150g</textarea>
+        <textarea name="steps">番茄切块</textarea>
+        <textarea name="tips">可换鸡蛋</textarea>
+        <select name="status"><option value="draft" selected>Draft</option></select>
+      </form>
+      <p id="status" role="status"></p>
+    `;
+
+    vi.spyOn(globalThis, 'fetch').mockResolvedValue({
+      ok: false,
+      status: 422,
+      json: async () => ({ errors: { title: 'Title is required' } })
+    } as Response);
+
+    const form = document.querySelector('#recipeForm') as HTMLFormElement;
+    await submitRecipe({
+      preventDefault: vi.fn(),
+      currentTarget: form
+    } as unknown as SubmitEvent);
+
+    expect(document.querySelector('#status')?.textContent).toBe('Title: Title is required');
   });
 });

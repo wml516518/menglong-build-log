@@ -48,7 +48,8 @@ h2 {
   line-height: 1.3;
 }
 
-.recipe-form {
+.recipe-form,
+.recipe-manager {
   display: grid;
   gap: 20px;
 }
@@ -113,6 +114,14 @@ textarea:focus {
   gap: 16px;
 }
 
+.section-heading,
+.recipe-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
 button {
   min-height: 44px;
   border: 0;
@@ -130,9 +139,57 @@ button:hover {
 }
 
 #status {
+  white-space: pre-line;
   min-height: 1.4em;
   margin: 0;
   color: #3d4656;
+}
+
+.recipe-list {
+  display: grid;
+  gap: 12px;
+}
+
+.recipe-card {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid #d9dee7;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.recipe-card h3,
+.recipe-meta,
+.empty-state {
+  margin: 0;
+}
+
+.recipe-card h3 {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.recipe-meta,
+.empty-state {
+  color: #576172;
+  font-size: 0.9rem;
+}
+
+.recipe-card-actions {
+  justify-content: flex-start;
+}
+
+.recipe-card-actions button,
+.section-heading button {
+  min-height: 38px;
+  padding: 0 14px;
+  background: #344054;
+}
+
+.recipe-card-actions button:hover,
+.section-heading button:hover {
+  background: #1f2937;
 }
 
 @media (max-width: 720px) {
@@ -151,6 +208,11 @@ button:hover {
   }
 
   .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .section-heading {
     align-items: stretch;
     flex-direction: column;
   }
