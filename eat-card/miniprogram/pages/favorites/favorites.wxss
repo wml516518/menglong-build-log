@@ -1,1 +1,28 @@
+.title,
+.muted {
+  display: block;
+}
 
+.title {
+  font-size: 34rpx;
+  font-weight: 700;
+  margin-bottom: 12rpx;
+}
+
+.favorite-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20rpx;
+}
+
+.favorite-card > view {
+  flex: 1;
+}
+
+.meta {
+  display: flex;
+  gap: 16rpx;
+  color: #2f8067;
+  font-size: 24rpx;
+  margin-top: 16rpx;
+}

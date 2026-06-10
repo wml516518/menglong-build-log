@@ -1,5 +1,18 @@
 <view class="page">
-  <view class="card">
-    <text wx:if="{{isEmpty}}" class="muted">还没有收藏的菜谱。</text>
+  <view wx:if="{{isEmpty}}" class="card">
+    <text class="muted">还没有收藏的菜谱。</text>
+  </view>
+
+  <view wx:for="{{favorites}}" wx:key="id" class="card favorite-card">
+    <view bindtap="openDetail" data-id="{{item.id}}">
+      <text class="title">{{item.title}}</text>
+      <text class="muted">{{item.description}}</text>
+      <view class="meta">
+        <text>{{item.budgetText}}</text>
+        <text>{{item.cookTimeText}}</text>
+        <text>{{item.servingsText}}</text>
+      </view>
+    </view>
+    <button size="mini" data-id="{{item.id}}" bindtap="removeFavorite">移除</button>
   </view>
 </view>

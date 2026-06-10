@@ -10,6 +10,10 @@
   margin-bottom: 24rpx;
 }
 
+.favorite {
+  margin: 0 0 24rpx;
+}
+
 .section {
   color: #2f8067;
   font-weight: 700;

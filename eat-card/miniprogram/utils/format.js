@@ -1,0 +1,34 @@
+function yuan(cents) {
+  return Math.round(Number(cents || 0) / 100);
+}
+
+function recipeSummary(recipe) {
+  if (!recipe) return null;
+
+  return Object.assign({}, recipe, {
+    budgetText: recipe.budgetText || `${yuan(recipe.budgetCents)}元`,
+    cookTimeText: recipe.cookTimeText || `${recipe.cookMinutes || 0}分钟`,
+    servingsText: recipe.servingsText || `${recipe.servings || 0}人`,
+    tags: recipe.tags || []
+  });
+}
+
+function recipeDetail(recipe) {
+  const summary = recipeSummary(recipe);
+  if (!summary) return null;
+
+  return Object.assign({}, summary, {
+    ingredients: summary.ingredients || [],
+    steps: (summary.steps || []).map((step, index) => ({
+      orderText: `${index + 1}.`,
+      text: step
+    })),
+    tips: summary.tips || ''
+  });
+}
+
+module.exports = {
+  yuan,
+  recipeSummary,
+  recipeDetail
+};
