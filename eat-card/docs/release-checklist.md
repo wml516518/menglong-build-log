@@ -12,3 +12,10 @@
 - Experience version is uploaded.
 - Cost triggers in `docs/costs.md` are reviewed.
 - Privacy/about page text is present.
+
+## Before Submitting To WeChat Review
+
+- Confirm the request domain works on a real device.
+- Confirm no Supabase service key appears in mini program source.
+- Confirm admin token is not committed.
+- Confirm the app category does not require paid verification for the current MVP.

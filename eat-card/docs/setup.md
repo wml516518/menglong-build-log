@@ -42,3 +42,19 @@ Mini program config uses:
 3. Set `API_BASE_URL` to the Netlify Functions base URL.
 4. Replace the `touristappid` placeholder in `eat-card/miniprogram/project.config.json` with a real AppID before preview, upload, or team use.
 5. Configure the deployed HTTPS domain as a request legal domain in WeChat admin.
+
+## Local API Testing
+
+Run focused Vitest suites from the repository root:
+
+```bash
+npx vitest run eat-card/api-tests
+```
+
+For Netlify local development, run from `eat-card/` after installing Netlify CLI:
+
+```bash
+netlify dev
+```
+
+Do not install or use paid services without reviewing `docs/costs.md`.

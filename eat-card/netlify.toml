@@ -1,0 +1,6 @@
+[build]
+  publish = "admin"
+  functions = "api"
+
+[functions]
+  node_bundler = "esbuild"
