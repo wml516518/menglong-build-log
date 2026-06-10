@@ -12,6 +12,10 @@ function firstRow(result) {
   return Array.isArray(result) ? result[0] : null;
 }
 
+function isUuid(value) {
+  return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(String(value));
+}
+
 export async function handler(event) {
   const options = handleOptions(event);
   if (options) return options;
@@ -25,13 +29,19 @@ export async function handler(event) {
     if (Object.keys(errors).length > 0) {
       return json(422, { errors });
     }
+    if (input.id && !isUuid(input.id)) {
+      return json(422, { errors: { id: 'id must be a valid UUID' } });
+    }
 
     const row = fromRecipeInput(input);
     const result = input.id
-      ? await supabaseRequest(`recipes?id=eq.${input.id}`, { method: 'PATCH', body: row })
+      ? await supabaseRequest(`recipes?id=eq.${encodeURIComponent(input.id)}`, { method: 'PATCH', body: row })
       : await supabaseRequest('recipes', { method: 'POST', body: row });
 
-    return json(200, { recipe: firstRow(result) });
+    const recipe = firstRow(result);
+    if (!recipe) return json(502, { error: 'Invalid recipe response' });
+
+    return json(200, { recipe });
   } catch (error) {
     const statusCode = error.statusCode || 500;
     return json(statusCode, { error: error.message });
