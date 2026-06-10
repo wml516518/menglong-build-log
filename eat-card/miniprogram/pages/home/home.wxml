@@ -1,0 +1,37 @@
+<view class="page">
+  <view class="hero">
+    <text class="eyebrow">今天吃什么卡</text>
+    <text class="title">不知道吃什么，就抽一张。</text>
+  </view>
+
+  <view class="card controls">
+    <view class="field">
+      <text>预算</text>
+      <picker mode="selector" range="{{budgetOptions}}" range-key="label" value="{{selectedBudgetIndex}}" bindchange="onBudgetChange">
+        <view class="picker">{{budgetOptions[selectedBudgetIndex].label}}</view>
+      </picker>
+    </view>
+    <view class="field">
+      <text>耗时</text>
+      <picker mode="selector" range="{{timeOptions}}" range-key="label" value="{{selectedTimeIndex}}" bindchange="onTimeChange">
+        <view class="picker">{{timeOptions[selectedTimeIndex].label}}</view>
+      </picker>
+    </view>
+    <button class="draw" bindtap="drawRecipe" loading="{{loading}}">抽一张</button>
+  </view>
+
+  <view wx:if="{{error}}" class="error">{{error}}</view>
+
+  <view wx:if="{{recipe}}" class="card recipe" bindtap="openDetail">
+    <text class="recipe-title">{{recipe.title}}</text>
+    <text class="muted">{{recipe.description}}</text>
+    <view class="meta">
+      <text>{{recipe.budgetText}}</text>
+      <text>{{recipe.cookTimeText}}</text>
+      <text>{{recipe.servingsText}}</text>
+    </view>
+    <view class="tags">
+      <text wx:for="{{recipe.tags}}" wx:key="*this" class="tag">{{item}}</text>
+    </view>
+  </view>
+</view>
