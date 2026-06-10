@@ -31,6 +31,10 @@ export function parseJsonBody(body) {
 }
 
 export function validateRecipeInput(input) {
+  if (input === null || typeof input !== 'object' || Array.isArray(input)) {
+    input = {};
+  }
+
   const errors = {};
   if (!input.title || !String(input.title).trim()) {
     errors.title = 'Title is required';
