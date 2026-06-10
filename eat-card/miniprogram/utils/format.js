@@ -6,9 +6,11 @@ function recipeSummary(recipe) {
   if (!recipe) return null;
 
   return Object.assign({}, recipe, {
+    description: recipe.description || '',
     budgetText: recipe.budgetText || `${yuan(recipe.budgetCents)}元`,
     cookTimeText: recipe.cookTimeText || `${recipe.cookMinutes || 0}分钟`,
     servingsText: recipe.servingsText || `${recipe.servings || 0}人`,
+    difficultyText: recipe.difficultyText || recipe.difficulty || '未标注',
     tags: recipe.tags || []
   });
 }

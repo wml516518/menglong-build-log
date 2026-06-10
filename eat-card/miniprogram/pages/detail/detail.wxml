@@ -9,7 +9,20 @@
 
   <view wx:if="{{recipe}}" class="card">
     <text class="title">{{recipe.title}}</text>
-    <button class="favorite" bindtap="toggleFavorite">{{favoriteText}}</button>
+    <text wx:if="{{recipe.description}}" class="description">{{recipe.description}}</text>
+    <view class="meta">
+      <text>{{recipe.budgetText}}</text>
+      <text>{{recipe.cookTimeText}}</text>
+      <text>{{recipe.servingsText}}</text>
+      <text>{{recipe.difficultyText}}</text>
+    </view>
+    <view wx:if="{{recipe.tags.length}}" class="tags">
+      <text wx:for="{{recipe.tags}}" wx:key="*this" class="tag">{{item}}</text>
+    </view>
+    <view class="actions">
+      <button class="favorite" bindtap="toggleFavorite">{{favoriteText}}</button>
+      <button class="draw-again" bindtap="drawAgain">再抽一张</button>
+    </view>
     <text class="section">食材</text>
     <text wx:for="{{recipe.ingredients}}" wx:key="*this" class="line">{{item}}</text>
     <text class="section">步骤</text>

@@ -7,11 +7,53 @@
 .title {
   font-size: 40rpx;
   font-weight: 700;
-  margin-bottom: 24rpx;
+  margin-bottom: 14rpx;
 }
 
-.favorite {
-  margin: 0 0 24rpx;
+.description {
+  display: block;
+  color: #6b746f;
+  line-height: 1.6;
+  margin-bottom: 18rpx;
+}
+
+.meta,
+.tags,
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+}
+
+.meta,
+.tags {
+  margin-bottom: 18rpx;
+}
+
+.meta text,
+.tag {
+  background: #eef5f1;
+  color: #2f8067;
+  padding: 8rpx 12rpx;
+  border-radius: 999rpx;
+  font-size: 24rpx;
+}
+
+.actions {
+  margin: 24rpx 0;
+}
+
+.favorite,
+.draw-again {
+  flex: 1;
+  min-width: 220rpx;
+  margin: 0;
+  border-radius: 12rpx;
+}
+
+.draw-again {
+  background: #2f8067;
+  color: #ffffff;
 }
 
 .section {

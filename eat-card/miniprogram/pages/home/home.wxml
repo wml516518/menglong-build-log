@@ -17,10 +17,35 @@
         <view class="picker">{{selectedTimeLabel}}</view>
       </picker>
     </view>
+    <view class="field">
+      <text>份量</text>
+      <picker mode="selector" range="{{servingsOptions}}" range-key="label" value="{{selectedServingsIndex}}" bindchange="onServingsChange">
+        <view class="picker">{{selectedServingsLabel}}</view>
+      </picker>
+    </view>
+    <view class="tag-field">
+      <view class="field-head">
+        <text>口味标签</text>
+        <text wx:if="{{tagsLoading}}" class="hint">加载中...</text>
+        <text wx:if="{{tagsError}}" class="hint">{{tagsError}}</text>
+      </view>
+      <view wx:if="{{tagOptions.length}}" class="tag-options">
+        <button
+          wx:for="{{tagOptions}}"
+          wx:key="name"
+          class="{{item.className}}"
+          data-name="{{item.name}}"
+          bindtap="toggleTag"
+        >{{item.name}}</button>
+      </view>
+    </view>
     <button class="draw" bindtap="drawRecipe" loading="{{loading}}">抽一张</button>
   </view>
 
-  <view wx:if="{{error}}" class="error">{{error}}</view>
+  <view wx:if="{{error}}" class="card error-card">
+    <text class="error">{{error}}</text>
+    <button wx:if="{{isNoMatch}}" class="retry" bindtap="drawRecipe">{{retryText}}</button>
+  </view>
 
   <view wx:if="{{recipe}}" class="card recipe" bindtap="openDetail">
     <text class="recipe-title">{{recipe.title}}</text>

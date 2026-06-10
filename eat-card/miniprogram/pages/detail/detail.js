@@ -38,6 +38,9 @@ Page({
       this.setData({ favorite: true, favoriteText: '取消收藏' });
     }
   },
+  drawAgain() {
+    wx.reLaunch({ url: '/pages/home/home' });
+  },
   onShareAppMessage() {
     return {
       title: this.data.recipe ? `今天吃：${this.data.recipe.title}` : '今天吃什么卡',
