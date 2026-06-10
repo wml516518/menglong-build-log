@@ -33,6 +33,6 @@ export async function handler(event) {
     const index = Math.floor(Math.random() * rows.length);
     return json(200, { recipe: toRecipeCard(rows[index]) });
   } catch (error) {
-    return json(400, { error: error.message });
+    return json(error.statusCode || 400, { error: error.message });
   }
 }

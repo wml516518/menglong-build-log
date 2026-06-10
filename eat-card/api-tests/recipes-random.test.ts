@@ -45,4 +45,72 @@ describe('recipes-random function', () => {
       })
     );
   });
+
+  it('returns 404 when no recipe matches the filters', async () => {
+    mockFetchJson([]);
+
+    const response = await handler(event() as never);
+
+    expect(response.statusCode).toBe(404);
+    expect(parseBody(response).error).toBe('No matching recipe found');
+  });
+
+  it('returns 400 for invalid numeric query parameters', async () => {
+    const response = await handler(event({
+      query: {
+        maxBudgetCents: 'cheap'
+      }
+    }) as never);
+
+    expect(response.statusCode).toBe(400);
+    expect(parseBody(response).error).toBe('maxBudgetCents must be a non-negative integer');
+  });
+
+  it('maps Supabase failures to upstream errors instead of validation errors', async () => {
+    mockFetchJson({ message: 'database is unavailable' }, false, 503);
+
+    const response = await handler(event() as never);
+
+    expect(response.statusCode).toBe(502);
+    expect(parseBody(response).error).toBe('database is unavailable');
+  });
+
+  it('maps malformed Supabase JSON to a server error instead of a validation error', async () => {
+    globalThis.fetch = vi.fn(async () => ({
+      ok: true,
+      status: 200,
+      text: async () => 'temporarily unavailable'
+    })) as unknown as typeof fetch;
+
+    const response = await handler(event() as never);
+
+    expect(response.statusCode).toBe(502);
+    expect(parseBody(response).error).toBe('Supabase returned malformed JSON');
+  });
+
+  it('includes tag filters for non-ASCII tags in the Supabase URL', async () => {
+    mockFetchJson([
+      {
+        id: 'recipe-1',
+        title: '番茄肥牛饭',
+        description: '15分钟的一人食下饭菜',
+        budget_cents: 2200,
+        cook_minutes: 15,
+        servings: 1,
+        difficulty: 'easy',
+        tags: ['一人食', '下饭'],
+        tips: '肥牛可以换成鸡蛋'
+      }
+    ]);
+
+    await handler(event({
+      query: {
+        tags: '一人食,下饭'
+      }
+    }) as never);
+
+    const [url] = vi.mocked(globalThis.fetch).mock.calls[0];
+    const parsed = new URL(String(url));
+    expect(parsed.searchParams.getAll('tags')).toEqual(['cs.{一人食}', 'cs.{下饭}']);
+  });
 });
