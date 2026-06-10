@@ -21,17 +21,29 @@ function parseSupabaseJson(text) {
 }
 
 export async function supabaseRequest(path, { method = 'GET', body } = {}) {
-  const { url, serviceRoleKey } = getSupabaseConfig();
-  const response = await fetch(`${url}/rest/v1/${path}`, {
-    method,
-    headers: {
-      apikey: serviceRoleKey,
-      authorization: `Bearer ${serviceRoleKey}`,
-      'content-type': 'application/json',
-      prefer: 'return=representation'
-    },
-    body: body === undefined ? undefined : JSON.stringify(body)
-  });
+  let config;
+  try {
+    config = getSupabaseConfig();
+  } catch (error) {
+    throw new UpstreamError(error.message, 500);
+  }
+
+  const { url, serviceRoleKey } = config;
+  let response;
+  try {
+    response = await fetch(`${url}/rest/v1/${path}`, {
+      method,
+      headers: {
+        apikey: serviceRoleKey,
+        authorization: `Bearer ${serviceRoleKey}`,
+        'content-type': 'application/json',
+        prefer: 'return=representation'
+      },
+      body: body === undefined ? undefined : JSON.stringify(body)
+    });
+  } catch {
+    throw new UpstreamError('Unable to reach recipe service', 502);
+  }
 
   const text = await response.text();
   const data = parseSupabaseJson(text);

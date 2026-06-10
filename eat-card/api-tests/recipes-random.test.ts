@@ -88,6 +88,26 @@ describe('recipes-random function', () => {
     expect(parseBody(response).error).toBe('Supabase returned malformed JSON');
   });
 
+  it('returns 500 when Supabase service role key is missing', async () => {
+    delete process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+    const response = await handler(event() as never);
+
+    expect(response.statusCode).toBe(500);
+    expect(parseBody(response).error).toBe('Missing environment variable: SUPABASE_SERVICE_ROLE_KEY');
+  });
+
+  it('returns 502 when the recipe service cannot be reached', async () => {
+    globalThis.fetch = vi.fn(async () => {
+      throw new Error('network down');
+    }) as unknown as typeof fetch;
+
+    const response = await handler(event() as never);
+
+    expect(response.statusCode).toBe(502);
+    expect(parseBody(response).error).toBe('Unable to reach recipe service');
+  });
+
   it('includes tag filters for non-ASCII tags in the Supabase URL', async () => {
     mockFetchJson([
       {
