@@ -8,13 +8,13 @@
     <view class="field">
       <text>预算</text>
       <picker mode="selector" range="{{budgetOptions}}" range-key="label" value="{{selectedBudgetIndex}}" bindchange="onBudgetChange">
-        <view class="picker">{{budgetOptions[selectedBudgetIndex].label}}</view>
+        <view class="picker">{{selectedBudgetLabel}}</view>
       </picker>
     </view>
     <view class="field">
       <text>耗时</text>
       <picker mode="selector" range="{{timeOptions}}" range-key="label" value="{{selectedTimeIndex}}" bindchange="onTimeChange">
-        <view class="picker">{{timeOptions[selectedTimeIndex].label}}</view>
+        <view class="picker">{{selectedTimeLabel}}</view>
       </picker>
     </view>
     <button class="draw" bindtap="drawRecipe" loading="{{loading}}">抽一张</button>

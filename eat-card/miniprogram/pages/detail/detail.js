@@ -1,5 +1,6 @@
 Page({
   data: {
+    id: '',
     recipe: {
       title: '番茄肥牛饭',
       ingredients: ['肥牛卷150g', '番茄1个', '米饭1碗'],
@@ -10,6 +11,9 @@ Page({
       ],
       tips: '肥牛可以换成鸡蛋'
     }
+  },
+  onLoad(options) {
+    this.setData({ id: options && options.id ? options.id : '' });
   },
   onShareAppMessage() {
     return {

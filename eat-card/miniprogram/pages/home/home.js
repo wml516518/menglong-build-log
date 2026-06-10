@@ -27,15 +27,25 @@ Page({
     ],
     selectedBudgetIndex: 0,
     selectedTimeIndex: 0,
+    selectedBudgetLabel: '不限',
+    selectedTimeLabel: '不限',
     recipe: mockRecipe,
     loading: false,
     error: ''
   },
   onBudgetChange(event) {
-    this.setData({ selectedBudgetIndex: Number(event.detail.value) });
+    const selectedBudgetIndex = Number(event.detail.value);
+    this.setData({
+      selectedBudgetIndex,
+      selectedBudgetLabel: this.data.budgetOptions[selectedBudgetIndex].label
+    });
   },
   onTimeChange(event) {
-    this.setData({ selectedTimeIndex: Number(event.detail.value) });
+    const selectedTimeIndex = Number(event.detail.value);
+    this.setData({
+      selectedTimeIndex,
+      selectedTimeLabel: this.data.timeOptions[selectedTimeIndex].label
+    });
   },
   drawRecipe() {
     this.setData({ recipe: mockRecipe, error: '' });
