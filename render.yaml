@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: eat-card-api
+    runtime: node
+    rootDir: eat-card
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: ADMIN_API_TOKEN
+        sync: false
+      - key: DEEPSEEK_API_KEY
+        sync: false
+      - key: DEEPSEEK_MODEL
+        value: deepseek-v4-flash
+      - key: DEEPSEEK_BASE_URL
+        value: https://api.deepseek.com

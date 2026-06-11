@@ -35,19 +35,28 @@ Mini program config uses:
 
 ## Render API Backend
 
-1. Create a Render Web Service.
-2. Use `eat-card` as the root directory if Render asks for a root directory.
-3. Set build command to `npm install`.
-4. Set start command to `npm start`.
-5. Add environment variables:
+Preferred Blueprint setup:
+
+1. Push the repository to GitHub.
+2. In Render, create a new Blueprint from this repository.
+3. Render will read `render.yaml` and create the `eat-card-api` Web Service.
+4. Add the secret environment variables when Render asks for them:
    - `SUPABASE_URL`
    - `SUPABASE_SERVICE_ROLE_KEY`
    - `ADMIN_API_TOKEN`
    - `DEEPSEEK_API_KEY`
-   - Optional: `DEEPSEEK_MODEL`
-   - Optional: `DEEPSEEK_BASE_URL`
-6. Deploy and confirm `/health` returns `{ "ok": true }`.
-7. Confirm the AI endpoint accepts requests only through the Render backend; never put the DeepSeek key in mini program or Netlify frontend files.
+5. Deploy and confirm `/health` returns `{ "ok": true }`.
+6. Confirm the AI endpoint accepts requests only through the Render backend; never put the DeepSeek key in mini program or Netlify frontend files.
+
+Manual Web Service setup, if not using Blueprint:
+
+1. Create a Render Web Service from the GitHub repository.
+2. Set root directory to `eat-card`.
+3. Set runtime to Node.
+4. Set build command to `npm install`.
+5. Set start command to `npm start`.
+6. Set health check path to `/health`.
+7. Add the same environment variables listed above.
 
 ## Netlify Admin Frontend
 
