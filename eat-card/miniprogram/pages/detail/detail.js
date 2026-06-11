@@ -15,7 +15,8 @@ Page({
     const id = options && options.id ? options.id : '';
     this.setData({ id, loading: true, error: '' });
     try {
-      const data = await api.getRecipeDetail(id);
+      const localRecipe = id.indexOf('ai-') === 0 ? favorites.getFavorite(id) : null;
+      const data = localRecipe ? { recipe: localRecipe } : await api.getRecipeDetail(id);
       const favorite = favorites.isFavorite(id);
       this.setData({
         recipe: format.recipeDetail(data.recipe),

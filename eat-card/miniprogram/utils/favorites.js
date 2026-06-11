@@ -26,6 +26,10 @@ function isFavorite(id) {
   return getFavorites().some((item) => item.id === id);
 }
 
+function getFavorite(id) {
+  return getFavorites().find((item) => item.id === id) || null;
+}
+
 function addFavorite(recipe) {
   const favorites = getFavorites().filter((item) => item.id !== recipe.id);
   favorites.unshift({
@@ -38,7 +42,13 @@ function addFavorite(recipe) {
     cookTimeText: recipe.cookTimeText,
     servings: recipe.servings,
     servingsText: recipe.servingsText,
-    tags: recipe.tags || []
+    difficulty: recipe.difficulty,
+    difficultyText: recipe.difficultyText,
+    tags: recipe.tags || [],
+    ingredients: recipe.ingredients || [],
+    steps: recipe.steps || [],
+    tips: recipe.tips || '',
+    reason: recipe.reason || ''
   });
   saveFavorites(favorites);
 }
@@ -49,6 +59,7 @@ function removeFavorite(id) {
 
 module.exports = {
   getFavorites,
+  getFavorite,
   isFavorite,
   addFavorite,
   removeFavorite

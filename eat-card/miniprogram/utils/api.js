@@ -1,10 +1,10 @@
 const env = require('../env.js');
 
-function request(path, data = {}) {
+function request(path, data = {}, method = 'GET') {
   return new Promise((resolve, reject) => {
     wx.request({
       url: `${env.API_BASE_URL}${path}`,
-      method: 'GET',
+      method,
       data,
       success(response) {
         if (response.statusCode >= 200 && response.statusCode < 300) {
@@ -33,7 +33,12 @@ function getTags() {
   return request('/tags');
 }
 
+function generateAiMeal(input) {
+  return request('/ai-meal', input, 'POST');
+}
+
 module.exports = {
+  generateAiMeal,
   getRandomRecipe,
   getRecipeDetail,
   getTags

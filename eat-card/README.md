@@ -1,6 +1,6 @@
 # 今天吃什么卡
 
-Native WeChat Mini Program MVP for drawing a meal card by budget, cook time, servings, and taste tags.
+Native WeChat Mini Program MVP for drawing a meal card by budget, cook time, servings, taste tags, and optional DeepSeek AI generation.
 
 ## Apps
 
@@ -13,7 +13,6 @@ Native WeChat Mini Program MVP for drawing a meal card by budget, cook time, ser
 
 ## MVP Limits
 
-- No AI recipe generation.
 - No WeChat Pay.
 - No paid recipe packs.
 - No user account system.

@@ -1,0 +1,66 @@
+<view class="page">
+  <view class="hero">
+    <text class="eyebrow">AI 帮我想</text>
+    <text class="title">把预算、时间和食材交给 AI。</text>
+    <text class="muted">AI 内容仅供参考，请根据实际食材和安全烹饪判断。</text>
+  </view>
+
+  <view class="card controls">
+    <view class="field">
+      <text>预算</text>
+      <picker mode="selector" range="{{budgetOptions}}" range-key="label" value="{{selectedBudgetIndex}}" bindchange="onBudgetChange">
+        <view class="picker">{{selectedBudgetLabel}}</view>
+      </picker>
+    </view>
+    <view class="field">
+      <text>耗时</text>
+      <picker mode="selector" range="{{timeOptions}}" range-key="label" value="{{selectedTimeIndex}}" bindchange="onTimeChange">
+        <view class="picker">{{selectedTimeLabel}}</view>
+      </picker>
+    </view>
+    <view class="field">
+      <text>人数</text>
+      <picker mode="selector" range="{{servingsOptions}}" range-key="label" value="{{selectedServingsIndex}}" bindchange="onServingsChange">
+        <view class="picker">{{selectedServingsLabel}}</view>
+      </picker>
+    </view>
+    <label class="input-block">
+      <text>偏好</text>
+      <input value="{{preferences}}" bindinput="onPreferencesInput" placeholder="清淡、下饭、减脂" />
+    </label>
+    <label class="input-block">
+      <text>现有食材</text>
+      <textarea value="{{ingredients}}" bindinput="onIngredientsInput" maxlength="240" placeholder="鸡蛋、番茄、米饭"></textarea>
+    </label>
+    <label class="input-block">
+      <text>忌口</text>
+      <textarea value="{{restrictions}}" bindinput="onRestrictionsInput" maxlength="240" placeholder="不要辣、不要海鲜"></textarea>
+    </label>
+    <button class="generate" bindtap="generateMeal" loading="{{loading}}">生成一张</button>
+  </view>
+
+  <view wx:if="{{error}}" class="error">
+    <text>{{error}}</text>
+  </view>
+
+  <view wx:if="{{meal}}" class="card meal-card">
+    <text class="meal-title">{{meal.title}}</text>
+    <text class="muted">{{meal.reason}}</text>
+    <view class="meta">
+      <text>{{meal.budgetText}}</text>
+      <text>{{meal.cookTimeText}}</text>
+      <text>{{meal.servingsText}}</text>
+      <text>{{meal.difficultyText}}</text>
+    </view>
+    <view class="tags">
+      <text wx:for="{{meal.tags}}" wx:key="*this" class="tag">{{item}}</text>
+    </view>
+    <text class="section">食材</text>
+    <text wx:for="{{meal.ingredients}}" wx:key="*this" class="line">{{item}}</text>
+    <text class="section">步骤</text>
+    <text wx:for="{{meal.steps}}" wx:key="text" class="line">{{item.orderText}} {{item.text}}</text>
+    <text class="section">提示</text>
+    <text class="line">{{meal.tips}}</text>
+    <button class="save" bindtap="saveMeal">收藏这张</button>
+  </view>
+</view>

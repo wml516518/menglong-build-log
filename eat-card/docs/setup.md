@@ -15,6 +15,9 @@ Render API backend requires:
 - `SUPABASE_URL`
 - `SUPABASE_SERVICE_ROLE_KEY`
 - `ADMIN_API_TOKEN`
+- `DEEPSEEK_API_KEY`
+- `DEEPSEEK_MODEL` (optional, defaults to `deepseek-v4-flash`)
+- `DEEPSEEK_BASE_URL` (optional, defaults to `https://api.deepseek.com`)
 
 Netlify admin frontend config uses:
 
@@ -40,7 +43,11 @@ Mini program config uses:
    - `SUPABASE_URL`
    - `SUPABASE_SERVICE_ROLE_KEY`
    - `ADMIN_API_TOKEN`
+   - `DEEPSEEK_API_KEY`
+   - Optional: `DEEPSEEK_MODEL`
+   - Optional: `DEEPSEEK_BASE_URL`
 6. Deploy and confirm `/health` returns `{ "ok": true }`.
+7. Confirm the AI endpoint accepts requests only through the Render backend; never put the DeepSeek key in mini program or Netlify frontend files.
 
 ## Netlify Admin Frontend
 

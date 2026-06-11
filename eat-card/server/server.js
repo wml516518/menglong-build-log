@@ -1,6 +1,7 @@
 import express from 'express';
 import { handler as adminRecipes } from '../api/admin-recipes.js';
 import { handler as adminRecipesStatus } from '../api/admin-recipes-status.js';
+import { handler as aiMeal } from '../api/ai-meal.js';
 import { handler as recipesDetail } from '../api/recipes-detail.js';
 import { handler as recipesRandom } from '../api/recipes-random.js';
 import { handler as tags } from '../api/tags.js';
@@ -13,6 +14,7 @@ app.use(express.json({ limit: '1mb' }));
 const routes = new Map([
   ['/api/admin-recipes', adminRecipes],
   ['/api/admin-recipes-status', adminRecipesStatus],
+  ['/api/ai-meal', aiMeal],
   ['/api/recipes-detail', recipesDetail],
   ['/api/recipes-random', recipesRandom],
   ['/api/tags', tags]

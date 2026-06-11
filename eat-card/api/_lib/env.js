@@ -16,3 +16,11 @@ export function getSupabaseConfig() {
 export function getAdminToken() {
   return getRequiredEnv('ADMIN_API_TOKEN');
 }
+
+export function getDeepSeekConfig() {
+  return {
+    apiKey: getRequiredEnv('DEEPSEEK_API_KEY'),
+    model: process.env.DEEPSEEK_MODEL || 'deepseek-v4-flash',
+    baseUrl: (process.env.DEEPSEEK_BASE_URL || 'https://api.deepseek.com').replace(/\/$/, '')
+  };
+}

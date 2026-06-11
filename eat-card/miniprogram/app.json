@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/ai/ai",
     "pages/detail/detail",
     "pages/favorites/favorites",
     "pages/about/about"
@@ -20,6 +21,10 @@
       {
         "pagePath": "pages/home/home",
         "text": "抽卡"
+      },
+      {
+        "pagePath": "pages/ai/ai",
+        "text": "AI"
       },
       {
         "pagePath": "pages/favorites/favorites",

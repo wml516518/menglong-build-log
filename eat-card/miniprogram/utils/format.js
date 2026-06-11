@@ -22,8 +22,8 @@ function recipeDetail(recipe) {
   return Object.assign({}, summary, {
     ingredients: summary.ingredients || [],
     steps: (summary.steps || []).map((step, index) => ({
-      orderText: `${index + 1}.`,
-      text: step
+      orderText: step && typeof step === 'object' && step.orderText ? step.orderText : `${index + 1}.`,
+      text: step && typeof step === 'object' && step.text ? step.text : step
     })),
     tips: summary.tips || ''
   });

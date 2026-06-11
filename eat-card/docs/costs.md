@@ -15,14 +15,34 @@ Stop before paying if:
 
 ## Netlify
 
-Used for static admin UI and Functions.
+Used for static admin UI.
 
 Stop before paying if:
 
 - Build minutes exceed the free plan.
 - Bandwidth exceeds the free plan.
-- Function calls or runtime exceed the free plan.
 - Team features, advanced deploy controls, or paid add-ons are needed.
+
+## Render
+
+Used for the API backend.
+
+Stop before paying if:
+
+- The free instance sleep behavior is not acceptable and an always-on instance is needed.
+- API traffic, bandwidth, or compute time exceeds the free plan.
+- Background jobs, private services, or paid regions are added.
+
+## DeepSeek
+
+Used for optional AI meal generation through the Render API only.
+
+Stop before paying or increasing quota if:
+
+- The free trial or prepaid balance is exhausted.
+- Token usage grows beyond the amount you are comfortable spending.
+- Public release enables heavy repeated generation without rate limiting.
+- The API key would need to be exposed outside Render environment variables.
 
 ## Domain, DNS, ICP, and Certificates
 
@@ -47,7 +67,6 @@ Stop before paying if:
 
 Do not add these without a separate review:
 
-- AI recipe generation.
 - Image upload or recipe photos.
 - Paid recipe packs.
 - WeChat Pay.
