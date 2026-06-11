@@ -5,8 +5,9 @@ Native WeChat Mini Program MVP for drawing a meal card by budget, cook time, ser
 ## Apps
 
 - `miniprogram/`: native WeChat Mini Program.
-- `api/`: Netlify Functions.
-- `admin/`: static admin UI for recipe management.
+- `api/`: reusable serverless-style handlers.
+- `server/`: Render Express API wrapper.
+- `admin/`: static admin UI for recipe management, deployable on Netlify.
 - `database/`: Supabase schema and seed SQL.
 - `docs/`: setup, cost, testing, and release notes.
 

@@ -20,6 +20,11 @@ const fieldLabels = {
   status: 'Status'
 };
 
+function apiUrl(path) {
+  const baseUrl = window.EAT_CARD_API_BASE_URL || '/.netlify/functions';
+  return `${baseUrl.replace(/\/$/, '')}${path}`;
+}
+
 function toNumber(value) {
   return Number.parseInt(String(value ?? '').trim(), 10) || 0;
 }
@@ -153,7 +158,7 @@ export async function loadRecipes() {
 
   try {
     const query = params.toString();
-    const response = await fetch(`/.netlify/functions/admin-recipes${query ? `?${query}` : ''}`, {
+    const response = await fetch(apiUrl(`/admin-recipes${query ? `?${query}` : ''}`), {
       method: 'GET',
       headers: {
         'x-admin-token': getToken()
@@ -176,7 +181,7 @@ export async function updateRecipeStatus(id, status) {
   setStatus('Updating status...');
 
   try {
-    const response = await fetch('/.netlify/functions/admin-recipes-status', {
+    const response = await fetch(apiUrl('/admin-recipes-status'), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -208,7 +213,7 @@ export async function submitRecipe(event) {
   setStatus('Saving recipe...');
 
   try {
-    const response = await fetch('/.netlify/functions/admin-recipes', {
+    const response = await fetch(apiUrl('/admin-recipes'), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

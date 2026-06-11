@@ -4,6 +4,8 @@ node_modules/
 dist/
 .env
 .env.local
+eat-card/admin/config.js
+eat-card/miniprogram/env.js
 coverage/
 *.tsbuildinfo
 vite.config.d.ts

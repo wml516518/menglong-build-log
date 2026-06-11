@@ -1,3 +1,3 @@
 module.exports = {
-  API_BASE_URL: 'https://your-site.netlify.app/.netlify/functions'
+  API_BASE_URL: 'https://your-render-service.onrender.com/api'
 };

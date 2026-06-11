@@ -5,15 +5,20 @@
 - Node 18 or newer.
 - WeChat Developer Tools.
 - Supabase project.
-- Netlify site.
+- Netlify site for admin frontend.
+- Render Web Service for API backend.
 
 ## Environment Variables
 
-Netlify Functions require:
+Render API backend requires:
 
 - `SUPABASE_URL`
 - `SUPABASE_SERVICE_ROLE_KEY`
 - `ADMIN_API_TOKEN`
+
+Netlify admin frontend config uses:
+
+- `EAT_CARD_API_BASE_URL`
 
 Mini program config uses:
 
@@ -25,23 +30,34 @@ Mini program config uses:
 2. Run `database/schema.sql`.
 3. Run `database/seed.sql`.
 
-## Netlify
+## Render API Backend
 
-1. Create a Netlify site.
-2. Set the base directory to `eat-card`.
-3. Set the publish directory to `admin`.
-4. Set the functions directory to `api`.
-5. If deploying from the repo root without a base directory, use publish directory `eat-card/admin` and functions directory `eat-card/api`.
-6. Add environment variables.
-7. Deploy.
+1. Create a Render Web Service.
+2. Use `eat-card` as the root directory if Render asks for a root directory.
+3. Set build command to `npm install`.
+4. Set start command to `npm start`.
+5. Add environment variables:
+   - `SUPABASE_URL`
+   - `SUPABASE_SERVICE_ROLE_KEY`
+   - `ADMIN_API_TOKEN`
+6. Deploy and confirm `/health` returns `{ "ok": true }`.
+
+## Netlify Admin Frontend
+
+1. Create a Netlify static site.
+2. Set the base directory to `eat-card/admin`.
+3. Leave the publish directory as `.` or the admin directory itself, depending on the Netlify UI.
+4. Copy `eat-card/admin/config.example.js` to `eat-card/admin/config.js`.
+5. Set `EAT_CARD_API_BASE_URL` inside `config.js` to your Render API base URL, for example `https://your-render-service.onrender.com/api`.
+6. Deploy the static admin site.
 
 ## WeChat
 
 1. Import `eat-card/miniprogram` in WeChat Developer Tools.
 2. Copy `eat-card/miniprogram/env.example.js` to `eat-card/miniprogram/env.js`.
-3. Set `API_BASE_URL` to the Netlify Functions base URL.
+3. Set `API_BASE_URL` to the Render API base URL, for example `https://your-render-service.onrender.com/api`.
 4. Replace the `touristappid` placeholder in `eat-card/miniprogram/project.config.json` with a real AppID before preview, upload, or team use.
-5. Configure the deployed HTTPS domain as a request legal domain in WeChat admin.
+5. Configure the deployed Render HTTPS domain as a request legal domain in WeChat admin.
 
 ## Local API Testing
 
@@ -55,6 +71,13 @@ For Netlify local development, run from `eat-card/` after installing Netlify CLI
 
 ```bash
 netlify dev
+```
+
+For Render-style local API development, run from `eat-card/`:
+
+```bash
+npm install
+npm start
 ```
 
 Do not install or use paid services without reviewing `docs/costs.md`.
