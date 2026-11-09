@@ -11,14 +11,6 @@ type Project = {
   liveUrl: string;
 };
 
-type BuildLogEntry = {
-  date: string;
-  title: string;
-  summary: string;
-  tags: string[];
-  relatedProject: string;
-};
-
 type ResumeExperience = {
   company: string;
   role: string;
@@ -58,6 +50,10 @@ type SiteContent = {
     contact: string;
     latestBuildLog: string;
     allPosts: string;
+    backToPosts: string;
+    postNotFound: string;
+    readArticle: string;
+    tags: string;
   };
   about: string;
   resume: {
@@ -85,7 +81,6 @@ type SiteContent = {
     languages: string[];
   };
   projects: Project[];
-  buildLogs: BuildLogEntry[];
   contact: {
     label: string;
     value: string;
@@ -142,7 +137,11 @@ export const content: Record<Language, SiteContent> = {
       about: 'About',
       contact: 'Contact',
       latestBuildLog: 'Latest Build Log',
-      allPosts: 'All posts'
+      allPosts: 'All posts',
+      backToPosts: 'Back to all posts',
+      postNotFound: 'Article not found',
+      readArticle: 'Read article',
+      tags: 'Tags'
     },
     about:
       'I focus on full-stack development, AI products, and productivity tools. This site tracks my portfolio roadmap from a personal homepage to deployable AI applications.',
@@ -325,30 +324,6 @@ export const content: Record<Language, SiteContent> = {
         liveUrl: 'https://knowledgeops-rag-menglong.netlify.app'
       }
     ],
-    buildLogs: [
-      {
-        date: '2026-06-05',
-        title: 'Portfolio homepage and public build log',
-        summary:
-          'Designing the first portfolio project around clarity, bilingual content, and Netlify deployment.',
-        tags: ['Portfolio', 'React', 'Netlify'],
-        relatedProject: 'Personal Homepage + Build Log'
-      },
-      {
-        date: 'Next',
-        title: 'AI Chat Playground with model switching',
-        summary: 'Planning a deployable chat interface with a lightweight backend API.',
-        tags: ['AI', 'Chat', 'Render'],
-        relatedProject: 'AI Chat Playground'
-      },
-      {
-        date: '2026-06-05',
-        title: 'KnowledgeOps RAG document Q&A',
-        summary: 'Shipping the third portfolio project with upload parsing, vector retrieval, demo fallback UI, and Render/Netlify deployment.',
-        tags: ['RAG', 'Python', 'Documents'],
-        relatedProject: 'KnowledgeOps RAG'
-      }
-    ],
     contact: [
       { label: 'GitHub', value: 'github.com/wml516518', href: 'https://github.com/wml516518' },
       { label: 'Email', value: 'wml565868@gmail.com', href: 'mailto:wml565868@gmail.com' }
@@ -377,7 +352,11 @@ export const content: Record<Language, SiteContent> = {
       about: '关于',
       contact: '联系',
       latestBuildLog: '最新构建日志',
-      allPosts: '全部文章'
+      allPosts: '全部文章',
+      backToPosts: '返回全部文章',
+      postNotFound: '未找到文章',
+      readArticle: '阅读文章',
+      tags: '标签'
     },
     about:
       '我专注于全栈开发、AI 产品和效率工具。这个网站会记录我的作品路线，从个人主页开始，逐步扩展到可部署的 AI 应用。',
@@ -568,29 +547,6 @@ export const content: Record<Language, SiteContent> = {
         stack: ['React', 'FastAPI', 'Supabase', 'pgvector', 'DashScope', 'Render', 'Netlify'],
         githubUrl: 'https://github.com/wml516518/knowledgeops-rag',
         liveUrl: 'https://knowledgeops-rag-menglong.netlify.app'
-      }
-    ],
-    buildLogs: [
-      {
-        date: '2026-06-05',
-        title: '个人主页和公开构建日志',
-        summary: '围绕清晰表达、中英双语和 Netlify 部署设计第一个作品项目。',
-        tags: ['作品集', 'React', 'Netlify'],
-        relatedProject: '个人主页 + 构建日志'
-      },
-      {
-        date: '下一个',
-        title: '支持模型切换的 AI Chat Playground',
-        summary: '规划一个可部署的聊天界面和轻量后端 API。',
-        tags: ['AI', '聊天', 'Render'],
-        relatedProject: 'AI Chat Playground'
-      },
-      {
-        date: '2026-06-05',
-        title: 'KnowledgeOps RAG 文档问答',
-        summary: '完成第三个作品项目，覆盖上传解析、向量检索、Demo 降级界面，以及 Render/Netlify 部署。',
-        tags: ['RAG', 'Python', '文档'],
-        relatedProject: 'KnowledgeOps RAG'
       }
     ],
     contact: [

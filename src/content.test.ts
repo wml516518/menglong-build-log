@@ -9,6 +9,12 @@ describe('content', () => {
     expect(content.zh.nav.projects).toBe('项目');
     expect(content.en.nav.resume).toBe('Resume');
     expect(content.zh.nav.resume).toBe('简历');
+    expect(content.en.sections.backToPosts).toBe('Back to all posts');
+    expect(content.zh.sections.backToPosts).toBe('返回全部文章');
+    expect(content.en.sections.postNotFound).toBe('Article not found');
+    expect(content.en.sections.tags).toBe('Tags');
+    expect(content.zh.sections.postNotFound).toBe('未找到文章');
+    expect(content.zh.sections.tags).toBe('标签');
     expect(content.en.resume.basics.location.value).toBe('Shanghai, China');
     expect(content.zh.resume.basics.location.value).toBe('中国上海');
     expect(content.en.resume.education[0].school).toBe('Henan Finance University');

@@ -1,13 +1,41 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { BuildLogArticle } from './components/BuildLogArticle';
+import { BuildLogIndex } from './components/BuildLogIndex';
+import { BuildLogPreview } from './components/BuildLogPreview';
 import { content, getInitialLanguage, saveLanguage, type Language } from './content';
+import { getPost, getPosts } from './posts';
+import { parseHash } from './routes';
 
 function App() {
   const [language, setLanguage] = useState<Language>(() => getInitialLanguage());
+  const [route, setRoute] = useState(() => parseHash(window.location.hash));
   const copy = content[language];
+  const localizedPosts = getPosts(language);
+
+  useEffect(() => {
+    const handleHashChange = () => setRoute(parseHash(window.location.hash));
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  useEffect(() => {
+    if (route.view !== 'home') {
+      return;
+    }
+
+    const sectionId = window.location.hash.slice(1);
+    if (sectionId && !sectionId.startsWith('/')) {
+      document.getElementById(sectionId)?.scrollIntoView();
+    }
+  }, [route]);
 
   function handleLanguageChange(nextLanguage: Language) {
     setLanguage(nextLanguage);
     saveLanguage(nextLanguage);
+
+    if (route.view === 'post' && !getPost(nextLanguage, route.slug)) {
+      window.location.hash = '#/build-log';
+    }
   }
 
   return (
@@ -19,7 +47,7 @@ function App() {
         </a>
         <nav className="nav-links" aria-label="Primary navigation">
           <a href="#projects">{copy.nav.projects}</a>
-          <a href="#build-log">{copy.nav.buildLog}</a>
+          <a href="#/build-log">{copy.nav.buildLog}</a>
           <a href="#resume">{copy.nav.resume}</a>
           <a href="#about">{copy.nav.about}</a>
           <a href="#contact">{copy.nav.contact}</a>
@@ -42,6 +70,9 @@ function App() {
         </nav>
       </header>
 
+      {route.view === 'home' ? (
+        <>
+
       <section id="home" className="hero-section">
         <div>
           <p className="eyebrow">{copy.profile.eyebrow}</p>
@@ -60,23 +91,12 @@ function App() {
         </div>
       </section>
 
-      <section id="build-log" className="section-block">
-        <div className="section-heading">
-          <h2>{copy.sections.latestBuildLog}</h2>
-          <a href="#build-log">{copy.sections.allPosts}</a>
-        </div>
-        <div className="log-grid">
-          {copy.buildLogs.map((entry, index) => (
-            <article className="log-item" key={entry.title}>
-              <p>
-                {String(index + 1).padStart(2, '0')} / {entry.date}
-              </p>
-              <h3>{entry.title}</h3>
-              <span>{entry.relatedProject}</span>
-            </article>
-          ))}
-        </div>
-      </section>
+      <BuildLogPreview
+        posts={localizedPosts}
+        title={copy.sections.latestBuildLog}
+        allPostsLabel={copy.sections.allPosts}
+        readArticleLabel={copy.sections.readArticle}
+      />
 
       <section id="projects" className="section-block">
         <div className="section-heading">
@@ -240,6 +260,23 @@ function App() {
           ))}
         </div>
       </section>
+        </>
+      ) : route.view === 'posts' ? (
+        <BuildLogIndex
+          posts={localizedPosts}
+          title={copy.sections.buildLog}
+          eyebrow={copy.profile.eyebrow}
+          readArticleLabel={copy.sections.readArticle}
+          tagsLabel={copy.sections.tags}
+        />
+      ) : (
+        <BuildLogArticle
+          post={getPost(language, route.slug)}
+          backLabel={copy.sections.backToPosts}
+          notFoundLabel={copy.sections.postNotFound}
+          tagsLabel={copy.sections.tags}
+        />
+      )}
     </main>
   );
 }
