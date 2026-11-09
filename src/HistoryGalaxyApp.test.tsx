@@ -1,14 +1,20 @@
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import App from './App';
+import HistoryGalaxyApp from './HistoryGalaxyApp';
 
 describe('History Galaxy app', () => {
+  it('provides a route back to the portfolio homepage', () => {
+    render(<HistoryGalaxyApp />);
+
+    expect(screen.getByRole('link', { name: '返回主页' })).toHaveAttribute('href', '#home');
+  });
+
   beforeEach(() => {
     window.location.hash = '';
   });
 
   it('opens directly as the Chinese history galaxy with seven era controls', () => {
-    render(<App />);
+    render(<HistoryGalaxyApp />);
 
     expect(screen.getByRole('heading', { level: 1, name: '历史星河' })).toBeInTheDocument();
     expect(screen.getByText('公元 618 - 1949')).toBeInTheDocument();
@@ -16,7 +22,7 @@ describe('History Galaxy app', () => {
   });
 
   it('provides all thirty historical events as accessible controls', () => {
-    render(<App />);
+    render(<HistoryGalaxyApp />);
 
     expect(screen.getAllByRole('button', { name: /查看历史事件/ })).toHaveLength(30);
     expect(screen.getByRole('button', { name: '查看历史事件：627年 贞观之治' })).toBeInTheDocument();
@@ -25,7 +31,7 @@ describe('History Galaxy app', () => {
 
   it('opens a story with people and closes it', async () => {
     const user = userEvent.setup();
-    render(<App />);
+    render(<HistoryGalaxyApp />);
 
     await user.click(screen.getByRole('button', { name: '查看历史事件：1840年 鸦片战争' }));
 
@@ -39,7 +45,7 @@ describe('History Galaxy app', () => {
 
   it('moves through events with keyboard controls and closes on Escape', async () => {
     const user = userEvent.setup();
-    render(<App />);
+    render(<HistoryGalaxyApp />);
 
     await user.click(screen.getByRole('button', { name: '查看历史事件：1840年 鸦片战争' }));
     await user.keyboard('{ArrowRight}');
@@ -51,7 +57,7 @@ describe('History Galaxy app', () => {
 
   it('selects an era lead event from the dynasty navigation', async () => {
     const user = userEvent.setup();
-    render(<App />);
+    render(<HistoryGalaxyApp />);
 
     await user.click(within(screen.getByRole('navigation', { name: '时代导航' })).getByRole('button', { name: '宋' }));
 
@@ -62,7 +68,7 @@ describe('History Galaxy app', () => {
 
   it('keeps every era navigation button operational', async () => {
     const user = userEvent.setup();
-    render(<App />);
+    render(<HistoryGalaxyApp />);
     const navigation = screen.getByRole('navigation', { name: '时代导航' });
 
     for (const era of ['唐', '五代', '宋', '元', '明', '清', '近代']) {
@@ -75,7 +81,7 @@ describe('History Galaxy app', () => {
 
   it('opens a focused event with Enter and exposes the 2D fallback list', async () => {
     const user = userEvent.setup();
-    render(<App />);
+    render(<HistoryGalaxyApp />);
     const eventButton = screen.getByRole('button', { name: '查看历史事件：1919年 五四运动' });
 
     eventButton.focus();
