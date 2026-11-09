@@ -2,6 +2,15 @@ export const languages = ['en', 'zh'] as const;
 
 export type Language = (typeof languages)[number];
 
+export type FeaturedProject = {
+  title: string;
+  status: string;
+  summary: string;
+  stack: string[];
+  action: string;
+  imageAlt: string;
+};
+
 type Project = {
   title: string;
   status: string;
@@ -80,6 +89,7 @@ type SiteContent = {
     certifications: string[];
     languages: string[];
   };
+  historyGalaxy: FeaturedProject;
   projects: Project[];
   contact: {
     label: string;
@@ -297,6 +307,14 @@ export const content: Record<Language, SiteContent> = {
       ],
       certifications: ['Software Designer Certificate', 'Driving License'],
       languages: ['English: good listening, speaking, reading, and writing']
+    },
+    historyGalaxy: {
+      title: 'History Galaxy',
+      status: 'Interactive 3D experience',
+      summary: 'Travel from the Tang dynasty to 1949, move event stars across a living timeline, and explore the people and stories behind each turning point.',
+      stack: ['Three.js', 'React Three Fiber', '30 historical events'],
+      action: 'Enter the galaxy',
+      imageAlt: 'A luminous Chinese history timeline surrounded by event stars in a deep three-dimensional space'
     },
     projects: [
       {
@@ -522,6 +540,14 @@ export const content: Record<Language, SiteContent> = {
       ],
       certifications: ['软件设计师', '驾驶执照'],
       languages: ['英语：听说能力良好，读写能力良好']
+    },
+    historyGalaxy: {
+      title: '历史星河',
+      status: '交互式 3D 作品',
+      summary: '从唐朝航行至 1949 年，在历史时间轴上拖拽事件星点，探索人物与时代故事。',
+      stack: ['Three.js', 'React Three Fiber', '30 个历史事件'],
+      action: '进入星河',
+      imageAlt: '深邃三维空间中，一条发光的中国历史时间轴与众多事件星点向远方延伸'
     },
     projects: [
       {
