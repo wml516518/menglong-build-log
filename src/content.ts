@@ -53,6 +53,7 @@ type SiteContent = {
     backToPosts: string;
     postNotFound: string;
     readArticle: string;
+    tags: string;
   };
   about: string;
   resume: {
@@ -139,7 +140,8 @@ export const content: Record<Language, SiteContent> = {
       allPosts: 'All posts',
       backToPosts: 'Back to all posts',
       postNotFound: 'Article not found',
-      readArticle: 'Read article'
+      readArticle: 'Read article',
+      tags: 'Tags'
     },
     about:
       'I focus on full-stack development, AI products, and productivity tools. This site tracks my portfolio roadmap from a personal homepage to deployable AI applications.',
@@ -353,7 +355,8 @@ export const content: Record<Language, SiteContent> = {
       allPosts: '全部文章',
       backToPosts: '返回全部文章',
       postNotFound: '未找到文章',
-      readArticle: '阅读文章'
+      readArticle: '阅读文章',
+      tags: '标签'
     },
     about:
       '我专注于全栈开发、AI 产品和效率工具。这个网站会记录我的作品路线，从个人主页开始，逐步扩展到可部署的 AI 应用。',

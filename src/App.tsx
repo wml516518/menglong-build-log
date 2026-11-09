@@ -18,6 +18,17 @@ function App() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
+  useEffect(() => {
+    if (route.view !== 'home') {
+      return;
+    }
+
+    const sectionId = window.location.hash.slice(1);
+    if (sectionId && !sectionId.startsWith('/')) {
+      document.getElementById(sectionId)?.scrollIntoView();
+    }
+  }, [route]);
+
   function handleLanguageChange(nextLanguage: Language) {
     setLanguage(nextLanguage);
     saveLanguage(nextLanguage);
@@ -254,13 +265,16 @@ function App() {
         <BuildLogIndex
           posts={localizedPosts}
           title={copy.sections.buildLog}
+          eyebrow={copy.profile.eyebrow}
           readArticleLabel={copy.sections.readArticle}
+          tagsLabel={copy.sections.tags}
         />
       ) : (
         <BuildLogArticle
           post={getPost(language, route.slug)}
           backLabel={copy.sections.backToPosts}
           notFoundLabel={copy.sections.postNotFound}
+          tagsLabel={copy.sections.tags}
         />
       )}
     </main>

@@ -71,6 +71,9 @@ describe('Build Log posts', () => {
       parsePostFile('/posts/date.md', validSource.replace('2026-06-05', 'June 5'))
     ).toThrow('/posts/date.md: missing or invalid date');
     expect(() =>
+      parsePostFile('/posts/impossible-date.md', validSource.replace('2026-06-05', '2026-02-30'))
+    ).toThrow('/posts/impossible-date.md: missing or invalid date');
+    expect(() =>
       parsePostFile('/posts/tags.md', validSource.replace('tags:\n  - React\n  - Vite', 'tags: []'))
     ).toThrow('/posts/tags.md: missing or invalid tags');
   });

@@ -1,5 +1,6 @@
 import { Buffer } from 'buffer';
 import matter from 'gray-matter';
+import { JSON_SCHEMA, load } from 'js-yaml';
 import type { Language } from './content';
 
 (globalThis as typeof globalThis & { Buffer: typeof Buffer }).Buffer = Buffer;
@@ -35,7 +36,11 @@ function requiredString(path: string, field: PostField, value: unknown): string 
 }
 
 export function parsePostFile(path: string, source: string): BuildLogPost {
-  const parsed = matter(source);
+  const parsed = matter(source, {
+    engines: {
+      yaml: (input) => load(input, { schema: JSON_SCHEMA }) as Record<string, unknown>
+    }
+  });
   const slug = requiredString(path, 'slug', parsed.data.slug);
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) {
     invalid(path, 'slug');
@@ -46,12 +51,12 @@ export function parsePostFile(path: string, source: string): BuildLogPost {
     invalid(path, 'language');
   }
 
-  const rawDate = parsed.data.date;
-  const date = rawDate instanceof Date ? rawDate.toISOString().slice(0, 10) : rawDate;
+  const date = parsed.data.date;
   if (
     typeof date !== 'string' ||
     !/^\d{4}-\d{2}-\d{2}$/.test(date) ||
-    Number.isNaN(Date.parse(`${date}T00:00:00Z`))
+    Number.isNaN(Date.parse(`${date}T00:00:00Z`)) ||
+    new Date(`${date}T00:00:00Z`).toISOString().slice(0, 10) !== date
   ) {
     invalid(path, 'date');
   }

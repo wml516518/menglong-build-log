@@ -5,9 +5,15 @@ type BuildLogArticleProps = {
   post?: BuildLogPost;
   backLabel: string;
   notFoundLabel: string;
+  tagsLabel: string;
 };
 
-export function BuildLogArticle({ post, backLabel, notFoundLabel }: BuildLogArticleProps) {
+export function BuildLogArticle({
+  post,
+  backLabel,
+  notFoundLabel,
+  tagsLabel
+}: BuildLogArticleProps) {
   if (!post) {
     return (
       <section className="build-log-page post-not-found">
@@ -31,7 +37,7 @@ export function BuildLogArticle({ post, backLabel, notFoundLabel }: BuildLogArti
         </div>
         <h1>{post.title}</h1>
         <p className="post-summary">{post.summary}</p>
-        <ul className="post-tags" aria-label="Tags">
+        <ul className="post-tags" aria-label={tagsLabel}>
           {post.tags.map((tag) => (
             <li key={tag}>{tag}</li>
           ))}

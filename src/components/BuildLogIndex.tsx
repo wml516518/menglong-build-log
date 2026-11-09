@@ -3,14 +3,22 @@ import type { BuildLogPost } from '../posts';
 type BuildLogIndexProps = {
   posts: BuildLogPost[];
   title: string;
+  eyebrow: string;
   readArticleLabel: string;
+  tagsLabel: string;
 };
 
-export function BuildLogIndex({ posts, title, readArticleLabel }: BuildLogIndexProps) {
+export function BuildLogIndex({
+  posts,
+  title,
+  eyebrow,
+  readArticleLabel,
+  tagsLabel
+}: BuildLogIndexProps) {
   return (
     <section className="build-log-page">
       <div className="page-intro">
-        <p className="eyebrow">Portfolio / Build Log</p>
+        <p className="eyebrow">{eyebrow}</p>
         <h1>{title}</h1>
       </div>
       <div className="post-list">
@@ -25,7 +33,7 @@ export function BuildLogIndex({ posts, title, readArticleLabel }: BuildLogIndexP
                 <a href={`#/build-log/${post.slug}`}>{post.title}</a>
               </h2>
               <p>{post.summary}</p>
-              <ul className="post-tags" aria-label="Tags">
+              <ul className="post-tags" aria-label={tagsLabel}>
                 {post.tags.map((tag) => (
                   <li key={tag}>{tag}</li>
                 ))}

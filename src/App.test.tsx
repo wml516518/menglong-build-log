@@ -1,11 +1,15 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from './App';
 
 describe('App', () => {
+  const scrollIntoView = vi.fn();
+
   beforeEach(() => {
     localStorage.clear();
     window.location.hash = '';
+    scrollIntoView.mockClear();
+    HTMLElement.prototype.scrollIntoView = scrollIntoView;
   });
 
   it('renders the English portfolio homepage by default', () => {
@@ -37,11 +41,14 @@ describe('App', () => {
     expect(localStorage.getItem('portfolio-language')).toBe('zh');
   });
 
-  it('renders the complete build log index from a direct link', () => {
-    window.location.hash = '#/build-log';
+  it('opens the complete build log index from the homepage', async () => {
+    const user = userEvent.setup();
     render(<App />);
 
+    await user.click(screen.getByRole('link', { name: 'All posts' }));
+
     expect(screen.getByRole('heading', { level: 1, name: 'Build Log' })).toBeInTheDocument();
+    expect(window.location.hash).toBe('#/build-log');
     expect(screen.getByRole('link', { name: 'AI Chat Playground with model switching' })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'KnowledgeOps RAG document Q&A' })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Portfolio homepage and public build log' })).toBeInTheDocument();
@@ -56,6 +63,18 @@ describe('App', () => {
     ).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'Product direction' })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Back to all posts' })).toBeInTheDocument();
+  });
+
+  it('returns to and scrolls to homepage sections from an article', async () => {
+    const user = userEvent.setup();
+    window.location.hash = '#/build-log/ai-chat-playground';
+    render(<App />);
+
+    await user.click(screen.getByRole('link', { name: 'Projects' }));
+
+    expect(await screen.findByRole('heading', { level: 2, name: 'Projects' })).toBeInTheDocument();
+    await waitFor(() => expect(scrollIntoView).toHaveBeenCalled());
+    expect(window.location.hash).toBe('#projects');
   });
 
   it('shows a localized not-found state for an unknown article', () => {
@@ -74,6 +93,7 @@ describe('App', () => {
 
     expect(screen.getByRole('heading', { level: 1, name: '个人主页和公开构建日志' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: '为什么要做这个网站' })).toBeInTheDocument();
+    expect(screen.getByRole('list', { name: '标签' })).toBeInTheDocument();
     expect(window.location.hash).toBe('#/build-log/portfolio-homepage');
   });
 });
