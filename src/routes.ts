@@ -1,5 +1,6 @@
 export type Route =
   | { view: 'home' }
+  | { view: 'history-galaxy' }
   | { view: 'posts' }
   | { view: 'post'; slug: string };
 
@@ -7,6 +8,10 @@ const postPrefix = '#/build-log/';
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 export function parseHash(hash: string): Route {
+  if (hash === '#/history-galaxy') {
+    return { view: 'history-galaxy' };
+  }
+
   if (hash === '#/build-log' || hash === postPrefix) {
     return { view: 'posts' };
   }

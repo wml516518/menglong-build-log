@@ -11,6 +11,15 @@ describe('parseHash', () => {
     expect(parseHash('#/build-log/')).toEqual({ view: 'posts' });
   });
 
+  it('recognizes the History Galaxy experience', () => {
+    expect(parseHash('#/history-galaxy')).toEqual({ view: 'history-galaxy' });
+  });
+
+  it('does not treat near-matching History Galaxy hashes as the experience', () => {
+    expect(parseHash('#/history-galaxy/')).toEqual({ view: 'home' });
+    expect(parseHash('#/history-galaxy-extra')).toEqual({ view: 'home' });
+  });
+
   it('recognizes a valid article slug', () => {
     expect(parseHash('#/build-log/ai-chat-playground')).toEqual({
       view: 'post',
