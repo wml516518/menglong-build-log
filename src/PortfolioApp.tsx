@@ -15,12 +15,21 @@ export function PortfolioApp({ route }: { route: PortfolioRoute }) {
   const localizedPosts = getPosts(language);
 
   useEffect(() => {
+    const previousLanguage = document.documentElement.lang;
+    document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+    return () => { document.documentElement.lang = previousLanguage; };
+  }, [language]);
+
+  useEffect(() => {
     if (route.view !== 'home') {
       return;
     }
 
     const sectionId = window.location.hash.slice(1);
-    if (sectionId && !sectionId.startsWith('/')) {
+    if (sectionId === 'home') {
+      // Auto follows the document CSS, including its reduced-motion override.
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    } else if (sectionId && !sectionId.startsWith('/')) {
       document.getElementById(sectionId)?.scrollIntoView();
     }
   }, [route]);

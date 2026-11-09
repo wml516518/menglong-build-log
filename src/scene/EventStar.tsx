@@ -43,7 +43,7 @@ export function EventStar({ event, selected, hovered, dragOffset, reducedMotion,
     if (!reducedMotion) group.current.rotation.y += 0.003;
     const targetScale = selected ? 1.34 : hovered ? 1.18 : 1;
     group.current.scale.lerp(new THREE.Vector3(targetScale, targetScale, targetScale), 0.09);
-    if (glow.current) glow.current.rotation.z -= 0.004;
+    if (!reducedMotion && glow.current) glow.current.rotation.z -= 0.004;
   });
 
   const onPointerDown = (pointerEvent: ThreeEvent<PointerEvent>) => {

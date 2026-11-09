@@ -6,8 +6,13 @@ describe('App', () => {
   const scrollIntoView = vi.fn();
   let originalHead: string;
   let originalBodyClass: string;
+  let originalLang: string;
+  const originalScrollIntoView = HTMLElement.prototype.scrollIntoView;
 
   beforeEach(() => {
+    originalLang = document.documentElement.lang;
+    document.documentElement.lang = 'en';
+    vi.spyOn(window, 'scrollTo').mockImplementation(() => {});
     originalHead = document.head.innerHTML;
     originalBodyClass = document.body.className;
     document.head.innerHTML = '<meta name="description" content=""><meta name="theme-color" content="">';
@@ -20,6 +25,9 @@ describe('App', () => {
 
   afterEach(() => {
     cleanup();
+    vi.restoreAllMocks();
+    HTMLElement.prototype.scrollIntoView = originalScrollIntoView;
+    document.documentElement.lang = originalLang;
     document.head.innerHTML = originalHead;
     document.body.className = originalBodyClass;
   });
@@ -51,6 +59,9 @@ describe('App', () => {
     expect(screen.getByText('上汽海外出行科技有限公司')).toBeInTheDocument();
     expect(screen.getByText('车机智能语音交互系统（语音 2.0 / 3.0）')).toBeInTheDocument();
     expect(localStorage.getItem('portfolio-language')).toBe('zh');
+    expect(document.documentElement.lang).toBe('zh-CN');
+    await user.click(screen.getByRole('button', { name: 'EN' }));
+    expect(document.documentElement.lang).toBe('en');
   });
 
   it('opens the complete build log index from the homepage', async () => {
@@ -139,6 +150,7 @@ describe('App', () => {
     expect(await screen.findByRole('heading', { level: 1, name: '历史星河' })).toBeInTheDocument();
     expect(window.location.hash).toBe('#/history-galaxy');
     expect(document.body).toHaveClass('history-route');
+    expect(document.documentElement.lang).toBe('zh-CN');
     expect(document.title).toBe('历史星河｜中国历史3D交互时间轴');
 
     await user.click(screen.getByRole('link', { name: '返回主页' }));
@@ -146,14 +158,18 @@ describe('App', () => {
     expect(window.location.hash).toBe('#home');
     expect(document.body).not.toHaveClass('history-route');
     expect(document.title).toBe('MengLong Wang | Portfolio + Build Log');
+    expect(document.documentElement.lang).toBe('en');
+    expect(window.scrollTo).toHaveBeenCalledWith({ top: 0, behavior: 'auto' });
   });
 
   it('cleans up history viewport mode on unmount', () => {
     window.location.hash = '#/history-galaxy';
     const { unmount } = render(<App />);
     expect(document.body).toHaveClass('history-route');
+    expect(document.documentElement.lang).toBe('zh-CN');
     unmount();
     expect(document.body).not.toHaveClass('history-route');
+    expect(document.documentElement.lang).toBe('en');
   });
 
   it('opens the shareable Build Log route from the hero action', async () => {
@@ -165,6 +181,23 @@ describe('App', () => {
 
     expect(await screen.findByRole('heading', { level: 1, name: 'Build Log' })).toBeInTheDocument();
     expect(window.location.hash).toBe('#/build-log');
+  });
+
+  it('scrolls #home to the document top instead of the hero section', () => {
+    window.location.hash = '#home';
+    render(<App />);
+    expect(window.scrollTo).toHaveBeenCalledWith({ top: 0, behavior: 'auto' });
+    expect(scrollIntoView).not.toHaveBeenCalled();
+  });
+
+  it('restores a persisted Chinese document language after leaving History Galaxy', async () => {
+    localStorage.setItem('portfolio-language', 'zh');
+    window.location.hash = '#/history-galaxy';
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(await screen.findByRole('link', { name: '返回主页' }));
+    expect(await screen.findByText('构建实用的 AI 工具和全栈产品。')).toBeInTheDocument();
+    expect(document.documentElement.lang).toBe('zh-CN');
   });
 
 });

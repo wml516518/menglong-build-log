@@ -20,6 +20,13 @@ export default function App() {
     return () => document.body.classList.remove('history-route');
   }, [route]);
 
+  useEffect(() => {
+    if (route.view !== 'history-galaxy') return;
+    const previousLanguage = document.documentElement.lang;
+    document.documentElement.lang = 'zh-CN';
+    return () => { document.documentElement.lang = previousLanguage; };
+  }, [route.view]);
+
   if (route.view === 'history-galaxy') {
     return (
       <Suspense fallback={<main className="history-route-loading" aria-label="正在加载历史星河" />}>
