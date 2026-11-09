@@ -20,7 +20,8 @@ describe('App', () => {
     expect(screen.getByText('Shanghai, China')).toBeInTheDocument();
     expect(screen.getByText('Henan Finance University')).toBeInTheDocument();
     expect(screen.getByText('SAIC Mobility Technology Co., Ltd.')).toBeInTheDocument();
-    expect(screen.getByText('In-vehicle Intelligent Voice Interaction System')).toBeInTheDocument();
+    expect(screen.getByText('Google AAA In-vehicle AI Agent (Voice 3.0)')).toBeInTheDocument();
+    expect(screen.getByText('Microsoft InCarVA Voice Assistant (Voice 2.0 / 3.0)')).toBeInTheDocument();
     expect(screen.getAllByText('wml565868@gmail.com').length).toBeGreaterThan(0);
     expect(screen.getByRole('button', { name: 'EN' })).toHaveAttribute('aria-pressed', 'true');
     expect(screen.getByRole('button', { name: '中' })).toHaveAttribute('aria-pressed', 'false');
@@ -37,7 +38,8 @@ describe('App', () => {
     expect(screen.getByText('中国上海')).toBeInTheDocument();
     expect(screen.getByText('河南财政金融学院')).toBeInTheDocument();
     expect(screen.getByText('上汽海外出行科技有限公司')).toBeInTheDocument();
-    expect(screen.getByText('车机智能语音交互系统（语音 2.0 / 3.0）')).toBeInTheDocument();
+    expect(screen.getByText('谷歌 AAA 车载 AI Agent（Voice 3.0）')).toBeInTheDocument();
+    expect(screen.getByText('微软车载语音助手 InCarVA（Voice 2.0 / 3.0）')).toBeInTheDocument();
     expect(localStorage.getItem('portfolio-language')).toBe('zh');
   });
 
