@@ -3,6 +3,16 @@ import { content, getInitialLanguage, languages } from './content';
 describe('content', () => {
   it('contains English and Chinese site copy', () => {
     expect(languages).toEqual(['en', 'zh']);
+    expect(content.en.historyGalaxy).toMatchObject({
+      title: 'History Galaxy',
+      status: 'Interactive 3D experience',
+      action: 'Enter the galaxy'
+    });
+    expect(content.zh.historyGalaxy).toMatchObject({
+      title: '历史星河',
+      status: '交互式 3D 作品',
+      action: '进入星河'
+    });
     expect(content.en.profile.name).toBe('MengLong Wang');
     expect(content.zh.profile.name).toBe('MengLong Wang');
     expect(content.en.nav.projects).toBe('Projects');
