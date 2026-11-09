@@ -112,7 +112,7 @@ p {
 
 h1 {
   max-width: 780px;
-  font-size: clamp(48px, 8vw, 88px);
+  font-size: 72px;
   font-weight: 780;
   letter-spacing: 0;
   line-height: 1.02;
@@ -182,6 +182,8 @@ h1 {
 }
 
 .log-item {
+  display: flex;
+  flex-direction: column;
   border-top: 1px solid #b9b3a8;
   padding-top: 14px;
 }
@@ -206,6 +208,155 @@ h1 {
 .log-item span {
   color: #5e594f;
   font-size: 13px;
+}
+
+.text-link,
+.post-back,
+.post-body a {
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.log-item .text-link {
+  align-self: flex-start;
+  margin-top: 18px;
+}
+
+.build-log-page {
+  border-top: 1px solid #d8d4ca;
+  margin-top: 48px;
+  padding: 42px 0 72px;
+}
+
+.page-intro {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  align-items: end;
+  gap: 40px;
+  margin-bottom: 54px;
+}
+
+.page-intro .eyebrow {
+  margin-bottom: 8px;
+}
+
+.page-intro h1 {
+  font-size: 64px;
+}
+
+.post-list {
+  display: grid;
+}
+
+.post-list-item {
+  display: grid;
+  grid-template-columns: 0.4fr minmax(0, 1fr) auto;
+  gap: 40px;
+  align-items: start;
+  border-top: 1px solid #d8d4ca;
+  padding: 26px 0 32px;
+}
+
+.post-list-item:first-child {
+  border-color: #171717;
+}
+
+.post-list-item h2 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.post-list-item p {
+  color: #3f3b35;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  max-width: 700px;
+}
+
+.post-meta {
+  display: grid;
+  gap: 7px;
+  color: #777168;
+  font-size: 12px;
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-tags li {
+  border: 1px solid #c8c2b7;
+  font-size: 12px;
+  padding: 6px 8px;
+}
+
+.post-article {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-article > header {
+  border-bottom: 1px solid #d8d4ca;
+  padding: 38px 0 40px;
+}
+
+.post-article h1 {
+  font-size: 56px;
+  line-height: 1.08;
+  margin: 24px 0 18px;
+}
+
+.post-summary {
+  color: #3f3b35;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 760px;
+}
+
+.post-body {
+  color: #2f2c27;
+  font-size: 17px;
+  line-height: 1.75;
+  max-width: 760px;
+  padding: 34px 0 10px;
+}
+
+.post-body h2 {
+  color: #171717;
+  font-size: 28px;
+  margin: 42px 0 14px;
+}
+
+.post-body h2:first-child {
+  margin-top: 0;
+}
+
+.post-body ul,
+.post-body ol {
+  padding-left: 22px;
+}
+
+.post-body li + li {
+  margin-top: 8px;
+}
+
+.post-not-found {
+  min-height: 50vh;
+}
+
+.post-not-found h1 {
+  font-size: 56px;
+  margin-bottom: 32px;
 }
 
 .project-list {
@@ -487,6 +638,8 @@ h1 {
   }
 
   .hero-section,
+  .page-intro,
+  .post-list-item,
   .project-row,
   .resume-grid,
   .timeline-item,
@@ -504,6 +657,27 @@ h1 {
 
   .log-grid {
     grid-template-columns: 1fr;
+  }
+
+  h1,
+  .page-intro h1,
+  .post-article h1,
+  .post-not-found h1 {
+    font-size: 44px;
+  }
+
+  .build-log-page {
+    margin-top: 28px;
+    padding-top: 30px;
+  }
+
+  .page-intro,
+  .post-list-item {
+    gap: 18px;
+  }
+
+  .post-list-item > .text-link {
+    justify-self: start;
   }
 
   .project-links {
