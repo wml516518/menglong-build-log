@@ -166,13 +166,13 @@ export const content: Record<Language, SiteContent> = {
       experience: [
         {
           company: 'SAIC Mobility Technology Co., Ltd.',
-          role: 'Full-stack Engineer',
+          role: 'Full-stack Engineer · AI Agent',
           period: '2025.07 - Present',
           highlights: [
-            'Develops and maintains backend services for the Voice 2.0 project, integrating large-model capabilities for intelligent Q&A and intent recognition.',
-            'Optimizes prompt structures to improve multi-scenario voice understanding accuracy and multi-turn conversation stability.',
-            'Connects in-vehicle weather, navigation, location search, and vehicle-control APIs to automate voice-command dispatch.',
-            'Builds React-based Voice 3.0 in-vehicle voice interaction UI and collaborates on frontend-backend integration.'
+            'Builds cloud capabilities for SAIC overseas intelligent-cockpit voice and in-vehicle AI Agent products as an on-site supplier engineer, supporting Google AAA and Microsoft InCarVA in parallel.',
+            'Owns the vehicle-control intent taxonomy and English training data, Calendar & Mail Agent, proactive recommendations, and the NLU evaluation pipeline from intent definition and orchestration to in-vehicle validation.',
+            'Designs Intent, Slot, ActionID, structured payload, and fallback TTS contracts for cloud LLM and local NLU execution paths.',
+            'Coordinates protocol and release alignment across Google owners, Android vehicle-side teams, and TSP cloud teams, delivering through branch and pull-request workflows with reusable specifications and development guides.'
           ]
         },
         {
@@ -207,16 +207,32 @@ export const content: Record<Language, SiteContent> = {
       ],
       projects: [
         {
-          name: 'In-vehicle Intelligent Voice Interaction System',
+          name: 'Google AAA In-vehicle AI Agent (Voice 3.0)',
           period: '2025.07 - Present',
-          description: 'Voice 2.0 / 3.0 system for large-model powered in-vehicle voice interaction.',
+          description:
+            'A next-generation in-vehicle Agent built with Google, using intents, tools, and orchestration across 16 business domains including vehicle control, navigation, media, weather, calendar, mail, and proactive recommendations.',
           highlights: [
-            'Implemented backend LLM integration, semantic understanding, and user intent recognition.',
-            'Improved instruction parsing through prompt engineering for more stable multi-scenario voice interactions.',
-            'Integrated weather, navigation, location, and vehicle-control capabilities behind a unified voice dispatch flow.',
-            'Built React frontend UI for Voice 3.0 and optimized visual feedback during voice interaction.'
+            'Designed Intent and Slot models for 13 vehicle-control domains and 400+ functions, delivering CustomAction, structured payloads, English training phrases, and consistent actionId, result-code, and TTS contracts.',
+            'Owned the Calendar & Mail component, implementing six event and mail workflows through Google Calendar and Outlook M365 providers; tokens stay in HTTPS headers and mail operations create drafts instead of sending directly.',
+            'Implemented cross-domain proactive services for low-battery charging, destination parking, and upcoming-calendar reminders through reusable named actions.',
+            'Contributed to account- and audio-zone-isolated short-, medium-, and long-term memory, with a 20-turn/16K-token window, 30-day summaries, and long-term profiles.',
+            'Built an NLU batch evaluation pipeline for intent, action_id, payload, and fallback TTS validation, producing failure analysis that drives intent-boundary and training-data improvements.'
           ],
-          stack: ['React', 'LLM API', 'Prompt Engineering', 'Vehicle APIs']
+          stack: ['Google AAA (CCA)', 'Intent / Slot', 'CustomAction', 'ServerWrapper', 'NLU Evaluation']
+        },
+        {
+          name: 'Microsoft InCarVA Voice Assistant (Voice 2.0 / 3.0)',
+          period: '2025.07 - Present',
+          description:
+            'SAIC overseas in-vehicle voice assistant built on Microsoft Azure voice and the M365 ecosystem for multilingual markets.',
+          highlights: [
+            'Develops and maintains the Voice 2.0 backend conversation service, using large models to convert natural-language requests into structured vehicle instructions.',
+            'Designs prompt and intent-classification strategies for multiple audio zones, multi-turn context, and ambiguous references, with safe fallback responses for unsupported vehicle functions.',
+            'Integrates Outlook and M365 calendar and mail, TSP weather aggregation, navigation, location search, and vehicle control behind unified actionId and payload contracts.',
+            'Maintains multilingual TTS copy for consistent meaning, controlled length, and natural phrasing across supported languages.',
+            'Investigates production logs, fixes defects, optimizes interfaces, and coordinates Microsoft and vehicle-side integration to protect release quality and response time.'
+          ],
+          stack: ['Microsoft Azure Voice', 'M365 / Outlook', '.NET', 'Prompt Engineering', 'multilingual TTS']
         },
         {
           name: 'Fabric 4.x Imaging Information System',
@@ -381,13 +397,13 @@ export const content: Record<Language, SiteContent> = {
       experience: [
         {
           company: '上汽海外出行科技有限公司',
-          role: '全栈工程师',
+          role: '全栈工程师 · AI Agent 方向',
           period: '2025.07 - 至今',
           highlights: [
-            '负责语音 2.0 项目的后端开发与维护，基于大模型实现智能问答与用户意图识别。',
-            '设计并持续优化 Prompt 结构，提升多场景语音理解准确率与多轮对话稳定性。',
-            '对接车机天气、导航、地点查询及车控能力接口，实现语音指令到车机功能的自动化调度。',
-            '负责语音 3.0 前端开发，使用 React 构建车机语音交互界面，并完成前后端联调。'
+            '以供应商驻场身份负责上汽海外智能座舱语音与车载 AI Agent 的云端能力建设，并行支撑谷歌 AAA 与微软 InCarVA 两条技术路线。',
+            '负责车控域意图体系与英语训练语料、日程邮件 Agent、主动推荐和 NLU 评测链路，覆盖意图定义、编排实现到上车验证的完整闭环。',
+            '设计 Intent、Slot、ActionID、结构化 payload 与失败 TTS 契约，兼容云端大模型与本地 NLU 执行链路。',
+            '与 Google Owner、Android 地端和 TSP 云端团队对齐协议与发布节奏，按分支与 Pull Request 流程交付，并沉淀意图命名规范、开发讲义和流程文档。'
           ]
         },
         {
@@ -422,16 +438,32 @@ export const content: Record<Language, SiteContent> = {
       ],
       projects: [
         {
-          name: '车机智能语音交互系统（语音 2.0 / 3.0）',
+          name: '谷歌 AAA 车载 AI Agent（Voice 3.0）',
           period: '2025.07 - 至今',
-          description: '基于大模型能力的车机智能语音交互系统。',
+          description:
+            '与 Google 联合打造的下一代车载智能体，用“意图 + 工具 + 编排”覆盖车控、导航、媒体、天气、日程邮件和主动推荐等 16 个业务领域。',
           highlights: [
-            '负责语音 2.0 后端开发，完成大模型接入、语义理解与意图识别能力建设。',
-            '通过 Prompt Engineering 优化指令解析逻辑，提升多场景语音理解稳定性与准确性。',
-            '对接天气、导航、地点、车控等车机业务能力接口，实现语音到功能的统一调度。',
-            '负责语音 3.0 前端开发，使用 React 实现车机语音交互界面并优化反馈体验。'
+            '负责 13 个车控领域、400+ 功能点的 Intent / Slot 设计，落地 CustomAction、结构化 payload 与英语训练语料，统一 actionId、结果码与 TTS 契约。',
+            '作为 Owner 独立设计并实现 Calendar & Mail 组件，通过 Google Calendar 与 Outlook M365 双 Provider 覆盖日程查询、创建、修改、删除以及邮件查询、草稿创建六类接口。',
+            '落地低电量推荐充电桩、到达目的地前推荐停车场、日程临期提醒等跨域主动服务。',
+            '参与按账号与音区隔离的短、中、长期记忆设计，包含 20 轮 / 16K token 窗口、30 天中期摘要与长期画像。',
+            '搭建 NLU 批量评测链路，校验 intent、action_id、payload 与不支持功能 TTS，输出失败归因并驱动意图边界和训练语料收敛。'
           ],
-          stack: ['React', '大模型接口', 'Prompt Engineering', '车机接口']
+          stack: ['Google AAA (CCA)', 'Intent / Slot', 'CustomAction', 'ServerWrapper', 'NLU 评测']
+        },
+        {
+          name: '微软车载语音助手 InCarVA（Voice 2.0 / 3.0）',
+          period: '2025.07 - 至今',
+          description:
+            '上汽海外面向多语言市场的车载语音助手，基于微软 Azure 语音与 M365 生态支撑 Voice 2.0 / 3.0 渠道。',
+          highlights: [
+            '负责 Voice 2.0 后端会话服务的开发与维护，接入大模型完成语义理解与意图识别，将自然语言解析为结构化车机指令。',
+            '设计多场景 Prompt 与意图分类策略，处理多音区、多轮上下文与模糊指代，对车型不支持功能返回安全兜底播报。',
+            '对接 Outlook / M365 日程邮件、TSP 天气聚合、导航、地点查询与车控能力，统一 actionId 与 payload 协议。',
+            '维护多语种 TTS 文案，保证同一意图在不同语言下语义一致、长度可控与断句自然。',
+            '负责线上日志排查、Bug 修复与接口性能优化，协同微软与车机端联调，保障发布质量和响应耗时。'
+          ],
+          stack: ['Microsoft Azure 语音', 'M365 / Outlook', '.NET', 'Prompt Engineering', '多语种 TTS']
         },
         {
           name: 'Fabric4.x 影像信息系统',
