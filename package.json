@@ -1,5 +1,5 @@
 {
-  "name": "menglong-build-log",
+  "name": "history-galaxy",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -11,12 +11,18 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "@react-three/postprocessing": "^3.2.2",
     "buffer": "^6.0.3",
     "gray-matter": "^4.0.3",
     "js-yaml": "3.15.2",
+    "lucide-react": "^1.70.0",
+    "postprocessing": "^6.39.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-markdown": "^10.1.0"
+    "react-markdown": "^10.1.0",
+    "three": "^0.187.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.6.0",

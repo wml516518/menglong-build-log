@@ -1,99 +1,87 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from './App';
 
-describe('App', () => {
-  const scrollIntoView = vi.fn();
-
+describe('History Galaxy app', () => {
   beforeEach(() => {
-    localStorage.clear();
     window.location.hash = '';
-    scrollIntoView.mockClear();
-    HTMLElement.prototype.scrollIntoView = scrollIntoView;
   });
 
-  it('renders the English portfolio homepage by default', () => {
+  it('opens directly as the Chinese history galaxy with seven era controls', () => {
     render(<App />);
 
-    expect(screen.getAllByText('MengLong Wang').length).toBeGreaterThan(0);
-    expect(screen.getByText('Building practical AI tools and full-stack products.')).toBeInTheDocument();
-    expect(screen.getByText('Shanghai, China')).toBeInTheDocument();
-    expect(screen.getByText('Henan Finance University')).toBeInTheDocument();
-    expect(screen.getByText('SAIC Mobility Technology Co., Ltd.')).toBeInTheDocument();
-    expect(screen.getByText('In-vehicle Intelligent Voice Interaction System')).toBeInTheDocument();
-    expect(screen.getAllByText('wml565868@gmail.com').length).toBeGreaterThan(0);
-    expect(screen.getByRole('button', { name: 'EN' })).toHaveAttribute('aria-pressed', 'true');
-    expect(screen.getByRole('button', { name: '中' })).toHaveAttribute('aria-pressed', 'false');
-    expect(screen.getByText('AI Chat Playground with model switching')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 1, name: '历史星河' })).toBeInTheDocument();
+    expect(screen.getByText('公元 618 - 1949')).toBeInTheDocument();
+    expect(within(screen.getByRole('navigation', { name: '时代导航' })).getAllByRole('button')).toHaveLength(7);
   });
 
-  it('switches to Chinese and persists the preference', async () => {
+  it('provides all thirty historical events as accessible controls', () => {
+    render(<App />);
+
+    expect(screen.getAllByRole('button', { name: /查看历史事件/ })).toHaveLength(30);
+    expect(screen.getByRole('button', { name: '查看历史事件：627年 贞观之治' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: '查看历史事件：1949年 中华人民共和国成立' })).toBeInTheDocument();
+  });
+
+  it('opens a story with people and closes it', async () => {
     const user = userEvent.setup();
     render(<App />);
 
-    await user.click(screen.getByRole('button', { name: '中' }));
+    await user.click(screen.getByRole('button', { name: '查看历史事件：1840年 鸦片战争' }));
 
-    expect(screen.getByText('构建实用的 AI 工具和全栈产品。')).toBeInTheDocument();
-    expect(screen.getByText('中国上海')).toBeInTheDocument();
-    expect(screen.getByText('河南财政金融学院')).toBeInTheDocument();
-    expect(screen.getByText('上汽海外出行科技有限公司')).toBeInTheDocument();
-    expect(screen.getByText('车机智能语音交互系统（语音 2.0 / 3.0）')).toBeInTheDocument();
-    expect(localStorage.getItem('portfolio-language')).toBe('zh');
+    const dialog = screen.getByRole('dialog', { name: '鸦片战争' });
+    expect(within(dialog).getByText('林则徐')).toBeInTheDocument();
+    expect(within(dialog).getByText(/南京条约/)).toBeInTheDocument();
+
+    await user.click(within(dialog).getByRole('button', { name: '关闭故事' }));
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
   });
 
-  it('opens the complete build log index from the homepage', async () => {
+  it('moves through events with keyboard controls and closes on Escape', async () => {
     const user = userEvent.setup();
     render(<App />);
 
-    await user.click(screen.getByRole('link', { name: 'All posts' }));
+    await user.click(screen.getByRole('button', { name: '查看历史事件：1840年 鸦片战争' }));
+    await user.keyboard('{ArrowRight}');
 
-    expect(screen.getByRole('heading', { level: 1, name: 'Build Log' })).toBeInTheDocument();
-    expect(window.location.hash).toBe('#/build-log');
-    expect(screen.getByRole('link', { name: 'AI Chat Playground with model switching' })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'KnowledgeOps RAG document Q&A' })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Portfolio homepage and public build log' })).toBeInTheDocument();
+    expect(screen.getByRole('dialog', { name: '太平天国' })).toBeInTheDocument();
+    await user.keyboard('{Escape}');
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
   });
 
-  it('renders a Markdown article from a direct link', () => {
-    window.location.hash = '#/build-log/ai-chat-playground';
-    render(<App />);
-
-    expect(
-      screen.getByRole('heading', { level: 1, name: 'AI Chat Playground with model switching' })
-    ).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 2, name: 'Product direction' })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Back to all posts' })).toBeInTheDocument();
-  });
-
-  it('returns to and scrolls to homepage sections from an article', async () => {
+  it('selects an era lead event from the dynasty navigation', async () => {
     const user = userEvent.setup();
-    window.location.hash = '#/build-log/ai-chat-playground';
     render(<App />);
 
-    await user.click(screen.getByRole('link', { name: 'Projects' }));
+    await user.click(within(screen.getByRole('navigation', { name: '时代导航' })).getByRole('button', { name: '宋' }));
 
-    expect(await screen.findByRole('heading', { level: 2, name: 'Projects' })).toBeInTheDocument();
-    await waitFor(() => expect(scrollIntoView).toHaveBeenCalled());
-    expect(window.location.hash).toBe('#projects');
+    const dialog = screen.getByRole('dialog', { name: '陈桥兵变' });
+    expect(dialog).toBeInTheDocument();
+    expect(within(dialog).getByLabelText('960年')).toBeInTheDocument();
   });
 
-  it('shows a localized not-found state for an unknown article', () => {
-    window.location.hash = '#/build-log/missing-article';
-    render(<App />);
-
-    expect(screen.getByRole('heading', { level: 1, name: 'Article not found' })).toBeInTheDocument();
-  });
-
-  it('keeps the current article when switching language', async () => {
+  it('keeps every era navigation button operational', async () => {
     const user = userEvent.setup();
-    window.location.hash = '#/build-log/portfolio-homepage';
     render(<App />);
+    const navigation = screen.getByRole('navigation', { name: '时代导航' });
 
-    await user.click(screen.getByRole('button', { name: '中' }));
+    for (const era of ['唐', '五代', '宋', '元', '明', '清', '近代']) {
+      const eraButton = within(navigation).getByRole('button', { name: era });
+      await user.click(eraButton);
+      expect(screen.getByRole('dialog')).toBeInTheDocument();
+      expect(eraButton).toHaveAttribute('aria-pressed', 'true');
+    }
+  });
 
-    expect(screen.getByRole('heading', { level: 1, name: '个人主页和公开构建日志' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 2, name: '为什么要做这个网站' })).toBeInTheDocument();
-    expect(screen.getByRole('list', { name: '标签' })).toBeInTheDocument();
-    expect(window.location.hash).toBe('#/build-log/portfolio-homepage');
+  it('opens a focused event with Enter and exposes the 2D fallback list', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    const eventButton = screen.getByRole('button', { name: '查看历史事件：1919年 五四运动' });
+
+    eventButton.focus();
+    await user.keyboard('{Enter}');
+
+    expect(screen.getByRole('dialog', { name: '五四运动' })).toHaveFocus();
+    expect(screen.getByLabelText('历史事件列表')).toHaveClass('is-fallback');
   });
 });
