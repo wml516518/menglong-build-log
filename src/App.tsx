@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
+import { applyRouteMetadata } from './metadata';
 import { parseHash } from './routes';
 import { PortfolioApp } from './PortfolioApp';
 
@@ -12,6 +13,12 @@ export default function App() {
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
+
+  useEffect(() => {
+    applyRouteMetadata(route);
+    document.body.classList.toggle('history-route', route.view === 'history-galaxy');
+    return () => document.body.classList.remove('history-route');
+  }, [route]);
 
   if (route.view === 'history-galaxy') {
     return (

@@ -1,15 +1,27 @@
-import { render, screen, waitFor, within } from '@testing-library/react';
+import { cleanup, render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from './App';
 
 describe('App', () => {
   const scrollIntoView = vi.fn();
+  let originalHead: string;
+  let originalBodyClass: string;
 
   beforeEach(() => {
+    originalHead = document.head.innerHTML;
+    originalBodyClass = document.body.className;
+    document.head.innerHTML = '<meta name="description" content=""><meta name="theme-color" content="">';
+    document.body.classList.remove('history-route');
     localStorage.clear();
     window.location.hash = '';
     scrollIntoView.mockClear();
     HTMLElement.prototype.scrollIntoView = scrollIntoView;
+  });
+
+  afterEach(() => {
+    cleanup();
+    document.head.innerHTML = originalHead;
+    document.body.className = originalBodyClass;
   });
 
   it('renders the English portfolio homepage by default', () => {
@@ -126,10 +138,22 @@ describe('App', () => {
     await user.click(screen.getByRole('link', { name: /Enter the galaxy/ }));
     expect(await screen.findByRole('heading', { level: 1, name: '历史星河' })).toBeInTheDocument();
     expect(window.location.hash).toBe('#/history-galaxy');
+    expect(document.body).toHaveClass('history-route');
+    expect(document.title).toBe('历史星河｜中国历史3D交互时间轴');
 
     await user.click(screen.getByRole('link', { name: '返回主页' }));
     expect(await screen.findByText('Building practical AI tools and full-stack products.')).toBeInTheDocument();
     expect(window.location.hash).toBe('#home');
+    expect(document.body).not.toHaveClass('history-route');
+    expect(document.title).toBe('MengLong Wang | Portfolio + Build Log');
+  });
+
+  it('cleans up history viewport mode on unmount', () => {
+    window.location.hash = '#/history-galaxy';
+    const { unmount } = render(<App />);
+    expect(document.body).toHaveClass('history-route');
+    unmount();
+    expect(document.body).not.toHaveClass('history-route');
   });
 
   it('opens the shareable Build Log route from the hero action', async () => {
