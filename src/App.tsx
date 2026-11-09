@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
 import { parseHash } from './routes';
+import { PortfolioApp } from './PortfolioApp';
 
 const HistoryGalaxyApp = lazy(() => import('./HistoryGalaxyApp'));
 
@@ -20,5 +21,5 @@ export default function App() {
     );
   }
 
-  return <main data-testid="portfolio-route" />;
+  return <PortfolioApp route={route} />;
 }
