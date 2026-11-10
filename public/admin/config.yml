@@ -105,8 +105,8 @@ collections:
                 widget: list
                 required: true
                 field: { label: 技术, name: item, widget: string, required: true }
-              - { label: GitHub 地址, name: githubUrl, widget: string, required: false }
-              - { label: 在线地址, name: liveUrl, widget: string, required: false }
+              - { label: GitHub 地址, name: githubUrl, widget: string, required: true }
+              - { label: 在线地址, name: liveUrl, widget: string, required: true }
           - label: 联系方式
             name: contact
             widget: list

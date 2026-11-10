@@ -17,6 +17,7 @@ interface CmsField {
   required?: boolean;
   options?: Array<{ label: string; value: string }>;
   field?: CmsField;
+  fields?: CmsField[];
 }
 
 interface CmsConfig {
@@ -133,5 +134,16 @@ describe('Decap CMS configuration', () => {
     const relatedProject = posts?.fields?.find((field) => field.name === 'relatedProject');
 
     expect(relatedProject).toMatchObject({ widget: 'string', required: true });
+  });
+
+  it('requires both project URLs needed by the site schema', () => {
+    const config = load(readFileSync('public/admin/config.yml', 'utf8')) as CmsConfig;
+    const projectFields = config.collections[0].files?.[0].fields
+      .find((field) => field.name === 'projects')?.fields;
+
+    expect(projectFields?.find((field) => field.name === 'githubUrl'))
+      .toMatchObject({ widget: 'string', required: true });
+    expect(projectFields?.find((field) => field.name === 'liveUrl'))
+      .toMatchObject({ widget: 'string', required: true });
   });
 });
