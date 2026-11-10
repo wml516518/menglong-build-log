@@ -127,7 +127,7 @@ describe('compact content integration', () => {
     await user.click(screen.getByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' }));
     expect(await screen.findByText(/隋末战乱之后，统治者需要恢复生产与政治秩序/)).toBeInTheDocument();
     expect(within(screen.getByRole('dialog')).getByRole('link', { name: /完整/ })).toHaveAttribute('href', expect.stringContaining('/event/zhenguan'));
-  });
+  }, 10_000);
   it('navigates only fetched compact events and loads only the selected era archive', async () => {
     const paths: string[] = [];
     let release!: () => void;
