@@ -37,7 +37,7 @@ The implementation must preserve the existing bilingual public site, Build Log r
 2. **Generated English is committed.** The production build does not call an external model. Commits make previews, rollbacks, diffs, and deployments deterministic.
 3. **Decap Turbo supplies authentication.** Its GitHub App is installed only for `wml516518/menglong-build-log`, and only the owner receives access to the Turbo site.
 4. **Editorial workflow protects `main`.** Decap writes a `cms/*` branch and opens a pull request instead of committing directly to `main`.
-5. **Saving is the publication action.** Because this is a single-editor site, a trusted CMS pull request is automatically translated and placed into GitHub auto-merge. No separate manual review step is required.
+5. **Saving is the publication action.** Because this is a single-editor site, collections hide Decap's direct publish control. Saving creates or updates a trusted CMS pull request, which is automatically translated and placed into GitHub auto-merge. No separate manual review step is required, and Decap cannot merge untranslated content directly.
 6. **Translation is build-time automation.** DeepSeek credentials exist only in GitHub Actions secrets and are never sent to the browser or committed.
 
 ## System architecture
@@ -201,7 +201,7 @@ Markdown is parsed into an abstract syntax tree. Only human-readable text nodes 
 
 ### 1. CMS save
 
-The owner signs in to `/admin` through Decap Turbo. Decap uses `publish_mode: editorial_workflow`, creates a branch named under `cms/`, and opens or updates a same-repository pull request.
+The owner signs in to `/admin` through Decap Turbo. Decap uses `publish_mode: editorial_workflow`, while every collection sets `publish: false` to hide direct merge controls. Saving creates a branch named under `cms/` and opens or updates a same-repository pull request; trusted automation owns publication from that point.
 
 ### 2. Trust and scope guard
 
