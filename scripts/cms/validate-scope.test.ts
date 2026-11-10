@@ -7,6 +7,13 @@ describe('CMS scope boundary', () => {
     expect(validateCmsPullRequest({ ...valid, author, changedPaths: ['public/uploads/z.png', 'content/zh/profile.json', ...valid.changedPaths, 'public/uploads/z.png'] })).toEqual({ sourcePaths: ['content/zh/posts/portfolio-update.md', 'content/zh/profile.json'], generatedPaths: [], mediaPaths: ['public/uploads/z.png'] });
   });
   it.each([{ headRepo: 'attacker/fork' }, { baseRepo: 'other/repo' }, { headRef: 'feature/foo' }, { author: 'stranger' }, { headRef: 'cms/x\nINJECT=true' }])('rejects metadata %j', patch => expect(() => validateCmsPullRequest({ ...valid, ...patch })).toThrow());
+  it.each(['avatar.png', 'photo.jpg', 'photo.jpeg', 'animation.gif', 'covers/post.webp', 'share.avif', 'PHOTO.JPG'])('allows raster upload %s', name => {
+    const path = `public/uploads/${name}`;
+    expect(validateCmsPullRequest({ ...valid, changedPaths: [path] })).toEqual({ sourcePaths: [], generatedPaths: [], mediaPaths: [path] });
+  });
+  it.each(['page.html', 'page.htm', 'image.svg', 'image.SVG', 'image.svgz', 'script.js', 'script.mjs', 'style.css', 'page.xhtml', 'data.xml', 'file.unknown', 'README', '.png', 'image.png.html', 'image.png.', 'image.png ', 'resume.pdf', 'resume.docx', 'archive.zip'])('rejects executable or unapproved upload %s', name => {
+    expect(() => validateCmsPullRequest({ ...valid, changedPaths: [`public/uploads/${name}`] })).toThrow('Unsupported CMS upload type');
+  });
   it.each(['.github/workflows/ci.yml', 'package.json', 'package-lock.json', 'public/admin/config.yml', 'scripts/translation/glossary.json', 'src/main.tsx', 'netlify.toml', '/content/zh/a.json', 'content/zh/../en/a.json', 'content//zh/a.json', './content/zh/a.json', 'content/zh/a/../../b', 'content/zh/a\\b.json', 'content/zh/a\nb.json', 'content/zh/', 'content/en/profile.json'])('rejects %s', path => expect(() => validateCmsPullRequest({ ...valid, changedPaths: [path] })).toThrow());
   it('rejects symlinks and submodules', () => {
     for (const mode of ['120000', '160000']) expect(() => validateCmsPullRequest({ ...valid, tree: [{ path: valid.changedPaths[0], mode }] })).toThrow();

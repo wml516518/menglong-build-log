@@ -3,6 +3,9 @@ import { posix, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
 export const CMS_REPOSITORY = 'wml516518/menglong-build-log';
+// CMS avatar, share and cover images need raster formats only. Documents and
+// active formats (including SVG) require a separately reviewed upload policy.
+const UPLOAD_EXTENSIONS = new Set(['.png', '.jpg', '.jpeg', '.gif', '.webp', '.avif']);
 export interface ScopeInput {
   baseRepo: string; headRepo: string; headRef: string; author: string;
   changedPaths: string[];
@@ -22,7 +25,10 @@ export function validateCmsPullRequest(input: ScopeInput) {
   for (const path of [...new Set(input.changedPaths)].sort()) {
     if (typeof path !== 'string' || /[\\\x00-\x1f\x7f]/.test(path) || posix.isAbsolute(path) || posix.normalize(path) !== path || path.split('/').some(p => !p || p === '.' || p === '..')) throw new Error('Non-normal CMS path');
     if (path.startsWith('content/zh/')) result.sourcePaths.push(path);
-    else if (path.startsWith('public/uploads/')) result.mediaPaths.push(path);
+    else if (path.startsWith('public/uploads/')) {
+      if (!UPLOAD_EXTENSIONS.has(posix.extname(path).toLowerCase())) throw new Error(`Unsupported CMS upload type: ${path}`);
+      result.mediaPaths.push(path);
+    }
     else if (path.startsWith('content/en/') && input.generatedRecheck) {
       const source = path.replace('content/en/', 'content/zh/');
       const sourceExists = input.tree?.some(e => e.path === source && e.mode === '100644');
