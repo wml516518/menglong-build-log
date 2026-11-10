@@ -1,0 +1,315 @@
+backend:
+  name: turbo-github
+  turbo_site_id: c4a4cf1f-cb20-4301-8a61-cc4ec72c45a8
+  branch: main
+
+publish_mode: editorial_workflow
+locale: zh_Hans
+media_folder: public/uploads
+public_folder: /uploads
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: '-'
+
+collections:
+  - name: site
+    label: 主页内容
+    publish: false
+    delete: false
+    files:
+      - name: site
+        label: 中文主页
+        file: content/zh/site.yml
+        fields:
+          - label: 导航
+            name: nav
+            widget: object
+            required: true
+            fields:
+              - { label: 项目, name: projects, widget: string, required: true }
+              - { label: 构建日志, name: buildLog, widget: string, required: true }
+              - { label: 简历, name: resume, widget: string, required: true }
+              - { label: 关于, name: about, widget: string, required: true }
+              - { label: 联系, name: contact, widget: string, required: true }
+          - label: 首页主视觉
+            name: profile
+            widget: object
+            required: true
+            fields:
+              - { label: 姓名, name: name, widget: string, required: true }
+              - { label: 职业定位, name: role, widget: string, required: true }
+              - { label: 眉题, name: eyebrow, widget: string, required: true }
+              - { label: 主标题, name: headline, widget: string, required: true }
+              - { label: 简介, name: intro, widget: text, required: true }
+              - { label: 主按钮, name: primaryAction, widget: string, required: true }
+              - { label: 次按钮, name: secondaryAction, widget: string, required: true }
+              - { label: 头像, name: avatar, widget: image, required: false }
+              - label: 简历下载文件
+                name: resumeDownload
+                widget: file
+                required: false
+                hint: 留空时不显示下载入口。
+          - label: 页面文案
+            name: sections
+            widget: object
+            required: true
+            fields:
+              - { label: 项目, name: projects, widget: string, required: true }
+              - { label: 构建日志, name: buildLog, widget: string, required: true }
+              - { label: 关于, name: about, widget: string, required: true }
+              - { label: 联系, name: contact, widget: string, required: true }
+              - { label: 最新构建日志, name: latestBuildLog, widget: string, required: true }
+              - { label: 全部文章, name: allPosts, widget: string, required: true }
+              - { label: 返回全部文章, name: backToPosts, widget: string, required: true }
+              - { label: 未找到文章, name: postNotFound, widget: string, required: true }
+              - { label: 阅读文章, name: readArticle, widget: string, required: true }
+              - { label: 标签, name: tags, widget: string, required: true }
+              - { label: 简历, name: resume, widget: string, required: true }
+              - { label: 教育经历, name: education, widget: string, required: true }
+              - { label: 技术栈, name: skills, widget: string, required: true }
+              - { label: 资格证书, name: certifications, widget: string, required: true }
+              - { label: 语言能力, name: languages, widget: string, required: true }
+              - { label: 工作经历, name: experience, widget: string, required: true }
+              - { label: 项目经验, name: selectedProjects, widget: string, required: true }
+          - label: 关于内容
+            name: about
+            widget: text
+            required: true
+          - label: 历史星河
+            name: historyGalaxy
+            widget: object
+            required: true
+            fields:
+              - { label: 标题, name: title, widget: string, required: true }
+              - { label: 状态, name: status, widget: string, required: true }
+              - { label: 简介, name: summary, widget: text, required: true }
+              - label: 技术栈
+                name: stack
+                widget: list
+                required: true
+                field: { label: 技术, name: item, widget: string, required: true }
+              - { label: 按钮文案, name: action, widget: string, required: true }
+              - { label: 图片说明, name: imageAlt, widget: string, required: true }
+          - label: 项目列表
+            name: projects
+            widget: list
+            required: true
+            summary: '{{fields.title}}'
+            fields:
+              - { label: 项目名称, name: title, widget: string, required: true }
+              - { label: 状态, name: status, widget: string, required: true }
+              - { label: 简介, name: summary, widget: text, required: true }
+              - label: 技术栈
+                name: stack
+                widget: list
+                required: true
+                field: { label: 技术, name: item, widget: string, required: true }
+              - { label: GitHub 地址, name: githubUrl, widget: string, required: false }
+              - { label: 在线地址, name: liveUrl, widget: string, required: false }
+          - label: 联系方式
+            name: contact
+            widget: list
+            required: true
+            summary: '{{fields.label}}'
+            fields:
+              - { label: 名称, name: label, widget: string, required: true }
+              - { label: 显示内容, name: value, widget: string, required: true }
+              - { label: 链接, name: href, widget: string, required: true }
+          - label: 首页区块顺序
+            name: homeSectionOrder
+            widget: list
+            required: true
+            hint: 拖动条目即可调整首页区块顺序，每个区块保留一次。
+            field:
+              label: 区块
+              name: section
+              widget: select
+              required: true
+              options:
+                - { label: 构建日志, value: buildLog }
+                - { label: 项目, value: projects }
+                - { label: 简历, value: resume }
+                - { label: 工作经历, value: experience }
+                - { label: 项目经验, value: resumeProjects }
+                - { label: 关于, value: about }
+                - { label: 联系, value: contact }
+          - label: 搜索与分享
+            name: seo
+            widget: object
+            required: true
+            fields:
+              - { label: 首页标题, name: homeTitle, widget: string, required: true }
+              - { label: 构建日志标题, name: buildLogTitle, widget: string, required: true }
+              - { label: 页面描述, name: description, widget: text, required: true }
+              - { label: 分享图片, name: socialImage, widget: image, required: false }
+
+  - name: resume
+    label: 简历
+    publish: false
+    delete: false
+    files:
+      - name: resume
+        label: 中文简历
+        file: content/zh/resume.yml
+        fields:
+          - label: 基本信息
+            name: basics
+            widget: object
+            required: true
+            fields:
+              - label: 姓名
+                name: name
+                widget: object
+                required: true
+                fields:
+                  - { label: 标签, name: label, widget: string, required: true }
+                  - { label: 内容, name: value, widget: string, required: true }
+              - label: 性别
+                name: gender
+                widget: object
+                required: true
+                fields:
+                  - { label: 标签, name: label, widget: string, required: true }
+                  - { label: 内容, name: value, widget: string, required: true }
+              - label: 出生日期
+                name: birthDate
+                widget: object
+                required: true
+                fields:
+                  - { label: 标签, name: label, widget: string, required: true }
+                  - { label: 内容, name: value, widget: string, required: true }
+              - label: 所在地
+                name: location
+                widget: object
+                required: true
+                fields:
+                  - { label: 标签, name: label, widget: string, required: true }
+                  - { label: 内容, name: value, widget: string, required: true }
+              - label: 邮箱
+                name: email
+                widget: object
+                required: true
+                fields:
+                  - { label: 标签, name: label, widget: string, required: true }
+                  - { label: 内容, name: value, widget: string, required: true }
+              - label: GitHub
+                name: github
+                widget: object
+                required: true
+                fields:
+                  - { label: 标签, name: label, widget: string, required: true }
+                  - { label: 内容, name: value, widget: string, required: true }
+              - label: 职业定位
+                name: role
+                widget: object
+                required: true
+                fields:
+                  - { label: 标签, name: label, widget: string, required: true }
+                  - { label: 内容, name: value, widget: string, required: true }
+          - { label: 个人总结, name: summary, widget: text, required: true }
+          - label: 教育经历
+            name: education
+            widget: list
+            required: true
+            summary: '{{fields.school}}'
+            fields:
+              - { label: 学校, name: school, widget: string, required: true }
+              - { label: 详情, name: detail, widget: text, required: true }
+          - label: 工作经历
+            name: experience
+            widget: list
+            required: true
+            summary: '{{fields.company}} · {{fields.role}}'
+            fields:
+              - { label: 公司, name: company, widget: string, required: true }
+              - { label: 职位, name: role, widget: string, required: true }
+              - { label: 时间, name: period, widget: string, required: true }
+              - label: 工作亮点
+                name: highlights
+                widget: list
+                required: true
+                field: { label: 亮点, name: item, widget: text, required: true }
+          - label: 项目经验
+            name: projects
+            widget: list
+            required: true
+            summary: '{{fields.name}}'
+            fields:
+              - { label: 项目名称, name: name, widget: string, required: true }
+              - { label: 时间, name: period, widget: string, required: true }
+              - { label: 项目描述, name: description, widget: text, required: true }
+              - label: 项目亮点
+                name: highlights
+                widget: list
+                required: true
+                field: { label: 亮点, name: item, widget: text, required: true }
+              - label: 技术栈
+                name: stack
+                widget: list
+                required: true
+                field: { label: 技术, name: item, widget: string, required: true }
+          - label: 技术能力
+            name: skills
+            widget: list
+            required: true
+            summary: '{{fields.group}}'
+            fields:
+              - { label: 分类, name: group, widget: string, required: true }
+              - label: 技能
+                name: items
+                widget: list
+                required: true
+                field: { label: 技能, name: item, widget: string, required: true }
+          - label: 资格证书
+            name: certifications
+            widget: list
+            required: true
+            field: { label: 证书, name: item, widget: string, required: true }
+          - label: 语言能力
+            name: languages
+            widget: list
+            required: true
+            field: { label: 语言, name: item, widget: string, required: true }
+
+  - name: posts
+    label: 构建日志
+    label_singular: 文章
+    publish: false
+    folder: content/zh/posts
+    create: true
+    format: frontmatter
+    extension: md
+    slug: '{{fields.slug}}'
+    summary: '{{fields.title}} · {{fields.date}}'
+    fields:
+      - label: 文件名标识
+        name: slug
+        widget: string
+        required: true
+        pattern:
+          - '^[a-z0-9]+(?:-[a-z0-9]+)*$'
+          - 仅使用小写字母、数字和连字符。
+      - label: 发布日期
+        name: date
+        widget: datetime
+        required: true
+        date_format: YYYY-MM-DD
+        time_format: false
+        format: YYYY-MM-DD
+      - label: 草稿
+        name: draft
+        widget: boolean
+        required: true
+        default: true
+        hint: 草稿不会显示在公开页面。
+      - { label: 标题, name: title, widget: string, required: true }
+      - { label: 摘要, name: summary, widget: text, required: true }
+      - label: 标签
+        name: tags
+        widget: list
+        required: true
+        field: { label: 标签, name: item, widget: string, required: true }
+      - { label: 关联项目, name: relatedProject, widget: string, required: false }
+      - { label: 封面图片, name: coverImage, widget: image, required: false }
+      - { label: 正文, name: body, widget: markdown, required: true }
