@@ -5,7 +5,21 @@ import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { afterEach, expect, it } from 'vitest';
 const roots: string[] = [];
+const isMergeCall = (call: { name: string; args: string[] }) => call.name === 'gh' && (
+  (call.args[0] === 'pr' && call.args[1] === 'merge') ||
+  (call.args[0] === 'api' && call.args.some((arg, index) => (arg === '--method' || arg === '-X') && call.args[index + 1] === 'PUT') && call.args.some(arg => /^\/?repos\/[^/]+\/[^/]+\/pulls\/\d+\/merge$/.test(arg)))
+);
 afterEach(() => roots.splice(0).forEach(root => rmSync(root, { recursive: true, force: true })));
+it.each([
+  ['gh', ['api', '--method', 'PUT', 'repos/owner/repo/pulls/12/merge'], true],
+  ['gh', ['api', '/repos/owner/repo/pulls/12/merge', '-X', 'PUT'], true],
+  ['gh', ['pr', 'merge', '12', '--auto'], true],
+  ['gh', ['api', '--method', 'GET', 'repos/owner/repo/pulls/12/merge'], false],
+  ['gh', ['api', '--method', 'PUT', 'repos/owner/repo/pulls/12'], false],
+  ['git', ['commit', '-m', 'merge'], false],
+] as const)('recognizes merge calls: %s %j', (name, args, expected) => {
+  expect(isMergeCall({ name, args: [...args] })).toBe(expected);
+});
 function fixture(changed: string, conclusion = 'success', moved = false, mergeResult: boolean | number = true) {
   const root = realpathSync(mkdtempSync(join(tmpdir(), 'cms-cli-'))); roots.push(root);
   const trusted = join(root, 'trusted'); const bin = join(root, 'bin');
@@ -30,23 +44,23 @@ it('uses trusted absolute CLIs against data and stages/pushes only English', () 
   expect(clis[0].args.slice(3)).toEqual(['--root', join(f.root, 'cms-data'), '--changed-file', 'content/zh/site.yml']);
   expect(calls.find(c => c.args.includes('add'))?.args.slice(-4)).toEqual(['add', '--all', '--', 'content/en']);
   expect(calls.find(c => c.args.includes('push'))?.args.slice(-1)).toEqual(['HEAD:refs/heads/cms/a']);
-  expect(calls.some(c => c.args.includes('merge'))).toBe(false);
+  expect(calls.some(isMergeCall)).toBe(false);
   expect(JSON.parse(readFileSync(join(f.root, 'provenance.json'), 'utf8'))).toEqual({ repo: 'wml516518/menglong-build-log', pr: 12, sha: f.sha });
 });
 it('immediately merges unchanged green output with an atomic exact SHA condition and no persistent authorization', () => {
   const f = fixture(''); f.execute();
-  expect(f.calls().find(c => c.args.includes('PUT'))?.args).toEqual(['api', '--method', 'PUT', 'repos/wml516518/menglong-build-log/pulls/12/merge', '-f', `sha=${f.sha}`, '-f', 'merge_method=squash']);
+  expect(f.calls().find(isMergeCall)?.args).toEqual(['api', '--method', 'PUT', 'repos/wml516518/menglong-build-log/pulls/12/merge', '-f', `sha=${f.sha}`, '-f', 'merge_method=squash']);
   expect(f.calls().some(c => c.args.includes('--auto'))).toBe(false);
 });
 it.each([false, 409, 405])('fails when merge boundary rejects the exact SHA or protections (%s)', result => {
   const f = fixture('', 'success', false, result); expect(f.execute).toThrow();
-  expect(f.calls().filter(c => c.args.includes('PUT'))).toHaveLength(1);
+  expect(f.calls().filter(isMergeCall)).toHaveLength(1);
   expect(f.calls().some(c => c.args.includes('--auto'))).toBe(false);
   expect(readFileSync(join(f.root, 'outputs'), 'utf8')).toBe('');
 });
 it.each([[' M src/evil.ts\0', 'success', false], ['', 'failure', false], [' M content/en/site.yml\0', 'success', true]])('fails closed without a push or merge (%s, %s, moved=%s)', (changed, conclusion, moved) => {
   const f = fixture(changed, conclusion, moved); expect(f.execute).toThrow();
-  expect(f.calls().some(c => c.args.includes('push') || c.args.includes('merge'))).toBe(false);
+  expect(f.calls().some(c => c.args.includes('push') || isMergeCall(c))).toBe(false);
 });
 it.each(['wrong-payload', 'untrusted-run', 'valid'])('checks real prepare flow artifact provenance before producing guarded state: %s', variant => {
   const f = fixture(''); rmSync(join(f.root, 'cms-state.json'));
@@ -73,6 +87,7 @@ it.each(['wrong-payload', 'untrusted-run', 'valid'])('checks real prepare flow a
   } else {
     expect(prepare).toThrow(); expect(existsSync(join(f.root, 'cms-state.json'))).toBe(false);
     expect(readFileSync(join(f.root, 'outputs'), 'utf8')).toBe('');
+    expect(f.calls().some(isMergeCall)).toBe(false);
   }
   if (variant === 'untrusted-run') expect(f.calls().some(c => c.args.some(a => a.endsWith('/zip')))).toBe(false);
 });
