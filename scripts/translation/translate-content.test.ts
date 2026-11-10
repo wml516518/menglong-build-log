@@ -54,6 +54,30 @@ it('reuses reviewed baseline translations and sends only changed source segments
   expect(output.historyGalaxy.action).toBe('Reviewed historyGalaxy.action');
 });
 
+it('reconciles current-stamped drift against the trusted baseline and retranslates only the changed segment', async () => {
+  const baseline = await fixture();
+  baseline.translator.translate.mockImplementationOnce(async segments => new Map(segments.map(segment => [segment.id, `Reviewed ${segment.id}`])));
+  await translateChangedContent(baseline);
+  const root = await mkdtemp(join(tmpdir(), 'translation-current-drifted-'));
+  await cp(join(baseline.root, 'content'), join(root, 'content'), { recursive: true });
+  const changed = structuredClone(validSiteFixture);
+  changed.about = '只修改这一段中文';
+  await writeFile(join(root, 'content/zh/site.yml'), yaml.dump(changed));
+  const driftTranslator = { translate: vi.fn(async (segments: { id: string; text: string }[]) => new Map(segments.map(segment => [segment.id, `Drifted ${segment.id}`]))) };
+  await translateChangedContent({ root, changedPaths: baseline.changedPaths, policy: baseline.policy, translator: driftTranslator });
+  const repairTranslator = { translate: vi.fn(async (segments: { id: string; text: string }[]) => new Map(segments.map(segment => [segment.id, `Repaired ${segment.text}`]))) };
+
+  const result = await translateChangedContent({ root, baselineRoot: baseline.root, changedPaths: baseline.changedPaths, policy: baseline.policy, translator: repairTranslator });
+
+  expect(result.written).toEqual(['content/en/site.yml']);
+  expect(result.skipped).toEqual([]);
+  expect(repairTranslator.translate.mock.calls[0][0].map(segment => segment.id)).toEqual(['about']);
+  const output = yaml.load(await readFile(join(root, 'content/en/site.yml'), 'utf8')) as typeof validSiteFixture;
+  expect(output.about).toBe('Repaired 只修改这一段中文');
+  expect(output.profile.secondaryAction).toBe('Reviewed profile.secondaryAction');
+  expect(output.historyGalaxy.action).toBe('Reviewed historyGalaxy.action');
+});
+
 it('rejects a stale baseline instead of reusing unverified translations', async () => {
   const baseline = await fixture();
   await translateChangedContent(baseline);

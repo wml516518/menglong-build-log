@@ -28,10 +28,13 @@ export async function translateChangedContent(options: {
     const source = await readContent(root, sourcePath);
     const stamp = { sourceHash: computeSourceHash(source.value, policy.policyVersion), policyVersion: policy.policyVersion };
     const target = await exists(destination) ? parseContent(targetPath, await readFile(destination, 'utf8')) : undefined;
+    let currentTranslations: Map<string, string> | undefined;
     if (!options.adoptExisting && target?.metadata?.sourceHash === stamp.sourceHash && target.metadata.policyVersion === stamp.policyVersion) {
-      assertParity(sourcePath, source, target);
-      result.skipped.push(targetPath);
-      continue;
+      currentTranslations = assertParity(sourcePath, source, target);
+      if (!options.baselineRoot) {
+        result.skipped.push(targetPath);
+        continue;
+      }
     }
     let content: string;
     if (options.adoptExisting) {
@@ -60,6 +63,11 @@ export async function translateChangedContent(options: {
             if (baselineSegments.get(segment.id) === segment.text) reused.set(segment.id, baselineTranslations.get(segment.id)!);
           }
         }
+      }
+      const existingTranslations = currentTranslations;
+      if (existingTranslations && [...reused].every(([id, translation]) => existingTranslations.get(id) === translation)) {
+        result.skipped.push(targetPath);
+        continue;
       }
       const changedSegments = source.segments.filter(segment => !reused.has(segment.id));
       const translated = changedSegments.length
