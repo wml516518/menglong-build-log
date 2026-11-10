@@ -1,18 +1,20 @@
 import { createContext, useContext, useEffect, useMemo, useSyncExternalStore, type ReactNode } from 'react';
 import { historyContentLoader, type HistoryContentLoader, type HistoryContentError, type HistoryManifest, type HistoryEraBundle } from './loader';
-import type { CompactHistoryEventIndex, PersonIndex, HistoryEventArchive, PersonArchive } from './schema';
+import type { CompactHistoryEventIndex, PersonIndex, PlaceIndex, ThemeIndex, HistoryEventArchive, PersonArchive } from './schema';
 
 interface ContentState {
   manifest: HistoryManifest | null;
   events: CompactHistoryEventIndex[];
   people: PersonIndex[];
+  places: PlaceIndex[];
+  themes: ThemeIndex[];
   loading: boolean;
   error: HistoryContentError | null;
   loadingEras: string[];
   eraErrors: Record<string, HistoryContentError | undefined>;
 }
 function createContentStore(loader: HistoryContentLoader) {
-  let state: ContentState = { manifest: null, events: [], people: [], loading: true, error: null, loadingEras: [], eraErrors: {} };
+  let state: ContentState = { manifest: null, events: [], people: [], places: [], themes: [], loading: true, error: null, loadingEras: [], eraErrors: {} };
   const listeners = new Set<() => void>();
   const eras = new Map<string, Promise<HistoryEraBundle>>();
   let initialization: Promise<void> | undefined;
@@ -25,12 +27,14 @@ function createContentStore(loader: HistoryContentLoader) {
     update({ loading: true, error: null });
     initialization = (async () => {
       // Wait for every request, including successes, before exposing a settled state.
-      const [manifest, events, people] = await Promise.allSettled([loader.loadHistoryManifest(), loader.loadEventIndex(), loader.loadPeopleIndex()]);
-      const failure = [manifest, events, people].find(result => result.status === 'rejected');
+      const [manifest, events, people, places, themes] = await Promise.allSettled([loader.loadHistoryManifest(), loader.loadEventIndex(), loader.loadPeopleIndex(), loader.loadPlaceIndex(), loader.loadThemeIndex()]);
+      const failure = [manifest, events, people, places, themes].find(result => result.status === 'rejected');
       update({
         manifest: manifest.status === 'fulfilled' ? manifest.value : null,
         events: events.status === 'fulfilled' ? events.value : state.events,
         people: people.status === 'fulfilled' ? people.value : state.people,
+        places: places.status === 'fulfilled' ? places.value : state.places,
+        themes: themes.status === 'fulfilled' ? themes.value : state.themes,
         loading: false,
         error: failure?.status === 'rejected' ? failure.reason as HistoryContentError : null
       });

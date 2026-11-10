@@ -41,6 +41,7 @@ interface CameraRigProps {
   selectedEvent: HistoryEvent | null;
   selectedPosition?: readonly [number, number, number];
   resetSignal: number;
+  selectionSignal?: number;
   reducedMotion: boolean;
   onTravelYear: (year: number) => void;
   controlsEnabled: boolean;
@@ -48,7 +49,7 @@ interface CameraRigProps {
   onDistanceChange?: (distance: number) => void;
 }
 
-export function CameraRig({ selectedEvent, selectedPosition, resetSignal, reducedMotion, onTravelYear, controlsEnabled, focusRequest, onDistanceChange }: CameraRigProps) {
+export function CameraRig({ selectedEvent, selectedPosition, resetSignal, selectionSignal, reducedMotion, onTravelYear, controlsEnabled, focusRequest, onDistanceChange }: CameraRigProps) {
   const camera = useThree((state) => state.camera);
   const gl = useThree((state) => state.gl);
   const controls = useRef<OrbitControlsImpl>(null);
@@ -63,7 +64,7 @@ export function CameraRig({ selectedEvent, selectedPosition, resetSignal, reduce
     focusAnimation.current = undefined;
     resetRequested.current = false;
     travelTarget.current.fromArray(selectedPosition ?? getEventPosition(selectedEvent));
-  }, [selectedEvent, selectedPosition]);
+  }, [selectedEvent, selectedPosition, selectionSignal]);
 
   useEffect(() => {
     if (resetSignal === 0) return;

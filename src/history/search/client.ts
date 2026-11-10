@@ -11,6 +11,7 @@ export class HistorySearchClient {
   private disposed = false;
   private requestId = 0;
   private pending?: { requestId: number; resolve: (results: SearchResult[]) => void; reject: (error: Error) => void };
+  get isFallback(): boolean { return !this.worker; }
 
   constructor({ indexes, workerFactory = browserWorkerFactory }: HistorySearchClientOptions) {
     this.documents = buildSearchDocuments(indexes);

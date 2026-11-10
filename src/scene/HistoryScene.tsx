@@ -26,9 +26,13 @@ interface HistorySceneProps {
   onSelect: (event: HistoryEvent) => void;
   onHover: (id: string | null) => void;
   onTravelYear: (year: number) => void;
+  searchTargetIds?: readonly string[];
+  eventOpacities?: ReadonlyMap<string, number>;
+  onViewportChange?: (ids: ReadonlySet<string>) => void;
 }
 
-export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, selectionSignal, reducedMotion, onSelect, onHover, onTravelYear }: HistorySceneProps) {
+const noSearchTargets: readonly string[] = [];
+export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, selectionSignal, reducedMotion, onSelect, onHover, onTravelYear, searchTargetIds = noSearchTargets, eventOpacities, onViewportChange }: HistorySceneProps) {
   const [dragOffsets, setDragOffsets] = useState<Record<string, readonly [number, number]>>({});
   const [isDraggingStar, setIsDraggingStar] = useState(false);
   const [activeDrag, setActiveDrag] = useState<{ event: HistoryEvent; start: StarPointerStart } | null>(null);
@@ -45,7 +49,7 @@ export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, s
     return { events, positions, result, singles };
   }), [events, positions]);
   const promotedIds = useMemo(() => [...new Set([selectedEvent?.id, hoveredId, activeDrag?.event.id].filter((id): id is string => Boolean(id)))], [selectedEvent?.id, hoveredId, activeDrag?.event.id]);
-  const protectedIds = useMemo(() => [...new Set([...selectProtectedEventIds(events, selectedEvent?.id, [], level), ...promotedIds])].sort(), [events, selectedEvent?.id, level, promotedIds]);
+  const protectedIds = useMemo(() => [...new Set([...selectProtectedEventIds(events, selectedEvent?.id, searchTargetIds, level), ...promotedIds])].sort(), [events, selectedEvent?.id, searchTargetIds, level, promotedIds]);
   const promotedEvents = useMemo(() => {
     const byId = new Map(events.map(event => [event.id, event]));
     if (selectedEvent) byId.set(selectedEvent.id, selectedEvent);
@@ -72,9 +76,9 @@ export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, s
       <directionalLight position={[22, -4, -12]} color="#4f8391" intensity={1.1} />
       <StarField />
       <TimelineRail />
-      <SceneProjection events={events} positions={positions} level={level} protectedIds={protectedIds} onResult={onResult} />
-      <InstancedEventField events={visibleSingles} excludedIds={promotedIds} dragOffsets={dragOffsets} reducedMotion={reducedMotion} onHover={onHover} onPromote={promote} />
-      <ClusterField clusters={clusters} positions={positions} focusBounds={focusBounds} />
+      <SceneProjection events={events} positions={positions} level={level} protectedIds={protectedIds} onResult={onResult} onViewportChange={onViewportChange} />
+      <InstancedEventField events={visibleSingles} excludedIds={promotedIds} dragOffsets={dragOffsets} reducedMotion={reducedMotion} onHover={onHover} onPromote={promote} eventOpacities={eventOpacities} />
+      <ClusterField clusters={clusters} positions={positions} focusBounds={focusBounds} eventOpacities={eventOpacities} />
       {promotedEvents.map((event) => (
         <EventStar
           key={event.id}
@@ -83,6 +87,7 @@ export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, s
           hovered={hoveredId === event.id}
           dragOffset={dragOffsets[event.id] ?? [0, 0]}
           reducedMotion={reducedMotion}
+          opacity={eventOpacities?.get(event.id) ?? 1}
           onSelect={onSelect}
           onHover={onHover}
           onDragOffset={updateDragOffset}
@@ -103,6 +108,7 @@ export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, s
         selectedEvent={selectedEvent}
         selectedPosition={selectedEvent ? positions.get(selectedEvent.id) : undefined}
         resetSignal={resetSignal}
+        selectionSignal={selectionSignal}
         reducedMotion={reducedMotion}
         onTravelYear={onTravelYear}
         controlsEnabled={!isDraggingStar}

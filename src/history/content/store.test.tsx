@@ -24,6 +24,8 @@ describe('history content provider', () => {
     expect(result.current.error).toBeNull();
     expect(result.current.events.find(event => event.id === 'zhenguan')?.title).toBe('贞观之治');
     expect(result.current.people.find(person => person.id === 'person-li-shimin')?.name).toBe('唐太宗');
+    expect(result.current.places).toEqual([]);
+    expect(result.current.themes).toEqual([]);
     await act(async () => {
       const event = await result.current.getEventArchive('zhenguan');
       expect(event?.background).toBeTruthy();

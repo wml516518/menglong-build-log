@@ -3,6 +3,7 @@ import { HistoryContentProvider, useHistoryContent } from './history/content/sto
 import './history-galaxy.css';
 import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react';
 import { EventNavigator } from './components/EventNavigator';
+import { HistoryExplorer } from './components/HistoryExplorer';
 import { HistoryHud } from './components/HistoryHud';
 import { StoryPanel } from './components/StoryPanel';
 import { dynasties } from './history/dynasties';
@@ -13,6 +14,7 @@ import { getDynastyForYear } from './history/space';
 import type { DynastyId, HistoryEvent } from './history/types';
 import { useHistoryNavigation } from './history/useHistoryNavigation';
 import { useReducedMotion } from './history/useReducedMotion';
+import { useHistoryExplorer } from './history/explorer/useHistoryExplorer';
 import { SceneFallback } from './scene/SceneFallback';
 import { SceneErrorBoundary } from './scene/SceneErrorBoundary';
 
@@ -51,6 +53,9 @@ export function HistoryGalaxyExperience() {
   const webglSupported = useMemo(hasWebGLSupport, []);
   const reducedMotion = useReducedMotion();
   const showFallback = !webglSupported || sceneFailed;
+  const searchIndexes = useMemo(() => ({ events: content.events, people: content.people, places: content.places, themes: content.themes }), [content.events, content.people, content.places, content.themes]);
+  const [viewportIds, setViewportIds] = useState<ReadonlySet<string>>(() => new Set());
+  const explorer = useHistoryExplorer(searchIndexes, viewportIds, !content.loading);
   const handleTravelYear = useCallback((year: number) => {
     setCurrentYear(year);
     setActiveDynastyId(getDynastyForYear(year).id);
@@ -81,6 +86,9 @@ export function HistoryGalaxyExperience() {
                 onSelect={navigation.selectEvent}
                 onHover={navigation.setHoveredId}
                 onTravelYear={handleTravelYear}
+                searchTargetIds={explorer.searchTargetIds}
+                eventOpacities={explorer.eventOpacities}
+                onViewportChange={setViewportIds}
               />
             </Suspense>
           </SceneErrorBoundary>
@@ -96,7 +104,8 @@ export function HistoryGalaxyExperience() {
 
       {content.loading ? <p role="status">正在加载历史索引…</p> : null}
       {content.error ? <p role="alert">历史内容加载失败 <button type="button" onClick={() => { void content.retry().catch(() => {}); }}>重试历史内容</button></p> : null}
-      <EventNavigator events={historyEvents} selectedEvent={navigation.selectedEvent} onSelect={navigation.selectEvent} isFallback={showFallback} />
+      <HistoryExplorer explorer={explorer} indexes={searchIndexes} eras={content.manifest?.eras ?? []} selectedId={navigation.selectedEvent?.id ?? null} onSelect={navigation.selectEvent} onOpen={navigation.closeStory} viewportAvailable={!showFallback} />
+      <EventNavigator events={historyEvents} selectedEvent={navigation.selectedEvent} onSelect={navigation.selectEvent} isFallback={showFallback} eventOpacities={explorer.eventOpacities} integratedExplorer />
 
       <div className="timeline-readout" aria-live="polite">
         <span>{navigation.selectedEvent

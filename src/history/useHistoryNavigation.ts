@@ -52,6 +52,7 @@ export function useHistoryNavigation(
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
+      if (event.defaultPrevented || (event.target instanceof Element && event.target.closest('input, textarea, select, [contenteditable="true"], .history-explorer'))) return;
       if (event.key === 'ArrowRight') {
         event.preventDefault();
         moveSelection(1);

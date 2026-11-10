@@ -44,12 +44,26 @@ function setup(reducedMotion = true) {
   harness.state = { camera, gl: { domElement: canvas } };
   const controls = new OrbitControls(camera, canvas);
   const onTravelYear = vi.fn(), onDistanceChange = vi.fn();
-  const { result, rerender, unmount } = renderHook(({ focusRequest, selectedEvent = null, selectedPosition, resetSignal = 0 }: { focusRequest?: ClusterFocusRequest; selectedEvent?: HistoryEvent | null; selectedPosition?: readonly [number, number, number]; resetSignal?: number }) => CameraRig({ selectedEvent, selectedPosition, resetSignal, reducedMotion, controlsEnabled: true, onTravelYear, onDistanceChange, focusRequest }), { initialProps: {} });
+  const { result, rerender, unmount } = renderHook(({ focusRequest, selectedEvent = null, selectedPosition, resetSignal = 0, selectionSignal = 0 }: { focusRequest?: ClusterFocusRequest; selectedEvent?: HistoryEvent | null; selectedPosition?: readonly [number, number, number]; resetSignal?: number; selectionSignal?: number }) => CameraRig({ selectedEvent, selectedPosition, resetSignal, selectionSignal, reducedMotion, controlsEnabled: true, onTravelYear, onDistanceChange, focusRequest }), { initialProps: {} });
   result.current.props.ref.current = controls;
   for (const key of ['enableZoom', 'enablePan', 'minDistance', 'maxDistance', 'touches', 'minPolarAngle', 'maxPolarAngle']) if (result.current.props[key] !== undefined) (controls as any)[key] = result.current.props[key];
   controls.addEventListener('start', () => result.current.props.onStart());
   return { camera, canvas, controls, onTravelYear, onDistanceChange, result, rerender, frame: () => act(() => harness.frame({}, 1 / 60)), close: () => { unmount(); controls.dispose(); canvas.remove(); } };
 }
+
+it('refocuses the same search result after timeline travel using its renewed selection signal', () => {
+  const f = setup();
+  const selectedEvent = historyEvents[0];
+  f.rerender({ selectedEvent, selectionSignal: 1 }); f.frame();
+  const target = new THREE.Vector3(...getEventPosition(selectedEvent));
+  expect(f.controls.target.distanceTo(target)).toBeLessThan(0.001);
+  f.canvas.dispatchEvent(new WheelEvent('wheel', { deltaY: 200, shiftKey: true, cancelable: true }));
+  f.frame();
+  expect(f.controls.target.distanceTo(target)).toBeGreaterThan(1);
+  f.rerender({ selectedEvent, selectionSignal: 2 }); f.frame();
+  expect(f.controls.target.distanceTo(target)).toBeLessThan(0.001);
+  f.close();
+});
 
 it('lets OrbitControls dolly on vertical wheel and intercepts only timeline gestures before dolly', () => {
   const f = setup();

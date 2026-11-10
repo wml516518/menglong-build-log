@@ -23,6 +23,15 @@ describe('history content loader', () => {
     expect(await loader.loadPeopleIndex()).toBe(people);
     expect(await loader.loadHistoryManifest()).toBe(manifest);
   });
+  it('validates and caches place and theme compact indexes without fetching archives', async () => {
+    const loader = createHistoryContentLoader({ baseUrl: 'https://history.test/content/', fetchImpl: once() });
+    expect(await loader.loadPlaceIndex()).toEqual([]);
+    expect(await loader.loadThemeIndex()).toEqual([]);
+    expect(await loader.loadPlaceIndex()).toBe(await loader.loadPlaceIndex());
+    const invalid = createHistoryContentLoader({ fetchImpl: async input => new Response(JSON.stringify(String(input).endsWith('manifest.json') ? fixture('manifest.json') : [{ id: 'invalid' }])) });
+    await expect(invalid.loadPlaceIndex()).rejects.toMatchObject({ kind: 'validation' });
+    await expect(invalid.loadThemeIndex()).rejects.toMatchObject({ kind: 'validation' });
+  });
   it('shares an in-flight era promise and keeps successful eras after another era fails', async () => {
     const fetchOnce = once();
     const loader = createHistoryContentLoader({ baseUrl: 'https://history.test/content/', fetchImpl: async input => {

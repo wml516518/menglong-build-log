@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { eraSchema, eventArchiveSchema, eventIndexSchema, personArchiveSchema, personIndexSchema } from './schema';
+import { eraSchema, eventArchiveSchema, eventIndexSchema, personArchiveSchema, personIndexSchema, placeIndexSchema, themeIndexSchema } from './schema';
 
 const path = z.string().min(1);
 const eraId = eraSchema.shape.id;
@@ -60,6 +60,8 @@ export function createHistoryContentLoader({ baseUrl = `${import.meta.env.BASE_U
   const loadHistoryManifest = () => request('manifest.json', manifestSchema, 'manifest');
   const loadEventIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.events, z.array(eventIndexSchema), 'event-index'));
   const loadPeopleIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.people, z.array(personIndexSchema), 'person-index'));
+  const loadPlaceIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.places, z.array(placeIndexSchema), 'place-index'));
+  const loadThemeIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.themes, z.array(themeIndexSchema), 'theme-index'));
   function loadEraBundle(requestedEra: string): Promise<HistoryEraBundle> {
     const cached = eras.get(requestedEra);
     if (cached) return cached;
@@ -72,9 +74,9 @@ export function createHistoryContentLoader({ baseUrl = `${import.meta.env.BASE_U
     eras.set(requestedEra, pending);
     return pending;
   }
-  return { loadHistoryManifest, loadEventIndex, loadPeopleIndex, loadEraBundle };
+  return { loadHistoryManifest, loadEventIndex, loadPeopleIndex, loadPlaceIndex, loadThemeIndex, loadEraBundle };
 }
 export type HistoryContentLoader = ReturnType<typeof createHistoryContentLoader>;
 const defaultLoader = createHistoryContentLoader();
-export const { loadHistoryManifest, loadEventIndex, loadPeopleIndex, loadEraBundle } = defaultLoader;
+export const { loadHistoryManifest, loadEventIndex, loadPeopleIndex, loadPlaceIndex, loadThemeIndex, loadEraBundle } = defaultLoader;
 export { defaultLoader as historyContentLoader };

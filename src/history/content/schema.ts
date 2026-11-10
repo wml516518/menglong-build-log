@@ -117,6 +117,7 @@ export const themeArchiveSchema = z.strictObject({
   camera: z.strictObject({ position: z.tuple([z.number(), z.number(), z.number()]), target: z.tuple([z.number(), z.number(), z.number()]) }).optional(),
   sourceIds: ids
 });
+export const themeIndexSchema = themeArchiveSchema.pick({ id: true, title: true, summary: true, eventIds: true });
 export const relationSchema = z.strictObject({ id, fromId: id, toId: id, type: z.enum(relationTypes) })
   .refine(value => value.fromId !== value.toId, { path: ['toId'], message: 'An event cannot relate to itself' });
 
@@ -127,6 +128,7 @@ export type PersonIndex = z.infer<typeof personIndexSchema>;
 export type PersonArchive = z.infer<typeof personArchiveSchema>;
 export type PlaceIndex = z.infer<typeof placeIndexSchema>;
 export type ThemeArchive = z.infer<typeof themeArchiveSchema>;
+export type ThemeIndex = z.infer<typeof themeIndexSchema>;
 export type SourceRecord = z.infer<typeof sourceSchema>;
 export type CategoryId = typeof categoryIds[number];
 export type RelationType = typeof relationTypes[number];

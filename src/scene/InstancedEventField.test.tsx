@@ -8,6 +8,20 @@ const events = Array.from({ length: 1200 }, (_, i) => ({ ...historyEvents[0], id
 const harness = vi.hoisted(() => ({ frames: [] as ((state: any, delta: number) => void)[] }));
 vi.mock('@react-three/fiber', async importOriginal => ({ ...await importOriginal<typeof import('@react-three/fiber')>(), useFrame: (frame: any) => harness.frames.push(frame) }));
 
+it('dims unmatched instance colors while retaining the same positions, sizes and pick identities', () => {
+  const source = events.slice(0, 2);
+  const batch = buildEventBatch(source, [], {}, new Map([[source[0].id, 0.15], [source[1].id, 1]]));
+  const mesh = new THREE.InstancedMesh(new THREE.SphereGeometry(1), new THREE.MeshBasicMaterial(), 2);
+  applyEventBatch(mesh, batch);
+  expect(mesh.count).toBe(2);
+  expect(eventForInstance(batch, 0)).toBe(source[0]);
+  const color = new THREE.Color(); mesh.getColorAt(0, color);
+  expect(color.r).toBeCloseTo(new THREE.Color(source[0].color).r * 0.15);
+  mesh.getColorAt(1, color);
+  expect(color.r).toBeCloseTo(new THREE.Color(source[1].color).r);
+  mesh.geometry.dispose(); (mesh.material as THREE.Material).dispose();
+});
+
 it('keeps two draw fields for 1200 events and maps filtered instance IDs to the exact compact event', () => {
   const batch = buildEventBatch(events, ['event-501'], {});
   expect(batch).toHaveLength(1199);

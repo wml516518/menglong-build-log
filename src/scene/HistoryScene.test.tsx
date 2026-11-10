@@ -71,3 +71,15 @@ it('retains a hovered rich star through dragging when hover moves to a different
   expect(rich().map(star => star.props.event.id)).toContain(events[0].id);
   expect(children(result.current).find(child => child.type === InstancedEventField).props.excludedIds).toContain(events[0].id);
 });
+
+it('protects search targets and threads filter dimming through instances, rich stars and clusters without removing events', () => {
+  const events = historyEvents.slice(0, 3), opacities = new Map([[events[0].id, 0.15], [events[1].id, 1], [events[2].id, 0.15]]);
+  const { result } = renderHook(() => SceneContents({ events, selectedEvent: events[0], hoveredId: null, resetSignal: 0, selectionSignal: 0, reducedMotion: true, searchTargetIds: ['search-target'], eventOpacities: opacities, ...callbacks() }));
+  const ofType = (type: unknown) => children(result.current).find(child => child.type === type);
+  expect(ofType(SceneProjection).props.protectedIds).toContain('search-target');
+  expect(ofType(InstancedEventField).props.events).toHaveLength(3);
+  expect(ofType(InstancedEventField).props.eventOpacities.get(events[0].id)).toBe(0.15);
+  expect(ofType(EventStar).props.opacity).toBe(0.15);
+  expect(ofType(ClusterField).props.eventOpacities).toBe(opacities);
+  expect(ofType(CameraRig).props.selectedEvent.id).toBe(events[0].id);
+});

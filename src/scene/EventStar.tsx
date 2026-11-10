@@ -12,6 +12,7 @@ interface EventStarProps {
   hovered: boolean;
   dragOffset: readonly [number, number];
   reducedMotion: boolean;
+  opacity?: number;
   onSelect: (event: HistoryEvent) => void;
   onHover: (id: string | null) => void;
   onDragOffset: (id: string, offset: readonly [number, number]) => void;
@@ -25,7 +26,7 @@ export function getEventPosition(event: HistoryEvent, dragOffset: readonly [numb
   return [x, getTimelineY(x) + event.offset[0] + 1.1 + dragOffset[0], getTimelineZ(x) + event.offset[1] + dragOffset[1]];
 }
 
-export function EventStar({ event, selected, hovered, dragOffset, reducedMotion, onSelect, onHover, onDragOffset, onDragStateChange, dragStart, onDragStart }: EventStarProps) {
+export function EventStar({ event, selected, hovered, dragOffset, reducedMotion, onSelect, onHover, onDragOffset, onDragStateChange, dragStart, onDragStart, opacity = 1 }: EventStarProps) {
   const group = useRef<THREE.Group>(null);
   const glow = useRef<THREE.Mesh>(null);
   const currentOffset = useRef<[number, number]>([dragOffset[0], dragOffset[1]]);
@@ -90,7 +91,9 @@ export function EventStar({ event, selected, hovered, dragOffset, reducedMotion,
         <meshStandardMaterial
           color="#fff8df"
           emissive={event.color}
-          emissiveIntensity={selected ? 8 : hovered ? 6 : 3.8}
+          emissiveIntensity={(selected ? 8 : hovered ? 6 : 3.8) * opacity}
+          transparent={opacity < 1}
+          opacity={opacity}
           roughness={0.22}
           metalness={0.08}
           toneMapped={false}
@@ -98,13 +101,13 @@ export function EventStar({ event, selected, hovered, dragOffset, reducedMotion,
       </mesh>
       <mesh ref={glow}>
         <icosahedronGeometry args={[radius * 1.8, 1]} />
-        <meshBasicMaterial color={event.color} transparent opacity={selected ? 0.2 : 0.08} wireframe blending={THREE.AdditiveBlending} depthWrite={false} />
+        <meshBasicMaterial color={event.color} transparent opacity={(selected ? 0.2 : 0.08) * opacity} wireframe blending={THREE.AdditiveBlending} depthWrite={false} />
       </mesh>
-      {(selected || hovered) ? <pointLight color={event.color} intensity={selected ? 4.8 : 1.4} distance={selected ? 7 : 3.2} decay={2} /> : null}
+      {(selected || hovered) ? <pointLight color={event.color} intensity={(selected ? 4.8 : 1.4) * opacity} distance={selected ? 7 : 3.2} decay={2} /> : null}
       {(hovered || selected) ? (
         <mesh position={[0, radius + 0.42, 0]} rotation={[Math.PI / 2, 0, 0]}>
           <ringGeometry args={[radius * 0.42, radius * 0.49, 32]} />
-          <meshBasicMaterial color={selected ? '#f0d28c' : event.color} side={THREE.DoubleSide} transparent opacity={0.78} blending={THREE.AdditiveBlending} depthWrite={false} />
+          <meshBasicMaterial color={selected ? '#f0d28c' : event.color} side={THREE.DoubleSide} transparent opacity={0.78 * opacity} blending={THREE.AdditiveBlending} depthWrite={false} />
         </mesh>
       ) : null}
     </group>
