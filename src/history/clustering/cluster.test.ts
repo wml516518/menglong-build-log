@@ -1,11 +1,49 @@
 import { describe, expect, it } from 'vitest';
 import { clusterEvents } from './cluster';
 import type { ClusterInput, ProjectedEvent } from './protocol';
+import { getVisibilityBudget } from '../lod';
 
 const point = (id: string, x: number, y = 100, semanticGroup = 'period-a/theme-a'): ProjectedEvent => ({ id, x, y, semanticGroup, visible: true });
 const input = (events: ProjectedEvent[], overrides: Partial<ClusterInput> = {}): ClusterInput => ({ events, level: 'period', viewport: { width: 800, height: 600 }, mobile: false, protectedIds: [], previousClusters: [], revision: 1, ...overrides });
 
 describe('semantic screen-space clustering', () => {
+  it('fits 104 separated ordinary components plus 22 protected singles into the mobile overview budget', () => {
+    const centers = Array.from({ length: 16 }, (_, row) => Array.from({ length: row % 2 ? 6 : 7 }, (_, col) => ({ x: col * 61 + (row % 2 ? 30.5 : 0), y: row * 53 }))).flat();
+    expect(centers).toHaveLength(104);
+    const events = Array.from({ length: 1178 }, (_, i) => point(`ordinary-${String(i).padStart(4, '0')}`, centers[i % 104].x, centers[i % 104].y));
+    const protectedIds = Array.from({ length: 22 }, (_, i) => `protected-${i}`);
+    events.push(...protectedIds.map(id => point(id, 190, 400)));
+    const request = input(events, { mobile: true, level: 'overview', viewport: { width: 390, height: 844 }, protectedIds });
+    const result = clusterEvents(request);
+    expect(result.clusters.length + result.singles.length).toBeLessThanOrEqual(120);
+    expect(result.singles.map(e => e.id).sort()).toEqual([...protectedIds].sort());
+    const members = [...result.singles.map(e => e.id), ...result.clusters.flatMap(c => c.memberIds)];
+    expect(members).toHaveLength(1200);
+    expect(new Set(members)).toEqual(new Set(events.map(e => e.id)));
+    expect(clusterEvents({ ...request, events: [...events].reverse() })).toEqual(result);
+  });
+  it.each([false, true])('enforces overview budget for sparse points (mobile=%s)', mobile => {
+    const events = Array.from({ length: 1200 }, (_, i) => point(`e-${String(i).padStart(4, '0')}`, i % 40 * 100, Math.floor(i / 40) * 100));
+    const result = clusterEvents(input(events, { level: 'overview', mobile, viewport: { width: 4000, height: 3000 }, protectedIds: ['e-0000'] }));
+    expect(result.clusters.length + result.singles.length).toBeLessThanOrEqual(getVisibilityBudget('overview', mobile).stars);
+    expect(result.singles.map(e => e.id)).toContain('e-0000');
+    expect(result.clusters.reduce((n,c) => n+c.count, result.singles.length)).toBe(1200);
+  });
+  it('preserves semantic families and protections when their minimum representation exceeds the budget', () => {
+    const events = Array.from({ length: 250 }, (_, i) => point(`e-${i}`, i % 20 * 100, Math.floor(i / 20) * 100, `family-${i}`));
+    const result = clusterEvents(input(events, { mobile: true, level: 'era', viewport: { width: 2000, height: 1500 } }));
+    expect(result.singles).toHaveLength(250);
+    expect(result.clusters).toHaveLength(0);
+    const protectedIds = events.map(e => e.id);
+    expect(clusterEvents(input(events, { mobile: true, level: 'overview', viewport: { width: 2000, height: 1500 }, protectedIds })).singles).toHaveLength(250);
+  });
+  it('aggregates over-budget non-overview components only inside their semantic family', () => {
+    const events = Array.from({ length: 1200 }, (_, i) => point(`e-${String(i).padStart(4, '0')}`, i % 40 * 100, Math.floor(i / 40) * 100, `family-${i % 3}`));
+    const result = clusterEvents(input(events, { level: 'era', mobile: true, viewport: { width: 4000, height: 3000 } }));
+    expect(result.clusters.length + result.singles.length).toBe(200);
+    expect(result.clusters.every(c => c.semanticGroups.length === 1)).toBe(true);
+    expect(new Set([...result.singles.map(e => e.id), ...result.clusters.flatMap(c => c.memberIds)]).size).toBe(1200);
+  });
   it('merges nearby compatible points through neighbor lookup and emits padded focus geometry', () => {
     const result = clusterEvents(input([point('c', 300), point('b', 140, 120), point('a', 100)]));
     expect(result.revision).toBe(1);

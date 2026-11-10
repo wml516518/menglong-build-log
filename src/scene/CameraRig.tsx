@@ -10,7 +10,7 @@ import type { HistoryEvent } from '../history/types';
 import { xToYear } from '../history/space';
 import type { ScreenCluster } from '../history/clustering/protocol';
 import type { WorldPositions } from './ClusterField';
-import { getLodLevel, type LodLevel } from '../history/lod';
+import { getLodLevel, LOD_THRESHOLDS, type LodLevel } from '../history/lod';
 import { getEventPosition } from './EventStar';
 
 export interface ClusterFocusRequest { serial: number; cluster: ScreenCluster; memberPositions: readonly (readonly [number, number, number])[] }
@@ -24,7 +24,7 @@ export function classifyWheelIntent(event: Pick<WheelEvent, 'deltaX' | 'deltaY' 
 export function createClusterFocusRequest(serial: number, cluster: ScreenCluster, positions: WorldPositions): ClusterFocusRequest {
   return { serial, cluster, memberPositions: cluster.memberIds.flatMap(id => positions.has(id) ? [positions.get(id)!] : []) };
 }
-export function clusterCameraPose(request: ClusterFocusRequest, camera: THREE.PerspectiveCamera, target: THREE.Vector3): { target: THREE.Vector3; position: THREE.Vector3 } | undefined {
+export function clusterCameraPose(request: ClusterFocusRequest, camera: THREE.PerspectiveCamera, target: THREE.Vector3, currentLevel?: LodLevel): { target: THREE.Vector3; position: THREE.Vector3 } | undefined {
   if (!request.memberPositions.length) return undefined;
   // The request retains Task 8's padded screen bounds. Fitting its members in
   // world space also works when the camera rotated after that projection.
@@ -32,7 +32,13 @@ export function clusterCameraPose(request: ClusterFocusRequest, camera: THREE.Pe
   const sphere = box.getBoundingSphere(new THREE.Sphere());
   const fov = THREE.MathUtils.degToRad(camera.getEffectiveFOV());
   const limitingFov = Math.min(fov, 2 * Math.atan(Math.tan(fov / 2) * camera.aspect));
-  const distance = THREE.MathUtils.clamp(sphere.radius / Math.sin(limitingFov / 2) * 1.12, MIN_CAMERA_DISTANCE, MAX_CAMERA_DISTANCE);
+  const currentDistance = camera.position.distanceTo(target);
+  const level = currentLevel ?? getLodLevel(currentDistance);
+  const nextBoundary = { overview: LOD_THRESHOLDS[2].enter, era: LOD_THRESHOLDS[1].enter, period: LOD_THRESHOLDS[0].enter, close: MIN_CAMERA_DISTANCE }[level];
+  // A transitive overview cluster can span the entire timeline. Fitting all of it
+  // would zoom out forever; drill through the next LOD so its subgroups emerge.
+  const fitDistance = sphere.radius / Math.sin(limitingFov / 2) * 1.12;
+  const distance = THREE.MathUtils.clamp(level === 'close' ? fitDistance : Math.min(fitDistance, nextBoundary * 0.95, currentDistance * 0.8), MIN_CAMERA_DISTANCE, MAX_CAMERA_DISTANCE);
   const direction = camera.position.clone().sub(target);
   if (direction.lengthSq() < 0.001) direction.set(0, 0.35, 1);
   return { target: sphere.center, position: sphere.center.clone().add(direction.normalize().multiplyScalar(distance)) };
@@ -97,7 +103,7 @@ export function CameraRig({ selectedEvent, selectedPosition, resetSignal, select
 
   useEffect(() => {
     if (!focusRequest || !controls.current || !(camera instanceof THREE.PerspectiveCamera)) return;
-    const pose = clusterCameraPose(focusRequest, camera, controls.current.target);
+    const pose = clusterCameraPose(focusRequest, camera, controls.current.target, lastDistance.current?.level);
     if (!pose) return;
     resetRequested.current = false;
     travelTarget.current.copy(pose.target);

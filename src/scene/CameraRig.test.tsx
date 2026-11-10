@@ -30,11 +30,20 @@ it('fits exact member world bounds while retaining the Task 8 screen focus recta
   expect(request.cluster).toBe(cluster);
   expect(request.memberPositions).toEqual([[-2, 0, 0], [2, 0, 0]]);
   const camera = new THREE.PerspectiveCamera(43, 0.5, 0.1, 150); camera.position.set(0, 0, 10);
-  const pose = clusterCameraPose(request, camera, new THREE.Vector3());
+  // Close can persist to distance12 through LOD hysteresis; there is no deeper level.
+  const pose = clusterCameraPose(request, camera, new THREE.Vector3(), 'close');
   expect(pose?.target.toArray()).toEqual([0, 0, 0]);
   expect(pose!.position.length()).toBeGreaterThan(4);
   camera.position.copy(pose!.position); camera.lookAt(pose!.target); camera.updateMatrixWorld();
   for (const point of request.memberPositions) expect(Math.abs(new THREE.Vector3(...point).project(camera).x)).toBeLessThan(0.9);
+});
+
+it.each([1.6, 0.46])('drills a large overview cluster inward to the next LOD instead of fitting it farther away (aspect=%s)', aspect => {
+  const camera = new THREE.PerspectiveCamera(43, aspect, 0.1, 150); camera.position.set(0, 0, 70);
+  const wide = { ...request, memberPositions: [[-32, 0, 0], [32, 0, 0]] as const };
+  const pose = clusterCameraPose(wide, camera, new THREE.Vector3())!;
+  expect(pose.target.toArray()).toEqual([0, 0, 0]);
+  expect(pose.position.distanceTo(pose.target)).toBeLessThan(42);
 });
 
 function setup(reducedMotion = true, initialCamera?: Partial<HistoryCameraState>) {

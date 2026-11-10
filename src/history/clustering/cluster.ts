@@ -1,5 +1,5 @@
 import { quadtree } from 'd3-quadtree';
-import type { LodLevel } from '../lod';
+import { getVisibilityBudget, type LodLevel } from '../lod';
 import type { ClusterInput, ClusterResult, ProjectedEvent, ScreenCluster } from './protocol';
 
 export const CLUSTER_RADIUS_DESKTOP = 48;
@@ -29,6 +29,40 @@ function makeCluster(members: ProjectedEvent[]): ScreenCluster {
   return { id: stableId(semanticGroups, memberIds), memberIds, semanticGroups, count: members.length,
     center: { x: x / members.length, y: y / members.length }, bounds: { minX, minY, maxX, maxY },
     focusTarget: { x: (minX + maxX) / 2, y: (minY + maxY) / 2, width: maxX - minX, height: maxY - minY } };
+}
+
+/** Spatially partition whole neighbor components, never splitting their membership.
+ * Protected singles and one representative per semantic family are hard lower bounds.
+ * At overview there is one family, so only protected singles can exhaust the budget.
+ */
+function budgetComponents(components: ProjectedEvent[][], input: ClusterInput, protectedIds: Set<string>): ProjectedEvent[][] {
+  const budget = getVisibilityBudget(input.level, input.mobile).stars;
+  if (components.length <= budget) return components;
+  const protectedComponents = components.filter(group => protectedIds.has(group[0].id));
+  const families = new Map<string, ProjectedEvent[][]>();
+  for (const group of components) {
+    if (protectedIds.has(group[0].id)) continue;
+    const key = input.level === 'overview' ? '' : group[0].semanticGroup;
+    const family = families.get(key) ?? []; family.push(group); families.set(key, family);
+  }
+  const ranked = [...families].sort(([a], [b]) => a < b ? -1 : a > b ? 1 : 0).map(([, groups]) => ({ groups, slots: 1 }));
+  let spare = Math.max(0, budget - protectedComponents.length - ranked.length);
+  // Allocate remaining capacity to the family with greatest compression pressure.
+  while (spare > 0) {
+    const candidate = ranked.filter(f => f.slots < f.groups.length).sort((a, b) => b.groups.length / b.slots - a.groups.length / a.slots)[0];
+    if (!candidate) break;
+    candidate.slots++; spare--;
+  }
+  const partition = (groups: ProjectedEvent[][], slots: number): ProjectedEvent[][] => {
+    if (groups.length <= slots) return groups;
+    if (slots === 1) return [groups.flat().sort((a, b) => a.id < b.id ? -1 : a.id > b.id ? 1 : 0)];
+    const centers = groups.map(group => ({ group, x: group.reduce((sum, p) => sum + p.x, 0) / group.length, y: group.reduce((sum, p) => sum + p.y, 0) / group.length }));
+    const axis = Math.max(...centers.map(c => c.x)) - Math.min(...centers.map(c => c.x)) >= Math.max(...centers.map(c => c.y)) - Math.min(...centers.map(c => c.y)) ? 'x' : 'y';
+    centers.sort((a, b) => a[axis] - b[axis] || (a.group[0].id < b.group[0].id ? -1 : 1));
+    const middle = Math.floor(groups.length / 2), leftSlots = Math.max(1, Math.floor(slots * middle / groups.length));
+    return [...partition(centers.slice(0, middle).map(c => c.group), leftSlots), ...partition(centers.slice(middle).map(c => c.group), slots - leftSlots)];
+  };
+  return [...protectedComponents, ...ranked.flatMap(f => partition(f.groups, f.slots))];
 }
 
 /** Connected components of compatible neighbors. Overview permits any semantic group;
@@ -80,7 +114,7 @@ export function clusterEvents(input: ClusterInput): ClusterResult {
     const component = components.get(key) ?? []; component.push(event); components.set(key, component);
   }
   const clusters: ScreenCluster[] = [], singles: ProjectedEvent[] = [];
-  for (const component of components.values()) {
+  for (const component of budgetComponents([...components.values()], input, protectedIds)) {
     if (component.length === 1) singles.push(component[0]); else clusters.push(makeCluster(component));
   }
   return { clusters, singles, revision: input.revision };
