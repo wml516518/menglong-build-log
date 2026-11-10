@@ -1,6 +1,6 @@
 _translation:
   policyVersion: 1
-  sourceHash: 5f5332c5f1893910518bb206de6546ec7ff7e52c0309848cb9bbe4df088701fd
+  sourceHash: da5c6eb27bcc48311cbabe216f4398bfaa57df8e944e5c095fda262bf9a36612
 basics:
   birthDate:
     label: Date of Birth
@@ -19,7 +19,7 @@ basics:
     value: 'Shanghai, China'
   name:
     label: Name
-    value: MengLong Wang
+    value: Wang Menglong
   role:
     label: Role
     value: Full-stack Developer
@@ -227,4 +227,4 @@ skills:
       - n8n
       - Coze
       - Ollama
-summary: 'A full-stack developer based in Shanghai, focused on building practical web products, AI-enabled tools, and deployable engineering projects across frontend, backend, and DevOps workflows.'
+summary: 'I am a full-stack developer based in Shanghai, focusing on practical AI tools and deployable engineering projects. My capabilities cover frontend, backend, and DevOps workflows. I develop AI Agent applications using AI Coding approaches, including Claude, ChatGPT, Deepseek, GLM, and others.'
