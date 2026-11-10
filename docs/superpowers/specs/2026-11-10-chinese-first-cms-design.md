@@ -16,7 +16,7 @@ The implementation must preserve the existing bilingual public site, Build Log r
 
 - A Chinese Decap CMS interface at `/admin`.
 - GitHub login through Decap Turbo, restricted to the repository and the owner's account.
-- Editable profile, homepage copy, navigation labels, section labels, contacts, homepage project cards, resume, work experience, resume projects, skills, certifications, language ability, SEO copy, images, and Build Log posts.
+- Editable profile, homepage copy, navigation labels, section labels and ordering, contacts, homepage project cards, resume, work experience, resume projects, skills, certifications, language ability, SEO copy, images, and Build Log posts.
 - Chinese as the only manually maintained source language.
 - DeepSeek-based Chinese-to-English generation during publication.
 - GitHub pull requests, required checks, automatic merge, and the existing Netlify deployment from `main`.
@@ -121,6 +121,9 @@ This file contains:
 - Contact labels, values, and URLs.
 - Route-aware portfolio SEO titles and descriptions.
 - Optional avatar, social image, and resume download path.
+- `homeSectionOrder`, an ordered list containing each fixed homepage section ID exactly once: `buildLog`, `projects`, `resume`, `experience`, `resumeProjects`, `about`, and `contact`.
+
+The CMS renders `homeSectionOrder` as a reorderable list of fixed options. Validation rejects unknown, duplicate, or missing section IDs. Ordering changes only the existing homepage bands; the CMS cannot create arbitrary components or move the hero/header.
 
 ### `content/zh/resume.yml`
 
@@ -174,6 +177,7 @@ Translation is schema-driven, not based on guessing whether a string looks Chine
 ### Copied unchanged
 
 - Slugs, IDs, dates, email addresses, URLs, image paths, and numeric values.
+- Fixed homepage section IDs and their ordering.
 - Technology-stack tokens and tags as entered, such as `React`, `.NET`, `Google AAA`, `InCarVA`, `ActionID`, and `TTS`.
 - Inline code, fenced code, HTML, and link destinations inside Markdown.
 
@@ -264,6 +268,7 @@ Errors appear in GitHub Actions and the pull request checks. The already deploye
 ### Unit tests
 
 - Validate complete and incomplete `site.yml` and `resume.yml` fixtures.
+- Verify homepage section ordering rejects unknown, duplicate, and missing IDs and renders the approved order.
 - Verify explicit translated and copied paths.
 - Verify glossary protection and restoration.
 - Verify Markdown headings, code fences, inline code, links, images, and URLs survive translation.
