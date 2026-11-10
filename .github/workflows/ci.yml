@@ -31,6 +31,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Validate source content
+        run: npm run content:validate
+
+      - name: Verify generated English is current
+        run: npm run content:check-generated
+
       - name: Run tests
         run: npm test
 
