@@ -9,6 +9,7 @@ interface Identity { repo: string; pr: number; sha: string }
 interface Run { workflow_id: number; event: string; conclusion: string; repository: { full_name: string } }
 interface Pull { number: number; state: string; mergeable_state?: string; head: { ref: string; sha: string; repo: { full_name: string } }; base: { repo: { full_name: string }; ref: string; sha: string }; user: { login: string } }
 interface Commit { sha: string; parents: { sha: string }[] }
+interface Comparison { ahead_by: number; merge_base_commit: { sha: string } }
 interface ChangedFile { filename: string; previous_filename?: string }
 export function collectChangedPaths(files: ChangedFile[] | undefined) {
   // Compare responses cap their file list at 300; never trust a capped diff.
@@ -32,6 +33,11 @@ export function verifyBaseUpdate(oldHead: string, baseHead: string, commit: Comm
   const parents = new Set(commit.parents.map(parent => parent.sha));
   if (parents.size !== 2 || !parents.has(oldHead) || !parents.has(baseHead)) throw new Error('CMS base update has unexpected parents');
   return commit.sha;
+}
+export function needsBaseUpdate(baseHead: string, comparison: Comparison) {
+  if (!Number.isSafeInteger(comparison.ahead_by) || comparison.ahead_by < 0 || !/^[a-f0-9]{40}$/.test(comparison.merge_base_commit.sha)) throw new Error('Invalid CMS base comparison');
+  if (comparison.ahead_by === 0 && comparison.merge_base_commit.sha !== baseHead) throw new Error('Inconsistent CMS base comparison');
+  return comparison.ahead_by > 0;
 }
 const command = (exe: string, args: string[], options: { cwd?: string; env?: NodeJS.ProcessEnv } = {}) => execFileSync(exe, args, { encoding: 'utf8', maxBuffer: 32 * 1024 * 1024, ...options });
 const api = <T>(endpoint: string): T => JSON.parse(command('gh', ['api', endpoint]));
@@ -108,9 +114,10 @@ async function publish() {
     writeFileSync(join(process.env.RUNNER_TEMP!, 'provenance.json'), JSON.stringify({ ...state.identity, sha }));
     output('sha', sha); output('changed', true);
   } else {
-    if (current.mergeable_state === 'behind') {
-      const latestBase = api<{ object: { sha: string } }>(`repos/${state.identity.repo}/git/ref/heads/${encodeURIComponent(state.baseRef)}`).object.sha;
-      if (latestBase !== state.baseSha) throw new Error('Base branch changed during publication; PR remains open');
+    const latestBase = api<{ object: { sha: string } }>(`repos/${state.identity.repo}/git/ref/heads/${encodeURIComponent(state.baseRef)}`).object.sha;
+    if (latestBase !== state.baseSha) throw new Error('Base branch changed during publication; PR remains open');
+    const comparison = api<Comparison>(`repos/${state.identity.repo}/compare/${state.identity.sha}...${state.baseSha}`);
+    if (needsBaseUpdate(state.baseSha, comparison)) {
       putApi(`repos/${state.identity.repo}/pulls/${state.identity.pr}/update-branch`, [`expected_head_sha=${state.identity.sha}`]);
       let updated: Pull | undefined;
       for (let attempt = 0; attempt < 20; attempt += 1) {
