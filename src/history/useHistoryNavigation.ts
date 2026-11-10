@@ -5,9 +5,10 @@ import { getDynastyLeadEvent } from './space';
 export function useHistoryNavigation(
   historyEvents: HistoryEvent[],
   onEventChange?: (event: HistoryEvent) => void,
-  onDynastyChange?: (dynastyId: DynastyId, event: HistoryEvent) => void
+  onDynastyChange?: (dynastyId: DynastyId, event: HistoryEvent) => void,
+  initialSelectedId: string | null = null
 ) {
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [selectedId, setSelectedId] = useState<string | null>(initialSelectedId);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [resetSignal, setResetSignal] = useState(0);
   const [selectionSignal, setSelectionSignal] = useState(0);

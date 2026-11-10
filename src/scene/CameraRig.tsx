@@ -3,6 +3,9 @@ import { useFrame, useThree } from '@react-three/fiber';
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
+import type { HistoryCameraState } from '../history/session';
+import { MAX_CAMERA_DISTANCE, MIN_CAMERA_DISTANCE } from '../history/sceneLimits';
+export { MAX_CAMERA_DISTANCE, MIN_CAMERA_DISTANCE } from '../history/sceneLimits';
 import type { HistoryEvent } from '../history/types';
 import { xToYear } from '../history/space';
 import type { ScreenCluster } from '../history/clustering/protocol';
@@ -21,8 +24,6 @@ export function classifyWheelIntent(event: Pick<WheelEvent, 'deltaX' | 'deltaY' 
 export function createClusterFocusRequest(serial: number, cluster: ScreenCluster, positions: WorldPositions): ClusterFocusRequest {
   return { serial, cluster, memberPositions: cluster.memberIds.flatMap(id => positions.has(id) ? [positions.get(id)!] : []) };
 }
-export const MIN_CAMERA_DISTANCE = 4;
-export const MAX_CAMERA_DISTANCE = 90;
 export function clusterCameraPose(request: ClusterFocusRequest, camera: THREE.PerspectiveCamera, target: THREE.Vector3): { target: THREE.Vector3; position: THREE.Vector3 } | undefined {
   if (!request.memberPositions.length) return undefined;
   // The request retains Task 8's padded screen bounds. Fitting its members in
@@ -38,6 +39,8 @@ export function clusterCameraPose(request: ClusterFocusRequest, camera: THREE.Pe
 }
 
 interface CameraRigProps {
+  initialCamera?: Partial<HistoryCameraState>;
+  onCameraChange?: (camera: HistoryCameraState) => void;
   selectedEvent: HistoryEvent | null;
   selectedPosition?: readonly [number, number, number];
   resetSignal: number;
@@ -49,18 +52,36 @@ interface CameraRigProps {
   onDistanceChange?: (distance: number) => void;
 }
 
-export function CameraRig({ selectedEvent, selectedPosition, resetSignal, selectionSignal, reducedMotion, onTravelYear, controlsEnabled, focusRequest, onDistanceChange }: CameraRigProps) {
+export function CameraRig({ selectedEvent, selectedPosition, resetSignal, selectionSignal, reducedMotion, onTravelYear, controlsEnabled, focusRequest, onDistanceChange, initialCamera, onCameraChange }: CameraRigProps) {
   const camera = useThree((state) => state.camera);
   const gl = useThree((state) => state.gl);
   const controls = useRef<OrbitControlsImpl>(null);
-  const travelTarget = useRef(selectedEvent ? new THREE.Vector3(...(selectedPosition ?? getEventPosition(selectedEvent))) : new THREE.Vector3(-28, 0.8, 0));
+  const travelTarget = useRef(initialCamera?.target ? new THREE.Vector3(...initialCamera.target) : selectedEvent ? new THREE.Vector3(...(selectedPosition ?? getEventPosition(selectedEvent))) : new THREE.Vector3(-28, 0.8, 0));
+  const initialized = useRef(false);
+  const firstSelection = useRef(true);
+  const lastReported = useRef<HistoryCameraState | null>(null);
+  const sinceReport = useRef(0);
+  const reportCamera = () => {
+    if (!controls.current || !onCameraChange) return;
+    const state: HistoryCameraState = { target: controls.current.target.toArray() as [number, number, number], distance: camera.position.distanceTo(controls.current.target) };
+    const previous = lastReported.current;
+    if (previous && Math.abs(previous.distance - state.distance) < 0.001 && previous.target.every((value, index) => Math.abs(value - state.target[index]) < 0.001)) return;
+    lastReported.current = state; sinceReport.current = 0;
+    onCameraChange(state);
+  };
+  useEffect(() => {
+    window.addEventListener('pagehide', reportCamera, true);
+    return () => { window.removeEventListener('pagehide', reportCamera, true); reportCamera(); };
+  }, [camera, onCameraChange]);
   const resetRequested = useRef(false);
   const resetPosition = useRef(new THREE.Vector3(-28, 9.5, 26));
   const focusAnimation = useRef<ReturnType<typeof clusterCameraPose>>(undefined);
   const lastDistance = useRef<{ distance: number; level: LodLevel } | null>(null);
 
   useEffect(() => {
-    if (!selectedEvent) return;
+    const restoring = firstSelection.current;
+    firstSelection.current = false;
+    if (!selectedEvent || (restoring && initialCamera)) return;
     focusAnimation.current = undefined;
     resetRequested.current = false;
     travelTarget.current.fromArray(selectedPosition ?? getEventPosition(selectedEvent));
@@ -108,6 +129,16 @@ export function CameraRig({ selectedEvent, selectedPosition, resetSignal, select
   useFrame((_, delta) => {
     const factor = reducedMotion ? 1 : 1 - Math.exp(-delta * 2.8);
     if (controls.current && controlsEnabled) {
+      if (!initialized.current) {
+        initialized.current = true;
+        if (initialCamera) {
+          controls.current.target.copy(travelTarget.current);
+          const distance = initialCamera.distance ?? Math.hypot(8.7, 26);
+          camera.position.copy(travelTarget.current).add(new THREE.Vector3(0, 8.7, 26).normalize().multiplyScalar(distance));
+          controls.current.update();
+          onTravelYear(xToYear(travelTarget.current.x));
+        }
+      }
       const pose = focusAnimation.current;
       if (pose) {
         camera.position.lerp(pose.position, factor);
@@ -127,6 +158,8 @@ export function CameraRig({ selectedEvent, selectedPosition, resetSignal, select
         camera.position.add(deltaTarget);
       }
       controls.current.update();
+      sinceReport.current += delta;
+      if (!lastReported.current || sinceReport.current >= 0.2) reportCamera();
       const distance = camera.position.distanceTo(controls.current.target);
       const previous = lastDistance.current;
       const level = getLodLevel(distance, previous?.level);
@@ -148,6 +181,7 @@ export function CameraRig({ selectedEvent, selectedPosition, resetSignal, select
       minDistance={MIN_CAMERA_DISTANCE}
       maxDistance={MAX_CAMERA_DISTANCE}
       touches={{ ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_PAN }}
+      onEnd={reportCamera}
       onStart={() => {
         if (focusAnimation.current && controls.current) travelTarget.current.copy(controls.current.target);
         focusAnimation.current = undefined;

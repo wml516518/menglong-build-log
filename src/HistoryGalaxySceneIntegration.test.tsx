@@ -51,3 +51,20 @@ it('sends ranked search targets to protection and the exact selected event to th
   expect(boundary.scene.selectionSignal).toBe(1);
   expect(screen.getByRole('dialog', { name: '贞观之治' })).toHaveFocus();
 });
+
+it('restores camera and released offsets into WebGL and debounces changed state before a pagehide flush', async () => {
+  localStorage.setItem('history-galaxy-session-v2', JSON.stringify({ version: 2, selectedId: 'zhenguan', camera: { target: [-12, 2, 1], distance: 24 }, fixedOffsets: { zhenguan: [1.2, -0.5], removed: [1, 1] } }));
+  render(<HistoryGalaxyApp loader={loader()} />);
+  await waitFor(() => expect(boundary.scene?.events).toHaveLength(30));
+  expect(boundary.scene.initialCamera).toEqual({ target: [-12, 2, 1], distance: 24 });
+  expect(boundary.scene.initialFixedOffsets).toEqual({ zhenguan: [1.2, -0.5] });
+  expect(boundary.scene.selectedEvent.id).toBe('zhenguan');
+  const before = localStorage.getItem('history-galaxy-session-v2');
+  act(() => {
+    for (let index = 0; index < 10; index++) boundary.scene.onCameraChange({ target: [index, 1, 0], distance: 10 + index });
+    boundary.scene.onFixedOffsetsChange({ zhenguan: [2, 1] });
+  });
+  expect(localStorage.getItem('history-galaxy-session-v2')).toBe(before);
+  act(() => window.dispatchEvent(new Event('pagehide')));
+  expect(JSON.parse(localStorage.getItem('history-galaxy-session-v2')!)).toMatchObject({ camera: { target: [9, 1, 0], distance: 19 }, fixedOffsets: { zhenguan: [2, 1] } });
+});

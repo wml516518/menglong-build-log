@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { resolveSessionExplorer } from '../session';
 import { HistorySearchClient } from '../search/client';
 import type { SearchIndexes, SearchResult } from '../search/protocol';
 import { filterEvents, parseExplorerState, serializeExplorerState, type HistoryExplorerState } from './state';
@@ -16,8 +17,9 @@ function writeLocation(state: HistoryExplorerState, replace: boolean) {
 const aborted = (error: unknown) => error instanceof Error && error.name === 'AbortError';
 
 /** The URL owns committed filters; text stays local until its single replace write settles. */
-export function useHistoryExplorer(indexes: SearchIndexes, viewportIds: ReadonlySet<string>, ready = true) {
-  const [state, setState] = useState(currentState);
+export function useHistoryExplorer(indexes: SearchIndexes, viewportIds: ReadonlySet<string>, ready = true, storedState?: HistoryExplorerState) {
+  const [state, setState] = useState(() => resolveSessionExplorer(storedState, new URLSearchParams(window.location.hash.split('?')[1])));
+  const restoreStored = useRef(Boolean(storedState));
   const latest = useRef(state);
   const urlTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const [client, setClient] = useState<HistorySearchClient | null>(null);
@@ -42,6 +44,10 @@ export function useHistoryExplorer(indexes: SearchIndexes, viewportIds: Readonly
   }, [commit]);
   const clear = useCallback(() => commit(parseExplorerState(new URLSearchParams()), false), [commit]);
   useEffect(() => {
+    if (restoreStored.current) {
+      if (serializeExplorerState(latest.current).toString() !== serializeExplorerState(currentState()).toString()) writeLocation(latest.current, true);
+      restoreStored.current = false;
+    }
     const restore = () => { cancelUrlWrite(); const next = currentState(); latest.current = next; setState(next); };
     window.addEventListener('hashchange', restore);
     window.addEventListener('popstate', restore);

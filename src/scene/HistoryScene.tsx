@@ -1,7 +1,8 @@
 import { Canvas } from '@react-three/fiber';
 import { Bloom, EffectComposer, Vignette } from '@react-three/postprocessing';
-import { Suspense, useCallback, useMemo, useState } from 'react';
+import { Suspense, useCallback, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
+import type { HistoryCameraState, HistoryFixedOffsets } from '../history/session';
 import type { HistoryEvent } from '../history/types';
 import { CameraRig, createClusterFocusRequest, type ClusterFocusRequest } from './CameraRig';
 import { EventStar, getEventPosition } from './EventStar';
@@ -17,6 +18,11 @@ import { StarField } from './StarField';
 import { TimelineRail } from './TimelineRail';
 
 interface HistorySceneProps {
+  initialCamera?: Partial<HistoryCameraState>;
+  onCameraChange?: (camera: HistoryCameraState) => void;
+  initialFixedOffsets?: HistoryFixedOffsets;
+  onFixedOffsetsChange?: (offsets: HistoryFixedOffsets) => void;
+  onUnavailable?: () => void;
   events: HistoryEvent[];
   selectedEvent: HistoryEvent | null;
   hoveredId: string | null;
@@ -32,8 +38,9 @@ interface HistorySceneProps {
 }
 
 const noSearchTargets: readonly string[] = [];
-export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, selectionSignal, reducedMotion, onSelect, onHover, onTravelYear, searchTargetIds = noSearchTargets, eventOpacities, onViewportChange }: HistorySceneProps) {
-  const [dragOffsets, setDragOffsets] = useState<Record<string, readonly [number, number]>>({});
+export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, selectionSignal, reducedMotion, onSelect, onHover, onTravelYear, searchTargetIds = noSearchTargets, eventOpacities, onViewportChange, initialCamera, onCameraChange, initialFixedOffsets = {}, onFixedOffsetsChange }: HistorySceneProps) {
+  const [dragOffsets, setDragOffsets] = useState<HistoryFixedOffsets>(initialFixedOffsets);
+  const releasedOffsets = useRef(dragOffsets);
   const [isDraggingStar, setIsDraggingStar] = useState(false);
   const [activeDrag, setActiveDrag] = useState<{ event: HistoryEvent; start: StarPointerStart } | null>(null);
   const [level, setLevel] = useState(() => getLodLevel(27.68));
@@ -64,8 +71,11 @@ export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, s
   const promote = useCallback((event: HistoryEvent, start: StarPointerStart) => { setActiveDrag({ event, start }); setIsDraggingStar(true); }, []);
   const changeDragState = useCallback((dragging: boolean) => { setIsDraggingStar(dragging); if (!dragging) setActiveDrag(null); }, []);
   const updateDragOffset = useCallback((id: string, offset: readonly [number, number]) => {
-    setDragOffsets((current) => ({ ...current, [id]: offset }));
-  }, []);
+    const next = { ...releasedOffsets.current, [id]: offset };
+    releasedOffsets.current = next;
+    setDragOffsets(next);
+    onFixedOffsetsChange?.(next);
+  }, [onFixedOffsetsChange]);
 
   return (
     <>
@@ -105,6 +115,8 @@ export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, s
         />
       ) : null}
       <CameraRig
+        initialCamera={initialCamera}
+        onCameraChange={onCameraChange}
         selectedEvent={selectedEvent}
         selectedPosition={selectedEvent ? positions.get(selectedEvent.id) : undefined}
         resetSignal={resetSignal}
@@ -130,11 +142,12 @@ export function HistoryScene(props: HistorySceneProps) {
       dpr={[1, 1.75]}
       camera={{ position: [0, 9.5, 26], fov: 43, near: 0.1, far: 150 }}
       gl={{ antialias: true, alpha: false, powerPreference: 'high-performance' }}
-      fallback={<SceneFallback />}
+      fallback={<SceneFallback onUnavailable={props.onUnavailable} />}
       onCreated={({ gl }) => {
         gl.toneMapping = THREE.ACESFilmicToneMapping;
         gl.toneMappingExposure = 1.05;
         gl.outputColorSpace = THREE.SRGBColorSpace;
+        gl.domElement.addEventListener('webglcontextlost', () => props.onUnavailable?.(), { once: true });
       }}
     >
       <Suspense fallback={null}>

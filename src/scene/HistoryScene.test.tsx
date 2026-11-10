@@ -83,3 +83,15 @@ it('protects search targets and threads filter dimming through instances, rich s
   expect(ofType(ClusterField).props.eventOpacities).toBe(opacities);
   expect(ofType(CameraRig).props.selectedEvent.id).toBe(events[0].id);
 });
+
+it('applies restored released offsets to all scene positions and publishes the next released offset', () => {
+  const events = historyEvents.slice(0, 2), onFixedOffsetsChange = vi.fn();
+  const { result } = renderHook(() => SceneContents({ events, selectedEvent: events[0], hoveredId: null, resetSignal: 0, selectionSignal: 0, reducedMotion: true, ...callbacks(), initialFixedOffsets: { [events[0].id]: [1, -0.5] }, onFixedOffsetsChange }));
+  const ofType = (type: unknown) => children(result.current).find(child => child.type === type);
+  expect(ofType(EventStar).props.dragOffset).toEqual([1, -0.5]);
+  expect(ofType(InstancedEventField).props.dragOffsets[events[0].id]).toEqual([1, -0.5]);
+  expect(ofType(CameraRig).props.selectedPosition[1]).toBeCloseTo(ofType(SceneProjection).props.positions.get(events[0].id)[1]);
+  expect(onFixedOffsetsChange).not.toHaveBeenCalled();
+  act(() => ofType(EventStar).props.onDragOffset(events[0].id, [2, -1]));
+  expect(onFixedOffsetsChange).toHaveBeenCalledWith({ [events[0].id]: [2, -1] });
+});

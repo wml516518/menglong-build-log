@@ -14,7 +14,7 @@ export interface HistoryExplorerState {
   themeIds: string[];
 }
 
-const keys = ['q', 'era', 'cat', 'person', 'place', 'min', 'from', 'to', 'major', 'view', 'theme'] as const;
+export const EXPLORER_QUERY_KEYS = ['q', 'era', 'cat', 'person', 'place', 'min', 'from', 'to', 'major', 'view', 'theme'] as const;
 const START_YEAR = -2070;
 const END_YEAR = 1949;
 const sortedUnique = (values: readonly string[]) => [...new Set(values)].sort();
@@ -61,7 +61,7 @@ export function serializeExplorerState(state: HistoryExplorerState, base = new U
   if (state.viewportOnly) raw.set('view', '1');
   const normalized = parseExplorerState(raw);
   const result = new URLSearchParams(base);
-  keys.forEach(key => result.delete(key));
+  EXPLORER_QUERY_KEYS.forEach(key => result.delete(key));
   if (normalized.text) result.append('q', normalized.text);
   normalized.eraIds.forEach(value => result.append('era', value));
   normalized.categories.forEach(value => result.append('cat', value));

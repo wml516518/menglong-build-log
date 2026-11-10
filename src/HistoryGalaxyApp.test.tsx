@@ -93,7 +93,7 @@ describe('History Galaxy app', () => {
     await user.keyboard('{Enter}');
 
     expect(screen.getByRole('dialog', { name: '五四运动' })).toHaveFocus();
-    expect(screen.getByLabelText('历史事件列表')).toHaveClass('is-fallback');
+    expect(screen.getByRole('region', { name: '二维历史时间轴' })).toHaveClass('is-fallback');
   });
 });
 

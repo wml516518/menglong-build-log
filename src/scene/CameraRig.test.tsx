@@ -2,6 +2,7 @@ import { act, renderHook } from '@testing-library/react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three-stdlib';
 import { CameraRig, classifyWheelIntent, clusterCameraPose, createClusterFocusRequest } from './CameraRig';
+import type { HistoryCameraState } from '../history/session';
 import type { ClusterFocusRequest } from './CameraRig';
 import type { ScreenCluster } from '../history/clustering/protocol';
 import { historyEvents } from '../history/events';
@@ -36,19 +37,19 @@ it('fits exact member world bounds while retaining the Task 8 screen focus recta
   for (const point of request.memberPositions) expect(Math.abs(new THREE.Vector3(...point).project(camera).x)).toBeLessThan(0.9);
 });
 
-function setup(reducedMotion = true) {
+function setup(reducedMotion = true, initialCamera?: Partial<HistoryCameraState>) {
   const canvas = document.createElement('canvas'); document.body.append(canvas);
   Object.defineProperty(canvas, 'clientHeight', { value: 600 });
   canvas.setPointerCapture = vi.fn(); canvas.releasePointerCapture = vi.fn();
   const camera = new THREE.PerspectiveCamera(43, 1.5, 0.1, 150); camera.position.set(0, 9.5, 26);
   harness.state = { camera, gl: { domElement: canvas } };
   const controls = new OrbitControls(camera, canvas);
-  const onTravelYear = vi.fn(), onDistanceChange = vi.fn();
-  const { result, rerender, unmount } = renderHook(({ focusRequest, selectedEvent = null, selectedPosition, resetSignal = 0, selectionSignal = 0 }: { focusRequest?: ClusterFocusRequest; selectedEvent?: HistoryEvent | null; selectedPosition?: readonly [number, number, number]; resetSignal?: number; selectionSignal?: number }) => CameraRig({ selectedEvent, selectedPosition, resetSignal, selectionSignal, reducedMotion, controlsEnabled: true, onTravelYear, onDistanceChange, focusRequest }), { initialProps: {} });
+  const onTravelYear = vi.fn(), onDistanceChange = vi.fn(), onCameraChange = vi.fn();
+  const { result, rerender, unmount } = renderHook(({ focusRequest, selectedEvent = null, selectedPosition, resetSignal = 0, selectionSignal = 0 }: { focusRequest?: ClusterFocusRequest; selectedEvent?: HistoryEvent | null; selectedPosition?: readonly [number, number, number]; resetSignal?: number; selectionSignal?: number }) => CameraRig({ selectedEvent, selectedPosition, resetSignal, selectionSignal, reducedMotion, controlsEnabled: true, onTravelYear, onDistanceChange, focusRequest, initialCamera, onCameraChange }), { initialProps: {} });
   result.current.props.ref.current = controls;
   for (const key of ['enableZoom', 'enablePan', 'minDistance', 'maxDistance', 'touches', 'minPolarAngle', 'maxPolarAngle']) if (result.current.props[key] !== undefined) (controls as any)[key] = result.current.props[key];
   controls.addEventListener('start', () => result.current.props.onStart());
-  return { camera, canvas, controls, onTravelYear, onDistanceChange, result, rerender, frame: () => act(() => harness.frame({}, 1 / 60)), close: () => { unmount(); controls.dispose(); canvas.remove(); } };
+  return { camera, canvas, controls, onTravelYear, onDistanceChange, onCameraChange, result, rerender, frame: () => act(() => harness.frame({}, 1 / 60)), close: () => { unmount(); controls.dispose(); canvas.remove(); } };
 }
 
 it('refocuses the same search result after timeline travel using its renewed selection signal', () => {
@@ -162,5 +163,23 @@ it.each(['wheel', 'orbit'] as const)('stops cluster travel at the current target
   expect(f.controls.target.distanceTo(interruptedTarget)).toBeLessThan(1e-9);
   expect(f.camera.position.distanceTo(interruptedCamera)).toBeLessThan(1e-9);
   expect(f.onTravelYear).not.toHaveBeenCalled();
+  f.close();
+});
+
+
+it('restores camera target/distance, reports changes without per-frame chatter and flushes the current pose on pagehide', () => {
+  const f = setup(true, { target: [-12, 2, 1], distance: 24 });
+  f.frame();
+  expect(f.controls.target.toArray()).toEqual([-12, 2, 1]);
+  expect(f.controls.getDistance()).toBeCloseTo(24);
+  expect(f.onCameraChange).toHaveBeenLastCalledWith({ target: [-12, 2, 1], distance: expect.closeTo(24) });
+  const calls = f.onCameraChange.mock.calls.length;
+  for (let index = 0; index < 60; index++) f.frame();
+  expect(f.onCameraChange).toHaveBeenCalledTimes(calls);
+  f.canvas.dispatchEvent(new WheelEvent('wheel', { deltaY: 90, cancelable: true }));
+  const currentDistance = f.controls.getDistance();
+  act(() => window.dispatchEvent(new Event('pagehide')));
+  expect(f.onCameraChange).toHaveBeenLastCalledWith({ target: [-12, 2, 1], distance: expect.closeTo(currentDistance) });
+  expect(currentDistance).toBeGreaterThan(24);
   f.close();
 });

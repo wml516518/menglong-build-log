@@ -1,3 +1,5 @@
+import { STAR_OFFSET_LIMITS } from '../history/sceneLimits';
+
 export interface StarPointerStart { pointerId: number; clientX: number; clientY: number; target: HTMLElement }
 export interface StarDragOptions {
   start: StarPointerStart;
@@ -15,7 +17,7 @@ export function beginStarDrag({ start, offset, onMove, onFinish, onCancel }: Sta
     const dx = event.clientX - start.clientX, dy = event.clientY - start.clientY;
     dragging ||= Math.hypot(dx, dy) > 5;
     if (!dragging) return;
-    current = [clamp(offset[0] - dy * 0.012, 2.6), clamp(offset[1] + dx * 0.01, 2.4)];
+    current = [clamp(offset[0] - dy * 0.012, STAR_OFFSET_LIMITS[0]), clamp(offset[1] + dx * 0.01, STAR_OFFSET_LIMITS[1])];
     onMove(current);
   };
   const detach = () => {
