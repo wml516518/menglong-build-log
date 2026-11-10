@@ -73,12 +73,18 @@ it('adopts existing copy offline but refuses missing or protected-value mismatch
 
 it('keeps all outputs unchanged when a later document fails translation', async () => {
   const options = await fixture();
-  await translateChangedContent(options);
-  const output = join(options.root, 'content/en/site.yml');
-  const before = await readFile(output, 'utf8');
-  await writeFile(join(options.root, 'content/zh/posts/bad.md'), 'invalid');
-  await expect(translateChangedContent({ ...options, policy: { policyVersion: 2 }, changedPaths: [...options.changedPaths, 'content/zh/posts/bad.md'] })).rejects.toThrow();
-  expect(await readFile(output, 'utf8')).toBe(before);
+  const post = (slug: string) => `---\nslug: ${slug}\ndraft: false\ndate: 2026-06-05\ntitle: ${slug}\nsummary: Summary\ntags: [React]\nrelatedProject: Project\n---\n\nReviewed body\n`;
+  const changedPaths = ['content/zh/posts/a-valid.md', 'content/zh/posts/z-failing.md'];
+  for (const [index, path] of changedPaths.entries()) await writeFile(join(options.root, path), post(index === 0 ? 'a-valid' : 'z-failing'));
+  await translateChangedContent({ ...options, changedPaths });
+  const outputs = changedPaths.map(path => join(options.root, path.replace('content/zh/', 'content/en/')));
+  const before = await Promise.all(outputs.map(path => readFile(path, 'utf8')));
+  options.translator.translate.mockClear();
+  options.translator.translate.mockImplementationOnce(async segments => new Map(segments.map(segment => [segment.id, segment.id === 'frontmatter.title' ? 'Staged new title' : segment.text])));
+  options.translator.translate.mockResolvedValueOnce(new Map([['wrong-id', 'Failure']]));
+  await expect(translateChangedContent({ ...options, policy: { policyVersion: 2 }, changedPaths: [...changedPaths].reverse() })).rejects.toThrow(/extra|missing/i);
+  expect(options.translator.translate.mock.calls.map(([segments]) => segments.find(segment => segment.id === 'frontmatter.title')?.text)).toEqual(['a-valid', 'z-failing']);
+  expect(await Promise.all(outputs.map(path => readFile(path, 'utf8')))).toEqual(before);
 });
 
 it('runs CLI against a separate root without a key when current and rejects invalid invocation modes', async () => {

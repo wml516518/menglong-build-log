@@ -55,3 +55,17 @@ it('rejects loss of protected glossary terms', async () => {
   const { translator } = setup();
   await expect(translator.translate([{ ...segments[0], text: 'React 产品' }])).rejects.toThrow(/protected/i);
 });
+
+it.each(['transport', 'semantic ID', 'HTTP body', 'malformed body'])('redacts secret-bearing %s errors', async kind => {
+  const secret = 'review-fake-key';
+  const privateMessage = `DeepSeek HTTP 503 Authorization: Bearer ${secret} private-provider-body`;
+  const fetch = vi.fn();
+  if (kind === 'transport') fetch.mockRejectedValue(new Error(privateMessage));
+  else if (kind === 'semantic ID') fetch.mockResolvedValue(reply(JSON.stringify({ translations: [{ id: privateMessage, text: 'unexpected' }] })));
+  else if (kind === 'HTTP body') fetch.mockResolvedValue(new Response(privateMessage, { status: 401 }));
+  else fetch.mockImplementation(async () => new Response(privateMessage));
+  let failure: unknown;
+  try { await createDeepSeekTranslator({ apiKey: secret, fetch, sleep: async () => {} }).translate(segments); } catch (error) { failure = error; }
+  expect(failure).toBeInstanceOf(Error);
+  expect(String(failure)).not.toMatch(/review-fake-key|Authorization|Bearer|private-provider-body/);
+});

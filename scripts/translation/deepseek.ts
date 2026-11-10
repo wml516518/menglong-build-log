@@ -4,6 +4,7 @@ import { validateTranslations, type Translator } from './types';
 
 const payloadSchema = z.object({ translations: z.array(z.object({ id: z.string(), text: z.string().trim().min(1) }).strict()) }).strict();
 class Retryable extends Error {}
+class HttpError extends Error {}
 
 export function createDeepSeekTranslator(options: {
   apiKey: string;
@@ -31,13 +32,13 @@ export function createDeepSeekTranslator(options: {
               ] })
           });
           if (response.status === 429 || response.status >= 500) throw new Retryable(`DeepSeek HTTP ${response.status}`);
-          if (!response.ok) throw new Error(`DeepSeek HTTP ${response.status} (attempt ${attempt})`);
+          if (!response.ok) throw new HttpError(`DeepSeek HTTP ${response.status} (attempt ${attempt})`);
           envelope = await response.json();
         } catch (error) {
           if (error instanceof Retryable) throw error;
           if (error instanceof SyntaxError || (error instanceof Error && ['TimeoutError', 'AbortError'].includes(error.name))) throw new Retryable('DeepSeek timeout or malformed JSON');
           // Never expose provider bodies, transport errors, headers, or credentials.
-          if (error instanceof Error && /^DeepSeek HTTP \d+/.test(error.message)) throw error;
+          if (error instanceof HttpError) throw error;
           throw new Error(`DeepSeek request failed (attempt ${attempt})`);
         }
         const parsed = z.object({ choices: z.array(z.object({ finish_reason: z.string(), message: z.object({ content: z.string().nullable() }) })).length(1) }).safeParse(envelope);
@@ -51,9 +52,9 @@ export function createDeepSeekTranslator(options: {
         if (!valid.success) throw new Error(`Invalid translation payload (attempt ${attempt})`);
         const translations = new Map(valid.data.translations.map(item => [item.id, item.text]));
         if (translations.size !== valid.data.translations.length) throw new Error('Duplicate translation ID');
-        validateTranslations(segments, translations);
+        try { validateTranslations(segments, translations); } catch { throw new Error(`Translation ID or text mismatch (attempt ${attempt})`); }
         for (const segment of segments) for (const term of translationGlossary.protected) {
-          if (segment.text.includes(term) && !translations.get(segment.id)!.includes(term)) throw new Error(`Protected glossary term missing in ${segment.id}`);
+          if (segment.text.includes(term) && !translations.get(segment.id)!.includes(term)) throw new Error(`Protected glossary term missing (attempt ${attempt})`);
         }
         return translations;
       } catch (error) {
