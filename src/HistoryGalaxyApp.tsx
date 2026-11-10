@@ -11,7 +11,7 @@ import { QuickEventPanel } from './components/QuickEventPanel';
 import { dynasties } from './history/dynasties';
 import type { HistoryContentLoader } from './history/content/loader';
 import { compactEventsForScene } from './history/content/scene-adapter';
-import { getDynastyForYear } from './history/space';
+import { DEFAULT_HISTORY_YEAR, getDynastyForYear } from './history/space';
 import type { DynastyId, HistoryEvent } from './history/types';
 import { useHistoryNavigation } from './history/useHistoryNavigation';
 import { useReducedMotion } from './history/useReducedMotion';
@@ -41,7 +41,7 @@ export function HistoryGalaxyExperience() {
   const [camera, setCamera] = useState(restored?.camera);
   const [fixedOffsets, setFixedOffsets] = useState(restored?.fixedOffsets ?? {});
   const historyEvents = useMemo(() => compactEventsForScene(content.events, content.people), [content.events, content.people]);
-  const [currentYear, setCurrentYear] = useState(618);
+  const [currentYear, setCurrentYear] = useState(DEFAULT_HISTORY_YEAR);
   const [activeDynastyId, setActiveDynastyId] = useState<DynastyId>('tang');
   const [sceneFailed, setSceneFailed] = useState(false);
   const syncEvent = useCallback((event: HistoryEvent) => {
@@ -72,7 +72,7 @@ export function HistoryGalaxyExperience() {
     setActiveDynastyId(getDynastyForYear(year).id);
   }, []);
   const handleReset = useCallback(() => {
-    setCurrentYear(701);
+    setCurrentYear(DEFAULT_HISTORY_YEAR);
     setActiveDynastyId('tang');
     navigation.triggerReset();
   }, [navigation]);
@@ -162,8 +162,9 @@ export function HistoryGalaxyExperience() {
         onReset={handleReset}
       />
 
-      {content.loading ? <p role="status">正在加载历史索引…</p> : null}
-      {content.error ? <p role="alert">历史内容加载失败 <button type="button" onClick={() => { void content.retry().catch(() => {}); }}>重试历史内容</button></p> : null}
+      {content.loading || content.error ? <section className="history-content-status" aria-label="历史内容状态">
+        {content.loading ? <p role="status">正在加载历史索引…</p> : <p role="alert">历史内容加载失败 <button type="button" onClick={() => { void content.retry().catch(() => {}); }}>重试历史内容</button></p>}
+      </section> : null}
       <HistoryExplorer explorer={explorer} indexes={searchIndexes} eras={content.manifest?.eras ?? []} selectedId={navigation.selectedEvent?.id ?? null} onSelect={navigation.selectEvent} onOpen={navigation.closeStory} viewportAvailable={!showFallback} />
       {!showFallback ? <EventNavigator events={historyEvents} selectedEvent={navigation.selectedEvent} onSelect={navigation.selectEvent} isFallback={showFallback} eventOpacities={explorer.eventOpacities} integratedExplorer /> : null}
 

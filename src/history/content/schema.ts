@@ -5,7 +5,7 @@ export const relationTypes = ['cause', 'consequence', 'parallel', 'contrast', 'p
 export const yearPrecisions = ['exact', 'circa', 'decade', 'century', 'range'] as const;
 
 const id = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
-const prose = z.string().trim().min(1).refine(value => !/<[a-zA-Z/]/.test(value), 'Raw HTML is forbidden');
+const prose = z.string().trim().min(1).refine(value => !/<[a-zA-Z/!?]/.test(value), 'Raw HTML is forbidden');
 const ids = z.array(id);
 const year = z.number().int().refine(value => value !== 0, 'There is no historical year zero');
 const color = z.string().regex(/^#[0-9a-fA-F]{6}$/);

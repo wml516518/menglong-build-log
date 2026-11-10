@@ -54,14 +54,14 @@ export function HistoryExplorer({ explorer, indexes, eras, selectedId, onSelect,
     {!mobile ? <button ref={toggle} type="button" className="explorer-toggle" aria-label="展开历史探索器" title="展开历史探索器" aria-expanded={open} aria-controls={id} hidden={open} onClick={() => setDesktopOpen(true)}><PanelLeftOpen size={18} aria-hidden="true" /><span>探索</span></button> : null}
     {open ? <aside ref={panel} id={id} className="explorer-panel" role={mobile ? 'dialog' : undefined} aria-modal={mobile ? false : undefined} aria-label={mobile ? '历史探索' : '历史探索器'}>
       <div className="explorer-topline"><span>{mobile ? view : '历史探索'}</span><div><button type="button" aria-label="清除全部筛选" title="清除全部筛选" onClick={explorer.clear}><RotateCcw size={15} aria-hidden="true" /></button><button type="button" aria-label={mobile ? '关闭探索抽屉' : '收起历史探索器'} title={mobile ? '关闭探索抽屉' : '收起历史探索器'} onClick={close}>{mobile ? <X size={18} aria-hidden="true" /> : <ChevronLeft size={18} aria-hidden="true" />}</button></div></div>
-      <div className="explorer-body" role={mobile ? 'tabpanel' : undefined} aria-labelledby={mobile ? `${id}-${view}` : undefined}>
+      <div className="explorer-body" id={`${id}-panel`} role={mobile ? 'tabpanel' : undefined} aria-labelledby={mobile ? `${id}-${view}` : undefined}>
         {!mobile || view === '搜索' ? search : null}
         {!mobile || view === '筛选' ? <FilterPanel indexes={indexes} eras={eras} state={explorer.state} onChange={explorer.changeFilters} viewportAvailable={viewportAvailable} includeThemes={!mobile} /> : null}
         {mobile && view === '专题' ? <ThemeOptions indexes={indexes} state={explorer.state} onChange={explorer.changeFilters} /> : null}
         {(mobile && view === '事件') || (!mobile && !explorer.state.text.trim()) ? <SearchResults label="匹配事件" results={matches} selectedId={selectedId} onSelect={select} /> : null}
       </div>
     </aside> : null}
-    {mobile ? <div className="explorer-tabs" role="tablist" aria-label="历史探索视图">{views.map(({ name, Icon }) => <button ref={node => { tabs.current[name] = node; }} key={name} type="button" role="tab" id={`${id}-${name}`} aria-controls={id} aria-selected={open && view === name} tabIndex={view === name ? 0 : -1} onClick={() => { enterPanel.current = true; onOpen?.(); setView(name); setDrawerOpen(true); setActivation(value => value + 1); }} onKeyDown={event => {
+    {mobile ? <div className="explorer-tabs" role="tablist" aria-label="历史探索视图">{views.map(({ name, Icon }) => <button ref={node => { tabs.current[name] = node; }} key={name} type="button" role="tab" id={`${id}-${name}`} aria-controls={`${id}-panel`} aria-selected={open && view === name} tabIndex={view === name ? 0 : -1} onClick={() => { enterPanel.current = true; onOpen?.(); setView(name); setDrawerOpen(true); setActivation(value => value + 1); }} onKeyDown={event => {
       if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
       event.preventDefault(); event.stopPropagation();
       const index = views.findIndex(item => item.name === name);

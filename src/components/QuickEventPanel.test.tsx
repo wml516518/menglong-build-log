@@ -6,7 +6,7 @@ import { archiveFixture } from '../../tests/fixtures/historyArchives';
 beforeEach(() => { window.history.replaceState(null, '', '/#/history-galaxy'); });
 async function open(fixture = archiveFixture()) {
   render(<HistoryGalaxyApp loader={fixture.loader} />);
-  await userEvent.click(await screen.findByRole('button', { name: '查看历史事件：627年 贞观之治' }));
+  await userEvent.click(await screen.findByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' }));
   return { fixture, panel: screen.getByRole('dialog', { name: '贞观之治' }) };
 }
 it('shows the compact summary and lazy causes, results, impacts and linked core people in the existing panel', async () => {
@@ -15,6 +15,7 @@ it('shows the compact summary and lazy causes, results, impacts and linked core 
   const { panel } = await open(fixture);
   expect(within(panel).getByText('唐太宗在位期间，君臣以恢复生产、整顿政治和听取意见为主要施政方向。')).toBeInTheDocument();
   expect(within(panel).getByText('627 年 — 649 年')).toBeInTheDocument();
+  expect(within(panel).getByText('627 年 — 649 年')).toHaveAccessibleName('627 年 — 649 年');
   expect(within(panel).getByText(/唐代/)).toBeInTheDocument();
   expect(within(panel).getByLabelText('影响力 5 级')).toBeInTheDocument();
   expect(within(panel).getByRole('status')).toHaveTextContent('正在加载档案');
@@ -60,5 +61,18 @@ it('restores focus on close and keeps a missing optional person readable', async
   expect(within(within(panel).getByRole('navigation', { name: '核心人物' })).getByText('资料整理中')).toBeInTheDocument();
   await userEvent.click(within(panel).getByRole('button', { name: '关闭故事' }));
   expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
-  expect(screen.getByRole('button', { name: '查看历史事件：627年 贞观之治' })).toHaveFocus();
+  expect(screen.getByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' })).toHaveFocus();
+});
+
+it.each([
+  [-230, -221, 'range', '公元前 230 年 — 公元前 221 年'],
+  [-1600, -1600, 'circa', '约公元前 1600 年'],
+  [700, 700, 'circa', '约 700 年'],
+])('keeps the visible and accessible date complete for %s–%s (%s)', async (startYear, endYear, yearPrecision, date) => {
+  const fixture = archiveFixture();
+  Object.assign(fixture.events.find((event: { id: string }) => event.id === 'zhenguan'), { startYear, endYear, year: startYear, yearPrecision });
+  render(<HistoryGalaxyApp loader={fixture.loader} />);
+  await userEvent.click(await screen.findByRole('button', { name: `查看历史事件：${date} 贞观之治` }));
+  const panel = screen.getByRole('dialog', { name: '贞观之治' });
+  expect(within(panel).getByText(date)).toHaveAccessibleName(date);
 });

@@ -31,6 +31,7 @@ it('renders all 30 current rows below the 200-row threshold, with semantic era/p
 it('labels BCE ranges using historical dates and activates rows with Enter and Space', async () => {
   const user = userEvent.setup();
   render(<Timeline />);
+  expect(screen.getByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' })).toBeInTheDocument();
   const row = screen.getByRole('button', { name: /查看历史事件：公元前 230 年 — 公元前 221 年 秦统一/ });
   expect(row).toHaveTextContent('政治');
   expect(row).toHaveAccessibleDescription(/政治.*影响力 5 级/);
@@ -63,6 +64,6 @@ it('starts a previous-event keyboard journey at the latest event when the timeli
   render(<Timeline />);
   screen.getByRole('region', { name: '二维历史时间轴' }).focus();
   await user.keyboard('{ArrowLeft}');
-  expect(screen.getByRole('button', { name: /1949年 中华人民共和国成立/ })).toHaveFocus();
-  expect(screen.getByRole('button', { name: /1949年 中华人民共和国成立/ })).toHaveAttribute('aria-pressed', 'true');
+  expect(screen.getByRole('button', { name: /1949 年 中华人民共和国成立/ })).toHaveFocus();
+  expect(screen.getByRole('button', { name: /1949 年 中华人民共和国成立/ })).toHaveAttribute('aria-pressed', 'true');
 });

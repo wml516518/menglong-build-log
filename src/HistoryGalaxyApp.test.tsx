@@ -9,6 +9,19 @@ const fixture = (path: string) => JSON.parse(readFileSync(`public/history-conten
 const testLoader = () => createHistoryContentLoader({ baseUrl: '/content/', fetchImpl: async input => new Response(JSON.stringify(fixture(String(input).replace('/content/', '')))) });
 
 describe('History Galaxy app', () => {
+  it('exposes an identifiable content status region and retries a failed index', async () => {
+    let broken = true;
+    const loader = createHistoryContentLoader({ baseUrl: '/content/', fetchImpl: async input => {
+      const path = String(input).replace('/content/', '');
+      return broken && path.endsWith('events.compact.json') ? new Response('', { status: 503 }) : new Response(JSON.stringify(fixture(path)));
+    } });
+    render(<HistoryGalaxyApp loader={loader} />);
+    const alert = await screen.findByRole('alert');
+    expect(alert.closest('[aria-label="历史内容状态"]')).not.toBeNull();
+    broken = false;
+    await userEvent.click(within(alert).getByRole('button', { name: '重试历史内容' }));
+    expect(await screen.findAllByRole('button', { name: /查看历史事件/ })).toHaveLength(30);
+  });
   it('provides a route back to the portfolio homepage', async () => {
     await act(async () => { render(<HistoryGalaxyApp loader={testLoader()} />); });
 
@@ -31,15 +44,15 @@ describe('History Galaxy app', () => {
     await act(async () => { render(<HistoryGalaxyApp loader={testLoader()} />); });
 
     expect(screen.getAllByRole('button', { name: /查看历史事件/ })).toHaveLength(30);
-    expect(screen.getByRole('button', { name: '查看历史事件：627年 贞观之治' })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: '查看历史事件：1949年 中华人民共和国成立' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: '查看历史事件：1949 年 中华人民共和国成立' })).toBeInTheDocument();
   });
 
   it('opens a story with people and closes it', async () => {
     const user = userEvent.setup();
     await act(async () => { render(<HistoryGalaxyApp loader={testLoader()} />); });
 
-    await user.click(screen.getByRole('button', { name: '查看历史事件：1840年 鸦片战争' }));
+    await user.click(screen.getByRole('button', { name: '查看历史事件：1840 年 — 1842 年 鸦片战争' }));
 
     const dialog = screen.getByRole('dialog', { name: '鸦片战争' });
     expect(within(dialog).getByText('林则徐')).toBeInTheDocument();
@@ -53,7 +66,7 @@ describe('History Galaxy app', () => {
     const user = userEvent.setup();
     await act(async () => { render(<HistoryGalaxyApp loader={testLoader()} />); });
 
-    await user.click(screen.getByRole('button', { name: '查看历史事件：1840年 鸦片战争' }));
+    await user.click(screen.getByRole('button', { name: '查看历史事件：1840 年 — 1842 年 鸦片战争' }));
     await user.keyboard('{ArrowRight}');
 
     expect(screen.getByRole('dialog', { name: '太平天国' })).toBeInTheDocument();
@@ -69,7 +82,7 @@ describe('History Galaxy app', () => {
 
     const dialog = screen.getByRole('dialog', { name: '陈桥兵变' });
     expect(dialog).toBeInTheDocument();
-    expect(within(dialog).getByLabelText('960年')).toBeInTheDocument();
+    expect(within(dialog).getByLabelText('960 年')).toBeInTheDocument();
   });
 
   it('keeps every era navigation button operational', async () => {
@@ -88,7 +101,7 @@ describe('History Galaxy app', () => {
   it('opens a focused event with Enter and exposes the 2D fallback list', async () => {
     const user = userEvent.setup();
     await act(async () => { render(<HistoryGalaxyApp loader={testLoader()} />); });
-    const eventButton = screen.getByRole('button', { name: '查看历史事件：1919年 五四运动' });
+    const eventButton = screen.getByRole('button', { name: '查看历史事件：1919 年 五四运动' });
 
     eventButton.focus();
     await user.keyboard('{Enter}');
@@ -109,9 +122,9 @@ describe('compact content integration', () => {
     } });
     const user = userEvent.setup();
     render(<HistoryGalaxyApp loader={loader} />);
-    await screen.findByRole('button', { name: '查看历史事件：627年 贞观之治' });
+    await screen.findByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' });
     expect(screen.getAllByRole('button', { name: /查看历史事件/ })).toHaveLength(1200);
-    await user.click(screen.getByRole('button', { name: '查看历史事件：627年 贞观之治' }));
+    await user.click(screen.getByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' }));
     expect(await screen.findByText(/隋末战乱之后，统治者需要恢复生产与政治秩序/)).toBeInTheDocument();
     expect(within(screen.getByRole('dialog')).getByRole('link', { name: /完整/ })).toHaveAttribute('href', expect.stringContaining('/event/zhenguan'));
   });
@@ -130,10 +143,10 @@ describe('compact content integration', () => {
     } });
     const user = userEvent.setup();
     render(<HistoryGalaxyApp loader={loader} />);
-    await screen.findByRole('button', { name: '查看历史事件：627年 索引中的唐代事件' });
+    await screen.findByRole('button', { name: '查看历史事件：627 年 — 649 年 索引中的唐代事件' });
     expect(screen.getAllByRole('button', { name: /查看历史事件/ })).toHaveLength(2);
     expect(paths.filter(path => path.startsWith('eras/'))).toEqual([]);
-    await user.click(screen.getByRole('button', { name: '查看历史事件：627年 索引中的唐代事件' }));
+    await user.click(screen.getByRole('button', { name: '查看历史事件：627 年 — 649 年 索引中的唐代事件' }));
     expect(screen.getByRole('dialog', { name: '索引中的唐代事件' })).toBeInTheDocument();
     expect(within(screen.getByRole('dialog')).getByRole('status')).toHaveTextContent('正在加载档案');
     await act(async () => { release(); });
@@ -153,7 +166,7 @@ describe('compact content integration', () => {
     } });
     const user = userEvent.setup();
     render(<HistoryGalaxyApp loader={loader} />);
-    await user.click(await screen.findByRole('button', { name: '查看历史事件：627年 贞观之治' }));
+    await user.click(await screen.findByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' }));
     expect(await screen.findByRole('alert')).toHaveTextContent('档案加载失败');
     expect(screen.getByText('纳谏、任贤与制度修整，塑造唐初政治气象。')).toBeInTheDocument();
     broken = false;

@@ -12,6 +12,18 @@ import type { ClusterResult } from '../history/clustering/protocol';
 vi.mock('@react-three/fiber', async importOriginal => ({ ...await importOriginal<typeof import('@react-three/fiber')>(), useThree: () => ({ size: { width: 1440, height: 900 } }) }));
 
 const callbacks = () => ({ onSelect: vi.fn(), onHover: vi.fn(), onTravelYear: vi.fn() });
+it('ignores context loss from a removed canvas but reports loss on a live one', () => {
+  const onUnavailable = vi.fn();
+  const tree = HistoryScene({ events: [], selectedEvent: null, hoveredId: null, resetSignal: 0, selectionSignal: 0, reducedMotion: true, ...callbacks(), onUnavailable });
+  const detached = document.createElement('canvas');
+  tree.props.onCreated({ gl: { domElement: detached } });
+  detached.dispatchEvent(new Event('webglcontextlost'));
+  expect(onUnavailable).not.toHaveBeenCalled();
+  const live = document.createElement('canvas'); document.body.append(live);
+  tree.props.onCreated({ gl: { domElement: live } });
+  live.dispatchEvent(new Event('webglcontextlost'));
+  expect(onUnavailable).toHaveBeenCalledOnce(); live.remove();
+});
 it('does not report failure when the healthy canvas DOM fallback subtree mounts', () => {
   const onUnavailable = vi.fn();
   const canvas = HistoryScene({ events: [], selectedEvent: null, hoveredId: null, resetSignal: 0, selectionSignal: 0, reducedMotion: true, ...callbacks(), onUnavailable });

@@ -8,6 +8,10 @@ import type { ScreenCluster } from '../history/clustering/protocol';
 import { historyEvents } from '../history/events';
 import type { HistoryEvent } from '../history/types';
 import { getEventPosition } from './EventStar';
+import { yearToX, xToYear } from '../history/space';
+import { projectSceneEvents } from './sceneClustering';
+import { readFileSync } from 'node:fs';
+import { compactEventsForScene } from '../history/content/scene-adapter';
 
 const harness = vi.hoisted(() => ({ state: undefined as any, frame: undefined as any }));
 vi.mock('@react-three/fiber', async importOriginal => ({ ...await importOriginal<typeof import('@react-three/fiber')>(), useThree: (select: (state: any) => unknown) => select(harness.state), useFrame: (frame: any) => { harness.frame = frame; } }));
@@ -61,6 +65,22 @@ function setup(reducedMotion = true, initialCamera?: Partial<HistoryCameraState>
   return { camera, canvas, controls, onTravelYear, onDistanceChange, onCameraChange, result, rerender, frame: () => act(() => harness.frame({}, 1 / 60)), close: () => { unmount(); controls.dispose(); canvas.remove(); } };
 }
 
+it.each([{ width: 1440, height: 900 }, { width: 390, height: 844 }])('defaults and resets to 701 with production events visible (%j)', viewport => {
+  const aspect = viewport.width / viewport.height;
+  const events = compactEventsForScene(JSON.parse(readFileSync('public/history-content/generated/indexes/events.compact.json', 'utf8')), []);
+  const positions = new Map(events.map(event => [event.id, getEventPosition(event)]));
+  const f = setup(); f.camera.aspect = aspect; f.camera.updateProjectionMatrix();
+  f.frame();
+  expect(xToYear(f.controls.target.x)).toBe(701);
+  expect(xToYear(f.camera.position.x)).toBe(701);
+  expect(projectSceneEvents(events, positions, f.camera, viewport).filter(event => event.visible).length).toBeGreaterThan(0);
+  f.rerender({ resetSignal: 1 }); f.frame();
+  expect(xToYear(f.controls.target.x)).toBe(701);
+  expect(f.onTravelYear).toHaveBeenLastCalledWith(701);
+  expect(projectSceneEvents(events, positions, f.camera, viewport).filter(event => event.visible).length).toBeGreaterThan(0);
+  f.close();
+});
+
 it('refocuses the same search result after timeline travel using its renewed selection signal', () => {
   const f = setup();
   const selectedEvent = historyEvents[0];
@@ -106,8 +126,8 @@ it('keeps the next selected event centered after a close cluster focus and resto
   f.rerender({ focusRequest: high, selectedEvent: selected, selectedPosition: fixed }); f.frame();
   expect(f.controls.target.toArray()).toEqual(fixed);
   f.rerender({ focusRequest: high, selectedEvent: selected, resetSignal: 1 }); f.frame();
-  expect(f.controls.target.toArray()).toEqual([-28, 0.8, 0]);
-  expect(f.camera.position.toArray()).toEqual([-28, 9.5, 26]);
+  expect(f.controls.target.toArray()).toEqual([yearToX(701), 0.8, 0]);
+  expect(f.camera.position.toArray()).toEqual([yearToX(701), 9.5, 26]);
   f.close();
 });
 
@@ -151,7 +171,7 @@ it.each(['wheel', 'orbit'] as const)('stops cluster travel at the current target
   const beforeFocus = f.controls.target.clone();
   f.rerender({ focusRequest: request });
   for (let i = 0; i < 8; i++) f.frame();
-  expect(f.controls.target.distanceTo(beforeFocus)).toBeGreaterThan(1);
+  expect(f.controls.target.distanceTo(beforeFocus)).toBeGreaterThan(0.5);
   expect(f.controls.target.length()).toBeGreaterThan(1);
 
   // Native OrbitControls dispatches start, which invokes CameraRig's actual

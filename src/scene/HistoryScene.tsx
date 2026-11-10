@@ -148,7 +148,10 @@ export function HistoryScene(props: HistorySceneProps) {
         gl.toneMapping = THREE.ACESFilmicToneMapping;
         gl.toneMappingExposure = 1.05;
         gl.outputColorSpace = THREE.SRGBColorSpace;
-        gl.domElement.addEventListener('webglcontextlost', () => props.onUnavailable?.(), { once: true });
+        gl.domElement.addEventListener('webglcontextlost', () => {
+          // Renderer disposal intentionally loses the old context after unmount.
+          if (gl.domElement.isConnected) props.onUnavailable?.();
+        }, { once: true });
       }}
     >
       <Suspense fallback={null}>

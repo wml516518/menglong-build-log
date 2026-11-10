@@ -29,6 +29,19 @@
 body[data-dragging-star="true"] .history-experience { cursor: grabbing !important; }
 
 .history-experience button { font: inherit; }
+.history-content-status {
+  position: absolute;
+  z-index: 45;
+  top: 210px;
+  left: max(360px, 35%);
+  right: 24px;
+  padding: 16px;
+  border: 1px solid var(--bronze);
+  background: #101b22;
+}
+.history-content-status p { margin: 0; }
+.history-content-status button { margin-left: 12px; padding: 8px; color: var(--paper); background: #263b43; border: 1px solid var(--bronze); cursor: pointer; }
+@media (max-width: 820px) { .history-content-status { left: 16px; right: 16px; } }
 
 .history-experience button:focus-visible {
   outline: 1px solid #f2d28d;

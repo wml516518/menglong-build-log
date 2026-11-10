@@ -105,15 +105,17 @@ it('returns through real quick/event/person links with the complete galaxy query
   window.history.replaceState(null, '', `/${galaxy}`);
   const fixture = archiveFixture();
   render(<App historyLoader={fixture.loader} />);
-  await userEvent.click(await screen.findByRole('button', { name: '查看历史事件：627年 贞观之治' }));
+  await userEvent.click(await screen.findByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' }));
   await userEvent.click(screen.getByRole('link', { name: /完整档案/ }));
   await screen.findByRole('heading', { level: 1, name: '贞观之治' });
   await userEvent.click(screen.getByRole('link', { name: '唐代政治之旅' }));
   await screen.findByRole('heading', { level: 1, name: '唐代政治之旅' });
   await userEvent.click(within(screen.getByRole('list', { name: '主题旅程' })).getByRole('link', { name: '贞观之治' }));
   await screen.findByRole('heading', { level: 1, name: '贞观之治' });
+  await waitFor(() => expect(screen.getByRole('heading', { level: 1, name: '贞观之治' })).toHaveFocus());
   await userEvent.click(screen.getByRole('link', { name: '唐太宗' }));
   await screen.findByRole('heading', { level: 1, name: '唐太宗' });
+  await waitFor(() => expect(screen.getByRole('heading', { level: 1, name: '唐太宗' })).toHaveFocus());
   expect(screen.getByRole('link', { name: '返回历史星河' })).toHaveAttribute('href', galaxy);
   await userEvent.click(screen.getByRole('link', { name: '返回历史星河' }));
   await waitFor(() => expect(window.location.hash).toBe(galaxy));

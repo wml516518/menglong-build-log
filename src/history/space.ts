@@ -1,5 +1,6 @@
 import { dynasties } from './dynasties';
 import type { Dynasty, DynastyId, HistoryEvent } from './types';
+export const DEFAULT_HISTORY_YEAR = 701;
 
 // Piecewise chronology reserves one quarter of the scene for 1840–1949.
 // Ordinal years join 1 BCE directly to 1 CE, with no year zero.

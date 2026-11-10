@@ -51,6 +51,15 @@ beforeEach(() => {
   vi.stubGlobal('Worker', LocalWorker);
   mobile(false);
 });
+it('associates each mobile tab with its actual labelled panel', async () => {
+  mobile(true); await openApp();
+  for (const name of ['事件', '搜索', '筛选', '专题']) {
+    const tab = screen.getByRole('tab', { name }); await userEvent.click(tab);
+    const panel = screen.getByRole('tabpanel');
+    expect(tab.getAttribute('aria-controls')).toBe(panel.id);
+    expect(panel).toHaveAttribute('aria-labelledby', tab.id);
+  }
+});
 afterEach(() => { vi.useRealTimers(); vi.unstubAllGlobals(); });
 
 it('restores combined category, year and influence filters from the URL and dims every unmatched event', async () => {

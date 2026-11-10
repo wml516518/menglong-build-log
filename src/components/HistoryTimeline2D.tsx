@@ -57,7 +57,7 @@ export function HistoryTimeline2D({ events, eras, state, selectedId, onSelect, f
         <h3>{period.label}</h3>
         <ol>{period.items.map(({ event, match, opacity }) => {
           const date = historyDate(event.startYear, event.endYear, event.yearPrecision);
-          const accessibleDate = event.startYear > 0 ? `${event.startYear}年` : date;
+          const accessibleDate = date;
           return <li key={event.id}><button ref={node => { if (node) buttons.current.set(event.id, node); else buttons.current.delete(event.id); }} type="button" data-event-id={event.id} data-match={match} data-opacity={opacity} data-search-target={searchTargetIds.includes(event.id)} aria-pressed={selectedId === event.id} aria-describedby={`${id}-${event.id}-metadata`} aria-label={`查看历史事件：${accessibleDate} ${event.title}`} onClick={() => onSelect(event.id)}>
             <time>{date}</time><span className="timeline-2d-event"><strong>{event.title}</strong><span id={`${id}-${event.id}-metadata`}>{event.categories.map(category => categoryNames[category]).join(' · ')}<i aria-hidden="true"> / </i>影响力 {event.influence} 级{!match ? <em>未匹配</em> : null}{selectedId === event.id ? <em>已选择</em> : null}</span></span><span className="timeline-2d-arrow" aria-hidden="true">↗</span>
           </button></li>;

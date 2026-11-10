@@ -1,5 +1,5 @@
 import { ArrowLeft, RotateCcw } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { getHistoryReturnLocation, restoreHistoryReturnLocation, type ArchiveRoute } from '../../routes';
 import { useHistoryContent } from '../../history/content/store';
 import type { HistoryEventArchive, PersonArchive as PersonArchiveData, ThemeArchive as ThemeArchiveData } from '../../history/content/schema';
@@ -13,6 +13,12 @@ export function ArchiveShell({ route }: { route: ArchiveRoute }) {
   const { loading, error, manifest, getEventArchive, getPersonArchive, getThemeArchive, retry } = useHistoryContent();
   const [state, setState] = useState<ArchiveState>({ status: 'loading' });
   const [attempt, setAttempt] = useState(0);
+  const main = useRef<HTMLElement>(null);
+  useEffect(() => {
+    if (state.status !== 'ready') return;
+    const heading = main.current?.querySelector('h1');
+    if (heading) { heading.tabIndex = -1; heading.focus({ preventScroll: true }); }
+  }, [state]);
   const query = new URLSearchParams(route.query);
   useEffect(() => {
     if (loading || error || !manifest) return;
@@ -34,7 +40,7 @@ export function ArchiveShell({ route }: { route: ArchiveRoute }) {
     return () => { active = false; };
   }, [loading, error, manifest, route.view, route.id, getEventArchive, getPersonArchive, getThemeArchive, attempt]);
   const failed = Boolean(error) || state.status === 'error';
-  return <main className="history-archive" aria-label="历史档案" data-search={query.get('q') ?? undefined}>
+  return <main ref={main} className="history-archive" aria-label="历史档案" data-search={query.get('q') ?? undefined}>
     <div className="archive-layout">
       <a className="archive-back" href={getHistoryReturnLocation()} onClick={event => { event.preventDefault(); restoreHistoryReturnLocation(); }}><ArrowLeft size={17} aria-hidden="true" />返回历史星河</a>
       {failed ? <div role="alert"><p>历史档案加载失败，请重试。</p><button type="button" onClick={() => {

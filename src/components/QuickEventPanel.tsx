@@ -24,7 +24,7 @@ export function QuickEventPanel({ event, onClose, onPrevious, onNext }: QuickEve
   }, []);
   return <aside ref={panelRef} tabIndex={-1} className="story-panel quick-event-panel" role="dialog" aria-modal="false" aria-labelledby="story-title">
     <div className="story-topline"><span>事件速览 · {event.period}</span><button type="button" className="icon-button" aria-label="关闭故事" title="关闭故事" onClick={onClose}><X size={20} aria-hidden="true" /></button></div>
-    <div className="story-year" aria-label={`${event.startYear}年`}>{historyDate(event.startYear, event.endYear, event.yearPrecision)}</div>
+    <div className="story-year" aria-label={historyDate(event.startYear, event.endYear, event.yearPrecision)}>{historyDate(event.startYear, event.endYear, event.yearPrecision)}</div>
     <h2 id="story-title">{event.title}</h2>
     <div className="story-summary"><ArchiveProse>{event.summary}</ArchiveProse></div>
     <div className="quick-influence" aria-label={`影响力 ${event.influence} 级`}><span>影响力 {event.influence} 级</span><div className="influence-meter" aria-hidden="true">{Array.from({ length: 5 }, (_, index) => <i key={index} data-active={index < event.influence} />)}</div></div>

@@ -26,6 +26,7 @@ describe('event archives', () => {
     expect(parsed.endYear).toBe(-221);
   });
   it.each([
+    { title: '<!-- 注释 -->' }, { summary: '<!DOCTYPE html>' }, { background: '<?xml version="1.0"?>' },
     { title: '<b>秦</b>' }, { aliases: ['</span>'] }, { summary: '<img src=x>' },
     { background: '<script>alert(1)</script>' }, { causes: ['<i>原因</i>'] },
     { course: [{ year: -230, title: '<b>灭韩</b>', description: '过程' }] },
