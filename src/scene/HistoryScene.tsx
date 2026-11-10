@@ -1,4 +1,4 @@
-import { Canvas } from '@react-three/fiber';
+import { Canvas, useThree } from '@react-three/fiber';
 import { Bloom, EffectComposer, Vignette } from '@react-three/postprocessing';
 import { Suspense, useCallback, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
@@ -11,7 +11,7 @@ import type { StarPointerStart } from './starDrag';
 import { ClusterField } from './ClusterField';
 import { SceneProjection } from './SceneProjection';
 import type { ClusterResult, ScreenCluster } from '../history/clustering/protocol';
-import { getLodLevel, selectProtectedEventIds } from '../history/lod';
+import { getLodLevel, getVisibilityBudget, selectProtectedEventIds } from '../history/lod';
 import { SceneFallback } from './SceneFallback';
 import { SelectionEffects } from './SelectionEffects';
 import { StarField } from './StarField';
@@ -39,6 +39,7 @@ interface HistorySceneProps {
 
 const noSearchTargets: readonly string[] = [];
 export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, selectionSignal, reducedMotion, onSelect, onHover, onTravelYear, searchTargetIds = noSearchTargets, eventOpacities, onViewportChange, initialCamera, onCameraChange, initialFixedOffsets = {}, onFixedOffsetsChange }: HistorySceneProps) {
+  const { size } = useThree();
   const [dragOffsets, setDragOffsets] = useState<HistoryFixedOffsets>(initialFixedOffsets);
   const releasedOffsets = useRef(dragOffsets);
   const [isDraggingStar, setIsDraggingStar] = useState(false);
@@ -88,7 +89,7 @@ export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, s
       <TimelineRail />
       <SceneProjection events={events} positions={positions} level={level} protectedIds={protectedIds} onResult={onResult} onViewportChange={onViewportChange} />
       <InstancedEventField events={visibleSingles} excludedIds={promotedIds} dragOffsets={dragOffsets} reducedMotion={reducedMotion} onHover={onHover} onPromote={promote} eventOpacities={eventOpacities} />
-      <ClusterField clusters={clusters} positions={positions} focusBounds={focusBounds} eventOpacities={eventOpacities} />
+      <ClusterField clusters={clusters} positions={positions} focusBounds={focusBounds} eventOpacities={eventOpacities} labelBudget={Math.max(0, getVisibilityBudget(level, size.width < 768).labels - promotedEvents.length)} />
       {promotedEvents.map((event) => (
         <EventStar
           key={event.id}
@@ -142,7 +143,7 @@ export function HistoryScene(props: HistorySceneProps) {
       dpr={[1, 1.75]}
       camera={{ position: [0, 9.5, 26], fov: 43, near: 0.1, far: 150 }}
       gl={{ antialias: true, alpha: false, powerPreference: 'high-performance' }}
-      fallback={<SceneFallback onUnavailable={props.onUnavailable} />}
+      fallback={<SceneFallback />}
       onCreated={({ gl }) => {
         gl.toneMapping = THREE.ACESFilmicToneMapping;
         gl.toneMappingExposure = 1.05;

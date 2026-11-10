@@ -1,6 +1,6 @@
 import { Children, isValidElement } from 'react';
-import { act, renderHook } from '@testing-library/react';
-import { SceneContents } from './HistoryScene';
+import { act, render, renderHook } from '@testing-library/react';
+import { HistoryScene, SceneContents } from './HistoryScene';
 import { EventStar } from './EventStar';
 import { historyEvents } from '../history/events';
 import { InstancedEventField } from './InstancedEventField';
@@ -9,7 +9,16 @@ import { ClusterField } from './ClusterField';
 import { SceneProjection } from './SceneProjection';
 import type { ClusterResult } from '../history/clustering/protocol';
 
+vi.mock('@react-three/fiber', async importOriginal => ({ ...await importOriginal<typeof import('@react-three/fiber')>(), useThree: () => ({ size: { width: 1440, height: 900 } }) }));
+
 const callbacks = () => ({ onSelect: vi.fn(), onHover: vi.fn(), onTravelYear: vi.fn() });
+it('does not report failure when the healthy canvas DOM fallback subtree mounts', () => {
+  const onUnavailable = vi.fn();
+  const canvas = HistoryScene({ events: [], selectedEvent: null, hoveredId: null, resetSignal: 0, selectionSignal: 0, reducedMotion: true, ...callbacks(), onUnavailable });
+  // R3F always mounts this subtree inside <canvas>, even when WebGL succeeds.
+  render(<canvas>{canvas.props.fallback}</canvas>);
+  expect(onUnavailable).not.toHaveBeenCalled();
+});
 function children(tree: any) { return Children.toArray(tree.props.children).filter(isValidElement) as any[]; }
 it('batches the supplied compact view and handles an empty loading view', () => {
   const events = [{ ...historyEvents[0], id: 'compact-only', title: '异步索引' }];

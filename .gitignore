@@ -9,6 +9,7 @@ src/history/generated/
 eat-card/admin/config.js
 eat-card/miniprogram/env.js
 coverage/
+output/playwright/
 *.tsbuildinfo
 vite.config.d.ts
 vite.config.js

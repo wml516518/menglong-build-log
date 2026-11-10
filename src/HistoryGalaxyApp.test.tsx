@@ -3,6 +3,7 @@ import userEvent from '@testing-library/user-event';
 import HistoryGalaxyApp from './HistoryGalaxyApp';
 import { readFileSync } from 'node:fs';
 import { createHistoryContentLoader } from './history/content/loader';
+import { generateScaleFixture } from './history/fixtures/generateScaleFixture';
 
 const fixture = (path: string) => JSON.parse(readFileSync(`public/history-content/generated/${path}`, 'utf8'));
 const testLoader = () => createHistoryContentLoader({ baseUrl: '/content/', fetchImpl: async input => new Response(JSON.stringify(fixture(String(input).replace('/content/', '')))) });
@@ -99,6 +100,21 @@ describe('History Galaxy app', () => {
 
 
 describe('compact content integration', () => {
+  it('opens a real archive among 1200 loaded events', async () => {
+    const events = generateScaleFixture(fixture('manifest.json').eras, 1199);
+    const real = fixture('indexes/events.compact.json').find((event: { id: string }) => event.id === 'zhenguan');
+    const loader = createHistoryContentLoader({ baseUrl: '/content/', fetchImpl: async input => {
+      const path = String(input).replace('/content/', '');
+      return new Response(JSON.stringify(path === 'indexes/events.compact.json' ? [...events, real] : fixture(path)));
+    } });
+    const user = userEvent.setup();
+    render(<HistoryGalaxyApp loader={loader} />);
+    await screen.findByRole('button', { name: '查看历史事件：627年 贞观之治' });
+    expect(screen.getAllByRole('button', { name: /查看历史事件/ })).toHaveLength(1200);
+    await user.click(screen.getByRole('button', { name: '查看历史事件：627年 贞观之治' }));
+    expect(await screen.findByText(/隋末战乱之后，统治者需要恢复生产与政治秩序/)).toBeInTheDocument();
+    expect(within(screen.getByRole('dialog')).getByRole('link', { name: /完整/ })).toHaveAttribute('href', expect.stringContaining('/event/zhenguan'));
+  });
   it('navigates only fetched compact events and loads only the selected era archive', async () => {
     const paths: string[] = [];
     let release!: () => void;

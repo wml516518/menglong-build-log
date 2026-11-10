@@ -6,6 +6,15 @@ import { ClusterField } from './ClusterField';
 const cluster: ScreenCluster = { id: 'c1', memberIds: ['a', 'b'], count: 2, semanticGroups: ['唐/文化'], center: { x: 100, y: 100 }, bounds: { minX: 60, maxX: 140, minY: 80, maxY: 120 }, focusTarget: { x: 100, y: 100, width: 80, height: 40 } };
 const positions = new Map<string, readonly [number, number, number]>([['a', [0, 2, 0]], ['b', [4, 0, 2]]]);
 
+it('labels only the most salient clusters while preserving every focus target', () => {
+  const clusters = Array.from({ length: 40 }, (_, i) => ({ ...cluster, id: `c-${String(i).padStart(2, '0')}`, count: i + 2 }));
+  const tree = ClusterField({ clusters, positions, focusBounds: vi.fn(), labelBudget: 6 });
+  const glyphs = Children.toArray(tree.props.children).filter(isValidElement);
+  const { container } = render(<>{glyphs.map(g => g.props.children)}</>);
+  expect(screen.getAllByRole('button')).toHaveLength(40);
+  expect([...container.querySelectorAll('[data-cluster-label]')].map(e => e.textContent)).toEqual(['36', '37', '38', '39', '40', '41']);
+});
+
 it('offers a keyboard accessible fixed-size glyph that focuses the exact cluster and member location', () => {
   const focusBounds = vi.fn();
   const tree = ClusterField({ clusters: [cluster], positions, focusBounds });
