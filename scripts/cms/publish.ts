@@ -41,7 +41,7 @@ export function needsBaseUpdate(baseHead: string, comparison: Comparison) {
 }
 const command = (exe: string, args: string[], options: { cwd?: string; env?: NodeJS.ProcessEnv } = {}) => execFileSync(exe, args, { encoding: 'utf8', maxBuffer: 32 * 1024 * 1024, ...options });
 const api = <T>(endpoint: string): T => JSON.parse(command('gh', ['api', endpoint]));
-const putApi = <T>(endpoint: string, fields: string[]): T => JSON.parse(command('gh', ['api', '--method', 'PUT', endpoint, ...fields.flatMap(field => ['-f', field])]));
+const putApi = <T>(endpoint: string, fields: string[], token?: string): T => JSON.parse(command('gh', ['api', '--method', 'PUT', endpoint, ...fields.flatMap(field => ['-f', field])], token ? { env: { ...process.env, GH_TOKEN: token } } : {}));
 const pages = <T>(endpoint: string): T[] => JSON.parse(command('gh', ['api', '--paginate', '--slurp', endpoint])).flat();
 const output = (name: string, value: string | number | boolean) => appendFileSync(process.env.GITHUB_OUTPUT!, `${name}=${value}\n`);
 const statePath = () => join(process.env.RUNNER_TEMP!, 'cms-state.json');
@@ -118,7 +118,8 @@ async function publish() {
     if (latestBase !== state.baseSha) throw new Error('Base branch changed during publication; PR remains open');
     const comparison = api<Comparison>(`repos/${state.identity.repo}/compare/${state.identity.sha}...${state.baseSha}`);
     if (needsBaseUpdate(state.baseSha, comparison)) {
-      putApi(`repos/${state.identity.repo}/pulls/${state.identity.pr}/update-branch`, [`expected_head_sha=${state.identity.sha}`]);
+      if (!process.env.CMS_TRANSLATION_TOKEN) throw new Error('CMS translation token is required for a workflow-triggering base update');
+      putApi(`repos/${state.identity.repo}/pulls/${state.identity.pr}/update-branch`, [`expected_head_sha=${state.identity.sha}`], process.env.CMS_TRANSLATION_TOKEN);
       let updated: Pull | undefined;
       for (let attempt = 0; attempt < 20; attempt += 1) {
         updated = api<Pull>(`repos/${state.identity.repo}/pulls/${state.identity.pr}`);
