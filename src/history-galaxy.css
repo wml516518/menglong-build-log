@@ -75,6 +75,12 @@ body[data-dragging-star="true"] .history-experience { cursor: grabbing !importan
   touch-action: none;
 }
 
+.history-experience .scene-shell {
+  /* Three.js HTML portals share the canvas layer, below every app control. */
+  z-index: 0;
+  isolation: isolate;
+}
+
 .history-experience .scene-shell::after {
   position: absolute;
   inset: 0;

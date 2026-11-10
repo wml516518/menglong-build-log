@@ -106,3 +106,26 @@ Modified:
 - Viewport-only means camera-frustum membership, including clustered members; it does not subtract pixels covered by overlay panels.
 - Scene bundle remains about 1.07 MB before gzip. This task preserves existing lazy scene loading and static batching; broader bundle work is outside Task 10.
 - No blockers remain.
+
+## Fix Round 1 — contain scene HTML below controls
+
+Addressed the Important layering finding. `ClusterField`'s Drei HTML wrappers could participate in the app's root stacking order at up to z-index 20, above the explorer's 9 and story's 10. The scene shell now has `z-index: 0` and `isolation: isolate`, so the canvas and every scene HTML descendant share one lower stacking context. Existing HUD, explorer, home-link and story layer values are preserved. The Minor `aria-controls` item was deliberately left untouched as requested for this round.
+
+Production change: six lines in `src/history-galaxy.css`. Added `src/HistoryGalaxyLayering.test.tsx`, which renders the real app controls and actual `ClusterField` button with only the Canvas/Html placement boundary substituted, applies the real stylesheet to the DOM, and verifies the cluster's containing app layer is the scene shell and lower than explorer/HUD/story/home layers. It asserts the rendered stacking relationship, not stylesheet source strings.
+
+RED/GREEN evidence:
+
+- Before the CSS fix, the real-browser regression generated 100 overlapping compact events, focused them through the actual explorer/camera, and obtained a real projected `ClusterField` HTML button at **z-index 16**. Test-only CSS positioned that real portal over each target control without changing its z-index or ancestry. `elementFromPoint` and physical mouse clicks showed interception at all four targets: desktop clear `cleared=false, clusterClicks=1`; mobile clear `cleared=false, clusterClicks=1`; HUD `reset=false`; story `closed=false`. The hit element was the cluster button in every case. See `task-10-browser/history-task10-layering-browser-red.log`.
+- After isolation, the exact same browser fixture passed all four cases: desktop/mobile clear both `cleared=true, clusterClicks=0`; HUD `reset=true`; story `closed=true`. `elementFromPoint` returned the intended clear, reset or close control while the cluster retained **z-index 16** inside the scene. See `history-task10-layering-browser-green.log` and screenshots `task10-layering-desktop.png`, `task10-layering-mobile.png`.
+- The initial DOM harness used a raw CSS import that Vitest stubbed out. Corrected it to load and apply the real CSS. With the six-line fix removed, `npx vitest run src/HistoryGalaxyLayering.test.tsx` then produced the proper behavioral RED: **1 test failed**, cluster's root layer was its own z-index-20 wrapper instead of the scene shell (`history-task10-layering-red.log`). Restoring the fix produced **1 test passed** (`history-task10-layering-green.log`).
+- Browser repro script: `task-10-browser/layering-overlap.js`. It uses controlled compact events and forced overlap coordinates to make the stacking defect deterministic; clustering, Canvas, Drei portals, camera focus, operational controls, stacking and hit testing remain real. It does not model arbitrary scene geometry or occlusion; those are outside this stacking regression.
+
+Final verification for this round:
+
+- Focused Explorer/app/scene checks: **11 files / 61 tests passed** (`history-task10-fix1-focused.log`).
+- Full `npm test -- --run`: **39 files / 443 tests passed** (`history-task10-fix1-full.log`).
+- `npm run build`: **passed** (`history-task10-fix1-build.log`).
+- `git diff --check`: passed.
+- Existing Three.js/dependency warnings remain; no new test or build errors. Temporary browser/server were closed after verification.
+
+No blocker or additional production scope was introduced.
