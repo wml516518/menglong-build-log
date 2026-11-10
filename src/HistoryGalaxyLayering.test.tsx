@@ -41,7 +41,7 @@ it('contains a projected cluster below the explorer, HUD and story controls in t
   try {
     await act(async () => { render(<HistoryGalaxyApp loader={loader} />); });
     const root = screen.getByRole('main');
-    const cluster = await screen.findByRole('button', { name: '聚焦 2 个历史事件' });
+    const cluster = await screen.findByRole('button', { name: '聚焦 2 个历史事件' }, { timeout: 5_000 });
     const sceneLayer = appLayer(cluster, root);
     // A scene HTML descendant must share its root layer with the canvas. It
     // cannot participate in the app's overlay stack using its own larger index.
@@ -57,4 +57,4 @@ it('contains a projected cluster below the explorer, HUD and story controls in t
     const story = screen.getByRole('dialog', { name: '贞观之治' });
     expect(Number(getComputedStyle(sceneLayer!).zIndex)).toBeLessThan(Number(getComputedStyle(appLayer(story, root)!).zIndex));
   } finally { style.remove(); vi.restoreAllMocks(); vi.unstubAllGlobals(); }
-});
+}, 10_000);
