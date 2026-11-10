@@ -1,7 +1,7 @@
 _translation:
   policyVersion: 1
-  sourceHash: 7ec9af7740944692ec92a9beb6e4534f884e3438149df6290e13bed9e0b6e37c
-about: 'I focus on full-stack development, AI products, and productivity tools. This site tracks my portfolio roadmap from a personal homepage to deployable AI applications.'
+  sourceHash: d61c9fd8147d870e32be7d930dad31e90d8d2e85c67cb8f14063f3110a0860e6
+about: 'I focus on full-stack development, AI products, and productivity tools. This site documents my project path, starting from a personal homepage and gradually expanding into deployable AI applications. I also continuously record the technical choices and iteration process in real projects.'
 contact:
   - href: 'https://github.com/wml516518'
     label: GitHub
@@ -10,14 +10,14 @@ contact:
     label: Email
     value: wml565868@gmail.com
 historyGalaxy:
-  action: Enter the galaxy
-  imageAlt: A luminous Chinese history timeline surrounded by event stars in a deep three-dimensional space
+  action: Enter the Galaxy
+  imageAlt: 'In a deep three-dimensional space, a glowing Chinese history timeline and numerous event stars extend into the distance'
   stack:
     - Three.js
     - React Three Fiber
-    - 30 historical events
-  status: Interactive 3D experience
-  summary: 'Travel from the Tang dynasty to 1949, move event stars across a living timeline, and explore the people and stories behind each turning point.'
+    - 30 Historical Events
+  status: Interactive 3D Work
+  summary: 'Sail from the Tang Dynasty to 1949, dragging event stars along the historical timeline to explore figures and stories of each era.'
   title: History Galaxy
 homeSectionOrder:
   - buildLog
@@ -37,12 +37,12 @@ profile:
   avatar: ''
   eyebrow: Portfolio / Build Log
   headline: Building practical AI tools and full-stack products.
-  intro: 'I document the products I build, the engineering decisions behind them, and the lessons learned along the way.'
+  intro: 'I document the products I build, the engineering decisions behind them, and the lessons each project brings.'
   name: MengLong Wang
   primaryAction: View Projects
   resumeDownload: ''
   role: Full-stack Developer
-  secondaryAction: Read Log
+  secondaryAction: Read the Log
 projects:
   - githubUrl: 'https://github.com/wml516518/menglong-build-log'
     liveUrl: 'https://menglong-build-log.netlify.app'
@@ -52,7 +52,7 @@ projects:
       - TypeScript
       - Netlify
     status: Live
-    summary: A bilingual portfolio front door and public project journal.
+    summary: A bilingual portfolio entry point and public project record.
     title: Personal Homepage + Build Log
   - githubUrl: 'https://github.com/wml516518/ai-chat-playground'
     liveUrl: 'https://ai-chat-playground-menglong.netlify.app'
@@ -62,8 +62,8 @@ projects:
       - Python
       - Render
       - Netlify
-    status: Live frontend
-    summary: A streaming chat interface with prompt presets and a FastAPI backend layer.
+    status: Frontend Live
+    summary: A streaming AI chat interface with prompt presets and a FastAPI backend layer.
     title: AI Chat Playground
   - githubUrl: 'https://github.com/wml516518/knowledgeops-rag'
     liveUrl: 'https://knowledgeops-rag-menglong.netlify.app'
@@ -75,26 +75,26 @@ projects:
       - DashScope
       - Render
       - Netlify
-    status: Live frontend
-    summary: 'A public document Q&A demo with FastAPI retrieval flow, Supabase pgvector storage, and deploy-ready AI service wiring.'
+    status: Frontend Live
+    summary: 'A public document Q&A demo featuring a FastAPI retrieval pipeline, Supabase pgvector storage, and deployable AI service wiring.'
     title: KnowledgeOps RAG
 sections:
   about: About
-  allPosts: All posts
-  backToPosts: Back to all posts
+  allPosts: All Posts
+  backToPosts: Back to All Posts
   buildLog: Build Log
   certifications: Certifications
   contact: Contact
   education: Education
-  experience: Experience
+  experience: Work Experience
   languages: Languages
   latestBuildLog: Latest Build Log
-  postNotFound: Article not found
+  postNotFound: Post Not Found
   projects: Projects
-  readArticle: Read article
+  readArticle: Read Article
   resume: Resume
   selectedProjects: Selected Projects
-  skills: Skills
+  skills: Tech Stack
   tags: Tags
 seo:
   buildLogTitle: Build Log | MengLong Wang
