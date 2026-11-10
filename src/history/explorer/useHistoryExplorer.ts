@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { resolveSessionExplorer } from '../session';
+import { resolveSessionExplorer, type HistoryExplorerEntityIds } from '../session';
 import { HistorySearchClient } from '../search/client';
 import type { SearchIndexes, SearchResult } from '../search/protocol';
 import { filterEvents, parseExplorerState, serializeExplorerState, type HistoryExplorerState } from './state';
@@ -17,9 +17,10 @@ function writeLocation(state: HistoryExplorerState, replace: boolean) {
 const aborted = (error: unknown) => error instanceof Error && error.name === 'AbortError';
 
 /** The URL owns committed filters; text stays local until its single replace write settles. */
-export function useHistoryExplorer(indexes: SearchIndexes, viewportIds: ReadonlySet<string>, ready = true, storedState?: HistoryExplorerState) {
-  const [state, setState] = useState(() => resolveSessionExplorer(storedState, new URLSearchParams(window.location.hash.split('?')[1])));
-  const restoreStored = useRef(Boolean(storedState));
+export function useHistoryExplorer(indexes: SearchIndexes, viewportIds: ReadonlySet<string>, ready = true, storedState?: HistoryExplorerState, storedEntityIds?: HistoryExplorerEntityIds) {
+  const [state, setState] = useState(currentState);
+  const restoreStored = useRef(storedState);
+  const [restorationPending, setRestorationPending] = useState(Boolean(storedState));
   const latest = useRef(state);
   const urlTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const [client, setClient] = useState<HistorySearchClient | null>(null);
@@ -30,6 +31,9 @@ export function useHistoryExplorer(indexes: SearchIndexes, viewportIds: Readonly
   const [attempt, setAttempt] = useState(0);
   const cancelUrlWrite = useCallback(() => { clearTimeout(urlTimer.current); urlTimer.current = undefined; }, []);
   const commit = useCallback((next: HistoryExplorerState, replace: boolean) => {
+    // A user action during loading takes precedence over the pending session.
+    restoreStored.current = undefined;
+    setRestorationPending(false);
     latest.current = next;
     setState(next);
     if (replace) {
@@ -44,10 +48,15 @@ export function useHistoryExplorer(indexes: SearchIndexes, viewportIds: Readonly
   }, [commit]);
   const clear = useCallback(() => commit(parseExplorerState(new URLSearchParams()), false), [commit]);
   useEffect(() => {
-    if (restoreStored.current) {
-      if (serializeExplorerState(latest.current).toString() !== serializeExplorerState(currentState()).toString()) writeLocation(latest.current, true);
-      restoreStored.current = false;
-    }
+    if (!ready || !restoreStored.current) return;
+    const next = resolveSessionExplorer(restoreStored.current, new URLSearchParams(window.location.hash.split('?')[1]), storedEntityIds);
+    restoreStored.current = undefined;
+    latest.current = next;
+    setState(next);
+    setRestorationPending(false);
+    if (serializeExplorerState(next).toString() !== serializeExplorerState(currentState()).toString()) writeLocation(next, true);
+  }, [ready, storedEntityIds]);
+  useEffect(() => {
     const restore = () => { cancelUrlWrite(); const next = currentState(); latest.current = next; setState(next); };
     window.addEventListener('hashchange', restore);
     window.addEventListener('popstate', restore);
@@ -101,6 +110,6 @@ export function useHistoryExplorer(indexes: SearchIndexes, viewportIds: Readonly
   const searchResults = useMemo(() => results.filter(result => matchingIds.has(result.id)), [results, matchingIds]);
   const eventOpacities = useMemo(() => new Map(filtered.map(item => [item.event.id, item.opacity])), [filtered]);
   const searchTargetIds = useMemo(() => hasText ? searchResults.map(result => result.id) : [], [hasText, searchResults]);
-  return { state, changeText, changeFilters, clear, filtered, matchingIds, eventOpacities, searchResults, searchTargetIds, searching, fallback, searchError, retrySearch: () => setAttempt(value => value + 1) };
+  return { state, restorationPending, changeText, changeFilters, clear, filtered, matchingIds, eventOpacities, searchResults, searchTargetIds, searching, fallback, searchError, retrySearch: () => setAttempt(value => value + 1) };
 }
 export type HistoryExplorerController = ReturnType<typeof useHistoryExplorer>;

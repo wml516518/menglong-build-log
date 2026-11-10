@@ -58,8 +58,15 @@ export function HistoryGalaxyExperience() {
   const reducedMotion = useReducedMotion();
   const showFallback = !webglSupported || sceneFailed;
   const searchIndexes = useMemo(() => ({ events: content.events, people: content.people, places: content.places, themes: content.themes }), [content.events, content.people, content.places, content.themes]);
+  const indexesReady = !content.loading && !content.error && Boolean(content.manifest);
+  const explorerEntityIds = useMemo(() => ({
+    eraIds: new Set(content.manifest?.eras.map(era => era.id)),
+    personIds: new Set(content.people.map(person => person.id)),
+    placeIds: new Set(content.places.map(place => place.id)),
+    themeIds: new Set(content.themes.map(theme => theme.id))
+  }), [content.manifest, content.people, content.places, content.themes]);
   const [viewportIds, setViewportIds] = useState<ReadonlySet<string>>(() => new Set());
-  const explorer = useHistoryExplorer(searchIndexes, viewportIds, !content.loading, restored?.explorer);
+  const explorer = useHistoryExplorer(searchIndexes, viewportIds, indexesReady, restored?.explorer, explorerEntityIds);
   const handleTravelYear = useCallback((year: number) => {
     setCurrentYear(year);
     setActiveDynastyId(getDynastyForYear(year).id);
@@ -72,7 +79,7 @@ export function HistoryGalaxyExperience() {
 
   const validIds = useMemo(() => new Set(content.events.filter(event => content.manifest && Object.hasOwn(content.manifest.eventEras, event.id)).map(event => event.id)), [content.events, content.manifest]);
   const validFixedOffsets = useMemo(() => sanitizeHistorySession({ version: 2, fixedOffsets }, validIds)?.fixedOffsets ?? {}, [fixedOffsets, validIds]);
-  const sessionReady = !content.loading && !content.error && Boolean(content.manifest);
+  const sessionReady = indexesReady && !explorer.restorationPending;
   useEffect(() => {
     if (sessionReady && navigation.selectedEvent && !validIds.has(navigation.selectedEvent.id)) navigation.closeStory();
   }, [sessionReady, validIds, navigation.selectedEvent, navigation.closeStory]);

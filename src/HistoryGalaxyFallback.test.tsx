@@ -87,3 +87,105 @@ it('drops a restored selection absent from the current manifest even if a stale 
   act(() => window.dispatchEvent(new Event('pagehide')));
   expect(JSON.parse(localStorage.getItem('history-galaxy-session-v2')!)).toMatchObject({ selectedId: null, fixedOffsets: {} });
 });
+
+function delayedEntityIndexes() {
+  let release!: () => void;
+  const gate = new Promise<void>(resolve => { release = resolve; });
+  const requests: string[] = [];
+  const contentLoader = createHistoryContentLoader({ baseUrl: '/content/', fetchImpl: async input => {
+    const path = String(input).replace('/content/', '');
+    requests.push(path);
+    if (path.endsWith('people.compact.json')) await gate;
+    const value = JSON.parse(fixture(path));
+    if (path.endsWith('events.compact.json')) {
+      Object.assign(value.find((event: { id: string }) => event.id === 'zhenguan'), { placeIds: ['changan'], themeIds: ['institutions'] });
+    }
+    if (path.endsWith('places.compact.json')) return new Response(JSON.stringify([{ id: 'changan', name: '长安', modernName: '西安', aliases: [], historicalNames: [], coordinates: [108.9, 34.3], eventIds: ['zhenguan'] }]));
+    if (path.endsWith('themes.compact.json')) return new Response(JSON.stringify([{ id: 'institutions', title: '制度沿革', summary: '制度历史', eventIds: ['zhenguan'] }]));
+    return new Response(JSON.stringify(value));
+  } });
+  return { contentLoader, requests, release: () => release() };
+}
+const staleExplorerEntities = () => ({
+  ...parseExplorerState(new URLSearchParams()),
+  eraIds: ['tang', 'pre-qin', 'removed-era'],
+  personIds: ['person-li-shimin', 'removed-person'],
+  placeIds: ['changan', 'removed-place'],
+  themeIds: ['institutions', 'removed-theme']
+});
+
+it('waits for delayed indexes before one restore of only current stored era/person/place/theme IDs', async () => {
+  const saved = { version: 2, explorer: staleExplorerEntities() };
+  localStorage.setItem('history-galaxy-session-v2', JSON.stringify(saved));
+  window.history.replaceState(null, '', '#/history-galaxy?source=shared&source=copy');
+  const replace = vi.spyOn(window.history, 'replaceState'), push = vi.spyOn(window.history, 'pushState');
+  const delayed = delayedEntityIndexes();
+  render(<HistoryGalaxyApp loader={delayed.contentLoader} />);
+  await waitFor(() => expect(delayed.requests).toContain('indexes/people.compact.json'));
+  expect(window.location.hash).toBe('#/history-galaxy?source=shared&source=copy');
+  expect(replace).not.toHaveBeenCalled();
+  act(() => window.dispatchEvent(new Event('pagehide')));
+  expect(JSON.parse(localStorage.getItem('history-galaxy-session-v2')!)).toEqual(saved);
+  await act(async () => { delayed.release(); });
+  const timeline = await screen.findByRole('region', { name: '二维历史时间轴' });
+  const params = new URLSearchParams(window.location.hash.split('?')[1]);
+  expect(params.getAll('era')).toEqual(['pre-qin', 'tang']);
+  expect(params.getAll('person')).toEqual(['person-li-shimin']);
+  expect(params.getAll('place')).toEqual(['changan']);
+  expect(params.getAll('theme')).toEqual(['institutions']);
+  expect(params.getAll('source')).toEqual(['shared', 'copy']);
+  expect(replace).toHaveBeenCalledTimes(1); expect(push).not.toHaveBeenCalled();
+  expect(within(timeline).getByRole('button', { name: /贞观之治/ })).toHaveAttribute('data-match', 'true');
+  act(() => window.dispatchEvent(new Event('pagehide')));
+  expect(JSON.parse(localStorage.getItem('history-galaxy-session-v2')!).explorer).toMatchObject({
+    eraIds: ['pre-qin', 'tang'], personIds: ['person-li-shimin'], placeIds: ['changan'], themeIds: ['institutions']
+  });
+  expect(replace.mock.calls.some(([, , url]) => String(url).includes('removed-'))).toBe(false);
+});
+
+it('preserves all four unknown URL entity IDs through delayed stored-session cleanup without history churn', async () => {
+  localStorage.setItem('history-galaxy-session-v2', JSON.stringify({ version: 2, explorer: staleExplorerEntities() }));
+  const url = '#/history-galaxy?source=shared&era=url-era&person=url-person&place=url-place&theme=url-theme';
+  window.history.replaceState(null, '', url);
+  const replace = vi.spyOn(window.history, 'replaceState'), push = vi.spyOn(window.history, 'pushState');
+  const delayed = delayedEntityIndexes();
+  render(<HistoryGalaxyApp loader={delayed.contentLoader} />);
+  await waitFor(() => expect(delayed.requests).toContain('indexes/people.compact.json'));
+  expect(window.location.hash).toBe(url); expect(replace).not.toHaveBeenCalled();
+  await act(async () => { delayed.release(); });
+  expect(await screen.findByText('0 / 30 个事件匹配')).toBeInTheDocument();
+  expect(window.location.hash).toBe(url); expect(replace).not.toHaveBeenCalled(); expect(push).not.toHaveBeenCalled();
+  act(() => window.dispatchEvent(new Event('pagehide')));
+  expect(JSON.parse(localStorage.getItem('history-galaxy-session-v2')!).explorer).toMatchObject({
+    eraIds: ['url-era'], personIds: ['url-person'], placeIds: ['url-place'], themeIds: ['url-theme']
+  });
+});
+
+it('removes stale-only stored entity filters after delayed indexes so they cannot suppress all timeline matches', async () => {
+  localStorage.setItem('history-galaxy-session-v2', JSON.stringify({ version: 2, explorer: { ...parseExplorerState(new URLSearchParams()), eraIds: ['removed-era'], personIds: ['removed-person'], placeIds: ['removed-place'], themeIds: ['removed-theme'] } }));
+  const replace = vi.spyOn(window.history, 'replaceState');
+  const delayed = delayedEntityIndexes();
+  render(<HistoryGalaxyApp loader={delayed.contentLoader} />);
+  await waitFor(() => expect(delayed.requests).toContain('indexes/people.compact.json'));
+  expect(window.location.hash).toBe('#/history-galaxy');
+  await act(async () => { delayed.release(); });
+  expect(await screen.findByText('30 / 30 个事件匹配')).toBeInTheDocument();
+  expect(replace).not.toHaveBeenCalled();
+  act(() => window.dispatchEvent(new Event('pagehide')));
+  expect(JSON.parse(localStorage.getItem('history-galaxy-session-v2')!).explorer).toMatchObject({ eraIds: [], personIds: [], placeIds: [], themeIds: [] });
+});
+
+it('keeps an explicit clear during delayed loading from being undone by the pending stored restore', async () => {
+  localStorage.setItem('history-galaxy-session-v2', JSON.stringify({ version: 2, explorer: { ...staleExplorerEntities(), majorOnly: true } }));
+  const delayed = delayedEntityIndexes();
+  const user = userEvent.setup();
+  render(<HistoryGalaxyApp loader={delayed.contentLoader} />);
+  await waitFor(() => expect(delayed.requests).toContain('indexes/people.compact.json'));
+  const replace = vi.spyOn(window.history, 'replaceState'), push = vi.spyOn(window.history, 'pushState');
+  await user.click(screen.getByRole('button', { name: '清除全部筛选' }));
+  await act(async () => { delayed.release(); });
+  expect(await screen.findByText('30 / 30 个事件匹配')).toBeInTheDocument();
+  expect(screen.getByRole('checkbox', { name: '仅重大事件' })).not.toBeChecked();
+  expect(window.location.hash).toBe('#/history-galaxy');
+  expect(replace).not.toHaveBeenCalled(); expect(push).not.toHaveBeenCalled();
+});

@@ -40,3 +40,36 @@ it('survives denied reads/writes, quota failures, and a denied localStorage gett
   try { expect(loadHistorySession()).toBeNull(); expect(saveHistorySession(session())).toBe(false); }
   finally { Object.defineProperty(globalThis, 'localStorage', descriptor); }
 });
+
+const currentEntities = {
+  eraIds: new Set(['tang', 'pre-qin']),
+  personIds: new Set(['person-li-shimin']),
+  placeIds: new Set(['changan']),
+  themeIds: new Set(['institutions'])
+};
+const storedEntities = () => ({
+  ...explorer(),
+  eraIds: ['removed-era', 'tang', 'pre-qin'],
+  personIds: ['person-li-shimin', 'removed-person'],
+  placeIds: ['changan', 'removed-place'],
+  themeIds: ['institutions', 'removed-theme']
+});
+
+it('drops stored entity IDs absent from the settled manifest/index sets before URL restoration', () => {
+  const stored = storedEntities();
+  expect(resolveSessionExplorer(stored, new URLSearchParams(), currentEntities)).toEqual({
+    ...explorer(), eraIds: ['pre-qin', 'tang'], personIds: ['person-li-shimin'], placeIds: ['changan'], themeIds: ['institutions']
+  });
+  expect(stored.eraIds).toEqual(['removed-era', 'tang', 'pre-qin']);
+});
+
+it.each([
+  ['era', 'eraIds', 'unknown-era'],
+  ['person', 'personIds', 'unknown-person'],
+  ['place', 'placeIds', 'unknown-place'],
+  ['theme', 'themeIds', 'unknown-theme']
+] as const)('preserves explicit unknown URL %s values while cleaning every stored entity dimension', (key, field, unknown) => {
+  expect(resolveSessionExplorer(storedEntities(), new URLSearchParams(`${key}=${unknown}`), currentEntities)).toEqual({
+    ...explorer(), eraIds: ['pre-qin', 'tang'], personIds: ['person-li-shimin'], placeIds: ['changan'], themeIds: ['institutions'], [field]: [unknown]
+  });
+});

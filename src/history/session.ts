@@ -3,6 +3,7 @@ import { CAMERA_TARGET_BOUNDS, MAX_CAMERA_DISTANCE, MIN_CAMERA_DISTANCE, STAR_OF
 
 export const HISTORY_SESSION_KEY = 'history-galaxy-session-v2';
 export interface HistoryCameraState { target: readonly [number, number, number]; distance: number }
+export type HistoryExplorerEntityIds = Record<'eraIds' | 'personIds' | 'placeIds' | 'themeIds', ReadonlySet<string>>;
 export type HistoryFixedOffsets = Readonly<Record<string, readonly [number, number]>>;
 export interface HistorySession {
   version: 2;
@@ -18,11 +19,14 @@ const tuple = (value: unknown, length: number): value is number[] => Array.isArr
 const clamp = (value: number, min: number, max: number) => Math.max(min, Math.min(max, value));
 const validId = (value: unknown): value is string => typeof value === 'string' && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value);
 
-function sanitizeExplorer(value: Record<string, unknown>): HistoryExplorerState {
+function sanitizeExplorer(value: Record<string, unknown>, entityIds?: HistoryExplorerEntityIds): HistoryExplorerState {
   const state = parseExplorerState(new URLSearchParams());
   if (typeof value.text === 'string') state.text = value.text;
   for (const key of ['eraIds', 'categories', 'personIds', 'placeIds', 'themeIds'] as const) {
     if (Array.isArray(value[key])) (state[key] as string[]) = value[key].filter(validId);
+  }
+  if (entityIds) for (const key of ['eraIds', 'personIds', 'placeIds', 'themeIds'] as const) {
+    state[key] = state[key].filter(id => entityIds[key].has(id));
   }
   for (const key of ['minInfluence', 'fromYear', 'toYear'] as const) {
     if (finite(value[key])) (state[key] as number) = Math.round(value[key]);
@@ -66,9 +70,9 @@ export function saveHistorySession(value: unknown, storage?: SessionStorage, val
   } catch { return false; }
 }
 
-/** Presence, including an empty/invalid URL value, overrides that stored field. */
-export function resolveSessionExplorer(stored: unknown, params: URLSearchParams): HistoryExplorerState {
-  const restored = record(stored) ? serializeExplorerState(sanitizeExplorer(stored)) : new URLSearchParams();
+/** Clean stored references first; even an unknown or empty explicit URL value wins. */
+export function resolveSessionExplorer(stored: unknown, params: URLSearchParams, entityIds?: HistoryExplorerEntityIds): HistoryExplorerState {
+  const restored = record(stored) ? serializeExplorerState(sanitizeExplorer(stored, entityIds)) : new URLSearchParams();
   for (const key of EXPLORER_QUERY_KEYS) if (params.has(key)) {
     restored.delete(key);
     params.getAll(key).forEach(value => restored.append(key, value));
