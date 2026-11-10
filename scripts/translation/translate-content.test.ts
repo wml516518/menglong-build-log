@@ -1,6 +1,6 @@
 // @vitest-environment node
 import { realpathSync } from 'node:fs';
-import { mkdtemp, mkdir, writeFile, readFile, rm, stat } from 'node:fs/promises';
+import { cp, mkdtemp, mkdir, writeFile, readFile, rm, stat } from 'node:fs/promises';
 import { tmpdir as systemTmpdir } from 'node:os';
 const tmpdir = () => realpathSync(systemTmpdir());
 import { join } from 'node:path';
@@ -31,6 +31,71 @@ it('writes only matching output, skips current files without writes or calls, an
   expect(options.translator.translate).toHaveBeenCalledTimes(1);
   await translateChangedContent({ ...options, policy: { policyVersion: 2 } });
   expect(options.translator.translate).toHaveBeenCalledTimes(2);
+});
+
+it('reuses reviewed baseline translations and sends only changed source segments to the translator', async () => {
+  const baseline = await fixture();
+  baseline.translator.translate.mockImplementationOnce(async segments => new Map(segments.map(segment => [segment.id, `Reviewed ${segment.id}`])));
+  await translateChangedContent(baseline);
+  const root = await mkdtemp(join(tmpdir(), 'translation-current-'));
+  await cp(join(baseline.root, 'content'), join(root, 'content'), { recursive: true });
+  const changed = structuredClone(validSiteFixture);
+  changed.about = '只修改这一段中文';
+  await writeFile(join(root, 'content/zh/site.yml'), yaml.dump(changed));
+  const translator = { translate: vi.fn(async (segments: { id: string; text: string }[]) => new Map(segments.map(segment => [segment.id, `Translated ${segment.text}`]))) };
+
+  await translateChangedContent({ root, baselineRoot: baseline.root, changedPaths: baseline.changedPaths, policy: baseline.policy, translator });
+
+  expect(translator.translate).toHaveBeenCalledTimes(1);
+  expect(translator.translate.mock.calls[0][0].map(segment => segment.id)).toEqual(['about']);
+  const output = yaml.load(await readFile(join(root, 'content/en/site.yml'), 'utf8')) as typeof validSiteFixture;
+  expect(output.about).toBe('Translated 只修改这一段中文');
+  expect(output.profile.secondaryAction).toBe('Reviewed profile.secondaryAction');
+  expect(output.historyGalaxy.action).toBe('Reviewed historyGalaxy.action');
+});
+
+it('reconciles current-stamped drift against the trusted baseline and retranslates only the changed segment', async () => {
+  const baseline = await fixture();
+  baseline.translator.translate.mockImplementationOnce(async segments => new Map(segments.map(segment => [segment.id, `Reviewed ${segment.id}`])));
+  await translateChangedContent(baseline);
+  const root = await mkdtemp(join(tmpdir(), 'translation-current-drifted-'));
+  await cp(join(baseline.root, 'content'), join(root, 'content'), { recursive: true });
+  const changed = structuredClone(validSiteFixture);
+  changed.about = '只修改这一段中文';
+  await writeFile(join(root, 'content/zh/site.yml'), yaml.dump(changed));
+  const driftTranslator = { translate: vi.fn(async (segments: { id: string; text: string }[]) => new Map(segments.map(segment => [segment.id, `Drifted ${segment.id}`]))) };
+  await translateChangedContent({ root, changedPaths: baseline.changedPaths, policy: baseline.policy, translator: driftTranslator });
+  const repairTranslator = { translate: vi.fn(async (segments: { id: string; text: string }[]) => new Map(segments.map(segment => [segment.id, `Repaired ${segment.text}`]))) };
+
+  const result = await translateChangedContent({ root, baselineRoot: baseline.root, changedPaths: baseline.changedPaths, policy: baseline.policy, translator: repairTranslator });
+
+  expect(result.written).toEqual(['content/en/site.yml']);
+  expect(result.skipped).toEqual([]);
+  expect(repairTranslator.translate.mock.calls[0][0].map(segment => segment.id)).toEqual(['about']);
+  const output = yaml.load(await readFile(join(root, 'content/en/site.yml'), 'utf8')) as typeof validSiteFixture;
+  expect(output.about).toBe('Repaired 只修改这一段中文');
+  expect(output.profile.secondaryAction).toBe('Reviewed profile.secondaryAction');
+  expect(output.historyGalaxy.action).toBe('Reviewed historyGalaxy.action');
+});
+
+it('rejects a stale baseline instead of reusing unverified translations', async () => {
+  const baseline = await fixture();
+  await translateChangedContent(baseline);
+  const root = await mkdtemp(join(tmpdir(), 'translation-current-'));
+  await cp(join(baseline.root, 'content'), join(root, 'content'), { recursive: true });
+  const baselineTargetPath = join(baseline.root, 'content/en/site.yml');
+  const stale = yaml.load(await readFile(baselineTargetPath, 'utf8')) as Record<string, unknown>;
+  (stale._translation as Record<string, unknown>).sourceHash = 'stale';
+  await writeFile(baselineTargetPath, yaml.dump(stale));
+  const changed = structuredClone(validSiteFixture);
+  changed.about = '只修改这一段中文';
+  await writeFile(join(root, 'content/zh/site.yml'), yaml.dump(changed));
+  const before = await readFile(join(root, 'content/en/site.yml'), 'utf8');
+  const translator = { translate: vi.fn() };
+
+  await expect(translateChangedContent({ root, baselineRoot: baseline.root, changedPaths: baseline.changedPaths, policy: baseline.policy, translator })).rejects.toThrow(/baseline.*stale/i);
+  expect(translator.translate).not.toHaveBeenCalled();
+  expect(await readFile(join(root, 'content/en/site.yml'), 'utf8')).toBe(before);
 });
 
 it('creates posts and deletes counterparts without translator calls', async () => {
@@ -94,8 +159,9 @@ it('runs CLI against a separate root without a key when current and rejects inva
   const env = { ...process.env, DEEPSEEK_API_KEY: '' };
   const run = (...args: string[]) => execFileSync(process.execPath, ['--import', 'tsx', script, '--root', options.root, ...args], { encoding: 'utf8', env, stdio: 'pipe' });
   expect(JSON.parse(run('--all')).skipped).toEqual(['content/en/site.yml']);
+  expect(JSON.parse(run('--baseline-root', options.root, '--changed-file', 'content/zh/site.yml')).skipped).toEqual(['content/en/site.yml']);
   expect(JSON.parse(run('--changed-file', 'content/zh/site.yml', '--changed-file', 'content/zh/site.yml')).written).toEqual([]);
-  for (const args of [[], ['--adopt-existing'], ['--all', '--changed-file', 'content/zh/site.yml'], ['--root', 'relative'], ['--changed-file'], ['--unknown']]) expect(() => run(...args)).toThrow();
+  for (const args of [[], ['--adopt-existing'], ['--all', '--changed-file', 'content/zh/site.yml'], ['--baseline-root', options.root, '--all'], ['--root', 'relative'], ['--baseline-root', 'relative', '--changed-file', 'content/zh/site.yml'], ['--baseline-root'], ['--changed-file'], ['--unknown']]) expect(() => run(...args)).toThrow();
 });
 
 it('localizes tags preserving count, order and exact protected glossary tokens', () => {
