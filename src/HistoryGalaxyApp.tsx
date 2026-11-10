@@ -32,7 +32,7 @@ export default function HistoryGalaxyApp({ loader }: { loader?: HistoryContentLo
   return <HistoryContentProvider loader={loader}><HistoryGalaxyExperience /></HistoryContentProvider>;
 }
 
-function HistoryGalaxyExperience() {
+export function HistoryGalaxyExperience() {
   const content = useHistoryContent();
   const historyEvents = useMemo(() => compactEventsForScene(content.events, content.people), [content.events, content.people]);
   const [currentYear, setCurrentYear] = useState(618);

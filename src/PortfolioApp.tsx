@@ -4,10 +4,10 @@ import { BuildLogIndex } from './components/BuildLogIndex';
 import { BuildLogPreview } from './components/BuildLogPreview';
 import { content, getInitialLanguage, saveLanguage, type Language } from './content';
 import { getPost, getPosts } from './posts';
-import type { Route } from './routes';
+import type { Route, HistoryRoute } from './routes';
 import { HistoryGalaxyFeature } from './components/HistoryGalaxyFeature';
 
-type PortfolioRoute = Exclude<Route, { view: 'history-galaxy' }>;
+type PortfolioRoute = Exclude<Route, HistoryRoute>;
 
 export function PortfolioApp({ route }: { route: PortfolioRoute }) {
   const [language, setLanguage] = useState<Language>(() => getInitialLanguage());

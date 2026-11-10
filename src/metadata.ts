@@ -7,6 +7,9 @@ type RouteMetadata = { title: string; description: string; themeColor: string };
 
 export function getRouteMetadata(route: Route): RouteMetadata {
   switch (route.view) {
+    case 'history-event':
+    case 'history-person':
+    case 'history-theme':
     case 'history-galaxy':
       return { title: '历史星河｜中国历史3D交互时间轴', description: historyDescription, themeColor: '#05070a' };
     case 'posts':

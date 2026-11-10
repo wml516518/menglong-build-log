@@ -32,3 +32,17 @@ describe('parseHash', () => {
     expect(parseHash('#/build-log/%E0%A4%A')).toEqual({ view: 'posts' });
   });
 });
+
+
+describe('shareable history routes', () => {
+  it.each([['event', 'zhenguan', 'history-event'], ['person', 'person-li-shimin', 'history-person'], ['theme', 'silk-road', 'history-theme']])('parses %s with decoded ID and query', (kind, id, view) => {
+    expect(parseHash(`#/history-galaxy/${kind}/${id}?q=唐&era=tang`)).toEqual({ view, id, query: '?q=唐&era=tang' });
+    expect(parseHash(`#/history-galaxy/${kind}/%61bc`)).toEqual({ view, id: 'abc', query: '' });
+  });
+  it.each(['', 'UPPER', '../tang', '%2e%2e%2ftang', '%E0%A4%A', 'a/b', 'a--b', '%2561bc'])('rejects unsafe ID %s', id => {
+    for (const kind of ['event', 'person', 'theme']) expect(parseHash(`#/history-galaxy/${kind}/${id}`)).toEqual({ view: 'home' });
+  });
+  it('recognizes the galaxy with filter query', () => {
+    expect(parseHash('#/history-galaxy?era=tang&q=唐')).toEqual({ view: 'history-galaxy' });
+  });
+});
