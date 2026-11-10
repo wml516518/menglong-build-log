@@ -130,6 +130,7 @@ export type PlaceIndex = z.infer<typeof placeIndexSchema>;
 export type ThemeArchive = z.infer<typeof themeArchiveSchema>;
 export type ThemeIndex = z.infer<typeof themeIndexSchema>;
 export type SourceRecord = z.infer<typeof sourceSchema>;
+export type HistoryRelation = z.infer<typeof relationSchema>;
 export type CategoryId = typeof categoryIds[number];
 export type RelationType = typeof relationTypes[number];
 export type YearPrecision = typeof yearPrecisions[number];

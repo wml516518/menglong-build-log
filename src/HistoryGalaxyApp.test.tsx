@@ -42,7 +42,7 @@ describe('History Galaxy app', () => {
 
     const dialog = screen.getByRole('dialog', { name: '鸦片战争' });
     expect(within(dialog).getByText('林则徐')).toBeInTheDocument();
-    expect(await within(dialog).findByText(/南京条约/)).toBeInTheDocument();
+    expect(await within(dialog).findByText(/鸦片贸易、禁烟与英国扩张政策/)).toBeInTheDocument();
 
     await user.click(within(dialog).getByRole('button', { name: '关闭故事' }));
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
@@ -121,11 +121,11 @@ describe('compact content integration', () => {
     expect(screen.getByRole('dialog', { name: '索引中的唐代事件' })).toBeInTheDocument();
     expect(within(screen.getByRole('dialog')).getByRole('status')).toHaveTextContent('正在加载档案');
     await act(async () => { release(); });
-    expect(await screen.findByText(/魏征等人的直谏/)).toBeInTheDocument();
+    expect(await screen.findByText(/隋末战乱之后，统治者需要恢复生产与政治秩序/)).toBeInTheDocument();
     expect(paths.filter(path => path.startsWith('eras/'))).toEqual(['eras/tang.json']);
     await user.keyboard('{ArrowRight}');
     expect(screen.getByRole('dialog', { name: '索引中的宋代事件' })).toBeInTheDocument();
-    expect(await screen.findByText(/后周军队北上途中在陈桥驿发生兵变/)).toBeInTheDocument();
+    expect(await screen.findByText(/五代后期军队与政权更替紧密相连/)).toBeInTheDocument();
     expect(paths.filter(path => path.startsWith('eras/'))).toEqual(['eras/tang.json', 'eras/song.json']);
   });
   it('shows archive failure while keeping compact summary and allows scoped retry', async () => {
@@ -142,7 +142,7 @@ describe('compact content integration', () => {
     expect(screen.getByText('纳谏、任贤与制度修整，塑造唐初政治气象。')).toBeInTheDocument();
     broken = false;
     await user.click(screen.getByRole('button', { name: '重试档案' }));
-    expect(await screen.findByText(/魏征等人的直谏/)).toBeInTheDocument();
+    expect(await screen.findByText(/隋末战乱之后，统治者需要恢复生产与政治秩序/)).toBeInTheDocument();
     expect(screen.queryByRole('alert')).not.toBeInTheDocument();
   });
 });

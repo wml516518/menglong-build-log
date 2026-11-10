@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useSyncExternalStore, type ReactNode } from 'react';
 import { historyContentLoader, type HistoryContentLoader, type HistoryContentError, type HistoryManifest, type HistoryEraBundle } from './loader';
-import type { CompactHistoryEventIndex, PersonIndex, PlaceIndex, ThemeIndex, HistoryEventArchive, PersonArchive } from './schema';
+import type { CompactHistoryEventIndex, PersonIndex, PlaceIndex, ThemeIndex, HistoryEventArchive, PersonArchive, ThemeArchive } from './schema';
 
 interface ContentState {
   manifest: HistoryManifest | null;
@@ -73,21 +73,25 @@ function createContentStore(loader: HistoryContentLoader) {
     const era = resolveEra(id, 'personEras');
     return era ? loadEra(era).then(bundle => bundle.people.find(person => person.id === id)) : Promise.resolve(undefined);
   }
+  function getThemeArchive(id: string): Promise<ThemeArchive | undefined> {
+    if (!state.manifest) return initialize().then(() => getThemeArchive(id));
+    return Object.hasOwn(state.manifest.themeArchives, id) ? loader.loadThemeArchive(id) : Promise.resolve(undefined);
+  }
   const retry = (eraId?: string) => eraId ? loadEra(eraId).then(() => undefined) : initialize();
   return {
     subscribe: (listener: () => void) => { listeners.add(listener); return () => { listeners.delete(listener); }; },
     getSnapshot: () => state,
-    initialize, getEventArchive, getPersonArchive, retry
+    initialize, getEventArchive, getPersonArchive, getThemeArchive, getSources: loader.loadSources, getRelations: loader.loadRelations, retry
   };
 }
 type Store = ReturnType<typeof createContentStore>;
-type HistoryContent = ContentState & Pick<Store, 'getEventArchive' | 'getPersonArchive' | 'retry'>;
+type HistoryContent = ContentState & Pick<Store, 'getEventArchive' | 'getPersonArchive' | 'getThemeArchive' | 'getSources' | 'getRelations' | 'retry'>;
 const HistoryContentContext = createContext<HistoryContent | null>(null);
 export function HistoryContentProvider({ children, loader = historyContentLoader }: { children: ReactNode; loader?: HistoryContentLoader }) {
   const store = useMemo(() => createContentStore(loader), [loader]);
   const state = useSyncExternalStore(store.subscribe, store.getSnapshot, store.getSnapshot);
   useEffect(() => { void store.initialize().catch(() => { /* The context exposes the typed error for UI consumers. */ }); }, [store]);
-  const value = useMemo(() => ({ ...state, getEventArchive: store.getEventArchive, getPersonArchive: store.getPersonArchive, retry: store.retry }), [state, store]);
+  const value = useMemo(() => ({ ...state, getEventArchive: store.getEventArchive, getPersonArchive: store.getPersonArchive, getThemeArchive: store.getThemeArchive, getSources: store.getSources, getRelations: store.getRelations, retry: store.retry }), [state, store]);
   return <HistoryContentContext.Provider value={value}>{children}</HistoryContentContext.Provider>;
 }
 export function useHistoryContent() {

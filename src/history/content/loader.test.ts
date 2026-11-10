@@ -93,3 +93,48 @@ describe('cache contract isolation', () => {
     expect((await loader.loadHistoryManifest()).version).toBe(1);
   });
 });
+
+// New resources must retain the same validation, isolation and retry contract as eras.
+describe('archive catalogs', () => {
+  it('loads sources and relations once and validates their records', async () => {
+    const { archiveFixture } = await import('../../../tests/fixtures/historyArchives');
+    const fixture = archiveFixture();
+    const sources = await fixture.loader.loadSources();
+    expect(sources.find(source => source.id === 'history-institution')?.url).toBe('https://example.org/catalog');
+    expect(await fixture.loader.loadSources()).toBe(sources);
+    expect(await fixture.loader.loadRelations()).toEqual([{ id: 'zhenguan-kaiyuan', fromId: 'zhenguan', toId: 'kaiyuan', type: 'cause' }]);
+    await fixture.loader.loadRelations();
+    expect(fixture.requests.filter(path => path === fixture.manifest.sources)).toHaveLength(1);
+    expect(fixture.requests.filter(path => path === fixture.manifest.relations)).toHaveLength(1);
+    expect(fixture.requests.filter(path => path.startsWith('eras/'))).toEqual([]);
+  });
+  it('resolves a validated theme with no era download and rejects unknown themes without fetching them', async () => {
+    const { archiveFixture } = await import('../../../tests/fixtures/historyArchives');
+    const fixture = archiveFixture();
+    const first = fixture.loader.loadThemeArchive('tang-journey');
+    expect(fixture.loader.loadThemeArchive('tang-journey')).toBe(first);
+    const theme = await first;
+    expect(theme.chapters.map(chapter => chapter.title)).toEqual(['恢复与整顿', '繁盛与变化']);
+    expect(await fixture.loader.loadThemeArchive('tang-journey')).toBe(theme);
+    await expect(fixture.loader.loadThemeArchive('missing')).rejects.toMatchObject({ kind: 'not-found' });
+    expect(fixture.requests).toEqual(['manifest.json', 'themes/tang-journey.json']);
+  });
+  it.each(['sources', 'relations', 'theme'] as const)('evicts invalid %s resources and retries after correction', async resource => {
+    const { archiveFixture } = await import('../../../tests/fixtures/historyArchives');
+    const fixture = archiveFixture();
+    const path = resource === 'sources' ? fixture.manifest.sources : resource === 'relations' ? fixture.manifest.relations : 'themes/tang-journey.json';
+    const valid = fixture.records[path];
+    fixture.records[path] = resource === 'theme' ? { ...fixture.theme, id: 'wrong-theme' } : [{}];
+    const load = () => resource === 'sources' ? fixture.loader.loadSources() : resource === 'relations' ? fixture.loader.loadRelations() : fixture.loader.loadThemeArchive('tang-journey');
+    await expect(load()).rejects.toMatchObject({ kind: 'validation', resource: `/content/${path}` });
+    fixture.records[path] = valid;
+    expect(await load()).toEqual(valid);
+  });
+  it('does not reuse a theme validated for a different ID at an aliased URL', async () => {
+    const { archiveFixture } = await import('../../../tests/fixtures/historyArchives');
+    const fixture = archiveFixture();
+    fixture.manifest.themeArchives['another-theme'] = 'themes/tang-journey.json';
+    await fixture.loader.loadThemeArchive('tang-journey');
+    await expect(fixture.loader.loadThemeArchive('another-theme')).rejects.toMatchObject({ kind: 'validation' });
+  });
+});

@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { eraSchema, eventArchiveSchema, eventIndexSchema, personArchiveSchema, personIndexSchema, placeIndexSchema, themeIndexSchema } from './schema';
+import { eraSchema, eventArchiveSchema, eventIndexSchema, personArchiveSchema, personIndexSchema, placeIndexSchema, relationSchema, sourceSchema, themeArchiveSchema, themeIndexSchema, type ThemeArchive } from './schema';
 
 const path = z.string().min(1);
 const eraId = eraSchema.shape.id;
@@ -38,6 +38,7 @@ export function createHistoryContentLoader({ baseUrl = `${import.meta.env.BASE_U
   const base = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
   const requests = new Map<string, Promise<unknown>>();
   const eras = new Map<string, Promise<HistoryEraBundle>>();
+  const themes = new Map<string, Promise<ThemeArchive>>();
   function request<T>(relativePath: string, schema: z.ZodType<T>, contract: string, requestedEra?: string): Promise<T> {
     const resource = `${base}${relativePath}`;
     const cacheKey = `${contract}:${resource}`;
@@ -62,6 +63,19 @@ export function createHistoryContentLoader({ baseUrl = `${import.meta.env.BASE_U
   const loadPeopleIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.people, z.array(personIndexSchema), 'person-index'));
   const loadPlaceIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.places, z.array(placeIndexSchema), 'place-index'));
   const loadThemeIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.themes, z.array(themeIndexSchema), 'theme-index'));
+  const loadSources = () => loadHistoryManifest().then(manifest => request(manifest.sources, z.array(sourceSchema), 'sources'));
+  const loadRelations = () => loadHistoryManifest().then(manifest => request(manifest.relations, z.array(relationSchema), 'relations'));
+  function loadThemeArchive(id: string): Promise<ThemeArchive> {
+    const cached = themes.get(id);
+    if (cached) return cached;
+    const pending = loadHistoryManifest().then(manifest => {
+      const relativePath = Object.hasOwn(manifest.themeArchives, id) ? manifest.themeArchives[id] : undefined;
+      if (!relativePath) throw new HistoryContentError('not-found', `${base}manifest.json`);
+      return request(relativePath, themeArchiveSchema.refine(theme => theme.id === id, 'Requested theme does not match archive'), `theme:${id}`);
+    }).catch(error => { themes.delete(id); throw error; });
+    themes.set(id, pending);
+    return pending;
+  }
   function loadEraBundle(requestedEra: string): Promise<HistoryEraBundle> {
     const cached = eras.get(requestedEra);
     if (cached) return cached;
@@ -74,9 +88,9 @@ export function createHistoryContentLoader({ baseUrl = `${import.meta.env.BASE_U
     eras.set(requestedEra, pending);
     return pending;
   }
-  return { loadHistoryManifest, loadEventIndex, loadPeopleIndex, loadPlaceIndex, loadThemeIndex, loadEraBundle };
+  return { loadHistoryManifest, loadEventIndex, loadPeopleIndex, loadPlaceIndex, loadThemeIndex, loadEraBundle, loadThemeArchive, loadSources, loadRelations };
 }
 export type HistoryContentLoader = ReturnType<typeof createHistoryContentLoader>;
 const defaultLoader = createHistoryContentLoader();
-export const { loadHistoryManifest, loadEventIndex, loadPeopleIndex, loadPlaceIndex, loadThemeIndex, loadEraBundle } = defaultLoader;
+export const { loadHistoryManifest, loadEventIndex, loadPeopleIndex, loadPlaceIndex, loadThemeIndex, loadEraBundle, loadThemeArchive, loadSources, loadRelations } = defaultLoader;
 export { defaultLoader as historyContentLoader };

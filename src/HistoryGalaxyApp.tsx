@@ -5,11 +5,10 @@ import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react
 import { EventNavigator } from './components/EventNavigator';
 import { HistoryExplorer } from './components/HistoryExplorer';
 import { HistoryHud } from './components/HistoryHud';
-import { StoryPanel } from './components/StoryPanel';
+import { QuickEventPanel } from './components/QuickEventPanel';
 import { dynasties } from './history/dynasties';
 import type { HistoryContentLoader } from './history/content/loader';
 import { compactEventsForScene } from './history/content/scene-adapter';
-import type { HistoryEventArchive } from './history/content/schema';
 import { getDynastyForYear } from './history/space';
 import type { DynastyId, HistoryEvent } from './history/types';
 import { useHistoryNavigation } from './history/useHistoryNavigation';
@@ -66,6 +65,8 @@ export function HistoryGalaxyExperience() {
     navigation.triggerReset();
   }, [navigation]);
 
+  const selectedCompactEvent = content.events.find(event => event.id === navigation.selectedEvent?.id);
+
   return (
     <main className="history-experience">
       <a className="history-home-link" href="#home" aria-label="返回主页">
@@ -120,10 +121,10 @@ export function HistoryGalaxyExperience() {
         <small>DRAG TO ORBIT · SCROLL TO TRAVEL</small>
       </div>
 
-      {navigation.selectedEvent ? (
-        <SelectedHistoryStory
-          key={navigation.selectedEvent.id}
-          event={navigation.selectedEvent}
+      {selectedCompactEvent ? (
+        <QuickEventPanel
+          key={selectedCompactEvent.id}
+          event={selectedCompactEvent}
           onClose={navigation.closeStory}
           onPrevious={() => navigation.moveSelection(-1)}
           onNext={() => navigation.moveSelection(1)}
@@ -131,31 +132,4 @@ export function HistoryGalaxyExperience() {
       ) : null}
     </main>
   );
-}
-
-
-function SelectedHistoryStory(props: Parameters<typeof StoryPanel>[0]) {
-  const { getEventArchive } = useHistoryContent();
-  const [archive, setArchive] = useState<HistoryEventArchive | undefined>();
-  const [loading, setLoading] = useState(true);
-  const [failed, setFailed] = useState(false);
-  const [attempt, setAttempt] = useState(0);
-  useEffect(() => {
-    let active = true;
-    setLoading(true);
-    setFailed(false);
-    void getEventArchive(props.event.id).then(value => {
-      if (!active) return;
-      setArchive(value);
-      setFailed(!value);
-      setLoading(false);
-    }, () => {
-      if (!active) return;
-      setFailed(true);
-      setLoading(false);
-    });
-    return () => { active = false; };
-  }, [getEventArchive, props.event.id, attempt]);
-  const event = archive ? { ...props.event, story: [archive.background, ...archive.course.map(entry => entry.description), ...archive.results].join('\n\n') } : props.event;
-  return <StoryPanel {...props} event={event} loading={loading} failed={failed} onRetry={() => setAttempt(value => value + 1)} />;
 }

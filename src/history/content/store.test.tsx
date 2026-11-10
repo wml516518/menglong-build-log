@@ -66,3 +66,25 @@ describe('history content provider', () => {
     expect(result.current.people.length).toBeGreaterThan(0);
   });
 });
+
+it('resolves themes and shared catalogs lazily, preserving successful data after a failed retry', async () => {
+  const { archiveFixture } = await import('../../../tests/fixtures/historyArchives');
+  const fixture = archiveFixture();
+  const wrapper = ({ children }: { children: ReactNode }) => <HistoryContentProvider loader={fixture.loader}>{children}</HistoryContentProvider>;
+  const { result } = renderHook(useHistoryContent, { wrapper });
+  await waitFor(() => expect(result.current.loading).toBe(false));
+  expect(fixture.requests.some(path => path === fixture.manifest.sources || path.startsWith('themes/'))).toBe(false);
+  await act(async () => {
+    expect(await result.current.getThemeArchive('missing')).toBeUndefined();
+    const theme = await result.current.getThemeArchive('tang-journey');
+    expect(theme?.title).toBe('唐代政治之旅');
+    expect(await result.current.getThemeArchive('tang-journey')).toBe(theme);
+    fixture.failures.add(fixture.manifest.sources);
+    await expect(result.current.getSources()).rejects.toMatchObject({ kind: 'network' });
+    fixture.failures.clear();
+    expect((await result.current.getSources()).map(source => source.title)).toContain('历史资料目录');
+    expect((await result.current.getRelations())[0].toId).toBe('kaiyuan');
+    expect(await result.current.getThemeArchive('tang-journey')).toBe(theme);
+  });
+  expect(fixture.requests.filter(path => path.startsWith('eras/'))).toEqual([]);
+});
