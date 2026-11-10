@@ -47,6 +47,7 @@ function setup(reducedMotion = true) {
   const { result, rerender, unmount } = renderHook(({ focusRequest, selectedEvent = null, selectedPosition, resetSignal = 0 }: { focusRequest?: ClusterFocusRequest; selectedEvent?: HistoryEvent | null; selectedPosition?: readonly [number, number, number]; resetSignal?: number }) => CameraRig({ selectedEvent, selectedPosition, resetSignal, reducedMotion, controlsEnabled: true, onTravelYear, onDistanceChange, focusRequest }), { initialProps: {} });
   result.current.props.ref.current = controls;
   for (const key of ['enableZoom', 'enablePan', 'minDistance', 'maxDistance', 'touches', 'minPolarAngle', 'maxPolarAngle']) if (result.current.props[key] !== undefined) (controls as any)[key] = result.current.props[key];
+  controls.addEventListener('start', () => result.current.props.onStart());
   return { camera, canvas, controls, onTravelYear, onDistanceChange, result, rerender, frame: () => act(() => harness.frame({}, 1 / 60)), close: () => { unmount(); controls.dispose(); canvas.remove(); } };
 }
 
@@ -117,5 +118,35 @@ it.each([true, false])('focuses member bounds with reduced motion=%s and reports
   expect(f.onDistanceChange.mock.calls.length).toBe(calls);
   f.camera.position.copy(f.controls.target).add(new THREE.Vector3(0, 2, 60)); f.frame();
   expect(f.onDistanceChange.mock.calls.length).toBeGreaterThan(calls);
+  f.close();
+});
+
+it.each(['wheel', 'orbit'] as const)('stops cluster travel at the current target when %s starts during focus', gesture => {
+  const f = setup(false);
+  for (let i = 0; i < 45; i++) f.frame();
+  const beforeFocus = f.controls.target.clone();
+  f.rerender({ focusRequest: request });
+  for (let i = 0; i < 8; i++) f.frame();
+  expect(f.controls.target.distanceTo(beforeFocus)).toBeGreaterThan(1);
+  expect(f.controls.target.length()).toBeGreaterThan(1);
+
+  // Native OrbitControls dispatches start, which invokes CameraRig's actual
+  // onStart prop just as drei's wrapper does in the rendered scene.
+  if (gesture === 'wheel') {
+    f.canvas.dispatchEvent(new WheelEvent('wheel', { deltaY: 90, cancelable: true }));
+  } else {
+    const down = new MouseEvent('pointerdown', { button: 0, clientX: 100, clientY: 100, bubbles: true });
+    Object.assign(down, { pointerId: 5, pointerType: 'mouse' });
+    f.canvas.dispatchEvent(down);
+    const up = new MouseEvent('pointerup', { button: 0, clientX: 100, clientY: 100, bubbles: true });
+    Object.assign(up, { pointerId: 5, pointerType: 'mouse' });
+    document.dispatchEvent(up);
+  }
+  const interruptedTarget = f.controls.target.clone();
+  const interruptedCamera = f.camera.position.clone();
+  for (let i = 0; i < 120; i++) f.frame();
+  expect(f.controls.target.distanceTo(interruptedTarget)).toBeLessThan(1e-9);
+  expect(f.camera.position.distanceTo(interruptedCamera)).toBeLessThan(1e-9);
+  expect(f.onTravelYear).not.toHaveBeenCalled();
   f.close();
 });

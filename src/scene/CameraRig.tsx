@@ -147,7 +147,10 @@ export function CameraRig({ selectedEvent, selectedPosition, resetSignal, reduce
       minDistance={MIN_CAMERA_DISTANCE}
       maxDistance={MAX_CAMERA_DISTANCE}
       touches={{ ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_PAN }}
-      onStart={() => { focusAnimation.current = undefined; }}
+      onStart={() => {
+        if (focusAnimation.current && controls.current) travelTarget.current.copy(controls.current.target);
+        focusAnimation.current = undefined;
+      }}
       minPolarAngle={0.65}
       maxPolarAngle={2.05}
       minAzimuthAngle={-0.9}
