@@ -99,7 +99,9 @@ async function publish() {
     writeFileSync(join(process.env.RUNNER_TEMP!, 'provenance.json'), JSON.stringify({ ...state.identity, sha }));
     output('sha', sha); output('changed', true);
   } else {
-    command('gh', ['pr', 'merge', String(state.identity.pr), '--repo', state.identity.repo, '--auto', '--squash', '--match-head-commit', state.identity.sha]);
+    // A one-shot expected-SHA merge cannot remain armed for a later, unproven head.
+    const result = JSON.parse(command('gh', ['api', '--method', 'PUT', `repos/${state.identity.repo}/pulls/${state.identity.pr}/merge`, '-f', `sha=${state.identity.sha}`, '-f', 'merge_method=squash'])) as { merged?: boolean };
+    if (result.merged !== true) throw new Error('Exact-head merge was refused; PR remains open without auto-merge authorization');
     output('changed', false);
   }
 }
