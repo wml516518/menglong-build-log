@@ -37,3 +37,27 @@ Checked invalid hash handling, query preservation, known/unknown manifest lookup
 Full archive sections remain Task 11 work. The current manifest has zero themes; unknown theme URLs show not-found. If a manifest later contains a theme mapping, this shell displays a Chinese theme placeholder until the theme loader/full view is implemented. The standalone HistoryGalaxyApp wrapper remains supported while the actual App route family uses exactly one provider boundary.
 
 Dependency warnings remain: Three CJS deprecation in tests, Rollup annotations in zod, and gray-matter eval warning in builds. They do not fail verification and were outside Task 5 scope. Browser UI screenshot review was not performed; rendered integration coverage exercises the route and state contracts.
+
+## Fix Round 1 — navigation direction and lazy fallback
+
+Review identified that a galaxy→archive hashchange also occurs while traversing Back into an older archive. The old implementation incorrectly created a Back marker from that URL pair, so the return action could leave the history route family and land on the homepage. It also hardcoded a query-free galaxy link in the lazy Suspense fallback.
+
+Changes:
+
+- Browser entries now receive an explicit per-entry identity. A new archive Back marker is created only after an observed plain same-tab archive anchor activation from the current galaxy entry. The marker carries both the destination entry identity and the explicitly observed predecessor identity. Hash URLs alone never create that proof.
+- Existing markers survive Back/Forward. Direct visits, programmatic hash transitions and unproven history traversals use the validated session fallback instead of assuming Back is safe.
+- App ignores stale queued hashchange events whose new URL is no longer current and clears one-use link activation evidence after navigation.
+- Lazy Suspense return navigation now computes its safe href with `getHistoryReturnLocation()` and invokes `restoreHistoryReturnLocation()`, matching the archive shell.
+
+Strict TDD evidence:
+
+- Added a cold first-render test that sees the actual lazy Suspense fallback before the history chunk resolves and checks/clicks its stored full-query link.
+- Added the real sequence home → direct archive → filtered galaxy → Back → Forward → Back → return. The assertion requires the original filtered galaxy URL and its rendered controls.
+- Updated the existing normal Back/Forward test to activate a real same-tab archive anchor, preserving evidence for preferred Back when a predecessor is known.
+- RED command: `npm test -- --run src/routes.test.ts src/components/archive/ArchiveRoutes.test.tsx src/App.test.tsx`. Result: **2 failed, 43 passed**. Both new regressions failed for the reviewed defects: fallback href lost the query and traversal return reached the empty home hash. Log `/tmp/task5-fix1-red.log`.
+- GREEN same command: **45 passed across 3 files**. Log `/tmp/task5-fix1-green.log`.
+- Full `npm test`: **317 passed across 24 files**. Log `/tmp/task5-fix1-full.log`.
+- `npm run build`: TypeScript and Vite production build passed. Log `/tmp/task5-fix1-build.log`.
+- `git diff --check`: passed.
+
+Self-review: verified that entry markers are browser-state scoped, do not rely on inferred URL direction, preserve other history state, and are consumed only after explicit same-tab archive-link navigation. Modified/new-tab/download links cannot create return markers. Existing exact URL validation, Chinese shell states, loader request boundaries and provider ownership remain intact. No new concerns beyond the previously documented unavailable theme loader and existing dependency warnings.

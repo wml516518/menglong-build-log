@@ -1,5 +1,5 @@
 import { readFileSync } from 'node:fs';
-import { act, cleanup, render, screen, waitFor } from '@testing-library/react';
+import { act, cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../../App';
 import { getHistoryReturnLocation, rememberHistoryLocation, restoreHistoryReturnLocation } from '../../routes';
@@ -27,6 +27,17 @@ async function navigate(hash: string) {
 }
 beforeEach(() => { sessionStorage.clear(); window.history.replaceState(null, '', '/'); document.documentElement.lang = 'en'; });
 afterEach(cleanup);
+
+it('preserves the stored query in the pending lazy route fallback', async () => {
+  sessionStorage.setItem('history-galaxy-return', '#/history-galaxy?era=song&q=water');
+  window.history.replaceState(null, '', '/#/history-galaxy/event/zhenguan');
+  render(<App historyLoader={fixtureLoader().loader} />);
+  expect(screen.getByRole('status')).toHaveTextContent('正在加载历史星河');
+  const link = screen.getByRole('link', { name: '返回历史星河' });
+  expect(link).toHaveAttribute('href', '#/history-galaxy?era=song&q=water');
+  fireEvent.click(link);
+  await waitFor(() => expect(window.location.hash).toBe('#/history-galaxy?era=song&q=water'));
+});
 
 it.each([['event/zhenguan', '贞观之治'], ['person/person-li-shimin', '唐太宗']])('opens direct %s with history layout and Chinese metadata', async (path, title) => {
   window.location.hash = `#/history-galaxy/${path}?era=tang`;
@@ -70,7 +81,12 @@ it('uses browser Back to restore the full galaxy query with one provider', async
   const fixture = fixtureLoader();
   render(<App historyLoader={fixture.loader} />);
   await screen.findByRole('button', { name: '查看历史事件：627年 贞观之治' });
-  await navigate('#/history-galaxy/event/zhenguan');
+  const archiveLink = document.createElement('a');
+  archiveLink.href = '#/history-galaxy/event/zhenguan';
+  archiveLink.textContent = '打开贞观之治档案';
+  document.body.append(archiveLink);
+  await userEvent.click(archiveLink);
+  archiveLink.remove();
   await screen.findByRole('heading', { name: '贞观之治' });
   await userEvent.click(screen.getByRole('link', { name: '返回历史星河' }));
   await waitFor(() => expect(window.location.hash).toBe('#/history-galaxy?era=tang&q=%E5%94%90'));
@@ -100,4 +116,22 @@ it('restores a stored galaxy URL on a direct archive visit with no Back marker',
 it('rejects a forged stored return URL', () => {
   sessionStorage.setItem('history-galaxy-return', 'https://example.com/');
   expect(getHistoryReturnLocation()).toBe('#/history-galaxy');
+});
+
+it('does not mistake Back from a galaxy for a new forward archive entry', async () => {
+  const fixture = fixtureLoader();
+  render(<App historyLoader={fixture.loader} />);
+  await navigate('#/history-galaxy/event/zhenguan');
+  await screen.findByRole('heading', { name: '贞观之治' });
+  await navigate('#/history-galaxy?era=song&q=water');
+  await screen.findByRole('button', { name: '查看历史事件：627年 贞观之治' });
+  await act(async () => { window.history.back(); await new Promise(resolve => setTimeout(resolve, 20)); });
+  await screen.findByRole('heading', { name: '贞观之治' });
+  await act(async () => { window.history.forward(); await new Promise(resolve => setTimeout(resolve, 20)); });
+  await screen.findByRole('button', { name: '查看历史事件：627年 贞观之治' });
+  await act(async () => { window.history.back(); await new Promise(resolve => setTimeout(resolve, 20)); });
+  await screen.findByRole('heading', { name: '贞观之治' });
+  await userEvent.click(screen.getByRole('link', { name: '返回历史星河' }));
+  await waitFor(() => expect(window.location.hash).toBe('#/history-galaxy?era=song&q=water'));
+  await screen.findByRole('button', { name: '查看历史事件：627年 贞观之治' });
 });

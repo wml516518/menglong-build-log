@@ -47,6 +47,7 @@ export function isHistoryRoute(route: Route): route is HistoryRoute {
 }
 const returnKey = 'history-galaxy-return';
 const stateKey = 'historyGalaxyReturn';
+const entryKey = 'historyGalaxyEntry';
 function validGalaxyHash(hash: unknown): hash is string {
   return typeof hash === 'string' && parseHash(hash).view === 'history-galaxy';
 }
@@ -58,20 +59,25 @@ export function getHistoryReturnLocation(): string {
   } catch { /* A direct link still has a safe default when storage is unavailable. */ }
   return '#/history-galaxy';
 }
-export function rememberHistoryLocation(previousHash?: string) {
+// A predecessor is supplied only after an explicit same-tab archive-link activation.
+// Hashchange oldURL/newURL alone cannot distinguish a new entry from Back/Forward.
+export function rememberHistoryLocation(previousHash?: string, predecessorEntry?: string): string {
   const current = window.location.hash;
   const fromGalaxy = validGalaxyHash(previousHash);
   const returnHash = validGalaxyHash(current) ? current : fromGalaxy ? previousHash : undefined;
   if (returnHash) {
     try { window.sessionStorage.setItem(returnKey, returnHash); } catch { /* Storage may be unavailable. */ }
   }
-  if (fromGalaxy && isHistoryRoute(parseHash(current)) && !validGalaxyHash(current)) {
-    window.history.replaceState({ ...window.history.state, [stateKey]: { archive: current, returnHash: previousHash } }, '', window.location.href);
-  }
+  const entry = window.history.state?.[entryKey] ?? crypto.randomUUID();
+  const marker = predecessorEntry && fromGalaxy && isHistoryRoute(parseHash(current)) && !validGalaxyHash(current)
+    ? { archive: current, returnHash: previousHash, entry, predecessorEntry }
+    : window.history.state?.[stateKey];
+  window.history.replaceState({ ...window.history.state, [entryKey]: entry, [stateKey]: marker }, '', window.location.href);
+  return entry;
 }
 export function restoreHistoryReturnLocation(): void {
   const saved = window.history.state?.[stateKey];
-  if (saved?.archive === window.location.hash && validGalaxyHash(saved?.returnHash) && window.history.length > 1) {
+  if (saved?.entry === window.history.state?.[entryKey] && typeof saved?.predecessorEntry === 'string' && saved?.archive === window.location.hash && validGalaxyHash(saved?.returnHash) && window.history.length > 1) {
     window.history.back();
   } else {
     window.location.hash = getHistoryReturnLocation();
