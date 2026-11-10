@@ -1,6 +1,16 @@
 import { content, getInitialLanguage, languages } from './content';
 
 describe('content', () => {
+  it('loads CMS ordering, localized labels and empty optional media', () => {
+    expect(content.en.homeSectionOrder).toEqual(['buildLog', 'projects', 'resume', 'experience', 'resumeProjects', 'about', 'contact']);
+    expect(content.zh.sections.education).toBe('教育经历');
+    expect(content.en.sections.selectedProjects).toBe('Selected Projects');
+    expect(content.en.profile.avatar).toBe('');
+    expect(content.zh.profile.resumeDownload).toBe('');
+    expect(content.en.seo.socialImage).toBe('');
+    expect(content.en).not.toHaveProperty('_translation');
+    expect(content.zh.resume).not.toHaveProperty('_translation');
+  });
   it('contains English and Chinese site copy', () => {
     expect(languages).toEqual(['en', 'zh']);
     expect(content.en.historyGalaxy).toMatchObject({

@@ -242,6 +242,25 @@ body.history-route {
   padding: 42px 0 72px;
 }
 
+.portfolio-site .post-cover {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  margin: 0 0 20px;
+}
+
+.portfolio-site .post-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-site .post-article > .post-cover {
+  margin-top: 28px;
+}
+
 .portfolio-site .page-intro {
   display: grid;
   grid-template-columns: 0.4fr 1fr;

@@ -1,6 +1,7 @@
 ---
 slug: knowledgeops-rag
-language: zh
+draft: false
+coverImage: ''
 date: 2026-06-05
 title: KnowledgeOps RAG 文档问答
 summary: 围绕上传解析、向量检索和可部署服务边界，构建一个完整的文档问答 Demo。

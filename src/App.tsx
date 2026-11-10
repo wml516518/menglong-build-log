@@ -40,7 +40,7 @@ export default function App({ historyLoader }: { historyLoader?: HistoryContentL
   }, []);
 
   useEffect(() => {
-    applyRouteMetadata(route);
+    if (isHistoryRoute(route)) applyRouteMetadata(route, 'zh');
     document.body.classList.toggle('history-route', isHistoryRoute(route));
     return () => document.body.classList.remove('history-route');
   }, [route]);

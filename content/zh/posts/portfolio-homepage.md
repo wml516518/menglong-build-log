@@ -1,6 +1,7 @@
 ---
 slug: portfolio-homepage
-language: zh
+draft: false
+coverImage: ''
 date: 2026-06-05
 title: 个人主页和公开构建日志
 summary: 围绕清晰内容、简单部署和真实开发记录，构建一个中英双语的个人作品入口。

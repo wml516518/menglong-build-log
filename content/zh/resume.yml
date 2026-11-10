@@ -1,0 +1,234 @@
+basics:
+  name:
+    label: 姓名
+    value: 王梦龙
+  gender:
+    label: 性别
+    value: 男
+  birthDate:
+    label: 出生日期
+    value: 1993.12.28
+  location:
+    label: 所在地
+    value: 中国上海
+  email:
+    label: 邮箱
+    value: wml565868@gmail.com
+  github:
+    label: GitHub
+    value: github.com/wml516518
+  role:
+    label: 定位
+    value: 全栈开发者
+summary: 我是一名位于上海的全栈开发者，关注实用AI 工具和可部署工程项目，能力覆盖前端、后端与 DevOps 工作流，用AI
+  Coding的方式开发AI Agent应用，包括Claude、ChatGPT、Deepseek、GLM等。
+education:
+  - school: 河南财政金融学院
+    detail: 计算机软件（大专），2013.09 - 2016.06。
+experience:
+  - company: 上汽海外出行科技有限公司
+    role: 全栈工程师 · AI Agent 方向
+    period: 2025.07 - 至今
+    highlights:
+      - 以供应商驻场身份负责上汽海外智能座舱语音与车载 AI Agent 的云端能力建设，并行支撑谷歌 AAA 与微软 InCarVA 两条技术路线。
+      - 负责车控域意图体系与英语训练语料、日程邮件 Agent、主动推荐和 NLU 评测链路，覆盖意图定义、编排实现到上车验证的完整闭环。
+      - 设计 Intent、Slot、ActionID、结构化 payload 与失败 TTS 契约，兼容云端大模型与本地 NLU 执行链路。
+      - 与 Google Owner、Android 地端和 TSP 云端团队对齐协议与发布节奏，按分支与 Pull Request
+        流程交付，并沉淀意图命名规范、开发讲义和流程文档。
+  - company: 富士胶片（中国）投资有限公司
+    role: .NET 开发工程师
+    period: 2019.04 - 2025.04
+    highlights:
+      - 单独负责 Fabric 4.x 影像信息系统主版本开发，覆盖 .NET MVC、.NET
+        Core、Redis、WebService、WCF、NHibernate、Spring.NET、React、Angular、jQuery、HTML、CSS、JavaScript
+        等技术。
+      - 负责 Fabric 3.0 客户化支持、需求开发、系统升级、问题定位与性能优化。
+      - 独立完成 PIS 肺结节随访系统从概要设计、详细设计、数据库设计、代码开发、测试、实施到验收的全流程。
+      - 负责 Fantasy 2.x 系统接口开发与维护，并支持多个医院项目的调研、实施和维护。
+  - company: 浙江轩威医疗科技有限公司
+    role: .NET 软件工程师
+    period: 2017.11 - 2019.04
+    highlights:
+      - 负责 NIS 护士监护信息系统的模块设计、开发与交付。
+      - 负责编码、单元测试、Bug 修复和技术设计文档编写。
+  - company: 浙江万里扬股份有限公司
+    role: 软件开发工程师
+    period: 2016.06 - 2017.10
+    highlights:
+      - 前期负责软件运维、OA 流程设计、OA/K3 权限开通和计算机日常维护。
+      - 后期使用 VS2010 与 SQL Server 开发公司内部系统，包括计算机台账管理、物品借用平台、质量管理平台模块以及金蝶 ERP 二次开发。
+projects:
+  - name: 谷歌 AAA 车载 AI Agent（Voice 3.0）
+    period: 2025.07 - 至今
+    description: 与 Google 联合打造的下一代车载智能体，用“意图 + 工具 + 编排”覆盖车控、导航、媒体、天气、日程邮件和主动推荐等 16 个业务领域。
+    highlights:
+      - 负责 13 个车控领域、400+ 功能点的 Intent / Slot 设计，落地 CustomAction、结构化 payload
+        与英语训练语料，统一 actionId、结果码与 TTS 契约。
+      - 作为 Owner 独立设计并实现 Calendar & Mail 组件，通过 Google Calendar 与 Outlook M365 双
+        Provider 覆盖日程查询、创建、修改、删除以及邮件查询、草稿创建六类接口。
+      - 落地低电量推荐充电桩、到达目的地前推荐停车场、日程临期提醒等跨域主动服务。
+      - 参与按账号与音区隔离的短、中、长期记忆设计，包含 20 轮 / 16K token 窗口、30 天中期摘要与长期画像。
+      - 搭建 NLU 批量评测链路，校验 intent、action_id、payload 与不支持功能
+        TTS，输出失败归因并驱动意图边界和训练语料收敛。
+    stack:
+      - Google AAA (CCA)
+      - Intent / Slot
+      - CustomAction
+      - ServerWrapper
+      - NLU 评测
+  - name: 微软车载语音助手 InCarVA（Voice 2.0 / 3.0）
+    period: 2025.07 - 至今
+    description: 上汽海外面向多语言市场的车载语音助手，基于微软 Azure 语音与 M365 生态支撑 Voice 2.0 / 3.0 渠道。
+    highlights:
+      - 负责 Voice 2.0 后端会话服务的开发与维护，接入大模型完成语义理解与意图识别，将自然语言解析为结构化车机指令。
+      - 设计多场景 Prompt 与意图分类策略，处理多音区、多轮上下文与模糊指代，对车型不支持功能返回安全兜底播报。
+      - 对接 Outlook / M365 日程邮件、TSP 天气聚合、导航、地点查询与车控能力，统一 actionId 与 payload 协议。
+      - 维护多语种 TTS 文案，保证同一意图在不同语言下语义一致、长度可控与断句自然。
+      - 负责线上日志排查、Bug 修复与接口性能优化，协同微软与车机端联调，保障发布质量和响应耗时。
+    stack:
+      - Microsoft Azure 语音
+      - M365 / Outlook
+      - .NET
+      - Prompt Engineering
+      - 多语种 TTS
+  - name: Fabric4.x 影像信息系统
+    period: 2019.04 - 2025.04
+    description: 医疗行业放射、超声、内镜信息系统，包含 CS 业务端与 BS 后台管理网站。
+    highlights:
+      - 独立负责后台管理网站全栈开发，包括前端架构、API 接口设计和数据库管理。
+      - 独立开发 10 个以上后台任务调度服务，并维护相关生产模块。
+      - 支持国产系统测试与维护，涉及 Linux、Docker、DevOps 等技术。
+    stack:
+      - .NET Core 6
+      - Vue
+      - SqlSugar
+      - SQLite
+      - SQL Server
+      - Docker
+  - name: Fantasy2.x 超声内镜系统
+    period: 2024.01 - 2025.04
+    description: 医疗行业超声内镜系统，负责客户化需求、问题解决和第三方系统集成。
+    highlights:
+      - 处理客户化需求和生产问题。
+      - 使用 Vue + SignalR 实现叫号屏自动消息推送。
+      - 负责 HIS、CA 等系统接口设计、实现和接口文档编写。
+    stack:
+      - WinForms
+      - SQL Server
+      - Vue
+      - SignalR
+  - name: CITA 医疗信息参考应用
+    period: 2022.03 - 2025.04
+    description: 汇集医院医疗信息、检查图像和文档，辅助患者进度查看与医疗政策考虑。
+    highlights:
+      - 参与吉林、珠海、广州等医院项目的调研、评估、实施、部署与维护。
+    stack:
+      - 医疗信息化
+      - 实施部署
+      - 系统集成
+  - name: 肺结节随访系统（PIS）
+    period: 2019.10 - 2020.01
+    description: 肺结节随访系统，覆盖病人信息、检查信息、肺结节信息管理和报表输出。
+    highlights:
+      - 独立负责系统整体设计、数据库设计、开发、测试、实施和验收。
+      - 实现病人、检查、肺结节信息 CRUD，FastReport 报表、Excel 导出和打印报告功能。
+    stack:
+      - WinForms
+      - SQL Server
+      - FastReport
+      - Excel 导出
+  - name: Fabric3.0 放射系统
+    period: 2019.04 - 2025.04
+    description: 医疗行业 BS 架构放射系统，负责客户化需求、性能优化和第三方接口。
+    highlights:
+      - 处理日常客户化问题与需求，从代码和数据库层面解决系统卡慢问题。
+      - 负责互认平台、CA、感染病上传、身份证刷卡等第三方接口设计与实现。
+    stack:
+      - .NET MVC
+      - NHibernate
+      - Spring.NET
+      - Angular
+      - jQuery
+  - name: 护士管理系统（NIS）
+    period: 2017.11 - 2019.03
+    description: 移动端护士管理系统，BS 架构。
+    highlights:
+      - 负责转运单、护理记录单开发和其他模块维护。
+    stack:
+      - .NET MVC
+      - Bootstrap
+      - jQuery
+      - HTML
+      - CSS
+  - name: 质量管理平台
+    period: 2017.07 - 2017.10
+    description: 面向质量管理部的变速器质量管理软件，覆盖零公里问题、售后问题和典型案例问题。
+    highlights:
+      - 实现 Excel 导入导出、数据维护和报表呈现等功能。
+    stack:
+      - WPF
+      - SQL Server 2008 R2
+  - name: 物品借用平台 / 计算机台账管理系统
+    period: 2016.10 - 2017.06
+    description: 公司内部资产与借用管理工具。
+    highlights:
+      - 实现物品借用、归还、库存、借用人等信息管理。
+      - 实现计算机台账 Excel 导入、数据增删查改、部门维护、人员维护和权限设置。
+    stack:
+      - WinForms
+      - SQL Server 2008 R2
+skills:
+  - group: 前端
+    items:
+      - Vue
+      - React
+      - Angular
+      - ElementUI
+      - Bootstrap
+      - jQuery
+      - HTML
+      - CSS
+      - JavaScript
+  - group: 后端
+    items:
+      - C#
+      - .NET Core
+      - .NET MVC
+      - Web API
+      - SignalR
+      - WCF
+      - WebService
+      - Redis
+      - RabbitMQ
+      - SqlSugar
+      - EF
+      - NHibernate
+  - group: 数据库
+    items:
+      - SQL Server
+      - Oracle
+      - MySQL
+      - SQLite
+  - group: DevOps
+    items:
+      - Linux
+      - Docker
+      - Kubernetes
+      - DevOps 流程
+      - Netlify
+      - Render
+  - group: AI
+    items:
+      - 大模型调用
+      - Prompt Engineering
+      - Function Calling
+      - RAG
+      - Dify
+      - n8n
+      - Coze
+      - Ollama
+certifications:
+  - 软件设计师
+  - 驾驶执照
+languages:
+  - 英语：听说能力良好，读写能力良好
