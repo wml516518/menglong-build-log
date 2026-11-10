@@ -20,20 +20,20 @@ it.each([
 ] as const)('recognizes merge calls: %s %j', (name, args, expected) => {
   expect(isMergeCall({ name, args: [...args] })).toBe(expected);
 });
-function fixture(changed: string, conclusion = 'success', moved = false, mergeResult: boolean | number = true) {
+function fixture(changed: string, conclusion = 'success', moved = false, mergeResult: boolean | number = true, behind = false) {
   const root = realpathSync(mkdtempSync(join(tmpdir(), 'cms-cli-'))); roots.push(root);
   const trusted = join(root, 'trusted'); const bin = join(root, 'bin');
   mkdirSync(join(trusted, 'node_modules/.bin'), { recursive: true }); mkdirSync(bin);
-  const sha = 'a'.repeat(40); const repo = 'wml516518/menglong-build-log';
-  writeFileSync(join(root, 'cms-state.json'), JSON.stringify({ identity: { repo, pr: 12, sha }, input: { baseRepo: repo, headRepo: repo, headRef: 'cms/a', author: 'wml516518', changedPaths: ['content/zh/site.yml'] }, scope: { sourcePaths: ['content/zh/site.yml'], generatedPaths: [], mediaPaths: [] }, conclusion }));
-  const program = `#!${process.execPath}\nconst fs=require('fs'); const a=process.argv.slice(2); const name=require('path').basename(process.argv[1]); fs.appendFileSync(process.env.LOG,JSON.stringify({name,args:a,cwd:process.cwd()})+'\\n'); if(name==='git'){if(a.includes('rev-parse'))process.stdout.write('${sha}');if(a.includes('status'))process.stdout.write(${JSON.stringify(changed)});} if(name==='gh'&&a[0]==='api')process.stdout.write(${JSON.stringify(JSON.stringify({ state: 'open', head: { sha: moved ? 'b'.repeat(40) : sha, ref: 'cms/a', repo: { full_name: repo } } }))});`;
-  const mergeStub = `if(name==='gh'&&a.includes('PUT')){ ${typeof mergeResult === 'number' ? `process.stderr.write('HTTP ${mergeResult}: merge refused');process.exit(1);` : `process.stdout.write(JSON.stringify({merged:${mergeResult}}));process.exit(0);`} }`;
+  const sha = 'a'.repeat(40); const baseSha = 'b'.repeat(40); const updatedSha = 'c'.repeat(40); const repo = 'wml516518/menglong-build-log';
+  writeFileSync(join(root, 'cms-state.json'), JSON.stringify({ identity: { repo, pr: 12, sha }, input: { baseRepo: repo, headRepo: repo, headRef: 'cms/a', author: 'wml516518', changedPaths: ['content/zh/site.yml'] }, scope: { sourcePaths: ['content/zh/site.yml'], generatedPaths: [], mediaPaths: [] }, conclusion, baseRef: 'main', baseSha }));
+  const program = `#!${process.execPath}\nconst fs=require('fs'); const a=process.argv.slice(2); const name=require('path').basename(process.argv[1]); const marker=${JSON.stringify(join(root, 'updated'))}; const repo=${JSON.stringify(repo)}; const sha=${JSON.stringify(sha)}; const baseSha=${JSON.stringify(baseSha)}; const updatedSha=${JSON.stringify(updatedSha)}; fs.appendFileSync(process.env.LOG,JSON.stringify({name,args:a,cwd:process.cwd()})+'\\n'); if(name==='git'){if(a.includes('rev-parse'))process.stdout.write(sha);if(a.includes('status'))process.stdout.write(${JSON.stringify(changed)});} if(name==='gh'&&a[0]==='api'){const endpoint=a.find(x=>x.startsWith('repos/'));if(endpoint?.endsWith('/update-branch')){fs.writeFileSync(marker,'');process.stdout.write(JSON.stringify({message:'Updating pull request branch.'}));process.exit(0);}if(endpoint?.includes('/git/ref/heads/main')){process.stdout.write(JSON.stringify({object:{sha:baseSha}}));process.exit(0);}if(endpoint?.includes('/git/commits/')){process.stdout.write(JSON.stringify({sha:updatedSha,parents:[{sha},{sha:baseSha}]}));process.exit(0);}if(endpoint?.endsWith('/pulls/12')){const updated=fs.existsSync(marker);process.stdout.write(JSON.stringify({state:'open',mergeable_state:${behind ? "updated?'clean':'behind'" : "'clean'"},head:{sha:updated?updatedSha:${moved ? "'d'.repeat(40)" : 'sha'},ref:'cms/a',repo:{full_name:repo}},base:{ref:'main',sha:baseSha,repo:{full_name:repo}}}));process.exit(0);}}`;
+  const mergeStub = `if(name==='gh'&&a.includes('PUT')&&a.some(x=>x.endsWith('/merge'))){ ${typeof mergeResult === 'number' ? `process.stderr.write('HTTP ${mergeResult}: merge refused');process.exit(1);` : `process.stdout.write(JSON.stringify({merged:${mergeResult}}));process.exit(0);`} }`;
   const finalProgram = program.replace("if(name==='git')", mergeStub + "if(name==='git')");
   for (const file of [join(bin, 'git'), join(bin, 'gh'), join(trusted, 'node_modules/.bin/tsx')]) writeFileSync(file, finalProgram, { mode: 0o755 });
   writeFileSync(join(root, 'outputs'), '');
   const execute = () => execFileSync(process.execPath, ['--import', resolve('node_modules/tsx/dist/loader.mjs'), resolve('scripts/cms/publish.ts'), 'publish'], { cwd: trusted, encoding: 'utf8', env: { ...process.env, PATH: `${bin}:${process.env.PATH}`, RUNNER_TEMP: root, GITHUB_WORKSPACE: root, GITHUB_OUTPUT: join(root, 'outputs'), LOG: join(root, 'log'), CMS_TRANSLATION_TOKEN: 'test-token' }, stdio: 'pipe' });
   const calls = () => readFileSync(join(root, 'log'), 'utf8').trim().split('\n').map(s => JSON.parse(s) as { name: string; args: string[]; cwd: string });
-  return { execute, calls, root, trusted, sha };
+  return { execute, calls, root, trusted, sha, updatedSha };
 }
 it('uses trusted absolute CLIs against data and stages/pushes only English', () => {
   const f = fixture(' M content/en/site.yml\0', 'failure'); f.execute();
@@ -51,6 +51,14 @@ it('immediately merges unchanged green output with an atomic exact SHA condition
   const f = fixture(''); f.execute();
   expect(f.calls().find(isMergeCall)?.args).toEqual(['api', '--method', 'PUT', 'repos/wml516518/menglong-build-log/pulls/12/merge', '-f', `sha=${f.sha}`, '-f', 'merge_method=squash']);
   expect(f.calls().some(c => c.args.includes('--auto'))).toBe(false);
+});
+it('updates an exactly guarded behind branch and emits provenance for the new merge commit', () => {
+  const f = fixture('', 'success', false, true, true); f.execute();
+  const update = f.calls().find(call => call.args.some(arg => arg.endsWith('/update-branch')));
+  expect(update?.args).toContain(`expected_head_sha=${f.sha}`);
+  expect(f.calls().some(isMergeCall)).toBe(false);
+  expect(JSON.parse(readFileSync(join(f.root, 'provenance.json'), 'utf8'))).toEqual({ repo: 'wml516518/menglong-build-log', pr: 12, sha: f.updatedSha });
+  expect(readFileSync(join(f.root, 'outputs'), 'utf8')).toContain(`sha=${f.updatedSha}\nchanged=true`);
 });
 it.each([false, 409, 405])('fails when merge boundary rejects the exact SHA or protections (%s)', result => {
   const f = fixture('', 'success', false, result); expect(f.execute).toThrow();
@@ -73,6 +81,7 @@ it.each(['wrong-payload', 'untrusted-run', 'valid'])('checks real prepare flow a
   execFileSync('zip', ['-q', join(f.root, 'proof.zip'), 'provenance.json'], { cwd: payloadDir });
   const responses: Record<string, unknown> = {
     [`repos/${repo}/pulls?state=open&per_page=100`]: [[pr]],
+    [`repos/${repo}/git/ref/heads/main`]: { object: { sha: pr.base.sha } },
     [`repos/${repo}/compare/${pr.base.sha}...${f.sha}`]: { files: [{ filename: 'content/en/site.yml' }] },
     [`repos/${repo}/git/trees/${f.sha}?recursive=1`]: { truncated: false, tree: [{ path: 'content/zh/site.yml', mode: '100644' }] },
     [`repos/${repo}/actions/workflows/cms-publish.yml`]: { id: 7 },

@@ -7,7 +7,8 @@ import { CMS_REPOSITORY, validateCmsPullRequest, type ScopeInput } from './valid
 
 interface Identity { repo: string; pr: number; sha: string }
 interface Run { workflow_id: number; event: string; conclusion: string; repository: { full_name: string } }
-interface Pull { number: number; state: string; head: { ref: string; sha: string; repo: { full_name: string } }; base: { repo: { full_name: string }; ref: string; sha: string }; user: { login: string } }
+interface Pull { number: number; state: string; mergeable_state?: string; head: { ref: string; sha: string; repo: { full_name: string } }; base: { repo: { full_name: string }; ref: string; sha: string }; user: { login: string } }
+interface Commit { sha: string; parents: { sha: string }[] }
 interface ChangedFile { filename: string; previous_filename?: string }
 export function collectChangedPaths(files: ChangedFile[] | undefined) {
   // Compare responses cap their file list at 300; never trust a capped diff.
@@ -26,12 +27,19 @@ export function decidePublication(changed: boolean, conclusion: string) {
   if (conclusion === 'success') return 'merge';
   throw new Error('Generated content is current but CI did not succeed; PR remains open');
 }
+export function verifyBaseUpdate(oldHead: string, baseHead: string, commit: Commit) {
+  if (!/^[a-f0-9]{40}$/.test(commit.sha) || commit.sha === oldHead || commit.parents.length !== 2) throw new Error('Invalid CMS base-update commit');
+  const parents = new Set(commit.parents.map(parent => parent.sha));
+  if (parents.size !== 2 || !parents.has(oldHead) || !parents.has(baseHead)) throw new Error('CMS base update has unexpected parents');
+  return commit.sha;
+}
 const command = (exe: string, args: string[], options: { cwd?: string; env?: NodeJS.ProcessEnv } = {}) => execFileSync(exe, args, { encoding: 'utf8', maxBuffer: 32 * 1024 * 1024, ...options });
 const api = <T>(endpoint: string): T => JSON.parse(command('gh', ['api', endpoint]));
+const putApi = <T>(endpoint: string, fields: string[]): T => JSON.parse(command('gh', ['api', '--method', 'PUT', endpoint, ...fields.flatMap(field => ['-f', field])]));
 const pages = <T>(endpoint: string): T[] => JSON.parse(command('gh', ['api', '--paginate', '--slurp', endpoint])).flat();
 const output = (name: string, value: string | number | boolean) => appendFileSync(process.env.GITHUB_OUTPUT!, `${name}=${value}\n`);
 const statePath = () => join(process.env.RUNNER_TEMP!, 'cms-state.json');
-interface State { identity: Identity; input: ScopeInput; scope: ReturnType<typeof validateCmsPullRequest>; conclusion: string }
+interface State { identity: Identity; input: ScopeInput; scope: ReturnType<typeof validateCmsPullRequest>; conclusion: string; baseRef: string; baseSha: string }
 
 async function hasProvenance(identity: Identity) {
   const workflow = api<{ id: number }>(`repos/${identity.repo}/actions/workflows/cms-publish.yml`);
@@ -58,9 +66,10 @@ async function prepare() {
   const pulls = pages<Pull>(`repos/${CMS_REPOSITORY}/pulls?state=open&per_page=100`);
   const pr = selectPullRequest(pulls, run.head_branch, run.head_sha, CMS_REPOSITORY);
   if (!pr || String(pr.number) !== process.env.CMS_PR || pr.base.ref !== event.repository.default_branch || !/^[a-f0-9]{40}$/.test(pr.head.sha)) throw new Error('CMS PR changed or is ambiguous');
-  if (!/^[a-f0-9]{40}$/.test(pr.base.sha)) throw new Error('Invalid base SHA');
+  const baseRef = api<{ object: { sha: string } }>(`repos/${CMS_REPOSITORY}/git/ref/heads/${encodeURIComponent(pr.base.ref)}`);
+  if (!/^[a-f0-9]{40}$/.test(baseRef.object.sha)) throw new Error('Invalid base SHA');
   // Both endpoints are immutable: PR files pagination could race head changes.
-  const comparison = api<{ files?: ChangedFile[] }>(`repos/${CMS_REPOSITORY}/compare/${pr.base.sha}...${pr.head.sha}`);
+  const comparison = api<{ files?: ChangedFile[] }>(`repos/${CMS_REPOSITORY}/compare/${baseRef.object.sha}...${pr.head.sha}`);
   const tree = api<{ truncated: boolean; tree: { path: string; mode: string }[] }>(`repos/${CMS_REPOSITORY}/git/trees/${pr.head.sha}?recursive=1`);
   if (tree.truncated) throw new Error('CMS tree is truncated');
   const identity = { repo: CMS_REPOSITORY, pr: pr.number, sha: pr.head.sha };
@@ -68,7 +77,7 @@ async function prepare() {
   const generatedRecheck = changedPaths.some(p => p.startsWith('content/en/')) ? await hasProvenance(identity) : false;
   const input = { baseRepo: pr.base.repo.full_name, headRepo: pr.head.repo.full_name, headRef: pr.head.ref, author: pr.user.login, changedPaths, generatedRecheck, tree: tree.tree };
   const scope = validateCmsPullRequest(input);
-  writeFileSync(statePath(), JSON.stringify({ identity, input, scope, conclusion: run.conclusion } satisfies State));
+  writeFileSync(statePath(), JSON.stringify({ identity, input, scope, conclusion: run.conclusion, baseRef: pr.base.ref, baseSha: baseRef.object.sha } satisfies State));
   output('sha', identity.sha);
 }
 async function publish() {
@@ -99,6 +108,24 @@ async function publish() {
     writeFileSync(join(process.env.RUNNER_TEMP!, 'provenance.json'), JSON.stringify({ ...state.identity, sha }));
     output('sha', sha); output('changed', true);
   } else {
+    if (current.mergeable_state === 'behind') {
+      const latestBase = api<{ object: { sha: string } }>(`repos/${state.identity.repo}/git/ref/heads/${encodeURIComponent(state.baseRef)}`).object.sha;
+      if (latestBase !== state.baseSha) throw new Error('Base branch changed during publication; PR remains open');
+      putApi(`repos/${state.identity.repo}/pulls/${state.identity.pr}/update-branch`, [`expected_head_sha=${state.identity.sha}`]);
+      let updated: Pull | undefined;
+      for (let attempt = 0; attempt < 20; attempt += 1) {
+        updated = api<Pull>(`repos/${state.identity.repo}/pulls/${state.identity.pr}`);
+        if (updated.head.sha !== state.identity.sha) break;
+        await new Promise(resolveDelay => setTimeout(resolveDelay, 1_000));
+      }
+      if (!updated || updated.state !== 'open' || updated.head.sha === state.identity.sha || updated.head.ref !== state.input.headRef || updated.head.repo.full_name !== state.identity.repo || updated.base.ref !== state.baseRef) throw new Error('CMS base update did not produce the expected PR head');
+      const sha = verifyBaseUpdate(state.identity.sha, state.baseSha, api<Commit>(`repos/${state.identity.repo}/git/commits/${updated.head.sha}`));
+      const confirmed = api<Pull>(`repos/${state.identity.repo}/pulls/${state.identity.pr}`);
+      if (confirmed.state !== 'open' || confirmed.head.sha !== sha || confirmed.head.ref !== state.input.headRef || confirmed.head.repo.full_name !== state.identity.repo) throw new Error('PR head changed after the guarded base update');
+      writeFileSync(join(process.env.RUNNER_TEMP!, 'provenance.json'), JSON.stringify({ ...state.identity, sha }));
+      output('sha', sha); output('changed', true);
+      return;
+    }
     // A one-shot expected-SHA merge cannot remain armed for a later, unproven head.
     const result = JSON.parse(command('gh', ['api', '--method', 'PUT', `repos/${state.identity.repo}/pulls/${state.identity.pr}/merge`, '-f', `sha=${state.identity.sha}`, '-f', 'merge_method=squash'])) as { merged?: boolean };
     if (result.merged !== true) throw new Error('Exact-head merge was refused; PR remains open without auto-merge authorization');
