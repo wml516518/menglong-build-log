@@ -1,7 +1,7 @@
 basics:
   name:
     label: 姓名
-    value: MengLong Wang
+    value: 王梦龙
   gender:
     label: 性别
     value: 男
@@ -20,7 +20,8 @@ basics:
   role:
     label: 定位
     value: 全栈开发者
-summary: 我是一名位于上海的全栈开发者，关注实用 Web 产品、AI 工具和可部署工程项目，能力覆盖前端、后端与 DevOps 工作流。
+summary: 我是一名位于上海的全栈开发者，关注实用AI 工具和可部署工程项目，能力覆盖前端、后端与 DevOps 工作流，用AI
+  Coding的方式开发AI Agent应用，包括Claude、ChatGPT、Deepseek、GLM等。
 education:
   - school: 河南财政金融学院
     detail: 计算机软件（大专），2013.09 - 2016.06。
@@ -32,12 +33,15 @@ experience:
       - 以供应商驻场身份负责上汽海外智能座舱语音与车载 AI Agent 的云端能力建设，并行支撑谷歌 AAA 与微软 InCarVA 两条技术路线。
       - 负责车控域意图体系与英语训练语料、日程邮件 Agent、主动推荐和 NLU 评测链路，覆盖意图定义、编排实现到上车验证的完整闭环。
       - 设计 Intent、Slot、ActionID、结构化 payload 与失败 TTS 契约，兼容云端大模型与本地 NLU 执行链路。
-      - 与 Google Owner、Android 地端和 TSP 云端团队对齐协议与发布节奏，按分支与 Pull Request 流程交付，并沉淀意图命名规范、开发讲义和流程文档。
+      - 与 Google Owner、Android 地端和 TSP 云端团队对齐协议与发布节奏，按分支与 Pull Request
+        流程交付，并沉淀意图命名规范、开发讲义和流程文档。
   - company: 富士胶片（中国）投资有限公司
     role: .NET 开发工程师
     period: 2019.04 - 2025.04
     highlights:
-      - 单独负责 Fabric 4.x 影像信息系统主版本开发，覆盖 .NET MVC、.NET Core、Redis、WebService、WCF、NHibernate、Spring.NET、React、Angular、jQuery、HTML、CSS、JavaScript 等技术。
+      - 单独负责 Fabric 4.x 影像信息系统主版本开发，覆盖 .NET MVC、.NET
+        Core、Redis、WebService、WCF、NHibernate、Spring.NET、React、Angular、jQuery、HTML、CSS、JavaScript
+        等技术。
       - 负责 Fabric 3.0 客户化支持、需求开发、系统升级、问题定位与性能优化。
       - 独立完成 PIS 肺结节随访系统从概要设计、详细设计、数据库设计、代码开发、测试、实施到验收的全流程。
       - 负责 Fantasy 2.x 系统接口开发与维护，并支持多个医院项目的调研、实施和维护。
@@ -58,11 +62,14 @@ projects:
     period: 2025.07 - 至今
     description: 与 Google 联合打造的下一代车载智能体，用“意图 + 工具 + 编排”覆盖车控、导航、媒体、天气、日程邮件和主动推荐等 16 个业务领域。
     highlights:
-      - 负责 13 个车控领域、400+ 功能点的 Intent / Slot 设计，落地 CustomAction、结构化 payload 与英语训练语料，统一 actionId、结果码与 TTS 契约。
-      - 作为 Owner 独立设计并实现 Calendar & Mail 组件，通过 Google Calendar 与 Outlook M365 双 Provider 覆盖日程查询、创建、修改、删除以及邮件查询、草稿创建六类接口。
+      - 负责 13 个车控领域、400+ 功能点的 Intent / Slot 设计，落地 CustomAction、结构化 payload
+        与英语训练语料，统一 actionId、结果码与 TTS 契约。
+      - 作为 Owner 独立设计并实现 Calendar & Mail 组件，通过 Google Calendar 与 Outlook M365 双
+        Provider 覆盖日程查询、创建、修改、删除以及邮件查询、草稿创建六类接口。
       - 落地低电量推荐充电桩、到达目的地前推荐停车场、日程临期提醒等跨域主动服务。
       - 参与按账号与音区隔离的短、中、长期记忆设计，包含 20 轮 / 16K token 窗口、30 天中期摘要与长期画像。
-      - 搭建 NLU 批量评测链路，校验 intent、action_id、payload 与不支持功能 TTS，输出失败归因并驱动意图边界和训练语料收敛。
+      - 搭建 NLU 批量评测链路，校验 intent、action_id、payload 与不支持功能
+        TTS，输出失败归因并驱动意图边界和训练语料收敛。
     stack:
       - Google AAA (CCA)
       - Intent / Slot
