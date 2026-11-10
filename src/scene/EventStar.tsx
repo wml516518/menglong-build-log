@@ -1,10 +1,10 @@
-import type { ThreeEvent } from '@react-three/fiber';
 import { useFrame } from '@react-three/fiber';
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import type { HistoryEvent } from '../history/types';
 import { influenceToScale, yearToX } from '../history/space';
 import { getTimelineY, getTimelineZ } from './TimelineRail';
+import { beginStarDrag, type StarPointerStart } from './starDrag';
 
 interface EventStarProps {
   event: HistoryEvent;
@@ -16,6 +16,8 @@ interface EventStarProps {
   onHover: (id: string | null) => void;
   onDragOffset: (id: string, offset: readonly [number, number]) => void;
   onDragStateChange: (dragging: boolean) => void;
+  dragStart?: StarPointerStart;
+  onDragStart?: (event: HistoryEvent, start: StarPointerStart) => void;
 }
 
 export function getEventPosition(event: HistoryEvent, dragOffset: readonly [number, number] = [0, 0]): [number, number, number] {
@@ -23,17 +25,41 @@ export function getEventPosition(event: HistoryEvent, dragOffset: readonly [numb
   return [x, getTimelineY(x) + event.offset[0] + 1.1 + dragOffset[0], getTimelineZ(x) + event.offset[1] + dragOffset[1]];
 }
 
-export function EventStar({ event, selected, hovered, dragOffset, reducedMotion, onSelect, onHover, onDragOffset, onDragStateChange }: EventStarProps) {
+export function EventStar({ event, selected, hovered, dragOffset, reducedMotion, onSelect, onHover, onDragOffset, onDragStateChange, dragStart, onDragStart }: EventStarProps) {
   const group = useRef<THREE.Group>(null);
   const glow = useRef<THREE.Mesh>(null);
   const currentOffset = useRef<[number, number]>([dragOffset[0], dragOffset[1]]);
-  const pointerStart = useRef({ x: 0, y: 0, offsetY: 0, offsetZ: 0, dragging: false });
+  const session = useRef<(() => void) | null>(null);
+  const callbacks = useRef({ onSelect, onHover, onDragOffset, onDragStateChange });
+  callbacks.current = { onSelect, onHover, onDragOffset, onDragStateChange };
   const basePosition = getEventPosition(event);
   const radius = influenceToScale(event.influence);
 
   useEffect(() => {
     currentOffset.current = [dragOffset[0], dragOffset[1]];
-  }, [dragOffset]);
+  }, [dragOffset[0], dragOffset[1]]);
+
+  const begin = (start: StarPointerStart) => {
+    if (session.current) return;
+    callbacks.current.onDragStateChange(true);
+    session.current = beginStarDrag({ start, offset: currentOffset.current,
+      onMove: offset => { currentOffset.current = [offset[0], offset[1]]; },
+      onFinish: offset => {
+        session.current = null;
+        if (offset) callbacks.current.onDragOffset(event.id, offset);
+        else callbacks.current.onSelect(event);
+        callbacks.current.onHover(null); callbacks.current.onDragStateChange(false);
+      },
+      onCancel: () => {
+        session.current = null; currentOffset.current = [dragOffset[0], dragOffset[1]];
+        callbacks.current.onHover(null); callbacks.current.onDragStateChange(false);
+      }
+    });
+  };
+  // An instance's pointer-down survives its removal from the batch. Native
+  // pointer listeners continue that same gesture on the promoted rich star.
+  useEffect(() => { if (dragStart) begin(dragStart); }, [dragStart]);
+  useEffect(() => () => session.current?.(), []);
 
   useFrame(({ clock }) => {
     if (!group.current) return;
@@ -46,71 +72,18 @@ export function EventStar({ event, selected, hovered, dragOffset, reducedMotion,
     if (!reducedMotion && glow.current) glow.current.rotation.z -= 0.004;
   });
 
-  const onPointerDown = (pointerEvent: ThreeEvent<PointerEvent>) => {
-    pointerEvent.stopPropagation();
-    const pointerTarget = pointerEvent.target as HTMLElement;
-    pointerTarget.setPointerCapture(pointerEvent.pointerId);
-    pointerStart.current = {
-      x: pointerEvent.nativeEvent.clientX,
-      y: pointerEvent.nativeEvent.clientY,
-      offsetY: currentOffset.current[0],
-      offsetZ: currentOffset.current[1],
-      dragging: false
-    };
-    document.body.dataset.draggingStar = 'true';
-    onDragStateChange(true);
-  };
-
-  const onPointerMove = (pointerEvent: ThreeEvent<PointerEvent>) => {
-    const pointerTarget = pointerEvent.target as HTMLElement;
-    if (!pointerTarget.hasPointerCapture(pointerEvent.pointerId)) return;
-    pointerEvent.stopPropagation();
-    const dx = pointerEvent.nativeEvent.clientX - pointerStart.current.x;
-    const dy = pointerEvent.nativeEvent.clientY - pointerStart.current.y;
-    if (Math.hypot(dx, dy) > 5) pointerStart.current.dragging = true;
-    if (pointerStart.current.dragging) {
-      currentOffset.current = [
-        THREE.MathUtils.clamp(pointerStart.current.offsetY - dy * 0.012, -2.6, 2.6),
-        THREE.MathUtils.clamp(pointerStart.current.offsetZ + dx * 0.01, -2.4, 2.4)
-      ];
-    }
-  };
-
-  const onPointerUp = (pointerEvent: ThreeEvent<PointerEvent>) => {
-    pointerEvent.stopPropagation();
-    const pointerTarget = pointerEvent.target as HTMLElement;
-    pointerTarget.releasePointerCapture(pointerEvent.pointerId);
-    delete document.body.dataset.draggingStar;
-    document.body.style.cursor = '';
-    onDragStateChange(false);
-    if (pointerStart.current.dragging) onDragOffset(event.id, currentOffset.current);
-    else onSelect(event);
-  };
-
-  const cancelPointer = (pointerEvent: ThreeEvent<PointerEvent>) => {
-    const pointerTarget = pointerEvent.target as HTMLElement;
-    if (pointerTarget.hasPointerCapture(pointerEvent.pointerId)) pointerTarget.releasePointerCapture(pointerEvent.pointerId);
-    currentOffset.current = [dragOffset[0], dragOffset[1]];
-    delete document.body.dataset.draggingStar;
-    document.body.style.cursor = '';
-    onDragStateChange(false);
-  };
-
   return (
     <group
       ref={group}
-      position={basePosition}
-      onPointerDown={onPointerDown}
-      onPointerMove={onPointerMove}
-      onPointerUp={onPointerUp}
-      onPointerCancel={cancelPointer}
-      onLostPointerCapture={() => {
-        delete document.body.dataset.draggingStar;
-        document.body.style.cursor = '';
-        onDragStateChange(false);
+      position={getEventPosition(event, dragOffset)}
+      onPointerDown={pointer => {
+        pointer.stopPropagation();
+        const start = { pointerId: pointer.pointerId, clientX: pointer.nativeEvent.clientX, clientY: pointer.nativeEvent.clientY, target: pointer.nativeEvent.target as HTMLElement };
+        onDragStart?.(event, start);
+        begin(start);
       }}
-      onPointerEnter={(pointerEvent) => { pointerEvent.stopPropagation(); onHover(event.id); document.body.style.cursor = 'grab'; }}
-      onPointerLeave={() => { onHover(null); document.body.style.cursor = ''; }}
+      onPointerEnter={pointer => { pointer.stopPropagation(); if (!session.current) { onHover(event.id); document.body.style.cursor = 'grab'; } }}
+      onPointerLeave={() => { if (!session.current) { onHover(null); document.body.style.cursor = ''; } }}
     >
       <mesh>
         <sphereGeometry args={[radius, 24, 24]} />
