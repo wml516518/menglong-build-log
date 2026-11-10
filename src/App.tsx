@@ -15,7 +15,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    applyRouteMetadata(route);
+    if (route.view === 'history-galaxy') applyRouteMetadata(route, 'zh');
     document.body.classList.toggle('history-route', route.view === 'history-galaxy');
     return () => document.body.classList.remove('history-route');
   }, [route]);

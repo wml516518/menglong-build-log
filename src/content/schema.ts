@@ -82,6 +82,7 @@ export const resumeDocumentSchema = z.object({
 export type SiteDocument = z.infer<typeof siteDocumentSchema>;
 export type ResumeDocument = z.infer<typeof resumeDocumentSchema>;
 export type SiteContent = Omit<SiteDocument, '_translation'> & { resume: Omit<ResumeDocument, '_translation'> };
+export type FeaturedProject = SiteContent['historyGalaxy'];
 
 function parseDocument<T>(schema: z.ZodType<T>, value: unknown, path: string): T {
   const result = schema.safeParse(value);

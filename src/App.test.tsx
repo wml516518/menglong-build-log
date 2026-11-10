@@ -1,8 +1,47 @@
 import { cleanup, render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from './App';
+import { PortfolioHome } from './components/PortfolioHome';
+import { content } from './content';
+import { parseSiteDocument, parseResumeDocument, stripTranslationMetadata } from './content/schema';
+import { validSiteFixture, validResumeFixture } from './content/test-fixtures';
 
 describe('App', () => {
+  it('renders a validated reordered fixture in CMS section order', () => {
+    const copy = {
+      ...stripTranslationMetadata(parseSiteDocument({
+        ...validSiteFixture,
+        homeSectionOrder: ['contact', 'about', 'resumeProjects', 'experience', 'resume', 'projects', 'buildLog']
+      }, 'site.yml')),
+      resume: stripTranslationMetadata(parseResumeDocument(validResumeFixture, 'resume.yml'))
+    };
+    render(<PortfolioHome copy={copy} posts={[]} />);
+    const headings = ['联系', '关于', '项目经验', '工作经历', '简历', '项目', '最新日志']
+      .map((name) => screen.getByRole('heading', { level: 2, name }));
+    headings.slice(1).forEach((heading, index) => {
+      expect(headings[index].compareDocumentPosition(heading) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    });
+  });
+
+  it('omits empty hero media and renders configured avatar and resume download', () => {
+    const original = { ...content.en.profile };
+    try {
+      const { unmount } = render(<App />);
+      expect(document.querySelector('#home img')).not.toBeInTheDocument();
+      expect(document.querySelector('#home a[download]')).not.toBeInTheDocument();
+      unmount();
+      content.en.profile.avatar = '/avatar.png';
+      content.en.profile.resumeDownload = '/resume.pdf';
+      render(<App />);
+      const avatar = screen.getByRole('img', { name: /MengLong Wang/ });
+      expect(avatar).toHaveAttribute('src', '/avatar.png');
+      expect(avatar).toHaveAttribute('width');
+      expect(avatar).toHaveAttribute('height');
+      expect(document.querySelector('#home a[download]')).toHaveAttribute('href', '/resume.pdf');
+    } finally {
+      Object.assign(content.en.profile, original);
+    }
+  });
   const scrollIntoView = vi.fn();
   let originalHead: string;
   let originalBodyClass: string;
@@ -62,6 +101,7 @@ describe('App', () => {
     expect(screen.getByText('微软车载语音助手 InCarVA（Voice 2.0 / 3.0）')).toBeInTheDocument();
     expect(localStorage.getItem('portfolio-language')).toBe('zh');
     expect(document.documentElement.lang).toBe('zh-CN');
+    expect(document.title).toBe('王梦龙 | 作品集 + 构建日志');
     await user.click(screen.getByRole('button', { name: 'EN' }));
     expect(document.documentElement.lang).toBe('en');
   });
