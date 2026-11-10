@@ -35,7 +35,7 @@ export async function checkGeneratedContent(options: { root: string; sourceOnly?
 
 async function main() {
   const args = parseCliArgs(process.argv.slice(2), true);
-  if (args.all || args.adoptExisting || args.changedPaths.length) throw new Error('Checker accepts only --root and --source-only');
+  if (args.baselineRoot || args.all || args.adoptExisting || args.changedPaths.length) throw new Error('Checker accepts only --root and --source-only');
   const result = await checkGeneratedContent(args);
   console.log(JSON.stringify(result, null, 2));
   if (result.missing.length || result.stale.length || result.extra.length) process.exitCode = 1;
