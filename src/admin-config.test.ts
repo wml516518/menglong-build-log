@@ -126,4 +126,12 @@ describe('Decap CMS configuration', () => {
       'contact',
     ]);
   });
+
+  it('requires the related project field needed by the post parser', () => {
+    const config = load(readFileSync('public/admin/config.yml', 'utf8')) as CmsConfig;
+    const posts = config.collections.find((collection) => collection.name === 'posts');
+    const relatedProject = posts?.fields?.find((field) => field.name === 'relatedProject');
+
+    expect(relatedProject).toMatchObject({ widget: 'string', required: true });
+  });
 });

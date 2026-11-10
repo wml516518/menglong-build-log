@@ -310,6 +310,6 @@ collections:
         widget: list
         required: true
         field: { label: 标签, name: item, widget: string, required: true }
-      - { label: 关联项目, name: relatedProject, widget: string, required: false }
+      - { label: 关联项目, name: relatedProject, widget: string, required: true }
       - { label: 封面图片, name: coverImage, widget: image, required: false }
       - { label: 正文, name: body, widget: markdown, required: true }
