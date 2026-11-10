@@ -1,0 +1,90 @@
+name: CMS Publish
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+
+permissions:
+  actions: read
+  contents: write
+  pull-requests: write
+
+jobs:
+  discover:
+    if: github.event.workflow_run.event == 'pull_request' && startsWith(github.event.workflow_run.head_branch, 'cms/') && github.event.workflow_run.head_repository.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      pr: ${{ steps.pr.outputs.number }}
+    steps:
+      - name: Find exactly one matching open PR
+        id: pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const run = context.payload.workflow_run;
+            const pulls = await github.paginate(github.rest.pulls.list, { ...context.repo, state: 'open', per_page: 100 });
+            const matches = pulls.filter(pr => pr.head.ref === run.head_branch && pr.head.sha === run.head_sha && pr.head.repo?.full_name === context.payload.repository.full_name);
+            if (matches.length === 1) core.setOutput('number', matches[0].number);
+
+  publish:
+    needs: discover
+    if: needs.discover.outputs.pr != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: cms-publish-${{ needs.discover.outputs.pr }}
+      cancel-in-progress: true
+    steps:
+      - name: Check out default-branch trusted tools
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          path: trusted
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install trusted dependencies
+        working-directory: trusted
+        run: npm ci
+
+      - name: Validate scope and generated provenance before secrets
+        id: guard
+        working-directory: trusted
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CMS_PR: ${{ needs.discover.outputs.pr }}
+        run: node_modules/.bin/tsx scripts/cms/publish.ts prepare
+
+      - name: Check out guarded PR data
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.guard.outputs.sha }}
+          path: cms-data
+          token: ${{ secrets.CMS_TRANSLATION_TOKEN }}
+          persist-credentials: false
+
+      - name: Translate, verify, and publish with trusted tools
+        id: publish
+        working-directory: trusted
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CMS_TRANSLATION_TOKEN: ${{ secrets.CMS_TRANSLATION_TOKEN }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: node_modules/.bin/tsx scripts/cms/publish.ts publish
+
+      - name: Save exact generated commit provenance
+        if: steps.publish.outputs.changed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: cms-generated-${{ steps.publish.outputs.sha }}
+          path: ${{ runner.temp }}/provenance.json
+          if-no-files-found: error
+          retention-days: 30

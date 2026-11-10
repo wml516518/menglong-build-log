@@ -29,6 +29,11 @@ export function BuildLogIndex({
               <span>{post.relatedProject}</span>
             </div>
             <div>
+              {post.coverImage && (
+                <div className="post-cover">
+                  <img src={post.coverImage} alt={post.title} width="1600" height="900" loading="lazy" />
+                </div>
+              )}
               <h2>
                 <a href={`#/build-log/${post.slug}`}>{post.title}</a>
               </h2>

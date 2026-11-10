@@ -1,6 +1,7 @@
 ---
 slug: ai-chat-playground
-language: zh
+draft: false
+coverImage: ''
 date: 2026-06-05
 title: 支持模型切换的 AI Chat Playground
 summary: 规划一个包含 Prompt 预设、模型控制和轻量 API 边界的可部署聊天界面。

@@ -22,7 +22,7 @@ MengLong Wang 的双语个人主页、开发日志和全栈项目集合。
 - 中英文内容切换，并使用 `localStorage` 保存语言偏好
 - 展示个人履历、技术栈、项目经历和联系方式
 - 展示项目链接、开发日志摘要、文章列表和完整正文
-- 使用 TypeScript 维护结构化资料，使用 Markdown 维护中英文 Build Log
+- 使用 YAML 维护主页与简历，使用 Markdown 维护 Build Log；中文是唯一人工编辑源，英文由 CI 自动生成
 - 支持可刷新、可分享的 `#/build-log` 文章地址
 
 ### 历史星河
@@ -69,8 +69,9 @@ Vite 默认在 `http://localhost:5173` 启动开发服务器。
 | 路径 | 职责 |
 | --- | --- |
 | `src/App.tsx`、`src/routes.ts` | Hash 路由与页面切换 |
-| `src/PortfolioApp.tsx`、`src/content.ts` | 双语个人主页与结构化资料 |
-| `src/posts/`、`src/posts.ts` | Build Log 内容与解析 |
+| `src/PortfolioApp.tsx`、`src/content.ts` | 双语个人主页与内容加载 |
+| `content/zh/`、`content/en/` | 中文源内容与自动生成的英文内容 |
+| `src/posts.ts` | Build Log 内容解析 |
 | `src/HistoryGalaxyApp.tsx`、`src/history/` | 历史星河入口、事件数据和空间映射 |
 | `src/scene/` | 3D 场景、事件星体、相机和选中特效 |
 | `src/components/` | 主页精选项目、日志组件、历史导航和故事面板 |
@@ -89,15 +90,24 @@ npm run build
 
 GitHub Actions 会在向 `main` 分支推送或提交 Pull Request 时自动执行以上检查。
 
+## 内容管理后台
+
+仓库所有者可在 [生产内容后台](https://menglong-build-log.netlify.app/admin/) 使用 GitHub 账号登录，编辑中文主页、简历和 Build Log。保存后，Decap Turbo 会创建或更新 `cms/*` PR；GitHub Actions 自动生成英文、运行 CI、按已验证提交执行 squash merge，随后由 Netlify 发布。
+
+- 只编辑 `content/zh/**`；`content/en/**` 是生成结果，不应手工修改。
+- 后台不提供绕过 CI 的直接发布，保存一次即可等待自动流程完成。
+- 新建 Build Log 默认是草稿，草稿不会显示在公开页面。
+- Secret 配置、发布流程、故障恢复和凭据轮换参见 [`docs/cms-operations.md`](docs/cms-operations.md)。
+
 ## 编写 Build Log
 
-日志位于 `src/posts/`。每篇内容使用 Markdown 编写，并为中英文分别建立一个文件；同一篇文章的两个文件使用相同的 `slug`。文件头格式如下：
+中文日志位于 `content/zh/posts/`，英文生成结果位于 `content/en/posts/`。每篇内容使用 Markdown 编写；人工只维护中文文件，自动翻译会生成同名英文文件。文件头格式如下：
 
 ```markdown
 ---
 slug: example-post
-language: zh
 date: 2026-06-05
+draft: false
 title: 示例文章
 summary: 一句话摘要。
 tags:
@@ -111,7 +121,7 @@ relatedProject: 示例项目
 正文内容。
 ```
 
-所有字段都是必填项。`language` 只能是 `en` 或 `zh`，日期使用 `YYYY-MM-DD`，`slug` 使用小写英文、数字和连字符。构建时会校验字段和重复文章，并按日期从新到旧排序。
+`slug`、日期、草稿状态、标题、摘要、标签、关联项目和正文是必填项，封面图片可选。日期使用 `YYYY-MM-DD`，`slug` 使用小写英文、数字和连字符。构建时会校验字段、重复文章以及中英文生成状态，并按日期从新到旧排序。
 
 - 文章列表：`#/build-log`
 - 文章详情：`#/build-log/<slug>`
@@ -131,7 +141,7 @@ relatedProject: 示例项目
 - GitHub Actions 的 `test-and-build` 任务负责测试和生产构建校验
 - 建议设置分支规则，要求 Pull Request 和 CI 通过后才能合并到 `main`
 
-日常更新流程是：新建分支、添加或修改 Markdown、提交 Pull Request、检查 CI 与 Deploy Preview，然后合并。无需手动上传 `dist`。
+代码更新流程是：新建分支、提交 Pull Request、检查 CI 与 Deploy Preview，然后合并。日常内容更新优先使用 CMS 自动发布流程。两种方式都无需手动上传 `dist`。
 
 ### Eat Card API
 

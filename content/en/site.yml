@@ -1,0 +1,103 @@
+_translation:
+  policyVersion: 1
+  sourceHash: 7ec9af7740944692ec92a9beb6e4534f884e3438149df6290e13bed9e0b6e37c
+about: 'I focus on full-stack development, AI products, and productivity tools. This site tracks my portfolio roadmap from a personal homepage to deployable AI applications.'
+contact:
+  - href: 'https://github.com/wml516518'
+    label: GitHub
+    value: github.com/wml516518
+  - href: 'mailto:wml565868@gmail.com'
+    label: Email
+    value: wml565868@gmail.com
+historyGalaxy:
+  action: Enter the galaxy
+  imageAlt: A luminous Chinese history timeline surrounded by event stars in a deep three-dimensional space
+  stack:
+    - Three.js
+    - React Three Fiber
+    - 30 historical events
+  status: Interactive 3D experience
+  summary: 'Travel from the Tang dynasty to 1949, move event stars across a living timeline, and explore the people and stories behind each turning point.'
+  title: History Galaxy
+homeSectionOrder:
+  - buildLog
+  - projects
+  - resume
+  - experience
+  - resumeProjects
+  - about
+  - contact
+nav:
+  about: About
+  buildLog: Build Log
+  contact: Contact
+  projects: Projects
+  resume: Resume
+profile:
+  avatar: ''
+  eyebrow: Portfolio / Build Log
+  headline: Building practical AI tools and full-stack products.
+  intro: 'I document the products I build, the engineering decisions behind them, and the lessons learned along the way.'
+  name: MengLong Wang
+  primaryAction: View Projects
+  resumeDownload: ''
+  role: Full-stack Developer
+  secondaryAction: Read Log
+projects:
+  - githubUrl: 'https://github.com/wml516518/menglong-build-log'
+    liveUrl: 'https://menglong-build-log.netlify.app'
+    stack:
+      - React
+      - Vite
+      - TypeScript
+      - Netlify
+    status: Live
+    summary: A bilingual portfolio front door and public project journal.
+    title: Personal Homepage + Build Log
+  - githubUrl: 'https://github.com/wml516518/ai-chat-playground'
+    liveUrl: 'https://ai-chat-playground-menglong.netlify.app'
+    stack:
+      - React
+      - FastAPI
+      - Python
+      - Render
+      - Netlify
+    status: Live frontend
+    summary: A streaming chat interface with prompt presets and a FastAPI backend layer.
+    title: AI Chat Playground
+  - githubUrl: 'https://github.com/wml516518/knowledgeops-rag'
+    liveUrl: 'https://knowledgeops-rag-menglong.netlify.app'
+    stack:
+      - React
+      - FastAPI
+      - Supabase
+      - pgvector
+      - DashScope
+      - Render
+      - Netlify
+    status: Live frontend
+    summary: 'A public document Q&A demo with FastAPI retrieval flow, Supabase pgvector storage, and deploy-ready AI service wiring.'
+    title: KnowledgeOps RAG
+sections:
+  about: About
+  allPosts: All posts
+  backToPosts: Back to all posts
+  buildLog: Build Log
+  certifications: Certifications
+  contact: Contact
+  education: Education
+  experience: Experience
+  languages: Languages
+  latestBuildLog: Latest Build Log
+  postNotFound: Article not found
+  projects: Projects
+  readArticle: Read article
+  resume: Resume
+  selectedProjects: Selected Projects
+  skills: Skills
+  tags: Tags
+seo:
+  buildLogTitle: Build Log | MengLong Wang
+  description: 'MengLong Wang''s personal homepage, project portfolio, and public build log.'
+  homeTitle: MengLong Wang | Portfolio + Build Log
+  socialImage: ''

@@ -1,6 +1,7 @@
 import { Buffer } from 'buffer';
 import matter from 'gray-matter';
 import { JSON_SCHEMA, load } from 'js-yaml';
+import { z } from 'zod';
 import type { Language } from './content';
 
 (globalThis as typeof globalThis & { Buffer: typeof Buffer }).Buffer = Buffer;
@@ -8,6 +9,8 @@ import type { Language } from './content';
 export type BuildLogPost = {
   slug: string;
   language: Language;
+  draft: boolean;
+  coverImage?: string;
   date: string;
   title: string;
   summary: string;
@@ -16,9 +19,9 @@ export type BuildLogPost = {
   body: string;
 };
 
-type PostField = 'slug' | 'language' | 'date' | 'title' | 'summary' | 'tags' | 'relatedProject';
+type PostField = 'slug' | 'draft' | 'coverImage' | '_translation' | 'date' | 'title' | 'summary' | 'tags' | 'relatedProject';
 
-const markdownFiles = import.meta.glob('./posts/*.md', {
+const markdownFiles = import.meta.glob('../content/{en,zh}/posts/*.md', {
   eager: true,
   query: '?raw',
   import: 'default'
@@ -36,6 +39,9 @@ function requiredString(path: string, field: PostField, value: unknown): string 
 }
 
 export function parsePostFile(path: string, source: string): BuildLogPost {
+  const localizedPath = path.match(/\/content\/(en|zh)\/posts\/[^/]+\.md$/);
+  if (!localizedPath) throw new Error(`${path}: invalid localized post path`);
+  const language = localizedPath[1] as Language;
   const parsed = matter(source, {
     engines: {
       yaml: (input) => load(input, { schema: JSON_SCHEMA }) as Record<string, unknown>
@@ -46,9 +52,14 @@ export function parsePostFile(path: string, source: string): BuildLogPost {
     invalid(path, 'slug');
   }
 
-  const language = requiredString(path, 'language', parsed.data.language);
-  if (language !== 'en' && language !== 'zh') {
-    invalid(path, 'language');
+  const draft = parsed.data.draft;
+  if (typeof draft !== 'boolean') invalid(path, 'draft');
+  const coverImage = parsed.data.coverImage;
+  if (coverImage !== undefined && typeof coverImage !== 'string') invalid(path, 'coverImage');
+  if (parsed.data._translation !== undefined && !z.object({
+    sourceHash: z.string().trim().min(1), policyVersion: z.number()
+  }).strict().safeParse(parsed.data._translation).success) {
+    invalid(path, '_translation');
   }
 
   const date = parsed.data.date;
@@ -73,6 +84,8 @@ export function parsePostFile(path: string, source: string): BuildLogPost {
   return {
     slug,
     language,
+    draft,
+    coverImage: coverImage?.trim(),
     date,
     title: requiredString(path, 'title', parsed.data.title),
     summary: requiredString(path, 'summary', parsed.data.summary),
@@ -102,10 +115,14 @@ export function createPostCollection(files: Record<string, string>): BuildLogPos
 
 export const posts = createPostCollection(markdownFiles);
 
+export function filterPublishedPosts(posts: BuildLogPost[], language: Language): BuildLogPost[] {
+  return posts.filter((post) => post.language === language && !post.draft);
+}
+
 export function getPosts(language: Language): BuildLogPost[] {
-  return posts.filter((post) => post.language === language);
+  return filterPublishedPosts(posts, language);
 }
 
 export function getPost(language: Language, slug: string): BuildLogPost | undefined {
-  return posts.find((post) => post.language === language && post.slug === slug);
+  return posts.find((post) => post.language === language && post.slug === slug && !post.draft);
 }

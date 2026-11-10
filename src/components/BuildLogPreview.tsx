@@ -22,6 +22,11 @@ export function BuildLogPreview({
       <div className="log-grid">
         {posts.slice(0, 3).map((post, index) => (
           <article className="log-item" key={post.slug}>
+            {post.coverImage && (
+              <div className="post-cover">
+                <img src={post.coverImage} alt={post.title} width="1600" height="900" loading="lazy" />
+              </div>
+            )}
             <p>
               {String(index + 1).padStart(2, '0')} / {post.date}
             </p>

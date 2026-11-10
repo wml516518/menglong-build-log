@@ -43,6 +43,11 @@ export function BuildLogArticle({
           ))}
         </ul>
       </header>
+      {post.coverImage && (
+        <div className="post-cover">
+          <img src={post.coverImage} alt={post.title} width="1600" height="900" />
+        </div>
+      )}
       <div className="post-body">
         <ReactMarkdown
           components={{
