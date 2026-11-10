@@ -146,4 +146,13 @@ describe('Decap CMS configuration', () => {
     expect(projectFields?.find((field) => field.name === 'liveUrl'))
       .toMatchObject({ widget: 'string', required: true });
   });
+
+  it('uses an optional reviewed path instead of uploading resume documents', () => {
+    const config = load(readFileSync('public/admin/config.yml', 'utf8')) as CmsConfig;
+    const profileFields = config.collections[0].files?.[0].fields
+      .find((field) => field.name === 'profile')?.fields;
+    const resumeDownload = profileFields?.find((field) => field.name === 'resumeDownload');
+
+    expect(resumeDownload).toMatchObject({ widget: 'string', required: false });
+  });
 });

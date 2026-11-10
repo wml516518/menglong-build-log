@@ -45,11 +45,11 @@ collections:
               - { label: 主按钮, name: primaryAction, widget: string, required: true }
               - { label: 次按钮, name: secondaryAction, widget: string, required: true }
               - { label: 头像, name: avatar, widget: image, required: false }
-              - label: 简历下载文件
+              - label: 简历下载地址
                 name: resumeDownload
-                widget: file
+                widget: string
                 required: false
-                hint: 留空时不显示下载入口。
+                hint: 填写已有的 /uploads/... 路径或经审阅的外部 URL；留空时不显示下载入口。
           - label: 页面文案
             name: sections
             widget: object
