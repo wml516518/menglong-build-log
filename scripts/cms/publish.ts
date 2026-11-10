@@ -81,7 +81,7 @@ async function publish() {
   validateCmsPullRequest(state.input);
   const tsx = resolve('node_modules/.bin/tsx');
   const cli = (script: string, args: string[]) => command(tsx, ['--tsconfig', resolve('tsconfig.json'), resolve('scripts/translation', script), '--root', root, ...args]);
-  if (state.scope.sourcePaths.length) cli('translate-content.ts', state.scope.sourcePaths.flatMap(p => ['--changed-file', p]));
+  if (state.scope.sourcePaths.length) cli('translate-content.ts', ['--baseline-root', resolve('.'), ...state.scope.sourcePaths.flatMap(p => ['--changed-file', p])]);
   cli('check-generated.ts', []);
   // Only generated English can be staged. Refuse any other translator side effect.
   const modified = git('status', '--porcelain=v1', '-z').split('\0').filter(Boolean);

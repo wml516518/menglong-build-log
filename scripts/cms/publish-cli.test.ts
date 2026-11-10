@@ -41,7 +41,7 @@ it('uses trusted absolute CLIs against data and stages/pushes only English', () 
   for (const call of calls) expect(call.cwd).toBe(f.trusted);
   const clis = calls.filter(c => c.name === 'tsx');
   expect(clis.map(c => c.args.slice(0, 3))).toEqual(['translate-content.ts', 'check-generated.ts'].map(s => ['--tsconfig', join(f.trusted, 'tsconfig.json'), join(f.trusted, 'scripts/translation', s)]));
-  expect(clis[0].args.slice(3)).toEqual(['--root', join(f.root, 'cms-data'), '--changed-file', 'content/zh/site.yml']);
+  expect(clis[0].args.slice(3)).toEqual(['--root', join(f.root, 'cms-data'), '--baseline-root', f.trusted, '--changed-file', 'content/zh/site.yml']);
   expect(calls.find(c => c.args.includes('add'))?.args.slice(-4)).toEqual(['add', '--all', '--', 'content/en']);
   expect(calls.find(c => c.args.includes('push'))?.args.slice(-1)).toEqual(['HEAD:refs/heads/cms/a']);
   expect(calls.some(isMergeCall)).toBe(false);

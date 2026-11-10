@@ -10,7 +10,7 @@ export interface TranslationResult { written: string[]; deleted: string[]; skipp
 export interface TranslationPolicy { policyVersion: number }
 
 export async function translateChangedContent(options: {
-  root: string; changedPaths: readonly string[]; translator?: Translator; policy?: TranslationPolicy; adoptExisting?: boolean;
+  root: string; baselineRoot?: string; changedPaths: readonly string[]; translator?: Translator; policy?: TranslationPolicy; adoptExisting?: boolean;
 }): Promise<TranslationResult> {
   const { root } = options;
   const policy = options.policy ?? translationGlossary;
@@ -40,8 +40,33 @@ export async function translateChangedContent(options: {
       // Preserve the existing English prose, including Markdown presentation.
       content = target.adopt(stamp);
     } else {
-      const translator = options.translator ?? createDeepSeekTranslator({ apiKey: process.env.DEEPSEEK_API_KEY ?? '' });
-      const translations = await translator.translate(source.segments);
+      const reused = new Map<string, string>();
+      if (options.baselineRoot) {
+        const baselineDestination = await mapSourcePath(options.baselineRoot, sourcePath);
+        const baselineSourceExists = await exists(join(options.baselineRoot, sourcePath));
+        const baselineTargetExists = await exists(baselineDestination);
+        if (baselineSourceExists !== baselineTargetExists) throw new Error(`Baseline source/translation pair is incomplete: ${sourcePath}`);
+        if (baselineSourceExists) {
+          const baselineSource = await readContent(options.baselineRoot, sourcePath);
+          const baselineTargetPath = relative(options.baselineRoot, baselineDestination);
+          const baselineTarget = await readContent(options.baselineRoot, baselineTargetPath);
+          const baselineHash = computeSourceHash(baselineSource.value, policy.policyVersion);
+          if (baselineTarget.metadata?.sourceHash !== baselineHash || baselineTarget.metadata.policyVersion !== policy.policyVersion) {
+            throw new Error(`Baseline translation is stale: ${baselineTargetPath}`);
+          }
+          const baselineTranslations = assertParity(sourcePath, baselineSource, baselineTarget);
+          const baselineSegments = new Map(baselineSource.segments.map(segment => [segment.id, segment.text]));
+          for (const segment of source.segments) {
+            if (baselineSegments.get(segment.id) === segment.text) reused.set(segment.id, baselineTranslations.get(segment.id)!);
+          }
+        }
+      }
+      const changedSegments = source.segments.filter(segment => !reused.has(segment.id));
+      const translated = changedSegments.length
+        ? await (options.translator ?? createDeepSeekTranslator({ apiKey: process.env.DEEPSEEK_API_KEY ?? '' })).translate(changedSegments)
+        : new Map<string, string>();
+      validateTranslations(changedSegments, translated);
+      const translations = new Map([...reused, ...translated]);
       validateTranslations(source.segments, translations);
       content = source.render(translations, stamp);
     }
@@ -64,6 +89,7 @@ export async function translateChangedContent(options: {
 
 export function parseCliArgs(args: string[], allowSourceOnly = false) {
   let root = process.cwd();
+  let baselineRoot: string | undefined;
   let all = false;
   let adoptExisting = false;
   let sourceOnly = false;
@@ -73,16 +99,19 @@ export function parseCliArgs(args: string[], allowSourceOnly = false) {
     if (argument === '--all') all = true;
     else if (argument === '--adopt-existing') adoptExisting = true;
     else if (argument === '--source-only' && allowSourceOnly) sourceOnly = true;
-    else if (argument === '--root' || argument === '--changed-file') {
+    else if (argument === '--root' || argument === '--baseline-root' || argument === '--changed-file') {
       const value = args[++index];
       if (!value || value.startsWith('--')) throw new Error(`Missing value for ${argument}`);
       if (argument === '--root') { if (!isAbsolute(value)) throw new Error('--root must be absolute'); root = resolve(value); }
+      else if (argument === '--baseline-root') { if (!isAbsolute(value)) throw new Error('--baseline-root must be absolute'); baselineRoot = resolve(value); }
       else changedPaths.push(value);
     } else throw new Error(`Unknown argument: ${argument}`);
   }
   if (all && changedPaths.length) throw new Error('--all and --changed-file are mutually exclusive');
+  if (baselineRoot && (all || !changedPaths.length)) throw new Error('--baseline-root requires --changed-file');
   if (adoptExisting && !all) throw new Error('--adopt-existing requires --all');
-  return { root, all, adoptExisting, sourceOnly, changedPaths };
+  if (adoptExisting && baselineRoot) throw new Error('--adopt-existing and --baseline-root are mutually exclusive');
+  return { root, baselineRoot, all, adoptExisting, sourceOnly, changedPaths };
 }
 
 async function main() {
