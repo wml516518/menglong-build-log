@@ -1,0 +1,17 @@
+policyVersion: 1
+protected:
+  - Google AAA
+  - InCarVA
+  - ActionID
+  - TTS
+  - NLU
+  - M365
+  - FastAPI
+  - React
+  - Vite
+  - TypeScript
+preferred:
+  上汽海外出行科技有限公司: SAIC Mobility Technology Co., Ltd.
+  全栈工程师: Full-stack Engineer
+  车载 AI Agent: In-vehicle AI Agent
+  构建日志: Build Log
