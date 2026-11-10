@@ -1,3 +1,4 @@
+// @vitest-environment node
 import { describe, expect, it } from 'vitest';
 import { validResumeFixture, validSiteFixture } from '../../src/content/test-fixtures';
 import { parseResumeDocument, parseSiteDocument } from '../../src/content/schema';
@@ -15,7 +16,7 @@ describe('structured translation policy', () => {
     for (const path of ['projects.0.githubUrl', 'projects.0.stack.0', 'homeSectionOrder.0', 'contact.0.value', 'profile.avatar']) expect(ids).not.toContain(path);
     const resumeIds = collectResumeSegments(resume()).map(s => s.id);
     expect(resumeIds).toEqual(expect.arrayContaining(['basics.name.value', 'basics.birthDate.label', 'education.0.detail', 'skills.0.group', 'certifications.0', 'languages.0']));
-    for (const path of ['basics.birthDate.value', 'basics.email.value', 'basics.github.value', 'experience.0.period', 'projects.0.stack.0', 'skills.0.items.0']) expect(resumeIds).not.toContain(path);
+    for (const path of ['basics.birthDate.value', 'basics.email.value', 'basics.github.value', 'projects.0.stack.0', 'skills.0.items.0']) expect(resumeIds).not.toContain(path);
     expect(collectResumeSegments(resume()).every(s => s.context.length > 0)).toBe(true);
   });
 
@@ -47,7 +48,7 @@ describe('structured translation policy', () => {
     translations.delete('summary');
     expect(() => applyResumeTranslations(source, translations)).toThrow(/missing/i);
     translations.set('summary', 'Summary');
-    for (const [key, value] of [['projects.1.name', 'extra'], ['projects.0.stack.0', 'changed'], ['experience.0.period', 'now']]) {
+    for (const [key, value] of [['projects.1.name', 'extra'], ['projects.0.stack.0', 'changed']]) {
       translations.set(key, value);
       expect(() => applyResumeTranslations(source, translations)).toThrow(/extra|protected/i);
       translations.delete(key);
@@ -55,4 +56,29 @@ describe('structured translation policy', () => {
     translations.set('summary', '  ');
     expect(() => applyResumeTranslations(source, translations)).toThrow(/blank/i);
   });
+});
+
+it('localizes user-facing period, stack and skill labels except exact protected glossary tokens', () => {
+  const source = resume();
+  source.projects[0].stack = ['Google AAA', 'Google AAA (CCA)', 'NLU 评测'];
+  source.skills[0].items = ['React', '大模型调用'];
+  const ids = collectResumeSegments(source).map(segment => segment.id);
+  expect(ids).toEqual(expect.arrayContaining(['experience.0.period', 'projects.0.period', 'projects.0.stack.1', 'projects.0.stack.2', 'skills.0.items.1']));
+  expect(ids).not.toContain('projects.0.stack.0');
+  expect(ids).not.toContain('skills.0.items.0');
+  const siteSource = site();
+  siteSource.historyGalaxy.stack = ['React', '30 个历史事件'];
+  expect(collectSiteSegments(siteSource).map(segment => segment.id)).toContain('historyGalaxy.stack.1');
+  expect(collectSiteSegments(siteSource).map(segment => segment.id)).not.toContain('historyGalaxy.stack.0');
+});
+
+it('allows localized periods while preserving every numeric date token', () => {
+  const source = resume();
+  const translations = identity(collectResumeSegments(source));
+  translations.set('experience.0.period', '2025.07 - Present');
+  expect(applyResumeTranslations(source, translations).experience[0].period).toBe('2025.07 - Present');
+  translations.set('experience.0.period', '2026.07 - Present');
+  expect(() => applyResumeTranslations(source, translations)).toThrow(/date/i);
+  translations.set('experience.0.period', 'Present');
+  expect(() => applyResumeTranslations(source, translations)).toThrow(/date/i);
 });

@@ -1,15 +1,18 @@
 ---
-slug: ai-chat-playground
-draft: false
+_translation:
+  policyVersion: 1
+  sourceHash: 9bf44bb2e59d2c0782929dbb12e6e740c16e204cfffca8febd85b2c428cdd2ee
 coverImage: ''
-date: 2026-06-05
-title: AI Chat Playground with model switching
-summary: Planning a deployable chat interface with prompt presets, model controls, and a lightweight API boundary.
+date: '2026-06-05'
+draft: false
+relatedProject: AI Chat Playground
+slug: ai-chat-playground
+summary: 'Planning a deployable chat interface with prompt presets, model controls, and a lightweight API boundary.'
 tags:
   - AI
   - Chat
   - FastAPI
-relatedProject: AI Chat Playground
+title: AI Chat Playground with model switching
 ---
 
 ## Product direction

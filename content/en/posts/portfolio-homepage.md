@@ -1,15 +1,18 @@
 ---
-slug: portfolio-homepage
-draft: false
+_translation:
+  policyVersion: 1
+  sourceHash: 2458498152becf0d51b3ebcf609569b95999aa18fd0c9a5a21aec5a4b167285a
 coverImage: ''
-date: 2026-06-05
-title: Portfolio homepage and public build log
-summary: Building a bilingual portfolio around clear content, simple deployment, and an honest public record of the work.
+date: '2026-06-05'
+draft: false
+relatedProject: Personal Homepage + Build Log
+slug: portfolio-homepage
+summary: 'Building a bilingual portfolio around clear content, simple deployment, and an honest public record of the work.'
 tags:
   - Portfolio
   - React
   - Netlify
-relatedProject: Personal Homepage + Build Log
+title: Portfolio homepage and public build log
 ---
 
 ## Why this site exists

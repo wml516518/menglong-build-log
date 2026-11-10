@@ -1,11 +1,16 @@
 import { parseResumeDocument, parseSiteDocument, type ResumeDocument, type SiteDocument } from '../../src/content/schema';
 import { validateTranslations, type TranslationSegment, type Translations } from './types';
+import { translationGlossary } from './hash';
 
-// These lists are the translation allowlist, independent of source string contents.
+// Explicit field allowlists; label lists additionally preserve exact glossary tokens.
 const navKeys = ['projects', 'buildLog', 'resume', 'about', 'contact'];
 const sectionKeys = [...navKeys, 'latestBuildLog', 'allPosts', 'backToPosts', 'postNotFound', 'readArticle', 'tags', 'education', 'skills', 'certifications', 'languages', 'experience', 'selectedProjects'];
 const profileKeys = ['name', 'role', 'eyebrow', 'headline', 'intro', 'primaryAction', 'secondaryAction'];
 const basicKeys = ['name', 'gender', 'birthDate', 'location', 'email', 'github', 'role'];
+
+const localizedItems = (items: string[], prefix: string) => items.flatMap((item, index) =>
+  translationGlossary.protected.includes(item) ? [] : [`${prefix}.${index}`]
+);
 
 function sitePaths(source: SiteDocument): string[] {
   return [
@@ -13,6 +18,7 @@ function sitePaths(source: SiteDocument): string[] {
     ...profileKeys.map(key => `profile.${key}`),
     ...sectionKeys.map(key => `sections.${key}`), 'about',
     ...['title', 'status', 'summary', 'action', 'imageAlt'].map(key => `historyGalaxy.${key}`),
+    ...localizedItems(source.historyGalaxy.stack, 'historyGalaxy.stack'),
     ...source.projects.flatMap((_, index) => ['title', 'status', 'summary'].map(key => `projects.${index}.${key}`)),
     ...source.contact.map((_, index) => `contact.${index}.label`),
     ...['homeTitle', 'buildLogTitle', 'description'].map(key => `seo.${key}`)
@@ -25,14 +31,15 @@ function resumePaths(source: ResumeDocument): string[] {
     ...['name', 'gender', 'location', 'role'].map(key => `basics.${key}.value`), 'summary',
     ...source.education.flatMap((_, index) => ['school', 'detail'].map(key => `education.${index}.${key}`)),
     ...source.experience.flatMap((item, index) => [
-      `experience.${index}.company`, `experience.${index}.role`,
+      `experience.${index}.company`, `experience.${index}.role`, `experience.${index}.period`,
       ...item.highlights.map((_, n) => `experience.${index}.highlights.${n}`)
     ]),
     ...source.projects.flatMap((item, index) => [
-      `projects.${index}.name`, `projects.${index}.description`,
-      ...item.highlights.map((_, n) => `projects.${index}.highlights.${n}`)
+      `projects.${index}.name`, `projects.${index}.description`, `projects.${index}.period`,
+      ...item.highlights.map((_, n) => `projects.${index}.highlights.${n}`),
+      ...localizedItems(item.stack, `projects.${index}.stack`)
     ]),
-    ...source.skills.map((_, index) => `skills.${index}.group`),
+    ...source.skills.flatMap((item, index) => [`skills.${index}.group`, ...localizedItems(item.items, `skills.${index}.items`)]),
     ...source.certifications.map((_, index) => `certifications.${index}`),
     ...source.languages.map((_, index) => `languages.${index}`)
   ];
@@ -55,6 +62,10 @@ function collect(source: unknown, paths: string[]): TranslationSegment[] {
 
 function apply<T>(source: T, segments: TranslationSegment[], translations: Translations): T {
   validateTranslations(segments, translations);
+  for (const segment of segments.filter(item => item.id.endsWith('.period'))) {
+    const tokens = (value: string) => value.match(/\d+(?:[./]\d+)*/g) ?? [];
+    if (JSON.stringify(tokens(segment.text)) !== JSON.stringify(tokens(translations.get(segment.id)!))) throw new Error(`Period date tokens changed: ${segment.id}`);
+  }
   const result = structuredClone(source);
   for (const { id } of segments) writePath(result, id, translations.get(id)!);
   // Mask approved copy only; every protected value and list shape must remain identical.

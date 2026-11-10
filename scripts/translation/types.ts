@@ -6,6 +6,10 @@ export interface TranslationSegment {
 
 export type Translations = ReadonlyMap<string, string>;
 
+export interface Translator {
+  translate(segments: readonly TranslationSegment[]): Promise<Translations>;
+}
+
 /** Require exactly the collected IDs; callers cannot add fields or array entries. */
 export function validateTranslations(segments: readonly TranslationSegment[], translations: Translations): void {
   const ids = new Set(segments.map(segment => segment.id));

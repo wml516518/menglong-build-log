@@ -1,15 +1,18 @@
 ---
-slug: knowledgeops-rag
-draft: false
+_translation:
+  policyVersion: 1
+  sourceHash: 83808c888610eecd2085436de96135e1eaf0208aefce124863a10942ef9ac06f
 coverImage: ''
-date: 2026-06-05
-title: KnowledgeOps RAG document Q&A
-summary: Structuring a document Q&A demo around upload parsing, vector retrieval, and deployable service boundaries.
+date: '2026-06-05'
+draft: false
+relatedProject: KnowledgeOps RAG
+slug: knowledgeops-rag
+summary: 'Structuring a document Q&A demo around upload parsing, vector retrieval, and deployable service boundaries.'
 tags:
   - RAG
   - Python
   - Supabase
-relatedProject: KnowledgeOps RAG
+title: KnowledgeOps RAG document Q&A
 ---
 
 ## From upload to answer

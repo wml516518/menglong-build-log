@@ -8,7 +8,10 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "content:validate": "tsx scripts/translation/check-generated.ts --source-only",
+    "content:translate": "tsx scripts/translation/translate-content.ts",
+    "content:check-generated": "tsx scripts/translation/check-generated.ts"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.9",

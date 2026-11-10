@@ -1,96 +1,103 @@
+_translation:
+  policyVersion: 1
+  sourceHash: 5f5332c5f1893910518bb206de6546ec7ff7e52c0309848cb9bbe4df088701fd
 basics:
-  name:
-    label: Name
-    value: MengLong Wang
-  gender:
-    label: Gender
-    value: Male
   birthDate:
     label: Date of Birth
     value: 1993.12.28
-  location:
-    label: Location
-    value: 'Shanghai, China'
   email:
     label: Email
     value: wml565868@gmail.com
+  gender:
+    label: Gender
+    value: Male
   github:
     label: GitHub
     value: github.com/wml516518
+  location:
+    label: Location
+    value: 'Shanghai, China'
+  name:
+    label: Name
+    value: MengLong Wang
   role:
     label: Role
     value: Full-stack Developer
-summary: 'A full-stack developer based in Shanghai, focused on building practical web products, AI-enabled tools, and deployable engineering projects across frontend, backend, and DevOps workflows.'
+certifications:
+  - Software Designer Certificate
+  - Driving License
 education:
-  - school: Henan Finance University
-    detail: 'Computer Software, Associate Degree, 2013.09 - 2016.06.'
+  - detail: 'Computer Software, Associate Degree, 2013.09 - 2016.06.'
+    school: Henan Finance University
 experience:
   - company: 'SAIC Mobility Technology Co., Ltd.'
-    role: Full-stack Engineer · AI Agent
-    period: 2025.07 - Present
     highlights:
       - 'Builds cloud capabilities for SAIC overseas intelligent-cockpit voice and in-vehicle AI Agent products as an on-site supplier engineer, supporting Google AAA and Microsoft InCarVA in parallel.'
       - 'Owns the vehicle-control intent taxonomy and English training data, Calendar & Mail Agent, proactive recommendations, and the NLU evaluation pipeline from intent definition and orchestration to in-vehicle validation.'
       - 'Designs Intent, Slot, ActionID, structured payload, and fallback TTS contracts for cloud LLM and local NLU execution paths.'
       - 'Coordinates protocol and release alignment across Google owners, Android vehicle-side teams, and TSP cloud teams, delivering through branch and pull-request workflows with reusable specifications and development guides.'
+    period: 2025.07 - Present
+    role: Full-stack Engineer · AI Agent
   - company: 'FUJIFILM (China) Investment Co., Ltd.'
-    role: .NET Development Engineer
-    period: 2019.04 - 2025.04
     highlights:
       - 'Owned major development for Fabric 4.x imaging information system with .NET MVC, .NET Core, Redis, WebService, WCF, NHibernate, Spring.NET, React, Angular, jQuery, HTML, CSS, and JavaScript.'
       - 'Handled Fabric 3.0 customer-specific development, system upgrades, issue resolution, and performance tuning.'
       - 'Independently designed and delivered the PIS pulmonary nodule follow-up system from requirements, architecture, database design, development, testing, deployment, to acceptance.'
       - Developed and maintained Fantasy 2.x interfaces and supported integrations for hospital systems.
+    period: 2019.04 - 2025.04
+    role: .NET Development Engineer
   - company: 'Zhejiang Xuanwei Medical Technology Co., Ltd.'
-    role: .NET Software Engineer
-    period: 2017.11 - 2019.04
     highlights:
       - 'Designed, developed, and delivered modules for the NIS nurse monitoring information system.'
       - 'Implemented business modules, unit tests, bug fixes, and technical design documentation.'
+    period: 2017.11 - 2019.04
+    role: .NET Software Engineer
   - company: 'Zhejiang Wanliyang Co., Ltd.'
-    role: Software Development Engineer
-    period: 2016.06 - 2017.10
     highlights:
       - 'Started with software operations, OA workflow design, permissions, K3 permissions, and daily IT support.'
       - 'Built internal systems with VS2010 and SQL Server, including computer asset management, item borrowing platform, quality management modules, and Kingdee ERP secondary development.'
+    period: 2016.06 - 2017.10
+    role: Software Development Engineer
+languages:
+  - 'English: good listening, speaking, reading, and writing'
 projects:
-  - name: Google AAA In-vehicle AI Agent (Voice 3.0)
-    period: 2025.07 - Present
-    description: 'A next-generation in-vehicle Agent built with Google, using intents, tools, and orchestration across 16 business domains including vehicle control, navigation, media, weather, calendar, mail, and proactive recommendations.'
+  - description: 'A next-generation in-vehicle Agent built with Google, using intents, tools, and orchestration across 16 business domains including vehicle control, navigation, media, weather, calendar, mail, and proactive recommendations.'
     highlights:
       - 'Designed Intent and Slot models for 13 vehicle-control domains and 400+ functions, delivering CustomAction, structured payloads, English training phrases, and consistent actionId, result-code, and TTS contracts.'
       - 'Owned the Calendar & Mail component, implementing six event and mail workflows through Google Calendar and Outlook M365 providers; tokens stay in HTTPS headers and mail operations create drafts instead of sending directly.'
       - 'Implemented cross-domain proactive services for low-battery charging, destination parking, and upcoming-calendar reminders through reusable named actions.'
       - 'Contributed to account- and audio-zone-isolated short-, medium-, and long-term memory, with a 20-turn/16K-token window, 30-day summaries, and long-term profiles.'
       - 'Built an NLU batch evaluation pipeline for intent, action_id, payload, and fallback TTS validation, producing failure analysis that drives intent-boundary and training-data improvements.'
+    name: Google AAA In-vehicle AI Agent (Voice 3.0)
+    period: 2025.07 - Present
     stack:
       - Google AAA (CCA)
       - Intent / Slot
       - CustomAction
       - ServerWrapper
       - NLU Evaluation
-  - name: Microsoft InCarVA Voice Assistant (Voice 2.0 / 3.0)
-    period: 2025.07 - Present
-    description: SAIC overseas in-vehicle voice assistant built on Microsoft Azure voice and the M365 ecosystem for multilingual markets.
+  - description: SAIC overseas in-vehicle voice assistant built on Microsoft Azure voice and the M365 ecosystem for multilingual markets.
     highlights:
       - 'Develops and maintains the Voice 2.0 backend conversation service, using large models to convert natural-language requests into structured vehicle instructions.'
       - 'Designs prompt and intent-classification strategies for multiple audio zones, multi-turn context, and ambiguous references, with safe fallback responses for unsupported vehicle functions.'
       - 'Integrates Outlook and M365 calendar and mail, TSP weather aggregation, navigation, location search, and vehicle control behind unified actionId and payload contracts.'
       - 'Maintains multilingual TTS copy for consistent meaning, controlled length, and natural phrasing across supported languages.'
       - 'Investigates production logs, fixes defects, optimizes interfaces, and coordinates Microsoft and vehicle-side integration to protect release quality and response time.'
+    name: Microsoft InCarVA Voice Assistant (Voice 2.0 / 3.0)
+    period: 2025.07 - Present
     stack:
       - Microsoft Azure Voice
       - M365 / Outlook
       - .NET
       - Prompt Engineering
       - multilingual TTS
-  - name: Fabric 4.x Imaging Information System
-    period: 2019.04 - 2025.04
-    description: 'Medical radiology, ultrasound, and endoscopy information system with BS admin modules and CS workflows.'
+  - description: 'Medical radiology, ultrasound, and endoscopy information system with BS admin modules and CS workflows.'
     highlights:
       - 'Owned full-stack admin site development, including frontend architecture, API design, and database management.'
       - Developed more than 10 background scheduled services and maintained production modules.
       - 'Supported domestic OS testing and maintenance with Linux, Docker, and DevOps workflows.'
+    name: Fabric 4.x Imaging Information System
+    period: 2019.04 - 2025.04
     stack:
       - .NET Core 6
       - Vue
@@ -98,68 +105,77 @@ projects:
       - SQLite
       - SQL Server
       - Docker
-  - name: Fantasy 2.x Ultrasound Endoscopy System
-    period: 2024.01 - 2025.04
-    description: Medical ultrasound endoscopy system with customization and third-party integrations.
+  - description: Medical ultrasound endoscopy system with customization and third-party integrations.
     highlights:
       - Resolved customer-specific requirements and production issues.
       - Built call-screen display features with Vue and SignalR message pushing.
       - 'Designed and documented HIS, CA, and third-party system interfaces.'
+    name: Fantasy 2.x Ultrasound Endoscopy System
+    period: 2024.01 - 2025.04
     stack:
       - WinForms
       - SQL Server
       - Vue
       - SignalR
-  - name: CITA Medical Information Reference Application
-    period: 2022.03 - 2025.04
-    description: 'Integrated hospital information, images, and documents for medical progress review and decision support.'
+  - description: 'Integrated hospital information, images, and documents for medical progress review and decision support.'
     highlights:
       - 'Participated in research, evaluation, implementation, deployment, and maintenance for Jilin, Zhuhai, Guangzhou, and other hospital projects.'
+    name: CITA Medical Information Reference Application
+    period: 2022.03 - 2025.04
     stack:
       - Healthcare IT
       - Implementation
       - System Integration
-  - name: Pulmonary Nodule Follow-up System (PIS)
-    period: 2019.10 - 2020.01
-    description: 'Follow-up system covering patient, examination, and pulmonary nodule information management.'
+  - description: 'Follow-up system covering patient, examination, and pulmonary nodule information management.'
     highlights:
       - 'Independently led system design, database design, development, testing, deployment, and acceptance.'
       - 'Implemented CRUD workflows, FastReport reports, Excel export, and medical report printing.'
+    name: Pulmonary Nodule Follow-up System (PIS)
+    period: 2019.10 - 2020.01
     stack:
       - WinForms
       - SQL Server
       - FastReport
       - Excel Export
-  - name: Fabric 3.0 Radiology System
-    period: 2019.04 - 2025.04
-    description: 'BS radiology system for hospital customization, issue resolution, and system integration.'
+  - description: 'BS radiology system for hospital customization, issue resolution, and system integration.'
     highlights:
       - Handled daily customer-specific requirements and solved performance issues from code and database layers.
       - 'Designed and implemented third-party interfaces such as mutual recognition platform, CA, infectious disease upload, and ID card scanning.'
+    name: Fabric 3.0 Radiology System
+    period: 2019.04 - 2025.04
     stack:
       - .NET MVC
       - NHibernate
       - Spring.NET
       - Angular
       - jQuery
-  - name: Nurse Management System (NIS)
-    period: 2017.11 - 2019.03
-    description: Mobile-oriented BS nurse management system.
+  - description: Mobile-oriented BS nurse management system.
     highlights:
       - 'Developed transfer order, nursing record, and maintenance modules.'
+    name: Nurse Management System (NIS)
+    period: 2017.11 - 2019.03
     stack:
       - .NET MVC
       - Bootstrap
       - jQuery
       - HTML
       - CSS
-  - name: Quality Management Platform
-    period: 2017.07 - 2017.10
-    description: 'Internal system for managing transmission quality issues, after-sales issues, and typical case data.'
+  - description: 'Internal system for managing transmission quality issues, after-sales issues, and typical case data.'
     highlights:
       - 'Implemented Excel import/export, data maintenance, and reporting features.'
+    name: Quality Management Platform
+    period: 2017.07 - 2017.10
     stack:
       - WPF
+      - SQL Server 2008 R2
+  - description: Internal tools for managing company assets and item borrowing.
+    highlights:
+      - 'Implemented item borrowing, returns, inventory, and borrower information management.'
+      - 'Implemented computer asset Excel imports, record creation, updates and deletion, department and personnel maintenance, and permission settings.'
+    name: Item Borrowing Platform / Computer Asset Management System
+    period: 2016.10 - 2017.06
+    stack:
+      - WinForms
       - SQL Server 2008 R2
 skills:
   - group: Frontend
@@ -211,8 +227,4 @@ skills:
       - n8n
       - Coze
       - Ollama
-certifications:
-  - Software Designer Certificate
-  - Driving License
-languages:
-  - 'English: good listening, speaking, reading, and writing'
+summary: 'A full-stack developer based in Shanghai, focused on building practical web products, AI-enabled tools, and deployable engineering projects across frontend, backend, and DevOps workflows.'
