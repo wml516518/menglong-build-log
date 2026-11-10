@@ -1,0 +1,47 @@
+---
+id: zhenguan
+title: 贞观之治
+aliases: []
+startYear: 627
+endYear: 649
+yearPrecision: range
+eraId: tang
+polityIds: []
+period: 唐代
+categories:
+  - politics
+  - institution
+themeIds: []
+influence: 5
+summary: 纳谏、任贤与制度修整，塑造唐初政治气象。
+causes:
+  - 隋末战乱之后，统治者需要恢复生产与政治秩序。
+course:
+  - year: 627
+    title: 贞观之治
+    description: 魏征等人的直谏成为后世政治叙事中的典范。
+results:
+  - 稳定的制度与社会恢复，为唐朝此后的繁荣及更广阔的对外交流奠定了基础。
+impacts:
+  - dimension: politics
+    text: 稳定的制度与社会恢复，为唐朝此后的繁荣及更广阔的对外交流奠定了基础。
+personIds:
+  - person-li-shimin
+  - person-wei-zheng
+  - person-fang-xuanling
+placeIds: []
+parentId: null
+childIds: []
+relationIds: []
+historiography: 本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。
+sourceIds:
+  - bai-shouyi-general-history
+color: '#e5bc67'
+layout:
+  lane: politics
+  offset:
+    - 1.4
+    - 0.4
+---
+
+唐太宗即位后减轻赋役、整顿吏治，并以开放姿态听取群臣意见。

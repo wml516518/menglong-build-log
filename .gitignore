@@ -3,6 +3,7 @@
 node_modules/
 dist/
 public/history-content/generated/
+src/history/generated/
 .env
 .env.local
 eat-card/admin/config.js

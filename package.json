@@ -12,7 +12,8 @@
     "prebuild": "npm run history:compile",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "pretest": "npm run history:compile"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.9",

@@ -12,6 +12,7 @@ it('declares the history content toolchain and build hooks', () => {
     'history:compile': 'tsx scripts/history-content.ts compile',
     'history:check': 'tsx scripts/history-content.ts check',
     predev: 'npm run history:compile',
-    prebuild: 'npm run history:compile'
+    prebuild: 'npm run history:compile',
+    pretest: 'npm run history:compile'
   });
 });
