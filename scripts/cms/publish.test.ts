@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { collectChangedPaths, decidePublication, verifyBaseUpdate, verifyProvenance, selectPullRequest } from './publish';
+import { collectChangedPaths, decidePublication, needsBaseUpdate, verifyBaseUpdate, verifyProvenance, selectPullRequest } from './publish';
 const identity = { repo: 'wml516518/menglong-build-log', pr: 12, sha: 'a'.repeat(40) };
 const run = { workflow_id: 7, event: 'workflow_run', conclusion: 'success', repository: { full_name: identity.repo } };
 it('includes both sides of renames and refuses capped or missing comparison files', () => {
@@ -33,4 +33,11 @@ it('accepts only the exact GitHub base-update merge commit', () => {
   expect(() => verifyBaseUpdate(oldHead, baseHead, { sha: updatedHead, parents: [{ sha: oldHead }] })).toThrow();
   expect(() => verifyBaseUpdate(oldHead, baseHead, { sha: updatedHead, parents: [{ sha: oldHead }, { sha: 'd'.repeat(40) }] })).toThrow();
   expect(() => verifyBaseUpdate(oldHead, baseHead, { sha: oldHead, parents: [{ sha: oldHead }, { sha: baseHead }] })).toThrow();
+});
+it('derives base updates from immutable commit comparison instead of mergeable-state cache', () => {
+  const baseHead = 'b'.repeat(40);
+  expect(needsBaseUpdate(baseHead, { ahead_by: 2, merge_base_commit: { sha: 'a'.repeat(40) } })).toBe(true);
+  expect(needsBaseUpdate(baseHead, { ahead_by: 0, merge_base_commit: { sha: baseHead } })).toBe(false);
+  expect(() => needsBaseUpdate(baseHead, { ahead_by: 0, merge_base_commit: { sha: 'a'.repeat(40) } })).toThrow();
+  expect(() => needsBaseUpdate(baseHead, { ahead_by: -1, merge_base_commit: { sha: baseHead } })).toThrow();
 });
