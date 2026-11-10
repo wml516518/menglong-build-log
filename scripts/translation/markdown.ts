@@ -35,6 +35,12 @@ function targets(tree: Root) {
 function fingerprint(tree: Root): string {
   const copy = structuredClone(tree);
   for (const { node, key } of targets(copy)) (node as unknown as Record<string, unknown>)[key] = '';
+  visit(copy, node => {
+    // Translated shortcut/collapsed labels need full reference syntax to keep
+    // the original binding. These forms are equivalent; identifiers, labels,
+    // definitions and destinations remain part of the protected fingerprint.
+    if (node.type === 'linkReference' || node.type === 'imageReference') node.referenceType = 'full';
+  });
   return JSON.stringify(copy, (key, value) => key === 'position' ? undefined : value);
 }
 

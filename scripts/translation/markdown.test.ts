@@ -15,6 +15,39 @@ function structure(source: string) {
 }
 
 describe('Markdown translation', () => {
+  it.each([
+    ['shortcut link', '[文档]', '[English label][文档]', 'linkReference'],
+    ['collapsed link', '[文档][]', '[English label][文档]', 'linkReference'],
+    ['shortcut image', '![文档]', '![English label][文档]', 'imageReference']
+  ])('translates %s labels while preserving their reference binding', (_name, input, expected, kind) => {
+    const document = collectMarkdownSegments(`${input}\n\n[文档]: https://example.com "固定标题"\n`);
+    expect(document.segments.map(s => s.text)).toEqual(['文档']);
+    const result = applyMarkdownTranslations(document, new Map([[document.segments[0].id, 'English label']]));
+    expect(result).toContain(expected);
+    const tree = unified().use(remarkParse).parse(result);
+    const references: unknown[] = [];
+    const definitions: unknown[] = [];
+    visit(tree, node => {
+      if (node.type === kind) references.push(node);
+      if (node.type === 'definition') definitions.push(node);
+    });
+    expect(references).toEqual([expect.objectContaining({ type: kind, identifier: '文档', label: '文档' })]);
+    expect(definitions).toEqual([expect.objectContaining({ identifier: '文档', label: '文档', url: 'https://example.com', title: '固定标题' })]);
+  });
+
+  it.each(['identifier', 'label', 'definition identifier', 'destination', 'definition title'])('still rejects changed %s for shortcut references', property => {
+    const document = collectMarkdownSegments('[文档]\n\n[文档]: https://example.com "固定标题"\n');
+    const translations = new Map([[document.segments[0].id, 'English label']]);
+    visit(document.tree, node => {
+      if (node.type === 'linkReference' && property === 'identifier') node.identifier = 'changed';
+      if (node.type === 'linkReference' && property === 'label') node.label = 'changed';
+      if (node.type === 'definition' && property === 'definition identifier') node.identifier = 'changed';
+      if (node.type === 'definition' && property === 'destination') node.url = 'https://changed.example.com';
+      if (node.type === 'definition' && property === 'definition title') node.title = 'Changed title';
+    });
+    expect(() => applyMarkdownTranslations(document, translations)).toThrow(/protected/i);
+  });
+
   it('preserves URL and email autolinks rather than collecting them as labels', () => {
     const source = '查看 <https://example.com> 和 <hello@example.com>。\n';
     const document = collectMarkdownSegments(source);
