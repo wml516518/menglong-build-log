@@ -17,9 +17,12 @@ summary: 南宋初年的抗金战争与忠烈记忆。
 causes:
   - 南宋立国初期需要抵御金军并稳定统治。
 course:
-  - year: 1134
-    title: 岳飞抗金
-    description: 绍兴和议前后，岳飞被召回并遇害。
+  - year: 1140
+    title: 岳飞被召回
+    description: 绍兴和议前后，岳飞被召回
+  - year: 1142
+    title: 岳飞遇害
+    description: 并遇害。
 results:
   - 他的军事行动、政治处境与后世不断重塑的忠烈形象，共同构成中国历史记忆中的重要篇章。
 impacts:

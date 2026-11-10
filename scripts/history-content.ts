@@ -1,5 +1,5 @@
 import matter from 'gray-matter';
-import { mkdtemp, mkdir, readFile, readdir, rename, rm, stat, writeFile } from 'node:fs/promises';
+import { mkdtemp, mkdir, readFile, readdir, readlink, realpath, lstat, rename, rm, stat, writeFile } from 'node:fs/promises';
 import { basename, dirname, join, relative, resolve, sep } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { z } from 'zod';
@@ -241,12 +241,29 @@ function generatedFiles(content: Content): { publicFiles: Map<string, unknown>; 
   return { publicFiles, compatibility };
 }
 
+/** Resolve aliases even when only an ancestor (or a dangling symlink) exists. */
+async function filesystemRoot(path: string): Promise<string> {
+  try { return await realpath(path); }
+  catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
+    const entry = await lstat(path).catch(statError => {
+      if ((statError as NodeJS.ErrnoException).code !== 'ENOENT') throw statError;
+      return undefined;
+    });
+    if (entry?.isSymbolicLink()) return filesystemRoot(resolve(dirname(path), await readlink(path)));
+    const parent = dirname(path);
+    if (parent === path) throw error;
+    return join(await filesystemRoot(parent), basename(path));
+  }
+}
 function overlaps(a: string, b: string) { return a === b || a.startsWith(`${b}${sep}`) || b.startsWith(`${a}${sep}`); }
 async function exists(path: string) { try { await stat(path); return true; } catch (error) { if ((error as NodeJS.ErrnoException).code === 'ENOENT') return false; throw error; } }
 
-/** Stage every root first, then swap with backups; roll back both roots if any rename fails. */
+/** Stage every root first; recover each failed swap independently and retain unrestored backups. */
 async function replaceOutputs(outputs: Array<{ root: string; files: Map<string, unknown> }>) {
   const staged: Array<{ root: string; temporary: string; backup: string; backedUp: boolean; installed: boolean }> = [];
+  const failures: unknown[] = [];
+  let swapFailed = false;
   try {
     for (const output of outputs) {
       await mkdir(dirname(output.root), { recursive: true });
@@ -265,23 +282,35 @@ async function replaceOutputs(outputs: Array<{ root: string; files: Map<string, 
       entry.installed = true;
     }
   } catch (error) {
+    swapFailed = true;
+    failures.push(error);
     for (const entry of [...staged].reverse()) {
-      if (entry.installed) await rm(entry.root, { recursive: true, force: true });
-      if (entry.backedUp) await rename(entry.backup, entry.root);
-    }
-    throw error;
-  } finally {
-    for (const entry of staged) {
-      await rm(entry.temporary, { recursive: true, force: true });
-      await rm(entry.backup, { recursive: true, force: true });
+      try {
+        if (entry.installed) { await rm(entry.root, { recursive: true, force: true }); entry.installed = false; }
+        if (entry.backedUp) { await rename(entry.backup, entry.root); entry.backedUp = false; }
+      } catch (recoveryError) {
+        const retained = entry.backedUp ? `原始输出保留于 ${entry.backup}` : '未完成的新输出仍需清理';
+        failures.push(new Error(`输出恢复失败: ${entry.root}; ${retained}; ${(recoveryError as Error).message}`, { cause: recoveryError }));
+      }
     }
   }
+  // Cleanup must neither remove an unrestored original nor prevent recovery/cleanup of another root.
+  for (const entry of staged) {
+    try { await rm(entry.temporary, { recursive: true, force: true }); }
+    catch (error) { failures.push(new Error(`临时输出清理失败: ${entry.temporary}; ${(error as Error).message}`, { cause: error })); }
+    if (!swapFailed && entry.backedUp) {
+      try { await rm(entry.backup, { recursive: true, force: true }); }
+      catch (error) { failures.push(new Error(`旧输出清理失败，保留于 ${entry.backup}; ${(error as Error).message}`, { cause: error })); }
+    }
+  }
+  if (failures.length === 1) throw failures[0];
+  if (failures.length > 1) throw new AggregateError(failures, failures.map(error => (error as Error).message).join('\n'));
 }
 
 export async function compileHistoryContent(options: CompileOptions): Promise<CompileReport> {
-  const sourceRoot = resolve(options.sourceRoot);
-  const publicRoot = resolve(options.publicOutputRoot);
-  const compatibilityRoot = options.compatibilityOutputFile ? dirname(resolve(options.compatibilityOutputFile)) : undefined;
+  const sourceRoot = await filesystemRoot(resolve(options.sourceRoot));
+  const publicRoot = await filesystemRoot(resolve(options.publicOutputRoot));
+  const compatibilityRoot = options.compatibilityOutputFile ? await filesystemRoot(dirname(resolve(options.compatibilityOutputFile))) : undefined;
   if (overlaps(sourceRoot, publicRoot) || (compatibilityRoot && (overlaps(sourceRoot, compatibilityRoot) || overlaps(publicRoot, compatibilityRoot)))) throw new Error('源目录和生成目录必须互不包含');
   const content = await loadContent(sourceRoot);
   const { publicFiles, compatibility } = generatedFiles(content);

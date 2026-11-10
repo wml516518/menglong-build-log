@@ -1,12 +1,18 @@
 // @vitest-environment node
 import { execFile } from 'node:child_process';
-import { mkdtemp, readFile, readdir, rm, writeFile, mkdir } from 'node:fs/promises';
-import { join, resolve } from 'node:path';
+import { mkdtemp, readFile, readdir, rm, writeFile, mkdir, symlink, rename, realpath } from 'node:fs/promises';
+import { basename, dirname, join, resolve } from 'node:path';
 import { tmpdir } from 'node:os';
 import { promisify } from 'node:util';
-import { afterEach, describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { compileHistoryContent } from './history-content';
 
+// Only rename/remove are controllable; all successful calls still touch the real fixture filesystem.
+vi.mock('node:fs/promises', async importOriginal => {
+  const actual = await importOriginal<typeof import('node:fs/promises')>();
+  return { ...actual, rename: vi.fn(actual.rename), rm: vi.fn(actual.rm) };
+});
+const disk = await vi.importActual<typeof import('node:fs/promises')>('node:fs/promises');
 const run = promisify(execFile);
 const temporaryRoots: string[] = [];
 const script = resolve('scripts/history-content.ts');
@@ -94,7 +100,11 @@ async function files(root: string, prefix = ''): Promise<Record<string, string>>
   }
   return result;
 }
-afterEach(async () => { await Promise.all(temporaryRoots.splice(0).map(root => rm(root, { recursive: true, force: true }))); });
+afterEach(async () => {
+  vi.mocked(rename).mockImplementation(disk.rename);
+  vi.mocked(rm).mockImplementation(disk.rm);
+  await Promise.all(temporaryRoots.splice(0).map(root => disk.rm(root, { recursive: true, force: true })));
+});
 
 // Removing projection, alias normalization, chronology or URL maps breaks bootstrap consumers.
 it('compiles real Markdown into sorted compact indexes, era archives and the compatibility view', async () => {
@@ -304,4 +314,167 @@ it.each([
   const fixture = validFixture();
   Object.assign(fixture.people[0].metadata, lifespan);
   await expect(compileHistoryContent(await fixtureTree(fixture))).rejects.toThrow('人物 person-a 的生平与时代 tang 不相交');
+});
+
+describe('filesystem root isolation', () => {
+  it.each(['public', 'compatibility'] as const)('rejects a %s root that aliases the canonical source directory', async target => {
+    const paths = await fixtureTree();
+    const before = await files(paths.sourceRoot);
+    const alias = join(paths.root, 'alias');
+    await symlink(paths.root, alias, 'dir');
+    const aliasedSource = join(alias, 'history-content');
+    const options = target === 'public'
+      ? { ...paths, publicOutputRoot: aliasedSource }
+      : { ...paths, compatibilityOutputFile: join(aliasedSource, 'compat-index.json') };
+    await expect(compileHistoryContent(options)).rejects.toThrow('源目录和生成目录必须互不包含');
+    expect(await files(paths.sourceRoot)).toEqual(before);
+  });
+
+  it.each(['existing', 'new'] as const)('rejects %s output roots aliased through an existing ancestor', async state => {
+    const paths = await fixtureTree();
+    const before = await files(paths.sourceRoot);
+    const alias = join(paths.root, 'alias');
+    await symlink(paths.root, alias, 'dir');
+    const publicOutputRoot = join(paths.root, 'future/deep/generated');
+    if (state === 'existing') await mkdir(publicOutputRoot, { recursive: true });
+    await expect(compileHistoryContent({
+      ...paths, publicOutputRoot, compatibilityOutputFile: join(alias, 'future/deep/generated/compat-index.json')
+    })).rejects.toThrow('源目录和生成目录必须互不包含');
+    expect(await files(paths.sourceRoot)).toEqual(before);
+    if (state === 'new') await expect(readdir(join(paths.root, 'future'))).rejects.toThrow();
+  });
+
+  it('rejects a new output nested in an aliased source directory before creating it', async () => {
+    const paths = await fixtureTree();
+    const before = await files(paths.sourceRoot);
+    const alias = join(paths.root, 'alias');
+    await symlink(paths.sourceRoot, alias, 'dir');
+    await expect(compileHistoryContent({ ...paths, publicOutputRoot: join(alias, 'new/deep/generated') })).rejects.toThrow('源目录和生成目录必须互不包含');
+    expect(await files(paths.sourceRoot)).toEqual(before);
+  });
+
+  it('resolves dangling symlink targets before checking root containment', async () => {
+    const paths = await fixtureTree();
+    const before = await files(paths.sourceRoot);
+    const alias = join(paths.root, 'alias');
+    await symlink(join(paths.sourceRoot, 'not-created'), alias, 'dir');
+    await expect(compileHistoryContent({ ...paths, publicOutputRoot: join(alias, 'generated') })).rejects.toThrow('源目录和生成目录必须互不包含');
+    expect(await files(paths.sourceRoot)).toEqual(before);
+  });
+
+  it('writes a disjoint aliased output to its real directory', async () => {
+    const paths = await fixtureTree();
+    const before = await files(paths.sourceRoot);
+    const output = join(paths.root, 'actual-output');
+    const alias = join(paths.root, 'alias');
+    await mkdir(output);
+    await symlink(output, alias, 'dir');
+    await compileHistoryContent({ ...paths, publicOutputRoot: alias });
+    expect(await json(join(output, 'manifest.json'))).toMatchObject({ eventCount: 2, personCount: 2 });
+    expect(await files(paths.sourceRoot)).toEqual(before);
+  });
+});
+
+describe('swap rollback recovery', () => {
+  async function priorOutputs() {
+    const paths = await fixtureTree();
+    await compileHistoryContent(paths);
+    const publicRoot = await realpath(paths.publicOutputRoot);
+    const compatibilityRoot = await realpath(dirname(paths.compatibilityOutputFile));
+    await writeFile(join(publicRoot, 'previous-only.txt'), 'original public output');
+    await writeFile(join(compatibilityRoot, 'previous-only.txt'), 'original compatibility output');
+    return {
+      paths, publicRoot, compatibilityRoot,
+      priorPublic: await files(publicRoot), priorCompatibility: await files(compatibilityRoot)
+    };
+  }
+
+  it('restores both prior roots after the second install fails during swapping', async () => {
+    const { paths, publicRoot, compatibilityRoot, priorPublic, priorCompatibility } = await priorOutputs();
+    vi.mocked(rename).mockImplementation(async (from, to) => {
+      if (to === compatibilityRoot && !String(from).endsWith('.previous')) throw new Error('injected compatibility install failure');
+      return disk.rename(from, to);
+    });
+    await expect(compileHistoryContent(paths)).rejects.toThrow('injected compatibility install failure');
+    expect(await files(publicRoot)).toEqual(priorPublic);
+    expect(await files(compatibilityRoot)).toEqual(priorCompatibility);
+    expect(await readdir(dirname(publicRoot))).toEqual(['generated']);
+    expect(await readdir(dirname(compatibilityRoot))).toEqual(['generated']);
+  });
+
+  it.each(['compatibility restore', 'public restore', 'public removal', 'both restores'] as const)(
+    'preserves unrestored originals and recovers independent roots after %s fails', async recoveryFailure => {
+      const { paths, publicRoot, compatibilityRoot, priorPublic, priorCompatibility } = await priorOutputs();
+      const backups = new Map<string, string>();
+      vi.mocked(rename).mockImplementation(async (from, to) => {
+        if (String(to).endsWith('.previous')) backups.set(String(from), String(to));
+        if (to === compatibilityRoot && !String(from).endsWith('.previous')) throw new Error('injected compatibility install failure');
+        if (String(from).endsWith('.previous') && (
+          (to === compatibilityRoot && ['compatibility restore', 'both restores'].includes(recoveryFailure)) ||
+          (to === publicRoot && ['public restore', 'both restores'].includes(recoveryFailure))
+        )) throw new Error(`injected ${to === publicRoot ? 'public' : 'compatibility'} restore failure`);
+        return disk.rename(from, to);
+      });
+      vi.mocked(rm).mockImplementation(async (path, options) => {
+        if (path === publicRoot && recoveryFailure === 'public removal') throw new Error('injected public removal failure');
+        return disk.rm(path, options);
+      });
+      let failure: unknown;
+      try { await compileHistoryContent(paths); } catch (error) { failure = error; }
+      const publicFailed = ['public restore', 'public removal', 'both restores'].includes(recoveryFailure);
+      const compatibilityFailed = ['compatibility restore', 'both restores'].includes(recoveryFailure);
+      // The surviving backup must contain the actual old output, including a sentinel absent from the new build.
+      expect(await files(publicFailed ? backups.get(publicRoot)! : publicRoot)).toEqual(priorPublic);
+      expect(await files(compatibilityFailed ? backups.get(compatibilityRoot)! : compatibilityRoot)).toEqual(priorCompatibility);
+      expect(failure).toBeInstanceOf(AggregateError);
+      expect((failure as Error).message).toContain('输出恢复失败');
+      const errors = (failure as AggregateError).errors.map((error: Error) => error.message);
+      expect(errors[0]).toBe('injected compatibility install failure');
+      for (const [root, failed] of [[publicRoot, publicFailed], [compatibilityRoot, compatibilityFailed]] as const) {
+        if (failed) {
+          expect((failure as Error).message).toContain(root);
+          expect((failure as Error).message).toContain(backups.get(root));
+        }
+        expect((await readdir(dirname(root))).sort()).toEqual((failed
+          ? [...(recoveryFailure === 'public removal' && root === publicRoot ? [basename(root)] : []), basename(backups.get(root)!)]
+          : [basename(root)]).sort());
+      }
+      expect(errors).toHaveLength(1 + Number(publicFailed) + Number(compatibilityFailed));
+    }
+  );
+});
+
+it.each([
+  ['modern', 'xinhai', 1911, 1912, '清帝退位'],
+  ['tang', 'anshi', 755, 763, '平乱'],
+  ['tang', 'huang-chao', 875, 884, '最终失败'],
+  ['yuan', 'yuan-founded', 1271, 1279, '完成对南宋的战争'],
+  ['ming', 'imjin-war', 1592, 1598, '日军撤退'],
+  ['modern', 'opium-war', 1840, 1842, '南京条约'],
+  ['modern', 'sino-japanese-war', 1894, 1895, '马关条约']
+] as const)('dates %s/%s course milestones accurately while preserving the representative year', async (eraId, id, startYear, courseYear, description) => {
+  const paths = await fixtureTree();
+  await compileHistoryContent({ ...paths, sourceRoot: resolve('history-content') });
+  const archive = (await json(join(paths.publicOutputRoot, `eras/${eraId}.json`))).events.find((event: RecordData) => event.id === id);
+  expect(archive.startYear).toBe(startYear);
+  expect(archive.course).toEqual([expect.objectContaining({ year: courseYear, description: expect.stringContaining(description) })]);
+  const compact = (await json(join(paths.publicOutputRoot, 'indexes/events.compact.json'))).find((event: RecordData) => event.id === id);
+  expect(compact.year).toBe(startYear);
+  const original = (await json(resolve('scripts/fixtures/history-legacy.json'))).historyEvents.find((event: RecordData) => event.id === id);
+  const compatibility = (await json(paths.compatibilityOutputFile)).historyEvents.find((event: RecordData) => event.id === id);
+  expect(compatibility.story).toBe(original.story);
+});
+
+it('dates Yue Fei recall to 1140 and execution to 1142 without changing the legacy story', async () => {
+  const paths = await fixtureTree();
+  await compileHistoryContent({ ...paths, sourceRoot: resolve('history-content') });
+  const archive = (await json(join(paths.publicOutputRoot, 'eras/song.json'))).events.find((event: RecordData) => event.id === 'yue-fei');
+  expect(archive).toMatchObject({ startYear: 1134, endYear: 1142 });
+  expect(archive.course).toEqual([
+    { year: 1140, title: '岳飞被召回', description: '绍兴和议前后，岳飞被召回' },
+    { year: 1142, title: '岳飞遇害', description: '并遇害。' }
+  ]);
+  const compatibility = (await json(paths.compatibilityOutputFile)).historyEvents.find((event: RecordData) => event.id === 'yue-fei');
+  expect(compatibility.year).toBe(1134);
+  expect(compatibility.story).toBe('南宋立国未稳，岳飞等将领组织军队抵御金军并多次北伐。绍兴和议前后，岳飞被召回并遇害。他的军事行动、政治处境与后世不断重塑的忠烈形象，共同构成中国历史记忆中的重要篇章。');
 });
