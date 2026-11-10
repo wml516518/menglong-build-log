@@ -29,7 +29,6 @@ export const validSiteFixture = {
     description: '个人主页、项目作品和构建日志。', socialImage: ''
   }
 };
-
 export const validResumeFixture = {
   basics: {
     name: { label: '姓名', value: '王梦龙' }, gender: { label: '性别', value: '男' },
@@ -47,4 +46,3 @@ export const validResumeFixture = {
   certifications: ['软件设计师'],
   languages: ['英语：读写良好']
 };
-
