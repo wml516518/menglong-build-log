@@ -1,10 +1,10 @@
-import { render, screen, within } from '@testing-library/react';
+import { act, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import HistoryGalaxyApp from './HistoryGalaxyApp';
 
 describe('History Galaxy app', () => {
-  it('provides a route back to the portfolio homepage', () => {
-    render(<HistoryGalaxyApp />);
+  it('provides a route back to the portfolio homepage', async () => {
+    await act(async () => { render(<HistoryGalaxyApp />); });
 
     expect(screen.getByRole('link', { name: '返回主页' })).toHaveAttribute('href', '#home');
   });
@@ -13,16 +13,16 @@ describe('History Galaxy app', () => {
     window.location.hash = '';
   });
 
-  it('opens directly as the Chinese history galaxy with seven era controls', () => {
-    render(<HistoryGalaxyApp />);
+  it('opens directly as the Chinese history galaxy with seven era controls', async () => {
+    await act(async () => { render(<HistoryGalaxyApp />); });
 
     expect(screen.getByRole('heading', { level: 1, name: '历史星河' })).toBeInTheDocument();
     expect(screen.getByText('公元 618 - 1949')).toBeInTheDocument();
     expect(within(screen.getByRole('navigation', { name: '时代导航' })).getAllByRole('button')).toHaveLength(7);
   });
 
-  it('provides all thirty historical events as accessible controls', () => {
-    render(<HistoryGalaxyApp />);
+  it('provides all thirty historical events as accessible controls', async () => {
+    await act(async () => { render(<HistoryGalaxyApp />); });
 
     expect(screen.getAllByRole('button', { name: /查看历史事件/ })).toHaveLength(30);
     expect(screen.getByRole('button', { name: '查看历史事件：627年 贞观之治' })).toBeInTheDocument();

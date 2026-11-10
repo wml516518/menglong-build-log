@@ -1,4 +1,5 @@
 import { ArrowLeft } from 'lucide-react';
+import { HistoryContentProvider } from './history/content/store';
 import './history-galaxy.css';
 import { lazy, Suspense, useCallback, useMemo, useState } from 'react';
 import { EventNavigator } from './components/EventNavigator';
@@ -25,6 +26,10 @@ function hasWebGLSupport() {
 }
 
 export default function HistoryGalaxyApp() {
+  return <HistoryContentProvider><HistoryGalaxyExperience /></HistoryContentProvider>;
+}
+
+function HistoryGalaxyExperience() {
   const [currentYear, setCurrentYear] = useState(618);
   const [activeDynastyId, setActiveDynastyId] = useState<DynastyId>('tang');
   const [sceneFailed, setSceneFailed] = useState(false);
