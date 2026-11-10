@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { historyEvents } from './events';
 import type { DynastyId, HistoryEvent } from './types';
 import { getDynastyLeadEvent } from './space';
 
 export function useHistoryNavigation(
+  historyEvents: HistoryEvent[],
   onEventChange?: (event: HistoryEvent) => void,
   onDynastyChange?: (dynastyId: DynastyId, event: HistoryEvent) => void
 ) {
@@ -14,7 +14,7 @@ export function useHistoryNavigation(
 
   const selectedEvent = useMemo(
     () => historyEvents.find((event) => event.id === selectedId) ?? null,
-    [selectedId]
+    [historyEvents, selectedId]
   );
 
   const selectEvent = useCallback((eventOrId: HistoryEvent | string) => {
@@ -25,11 +25,12 @@ export function useHistoryNavigation(
     setSelectedId(event.id);
     setSelectionSignal((value) => value + 1);
     onEventChange?.(event);
-  }, [onEventChange]);
+  }, [historyEvents, onEventChange]);
 
   const closeStory = useCallback(() => setSelectedId(null), []);
 
   const moveSelection = useCallback((direction: -1 | 1) => {
+    if (!historyEvents.length) return;
     const currentIndex = selectedId
       ? historyEvents.findIndex((event) => event.id === selectedId)
       : direction === 1
@@ -39,14 +40,15 @@ export function useHistoryNavigation(
     const event = historyEvents[nextIndex];
     setSelectedId(event.id);
     onEventChange?.(event);
-  }, [onEventChange, selectedId]);
+  }, [historyEvents, onEventChange, selectedId]);
 
   const selectDynasty = useCallback((dynastyId: DynastyId) => {
-    const event = getDynastyLeadEvent(dynastyId);
+    const event = getDynastyLeadEvent(dynastyId, historyEvents);
+    if (!event) return;
     setSelectedId(event.id);
     setSelectionSignal((value) => value + 1);
     onDynastyChange?.(dynastyId, event);
-  }, [onDynastyChange]);
+  }, [historyEvents, onDynastyChange]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {

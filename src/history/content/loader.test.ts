@@ -65,3 +65,22 @@ describe('history content loader', () => {
     await expect(loader.loadEraBundle('missing')).rejects.toMatchObject({ kind: 'not-found', eraId: 'missing' });
   });
 });
+
+describe('cache contract isolation', () => {
+  it('validates an era even when another era has already cached the same URL', async () => {
+    const manifest = fixture('manifest.json');
+    manifest.eraBundles.song = manifest.eraBundles.tang;
+    const loader = createHistoryContentLoader({ fetchImpl: async input => new Response(JSON.stringify(String(input).endsWith('manifest.json') ? manifest : fixture('eras/tang.json'))) });
+    const tang = await loader.loadEraBundle('tang');
+    await expect(loader.loadEraBundle('song')).rejects.toMatchObject({ kind: 'validation', eraId: 'song' });
+    expect(await loader.loadEraBundle('tang')).toBe(tang);
+  });
+  it('rejects an index path aliasing the already cached manifest', async () => {
+    const manifest = fixture('manifest.json');
+    manifest.indexes.events = 'manifest.json';
+    const loader = createHistoryContentLoader({ fetchImpl: async () => new Response(JSON.stringify(manifest)) });
+    await loader.loadHistoryManifest();
+    await expect(loader.loadEventIndex()).rejects.toMatchObject({ kind: 'validation', resource: expect.stringContaining('manifest.json') });
+    expect((await loader.loadHistoryManifest()).version).toBe(1);
+  });
+});

@@ -2,7 +2,6 @@ import { Canvas } from '@react-three/fiber';
 import { Bloom, EffectComposer, Vignette } from '@react-three/postprocessing';
 import { Suspense, useCallback, useState } from 'react';
 import * as THREE from 'three';
-import { historyEvents } from '../history/events';
 import type { HistoryEvent } from '../history/types';
 import { CameraRig } from './CameraRig';
 import { EventStar } from './EventStar';
@@ -12,6 +11,7 @@ import { StarField } from './StarField';
 import { TimelineRail } from './TimelineRail';
 
 interface HistorySceneProps {
+  events: HistoryEvent[];
   selectedEvent: HistoryEvent | null;
   hoveredId: string | null;
   resetSignal: number;
@@ -22,7 +22,7 @@ interface HistorySceneProps {
   onTravelYear: (year: number) => void;
 }
 
-function SceneContents({ selectedEvent, hoveredId, resetSignal, selectionSignal, reducedMotion, onSelect, onHover, onTravelYear }: HistorySceneProps) {
+export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, selectionSignal, reducedMotion, onSelect, onHover, onTravelYear }: HistorySceneProps) {
   const [dragOffsets, setDragOffsets] = useState<Record<string, readonly [number, number]>>({});
   const [isDraggingStar, setIsDraggingStar] = useState(false);
   const updateDragOffset = useCallback((id: string, offset: readonly [number, number]) => {
@@ -38,7 +38,7 @@ function SceneContents({ selectedEvent, hoveredId, resetSignal, selectionSignal,
       <directionalLight position={[22, -4, -12]} color="#4f8391" intensity={1.1} />
       <StarField />
       <TimelineRail />
-      {historyEvents.map((event) => (
+      {events.map((event) => (
         <EventStar
           key={event.id}
           event={event}

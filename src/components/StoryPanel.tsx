@@ -2,13 +2,16 @@ import { useEffect, useRef } from 'react';
 import type { HistoryEvent } from '../history/types';
 
 interface StoryPanelProps {
+  loading?: boolean;
+  failed?: boolean;
+  onRetry?: () => void;
   event: HistoryEvent;
   onClose: () => void;
   onPrevious: () => void;
   onNext: () => void;
 }
 
-export function StoryPanel({ event, onClose, onPrevious, onNext }: StoryPanelProps) {
+export function StoryPanel({ event, onClose, onPrevious, onNext, loading, failed, onRetry }: StoryPanelProps) {
   const panelRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -38,6 +41,8 @@ export function StoryPanel({ event, onClose, onPrevious, onNext }: StoryPanelPro
         ))}
       </div>
 
+      {loading ? <p role="status">正在加载档案…</p> : null}
+      {failed ? <p role="alert">档案加载失败 <button type="button" onClick={onRetry}>重试档案</button></p> : null}
       <p className="story-copy">{event.story}</p>
 
       <div className="story-footer">

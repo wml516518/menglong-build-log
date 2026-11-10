@@ -1,11 +1,14 @@
 import { ArrowLeft } from 'lucide-react';
-import { HistoryContentProvider } from './history/content/store';
+import { HistoryContentProvider, useHistoryContent } from './history/content/store';
 import './history-galaxy.css';
-import { lazy, Suspense, useCallback, useMemo, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react';
 import { EventNavigator } from './components/EventNavigator';
 import { HistoryHud } from './components/HistoryHud';
 import { StoryPanel } from './components/StoryPanel';
-import { dynasties, historyEvents } from './history/events';
+import { dynasties } from './history/dynasties';
+import type { HistoryContentLoader } from './history/content/loader';
+import { compactEventsForScene } from './history/content/scene-adapter';
+import type { HistoryEventArchive } from './history/content/schema';
 import { getDynastyForYear } from './history/space';
 import type { DynastyId, HistoryEvent } from './history/types';
 import { useHistoryNavigation } from './history/useHistoryNavigation';
@@ -25,11 +28,13 @@ function hasWebGLSupport() {
   }
 }
 
-export default function HistoryGalaxyApp() {
-  return <HistoryContentProvider><HistoryGalaxyExperience /></HistoryContentProvider>;
+export default function HistoryGalaxyApp({ loader }: { loader?: HistoryContentLoader } = {}) {
+  return <HistoryContentProvider loader={loader}><HistoryGalaxyExperience /></HistoryContentProvider>;
 }
 
 function HistoryGalaxyExperience() {
+  const content = useHistoryContent();
+  const historyEvents = useMemo(() => compactEventsForScene(content.events, content.people), [content.events, content.people]);
   const [currentYear, setCurrentYear] = useState(618);
   const [activeDynastyId, setActiveDynastyId] = useState<DynastyId>('tang');
   const [sceneFailed, setSceneFailed] = useState(false);
@@ -42,7 +47,7 @@ function HistoryGalaxyExperience() {
     setCurrentYear(dynasty?.start ?? event.year);
     setActiveDynastyId(dynastyId);
   }, []);
-  const navigation = useHistoryNavigation(syncEvent, syncDynasty);
+  const navigation = useHistoryNavigation(historyEvents, syncEvent, syncDynasty);
   const webglSupported = useMemo(hasWebGLSupport, []);
   const reducedMotion = useReducedMotion();
   const showFallback = !webglSupported || sceneFailed;
@@ -67,6 +72,7 @@ function HistoryGalaxyExperience() {
           <SceneErrorBoundary onError={() => setSceneFailed(true)}>
             <Suspense fallback={<SceneFallback />}>
               <HistoryScene
+                events={historyEvents}
                 selectedEvent={navigation.selectedEvent}
                 hoveredId={navigation.hoveredId}
                 resetSignal={navigation.resetSignal}
@@ -88,7 +94,9 @@ function HistoryGalaxyExperience() {
         onReset={handleReset}
       />
 
-      <EventNavigator selectedEvent={navigation.selectedEvent} onSelect={navigation.selectEvent} isFallback={showFallback} />
+      {content.loading ? <p role="status">正在加载历史索引…</p> : null}
+      {content.error ? <p role="alert">历史内容加载失败 <button type="button" onClick={() => { void content.retry().catch(() => {}); }}>重试历史内容</button></p> : null}
+      <EventNavigator events={historyEvents} selectedEvent={navigation.selectedEvent} onSelect={navigation.selectEvent} isFallback={showFallback} />
 
       <div className="timeline-readout" aria-live="polite">
         <span>{navigation.selectedEvent
@@ -104,7 +112,8 @@ function HistoryGalaxyExperience() {
       </div>
 
       {navigation.selectedEvent ? (
-        <StoryPanel
+        <SelectedHistoryStory
+          key={navigation.selectedEvent.id}
           event={navigation.selectedEvent}
           onClose={navigation.closeStory}
           onPrevious={() => navigation.moveSelection(-1)}
@@ -113,4 +122,31 @@ function HistoryGalaxyExperience() {
       ) : null}
     </main>
   );
+}
+
+
+function SelectedHistoryStory(props: Parameters<typeof StoryPanel>[0]) {
+  const { getEventArchive } = useHistoryContent();
+  const [archive, setArchive] = useState<HistoryEventArchive | undefined>();
+  const [loading, setLoading] = useState(true);
+  const [failed, setFailed] = useState(false);
+  const [attempt, setAttempt] = useState(0);
+  useEffect(() => {
+    let active = true;
+    setLoading(true);
+    setFailed(false);
+    void getEventArchive(props.event.id).then(value => {
+      if (!active) return;
+      setArchive(value);
+      setFailed(!value);
+      setLoading(false);
+    }, () => {
+      if (!active) return;
+      setFailed(true);
+      setLoading(false);
+    });
+    return () => { active = false; };
+  }, [getEventArchive, props.event.id, attempt]);
+  const event = archive ? { ...props.event, story: [archive.background, ...archive.course.map(entry => entry.description), ...archive.results].join('\n\n') } : props.event;
+  return <StoryPanel {...props} event={event} loading={loading} failed={failed} onRetry={() => setAttempt(value => value + 1)} />;
 }

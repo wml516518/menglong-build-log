@@ -1,16 +1,16 @@
-import { historyEvents } from '../history/events';
 import type { HistoryEvent } from '../history/types';
 
 interface EventNavigatorProps {
+  events: HistoryEvent[];
   selectedEvent: HistoryEvent | null;
   onSelect: (event: HistoryEvent) => void;
   isFallback?: boolean;
 }
 
-export function EventNavigator({ selectedEvent, onSelect, isFallback = false }: EventNavigatorProps) {
+export function EventNavigator({ events, selectedEvent, onSelect, isFallback = false }: EventNavigatorProps) {
   return (
     <div className={`event-navigator ${isFallback ? 'is-fallback' : ''}`} aria-label="历史事件列表">
-      {historyEvents.map((event) => (
+      {events.map((event) => (
         <button
           type="button"
           key={event.id}

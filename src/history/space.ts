@@ -1,4 +1,4 @@
-import { dynasties, historyEvents } from './events';
+import { dynasties } from './dynasties';
 import type { Dynasty, DynastyId, HistoryEvent } from './types';
 
 const START_YEAR = 618;
@@ -28,7 +28,7 @@ export function getDynastyForYear(year: number): Dynasty {
   return dynasties[0];
 }
 
-export function getDynastyLeadEvent(dynastyId: DynastyId): HistoryEvent {
+export function getDynastyLeadEvent(dynastyId: DynastyId, historyEvents: HistoryEvent[]): HistoryEvent | undefined {
   const events = historyEvents.filter((event) => event.dynasty === dynastyId);
   if (events.length === 0) {
     const dynasty = dynasties.find((candidate) => candidate.id === dynastyId);
@@ -36,7 +36,7 @@ export function getDynastyLeadEvent(dynastyId: DynastyId): HistoryEvent {
       ? historyEvents.find((event) => event.year >= dynasty.end)
       : undefined;
     if (transitionalEvent) return transitionalEvent;
-    throw new Error(`No historical events configured for ${dynastyId}`);
+    return undefined;
   }
   return [...events].sort((a, b) => b.influence - a.influence || a.year - b.year)[0];
 }

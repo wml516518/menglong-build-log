@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import * as THREE from 'three';
-import { dynasties } from '../history/events';
+import { dynasties } from '../history/dynasties';
 import { yearToX } from '../history/space';
 
 export function getTimelineY(x: number) {

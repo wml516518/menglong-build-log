@@ -38,9 +38,10 @@ export function createHistoryContentLoader({ baseUrl = `${import.meta.env.BASE_U
   const base = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
   const requests = new Map<string, Promise<unknown>>();
   const eras = new Map<string, Promise<HistoryEraBundle>>();
-  function request<T>(relativePath: string, schema: z.ZodType<T>, requestedEra?: string): Promise<T> {
+  function request<T>(relativePath: string, schema: z.ZodType<T>, contract: string, requestedEra?: string): Promise<T> {
     const resource = `${base}${relativePath}`;
-    const cached = requests.get(resource);
+    const cacheKey = `${contract}:${resource}`;
+    const cached = requests.get(cacheKey);
     if (cached) return cached as Promise<T>;
     const pending = (async () => {
       let response: Response;
@@ -52,13 +53,13 @@ export function createHistoryContentLoader({ baseUrl = `${import.meta.env.BASE_U
       catch (cause) { throw new HistoryContentError('json', resource, requestedEra, cause); }
       try { return schema.parse(data); }
       catch (cause) { throw new HistoryContentError('validation', resource, requestedEra, cause); }
-    })().catch(error => { requests.delete(resource); throw error; });
-    requests.set(resource, pending);
+    })().catch(error => { requests.delete(cacheKey); throw error; });
+    requests.set(cacheKey, pending);
     return pending;
   }
-  const loadHistoryManifest = () => request('manifest.json', manifestSchema);
-  const loadEventIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.events, z.array(eventIndexSchema)));
-  const loadPeopleIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.people, z.array(personIndexSchema)));
+  const loadHistoryManifest = () => request('manifest.json', manifestSchema, 'manifest');
+  const loadEventIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.events, z.array(eventIndexSchema), 'event-index'));
+  const loadPeopleIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.people, z.array(personIndexSchema), 'person-index'));
   function loadEraBundle(requestedEra: string): Promise<HistoryEraBundle> {
     const cached = eras.get(requestedEra);
     if (cached) return cached;
@@ -66,7 +67,7 @@ export function createHistoryContentLoader({ baseUrl = `${import.meta.env.BASE_U
       const relativePath = Object.hasOwn(manifest.eraBundles, requestedEra) ? manifest.eraBundles[requestedEra] : undefined;
       if (!relativePath) throw new HistoryContentError('not-found', `${base}manifest.json`, requestedEra);
       const schema = eraBundleSchema.refine(bundle => bundle.eraId === requestedEra, 'Requested era does not match bundle');
-      return request(relativePath, schema, requestedEra);
+      return request(relativePath, schema, `era:${requestedEra}`, requestedEra);
     }).catch(error => { eras.delete(requestedEra); throw error; });
     eras.set(requestedEra, pending);
     return pending;
