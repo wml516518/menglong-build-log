@@ -5,6 +5,7 @@ import { PortfolioHome } from './components/PortfolioHome';
 import { content } from './content';
 import { parseSiteDocument, parseResumeDocument, stripTranslationMetadata } from './content/schema';
 import { validSiteFixture, validResumeFixture } from './content/test-fixtures';
+import { posts } from './posts';
 
 describe('App', () => {
   it('renders a validated reordered fixture in CMS section order', () => {
@@ -128,6 +129,46 @@ describe('App', () => {
     ).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'Product direction' })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Back to all posts' })).toBeInTheDocument();
+  });
+
+  it('hides a draft from the homepage, index, and direct article route', () => {
+    const draft = { ...posts.find((post) => post.language === 'en')!, slug: 'private-draft', title: 'Private draft title', draft: true };
+    posts.unshift(draft);
+    try {
+      for (const hash of ['', '#/build-log', '#/build-log/private-draft']) {
+        window.location.hash = hash;
+        const view = render(<App />);
+        expect(screen.queryByText('Private draft title')).not.toBeInTheDocument();
+        if (hash.endsWith('/private-draft')) expect(screen.getByRole('heading', { name: 'Article not found' })).toBeInTheDocument();
+        view.unmount();
+      }
+    } finally {
+      posts.splice(posts.indexOf(draft), 1);
+    }
+  });
+
+  it('renders optional cover media on previews, the index, and articles', () => {
+    const post = posts.find((entry) => entry.language === 'en')!;
+    const original = post.coverImage;
+    try {
+      post.coverImage = '';
+      let view = render(<App />);
+      expect(screen.queryByRole('img', { name: post.title })).not.toBeInTheDocument();
+      view.unmount();
+      post.coverImage = '/uploads/cover.webp';
+      for (const hash of ['', '#/build-log', `#/build-log/${post.slug}`]) {
+        window.location.hash = hash;
+        view = render(<App />);
+        const image = screen.getByRole('img', { name: post.title });
+        expect(image).toHaveAttribute('src', '/uploads/cover.webp');
+        expect(image).toHaveAttribute('width', '1600');
+        expect(image).toHaveAttribute('height', '900');
+        if (hash !== `#/build-log/${post.slug}`) expect(image).toHaveAttribute('loading', 'lazy');
+        view.unmount();
+      }
+    } finally {
+      post.coverImage = original;
+    }
   });
 
   it('returns to and scrolls to homepage sections from an article', async () => {

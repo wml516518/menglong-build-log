@@ -1,6 +1,7 @@
 ---
 slug: ai-chat-playground
-language: en
+draft: false
+coverImage: ''
 date: 2026-06-05
 title: AI Chat Playground with model switching
 summary: Planning a deployable chat interface with prompt presets, model controls, and a lightweight API boundary.

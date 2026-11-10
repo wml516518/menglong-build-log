@@ -1,6 +1,7 @@
 ---
 slug: portfolio-homepage
-language: en
+draft: false
+coverImage: ''
 date: 2026-06-05
 title: Portfolio homepage and public build log
 summary: Building a bilingual portfolio around clear content, simple deployment, and an honest public record of the work.

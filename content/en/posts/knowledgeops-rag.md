@@ -1,6 +1,7 @@
 ---
 slug: knowledgeops-rag
-language: en
+draft: false
+coverImage: ''
 date: 2026-06-05
 title: KnowledgeOps RAG document Q&A
 summary: Structuring a document Q&A demo around upload parsing, vector retrieval, and deployable service boundaries.
