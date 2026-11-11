@@ -8,6 +8,9 @@ type RouteMetadata = { title: string; description: string; themeColor: string };
 export function getRouteMetadata(route: Route, language: Language): RouteMetadata {
   const seo = content[language].seo;
   switch (route.view) {
+    case 'history-event':
+    case 'history-person':
+    case 'history-theme':
     case 'history-galaxy':
       return { title: '历史星河｜中国历史3D交互时间轴', description: historyDescription, themeColor: '#05070a' };
     case 'posts':
@@ -27,7 +30,7 @@ export function applyRouteMetadata(route: Route, language: Language): void {
   document.title = metadata.title;
   document.querySelector<HTMLMetaElement>('meta[name="description"]')?.setAttribute('content', metadata.description);
   document.querySelector<HTMLMetaElement>('meta[name="theme-color"]')?.setAttribute('content', metadata.themeColor);
-  const socialImage = route.view === 'history-galaxy' ? '' : content[language].seo.socialImage;
+  const socialImage = route.view.startsWith('history-') ? '' : content[language].seo.socialImage;
   const existingImage = document.querySelector<HTMLMetaElement>('meta[property="og:image"]');
   if (socialImage) {
     const image = existingImage ?? document.createElement('meta');

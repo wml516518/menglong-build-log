@@ -1,0 +1,98 @@
+[
+  {
+    "id": "pre-qin",
+    "name": "先秦",
+    "startYear": -2070,
+    "endYear": -221,
+    "color": "#bc9365",
+    "inscription": "文明起源 · 诸子争鸣"
+  },
+  {
+    "id": "qin-han",
+    "name": "秦汉",
+    "startYear": -221,
+    "endYear": 220,
+    "color": "#bd8058",
+    "inscription": "制度初成 · 丝路开通"
+  },
+  {
+    "id": "wei-jin",
+    "name": "魏晋南北朝",
+    "startYear": 220,
+    "endYear": 589,
+    "color": "#9690ac",
+    "inscription": "分合交织 · 文化交融"
+  },
+  {
+    "id": "sui-tang",
+    "name": "隋唐五代",
+    "startYear": 581,
+    "endYear": 960,
+    "color": "#d7aa54",
+    "inscription": "南北重整 · 交流汇聚"
+  },
+  {
+    "id": "tang",
+    "name": "唐",
+    "startYear": 618,
+    "endYear": 907,
+    "color": "#d7aa54",
+    "inscription": "万国衣冠 · 长安气象"
+  },
+  {
+    "id": "five-dynasties",
+    "name": "五代",
+    "startYear": 907,
+    "endYear": 960,
+    "color": "#9b7050",
+    "inscription": "山河递嬗 · 世局重组"
+  },
+  {
+    "id": "song-liao-jin-xia",
+    "name": "宋辽金夏",
+    "startYear": 907,
+    "endYear": 1279,
+    "color": "#79b7a7",
+    "inscription": "多国并立 · 经济变迁"
+  },
+  {
+    "id": "song",
+    "name": "宋",
+    "startYear": 960,
+    "endYear": 1271,
+    "color": "#79b7a7",
+    "inscription": "文治昌明 · 市井繁盛"
+  },
+  {
+    "id": "yuan",
+    "name": "元",
+    "startYear": 1271,
+    "endYear": 1368,
+    "color": "#7c9aac",
+    "inscription": "驿路纵横 · 四海相通"
+  },
+  {
+    "id": "ming",
+    "name": "明",
+    "startYear": 1368,
+    "endYear": 1644,
+    "color": "#c96348",
+    "inscription": "舟师万里 · 经纬重整"
+  },
+  {
+    "id": "qing",
+    "name": "清",
+    "startYear": 1644,
+    "endYear": 1840,
+    "color": "#b8a66d",
+    "inscription": "版图奠定 · 盛衰相生"
+  },
+  {
+    "id": "modern",
+    "name": "近代",
+    "startYear": 1840,
+    "endYear": 1949,
+    "color": "#6f91bd",
+    "inscription": "救亡图存 · 走向共和"
+  }
+]

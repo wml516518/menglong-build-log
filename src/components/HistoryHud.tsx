@@ -1,5 +1,5 @@
 import type { DynastyId } from '../history/types';
-import { dynasties } from '../history/events';
+import { dynasties } from '../history/dynasties';
 import { getDynastyForYear } from '../history/space';
 import { LocateFixed } from 'lucide-react';
 

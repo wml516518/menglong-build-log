@@ -32,12 +32,12 @@ describe('historyEvents', () => {
   });
 
   it('returns the most influential chronological lead event for an era', () => {
-    expect(getDynastyLeadEvent('song').title).toBe('陈桥兵变');
-    expect(getDynastyLeadEvent('modern').title).toBe('鸦片战争');
+    expect(getDynastyLeadEvent('song', historyEvents)?.title).toBe('陈桥兵变');
+    expect(getDynastyLeadEvent('modern', historyEvents)?.title).toBe('鸦片战争');
   });
 
   it('provides a navigable lead event for every era, including transitional eras', () => {
-    expect(dynasties.map((dynasty) => getDynastyLeadEvent(dynasty.id).title)).toEqual([
+    expect(dynasties.map((dynasty) => getDynastyLeadEvent(dynasty.id, historyEvents)?.title)).toEqual([
       '贞观之治',
       '陈桥兵变',
       '陈桥兵变',

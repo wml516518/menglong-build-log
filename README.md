@@ -47,6 +47,25 @@ MengLong Wang 的双语个人主页、开发日志和全栈项目集合。
 详细说明参见 [`eat-card/README.md`](eat-card/README.md) 和
 [`eat-card/docs/setup.md`](eat-card/docs/setup.md)。
 
+### 历史星河内容系统
+
+正式内容仍为 30 个精选事件；引擎以独立的 1200 条合成记录验证扩展能力，测试夹具不属于历史资料，也不进入生产模块。内容源位于 `history-content/`，以 Markdown 的 YAML frontmatter 维护稳定 ID、年代、时代、类别、影响力和人物/地点/来源关联，正文按事件或人物档案结构编写。新增内容应沿用现有文件格式与 `src/history/content/schema.ts` 的字段约束；使用公元前年份负数，不使用公元 0 年，不嵌入原始 HTML。
+
+```bash
+npm run history:check    # 校验结构、引用和年代，不发布内容
+npm run history:compile  # 编译 manifest、紧凑索引、时代档案与兼容数据
+```
+
+`dev`、`test`、`build` 前自动编译。`public/history-content/generated/` 与 `src/history/generated/` 为忽略提交的生成目录，请修改内容源后重新编译。首屏仅加载紧凑索引，完整档案按时代懒加载并缓存；新增时代、事件及人物后重新编译即可复用搜索、筛选和档案引擎。首页七段快捷导航仍对应目前已有内容，扩展快捷入口时需要同步导航元数据。
+
+档案地址为 `#/history-galaxy/event/<id>`、`#/history-galaxy/person/<id>` 和 `#/history-galaxy/theme/<id>`。搜索、年代和分类等筛选保存在 URL 中；相机、已选事件和释放后的拖动偏移使用版本化本地会话保存。浏览器返回可恢复探索上下文。
+
+场景按总览、时代、时期、近景四档 LOD 控制星点、标签和关系线预算，手机使用更小预算。屏幕空间四叉树在 Worker 中聚合相邻光点，近距离按语义组区分，点击聚类可放大；选中、搜索目标和影响力 5 的事件优先保留，保护集合可以超过普通预算。批量星体使用实例化绘制。
+
+搜索 Worker 使用 MiniSearch；Worker 失败时切换到本地标题、别名和人物名前缀搜索。WebGL 不可用时显示二维时间轴，继续共享筛选、搜索、故事面板和完整档案。`prefers-reduced-motion` 会关闭环境运动。
+
+规模回归可运行 `npx vitest run src/history/performance.test.ts src/HistoryGalaxyApp.test.tsx`。浏览器人工/自动化验收产物放在忽略提交的 `output/playwright/`；移动尺寸模拟与桌面帧耗时不能替代真实低端手机测试。
+
 ## 本地开发
 
 要求 Node.js 20 或更高版本。
