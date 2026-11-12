@@ -45,6 +45,17 @@ historyGalaxy:
   action: 进入星河
   imageAlt: 深邃三维空间中，一条发光的中国历史时间轴与众多事件星点向远方延伸
 projects:
+  - title: Weekend Merge / 周末共识局
+    status: 已上线
+    summary: 双人周末决策 Agent，通过可观察工具调用生成三套折中方案，并在否决后只重排受影响区段。
+    stack:
+      - React
+      - TypeScript
+      - Gemini Function Calling
+      - Netlify Functions
+      - Open-Meteo
+    githubUrl: https://github.com/wml516518/weekend-merge
+    liveUrl: https://weekend-merge-wml516518.netlify.app
   - title: 个人主页 + 构建日志
     status: 已上线
     summary: 一个中英双语的作品入口和公开项目记录。

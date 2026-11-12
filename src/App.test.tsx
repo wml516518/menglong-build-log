@@ -107,6 +107,32 @@ describe('App', () => {
     expect(document.documentElement.lang).toBe('en');
   });
 
+  it('features Weekend Merge in the bilingual project and resume sections', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    expect(screen.getAllByText('Weekend Merge').length).toBeGreaterThanOrEqual(2);
+    const projectSection = document.getElementById('projects')!;
+    const englishCard = within(projectSection).getByRole('heading', { level: 3, name: 'Weekend Merge' }).closest('article')!;
+    expect(within(englishCard).getByRole('link', { name: 'Live' }))
+      .toHaveAttribute('href', 'https://weekend-merge-wml516518.netlify.app');
+    expect(within(englishCard).getByRole('link', { name: 'GitHub' }))
+      .toHaveAttribute('href', 'https://github.com/wml516518/weekend-merge');
+    expect(screen.getByText(
+      'An observable two-person weekend negotiation Agent that uses controlled tool calls to generate three compromise itineraries and locally replan only affected stops.'
+    )).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: '中' }));
+
+    expect(screen.getAllByText('Weekend Merge / 周末共识局').length).toBeGreaterThanOrEqual(2);
+    expect(screen.getByText(
+      '双人周末决策 Agent，通过可观察工具调用生成三套折中方案，并在否决后只重排受影响区段。'
+    )).toBeInTheDocument();
+    expect(screen.getByText(
+      '一个面向双人周末协商的可观察 AI Agent，使用受控工具调用生成三套折中行程，并在否决地点后仅重排受影响区段。'
+    )).toBeInTheDocument();
+  });
+
   it('opens the complete build log index from the homepage', async () => {
     const user = userEvent.setup();
     render(<App />);

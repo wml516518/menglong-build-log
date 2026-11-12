@@ -1,6 +1,6 @@
 _translation:
   policyVersion: 1
-  sourceHash: da5c6eb27bcc48311cbabe216f4398bfaa57df8e944e5c095fda262bf9a36612
+  sourceHash: 216516ca75ad82bdc9bf8fbd94c88be641083201c69da37f833a49b9424060a1
 basics:
   birthDate:
     label: Date of Birth
@@ -91,6 +91,20 @@ projects:
       - .NET
       - Prompt Engineering
       - multilingual TTS
+  - description: An observable two-person weekend negotiation Agent that uses controlled tool calls to generate three compromise itineraries and locally replan only affected stops.
+    highlights:
+      - 'Designed a controlled planning state machine with five whitelisted tools for weather, place search, route, budget, and plan validation, bounded by model-request and tool-call ceilings.'
+      - 'Enforced shared Zod contracts and deterministic budget, route, schedule, avoidance, and locked-stop validation across progressive NDJSON responses.'
+      - 'Implemented local partial replanning and an explicit rule-planner fallback for missing keys or model failures, then deployed the React app and Functions to Netlify.'
+    name: Weekend Merge
+    period: '2026.11'
+    stack:
+      - React
+      - TypeScript
+      - Gemini
+      - Netlify Functions
+      - Zod
+      - Vitest
   - description: 'Medical radiology, ultrasound, and endoscopy information system with BS admin modules and CS workflows.'
     highlights:
       - 'Owned full-stack admin site development, including frontend architecture, API design, and database management.'
