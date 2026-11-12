@@ -91,6 +91,20 @@ projects:
       - .NET
       - Prompt Engineering
       - 多语种 TTS
+  - name: Weekend Merge / 周末共识局
+    period: '2026.11'
+    description: 一个面向双人周末协商的可观察 AI Agent，使用受控工具调用生成三套折中行程，并在否决地点后仅重排受影响区段。
+    highlights:
+      - 设计受控规划状态机，通过天气、地点检索、路线、预算和方案校验五个白名单工具完成行程编排，并限制模型请求与工具调用次数。
+      - 使用共享 Zod 契约和确定性逻辑校验预算、路线、时间、避让条件与锁定站点，通过 NDJSON 渐进返回可观察执行证据。
+      - 实现仅调整受影响区段的本地重排，并在缺少密钥或模型失败时显式降级到规则规划，最终将 React 前端与 Functions 部署到 Netlify。
+    stack:
+      - React
+      - TypeScript
+      - Gemini
+      - Netlify Functions
+      - Zod
+      - Vitest
   - name: Fabric4.x 影像信息系统
     period: 2019.04 - 2025.04
     description: 医疗行业放射、超声、内镜信息系统，包含 CS 业务端与 BS 后台管理网站。
