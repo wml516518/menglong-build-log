@@ -1,6 +1,6 @@
 _translation:
   policyVersion: 1
-  sourceHash: d61c9fd8147d870e32be7d930dad31e90d8d2e85c67cb8f14063f3110a0860e6
+  sourceHash: 10c0b658f75f0c217ce40ed4ab3f4ef274329417717c6821a873facf80de9217
 about: 'I focus on full-stack development, AI products, and productivity tools. This site will document my portfolio roadmap, starting from a personal homepage and gradually expanding into deployable AI applications. I will also continuously record the technical choices and iteration process in real projects.'
 contact:
   - href: 'https://github.com/wml516518'
