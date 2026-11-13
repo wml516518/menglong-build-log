@@ -121,9 +121,10 @@ it('keeps typing responsive and replaces the URL and ranked Chinese search only 
 });
 
 it('focuses the exact searched event and retains the query while opening its archive', async () => {
+  window.history.replaceState(null, '', '#/history-galaxy?q=贞');
   const user = userEvent.setup();
   await openApp(productionFixture('indexes/events.compact.json'));
-  await user.type(explorer().getByRole('searchbox', { name: '搜索历史' }), '贞观');
+  await user.type(explorer().getByRole('searchbox', { name: '搜索历史' }), '观');
   await user.click(await explorer().findByRole('button', { name: '聚焦历史事件：627年 贞观之治' }));
   expect(screen.getByRole('dialog', { name: '贞观之治' })).toHaveFocus();
   expect(eventButton('贞观之治')).toHaveAttribute('aria-pressed', 'true');

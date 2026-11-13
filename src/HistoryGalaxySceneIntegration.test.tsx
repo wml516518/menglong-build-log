@@ -28,7 +28,8 @@ it('uses scene viewport membership to dim context without removing its events an
   await waitFor(() => expect(boundary.scene?.events).toHaveLength(productionCount));
   const controls = within(screen.getByRole('complementary', { name: '历史探索器' }));
   act(() => boundary.scene.onViewportChange(new Set(['zhenguan', 'kaiyuan'])));
-  await user.click(controls.getByRole('checkbox', { name: '仅当前视野' }));
+  const viewport = within(controls.getByText('仅当前视野', { selector: 'label > span' }).closest('label')!).getByRole('checkbox', { name: '仅当前视野' });
+  await user.click(viewport);
   expect(new URLSearchParams(window.location.hash.split('?')[1]).get('view')).toBe('1');
   expect(boundary.scene.events).toHaveLength(productionCount);
   expect(boundary.scene.eventOpacities.get('zhenguan')).toBe(1);

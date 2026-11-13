@@ -47,8 +47,8 @@ describe('History Galaxy app', () => {
     await act(async () => { render(<HistoryGalaxyApp loader={testLoader(true)} />); });
 
     expect(timeline().getAllByRole('button')).toHaveLength(productionCount);
-    expect(timeline().getByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' })).toBeInTheDocument();
-    expect(timeline().getByRole('button', { name: '查看历史事件：1949 年 中华人民共和国成立' })).toBeInTheDocument();
+    expect(timeline().getByText('贞观之治', { selector: 'strong' }).closest('button')).toHaveAccessibleName('查看历史事件：627 年 — 649 年 贞观之治');
+    expect(timeline().getByText('中华人民共和国成立', { selector: 'strong' }).closest('button')).toHaveAccessibleName('查看历史事件：1949 年 中华人民共和国成立');
   });
 
   it('opens a story with people and closes it', async () => {
@@ -116,25 +116,25 @@ describe('History Galaxy app', () => {
 
 
 describe('compact content integration', () => {
-  it('opens basic and core archives among all 1200 production events', async () => {
+  it.each([
+    ['basic', '二里头都邑形成', 'erlitou-urban-center'],
+    ['core', '贞观之治', 'zhenguan']
+  ])('opens the %s archive among all 1200 production events', async (detailLevel, title, id) => {
     const user = userEvent.setup();
     await act(async () => { render(<HistoryGalaxyApp loader={testLoader(true)} />); });
-    const events = timeline();
-    expect(events.getAllByRole('button')).toHaveLength(1200);
+    const region = screen.getByRole('region', { name: '二维历史时间轴' });
+    const events = within(region);
+    expect(region.querySelectorAll('button[data-event-id]')).toHaveLength(1200);
     expect(screen.getByText('全部事件 1200')).toBeInTheDocument();
-    const basicButton = events.getByText('二里头都邑形成', { selector: 'strong' }).closest('button')!;
-    expect(basicButton).toHaveAccessibleName(/二里头都邑形成/);
-    await user.click(basicButton);
-    const basic = within(screen.getByRole('dialog', { name: '二里头都邑形成' }));
-    expect(await basic.findByText('基础档案')).toBeInTheDocument();
-    expect(basic.getByRole('link', { name: /完整/ })).toHaveAttribute('href', expect.stringContaining('/event/erlitou-urban-center'));
-    await user.click(basic.getByRole('button', { name: '关闭故事' }));
-    const coreButton = events.getByText('贞观之治', { selector: 'strong' }).closest('button')!;
-    expect(coreButton).toHaveAccessibleName(/贞观之治/);
-    await user.click(coreButton);
-    const core = within(screen.getByRole('dialog', { name: '贞观之治' }));
-    expect(await core.findByText(/隋末战乱之后，统治者需要恢复生产与政治秩序/)).toBeInTheDocument();
-    expect(core.getByRole('link', { name: /完整/ })).toHaveAttribute('href', expect.stringContaining('/event/zhenguan'));
+    const button = events.getByText(title, { selector: 'strong' }).closest('button')!;
+    expect(button).toHaveAccessibleName(new RegExp(title));
+    await user.click(button);
+    const panel = within(screen.getByRole('dialog', { name: title }));
+    if (detailLevel === 'basic') expect(await panel.findByText('基础档案')).toBeInTheDocument();
+    else expect(await panel.findByText(/隋末战乱之后，统治者需要恢复生产与政治秩序/)).toBeInTheDocument();
+    expect(panel.getByRole('link', { name: /完整/ })).toHaveAttribute('href', expect.stringContaining(`/event/${id}`));
+    await user.click(panel.getByRole('button', { name: '关闭故事' }));
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
   });
   it('navigates only fetched compact events and loads only the selected era archive', async () => {
     const paths: string[] = [];
