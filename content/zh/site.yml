@@ -45,6 +45,19 @@ historyGalaxy:
   action: 进入星河
   imageAlt: 深邃三维空间中，一条发光的中国历史时间轴与众多事件星点向远方延伸
 projects:
+  - title: LOL-RAG 英雄联盟数据 Agent
+    status: 已上线
+    summary: 基于官方 Data Dragon 数据的英雄联盟问答 Agent：模型必须通过白名单工具查询英雄、装备与技能，对话页展示可折叠的工具调用轨迹。
+    stack:
+      - React
+      - FastAPI
+      - DeepSeek Function Calling
+      - SQLite
+      - Data Dragon
+      - Render
+      - Netlify
+    githubUrl: https://github.com/wml516518/lol-rag
+    liveUrl: https://lol-rag.netlify.app
   - title: Weekend Merge / 周末共识局
     status: 已上线
     summary: 双人周末决策 Agent，通过可观察工具调用生成三套折中方案，并在否决后只重排受影响区段。
