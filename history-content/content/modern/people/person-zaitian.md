@@ -10,6 +10,7 @@ roleIds: []
 eventIds:
   - sino-japanese-war
   - hundred-days
+  - peking-university-founded
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

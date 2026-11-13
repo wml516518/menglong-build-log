@@ -1,10 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import {
+  basicEventRecordSchema, coreEventDetailsSchema, editorialPeriodSchema, historyEventArchiveSchema, sourceReferenceSchema,
   eraSchema, eventArchiveSchema, eventIndexSchema, formatHistoryYear, personArchiveSchema,
-  personIndexSchema, placeIndexSchema, relationSchema, sourceSchema, themeArchiveSchema
+  personIndexSchema, politySchema, placeIndexSchema, relationSchema, sourceSchema, themeArchiveSchema
 } from './schema';
 
-const event = {
+const oldEvent = {
   id: 'qin-unification', title: '秦统一六国', aliases: ['秦灭六国'],
   startYear: -230, endYear: -221, yearPrecision: 'range', eraId: 'qin-han', polityIds: ['qin'],
   period: '秦统一战争', categories: ['war', 'politics'], themeIds: ['unification'], influence: 5,
@@ -16,6 +17,11 @@ const event = {
   relationIds: [], historiography: '具体战役年代以主流年表为准。', sourceIds: ['textbook-7-1'],
   color: '#d6a650', layout: { lane: 'war', offset: [0, 0] }
 };
+
+const { sourceIds: oldSourceIds, ...commonEvent } = oldEvent;
+const event = { ...commonEvent, detailLevel: 'core', editorialPeriodId: 'qin-han',
+  summary: oldEvent.summary + '秦统一各国之后，原有的政治边界发生变化，国家统治范围扩大。原来分立的地域与人群被纳入新的统治秩序，秦朝制度建设及其实施方式也因此成为理解这一历史转折的重要线索。',
+  sourceRefs: oldSourceIds.map(sourceId => ({ sourceId, locator: '秦统一战争章节' })) };
 
 // Removing these validators would permit broken archives into the compiler.
 describe('event archives', () => {
@@ -40,11 +46,11 @@ describe('event archives', () => {
     expect(eventArchiveSchema.safeParse({ ...event, background: '**背景**：1 < 2，见[资料](https://example.com)。' }).success).toBe(true);
   });
   it.each([
-    { id: 'Qin_Unification' }, { sourceIds: ['bad_id'] }, { influence: 0 }, { influence: 6 }, { influence: 2.5 },
+    { id: 'Qin_Unification' }, { sourceRefs: [{ sourceId: 'bad_id', locator: '卷一' }] }, { influence: 0 }, { influence: 6 }, { influence: 2.5 },
     { categories: ['military'] }, { yearPrecision: 'approximate' }, { startYear: -220 }, { startYear: 0 },
     { startYear: -230.5 }, { parentId: 'qin-unification' }, { childIds: ['qin-unification'] },
     { course: [{ year: -240, title: '灭韩', description: '过程' }] },
-    { sourceIds: [] }, { causes: [] }, { course: [] }, { results: [] }, { impacts: [] },
+    { sourceRefs: [] }, { causes: [] }, { course: [] }, { results: [] }, { impacts: [] },
     { background: '' }, { background: '   ' }, { unexpected: true }
   ])('rejects invalid archive data: %j', change => {
     expect(eventArchiveSchema.safeParse({ ...event, ...change }).success).toBe(false);
@@ -58,7 +64,7 @@ describe('sources', () => {
     expect(sourceSchema.parse({ ...source, authors: ['编写组'], publisher: '人民教育出版社', edition: '2024', chapter: '第九课', url: 'https://example.com/history', accessedAt: '2026-11-10' }).url).toBe('https://example.com/history');
   });
   it.each(['http://example.com', 'javascript:alert(1)', 'https://', 'ftp://example.com'])('rejects unsafe source URL %s', url => {
-    expect(sourceSchema.safeParse({ ...source, url }).success).toBe(false);
+    expect(sourceSchema.safeParse({ ...source, url, accessedAt: '2026-11-11' }).success).toBe(false);
   });
   it.each([{ title: '<b>来源</b>' }, { authors: ['<i>作者</i>'] }, { publisher: '</p>' }, { edition: '<b>版本</b>' }, { chapter: '<p>章节</p>' }, { extra: true }, { id: 'Bad_ID' }])('rejects malformed bibliography %j', change => {
     expect(sourceSchema.safeParse({ ...source, ...change }).success).toBe(false);
@@ -154,7 +160,8 @@ describe('era, place, theme and relation records', () => {
 });
 
 describe('compact event index', () => {
-  const { background: _, causes: _c, course: _course, results: _r, impacts: _i, historiography: _h, ...compact } = event;
+  const { background: _, causes: _c, course: _course, results: _r, impacts: _i, historiography: _h, sourceRefs: _refs, ...metadata } = event;
+  const compact = { ...metadata, sourceIds: oldSourceIds };
   it('requires complete compact metadata and the representative start year', () => {
     expect(eventIndexSchema.parse({ ...compact, year: -230 }).year).toBe(-230);
     expect(eventIndexSchema.safeParse({ ...compact, year: -221 }).success).toBe(false);
@@ -171,4 +178,121 @@ it.each([
   { startYear: -221, endYear: -200, roleId: 'emperor', description: '死后任职' }
 ])('rejects identity dates outside the known lifespan: %j', identity => {
   expect(personArchiveSchema.safeParse({ ...biography, identities: [identity] }).success).toBe(false);
+});
+
+const basic = {
+  id: 'zhougong-regency', title: '周公摄政', aliases: ['周公辅成王'],
+  startYear: -1042, endYear: -1035, yearPrecision: 'circa',
+  editorialPeriodId: 'pre-qin', eraId: 'pre-qin', polityIds: ['western-zhou'],
+  period: '西周初年', categories: ['politics', 'institution'], themeIds: [], influence: 4,
+  summary: '周武王去世后，成王年幼，周公旦代行王政。面对管叔、蔡叔等联合武庚发动的叛乱，周公率军东征，随后营建洛邑、分封诸侯并整顿礼乐制度，帮助西周王朝稳定东方统治，也使摄政、宗法与礼制成为后世讨论早期国家治理的重要范例。',
+  personIds: [], placeIds: [], parentId: null, childIds: [], relationIds: [],
+  sourceRefs: [{ sourceId: 'bai-shouyi-general-history', locator: '第一卷，西周政治相关章节' }],
+  color: '#bc9365', layout: { lane: 'politics', offset: [0, 0] }, detailLevel: 'basic'
+};
+const coreDetails = {
+  id: basic.id, background: '武王去世后成王年幼。', causes: ['王位传承与东方叛乱。'],
+  course: [{ year: -1040, title: '东征', description: '平定东方叛乱。' }],
+  results: ['稳定王朝。'], impacts: [{ dimension: 'institution', text: '整顿礼制。' }], historiography: '年代采用约数。'
+};
+
+describe('basic/core content contracts', () => {
+  it('accepts basic catalog metadata with located sources and either declared depth', () => {
+    expect(basicEventRecordSchema.parse(basic).detailLevel).toBe('basic');
+    expect(basicEventRecordSchema.parse({ ...basic, detailLevel: 'core' }).detailLevel).toBe('core');
+    expect(historyEventArchiveSchema.parse(basic).detailLevel).toBe('basic');
+  });
+  it.each([
+    { sourceRefs: [] }, { sourceRefs: [{ sourceId: 'book' }] },
+    { detailLevel: 'extended' }, { editorialPeriodId: undefined }, { sourceIds: ['book'] },
+    { startYear: 0 }, { startYear: -1034 }, { endYear: -1035.5 },
+    { parentId: basic.id }, { childIds: [basic.id] }, { background: '目录不拥有正文' },
+    { title: '<b>周公</b>' }, { aliases: ['<!--注释-->'] },
+    { summary: '<p>' + '史'.repeat(100) + '</p>' }
+  ])('rejects malformed catalog metadata: %j', change => {
+    expect(basicEventRecordSchema.safeParse({ ...basic, ...change }).success).toBe(false);
+  });
+  it.each([79, 151])('rejects summaries with %i Han characters despite punctuation and Latin padding', count => {
+    expect(basicEventRecordSchema.safeParse({ ...basic, summary: '史'.repeat(count) + '。 abc'.repeat(20) }).success).toBe(false);
+  });
+  it.each([80, 150])('accepts the inclusive %i Han character summary boundary', count => {
+    expect(basicEventRecordSchema.safeParse({ ...basic, summary: '史'.repeat(count) + '。abc' }).success).toBe(true);
+  });
+  it.each([
+    { sourceId: 'book', locator: '' }, { sourceId: 'book', locator: '  ' },
+    { sourceId: 'Bad_ID', locator: '卷一' }, { sourceId: 'book', locator: '<i>卷一</i>' },
+    { sourceId: 'book', locator: '卷一', note: '<!--注释-->' },
+    { sourceId: 'book', locator: '卷一', extra: true }
+  ])('requires a safe concrete source locator: %j', reference => {
+    expect(sourceReferenceSchema.safeParse(reference).success).toBe(false);
+  });
+  it('preserves located source notes', () => {
+    expect(sourceReferenceSchema.parse({ sourceId: 'book', locator: '卷一', note: '年代有争议' }).note).toBe('年代有争议');
+  });
+  it('accepts complete core details and merges only on the core archive branch', () => {
+    expect(coreEventDetailsSchema.parse(coreDetails).course[0].year).toBe(-1040);
+    expect(historyEventArchiveSchema.parse({ ...basic, ...coreDetails, detailLevel: 'core' }).detailLevel).toBe('core');
+    expect(historyEventArchiveSchema.safeParse({ ...basic, ...coreDetails }).success).toBe(false);
+    expect(historyEventArchiveSchema.safeParse({ ...basic, detailLevel: 'core' }).success).toBe(false);
+  });
+  it.each([
+    { causes: [] }, { course: [] }, { results: [] }, { impacts: [] }, { background: ' ' },
+    { historiography: '<p>说明</p>' }, { title: '元数据不得重复' },
+    { course: [{ year: 0, title: '错误', description: '无零年' }] }
+  ])('rejects incomplete or unsafe core details: %j', change => {
+    expect(coreEventDetailsSchema.safeParse({ ...coreDetails, ...change }).success).toBe(false);
+  });
+  it.each([-1043, -1034])('rejects a merged core course year %i outside the catalog range', courseYear => {
+    expect(historyEventArchiveSchema.safeParse({ ...basic, ...coreDetails, detailLevel: 'core', course: [{ ...coreDetails.course[0], year: courseYear }] }).success).toBe(false);
+  });
+  it('validates editorial periods without requiring non-overlapping political chronology', () => {
+    const period = { id: 'pre-qin', name: '先秦', startYear: -2070, endYear: -221, eventQuota: 170, coreQuota: 25 };
+    expect(editorialPeriodSchema.parse(period).id).toBe('pre-qin');
+    for (const change of [{ startYear: 0 }, { endYear: -2071 }, { coreQuota: 171 }, { eventQuota: 0 }, { coreQuota: -1 }, { name: '<b>先秦</b>' }]) {
+      expect(editorialPeriodSchema.safeParse({ ...period, ...change }).success).toBe(false);
+    }
+  });
+  it('keeps compact records free of locators and validates declared new metadata', () => {
+    const { sourceRefs: _refs, ...metadata } = basic;
+    const compact = { ...metadata, year: -1042, sourceIds: ['bai-shouyi-general-history'] };
+    expect(eventIndexSchema.parse(compact).detailLevel).toBe('basic');
+    for (const change of [{ detailLevel: 'unknown' }, { editorialPeriodId: undefined }, { summary: '太短' }, { sourceRefs: basic.sourceRefs }, { year: -1035 }]) {
+      expect(eventIndexSchema.safeParse({ ...compact, ...change }).success).toBe(false);
+    }
+  });
+});
+
+it('rejects pre-catalog archives and indexes through canonical public schemas', () => {
+  expect(eventArchiveSchema.safeParse(oldEvent).success).toBe(false);
+  const { background, causes, course, results, impacts, historiography, ...oldCompact } = oldEvent;
+  expect(eventIndexSchema.safeParse({ ...oldCompact, year: event.startYear }).success).toBe(false);
+});
+
+// Missing polity/date/alias validation admits invalid shared identities.
+describe('shared polity registry contract', () => {
+  const polity = { id: 'western-han', name: '西汉', aliases: ['前汉'], startYear: -202, endYear: 8 };
+  it('accepts BCE to CE lifetimes and trims aliases', () => {
+    expect(politySchema.parse({ ...polity, aliases: [' 前汉 '] })).toMatchObject({ aliases: ['前汉'], startYear: -202, endYear: 8 });
+    expect(politySchema.parse({ ...polity, aliases: [] }).aliases).toEqual([]);
+  });
+  it.each([{ id: 'Han_ID' }, { name: ' ' }, { aliases: [' '] }, { aliases: ['<b>汉</b>'] }, { aliases: '前汉' }, { aliases: undefined }, { startYear: 0 }, { endYear: 0 }, { startYear: 1.5 }, { endYear: -203 }, { extra: true }])('rejects malformed polity %j', change => {
+    expect(politySchema.safeParse({ ...polity, ...change }).success).toBe(false);
+  });
+});
+
+it.each(['website', 'institution', 'article'])('requires an access date for web source kind %s', kind => {
+  const web = { id: 'museum', title: '馆藏资料', kind, url: 'https://example.com/history', accessedAt: '2026-11-11' };
+  expect(sourceSchema.safeParse(web).success).toBe(true);
+  expect(sourceSchema.safeParse({ ...web, accessedAt: undefined }).success).toBe(false);
+  if (kind === 'website') expect(sourceSchema.safeParse({ ...web, url: undefined }).success).toBe(false);
+});
+it('requires an access date even when a book provides an online URL', () => {
+  expect(sourceSchema.safeParse({ id: 'book', title: '史书', kind: 'book', url: 'https://example.com' }).success).toBe(false);
+});
+it('rejects reversed longitude/latitude coordinates for Chinese locations', () => {
+  expect(placeIndexSchema.safeParse({ id: 'changan', name: '长安', modernName: '西安', aliases: [], historicalNames: [], coordinates: [34.3, 108.9], eventIds: [] }).success).toBe(false);
+});
+
+it('preserves print article bibliography without requiring a web URL', () => {
+  expect(sourceSchema.safeParse({ id: 'print-article', title: '纸本论文', kind: 'article', authors: ['作者'], publisher: '期刊', edition: '第1期', chapter: '第1—10页' }).success).toBe(true);
 });

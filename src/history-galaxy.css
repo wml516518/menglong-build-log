@@ -912,3 +912,10 @@ body[data-dragging-star="true"] .history-experience { cursor: grabbing !importan
   .history-experience .history-timeline-2d,
   .history-experience.is-timeline:has(.story-panel) .history-timeline-2d { top: 140px; }
 }
+
+.archive-detail-level { display: inline-block; padding: .2rem .55rem; border: 1px solid currentColor; border-radius: 4px; font-size: .75rem; color: #c9b27a; }
+.quick-categories, .explorer-total { color: #c2c6d1; font-size: .8rem; }
+.explorer-total { margin: 0; padding: .55rem 1rem; }
+.quick-sources { margin-top: 1.2rem; }
+.quick-sources .archive-sources { padding-left: 1.2rem; font-size: .8rem; }
+.archive-source-locator { font-weight: 500; }

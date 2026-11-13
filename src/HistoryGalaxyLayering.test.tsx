@@ -1,5 +1,5 @@
 import { Children, isValidElement } from 'react';
-import { act, render, screen } from '@testing-library/react';
+import { act, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { readFileSync } from 'node:fs';
 import HistoryGalaxyApp from './HistoryGalaxyApp';
@@ -41,19 +41,21 @@ it('contains a projected cluster below the explorer, HUD and story controls in t
   try {
     await act(async () => { render(<HistoryGalaxyApp loader={loader} />); });
     const root = screen.getByRole('main');
-    const cluster = await screen.findByRole('button', { name: '聚焦 2 个历史事件' }, { timeout: 5_000 });
+    const scene = within(root.querySelector('[aria-label="三维历史时间轴"]') as HTMLElement);
+    const explorer = within(screen.getByRole('complementary', { name: '历史探索器' }));
+    const cluster = await scene.findByRole('button', { name: '聚焦 2 个历史事件' }, { timeout: 5_000 });
     const sceneLayer = appLayer(cluster, root);
     // A scene HTML descendant must share its root layer with the canvas. It
     // cannot participate in the app's overlay stack using its own larger index.
-    expect(sceneLayer).toBe(screen.getByLabelText('三维历史时间轴'));
+    expect(sceneLayer).toBe(root.querySelector('[aria-label="三维历史时间轴"]'));
     const controls = [
-      screen.getByRole('button', { name: '清除全部筛选' }),
+      explorer.getByRole('button', { name: '清除全部筛选' }),
       screen.getByRole('button', { name: '归位时间轴' }),
-      screen.getByRole('button', { name: '唐', exact: true }),
+      within(screen.getByRole('navigation', { name: '时代导航' })).getByRole('button', { name: '唐', exact: true }),
       screen.getByRole('link', { name: '返回主页' })
     ];
     for (const control of controls) expect(Number(getComputedStyle(sceneLayer!).zIndex)).toBeLessThan(Number(getComputedStyle(appLayer(control, root)!).zIndex));
-    await user.click(screen.getByRole('button', { name: '聚焦历史事件：627年 贞观之治' }));
+    await user.click(within(explorer.getByRole('list', { name: '匹配事件' })).getByRole('button', { name: '聚焦历史事件：627年 贞观之治' }));
     const story = screen.getByRole('dialog', { name: '贞观之治' });
     expect(Number(getComputedStyle(sceneLayer!).zIndex)).toBeLessThan(Number(getComputedStyle(appLayer(story, root)!).zIndex));
   } finally { style.remove(); vi.restoreAllMocks(); vi.unstubAllGlobals(); }

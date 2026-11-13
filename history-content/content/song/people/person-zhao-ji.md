@@ -9,6 +9,7 @@ deathYear: 1135
 roleIds: []
 eventIds:
   - jingkang
+  - song-jin-sea-alliance
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

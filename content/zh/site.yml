@@ -37,11 +37,11 @@ about: 我专注于全栈开发、AI 产品和效率工具。这个网站会记�
 historyGalaxy:
   title: 历史星河
   status: 交互式 3D 作品
-  summary: 从唐朝航行至 1949 年，在历史时间轴上拖拽事件星点，探索人物与时代故事。
+  summary: 从先秦航行至 1949 年，探索 1200 个有来源的历史事件与 200 篇核心档案，在历史时间轴上阅读人物与时代故事。
   stack:
     - Three.js
     - React Three Fiber
-    - 30 个历史事件
+    - 1200 个事件 / 200 篇核心档案
   action: 进入星河
   imageAlt: 深邃三维空间中，一条发光的中国历史时间轴与众多事件星点向远方延伸
 projects:

@@ -8,6 +8,9 @@ deathYear: 1940
 roleIds: []
 eventIds:
   - may-fourth
+  - central-academia
+  - new-culture
+  - pku-women-admission
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

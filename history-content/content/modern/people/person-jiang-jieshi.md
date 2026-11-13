@@ -9,6 +9,7 @@ deathYear: 1975
 roleIds: []
 eventIds:
   - northern-expedition
+  - lugouqiao
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

@@ -7,9 +7,15 @@ birthYear: 1525
 deathYear: 1582
 roleIds: []
 eventIds:
+  - single-whip-national-push
+  - wanli-accession
   - zhang-juzheng
+  - zhang-juzheng-death
+  - zhang-juzheng-kaocheng
+  - zhang-juzheng-mourning-dispute
 sourceIds:
   - bai-shouyi-general-history
+  - mingshi-zhonghua-1974
 yearPrecision: exact
 birthplaceId: null
 placeIds: []

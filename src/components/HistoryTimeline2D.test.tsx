@@ -5,8 +5,9 @@ import { readFileSync } from 'node:fs';
 import { HistoryTimeline2D } from './HistoryTimeline2D';
 import { parseExplorerState } from '../history/explorer/state';
 import type { CompactHistoryEventIndex, HistoryEra } from '../history/content/schema';
+import { legacyEventIds } from '../../tests/fixtures/historyArchives';
 
-const compact: CompactHistoryEventIndex[] = JSON.parse(readFileSync('public/history-content/generated/indexes/events.compact.json', 'utf8'));
+const compact: CompactHistoryEventIndex[] = JSON.parse(readFileSync('public/history-content/generated/indexes/events.compact.json', 'utf8')).filter((event: CompactHistoryEventIndex) => legacyEventIds.has(event.id));
 const eras: HistoryEra[] = JSON.parse(readFileSync('public/history-content/generated/manifest.json', 'utf8')).eras;
 const bce: CompactHistoryEventIndex = { ...compact[0], id: 'qin-unification', title: '秦统一', startYear: -230, endYear: -221, year: -230, eraId: 'qin-han', period: '秦朝建立', yearPrecision: 'range', categories: ['politics'], influence: 5 };
 const items = [bce, ...compact].map(event => ({ event, match: event.id !== compact[1].id, opacity: event.id === compact[1].id ? 0.15 : 1 }));
@@ -15,7 +16,7 @@ function Timeline() {
   return <HistoryTimeline2D events={items} eras={eras} selectedId={selectedId} onSelect={onSelect} state={parseExplorerState(new URLSearchParams())} />;
 }
 
-it('renders all 30 current rows below the 200-row threshold, with semantic era/period grouping and accessible non-color cues', () => {
+it('renders the 30 legacy rows below the 200-row threshold, with semantic era/period grouping and accessible non-color cues', () => {
   render(<HistoryTimeline2D events={items.slice(1)} eras={eras} selectedId={null} onSelect={() => {}} state={parseExplorerState(new URLSearchParams())} />);
   const timeline = screen.getByRole('region', { name: '二维历史时间轴' });
   expect(within(timeline).getAllByRole('button', { name: /查看历史事件/ })).toHaveLength(30);

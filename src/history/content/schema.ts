@@ -2,6 +2,7 @@ import { z } from 'zod';
 
 export const categoryIds = ['politics', 'war', 'institution', 'economy', 'science', 'culture', 'thought', 'religion', 'diplomacy', 'ethnicity', 'society'] as const;
 export const relationTypes = ['cause', 'consequence', 'parallel', 'contrast', 'part-of'] as const;
+export const detailLevels = ['basic', 'core'] as const;
 export const yearPrecisions = ['exact', 'circa', 'decade', 'century', 'range'] as const;
 
 const id = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
@@ -21,15 +22,28 @@ export const sourceSchema = z.strictObject({
   authors: z.array(prose).optional(), publisher: prose.optional(), edition: prose.optional(),
   chapter: prose.optional(), url: z.string().url().startsWith('https://').optional(),
   accessedAt: z.iso.date().optional()
+}).superRefine((value, ctx) => {
+  if (value.kind === 'website' && !value.url) {
+    ctx.addIssue({ code: 'custom', path: ['url'], message: 'Web sources require an HTTPS URL' });
+  }
+  if (value.url && !value.accessedAt) {
+    ctx.addIssue({ code: 'custom', path: ['accessedAt'], message: 'Web sources require an access date' });
+  }
 });
 
-const eventFields = {
+export const politySchema = z.strictObject({
+  id, name: prose, aliases: z.array(prose), startYear: year, endYear: year
+}).refine(value => value.startYear <= value.endYear, { path: ['endYear'], message: 'End precedes start' });
+
+const sharedEventFields = {
   id, title: prose, aliases: z.array(prose), startYear: year, endYear: year,
   yearPrecision: precision, eraId: id, polityIds: ids, period: prose,
   categories: z.array(category).min(1), themeIds: ids, influence, summary: prose,
   personIds: ids, placeIds: ids, parentId: id.nullable(), childIds: ids, relationIds: ids,
-  sourceIds: ids.min(1), color, layout
+  color, layout
 };
+
+const eventFields = { ...sharedEventFields, sourceIds: ids.min(1) };
 
 function validateEvent(value: { id: string; startYear: number; endYear: number; parentId: string | null; childIds: string[] }, ctx: z.RefinementCtx) {
   if (value.startYear > value.endYear) ctx.addIssue({ code: 'custom', path: ['endYear'], message: 'End precedes start' });
@@ -37,17 +51,55 @@ function validateEvent(value: { id: string; startYear: number; endYear: number; 
   if (value.childIds.includes(value.id)) ctx.addIssue({ code: 'custom', path: ['childIds'], message: 'An event cannot contain itself' });
 }
 
-export const eventArchiveSchema = z.strictObject({
-  ...eventFields, background: prose, causes: z.array(prose).min(1), course: z.array(timelineEntry).min(1),
+const coreNarrativeFields = {
+  background: prose, causes: z.array(prose).min(1), course: z.array(timelineEntry).min(1),
   results: z.array(prose).min(1), impacts: z.array(z.strictObject({ dimension: category, text: prose })).min(1),
   historiography: prose
-}).superRefine((value, ctx) => {
-  validateEvent(value, ctx);
+};
+
+function validateCourse(value: { startYear: number; endYear: number; course: { year: number }[] }, ctx: z.RefinementCtx) {
   value.course.forEach((entry, index) => {
     if (entry.year < value.startYear || entry.year > value.endYear) {
       ctx.addIssue({ code: 'custom', path: ['course', index, 'year'], message: 'Course year is outside the event' });
     }
   });
+}
+
+export const sourceReferenceSchema = z.strictObject({ sourceId: id, locator: prose, note: prose.optional() });
+
+const eventSummary = prose.refine(value => {
+  const count = value.match(/\p{Script=Han}/gu)?.length ?? 0;
+  return count >= 80 && count <= 150;
+}, 'Event summary must contain 80–150 Chinese characters');
+
+const catalogEventFields = {
+  ...sharedEventFields, summary: eventSummary, editorialPeriodId: id,
+  sourceRefs: z.array(sourceReferenceSchema).min(1)
+};
+
+export const basicEventRecordSchema = z.strictObject({
+  ...catalogEventFields, detailLevel: z.enum(detailLevels)
+}).superRefine(validateEvent);
+
+export const coreEventDetailsSchema = z.strictObject({ id, ...coreNarrativeFields });
+
+export const historyEventArchiveSchema = z.discriminatedUnion('detailLevel', [
+  z.strictObject({ ...catalogEventFields, detailLevel: z.literal('basic') }),
+  z.strictObject({ ...catalogEventFields, ...coreNarrativeFields, detailLevel: z.literal('core') })
+]).superRefine((value, ctx) => {
+  validateEvent(value, ctx);
+  if (value.detailLevel === 'core') validateCourse(value, ctx);
+});
+
+// Canonical public archive schema accepts only catalog-backed records.
+export const eventArchiveSchema = historyEventArchiveSchema;
+
+export const editorialPeriodSchema = z.strictObject({
+  id, name: prose, startYear: year, endYear: year,
+  eventQuota: z.number().int().positive(), coreQuota: z.number().int().nonnegative()
+}).superRefine((value, ctx) => {
+  if (value.startYear > value.endYear) ctx.addIssue({ code: 'custom', path: ['endYear'], message: 'End precedes start' });
+  if (value.coreQuota > value.eventQuota) ctx.addIssue({ code: 'custom', path: ['coreQuota'], message: 'Core quota exceeds event quota' });
 });
 
 /** A range needs both endpoints; this helper formats its individual endpoints. */
@@ -61,7 +113,12 @@ export function formatHistoryYear(value: number, yearPrecision: z.infer<typeof p
   return `${before}${magnitude} 年`;
 }
 
-export const eventIndexSchema = z.strictObject({ ...eventFields, year }).superRefine((value, ctx) => {
+// Compact records always carry their catalog ownership and archive depth.
+export const eventIndexSchema = z.strictObject({
+  ...eventFields, year, editorialPeriodId: id, detailLevel: z.enum(detailLevels)
+}).superRefine((value, ctx) => {
+  const summaryResult = eventSummary.safeParse(value.summary);
+  if (!summaryResult.success) summaryResult.error.issues.forEach(issue => ctx.addIssue({ ...issue, path: ['summary', ...issue.path] }));
   validateEvent(value, ctx);
   if (value.year !== value.startYear) ctx.addIssue({ code: 'custom', path: ['year'], message: 'Representative year must equal startYear' });
 });
@@ -122,13 +179,20 @@ export const relationSchema = z.strictObject({ id, fromId: id, toId: id, type: z
   .refine(value => value.fromId !== value.toId, { path: ['toId'], message: 'An event cannot relate to itself' });
 
 export type HistoryEra = z.infer<typeof eraSchema>;
-export type HistoryEventArchive = z.infer<typeof eventArchiveSchema>;
+export type SourceReference = z.infer<typeof sourceReferenceSchema>;
+export type EditorialPeriod = z.infer<typeof editorialPeriodSchema>;
+export type BasicEventRecord = z.infer<typeof basicEventRecordSchema>;
+export type CoreEventDetails = z.infer<typeof coreEventDetailsSchema>;
+// Canonical archive contract.
+export type HistoryEventArchiveRecord = z.infer<typeof historyEventArchiveSchema>;
+export type HistoryEventArchive = HistoryEventArchiveRecord;
 export type CompactHistoryEventIndex = z.infer<typeof eventIndexSchema>;
 export type PersonIndex = z.infer<typeof personIndexSchema>;
 export type PersonArchive = z.infer<typeof personArchiveSchema>;
 export type PlaceIndex = z.infer<typeof placeIndexSchema>;
 export type ThemeArchive = z.infer<typeof themeArchiveSchema>;
 export type ThemeIndex = z.infer<typeof themeIndexSchema>;
+export type PolityRecord = z.infer<typeof politySchema>;
 export type SourceRecord = z.infer<typeof sourceSchema>;
 export type HistoryRelation = z.infer<typeof relationSchema>;
 export type CategoryId = typeof categoryIds[number];

@@ -1,0 +1,7004 @@
+{
+  "eraId": "song",
+  "events": [
+    {
+      "aliases": [],
+      "background": "后周军队北上途中在陈桥驿发生兵变，将领拥立赵匡胤即位。",
+      "categories": [
+        "politics",
+        "institution"
+      ],
+      "causes": [
+        "五代后期军队与政权更替紧密相连。"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "course": [
+        {
+          "description": "宋朝建立后逐步结束五代十国分裂局面，并通过收兵权、重文官等方式重塑国家结构。",
+          "title": "陈桥兵变",
+          "year": 960
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 960,
+      "eraId": "song",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "chenqiao",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "其影响贯穿此后三百余年的制度与文化。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          1.6,
+          0.5
+        ]
+      },
+      "parentId": null,
+      "period": "宋代",
+      "personIds": [
+        "person-zhao-kuangyin",
+        "person-shi-shouxin"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [
+        "song-civil-military-separation-to-chenqiao"
+      ],
+      "results": [
+        "其影响贯穿此后三百余年的制度与文化。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》太祖本纪，建隆元年陈桥即位",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《续资治通鉴长编》卷一，建隆元年正月",
+          "sourceId": "xuzizhitongjian-changbian-zhonghua-2004"
+        }
+      ],
+      "startYear": 960,
+      "summary": "赵匡胤受拥立建立宋朝，开启新的统一进程。后周军队北上途中在陈桥驿发生兵变，将领拥立赵匡胤即位。宋朝建立后逐步结束五代十国分裂局面，并通过收兵权、重文官等方式重塑国家结构。其影响贯穿此后三百余年的制度与文化。",
+      "themeIds": [],
+      "title": "陈桥兵变",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [
+        "song-later-shu-fall",
+        "song-nantang-fall",
+        "song-wuyue-submission",
+        "song-northern-han-fall"
+      ],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 979,
+      "eraId": "song",
+      "id": "song-northern-unification",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -0.36,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-unification-part-song-later-shu-fall",
+        "song-unification-part-song-nantang-fall",
+        "song-unification-part-song-wuyue-submission",
+        "song-unification-part-song-northern-han-fall"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》太祖本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 960,
+      "summary": "宋朝建立后先后平定荆湖、后蜀、南汉和南唐，逐步结束五代十国的南北割据。朝廷以禁军、转运和地方接收官署配合军事行动，统一过程跨越多年，并非陈桥兵变当天即可完成的政治事实。荆湖连接江汉，后蜀控制四川，南唐据有江南，分别收取这些地区使宋廷逐步掌握南方财赋。",
+      "themeIds": [],
+      "title": "宋初统一战争",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "宋初禁军将领既有领兵经验，也可能凭亲兵和宫廷联系介入皇位交替。赵匡胤即位后逐步分离将领的统兵、调兵和地方经营权，石守信等人离开禁军指挥岗位只是其中一环。枢密院与三衙分掌发兵和统兵，地方节镇的财政与兵员也被朝廷收束。这一安排降低了单个军将控制政局的可能，同时使宋朝长期依赖中央调度和文臣参预军政。史书中的宴饮劝退故事可以帮助记忆，却不能代替连续多年的人事和机构调整。",
+      "categories": [
+        "institution"
+      ],
+      "causes": [
+        "五代以来将领掌握亲兵，频繁影响皇位更替。"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "course": [
+        {
+          "description": "太祖调整石守信等禁军将领的统兵职位。",
+          "title": "杯酒释兵权",
+          "year": 961
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 961,
+      "eraId": "song",
+      "historiography": "杯酒故事经过后世史家加工，应与宋初持续的军制重组一起考察。",
+      "id": "song-civil-military-separation",
+      "impacts": [
+        {
+          "dimension": "institution",
+          "text": "宋代此后的调兵权安排更重中央分掌，形成文官参预军事决策的长期制度环境。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          0,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [
+        "person-zhao-kuangyin"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-civil-military-separation-to-chenqiao"
+      ],
+      "results": [
+        "禁军指挥权逐渐归于朝廷，文官监督得到强化。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》太祖本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《续资治通鉴长编》卷二，建隆二年收兵权条",
+          "sourceId": "xuzizhitongjian-changbian-zhonghua-2004"
+        }
+      ],
+      "startYear": 961,
+      "summary": "宋太祖通过宴饮和任命调整，解除石守信等宿将的禁军统兵权。相关叙事在后世史书中带有劝诫色彩，但宋初削弱将领私人军权、加强中央控制的政策方向明确，地方军政结构也随之改变。五代以来将领掌握亲兵，频繁影响皇位更替。",
+      "themeIds": [],
+      "title": "杯酒释兵权",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 965,
+      "eraId": "song",
+      "id": "song-later-shu-fall",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0.36,
+          -0.58
+        ]
+      },
+      "parentId": "song-northern-unification",
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "later-shu"
+      ],
+      "relationIds": [
+        "song-unification-part-song-later-shu-fall"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》太祖本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 965,
+      "summary": "宋军从北面进攻四川，后蜀孟昶投降，成都及蜀地纳入宋朝版图。军事征服之后还需处理富庶地区的税赋、官员和民间秩序，蜀地后来多次出现对新政权征敛的反抗。孟昶出降让宋军接管成都的府库和州县，宋廷由此获得四川税源，接收官吏则成为战后的当务之急。",
+      "themeIds": [],
+      "title": "后蜀降宋",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "science"
+      ],
+      "childIds": [],
+      "color": "#79afc6",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 970,
+      "eraId": "song",
+      "id": "song-firearms-gunpowder",
+      "influence": 3,
+      "layout": {
+        "lane": "science",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百九十七《兵志·器甲之制》，开宝三年冯继升等进火箭法条",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 970,
+      "summary": "开宝三年兵部令史冯继升等进献火箭法，宋太祖命人试验并给予赏赐。这是北宋军器改进的一条明确年代记录，火箭制作仍依赖工匠和作坊；不能据此把后世爆炸性火器的性能投射到当时。这次试验的主体是向朝廷进献方法的军器人员，记载所能确认的是献法与试用，不能据此判定列装数量。",
+      "themeIds": [],
+      "title": "北宋火箭法试验",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 973,
+      "eraId": "song",
+      "id": "song-exam-reform",
+      "influence": 4,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          1.08,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百五十五《选举志·科目上》，开宝六年殿试遂为常制段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 973,
+      "summary": "开宝六年礼部取士被诉用情，太祖召见落第举人并另行御殿考试，殿试遂成为常制。皇帝直接参与录取，改变礼部主考与士人之间的关系。落第举人的申诉使原有礼部榜单受到复核，取士的最后裁决由贡院移至御前，成为此后三级考试的终环。",
+      "themeIds": [],
+      "title": "开宝六年殿试成常制",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 975,
+      "eraId": "song",
+      "id": "song-nantang-fall",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -0.72,
+          0.58
+        ]
+      },
+      "parentId": "song-northern-unification",
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "southern-tang"
+      ],
+      "relationIds": [
+        "song-unification-part-song-nantang-fall"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》太祖本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 975,
+      "summary": "南唐后主李煜出降，金陵陷落，宋朝控制长江下游的重要经济区域。南唐文化并未随政权消失，诗词、书画和江南士人继续进入宋代文化网络，政治统一与文化延续同时发生。金陵原是南唐的都城，李煜出城投降使江南失去独立朝廷，宋军得以接收长江下游州县与府库。",
+      "themeIds": [],
+      "title": "南唐归宋",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 975,
+      "eraId": "song",
+      "id": "song-state-academy",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          0.72,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百五十七《选举志·学校试》，开宝八年国子监补监生阙奏",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 975,
+      "summary": "开宝八年国子监奏请让在京进士等补足久不赴学的监生名额，朝廷准奏。官学讲席与科举准备由此衔接，但地方私学仍是士人求学的重要渠道。补阙对象是在京进士等已有应举经历者，奏请解决的是监生长期缺席留下的空额，并非另设一所新学校。",
+      "themeIds": [],
+      "title": "开宝八年国子监补监生阙",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 977,
+      "eraId": "song",
+      "id": "song-canal-granary",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -1.08,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷九十三《河渠志·汴河》，太平兴国二年七月修开封大宁堤条",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 977,
+      "summary": "太平兴国二年汴水涨溢，冲坏开封大宁堤并淹没农田，朝廷征发怀孟丁夫三千五百人堵塞缺口。汴河关系京城漕运，修堤也占用地方劳力。怀州、孟州丁夫被调往开封抢修，工程先堵决口再护田亩，也关系经汴水入京的漕船能否继续通行。",
+      "themeIds": [],
+      "title": "开封大宁堤汴水修防",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 978,
+      "eraId": "song",
+      "id": "song-wuyue-submission",
+      "influence": 3,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          -0.36,
+          0.8699999999999999
+        ]
+      },
+      "parentId": "song-northern-unification",
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "wuyue"
+      ],
+      "relationIds": [
+        "song-unification-part-song-wuyue-submission"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》太宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 978,
+      "summary": "吴越王钱俶将两浙州县交给宋朝，避免了大规模征服战争。吴越此前重视水利、寺院和海上交通，政权和平转移让江南行政与地方经济得以较连续地纳入宋朝。钱俶交出的既有杭州王府，也有所属州县和户口簿籍，两浙遂由吴越国土转为宋廷直接接收的地区。",
+      "themeIds": [],
+      "title": "吴越纳土归宋",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 979,
+      "eraId": "song",
+      "id": "song-gaoliang-river",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0.36,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "liao"
+      ],
+      "relationIds": [
+        "song-northern-han-fall-to-song-gaoliang-river"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》太宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 979,
+      "summary": "宋太宗灭北汉后乘势北进，在高梁河附近遭辽军击败。仓促扩大战线、补给不足和辽骑反击共同影响战局；夺回燕云的目标未实现，宋朝此后对北方战争更趋谨慎。宋军围攻幽州未能迅速下城，辽军来援后转入高梁河交战，太原获胜后的北进因这次失败而中止。",
+      "themeIds": [],
+      "title": "高梁河之战",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "北汉凭太原城防和辽朝援助，仍保持五代以来的割据局面。宋太宗先切断外援，再集中军队围城；辽军救援未能扭转太原守局，刘继元最终投降。此后宋朝把主要军事目标转向辽所控制的燕云，太宗同年在高梁河的失败说明灭北汉并不等于具备一举北取燕云的能力。太原归宋完成了中原主要割据政权的归并，辽宋边界和北方军事压力却仍然存在，两场同年的战争应分别判断。",
+      "categories": [
+        "war"
+      ],
+      "causes": [
+        "北汉据太原并得到辽朝支持，成为宋初统一的最后障碍。"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "course": [
+        {
+          "description": "太宗围攻太原并接受北汉君主投降。",
+          "title": "宋灭北汉",
+          "year": 979
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 979,
+      "eraId": "song",
+      "historiography": "统一北汉与随后高梁河失利相接，不能把二者合写成一场成功北伐。",
+      "id": "song-northern-han-fall",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "统一的地理边界向太原推进，宋辽燕云争夺随即成为北方战略中心。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0,
+          1.16
+        ]
+      },
+      "parentId": "song-northern-unification",
+      "period": "北宋辽夏金",
+      "personIds": [
+        "person-zhao-guangyi"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "northern-han",
+        "liao"
+      ],
+      "relationIds": [
+        "song-unification-part-song-northern-han-fall",
+        "song-northern-han-fall-to-song-gaoliang-river"
+      ],
+      "results": [
+        "中原主要割据政权结束，但燕云仍由辽朝控制。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》太宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《续资治通鉴长编》太平兴国四年太原克复条",
+          "sourceId": "xuzizhitongjian-changbian-zhonghua-2004"
+        }
+      ],
+      "startYear": 979,
+      "summary": "宋太宗围攻太原，北汉最终投降，五代以来主要中原割据政权至此结束。辽朝援军未能阻止其灭亡，但燕云十六州仍在辽手中，宋辽边境对峙随即转入新的阶段。北汉据太原并得到辽朝支持，成为宋初统一的最后障碍。",
+      "themeIds": [],
+      "title": "宋灭北汉",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 986,
+      "eraId": "song",
+      "id": "song-yongxi-northern-expedition",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -0.72,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》太宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 986,
+      "summary": "宋太宗组织多路军队进攻辽境，企图收复燕云州县，初期进展很快，后因协同失当和辽军反击而失败。杨业战死尤其被后世记忆反复书写，此役改变宋辽双方对边境作战的判断。东路曹彬军撤退使各路失去呼应，西路杨业掩护迁民时陷入孤军作战，收复燕云的部署由此破裂。",
+      "themeIds": [],
+      "title": "雍熙北伐",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 993,
+      "eraId": "song",
+      "id": "song-wang-xiaobo-revolt",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          0,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》太宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 993,
+      "summary": "四川地区因赋税和豪强压迫爆发王小波、李顺领导的起义，起义军一度控制成都。宋朝用兵镇压后调整地方管理，事件揭示征服后蜀并未自动解决土地、赋役和市场利益分配的问题。李顺继王小波之后入据成都并建立政权，宋廷必须重新夺取成都，起事已经超出单一州县的抗税冲突。",
+      "themeIds": [],
+      "title": "王小波李顺起义",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1001,
+      "eraId": "song",
+      "id": "song-champa-rice",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.36,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百七十三《食货志·农田》，稻种与江南耕作段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1001,
+      "summary": "宋朝引进并推广耐旱、早熟的占城稻，特别在江南农业中产生影响。新稻种的传播与水利、田地开发和农民经验结合，改善部分地区的收成，但产量变化不能单独归因于一个品种。占城稻的早熟特性给水旱风险较大的稻田增添选择，推广对象仍需依江南土质与灌溉条件决定播种办法。",
+      "themeIds": [],
+      "title": "占城稻入宋",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1004,
+      "eraId": "song",
+      "id": "song-liao-chanzhou-campaign",
+      "influence": 4,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0.72,
+          1.16
+        ]
+      },
+      "parentId": "chanyuan",
+      "period": "北宋辽夏金",
+      "personIds": [
+        "person-zhao-heng"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "liao"
+      ],
+      "relationIds": [
+        "song-chanyuan-part-song-liao-chanzhou-campaign"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》真宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1004,
+      "summary": "辽军深入宋境并逼近澶州，宋真宗在寇准等人的劝说下赴前线。双方虽然具备继续作战的能力，却同时面临补给和国内政治压力，战场对峙为随后谈判创造条件。澶州紧邻黄河，真宗到达北城后稳定宋军军心，辽军深入宋境的进程因守城与议和同时展开而改变。",
+      "themeIds": [],
+      "title": "澶州宋辽对峙",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "辽军南下至澶州，宋真宗亲征后双方议和。",
+      "categories": [
+        "diplomacy",
+        "war"
+      ],
+      "causes": [
+        "宋辽长期军事竞争促使双方在澶州战事后寻求议和。"
+      ],
+      "childIds": [
+        "song-liao-chanzhou-campaign"
+      ],
+      "color": "#75b9aa",
+      "course": [
+        {
+          "description": "宋辽约为兄弟之国，并建立岁币与边境交往机制。",
+          "title": "澶渊之盟",
+          "year": 1004
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1005,
+      "eraId": "song",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "chanyuan",
+      "impacts": [
+        {
+          "dimension": "diplomacy",
+          "text": "盟约常被放在军事得失中评价，但长期和平也促进了贸易、人口休养与多民族地区的日常交流。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          -0.9,
+          -0.8
+        ]
+      },
+      "parentId": null,
+      "period": "宋代",
+      "personIds": [
+        "person-zhao-heng",
+        "person-xiao-chuo",
+        "person-kou-zhun"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [
+        "song-chanyuan-part-song-liao-chanzhou-campaign",
+        "liao-empress-xiao-regency-to-chanyuan"
+      ],
+      "results": [
+        "盟约常被放在军事得失中评价，但长期和平也促进了贸易、人口休养与多民族地区的日常交流。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》真宗本纪，景德元年至二年澶渊议和",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《辽史》圣宗本纪，统和二十二年至二十三年宋辽议和",
+          "sourceId": "liaoshi-zhonghua-1974"
+        }
+      ],
+      "startYear": 1004,
+      "summary": "宋辽议和后维持了一个世纪左右的边境和平。辽军南下至澶州，宋真宗亲征后双方议和。宋辽约为兄弟之国，并建立岁币与边境交往机制。盟约常被放在军事得失中评价，但长期和平也促进了贸易、人口休养与多民族地区的日常交流。",
+      "themeIds": [],
+      "title": "澶渊之盟",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1005,
+      "eraId": "song",
+      "id": "song-liao-border-markets",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          1.08,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百八十六《食货志·互市舶法》，宋辽榷场段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1005,
+      "summary": "澶渊议和后宋辽边境榷场持续进行官方监督下的商品交换，丝绢、茶叶与马匹等物资流通。边市常受外交紧张和走私影响，仍使边民、商人和国家财政保持日常联系。榷场把越境交易置于官署查验与征税之下，宋辽即使没有战事，商货能否过境仍受边境禁令约束。",
+      "themeIds": [],
+      "title": "宋辽榷场贸易",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "religion"
+      ],
+      "childIds": [],
+      "color": "#a99cbf",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1009,
+      "eraId": "song",
+      "id": "song-quanzhou-mosques",
+      "influence": 3,
+      "layout": {
+        "lane": "religion",
+        "offset": [
+          -0.36,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "“清净寺”重点文物条，门楼碑刻始建于1009年段",
+          "sourceId": "quanzhou-qingjingsi"
+        }
+      ],
+      "startYear": 1009,
+      "summary": "泉州清净寺据门楼阿拉伯文碑刻始建于北宋大中祥符二年，为往来海商和当地穆斯林提供礼拜场所。建筑及后世修缮显示港口城市的宗教生活与远距离贸易相连；寺院创建并不等于此时才有外来商人进入泉州。阿拉伯文创建题记为寺院年代提供实物依据，泉州港的穆斯林社群也由礼拜建筑留下可辨认的城市遗迹。",
+      "themeIds": [],
+      "title": "泉州清净寺创建",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "religion"
+      ],
+      "childIds": [],
+      "color": "#a99cbf",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1011,
+      "eraId": "song",
+      "id": "song-dazhong-xiangfu-canon",
+      "influence": 3,
+      "layout": {
+        "lane": "religion",
+        "offset": [
+          -0.72,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》真宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1011,
+      "summary": "宋真宗时期朝廷大规模举行封禅与道教仪式，宣示皇权得到天命支持。宗教活动动员官员与地方资源，也引发士人对财政耗费和政治效果的评论，不能仅作为个人信仰来理解。真宗把天书祥瑞与封禅、祀神联系起来，朝廷礼官和地方迎奉人员由此共同参与皇权神圣性的展示。",
+      "themeIds": [],
+      "title": "大中祥符道教活动",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1017,
+      "eraId": "song",
+      "id": "song-jiangnan-irrigation",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.36,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷九十六《河渠志·东南诸水上》，天禧元年升州复治后湖蓄水段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1017,
+      "summary": "天禧元年升州知州丁谓请求恢复城北后湖蓄水，修治岸堤，以供灌溉并让贫民捕鱼采菱。此举减少此前放湖为田所得的租钱，反映灌溉与财政取舍。后湖由出租耕种恢复为蓄水水面，原来的地租收入让位于灌田和渔采，贫民可以直接利用湖中物产。",
+      "themeIds": [],
+      "title": "升州复治后湖蓄水",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1033,
+      "eraId": "song",
+      "id": "song-empress-liu-regency",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          0,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷九《仁宗本纪》，乾兴元年真宗遗诏刘太后权同处分军国事条",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1022,
+      "summary": "宋仁宗即位时年幼，刘太后参与朝政并处理军政任免，维持朝廷运转。其权力在宋代礼法讨论中引起争议，也说明皇位继承、后宫与文官集团之间的关系难以由固定制度完全规范。真宗遗诏使太后得以同处分军国事，仁宗的皇位与刘氏的临朝权力同时成立，区别于太后另立新君。",
+      "themeIds": [],
+      "title": "刘太后临朝",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "四川铁钱重量大，益州商人先以可兑换的纸券替代携钱远行。最初由富民十六户经营的交子发生兑付困难后，朝廷接受薛田等人的奏议，设益州交子务，把发行和兑换纳入官府管理。官交子有发行额度、流通期限和兑现安排，国家信用提高了使用范围，却也使财政需要承担准备不足时的风险。官办确立的是蜀地一项货币制度，不意味着宋境所有市场立刻使用纸币；它的历史影响在于把商人信用转为可由国家管理、也可能被国家超发的支付工具。",
+      "categories": [
+        "economy"
+      ],
+      "causes": [
+        "四川铁钱沉重，商业交易需要可携带的信用工具。"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "course": [
+        {
+          "description": "益州官府接管交子发行并设立管理机构。",
+          "title": "益州交子官办",
+          "year": 1023
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1023,
+      "eraId": "song",
+      "historiography": "交子的起点是商人实践，官办制度不意味着纸币一开始便全国通用。",
+      "id": "song-jiaozi-official",
+      "impacts": [
+        {
+          "dimension": "economy",
+          "text": "纸券由商人信用进入国家货币治理，为后来的官营纸币留下制度经验与通胀风险。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.72,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [
+        "person-xue-tian"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-jiaozi-official-to-song-quanzhou-maritime-office"
+      ],
+      "results": [
+        "纸币获得官府信用，同时产生发行与兑换风险。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百八十一《食货志·会子》，富民十六户与薛田请置益州交子务段",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《皇宋通鉴长编纪事本末》卷四十五，天圣元年十一月交子条",
+          "sourceId": "huang-song-jishi-benmo"
+        }
+      ],
+      "startYear": 1023,
+      "summary": "四川交子从商人信用票据逐渐转入官府经营，成为便于大额交易的纸币形式。其流通依赖准备金、发行限额和市场信任；政府扩大使用纸币也带来滥发和兑换风险，并非货币问题的彻底解决。四川铁钱沉重，商业交易需要可携带的信用工具。",
+      "themeIds": [],
+      "title": "益州交子官办",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1027,
+      "eraId": "song",
+      "id": "song-press-printing",
+      "influence": 3,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          -1.08,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-moving-type-to-song-press-printing"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "“北宋官刻书籍与国子监印书”节，天圣五年《素问》摹印条",
+          "sourceId": "ncl-song-book-printing-2015"
+        }
+      ],
+      "startYear": 1027,
+      "summary": "仁宗天圣五年命国子监摹印放行校正的黄帝内经素问，显示官府将雕版印刷用于医书传播。校勘、刻版与发行需要官署和工匠配合，印成的书籍扩大知识流通，却不能说明所有读者都能轻易获得。国子监承担的是校本的摹印与放行，医学经典经朝廷认可后可重复刷印，医书版本因而获得官刻依据。",
+      "themeIds": [],
+      "title": "国子监摹印黄帝内经素问",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1034,
+      "eraId": "song",
+      "id": "song-fan-zhongyan-border",
+      "influence": 4,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          0.36,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "western-xia"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》范仲淹列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1034,
+      "summary": "宋夏冲突期间，范仲淹在西北主持边防，整顿城寨与军粮，并主张兼顾防守和谈判。边境战争涉及地方居民、贸易和农田，单靠战场胜败难以解决长期的财政与外交压力。范仲淹把驻军依城寨布置，并以屯守、储粮维持西北防线，改变只求迅速出击取胜的用兵取向。",
+      "themeIds": [],
+      "title": "范仲淹经略西北",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "北宋印刷以雕版为常用技术，一部书须逐页刻版，重印与改版各有成本。沈括记录毕昇在庆历年间用胶泥制单字，烧硬后以铁板、药泥排列，加热固定并在印毕拆字复用；多块板可轮替作业。技术说明来自后来成书的《梦溪笔谈》，保存了试制方法，却没有留下毕昇确切试作年份和大规模推广的证据。活字增加了排版的可变性，字量、材料和印量又影响其经济性，所以它与雕版长期并存。",
+      "categories": [
+        "science"
+      ],
+      "causes": [
+        "雕版适合大量印行固定文本，却需要为不同书籍重刻版片。"
+      ],
+      "childIds": [],
+      "color": "#79afc6",
+      "course": [
+        {
+          "description": "毕昇试用胶泥活字排版，沈括后来记录其方法。",
+          "title": "庆历年间活字试制",
+          "year": 1041
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1048,
+      "eraId": "song",
+      "historiography": "技术描述主要见沈括记载，不能据此推定活字立即普遍替代雕版。",
+      "id": "song-moving-type",
+      "impacts": [
+        {
+          "dimension": "science",
+          "text": "可拆换字模提供新的排版方法，但并未立即改变雕版占主导的印刷格局。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "science",
+        "offset": [
+          -0.36,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [
+        "person-bi-sheng"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-moving-type-to-song-press-printing"
+      ],
+      "results": [
+        "活字成为宋代印刷技术多样化的重要证据。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《梦溪笔谈》卷十八《技艺》",
+          "sourceId": "mengxi-bitan-zhonghua-2009"
+        },
+        {
+          "locator": "中国大百科全书“中国印刷术”条，毕昇活字段",
+          "sourceId": "encyclopedia-china-history"
+        }
+      ],
+      "startYear": 1041,
+      "summary": "毕昇在庆历年间以胶泥制成可拆装的活字，提供不同于整版雕刻的排字方法。沈括后来记录了这种技术，说明宋代工匠在印刷生产中持续实验；活字并未立即取代雕版，两种方式长期并用。雕版适合大量印行固定文本，却需要为不同书籍重刻版片。",
+      "themeIds": [],
+      "title": "毕昇活字印刷",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "仁宗朝的边费和冗官问题推动范仲淹、富弼等人进入中枢议政。范仲淹在《答手诏条陈十事》中提出明黜陟、抑侥幸、精贡举等办法，核心是改进官吏考课与磨勘、限制恩荫、调整科举和地方行政。朝廷开始颁行部分措施，但官僚晋升与既得利益直接受影响，弹劾和人事变化使倡议在庆历五年前后陆续停顿。留下的是经过公开讨论的治理议题，而不是已经完成的财政改革；熙宁新法与之有问题意识上的联系，不能视为庆历条文的直接续行。",
+      "categories": [
+        "institution"
+      ],
+      "causes": [
+        "边费、冗官和地方考核问题持续困扰仁宗朝。"
+      ],
+      "childIds": [
+        "song-local-academies"
+      ],
+      "color": "#69ae9d",
+      "course": [
+        {
+          "description": "范仲淹提出整顿吏治和选举的改革措施。",
+          "title": "庆历新政",
+          "year": 1043
+        },
+        {
+          "description": "范仲淹等人离开中枢，整顿考课与选举的措施陆续停顿。",
+          "title": "改革倡议受挫",
+          "year": 1045
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1045,
+      "eraId": "song",
+      "historiography": "庆历措施实施时间短，不能把所有后来的制度变化追溯为其直接成果。",
+      "id": "song-qingli-reforms",
+      "impacts": [
+        {
+          "dimension": "institution",
+          "text": "考课、科举与冗官问题成为后续仁宗末至神宗朝改革反复面对的议题。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          1.08,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [
+        "person-fan-zhongyan"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-qingli-part-song-local-academies",
+        "song-qingli-reforms-to-wang-anshi"
+      ],
+      "results": [
+        "改革遭遇阻力，但其议题进入后续新法讨论。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷三百一十四《范仲淹传》，庆历三年条陈十事段",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《答手诏条陈十事》，明黜陟、抑侥幸、精贡举段",
+          "sourceId": "fan-shishi"
+        }
+      ],
+      "startYear": 1043,
+      "summary": "范仲淹等提出整顿官僚考核、选举和地方治理的措施，希望缓解冗官与边费压力。改革获得仁宗支持却很快遇到政治阻力，部分倡议停止；其讨论延续到熙宁时期的改革。边费、冗官和地方考核问题持续困扰仁宗朝。",
+      "themeIds": [],
+      "title": "庆历新政",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1044,
+      "eraId": "song",
+      "id": "song-local-academies",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -0.36,
+          -1.16
+        ]
+      },
+      "parentId": "song-qingli-reforms",
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-qingli-part-song-local-academies"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百五十七《选举志·学校试》，庆历四年州县皆立学诏",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1044,
+      "summary": "庆历四年仁宗命各州县立学，并由地方选择教授，以扩大儒学教育。州郡奉诏兴学，使地方士人取得更多讲读机会；学校运作仍依赖地方师资与经费。诏令以州县为办学单位，教授由地方择人担任，使儒学讲授从京师官学进一步进入地方官府的职责。",
+      "themeIds": [],
+      "title": "庆历四年州县立学",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1044,
+      "eraId": "song",
+      "id": "song-xia-border-tea",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -0.72,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "western-xia"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百八十四《食货志·茶下》，西北茶马贸易段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1044,
+      "summary": "宋夏边境以茶叶、马匹和日用物资交易，官方榷场与民间走私交织。互市既补充宋军马源，也为西北牧业地区提供商品；战争或封市时，两边居民都要承担损失。宋地茶货向西北牧区运输，马匹则流向宋朝军队，茶的收购与马的估价因此同属边防筹措的问题。",
+      "themeIds": [],
+      "title": "宋夏茶马互市",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1044,
+      "eraId": "song",
+      "id": "song-xia-peace",
+      "influence": 3,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          -1.08,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "western-xia"
+      ],
+      "relationIds": [
+        "western-xia-founded-to-song-xia-peace"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》夏国列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1044,
+      "summary": "宋与西夏在多年战争后议和，双方以册封、岁赐和边境往来重新安排关系。协议未使边界争端消失，却减轻持续作战的成本，并让马匹、茶叶等物资交换恢复空间。元昊对宋采用臣属名分，宋廷按议约给付财物，称号上的让步与实际岁赐组成了停战的交换条件。",
+      "themeIds": [],
+      "title": "宋夏庆历和议",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1054,
+      "eraId": "song",
+      "id": "song-local-routes",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          1.08,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百六十七《职官志·转运使》，路级财政监察段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1054,
+      "summary": "宋朝在州县之上设置路级转运使等机构，监督财赋、司法和军政，不设统一的地方长官。分权有助于中央掌握地方，也容易形成职责重叠、文书繁多与应急迟缓的问题。转运使查核州县财赋并转输上供，提刑等官又分掌监察，路因而具有多套使司并行而非一府统辖的特征。",
+      "themeIds": [],
+      "title": "宋代路级转运体制",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1057,
+      "eraId": "song",
+      "id": "song-ouyang-xiu-literary",
+      "influence": 3,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          -1.08,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷三百一十九《欧阳修传》，嘉祐二年知贡举段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1057,
+      "summary": "欧阳修主持贡举，推重平易畅达的古文，影响士人写作和科举文风。文章革新依托考试、师友网络和书籍传播，既改变文学审美，也塑造宋代文官共同讨论政治的语言。欧阳修在取士时抑制险怪艰涩的时文，嘉祐二年的贡举把古文主张转为具体的文章评判标准。",
+      "themeIds": [],
+      "title": "欧阳修主持贡举",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1057,
+      "eraId": "song",
+      "id": "song-sushi-jinshi",
+      "influence": 3,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          -0.72,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》苏轼列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1057,
+      "summary": "苏轼与弟苏辙参加科举并进入士人政治网络，文章受到欧阳修等人重视。科举成功为其仕途开路，后来的诗文、政论和地方施政使他成为宋代文化中跨越多种领域的人物。欧阳修阅其试卷而称赏文章，苏轼由此获得科第和文名，两苏与主考之间的联系也进入此后的文学交游。",
+      "themeIds": [],
+      "title": "苏轼登进士第",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1058,
+      "eraId": "song",
+      "id": "song-iron-smelting",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -0.36,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百八十五《食货志·坑冶》，铁冶段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1058,
+      "summary": "北宋矿冶和冶铁生产在若干地区扩大，铁器供应农业、军备与城市手工业。煤炭、木材、矿石和运输共同制约生产规模，铁业增长也会改变山林资源和地方劳役负担。铁冶既需采矿炼铁，也需把成品运往农具与兵器作坊，坑冶收入因此与铁材的开采、冶炼和销售相连。",
+      "themeIds": [],
+      "title": "北宋冶铁扩张",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1061,
+      "eraId": "song",
+      "id": "song-salt-monopoly",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.36,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百八十一《食货志·盐上》，榷盐制度段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1061,
+      "summary": "盐税是宋朝重要财政来源，官府不断调整生产、运输和销售规则，以争取稳定收入。盐法牵涉灶户、商人和消费者，严密控制容易抬高价格并诱发私盐，改革在各地效果不同。海盐产区与内地销区相隔，官府控制盐的出场和转运，灶户生产的盐必须经过规定渠道才能进入合法市场。",
+      "themeIds": [],
+      "title": "宋代盐法调整",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "thought"
+      ],
+      "childIds": [],
+      "color": "#a7bb75",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1065,
+      "eraId": "song",
+      "id": "song-pu-rites",
+      "influence": 3,
+      "layout": {
+        "lane": "thought",
+        "offset": [
+          0.72,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》英宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1065,
+      "summary": "宋英宗生父濮王的尊称引发激烈礼议，官员依据经学与宗法提出不同主张。争论表面围绕亲属名分，实际上牵涉皇权、谏官与宰相之间谁能解释礼法，也成为北宋党争的一次前奏。英宗以仁宗继子身份即位，又欲尊生父濮王，争议集中在皇帝入继大统后应如何称呼本生父母。",
+      "themeIds": [],
+      "title": "濮议",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1068,
+      "eraId": "song",
+      "id": "song-western-xia-border-forts",
+      "influence": 3,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          1.08,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "western-xia"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》夏国列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1068,
+      "summary": "宋与西夏在陕甘边境反复修筑和争夺城寨，试图控制通道、牧地与农业区。边防安排关系军粮、贸易和居民迁移，堡寨扩张有时增强防御，也可能激化新一轮战事。宋军凭城寨储粮驻兵，西夏则力争扼住山口与水源，寨地的位置使守城、出击和招纳边民相互牵连。",
+      "themeIds": [],
+      "title": "宋夏边境城寨经营",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1069,
+      "eraId": "song",
+      "id": "song-green-sprouts",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -1.08,
+          -0.58
+        ]
+      },
+      "parentId": "wang-anshi",
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-reform-part-song-green-sprouts"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百七十六《食货志·青苗》，熙宁二年施行段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1069,
+      "summary": "王安石新法中的青苗法由官府在农时放贷，意在减轻民间高利借贷并增加财政收入。实际执行受地方官考核和资金管理影响，有些农户获益，有些则承受摊派与还贷压力。官府以常平等资金在青黄不接时贷出本钱，随夏秋税期收还本息，使原有仓储资金进入乡村借贷。",
+      "themeIds": [],
+      "title": "青苗法施行",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "宋神宗任用王安石推行青苗、募役、保甲等新法，希望改善财政并增强军备。",
+      "categories": [
+        "institution",
+        "economy"
+      ],
+      "causes": [
+        "财政、边防及基层治理问题促使北宋寻求制度调整。"
+      ],
+      "childIds": [
+        "song-green-sprouts",
+        "song-service-exemption",
+        "song-ever-normal-granaries",
+        "song-baojia"
+      ],
+      "color": "#69ae9d",
+      "course": [
+        {
+          "description": "改革触及广泛利益，也引发激烈党争。",
+          "title": "王安石变法",
+          "year": 1069
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1085,
+      "eraId": "song",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "wang-anshi",
+      "impacts": [
+        {
+          "dimension": "institution",
+          "text": "其成败至今仍有讨论，但它集中展示了宋代国家面对财政、军事与社会治理难题的努力。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          1.9,
+          0.9
+        ]
+      },
+      "parentId": null,
+      "period": "宋代",
+      "personIds": [
+        "person-wang-anshi",
+        "person-zhao-xu",
+        "person-sima-guang"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [
+        "song-reform-part-song-green-sprouts",
+        "song-reform-part-song-service-exemption",
+        "song-reform-part-song-ever-normal-granaries",
+        "song-reform-part-song-baojia",
+        "song-qingli-reforms-to-wang-anshi",
+        "song-wutai-poetry-to-wang-anshi"
+      ],
+      "results": [
+        "其成败至今仍有讨论，但它集中展示了宋代国家面对财政、军事与社会治理难题的努力。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》王安石列传，熙宁变法",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《续资治通鉴长编》熙宁二年新法相关条",
+          "sourceId": "xuzizhitongjian-changbian-zhonghua-2004"
+        }
+      ],
+      "startYear": 1069,
+      "summary": "围绕富国强兵展开的一场系统性改革。宋神宗任用王安石推行青苗、募役、保甲等新法，希望改善财政并增强军备。改革触及广泛利益，也引发激烈党争。其成败至今仍有讨论，但它集中展示了宋代国家面对财政、军事与社会治理难题的努力。",
+      "themeIds": [],
+      "title": "王安石变法",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "神宗朝希望县乡能核实户籍、相互稽察并承担治安任务。熙宁三年先在畿县推行十家为保、五十家为大保等编组，保长负责告发奸盗；后来的武艺训练和轮番教阅才把保甲更深地接入军事动员。把初行保甲直接写成全国练兵，会混淆两个阶段。乡民由此受到更密集的登记和组织，地方官也得到新的执法渠道；各地的农时、贫富和逃移情况使执行负担并不相同。",
+      "categories": [
+        "institution"
+      ],
+      "causes": [
+        "朝廷希望补充地方治安力量并降低正规军负担。"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "course": [
+        {
+          "description": "神宗朝先在畿县编十家为保、五十家为大保，以互察和夜巡捕盗。",
+          "title": "保甲法初行",
+          "year": 1070
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1070,
+      "eraId": "song",
+      "historiography": "保甲在各地执行并不一致，制度条文与农户实际负担须分开考察。",
+      "id": "song-baojia",
+      "impacts": [
+        {
+          "dimension": "institution",
+          "text": "县乡户籍、治安与军事动员逐渐相连，也扩大了基层家庭的组织负担。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          0,
+          0.29
+        ]
+      },
+      "parentId": "wang-anshi",
+      "period": "北宋辽夏金",
+      "personIds": [
+        "person-wang-anshi"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-reform-part-song-baojia"
+      ],
+      "results": [
+        "乡村组织更受官府监督，后来才增加军事训练。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百九十二《兵志·保甲》，熙宁三年十家为保条",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《续资治通鉴长编》熙宁三年畿县编保条",
+          "sourceId": "xuzizhitongjian-changbian-zhonghua-2004"
+        }
+      ],
+      "startYear": 1070,
+      "summary": "宋朝先从畿县编排乡村保甲，以十家为保，择主户为保长，开始用于邻里治安。此时户籍编组尚不能等同后来普遍的武艺训练；训练、器械和征调逐步加入，反而使农户承担更多时间与费用。朝廷希望补充地方治安力量并降低正规军负担。",
+      "themeIds": [],
+      "title": "保甲法初行",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1070,
+      "eraId": "song",
+      "id": "song-ever-normal-granaries",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          -0.72,
+          -0.29
+        ]
+      },
+      "parentId": "wang-anshi",
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-reform-part-song-ever-normal-granaries"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百七十六《食货志·常平》，熙宁年间段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1070,
+      "summary": "熙宁时期常平仓资金被用于青苗借贷和粮价调节，仓储从单纯赈济转向更主动的经济治理。政策兼顾民生与财政却难以避免官员逐利，地方灾荒时是否还能及时放粮成为重要争议。常平原以丰籴歉粜调节粮价，熙宁时又承担出贷本钱，赈济存粮与取息周转开始争用同一套仓本。",
+      "themeIds": [],
+      "title": "常平仓功能扩大",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1071,
+      "eraId": "song",
+      "id": "song-service-exemption",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -0.36,
+          0
+        ]
+      },
+      "parentId": "wang-anshi",
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-reform-part-song-service-exemption"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百七十七《食货志·免役》，熙宁四年段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1071,
+      "summary": "募役法以征收役钱雇人承担差役，试图减少农户轮流服役对生产的干扰。制度把劳役转换为货币负担，富贫户的纳钱比例、官府征额和地方雇役质量成为朝廷争论的焦点。原来按户轮差的役务改由募人承担，不再亲身服役的民户转纳役钱，官府还须决定各等户的出钱份额。",
+      "themeIds": [],
+      "title": "募役法",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1072,
+      "eraId": "song",
+      "id": "song-shi-huo-office",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.36,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百八十六《食货志·市易》，熙宁五年段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1072,
+      "summary": "宋廷在开封设市易务，以官府资金收购滞销货物并向商人放贷，希望平抑物价、抑制大商垄断。国家进入市场增加了调节能力，也让官吏经营、利润目标与商人利益发生冲突。市易务用官钱介入开封货物买卖，收购库存后再行发卖，商户借款也需与官署核算本息和担保。",
+      "themeIds": [],
+      "title": "市易务设立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1073,
+      "eraId": "song",
+      "id": "song-local-judicial-supervision",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -1.08,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百六十七《职官志·提点刑狱司》，熙宁六年置诸路提刑司检法官段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1073,
+      "summary": "熙宁六年朝廷在诸路提点刑狱司设置检法官，辅助检查案件与文书。路级司法监察负责审问囚徒、复核案牍，旨在减少州县久禁不决和判罚失当。检法官补充提刑司的法律审查人手，州县送来的案卷需要核对律令，监察由巡问囚狱延伸到文书审核。",
+      "themeIds": [],
+      "title": "诸路提刑司增检法官",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1075,
+      "eraId": "song",
+      "id": "song-liao-border-negotiation",
+      "influence": 3,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          1.08,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》辽国列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1075,
+      "summary": "宋辽就河东边界发生争议，双方通过使节交涉而非全面战争处理部分地界。谈判涉及地图、旧文书和地方居民归属，说明澶渊和约后的和平仍需不断以具体边务维持。河东争界须核定两国管辖的土地，原有盟约不能直接回答每处地界归属，边臣调查遂成为使节议论的依据。",
+      "themeIds": [],
+      "title": "宋辽划界谈判",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1075,
+      "eraId": "song",
+      "id": "song-wen-tong-bamboo",
+      "influence": 3,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          -0.36,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷四百四十三《文同传》，出知洋州及墨竹段",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "“文同与胸有成竹”条，熙宁八年调任洋州段",
+          "sourceId": "hanzhong-wentong-2023"
+        }
+      ],
+      "startYear": 1075,
+      "summary": "熙宁八年文同出知洋州，在任内继续诗画创作，墨竹与当地竹林景观形成密切联系。苏轼后来评论其画法，推动文人画观念传播；1075年指任官开始，并不声称某幅传世墨竹画恰在该年完成。文同以墨色写竹而非只用勾线设色，苏轼借其观察竹形与落笔经验讨论画竹，使洋州任职也进入文人艺术记忆。",
+      "themeIds": [],
+      "title": "文同出知洋州与墨竹创作",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "science"
+      ],
+      "childIds": [],
+      "color": "#79afc6",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1076,
+      "eraId": "song",
+      "id": "song-medicine-school",
+      "influence": 4,
+      "layout": {
+        "lane": "science",
+        "offset": [
+          0,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百五十七《选举志·学校试》，神宗时始置医学教授条",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1076,
+      "summary": "神宗朝设医学提举、判局及教授，分方脉、针、疡三科教育学生。学校考试让经典与诊疗技能进入官学体系，民间师承仍是重要知识传递途径。方脉、针、疡各有授课门类，教授负责教习，提举与判局处理官学事务，医学由此具备专门的官署和师生编制。",
+      "themeIds": [],
+      "title": "神宗朝医学教育",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1076,
+      "eraId": "song",
+      "id": "song-two-tax-reassessment",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -1.08,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百七十四《食货志·赋税》，田赋核算段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1076,
+      "summary": "宋朝在各路清查田亩和税籍，试图使夏秋两税更符合土地占有与财政需求。丈量与核税可能纠正隐田，也可能加重小农负担；地方豪户、胥吏和官员在执行中各有利益。夏税与秋税按税籍向民户征收，田亩登记一旦遗漏或失实，户籍上的应纳额便会与实际占田分离。",
+      "themeIds": [],
+      "title": "宋代两税重估",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1077,
+      "eraId": "song",
+      "id": "song-silk-production",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -0.72,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百七十五《食货志·布帛》，丝织品贡赋段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1077,
+      "summary": "两浙和四川等地的丝织业在宋代持续发展，官营作坊与民间织户共同生产丝绢。织品进入赋税、礼仪和贸易网络，女性劳动与家庭副业是产业基础，却往往不见于朝廷纪事。州县按贡赋名目征收绢帛，家庭织造不仅供应买卖，也须满足上供的品类与数量，织机因而连着赋税簿籍。",
+      "themeIds": [],
+      "title": "宋代丝织业扩展",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1078,
+      "eraId": "song",
+      "id": "song-yuanfeng-reform",
+      "influence": 4,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -0.36,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百六十一《职官志·三省》，元丰官制段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1078,
+      "summary": "宋神宗在元丰年间调整中央官制，试图使名义上的三省六部与实际职事更一致。官职名称、决策程序和人员安排发生变化，但中枢权力仍须通过皇帝、宰执与台谏互动运行。原来以官衔叙品秩、另以差遣掌事务的办法受到调整，尚书省及六部的职名与办事责任重新对应。",
+      "themeIds": [],
+      "title": "元丰官制改革",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "元丰年间新法争论尖锐，苏轼在地方任职时的诗文被政敌摘取，解释为讥讽朝廷。御史台拘讯并汇集文字作为案据，苏轼获释后贬为黄州团练副使，行动和任官均受限制。诗案展示了文人的公共言论怎样进入政治审查，也改变苏轼此后的生活与写作地点。黄州作品的形成有个人经历和地方交游的背景，不能把所有诗句反读为犯罪证据；检控文书保存的是被选择、被解释的文本。",
+      "categories": [
+        "culture"
+      ],
+      "causes": [
+        "新法争议使官员诗文被赋予政治含义。"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "course": [
+        {
+          "description": "苏轼因诗文遭弹劾、审讯，随后贬居黄州。",
+          "title": "乌台诗案",
+          "year": 1079
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1079,
+      "eraId": "song",
+      "historiography": "诗案材料经过政治筛选，解读诗句时不宜把检控词等同作者本意。",
+      "id": "song-wutai-poetry",
+      "impacts": [
+        {
+          "dimension": "culture",
+          "text": "诗文进入政治审查的经验影响士人的表达方式，黄州成为苏轼创作的重要场域。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          0,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [
+        "person-su-shi"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-wutai-poetry-to-wang-anshi"
+      ],
+      "results": [
+        "案件改变苏轼仕途，也放大文人表达的政治风险。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》苏轼列传",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《续资治通鉴长编》元丰二年苏轼诗案条",
+          "sourceId": "xuzizhitongjian-changbian-zhonghua-2004"
+        }
+      ],
+      "startYear": 1079,
+      "summary": "苏轼因诗文被指讥讽新政而遭审讯，后被贬黄州。案件显示文字批评能够卷入高层政治斗争，士人写作的公共性与政治风险同时增加；苏轼在贬谪后创作了大量重要作品。新法争议使官员诗文被赋予政治含义。",
+      "themeIds": [],
+      "title": "乌台诗案",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1081,
+      "eraId": "song",
+      "id": "song-lingzhou-campaign",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0.72,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "western-xia"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》神宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1081,
+      "summary": "宋朝组织多路军队进攻西夏，意图夺取灵州，却因补给、指挥和地理条件受挫。远征失败说明新法积累的财政和军备不能自动转化为边境胜利，西北战争仍耗费大量人力物力。灵州深入西夏腹地，各路宋军难以按期会合，围城不能及时奏效又使军粮消耗，远征终于被迫撤回。",
+      "themeIds": [],
+      "title": "灵州之役",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1082,
+      "eraId": "song",
+      "id": "song-su-shi-red-cliff",
+      "influence": 3,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          0,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》苏轼列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1082,
+      "summary": "苏轼在黄州贬居期间写下赤壁赋，以江水、历史记忆和人生感受构成独特散文。作品后来反复被书写、绘画和评注，显示政治挫折也可能转化为文学与思想资源。赋中以主客问答展开江月与曹操往事的联想，将黄州江游写成人生有限与天地长存之间的思考。",
+      "themeIds": [],
+      "title": "苏轼赤壁赋创作",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1082,
+      "eraId": "song",
+      "id": "song-yongle-fort",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          1.08,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "western-xia"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》神宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1082,
+      "summary": "宋军在西北筑永乐城后遭西夏军围攻，城破造成严重伤亡。宋廷围绕边寨选址和决策责任展开争论，地方水源与交通条件对军事工程的重要性在此次战役中格外突出。永乐城远离稳定补给线，围城后取水尤为困难，筑城时对地势的判断转化为守军无法摆脱的生存危机。",
+      "themeIds": [],
+      "title": "永乐城之战",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "司马光认为君主应从历代治乱中认识制度与人事得失，于是组织刘恕、刘攽、范祖禹等人分工搜求史料、长编、考异。全书按年月贯通战国至五代，在元丰七年进呈神宗。编年结构使不同地区的政事可按同一时间线比较，成为士大夫讨论政治的重要资源。其《考异》说明编者主动判断材料冲突，书中取舍也反映司马光的政治关怀；这部史著的价值恰在可追问其材料与解释，而非把它当成无选择的事实清单。",
+      "categories": [
+        "culture"
+      ],
+      "causes": [
+        "宋朝士人希望通过历代史事讨论治国得失。"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "course": [
+        {
+          "description": "司马光主持编纂并向朝廷进呈资治通鉴。",
+          "title": "资治通鉴成书",
+          "year": 1084
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1084,
+      "eraId": "song",
+      "historiography": "编纂者对史料进行取舍与考异，通鉴并非没有立场的史料汇编。",
+      "id": "song-zi-zhi-tong-jian",
+      "impacts": [
+        {
+          "dimension": "culture",
+          "text": "编年与考异方法影响后世史书写作和士大夫讨论治国得失的方式。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          -1.08,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [
+        "person-sima-guang"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-zi-zhi-tong-jian-to-song-yuanyou-reversal"
+      ],
+      "results": [
+        "编年史成为后世重要史料和政治参考。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》司马光列传",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《资治通鉴》进书表，元丰七年表进段",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 1084,
+      "summary": "司马光主持编写的编年体通史完成，以历代兴亡得失供君主和官员参考。全书汇集大量文献并作取舍，体现宋代史学对政治决策的期待，也为后世研究保存和重组了许多材料。宋朝士人希望通过历代史事讨论治国得失。",
+      "themeIds": [],
+      "title": "资治通鉴成书",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1086,
+      "eraId": "song",
+      "id": "song-ceramic-kilns",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.36,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "“汝窑”条，约元祐元年至崇宁五年宫廷瓷烧造段",
+          "sourceId": "dpm-ru-ware"
+        }
+      ],
+      "startYear": 1086,
+      "summary": "北宋晚期汝州青釉瓷进入宫廷需求体系，烧造时间约在元祐至崇宁年间。汝窑与定窑、耀州窑在材料和工艺上各有区别；宫廷采购推动一类产品的发展，并不意味着各窑在同一年创立。汝窑以青釉器供御，传世与出土器物成为辨认其胎釉、支烧方法的材料，烧造年代采用区间而非单年定论。",
+      "themeIds": [],
+      "title": "汝窑宫廷瓷烧造",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1086,
+      "eraId": "song",
+      "id": "song-yuanyou-reversal",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -0.72,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-zi-zhi-tong-jian-to-song-yuanyou-reversal"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》哲宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1086,
+      "summary": "司马光等人主持废止或调整多项熙宁新法，希望恢复较温和的财政与官制安排。改革逆转涉及具体利益重新分配，不能以新旧二字概括其全部内容，也使朝廷政治分歧继续加深。免役与差役如何转换、青苗等财政措施应否保留，均成为司马光执政后重新议论的具体政令。",
+      "themeIds": [],
+      "title": "元祐更化",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1087,
+      "eraId": "song",
+      "id": "song-quanzhou-maritime-office",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.72,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-jiaozi-official-to-song-quanzhou-maritime-office"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋会要辑稿》职官门，元祐二年十月六日泉州增置市舶诏",
+          "sourceId": "songhuiyao-jigao"
+        }
+      ],
+      "startYear": 1087,
+      "summary": "宋朝在泉州设置市舶管理机构，征收海外贸易税并检验出入境货物。泉州逐渐成为海上贸易的重要港口，商人、船户和外来社群在此汇集；市舶制度连接国家财政与民间远洋航行。泉州增置市舶司使蕃舶入港有了当地专责官署，货物抽解与查验无需全由其他港口的机构经办。",
+      "themeIds": [],
+      "title": "泉州市舶司设立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "science"
+      ],
+      "childIds": [],
+      "color": "#79afc6",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1090,
+      "eraId": "song",
+      "id": "song-shen-kuo-dream-pool",
+      "influence": 3,
+      "layout": {
+        "lane": "science",
+        "offset": [
+          0.36,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《梦溪笔谈》卷十八《技艺》活板条，著作内容例证",
+          "sourceId": "mengxi-bitan-zhonghua-2009"
+        },
+        {
+          "locator": "“《梦溪笔谈》”条，1087至1090年成书考证与异说段",
+          "sourceId": "china-kongzi-mengxi"
+        }
+      ],
+      "startYear": 1087,
+      "summary": "沈括在晚年撰写笔记，记录天文、地理、工艺、音乐和考古观察，汇集官僚经验与工匠知识。其著作约在元祐年间形成，具体成书时间尚有不同考订；书中条目仍需结合当时仪器、术语和实践条件理解。卷中活板条详记毕昇胶泥字、铁板排字与拆字复用的办法，为印刷史留下工匠操作层面的技术说明。",
+      "themeIds": [],
+      "title": "梦溪笔谈知识记录",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1089,
+      "eraId": "song",
+      "id": "song-hangzhou-relief",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          0.72,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》苏轼列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1089,
+      "summary": "苏轼任杭州知州时参与赈灾和公共工程，把粮价、医疗与水利问题联系起来处理。地方治理依靠官府资源，也需城市商人和居民配合；文人政绩的后世叙述常与实际行政能力交织。杭州灾情同时造成粮食紧张与疫病，苏轼的赈济把救饥和施药并举，医疗供给因而进入知州救荒事务。",
+      "themeIds": [],
+      "title": "苏轼杭州赈济",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1090,
+      "eraId": "song",
+      "id": "song-hangzhou-west-lake",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          0.36,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》苏轼列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1090,
+      "summary": "苏轼任杭州知州时主持疏浚西湖，利用淤泥修筑长堤，兼顾蓄水、灌溉和城市景观。工程须调动民夫、经费和地方协作，后世将其纪念为苏堤，也容易忽略长期维护者的劳动。湖中葑草与淤积妨碍蓄水，疏浚所得泥土被筑成长堤，西湖水面和往来通道因同一工程重新安排。",
+      "themeIds": [],
+      "title": "苏轼疏浚西湖",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1091,
+      "eraId": "song",
+      "id": "song-quanzhou-overseas",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.72,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百八十六《食货志·互市舶法》，泉州与蕃舶段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1091,
+      "summary": "宋代泉州商船通往东南亚和印度洋沿岸，香料、瓷器及其他货物在港口集散。海贸带来税收与外来商人社群，也使造船、仓储和信贷成为地方经济的重要组成部分。蕃舶来港后需要验货、储货与再转运，泉州以港口衔接沿海生产地和海外买家，海商往返遂形成持续货流。",
+      "themeIds": [],
+      "title": "泉州海贸繁盛",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1102,
+      "eraId": "song",
+      "id": "song-cai-jing-reform",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -1.08,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》徽宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1102,
+      "summary": "蔡京在崇宁年间重整学校、财政和官僚制度，并以党籍打击政治对手。新政借用熙宁改革语言，却处在不同的宫廷权力结构中；官学扩张与政治排斥同时存在。蔡京以绍述新法号召整顿朝政，又将元祐诸臣列入党籍，学校与官员录用也被置于这一政治区分之中。",
+      "themeIds": [],
+      "title": "蔡京崇宁新政",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1103,
+      "eraId": "song",
+      "id": "song-huizong-painting-academy",
+      "influence": 4,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          -0.72,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》徽宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1103,
+      "summary": "宋徽宗重视宫廷绘画，画院以题画、品评和供奉制度组织画师。宫廷审美促进花鸟画等技法发展，也与珍玩收集和国家财政相连；民间画工的创造不能完全归于皇帝个人。画师以绘画供奉宫廷，徽宗通过题意和品第选择作品，花鸟形态的精细观察遂与宫廷考试评画相结合。",
+      "themeIds": [],
+      "title": "徽宗画院经营",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1107,
+      "eraId": "song",
+      "id": "song-jiu-cheng-palace",
+      "influence": 3,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          0,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》徽宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1107,
+      "summary": "宋徽宗时期营造艮岳，征集花石和珍异树木装饰宫苑。工程体现宫廷审美和园林技艺，也使东南运输、征发与地方官员竞献承受压力；文化创造与资源耗费难以分开评价。东南采集的花石须由船运至京师再布置入苑，艮岳的山石景观因而连着花石纲征集和长途转输。",
+      "themeIds": [],
+      "title": "艮岳营造",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "宋朝希望取回燕云，金朝正在削弱辽朝，双方因此寻找夹击辽的机会。宣和初年海路使节建立接触；赵良嗣等到金廷议定进兵与燕京归属时，已经进入宣和二年。宋军战力、辽境军政变化与金军占城速度，使原先的分地和支付设想不断调整。联盟帮助两国共同结束辽的统治，却留下燕京交割、岁币和边境驻军的争执，随后转为宋金冲突。把初次接触和完成议约都定在一一一八年，会掩盖交涉的过程。",
+      "categories": [
+        "diplomacy"
+      ],
+      "causes": [
+        "宋希望收回燕云，金则希望辽朝在南面承受压力。"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "course": [
+        {
+          "description": "徽宗朝遣海路使节与金朝建立联兵攻辽的初步接触。",
+          "title": "海路使节初次接触",
+          "year": 1118
+        },
+        {
+          "description": "宋金使节继续议约，领土与支付安排仍有分歧。",
+          "title": "议定攻辽与燕京归属",
+          "year": 1120
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1120,
+      "eraId": "song",
+      "historiography": "双方文书与后来的追责叙述不同，海上之盟不能视作稳定互信的条约。",
+      "id": "song-jin-sea-alliance",
+      "impacts": [
+        {
+          "dimension": "diplomacy",
+          "text": "领土与支付争端在灭辽后升级，成为宋金战争前的外交背景。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          -1.08,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [
+        "person-zhao-ji"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "jin-jurchen",
+        "liao"
+      ],
+      "relationIds": [
+        "song-jin-sea-alliance-to-jurchen-jin-founded"
+      ],
+      "results": [
+        "联盟达到灭辽目的，却因领土交割而转入冲突。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷四百七十二《赵良嗣传》，宣和二年议燕云段",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《金史》太祖本纪，天辅四年宋使议燕京条",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1118,
+      "summary": "宋与金先通过海路接触，随后在宣和二年围绕夹攻辽朝、燕云州县和岁币展开议约。宋希望收回旧地，金则寻求牵制辽朝；双方对军事责任与交割条件理解不一，辽亡后迅速转为冲突。宋希望收回燕云，金则希望辽朝在南面承受压力。",
+      "themeIds": [],
+      "title": "宋金海上之盟",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "science"
+      ],
+      "childIds": [],
+      "color": "#79afc6",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1119,
+      "eraId": "song",
+      "id": "song-coastal-shipbuilding",
+      "influence": 3,
+      "layout": {
+        "lane": "science",
+        "offset": [
+          0,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《萍洲可谈》卷二，海舶深阔、载货与船漏外补段",
+          "sourceId": "pingzhou-ketan"
+        }
+      ],
+      "startYear": 1119,
+      "summary": "萍洲可谈记海舶载货空间、船体深阔及海上漏水时从船外补救的方法。这是对当时海舶使用经验的具体记录，不能从文字概括推出所有船只相同构造，也不能把修漏记载直接当成水密隔舱的证据。记载把船外补漏与海舶载货并列，重点在航行中如何处置渗水，所见操作经验比现代船型名称更为具体。",
+      "themeIds": [],
+      "title": "宋代海舶船体与修漏记载",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "science"
+      ],
+      "childIds": [],
+      "color": "#79afc6",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1119,
+      "eraId": "song",
+      "id": "song-maritime-compass",
+      "influence": 3,
+      "layout": {
+        "lane": "science",
+        "offset": [
+          -0.72,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《萍洲可谈》卷二，舟师识地理条磁针、日月星辰段",
+          "sourceId": "pingzhou-ketan"
+        }
+      ],
+      "startYear": 1119,
+      "summary": "朱彧在《萍洲可谈》中记录海船水手阴晦时以磁针辨认方向，晴朗时仍观察日月星辰，指南工具是多种辨向办法之一。此条以成书年代约定位早期文献证据，不能据此推断技术在某一年发明或已普及所有航线。文献中的实际使用记载与发明时间、推广范围应分别判断。",
+      "themeIds": [],
+      "title": "海船磁针导航记载",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1120,
+      "eraId": "song",
+      "id": "song-fang-la-revolt",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          -0.36,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》徽宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1120,
+      "summary": "两浙地区爆发方腊起义，反映赋税、花石纲和地方社会矛盾的积累。起义军一度控制州县，宋廷动用大军镇压；战事消耗了本可用于北方边防的资源，也改变江南居民生活。起义由两浙山区扩展至州城，宋廷调兵收复失地，使正在承担花石纲运输的江南又增加征战与军需。",
+      "themeIds": [],
+      "title": "方腊起义",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1120,
+      "eraId": "song",
+      "id": "song-kaifeng-guilds",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -0.36,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《东京梦华录》卷二《东角楼街巷》，纱行、铺席与手作人上市段",
+          "sourceId": "dongjing-menghua-lu"
+        }
+      ],
+      "startYear": 1120,
+      "summary": "《东京梦华录》卷二《东角楼街巷》记载从纱行到东华门街一带铺席繁密，潘楼街清晨交易后手作人继续上市。行业聚集便利交易，繁荣也依靠工匠、雇工与运输者。纱行、铺席与清晨上市的手作人出现在相邻街巷，店铺销售和手工业劳作由街道次序连接成可辨认的交易空间。",
+      "themeIds": [],
+      "title": "开封纱行与铺席",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1120,
+      "eraId": "song",
+      "id": "song-kaifeng-night-market",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          -0.36,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《东京梦华录》卷二《州桥夜市》，州桥南北夜间饮食市段",
+          "sourceId": "dongjing-menghua-lu"
+        }
+      ],
+      "startYear": 1120,
+      "summary": "《东京梦华录》记录州桥一带夜间饮食买卖，反映徽宗朝都城商业可以延续到夜间。都城消费依托漕运和货币流通，也依靠众多服务劳动者。书中列举州桥南北的肉食、面食和时令吃食，夜市首先呈现的是熟食摊贩与都城居民晚间购买饮食的活动。",
+      "themeIds": [],
+      "title": "徽宗朝开封州桥夜市",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1123,
+      "eraId": "song",
+      "id": "song-yanshan-recovered",
+      "influence": 3,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          0.36,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "jin-jurchen"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》徽宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1123,
+      "summary": "宋金交涉后，宋朝接收燕山府及部分燕云地区，表面实现收复旧地的目标。实际控制依赖金朝撤军及当地军事秩序，交割中的财物和人口争议使联盟关系更加脆弱。宋廷以燕山府名义重新设置官署，但接收的城地已受战事和金军处置影响，收复名号与实际所得并不相等。",
+      "themeIds": [],
+      "title": "宋取得燕山府",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1126,
+      "eraId": "song",
+      "id": "song-kaifeng-first-siege",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -0.72,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "jin-jurchen"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》钦宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1126,
+      "summary": "金军包围开封，宋廷以守城和割地谈判暂时解除危机。围城使首都居民、官员和军队承受巨大压力，也让朝廷内部的战和分歧公开化；短暂停战未解决双方的根本冲突。宋廷答应割让北方要地并交付财物，使金军暂时撤围；开封保住朝廷，却没有恢复原有边防屏障。",
+      "themeIds": [],
+      "title": "开封第一次围城",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "金军攻破开封，徽、钦二帝及大量宗室官员被俘，北宋灭亡。",
+      "categories": [
+        "war",
+        "politics"
+      ],
+      "causes": [
+        "宋金关系破裂与北宋军事政治危机相互叠加。"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "course": [
+        {
+          "description": "赵构随后在南方建立南宋。",
+          "title": "靖康之变",
+          "year": 1127
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1127,
+      "eraId": "song",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "jingkang",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "人口与技术向南迁移，进一步推动江南经济发展，也让收复故土成为此后长期的政治与文化主题。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -1.5,
+          0.3
+        ]
+      },
+      "parentId": null,
+      "period": "宋代",
+      "personIds": [
+        "person-zhao-ji",
+        "person-zhao-huan",
+        "person-wanyan-sheng"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [
+        "southern-song-founded-to-jingkang",
+        "song-huangtiandang-to-jingkang"
+      ],
+      "results": [
+        "人口与技术向南迁移，进一步推动江南经济发展，也让收复故土成为此后长期的政治与文化主题。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》钦宗本纪，靖康二年开封陷落",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《金史》太宗本纪，天会五年伐宋",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1127,
+      "summary": "北宋都城陷落，政治中心转向江南。金军攻破开封，徽、钦二帝及大量宗室官员被俘，北宋灭亡。赵构随后在南方建立南宋。人口与技术向南迁移，进一步推动江南经济发展，也让收复故土成为此后长期的政治与文化主题。",
+      "themeIds": [],
+      "title": "靖康之变",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1127,
+      "eraId": "song",
+      "id": "song-tianxi-beneficence",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          -1.08,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百七十八《食货志·振恤》，高宗南渡衣食医药救济段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1127,
+      "summary": "高宗南渡后，朝廷给随迁民众衣食和医药，对死于兵祸与迁徙者给予掩埋。战乱救济需要持续财政投入，也显出迁徙民众的困境。衣食照顾生存，医药处置病患，掩埋则针对流亡途中死者，南渡救济同时覆盖随迁人口的三类迫切需要。",
+      "themeIds": [],
+      "title": "南渡流民衣食医药救济",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "靖康后徽、钦二帝北迁，开封的宋朝中枢瓦解。康王赵构在应天府即位，继续使用宋朝国号并任命军政官员，但朝廷仍须寻找可驻跸的城市、军队和财政来源。金军威胁使其不断南移，南渡官民的安置也影响地方社会。即位解决了皇统的名义延续，江南财赋、沿江防线和新的官僚网络却是在后来逐步建立；不能用成熟的临安朝廷倒写建炎初年的流动局面。",
+      "categories": [
+        "politics"
+      ],
+      "causes": [
+        "开封陷落与皇室被俘后，宋朝需要重建皇位和军政中心。"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "course": [
+        {
+          "description": "赵构在应天府即位，任命官员并组织南迁。",
+          "title": "南宋建立",
+          "year": 1127
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1127,
+      "eraId": "song",
+      "historiography": "建炎初年都城不断迁移，不能以后来的临安格局描述即位当日的局势。",
+      "id": "southern-song-founded",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "皇统延续促使江南财政、沿江防线与南渡官民安置逐步成为朝廷重心。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -0.36,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [
+        "person-zhao-gou"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "jin-jurchen"
+      ],
+      "relationIds": [
+        "southern-song-founded-to-jingkang"
+      ],
+      "results": [
+        "南宋承续宋朝名号，转向以江南财赋支撑战争。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》高宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《建炎以来系年要录》卷一，建炎元年五月即位条",
+          "sourceId": "jianyan-yilai-xinian-yaolu-zhonghua-1956"
+        }
+      ],
+      "startYear": 1127,
+      "summary": "赵构在应天府即位，延续宋朝国号和官僚机构，形成南宋政权。建国初年朝廷不断南迁，军政重建与难民安置同时进行；它承接北宋制度，却不得不重新确定财政基础和边境战略。开封陷落与皇室被俘后，宋朝需要重建皇位和军政中心。",
+      "themeIds": [],
+      "title": "南宋建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1129,
+      "eraId": "song",
+      "id": "song-miao-liu-mutiny",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》高宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1129,
+      "summary": "苗傅、刘正彦在临安发动兵变，迫使宋高宗一度退位，随后被韩世忠等军队平定。兵变发生在南宋立国未稳、军队待遇与朝廷权力尚未整合之时，暴露抗金战争背后的内部危机。叛军曾拥高宗幼子即位，忠于高宗的将领随后合兵进逼临安，皇位归属取决于勤王军能否压倒兵变部队。",
+      "themeIds": [],
+      "title": "苗刘兵变",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "金军南下后需沿江北返，韩世忠率水师在长江水道截击，利用船队和地形一度阻止金军驶出。宋军的江防与水战能力得到展现，但金军改寻水路并最终脱围，阻截未能演成歼灭。黄天荡使宋廷看到水军与沿江据点的战略价值，也暴露单靠局部封锁难以长期隔绝敌军。后世常用胜利故事概括战役；判断战果仍要把一时围困、最终脱困和整个南宋防御体系分开。",
+      "categories": [
+        "war"
+      ],
+      "causes": [
+        "金军南下后需要沿长江撤回，南宋水军寻求截击。"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "course": [
+        {
+          "description": "韩世忠在黄天荡水域阻拦金军船队。",
+          "title": "黄天荡之战",
+          "year": 1130
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1130,
+      "eraId": "song",
+      "historiography": "后世胜利叙事常省略金军脱困，应区分战术阻击与全局战果。",
+      "id": "song-huangtiandang",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "江防水军与河道控制在南宋军事部署中的地位更加突出。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0.36,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [
+        "person-han-shizhong"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "jin-jurchen"
+      ],
+      "relationIds": [
+        "song-huangtiandang-to-jingkang"
+      ],
+      "results": [
+        "宋军展示江防能力，但金军最终找到脱围通道。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》韩世忠列传",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《建炎以来系年要录》建炎四年韩世忠江上阻金条",
+          "sourceId": "jianyan-yilai-xinian-yaolu-zhonghua-1956"
+        }
+      ],
+      "startYear": 1130,
+      "summary": "韩世忠率水军在长江下游阻截金军，黄天荡一带的江面战斗成为南宋初年重要战事。水军和河道地形限制骑兵行动，但金军最终脱困，战役的胜负需要区分局部阻击与长期战略结果。金军南下后需要沿长江撤回，南宋水军寻求截击。",
+      "themeIds": [],
+      "title": "黄天荡之战",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1131,
+      "eraId": "song",
+      "id": "song-lin-an-capital",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          1.08,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷八十八《地理志·临安府》，行在建置段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1131,
+      "summary": "南宋朝廷逐渐以临安为政治中心，城内官署、市场和移民社区不断扩展。所谓行在保留恢复北方的政治语言，实际城市建设却使江南财政、手工业与文化资源更集中于临安。临安以行在名义容纳皇帝和中央机构，宫城、官署与供给市场随朝廷驻留发展，杭州遂承担常设都城的功能。",
+      "themeIds": [],
+      "title": "临安行在形成",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1132,
+      "eraId": "song",
+      "id": "song-junior-archers",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -1.08,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《建炎以来系年要录》卷五十三，绍兴二年四月神武前军申世景屯福州条",
+          "sourceId": "jianyan-yilai-xinian-yaolu-zhonghua-1956"
+        }
+      ],
+      "startYear": 1132,
+      "summary": "绍兴二年朝廷命神武前军左部统领申世景率千人屯福州，并以御前忠锐第六将单德忠所部八百人隶属，听从当地帅司节制。此举展示南宋初年跨部队调配和地方驻防，诏命涉及统领、番号、兵额与驻地指挥等不同层次。记录针对现有军队的隶属调整，不应仅因部队名称而理解成另创新军。",
+      "themeIds": [],
+      "title": "神武前军驻福州",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1134,
+      "eraId": "song",
+      "id": "song-li-qingzhao-ci",
+      "influence": 3,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          0.72,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《金石录后序》，绍兴四年追述建炎南渡及藏书散失段",
+          "sourceId": "jinshilu-houxu"
+        }
+      ],
+      "startYear": 1134,
+      "summary": "李清照在《金石录后序》中回忆与赵明诚共同收藏金石书画，也记述靖康后南渡、丈夫去世和藏品散失的经历。文字将私人生活、战乱流徙与文物保存联系起来，展现女性作者对时代变故的独立观察。后序按收藏、搬运和散失追述金石书画的去向，赵明诚身后的藏品命运成为作者记述南渡经历的线索。",
+      "themeIds": [],
+      "title": "李清照金石录后序",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "襄阳与汉水连通长江中游，金军及其扶植势力占据这一区域时，南宋中游防线受到压力。岳飞在绍兴四年率军北上，逐步收复襄阳及邻近州郡，随后整顿城防与驻军。夺回节点使江汉水运和北岸补给更可控制，也为后续北进提供基地。战事靠将领指挥，也靠沿线部队、粮运和地方守备配合；把六郡恢复全写成一次孤立会战，会忽视占领后的治理。",
+      "categories": [
+        "war"
+      ],
+      "causes": [
+        "襄阳失守威胁长江中游和汉水交通。"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "course": [
+        {
+          "description": "岳飞率军收复襄阳及周边州郡。",
+          "title": "岳飞收复襄阳六郡",
+          "year": 1134
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1134,
+      "eraId": "song",
+      "historiography": "岳家军战绩应结合地方补给和沿江战略，而非只归功将领个人。",
+      "id": "song-yue-fei-xiangyang",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "江汉防线的恢复为南宋中游驻军和后续北进提供基地。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -0.72,
+          -1.16
+        ]
+      },
+      "parentId": "yue-fei",
+      "period": "南宋金蒙",
+      "personIds": [
+        "person-yue-fei"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "jin-jurchen"
+      ],
+      "relationIds": [
+        "song-yue-part-song-yue-fei-xiangyang"
+      ],
+      "results": [
+        "南宋得以恢复中游北岸的重要防御支点。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》岳飞列传",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《建炎以来系年要录》绍兴四年襄阳六郡战事条",
+          "sourceId": "jianyan-yilai-xinian-yaolu-zhonghua-1956"
+        }
+      ],
+      "startYear": 1134,
+      "summary": "岳飞率军夺回襄阳及周边州郡，重建南宋在长江中游北岸的防线。襄阳控制汉水通道和粮运线路，战役成果不仅是局部收复，也为此后南宋的长期防御提供地理支点。襄阳失守威胁长江中游和汉水交通。",
+      "themeIds": [],
+      "title": "岳飞收复襄阳六郡",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "南宋立国未稳，岳飞等将领组织军队抵御金军并多次北伐。",
+      "categories": [
+        "war",
+        "politics"
+      ],
+      "causes": [
+        "南宋立国初期需要抵御金军并稳定统治。"
+      ],
+      "childIds": [
+        "song-yancheng-battle",
+        "song-yue-fei-xiangyang"
+      ],
+      "color": "#d9b55f",
+      "course": [
+        {
+          "description": "绍兴和议前后，岳飞被召回",
+          "title": "岳飞被召回",
+          "year": 1140
+        },
+        {
+          "description": "并遇害。",
+          "title": "岳飞遇害",
+          "year": 1142
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1142,
+      "eraId": "song",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "yue-fei",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "他的军事行动、政治处境与后世不断重塑的忠烈形象，共同构成中国历史记忆中的重要篇章。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          1.1,
+          -1.2
+        ]
+      },
+      "parentId": null,
+      "period": "宋代",
+      "personIds": [
+        "person-yue-fei",
+        "person-han-shizhong",
+        "person-qin-hui"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [
+        "song-yue-part-song-yancheng-battle",
+        "song-yue-part-song-yue-fei-xiangyang",
+        "song-shaoxing-peace-to-yue-fei"
+      ],
+      "results": [
+        "他的军事行动、政治处境与后世不断重塑的忠烈形象，共同构成中国历史记忆中的重要篇章。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》岳飞列传，绍兴四年至十一年诸役",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《建炎以来系年要录》绍兴十一年岳飞狱",
+          "sourceId": "jianyan-yilai-xinian-yaolu-zhonghua-1956"
+        }
+      ],
+      "startYear": 1134,
+      "summary": "南宋初年的抗金战争与忠烈记忆。南宋立国未稳，岳飞等将领组织军队抵御金军并多次北伐。绍兴和议前后，岳飞被召回并遇害。他的军事行动、政治处境与后世不断重塑的忠烈形象，共同构成中国历史记忆中的重要篇章。",
+      "themeIds": [],
+      "title": "岳飞抗金",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1135,
+      "eraId": "song",
+      "id": "song-dongting-uprising",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          -0.36,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》高宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1135,
+      "summary": "洞庭湖地区爆发钟相、杨幺领导的起义，地方水网和船队使官军一时难以控制。南宋在抗金同时还要处理赋役和地方武装问题；起义被镇压后，湖区社会治理仍需重新安排。洞庭湖港汊便于起义船队转移，朝廷须先控制水路才能进剿，南宋重建荆湖秩序因而包含争夺湖面船只。",
+      "themeIds": [],
+      "title": "钟相杨幺起义",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1136,
+      "eraId": "song",
+      "id": "song-jiangnan-land-tax",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百七十四《食货志·赋税》，南宋田赋段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1136,
+      "summary": "南宋失去北方税源后，更依赖江南田赋、商税和盐税维持军费。财政重心南移推动漕运与城市市场，也使两浙、江东等地居民承受更密集的征收和地方官考核压力。北方州县不再向宋廷上供，江南米粮和税钱需输往行在及前线，原有南北财政流向因国土变化而重组。",
+      "themeIds": [],
+      "title": "南宋江南财赋集中",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1136,
+      "eraId": "song",
+      "id": "song-medical-pharmacy",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          0.36,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋会要辑稿》职官二七《惠民和剂局》，绍兴六年正月四日置药局诏",
+          "sourceId": "songhuiyao-jigao"
+        }
+      ],
+      "startYear": 1136,
+      "summary": "绍兴六年朝廷在行在置药局，并设和剂局和熟药所，规定汤药出售与药材收支。官办售药为居民提供渠道，实际供应仍取决于药材采购与地方执行。和剂局处理药材与配制，熟药所面向成药供应，出售汤药所得与购药支出均须按朝廷所定办法记录核算。",
+      "themeIds": [],
+      "title": "绍兴六年行在置药局",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1138,
+      "eraId": "song",
+      "id": "song-jin-first-talks",
+      "influence": 3,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          0.36,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "jin-jurchen"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》高宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1138,
+      "summary": "南宋与金朝在战争中尝试议和，双方对疆界、称谓和俘虏归还的要求差距很大。谈判反复与前线作战同时进行，显示战与和并非彼此独立的两套政策，而是相互影响的选择。金朝掌握宋室俘虏与北方故地，南宋则要确认新朝廷的生存条件，返俘、定界与君臣名分难以分开议定。",
+      "themeIds": [],
+      "title": "宋金首次长期议和尝试",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1140,
+      "eraId": "song",
+      "id": "song-yancheng-battle",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0.72,
+          0
+        ]
+      },
+      "parentId": "yue-fei",
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "jin-jurchen"
+      ],
+      "relationIds": [
+        "song-yue-part-song-yancheng-battle"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》岳飞列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1140,
+      "summary": "岳飞军在郾城附近击退金军，随后继续向河南推进。骑兵、步兵和地方支持共同影响战斗，战役虽提振南宋士气，却未决定整个北伐的最终结局，后续撤军与和议改变了成果范围。郾城处在河南推进线上，岳家军击退金军并未解除其他战线压力，继续进军仍受朝廷调令与各军协同制约。",
+      "themeIds": [],
+      "title": "郾城之战",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "宋金长期交战且两国中枢对继续北伐各有顾虑。绍兴和议涉及称谓、疆界、岁贡与归还河南等交涉，秦桧主持宋方政策，同时岳飞等主战将领的权力被重新处理。协议使淮河一线相对稳定，北方故土仍在金朝控制下，宋廷承担固定财政支付。边民得以在较稳定的界线上恢复生活，南宋政治中对议和的争论却没有终止。岳飞案件与和议相关，具体条约内容仍须按谈判文书独立说明。",
+      "categories": [
+        "diplomacy"
+      ],
+      "causes": [
+        "连续战争耗费财力，朝廷对恢复北方的可能性分歧深刻。"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "course": [
+        {
+          "description": "秦桧参与主导与金朝的议和程序。",
+          "title": "绍兴和议",
+          "year": 1141
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1141,
+      "eraId": "song",
+      "historiography": "和议与岳飞案件存在政治关联，但具体谈判条款仍须独立辨析。",
+      "id": "song-shaoxing-peace",
+      "impacts": [
+        {
+          "dimension": "diplomacy",
+          "text": "淮河边界相对稳定，却使岁贡和失地问题持续影响南宋财政与政治。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          1.08,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [
+        "person-qin-hui"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "jin-jurchen"
+      ],
+      "relationIds": [
+        "song-shaoxing-peace-to-yue-fei"
+      ],
+      "results": [
+        "淮河边界和岁贡关系确立，战事暂时降温。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》高宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《金史》熙宗本纪，皇统元年至二年宋金和议条",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1141,
+      "summary": "宋金通过绍兴和议确定以淮河、大散关一线为边界，南宋向金称臣并支付岁贡。协议结束大规模战争的一阶段，却伴随岳飞遇害和政治压制，和平成本与边境安定并存。连续战争耗费财力，朝廷对恢复北方的可能性分歧深刻。",
+      "themeIds": [],
+      "title": "绍兴和议",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1142,
+      "eraId": "song",
+      "id": "song-yue-fei-case",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -1.08,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》岳飞列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1142,
+      "summary": "岳飞在和议政治中被收回兵权并遭杀害，其罪名与审判过程长期存在争议。事件反映南宋皇权对军事将领的控制，以及主战、主和路线的激烈冲突；后世纪念又赋予其超越当时政治的意义。岳飞被解除统兵权后卷入谋反指控，前线将领与军队的联系被切断，案件发生在宋金议和即将定局之际。",
+      "themeIds": [],
+      "title": "岳飞冤狱",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "science"
+      ],
+      "childIds": [],
+      "color": "#79afc6",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1149,
+      "eraId": "song",
+      "id": "song-nong-shu",
+      "influence": 3,
+      "layout": {
+        "lane": "science",
+        "offset": [
+          0.72,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《陈旉农书》自跋，绍兴十九年成书与真州刊行段",
+          "sourceId": "chenfu-nongshu"
+        }
+      ],
+      "startYear": 1149,
+      "summary": "陈旉以农书整理耕作、肥田和桑蚕等具体问题，使江南农业经验进入士人知识体系。技术文本来自长期农事观察，也在书写中被重新解释；地方气候和土地条件决定方法不能机械移植。书中把耕田、养蚕与畜养联系起来讨论，肥田用土和桑叶饲蚕均有操作次序，绍兴刊本据此保存江南农家经验。",
+      "themeIds": [],
+      "title": "陈旉农书的农业知识",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1157,
+      "eraId": "song",
+      "id": "song-land-tax-taxes",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -1.08,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百七十四《食货志·赋税》，南宋田赋段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1157,
+      "summary": "南宋部分地区推行经界丈量，重新核实田地、户籍与税额，试图限制隐田和赋税不均。丈量需要地方胥吏和乡村证据，豪户抵制、记录误差及官员急于增收常使成效受到质疑。经界以田亩四至和实际占有核定税额，隐瞒田地者与替人负税者的登记差异，是重新丈量要处理的具体对象。",
+      "themeIds": [],
+      "title": "南宋经界法",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "金海陵王动员大军南下，企图通过长江进入南宋腹地。虞允文在采石附近组织守军和水军，利用江面船只与岸防阻止金军渡江。局部战斗保住下游防线，为宋军调整部署争取时间；金军此后退却还受到国内政变、补给和军心变化影响。采石的重要性在于宋军有效守住渡口，不能把金朝整场南侵失败全部归结为一个指挥者或一次交锋。",
+      "categories": [
+        "war"
+      ],
+      "causes": [
+        "金军试图渡江，南宋必须守住长江下游防线。"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "course": [
+        {
+          "description": "虞允文组织采石矶附近水军抵抗渡江。",
+          "title": "采石之战",
+          "year": 1161
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1161,
+      "eraId": "song",
+      "historiography": "金海陵王内部危机也影响战局，战役不能独自解释金军全面退却。",
+      "id": "song-caishi-battle",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "守江成功加强南宋对水军和下游渡口的防务安排。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [
+        "person-yu-yunwen"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "jin-jurchen"
+      ],
+      "relationIds": [
+        "song-caishi-battle-to-jin-southern-invasion"
+      ],
+      "results": [
+        "金军渡江受阻，南宋获得调整防务的时间。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》高宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《金史》海陵王本纪，正隆六年南伐条",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1161,
+      "summary": "宋军在采石矶附近利用长江水道抵御金军渡江，战船和火器配合发挥作用。战役阻止局部突破，但金朝撤退也与海陵王遇害和内部政治变化相关，不能把全部转折归于单次水战。金军试图渡江，南宋必须守住长江下游防线。",
+      "themeIds": [],
+      "title": "采石之战",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1161,
+      "eraId": "song",
+      "id": "song-kaifeng-charity",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          0,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百七十八《食货志·振恤》，绍兴三十一年临安贫民给钱米条",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1161,
+      "summary": "绍兴三十一年雪寒，朝廷命临安府平价出粜常平米，并向城内外贫民发钱、米与柴炭钱。救济针对寒冬食物和燃料短缺，仍受仓储规模限制。常平米平粜面向购粮居民，另给钱米和柴炭钱则针对贫民，临安府在同次寒灾中采用售粮与直接赈给两种办法。",
+      "themeIds": [],
+      "title": "临安贫民冬季赈济",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1162,
+      "eraId": "song",
+      "id": "song-xiaozong-accession",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          0.36,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》孝宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1162,
+      "summary": "宋高宗退位后孝宗继位，朝廷重新讨论北伐、和议和财政整顿。孝宗试图恢复部分被贬主战者名誉，又必须考虑军费和边境现实，其政策在进取与稳定之间摇摆。高宗以太上皇身份继续居于朝廷，孝宗虽为新君，恢复战略仍须在旧有和议格局与高宗影响之下推进。",
+      "themeIds": [],
+      "title": "宋孝宗即位",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1163,
+      "eraId": "song",
+      "id": "song-longxing-expedition",
+      "influence": 4,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0.72,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "jin-jurchen"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》孝宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1163,
+      "summary": "南宋在孝宗支持下出兵北伐，初期取得局部进展，随后在符离受挫。军队协同、补给和将帅权责影响战局，失败后朝廷重新谈判，恢复中原的愿望再次受到现实限制。符离战败使宋军由攻转退，孝宗即位后的恢复计划受挫，战场上未能稳固的所得随后成为和议中的让步。",
+      "themeIds": [],
+      "title": "隆兴北伐",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1164,
+      "eraId": "song",
+      "id": "song-longxing-peace",
+      "influence": 3,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          1.08,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "jin-jurchen"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》孝宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1164,
+      "summary": "宋金在隆兴北伐后重新议和，调整称谓、岁币与边境关系，使双方进入相对稳定时期。和议减轻大规模战事，却未消除南宋内部对恢复中原的争论，边境防备仍持续。宋金君主关系从君臣改为叔侄，南宋所付财物改用岁币名目，外交名分与给付数额随停战重新确定。",
+      "themeIds": [],
+      "title": "隆兴和议",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "thought"
+      ],
+      "childIds": [],
+      "color": "#a7bb75",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1167,
+      "eraId": "song",
+      "id": "song-zhang-shi-yuelu",
+      "influence": 3,
+      "layout": {
+        "lane": "thought",
+        "offset": [
+          -0.36,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "“书院碑刻”条，乾道三年朱熹与张栻在岳麓会讲段",
+          "sourceId": "hnu-yuelu-zhuzhang"
+        }
+      ],
+      "startYear": 1167,
+      "summary": "乾道三年朱熹赴岳麓书院与张栻会讲，双方围绕儒学修养与经典解释交换意见。跨地域的士人交游让书院成为理学论辩的具体空间。朱熹由福建赴湖南访张栻，岳麓讲席把两地学者聚在一起，讨论围绕如何读经与践履而展开，并非朝廷主持的统一考试。",
+      "themeIds": [],
+      "title": "朱张岳麓会讲",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1168,
+      "eraId": "song",
+      "id": "song-lu-you-poetry",
+      "influence": 3,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          -0.72,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》陆游列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1168,
+      "summary": "陆游在仕途与退居之间持续写作，以边防、乡村生活和个人情感为重要题材。其诗中的恢复愿望体现南宋士人的政治想象，也包含对农事与地方社会的细密观察，不宜只当战歌阅读。陆游曾有西北军旅经历，诗中关山、戍楼与乡村田园交替出现，恢复中原的愿望借个人行役和退居生活反复表达。",
+      "themeIds": [],
+      "title": "陆游诗歌与恢复论",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "淳熙二年朱熹与陆九渊、陆九龄等在鹅湖相会，讨论读书与修养的次序。朱熹强调穷理、读书与格物的积累，认为应在具体事物和经典中逐步求知；陆九渊强调本心与尊德性，担心繁琐讲读遮蔽人的道德自觉。双方都有儒家成德的目标，争点在入手路径和工夫轻重。会后论辩仍通过书信和讲学延续，并非现场宣布两派断交。后世的学派标签有助区分思想，却不能取代当时彼此质询的具体内容。",
+      "categories": [
+        "thought"
+      ],
+      "causes": [
+        "南宋儒者对读书与心性修养的方法有不同理解。"
+      ],
+      "childIds": [],
+      "color": "#a7bb75",
+      "course": [
+        {
+          "description": "朱熹与陆九渊兄弟在鹅湖讨论为学次第。",
+          "title": "鹅湖之会",
+          "year": 1175
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1175,
+      "eraId": "song",
+      "historiography": "后人常把鹅湖会简化为学派决裂，当时参与者仍保持复杂交流。",
+      "id": "song-ehu-debate",
+      "impacts": [
+        {
+          "dimension": "thought",
+          "text": "格物读书与本心修养的分歧进入后续书院讲学和理学文本讨论。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "thought",
+        "offset": [
+          0.36,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [
+        "person-zhu-xi"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-ehu-debate-to-song-zhu-xi-commentaries"
+      ],
+      "results": [
+        "分歧推动理学内部持续论辩和讲学。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "“鹅湖之会”条，淳熙二年会面及为学之方段",
+          "sourceId": "china-kongzi-ehu"
+        },
+        {
+          "locator": "“道问学与尊德性：从鹅湖之会说起”，淳熙二年鹅湖讨论段",
+          "sourceId": "cssn-ehu-2025"
+        }
+      ],
+      "startYear": 1175,
+      "summary": "朱熹与陆九渊兄弟在鹅湖相会，就读书、修养和求理方法展开讨论。不同主张后来被概括为理学内部的分歧，现场讨论却也是师友之间持续交流的一环，并未划成绝对对立的学派边界。南宋儒者对读书与心性修养的方法有不同理解。",
+      "themeIds": [],
+      "title": "鹅湖之会",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "thought"
+      ],
+      "childIds": [],
+      "color": "#a7bb75",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1180,
+      "eraId": "song",
+      "id": "song-zhu-xi-white-deer",
+      "influence": 3,
+      "layout": {
+        "lane": "thought",
+        "offset": [
+          1.08,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-zhu-xi-commentaries-to-song-zhu-xi-white-deer"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》朱熹列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1180,
+      "summary": "朱熹在南康军任官时重建白鹿洞书院，制定学规并推动讲学，尝试把伦理实践与地方教育结合。书院成为后代理学教育的象征，其经费、学生和日常管理仍依靠地方社会支持。朱熹把学规置于书院，要求读书者兼顾人伦与日用行为，白鹿洞的讲学不只围绕取得科名而组织。",
+      "themeIds": [],
+      "title": "白鹿洞书院重建",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1181,
+      "eraId": "song",
+      "id": "song-rural-charity",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          -0.72,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百七十八《食货志·振恤》，淳熙八年朱熹上社仓本末段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1181,
+      "summary": "淳熙八年朱熹上报社仓运行本末，述及借常平米六百石赈贷、积息扩仓与后来停息的过程。社仓服务乡村饥民，也须防止仓米侵耗和催收变成额外负担。最初借入的六百石是社仓本钱，利息积累充实仓储后又停止收息，上报本末说明乡村储粮如何从借本走向自有仓本。",
+      "themeIds": [],
+      "title": "朱熹上社仓本末",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1182,
+      "eraId": "song",
+      "id": "song-social-granary",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          -0.72,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》朱熹列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1182,
+      "summary": "朱熹参与地方社仓建设，鼓励乡里储粮，在歉收时以较低成本借给农户。社仓依赖乡村信任、资金管理和地方士人主持，其救济作用与可能发生的摊派、侵耗都需放在具体地区考察。社仓在乡里存粮、向缺粮农户出借并收回周转，朱熹以地方士人参与仓务，区别于只由州县发放的临时赈米。",
+      "themeIds": [],
+      "title": "朱熹社仓实践",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1190,
+      "eraId": "song",
+      "id": "song-jiangnan-textile",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百七十五《食货志·布帛》，南方丝织品段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1190,
+      "summary": "南宋两浙和江南织造丝绸、麻布与棉织品，家庭生产、工坊和官府采购相互连接。纺织劳动大量由女性承担，产品流向城市消费与海贸市场，产业繁荣也伴随原料与税收压力。两浙丝帛既供应地方买卖，也列入朝廷上供与采购，织户交纳的成品把家内纺织接入州县征收体系。",
+      "themeIds": [],
+      "title": "南宋江南纺织业",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "background": "朱熹将《大学》《中庸》《论语》《孟子》置于共同解释框架，长期修改章句和集注，借此说明读书、修身与治理之间的联系。绍熙元年刊行意味着四书文本以组合形态进一步传播，后续仍有修订、刊刻和师生讨论。生前的理学主张并非没有异议，科举上的官方采用更发生在较晚阶段。把后来的正统地位放回刊行当年，会错认一部持续修订的著作为一次颁行制度。",
+      "categories": [
+        "thought"
+      ],
+      "causes": [
+        "儒学教育需要重新解释经典与修身路径。"
+      ],
+      "childIds": [],
+      "color": "#a7bb75",
+      "course": [
+        {
+          "description": "朱熹完成对四书的章句和集注整理。",
+          "title": "朱熹四书章句集注刊行",
+          "year": 1190
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1190,
+      "eraId": "song",
+      "historiography": "朱熹生前的争议与后世正统化是不同阶段，不能以结果倒推过程。",
+      "id": "song-zhu-xi-commentaries",
+      "impacts": [
+        {
+          "dimension": "thought",
+          "text": "四书组合文本逐步成为书院教育资源，官方科举采纳则属于后来的发展。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "thought",
+        "offset": [
+          -1.08,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [
+        "person-zhu-xi"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [
+        "song-ehu-debate-to-song-zhu-xi-commentaries",
+        "song-zhu-xi-commentaries-to-song-zhu-xi-white-deer"
+      ],
+      "results": [
+        "四书学说经后世官方采纳成为重要教育资源。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《四书》条，绍熙元年刊刻流传段",
+          "sourceId": "dpm-four-books"
+        },
+        {
+          "locator": "《宋史》卷四百二十九《朱熹传》，四书注释段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1190,
+      "summary": "朱熹长期注释大学、中庸、论语和孟子，绍熙元年以四书章句集注之名刊刻流传，逐步形成以四书为中心的儒学解释体系。其著作在南宋尚有争论，后来经官方科举采用才取得更大影响；理学形成是持续讨论而非一朝定论。儒学教育需要重新解释经典与修身路径。",
+      "themeIds": [],
+      "title": "朱熹四书章句集注刊行",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "thought"
+      ],
+      "childIds": [],
+      "color": "#a7bb75",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1196,
+      "eraId": "song",
+      "id": "song-qingyuan-ban",
+      "influence": 4,
+      "layout": {
+        "lane": "thought",
+        "offset": [
+          0.36,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》宁宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1196,
+      "summary": "南宋朝廷在庆元年间将朱熹等人的学说斥为伪学，限制相关士人仕途和讲学。政治打击并未阻止理学文本传播，反而使书院和师友网络在官方与地方之间形成新的张力。伪学名目把学术师承转为任官限制，朱熹及其交游者的仕途受阻，私人讲学与官府取士之间出现直接冲突。",
+      "themeIds": [],
+      "title": "庆元党禁",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1198,
+      "eraId": "song",
+      "id": "song-commercial-taxes",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.72,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百八十六《食货志·商税》，南宋税务段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1198,
+      "summary": "南宋朝廷依靠商税、关税和专卖收入维持军费，沿海和江南市场成为财政重点。征税扩大反映贸易活跃，也可能增加中小商贩成本；国家与市场的关系随着战争压力持续调整。税务设在交通与交易集中处，商货过境或成交时纳税，海港收入与内地市税遂共同补充南宋田赋之外的财源。",
+      "themeIds": [],
+      "title": "南宋商税增长",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "thought"
+      ],
+      "childIds": [],
+      "color": "#a7bb75",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1204,
+      "eraId": "song",
+      "id": "song-zhu-xi-posthumous",
+      "influence": 3,
+      "layout": {
+        "lane": "thought",
+        "offset": [
+          -1.08,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》朱熹列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1204,
+      "summary": "朱熹去世后，朝廷和地方士人对其著述重新评价，原先的党禁逐渐松动。学说影响扩大经历讲学、刻书和政治承认多个阶段，不能把后来的正统地位倒推为朱熹生前已获一致认可。庆元禁学之后的褒赠和祠祀使朱熹名望重新获得朝廷承认，原先以伪学排斥的师承逐渐进入官学评价。",
+      "themeIds": [],
+      "title": "朱熹学说再评价",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "铁木真在斡难河源头被推举为成吉思汗，蒙古诸部由此形成更强的政治军事共同体。",
+      "categories": [
+        "politics",
+        "war",
+        "ethnicity"
+      ],
+      "causes": [
+        "草原诸部之间的战争与联盟重组推动政治集中。"
+      ],
+      "childIds": [],
+      "color": "#90aaba",
+      "course": [
+        {
+          "description": "铁木真在斡难河源头被推举为成吉思汗，蒙古诸部由此形成更强的政治军事共同体。",
+          "title": "蒙古崛起",
+          "year": 1206
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1206,
+      "eraId": "song",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "mongol-rise",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "此后的征服跨越欧亚，建立广阔交通网络，也带来大规模战争与人口变动，并深刻影响宋、金及中亚世界。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -2,
+          0.6
+        ]
+      },
+      "parentId": null,
+      "period": "宋代",
+      "personIds": [
+        "person-temujin",
+        "person-muqali"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [
+        "western-xia-fall-to-mongol-rise"
+      ],
+      "results": [
+        "此后的征服跨越欧亚，建立广阔交通网络，也带来大规模战争与人口变动，并深刻影响宋、金及中亚世界。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "第八卷《中古时代·元时期》，乙编综述第四章《蒙古的兴起》第三节《大蒙古国的建立》",
+          "sourceId": "bai-shouyi-general-history"
+        },
+        {
+          "locator": "《元史》太祖本纪，太祖元年斡难河即位",
+          "sourceId": "yuanshi-zhonghua-1976"
+        }
+      ],
+      "startYear": 1206,
+      "summary": "草原诸部统一，欧亚大陆格局随之改变。铁木真在斡难河源头被推举为成吉思汗，蒙古诸部由此形成更强的政治军事共同体。此后的征服跨越欧亚，建立广阔交通网络，也带来大规模战争与人口变动，并深刻影响宋、金及中亚世界。",
+      "themeIds": [],
+      "title": "蒙古崛起",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "宁宗朝主战派希望改变长期守势，韩侂胄推动对金出兵。宋军在不同边线发起进攻，但将帅配合、粮运和地方准备不足，攻势很快受阻，金军随后反击。战争失利改变了朝廷权力平衡，韩侂胄被诛后进入新的议和程序。恢复故土的诉求有广泛政治动员力，却不能替代军队与财政条件；归责时也需同时看到决策者、将领和边地的不同责任。",
+      "categories": [
+        "war"
+      ],
+      "causes": [
+        "南宋朝廷有恢复中原的诉求，也面临金朝边境压力。"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "course": [
+        {
+          "description": "韩侂胄推动北伐，宋军多路出击后受挫。",
+          "title": "开禧北伐",
+          "year": 1206
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1206,
+      "eraId": "song",
+      "historiography": "把失败全归一人会掩盖军队准备、边地补给和政治协同问题。",
+      "id": "song-kaixi-expedition",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "战争失败推动中枢人事变化与嘉定议和，也暴露边防动员的困难。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -0.72,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [
+        "person-han-tuozhou"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "jin-jurchen"
+      ],
+      "relationIds": [
+        "song-kaixi-expedition-to-song-jiading-peace"
+      ],
+      "results": [
+        "战争失败导致中枢权力转移和新一轮议和。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》宁宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《金史》章宗本纪，泰和六年宋金交兵条",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1206,
+      "summary": "南宋韩侂胄主导北伐金朝，初期攻势因准备不足、将帅失利和金军反击而失败。战争重新加重边境民众负担，也使朝廷内部围绕责任和议和展开激烈斗争。南宋朝廷有恢复中原的诉求，也面临金朝边境压力。",
+      "themeIds": [],
+      "title": "开禧北伐",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1207,
+      "eraId": "song",
+      "id": "song-han-tuozhou-fall",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -0.36,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》宁宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1207,
+      "summary": "开禧北伐失利后，韩侂胄在朝廷政变中被杀，继起的权臣推动对金议和。个人失势与战争责任相连，南宋对外政策随中枢权力变化急转，也使边防将士和地方官员面临重新部署。韩侂胄既是北伐的主持者，也成为金方索责的对象，朝廷杀韩并送首求和，把中枢政变直接纳入议和条件。",
+      "themeIds": [],
+      "title": "韩侂胄被诛",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1208,
+      "eraId": "song",
+      "id": "song-jiading-peace",
+      "influence": 3,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          0,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "jin-jurchen"
+      ],
+      "relationIds": [
+        "song-kaixi-expedition-to-song-jiading-peace"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》宁宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1208,
+      "summary": "宋金达成嘉定和议，南宋增加岁币并赔偿军费，以换取边境停战。和议缓解立即的军事压力，却显示北伐失败后的谈判地位下降，双方仍须在淮河沿线维持军队和防备。开禧战败后宋廷以增币、赔款和处置主战大臣为代价求和，原先出兵恢复的目标转成重新维持淮上边界。",
+      "themeIds": [],
+      "title": "嘉定和议",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1209,
+      "eraId": "song",
+      "id": "song-lu-you-late-poems",
+      "influence": 3,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          -0.72,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷三百九十五《陆游传》，嘉定二年卒前著述段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1209,
+      "summary": "陆游晚年在山阴继续写作，乡居诗篇记录农事、邻里和对北方故土的想象。其生命终止于嘉定二年，作品经家族与刻书流传；这些文字既是个人经验，也为理解南宋地方社会提供材料。山阴乡居让田间劳作与村落交往持续进入诗篇，临终仍念北方未复，晚年创作把日常生活和国事忧思并置。",
+      "themeIds": [],
+      "title": "陆游晚年诗歌",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1217,
+      "eraId": "song",
+      "id": "song-mongol-contact",
+      "influence": 3,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          -1.08,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire",
+        "jin-jurchen"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》宁宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1217,
+      "summary": "蒙古崛起后，南宋开始关注北方力量变化并与其使者接触。宋廷既希望削弱金朝，也担心新的草原强国南下；外交试探与边境情报成为此后战略选择的重要基础。宋廷对金北面的蒙古军情进行探察，使者往返提供战线变化的消息，联蒙制金的设想由此进入南宋边防讨论。",
+      "themeIds": [],
+      "title": "宋蒙使节接触",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1231,
+      "eraId": "song",
+      "id": "song-mongol-alliance-talks",
+      "influence": 4,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          0,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire",
+        "jin-jurchen"
+      ],
+      "relationIds": [
+        "jin-fall-to-song-mongol-alliance-talks"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》理宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1231,
+      "summary": "金朝衰弱时南宋与蒙古讨论联合攻金，双方对河南土地和战后边界各有打算。短期合作以共同敌人为基础，却缺乏稳定的相互信任，金亡后很快产生新的军事冲突。宋军可从南面夹击金朝，蒙古则已在北方持续推进，粮食与出兵的合作并没有预先解决金亡后的河南归属。",
+      "themeIds": [],
+      "title": "宋蒙灭金交涉",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1234,
+      "eraId": "song",
+      "id": "song-luoyang-campaign",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0.72,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》理宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1234,
+      "summary": "金亡后宋军进入洛阳等地，企图收复河南旧都，却因补给不足和蒙古军反击而撤退。行动显示宋廷对恢复故土仍有强烈政治诉求，也暴露河道、粮运和兵力准备不足的现实。宋军进入的洛阳已经历长期战乱，城内缺粮难以就地供军，旧都的象征意义不能替代持续运粮所需的保障。",
+      "themeIds": [],
+      "title": "南宋端平入洛",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1235,
+      "eraId": "song",
+      "id": "mongol-song-war",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          1.08,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》理宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1235,
+      "summary": "蒙古对南宋发动多方向进攻，四川、襄阳和淮河地区长期承受战事。南宋依赖江河城防和地方军队抵御，战争持续数十年，财政、人口迁移和地方社会结构因此深受影响。蒙古从川陕、汉水与淮上多路进兵，南宋必须分兵守隘、守城和护江，三处战场难以仅由一次决战解决。",
+      "themeIds": [],
+      "title": "宋蒙战争全面展开",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1236,
+      "eraId": "song",
+      "id": "song-sichuan-defense",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -1.08,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷四百四十九《高稼传》沔州陷与《曹友闻传》七方关、大安战守段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1235,
+      "summary": "端平二年（1235）蒙古军攻陷沔州，高稼坚守城郭而战死，曹友闻此前扼守七方关。端平三年（1236）曹友闻奉命转防大安，在阳平关一带率军迎战，最终与弟曹万战死。关隘连续受压，地方军民也因战事迁避。沔州失守后，大安与阳平关成为新的受压地段，曹友闻的调防把原先的关隘扼守改成被动迎击。",
+      "themeIds": [],
+      "title": "端平二年至三年川陕关隘战守",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1238,
+      "eraId": "song",
+      "id": "song-sichuan-paper-money",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -0.72,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百八十一《食货志·会子》嘉定五年刘光祖以新会换旧楮、十四年及十七年造会至嘉熙二年“撥第七界湖會九百萬付督視參政行府”段",
+          "note": "本条为嘉熙二年湖会拨付，不是四川钱引或全国会子流通量的统计。电子文本可互证卷内段落，未据印本扫描逐页校勘；稳定事件 ID 沿用旧称。",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1238,
+      "summary": "嘉熙二年，南宋拨第七界湖会九百万付督视参政行府。此前湖会已多次收换：嘉定五年，刘光祖会同总所以第六界新会换旧楮，并请增给新楮十万；嘉定十四年造三十万以易破会，十七年再造第六界二百万。此次拨付将第七界纸币交由督视参政行府支用。",
+      "themeIds": [],
+      "title": "南宋拨付第七界湖会",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1241,
+      "eraId": "song",
+      "id": "song-jinghu-water-defense",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -0.36,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷四百一十二《孟珙传》，分布战舰、上流藩篱三层与兼夔路制置大使段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1241,
+      "summary": "孟珙为上游防御提出夔路、鼎澧和辰沅等三层部署，配置战舰、舟师与驻军，并兼京湖及夔路制置职。防务依赖长江上游粮运、屯田与州县物资。夔路为上游门户，鼎澧、辰沅逐层相接，战舰沿江配置使地方驻防与水路接应构成连续的防守纵深。",
+      "themeIds": [],
+      "title": "孟珙统筹京湖夔路防务",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1243,
+      "eraId": "song",
+      "id": "song-diaoyu-fortress",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire"
+      ],
+      "relationIds": [
+        "song-diaoyu-defense-to-song-diaoyu-fortress"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷四百一十六《余玠传》，四川山城修筑段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1243,
+      "summary": "南宋在合州钓鱼山经营山城，控制嘉陵江交通并组织周边粮食供应。城防把险要地形与地方民众动员结合起来，成为四川抗蒙体系的一环；其防守能力来自长期建设而非单次战役。合州军民迁入山城后借峭壁守险，以江道运粮接应，钓鱼城因而把城池迁建、储粮和控扼河道合为一体。",
+      "themeIds": [],
+      "title": "钓鱼城筑防",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "science"
+      ],
+      "childIds": [],
+      "color": "#79afc6",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1247,
+      "eraId": "song",
+      "id": "song-cijian-legal-medicine",
+      "influence": 3,
+      "layout": {
+        "lane": "science",
+        "offset": [
+          1.08,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《洗冤集录序》，淳祐丁未刊于湖南宪治段",
+          "sourceId": "xiyuan-jilu"
+        }
+      ],
+      "startYear": 1247,
+      "summary": "宋慈综合前人的检验书籍及自己的刑狱经验，编成《洗冤集录》，并于淳祐七年刊刻，供地方司法官互相参验。著作强调案情调查以检验为重，列出尸伤观察和记录方法，成为宋代法医学实践的重要文献。宋慈将检验方法编为可供官员查阅的条目，湖南宪治刊书使各地办案者能对照尸伤记录，减少检验疏漏造成的误判。",
+      "themeIds": [],
+      "title": "宋慈洗冤集录刊行",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1250,
+      "eraId": "song",
+      "id": "song-lin-an-market",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          1.08,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《梦粱录》卷十三《夜市》《团行》，临安街市与行业段",
+          "sourceId": "mengliang-lu"
+        }
+      ],
+      "startYear": 1250,
+      "summary": "《梦粱录》记载临安夜市和按行业组成的团行，街市为居民提供饮食、日用品与服务。夜间营业和行业分工依靠大量服务劳动，也需要周边乡村供给。团行按货物和技艺聚集经营者，夜市延长饮食等买卖时段，临安街道遂同时呈现行业分布与昼夜营业的差别。",
+      "themeIds": [],
+      "title": "南宋临安夜市与团行",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "thought"
+      ],
+      "childIds": [],
+      "color": "#a7bb75",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1256,
+      "eraId": "song",
+      "id": "song-wen-tianxiang-study",
+      "influence": 3,
+      "layout": {
+        "lane": "thought",
+        "offset": [
+          0.72,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷四百一十八《文天祥传》，宝祐进士与论对段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1256,
+      "summary": "宝祐四年文天祥参加殿试，以政事论对受理宗赏识，登进士第一。其策论关注朝廷治理与边防，科举成绩使他进入仕途；后来抗元经历是不同阶段，不能倒写为这次考试的直接内容。殿试以策问考察士人议政，理宗亲擢第一使文天祥由应试者成为新科进士，论对首先是一份求仕的政治答卷。",
+      "themeIds": [],
+      "title": "文天祥宝祐进士论对",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1258,
+      "eraId": "song",
+      "id": "mongol-sichuan-campaign",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          1.08,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《元史》宪宗本纪",
+          "sourceId": "yuanshi-zhonghua-1976"
+        }
+      ],
+      "startYear": 1258,
+      "summary": "蒙古大汗蒙哥亲率军队进入四川，试图从西线突破南宋防御。山城和交通线使战事延长，双方都依靠地方粮源和民夫；蒙古军最终未能迅速取得全面胜利。蒙哥以大汗身份亲临西线，进攻对象包括合州等山城，蒙古诸路不能迅速会合，使夺取四川的计划受到城防牵制。",
+      "themeIds": [],
+      "title": "蒙哥攻四川",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "合州钓鱼城依山临江，是南宋四川山城防御体系的一个节点。王坚组织守军储粮、修筑设施并联络周边军民，使蒙古大军难以按平原围城方式迅速夺城。蒙哥亲征军受阻，随后撤退；关于蒙哥死因，史料说法不同，不能将某一传说作为战役定论。钓鱼城的坚守说明地形、粮道和长期地方动员能改变进军节奏，但并不表示整个四川已经脱离战争。",
+      "categories": [
+        "war"
+      ],
+      "causes": [
+        "蒙古军试图突破四川山城体系，钓鱼城控制要道。"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "course": [
+        {
+          "description": "王坚等人组织城防，抵御蒙哥亲征军队。",
+          "title": "钓鱼城抗蒙",
+          "year": 1259
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1259,
+      "eraId": "song",
+      "historiography": "蒙哥死因存在不同说法，可以确认的是围城未使南宋立即失守。",
+      "id": "song-diaoyu-defense",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "四川山城体系延缓蒙古军推进，显示地方储粮和地形防御的作用。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -1.08,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [
+        "person-wang-jian"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire"
+      ],
+      "relationIds": [
+        "song-diaoyu-defense-to-song-diaoyu-fortress"
+      ],
+      "results": [
+        "蒙古军攻势受挫，四川战局出现转折。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》理宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《元史》宪宗本纪，己未年合州战事条",
+          "sourceId": "yuanshi-zhonghua-1976"
+        }
+      ],
+      "startYear": 1259,
+      "summary": "合州钓鱼城在蒙古军围攻下坚持防守，蒙哥病逝于军中后围城局势改变。史料对死因和城内具体战况记载不同，较确定的是四川山城防御影响了蒙古军的进攻节奏。蒙古军试图突破四川山城体系，钓鱼城控制要道。",
+      "themeIds": [],
+      "title": "钓鱼城抗蒙",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1262,
+      "eraId": "song",
+      "id": "song-jiaozhi-currency",
+      "influence": 4,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -0.36,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷一百八十一《食货志·会子》，南宋会子流通段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1262,
+      "summary": "战争支出和财政赤字推动南宋加大发行会子，纸币购买力在部分时期明显下降。商人和普通居民不得不调整交易方式，名义上的货币供应增加并不能替代稳定的税收和物资供给。军费以新印纸券支付而市面货物并未同步增加，商人收券须考虑折价，官府名义券额与实际购买力因而分离。",
+      "themeIds": [],
+      "title": "南宋会子贬值",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1263,
+      "eraId": "song",
+      "id": "song-jia-si-dao-reform",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          0.36,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷四百七十四《贾似道传》，买公田以罢和籴段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1263,
+      "summary": "南宋后期推行公田法，收买或征占部分大户田地，以获取军粮和缓解财政困境。政策触及江南土地所有者及佃农利益，执行中出现价格、强制和产量问题，反映末期财政压力。贾似道以公田租米替代向民户和籴军粮，朝廷获得租入，原田主却面临限价出卖，佃户的收租对象也随之改变。",
+      "themeIds": [],
+      "title": "贾似道公田法",
+      "yearPrecision": "exact"
+    }
+  ],
+  "people": [
+    {
+      "aliases": [
+        "宋太祖"
+      ],
+      "birthYear": 927,
+      "birthplaceId": null,
+      "contributions": [
+        "建立宋朝并调整中央军政结构。"
+      ],
+      "deathYear": 976,
+      "evaluation": "宋初制度选择深刻影响此后文官政治。",
+      "eventIds": [
+        "chenqiao",
+        "song-civil-military-separation"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhao-kuangyin",
+      "identities": [],
+      "legacy": "宋初制度选择深刻影响此后文官政治。",
+      "name": "赵匡胤",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "宋朝建立者。960年经陈桥兵变即位，随后推进统一并加强中央对军政的控制。",
+      "timeline": [
+        {
+          "description": "建立宋朝并调整中央军政结构。",
+          "title": "主要活动",
+          "year": 960
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 928,
+      "birthplaceId": null,
+      "contributions": [
+        "参与宋朝建立过程。"
+      ],
+      "deathYear": 984,
+      "evaluation": "其政治际遇反映了宋初武将与皇权关系的调整。",
+      "eventIds": [
+        "chenqiao"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-shi-shouxin",
+      "identities": [],
+      "legacy": "其政治际遇反映了宋初武将与皇权关系的调整。",
+      "name": "石守信",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "后周、北宋将领，参与陈桥兵变，拥立赵匡胤。其经历与宋初军权调整相联系。",
+      "timeline": [
+        {
+          "description": "参与宋朝建立过程。",
+          "title": "主要活动",
+          "year": 960
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 939,
+      "birthplaceId": null,
+      "contributions": [
+        "承接太祖统一事业，灭北汉后北伐辽朝。"
+      ],
+      "deathYear": 997,
+      "evaluation": "中原主要割据政权结束，但燕云仍由辽朝控制。",
+      "eventIds": [
+        "song-northern-han-fall"
+      ],
+      "historiography": "统一北汉与随后高梁河失利相接，不能把二者合写成一场成功北伐。",
+      "id": "person-zhao-guangyi",
+      "identities": [
+        {
+          "description": "宋太宗，承接太祖统一事业，灭北汉后北伐辽朝。",
+          "endYear": 979,
+          "roleId": "official",
+          "startYear": 979
+        }
+      ],
+      "legacy": "承接太祖统一事业，灭北汉后北伐辽朝。",
+      "name": "赵光义",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "songshi-zhonghua-1977"
+      ],
+      "summary": "赵光义继承兄长赵匡胤的皇位，继续推进宋朝统一。太平兴国四年，他亲征北汉并攻克太原，随后乘势北伐辽朝，在高梁河遭到挫败。灭北汉与北伐失败发生在同一年，分别呈现宋初军队的动员能力与对燕云地区作战的局限。",
+      "timeline": [
+        {
+          "description": "太宗围攻太原并接受北汉君主投降。",
+          "title": "宋灭北汉",
+          "year": 979
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "萧绰"
+      ],
+      "birthYear": 953,
+      "birthplaceId": null,
+      "contributions": [
+        "参与辽朝军政与宋辽议和。"
+      ],
+      "deathYear": 1009,
+      "evaluation": "其活动体现了辽朝政治及宋辽关系的复杂性。",
+      "eventIds": [
+        "chanyuan",
+        "liao-empress-xiao-regency"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-xiao-chuo",
+      "identities": [],
+      "legacy": "其活动体现了辽朝政治及宋辽关系的复杂性。",
+      "name": "萧太后",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "辽朝政治人物，长期参与朝政，曾率军南下，是澶渊议和的重要决策者。",
+      "timeline": [
+        {
+          "description": "参与辽朝军政与宋辽议和。",
+          "title": "主要活动",
+          "year": 1004
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 961,
+      "birthplaceId": null,
+      "contributions": [
+        "参与澶渊之盟前后的军政决策。"
+      ],
+      "deathYear": 1023,
+      "evaluation": "其形象与北宋对辽政策及士大夫政治相联系。",
+      "eventIds": [
+        "chanyuan"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-kou-zhun",
+      "identities": [],
+      "legacy": "其形象与北宋对辽政策及士大夫政治相联系。",
+      "name": "寇准",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "北宋政治人物，辽军南下时主张宋真宗亲征，参与澶州军事和议和决策。",
+      "timeline": [
+        {
+          "description": "参与澶渊之盟前后的军政决策。",
+          "title": "主要活动",
+          "year": 1004
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "赵恒"
+      ],
+      "birthYear": 968,
+      "birthplaceId": null,
+      "contributions": [
+        "参与形成澶渊之盟。"
+      ],
+      "deathYear": 1022,
+      "evaluation": "宋辽和约与其统治时期的边境秩序紧密相关。",
+      "eventIds": [
+        "chanyuan",
+        "song-liao-chanzhou-campaign"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhao-heng",
+      "identities": [],
+      "legacy": "宋辽和约与其统治时期的边境秩序紧密相关。",
+      "name": "宋真宗",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "宋朝皇帝，辽军南下时前往澶州，随后与辽议和。",
+      "timeline": [
+        {
+          "description": "参与形成澶渊之盟。",
+          "title": "主要活动",
+          "year": 1004
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 989,
+      "birthplaceId": null,
+      "contributions": [
+        "主持庆历新政，并参与西北边防。"
+      ],
+      "deathYear": 1052,
+      "evaluation": "改革遭遇阻力，但其议题进入后续新法讨论。",
+      "eventIds": [
+        "song-qingli-reforms"
+      ],
+      "historiography": "庆历措施实施时间短，不能把所有后来的制度变化追溯为其直接成果。",
+      "id": "person-fan-zhongyan",
+      "identities": [
+        {
+          "description": "北宋参知政事，主持庆历新政，并参与西北边防。",
+          "endYear": 1045,
+          "roleId": "official",
+          "startYear": 1043
+        }
+      ],
+      "legacy": "主持庆历新政，并参与西北边防。",
+      "name": "范仲淹",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "songshi-zhonghua-1977"
+      ],
+      "summary": "范仲淹在西北主持边防后进入仁宗朝中枢，提出庆历新政，主张整顿官吏考核、选举与地方行政。改革很快遇到阻力，他离开朝廷后仍以地方政绩和文章被记忆。其活动横跨边防、财政和教育，不宜只用一句先忧后乐概括。",
+      "timeline": [
+        {
+          "description": "范仲淹提出整顿吏治和选举的改革措施。",
+          "title": "庆历新政",
+          "year": 1043
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1019,
+      "birthplaceId": null,
+      "contributions": [
+        "参与新法争论并从事史学编纂。"
+      ],
+      "deathYear": 1086,
+      "evaluation": "其政治主张与史学工作均产生长期影响。",
+      "eventIds": [
+        "wang-anshi",
+        "song-zi-zhi-tong-jian"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-sima-guang",
+      "identities": [],
+      "legacy": "其政治主张与史学工作均产生长期影响。",
+      "name": "司马光",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "北宋政治家、史学家，反对王安石部分新法，主持编纂《资治通鉴》。",
+      "timeline": [
+        {
+          "description": "参与新法争论并从事史学编纂。",
+          "title": "主要活动",
+          "year": 1069
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1021,
+      "birthplaceId": null,
+      "contributions": [
+        "推动青苗、募役、保甲等改革。"
+      ],
+      "deathYear": 1086,
+      "evaluation": "对新法效果与执行问题的讨论延续至今。",
+      "eventIds": [
+        "wang-anshi",
+        "song-baojia"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-wang-anshi",
+      "identities": [],
+      "legacy": "对新法效果与执行问题的讨论延续至今。",
+      "name": "王安石",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "北宋政治家、文学家，宋神宗时期主持新法，试图改善财政、军备与社会治理。",
+      "timeline": [
+        {
+          "description": "推动青苗、募役、保甲等改革。",
+          "title": "主要活动",
+          "year": 1069
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1037,
+      "birthplaceId": null,
+      "contributions": [
+        "诗案后贬居黄州，持续诗文创作。"
+      ],
+      "deathYear": 1101,
+      "evaluation": "案件改变苏轼仕途，也放大文人表达的政治风险。",
+      "eventIds": [
+        "song-wutai-poetry"
+      ],
+      "historiography": "诗案材料经过政治筛选，解读诗句时不宜把检控词等同作者本意。",
+      "id": "person-su-shi",
+      "identities": [
+        {
+          "description": "北宋文臣与文学家，诗案后贬居黄州，持续诗文创作。",
+          "endYear": 1079,
+          "roleId": "official",
+          "startYear": 1079
+        }
+      ],
+      "legacy": "诗案后贬居黄州，持续诗文创作。",
+      "name": "苏轼",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "songshi-zhonghua-1977"
+      ],
+      "summary": "苏轼以科举进入仕途，诗文和政治议论都受到士人关注。元丰二年因诗文遭弹劾入狱，随后贬居黄州，在政治挫折中写下大量散文与词作。他的生平还包括杭州等地的行政实践；乌台诗案是重要转折，却不是其全部创作和公共活动的起点。",
+      "timeline": [
+        {
+          "description": "苏轼因诗文遭弹劾、审讯，随后贬居黄州。",
+          "title": "乌台诗案",
+          "year": 1079
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "赵顼"
+      ],
+      "birthYear": 1048,
+      "birthplaceId": null,
+      "contributions": [
+        "支持新法并调整国家治理。"
+      ],
+      "deathYear": 1085,
+      "evaluation": "其统治体现了北宋富国强兵的改革诉求。",
+      "eventIds": [
+        "wang-anshi"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhao-xu",
+      "identities": [],
+      "legacy": "其统治体现了北宋富国强兵的改革诉求。",
+      "name": "宋神宗",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "宋朝皇帝，支持王安石变法，希望应对北宋财政与边防问题。",
+      "timeline": [
+        {
+          "description": "支持新法并调整国家治理。",
+          "title": "主要活动",
+          "year": 1069
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "完颜晟"
+      ],
+      "birthYear": 1075,
+      "birthplaceId": null,
+      "contributions": [
+        "统治时期金朝扩大在北方的控制。"
+      ],
+      "deathYear": 1135,
+      "evaluation": "其统治与宋金政治格局的形成有关。",
+      "eventIds": [
+        "jingkang"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-wanyan-sheng",
+      "identities": [],
+      "legacy": "其统治与宋金政治格局的形成有关。",
+      "name": "金太宗",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "金朝皇帝，在位期间金军灭辽并攻取北宋都城开封。",
+      "timeline": [
+        {
+          "description": "统治时期金朝扩大在北方的控制。",
+          "title": "主要活动",
+          "year": 1127
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "赵佶"
+      ],
+      "birthYear": 1082,
+      "birthplaceId": null,
+      "contributions": [
+        "北宋末年在位，靖康之变后被俘。"
+      ],
+      "deathYear": 1135,
+      "evaluation": "其文化成就与政治责任需要分别评价。",
+      "eventIds": [
+        "jingkang",
+        "song-jin-sea-alliance"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhao-ji",
+      "identities": [],
+      "legacy": "其文化成就与政治责任需要分别评价。",
+      "name": "宋徽宗",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "宋朝皇帝，兼擅书画。靖康之变中被金军俘虏，其统治常与北宋末年政治危机一并讨论。",
+      "timeline": [
+        {
+          "description": "北宋末年在位，靖康之变后被俘。",
+          "title": "主要活动",
+          "year": 1127
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1089,
+      "birthplaceId": null,
+      "contributions": [
+        "组织南宋初年的抗金防御。"
+      ],
+      "deathYear": 1151,
+      "evaluation": "其经历体现了南宋立国初期的军事压力。",
+      "eventIds": [
+        "yue-fei",
+        "song-huangtiandang"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-han-shizhong",
+      "identities": [],
+      "legacy": "其经历体现了南宋立国初期的军事压力。",
+      "name": "韩世忠",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "南宋将领，参与抗金作战，黄天荡战役是其军事生涯中的重要事件。",
+      "timeline": [
+        {
+          "description": "组织南宋初年的抗金防御。",
+          "title": "主要活动",
+          "year": 1130
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1090,
+      "birthplaceId": null,
+      "contributions": [
+        "推动绍兴和议及相关政治安排。"
+      ],
+      "deathYear": 1155,
+      "evaluation": "对其评价长期围绕议和政策与岳飞之死展开。",
+      "eventIds": [
+        "yue-fei",
+        "song-shaoxing-peace"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-qin-hui",
+      "identities": [],
+      "legacy": "对其评价长期围绕议和政策与岳飞之死展开。",
+      "name": "秦桧",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "南宋宰相，主导对金议和，并与岳飞被害事件有密切联系。",
+      "timeline": [
+        {
+          "description": "推动绍兴和议及相关政治安排。",
+          "title": "主要活动",
+          "year": 1141
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "赵桓"
+      ],
+      "birthYear": 1100,
+      "birthplaceId": null,
+      "contributions": [
+        "应对金军围攻，经历靖康之变。"
+      ],
+      "deathYear": 1161,
+      "evaluation": "其遭遇成为北宋覆亡与南宋政治记忆的重要部分。",
+      "eventIds": [
+        "jingkang"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhao-huan",
+      "identities": [],
+      "legacy": "其遭遇成为北宋覆亡与南宋政治记忆的重要部分。",
+      "name": "宋钦宗",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "北宋末代皇帝，在位时面临金军进攻，开封陷落后被俘。",
+      "timeline": [
+        {
+          "description": "应对金军围攻，经历靖康之变。",
+          "title": "主要活动",
+          "year": 1127
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1103,
+      "birthplaceId": null,
+      "contributions": [
+        "参与南宋初年的抗金战争。"
+      ],
+      "deathYear": 1142,
+      "evaluation": "应区分其实际军事经历、政治处境与后世纪念。",
+      "eventIds": [
+        "yue-fei",
+        "song-yue-fei-xiangyang"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-yue-fei",
+      "identities": [],
+      "legacy": "应区分其实际军事经历、政治处境与后世纪念。",
+      "name": "岳飞",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "南宋将领，组织抗金作战并多次北伐，后被处死。其军事活动与后世忠烈记忆均影响深远。",
+      "timeline": [
+        {
+          "description": "参与南宋初年的抗金战争。",
+          "title": "主要活动",
+          "year": 1134
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1107,
+      "birthplaceId": null,
+      "contributions": [
+        "靖康之后即位，主持南宋初期重建。"
+      ],
+      "deathYear": 1187,
+      "evaluation": "南宋承续宋朝名号，转向以江南财赋支撑战争。",
+      "eventIds": [
+        "southern-song-founded"
+      ],
+      "historiography": "建炎初年都城不断迁移，不能以后来的临安格局描述即位当日的局势。",
+      "id": "person-zhao-gou",
+      "identities": [
+        {
+          "description": "宋高宗，靖康之后即位，主持南宋初期重建。",
+          "endYear": 1127,
+          "roleId": "official",
+          "startYear": 1127
+        }
+      ],
+      "legacy": "靖康之后即位，主持南宋初期重建。",
+      "name": "赵构",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "songshi-zhonghua-1977"
+      ],
+      "summary": "赵构在靖康之变后于应天府即位，延续宋朝皇统。初期朝廷多次迁徙，他需要重新组织军队、安置南渡官民并建立江南财政。其后来长期主持对金战争与和议，南宋政权的形成并非即位诏书即可完成的单一时刻。",
+      "timeline": [
+        {
+          "description": "赵构在应天府即位，任命官员并组织南迁。",
+          "title": "南宋建立",
+          "year": 1127
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1110,
+      "birthplaceId": null,
+      "contributions": [
+        "在采石一线组织水军抵御金军。"
+      ],
+      "deathYear": 1174,
+      "evaluation": "金军渡江受阻，南宋获得调整防务的时间。",
+      "eventIds": [
+        "song-caishi-battle"
+      ],
+      "historiography": "金海陵王内部危机也影响战局，战役不能独自解释金军全面退却。",
+      "id": "person-yu-yunwen",
+      "identities": [
+        {
+          "description": "南宋文臣，在采石一线组织水军抵御金军。",
+          "endYear": 1161,
+          "roleId": "official",
+          "startYear": 1161
+        }
+      ],
+      "legacy": "在采石一线组织水军抵御金军。",
+      "name": "虞允文",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "songshi-zhonghua-1977"
+      ],
+      "summary": "虞允文在金军企图渡江之际参与采石防务，组织水军和沿岸部队阻击。其临阵指挥帮助南宋守住局部江面，后续又参与边防与朝政。采石的战果应与金海陵王遇害后的内部分裂一同考察，不能将全部金军退却归于他一人的行动。",
+      "timeline": [
+        {
+          "description": "虞允文组织采石矶附近水军抵抗渡江。",
+          "title": "采石之战",
+          "year": 1161
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1130,
+      "birthplaceId": null,
+      "contributions": [
+        "讲学并注释四书，参与书院建设。"
+      ],
+      "deathYear": 1200,
+      "evaluation": "分歧推动理学内部持续论辩和讲学。",
+      "eventIds": [
+        "song-ehu-debate",
+        "song-zhu-xi-commentaries"
+      ],
+      "historiography": "后人常把鹅湖会简化为学派决裂，当时参与者仍保持复杂交流。",
+      "id": "person-zhu-xi",
+      "identities": [
+        {
+          "description": "南宋理学家，讲学并注释四书，参与书院建设。",
+          "endYear": 1175,
+          "roleId": "official",
+          "startYear": 1175
+        }
+      ],
+      "legacy": "讲学并注释四书，参与书院建设。",
+      "name": "朱熹",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "china-kongzi-ehu"
+      ],
+      "summary": "朱熹长期在地方讲学、整理经典，并与陆九渊等人讨论读书和修养之道。他对四书作章句集注，也参与书院及社仓实践，将思想论述和地方教育、救济联系起来。其著作在生前曾受党禁影响，后来的科举正统地位经历了漫长的接受过程。",
+      "timeline": [
+        {
+          "description": "朱熹与陆九渊兄弟在鹅湖讨论为学次第。",
+          "title": "鹅湖之会",
+          "year": 1175
+        },
+        {
+          "description": "朱熹完成对四书的章句和集注整理。",
+          "title": "朱熹四书章句集注刊行",
+          "year": 1190
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1152,
+      "birthplaceId": null,
+      "contributions": [
+        "推动开禧北伐，战败后被诛。"
+      ],
+      "deathYear": 1207,
+      "evaluation": "战争失败导致中枢权力转移和新一轮议和。",
+      "eventIds": [
+        "song-kaixi-expedition"
+      ],
+      "historiography": "把失败全归一人会掩盖军队准备、边地补给和政治协同问题。",
+      "id": "person-han-tuozhou",
+      "identities": [
+        {
+          "description": "南宋权臣，推动开禧北伐，战败后被诛。",
+          "endYear": 1206,
+          "roleId": "official",
+          "startYear": 1206
+        }
+      ],
+      "legacy": "推动开禧北伐，战败后被诛。",
+      "name": "韩侂胄",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "songshi-zhonghua-1977"
+      ],
+      "summary": "韩侂胄在宁宗朝掌握中枢权力，推动开禧北伐，企图改变长期对金守势。战争准备与将帅协同不足导致宋军受挫，他随后在朝廷政变中被杀。后世对其褒贬分歧很大，军事责任、权力斗争和恢复故土的政治愿望需要分开判断。",
+      "timeline": [
+        {
+          "description": "韩侂胄推动北伐，宋军多路出击后受挫。",
+          "title": "开禧北伐",
+          "year": 1206
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "铁木真"
+      ],
+      "birthYear": 1162,
+      "birthplaceId": null,
+      "contributions": [
+        "建立蒙古政治军事共同体。"
+      ],
+      "deathYear": 1227,
+      "evaluation": "其征服兼有广域联系扩展与大规模战争破坏。",
+      "eventIds": [
+        "mongol-rise",
+        "western-xia-fall"
+      ],
+      "historiography": "生年有不同记载，此处采用约1162年的常见说法。生平提要依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-temujin",
+      "identities": [],
+      "legacy": "其征服兼有广域联系扩展与大规模战争破坏。",
+      "name": "成吉思汗",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "蒙古政治军事领袖，1206年统一草原诸部后被推举为成吉思汗。其扩张深刻改变欧亚局势。",
+      "timeline": [
+        {
+          "description": "建立蒙古政治军事共同体。",
+          "title": "主要活动",
+          "year": 1206
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1170,
+      "birthplaceId": null,
+      "contributions": [
+        "参与蒙古扩张与对金战争。"
+      ],
+      "deathYear": 1223,
+      "evaluation": "其活动与蒙古在华北的军政组织发展相关。",
+      "eventIds": [
+        "mongol-rise"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-muqali",
+      "identities": [],
+      "legacy": "其活动与蒙古在华北的军政组织发展相关。",
+      "name": "木华黎",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "蒙古将领，协助成吉思汗作战，后主持对金战争。",
+      "timeline": [
+        {
+          "description": "参与蒙古扩张与对金战争。",
+          "title": "主要活动",
+          "year": 1217
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "经营钓鱼城防御并抵抗蒙哥军队。"
+      ],
+      "deathYear": 1264,
+      "evaluation": "蒙古军攻势受挫，四川战局出现转折。",
+      "eventIds": [
+        "song-diaoyu-defense"
+      ],
+      "historiography": "蒙哥死因存在不同说法，可以确认的是围城未使南宋立即失守。",
+      "id": "person-wang-jian",
+      "identities": [
+        {
+          "description": "南宋守将，经营钓鱼城防御并抵抗蒙哥军队。",
+          "endYear": 1259,
+          "roleId": "official",
+          "startYear": 1259
+        }
+      ],
+      "legacy": "经营钓鱼城防御并抵抗蒙哥军队。",
+      "name": "王坚",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "songshi-zhonghua-1977"
+      ],
+      "summary": "王坚是南宋四川防御体系中的守将，负责经营合州钓鱼城。城堡依托山势、嘉陵江交通和地方粮源，在蒙哥亲征时长期抵御围攻。史料对蒙哥死因记载不同，但王坚的防守活动说明山城体系可以改变大军推进的节奏。",
+      "timeline": [
+        {
+          "description": "王坚等人组织城防，抵御蒙哥亲征军队。",
+          "title": "钓鱼城抗蒙",
+          "year": 1259
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "试用胶泥活字排版，技术由沈括记载。"
+      ],
+      "deathYear": null,
+      "evaluation": "活字成为宋代印刷技术多样化的重要证据。",
+      "eventIds": [
+        "song-moving-type"
+      ],
+      "historiography": "技术描述主要见沈括记载，不能据此推定活字立即普遍替代雕版。",
+      "id": "person-bi-sheng",
+      "identities": [
+        {
+          "description": "活字印刷发明者，试用胶泥活字排版，技术由沈括记载。",
+          "endYear": 1048,
+          "roleId": "artisan",
+          "startYear": 1041
+        }
+      ],
+      "legacy": "试用胶泥活字排版，技术由沈括记载。",
+      "name": "毕昇",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "mengxi-bitan-zhonghua-2009"
+      ],
+      "summary": "毕昇是北宋庆历年间试制活字的工匠，生卒年及更完整的生平没有可靠记载。沈括在梦溪笔谈中详细描述其用胶泥制字、排版、加热与拆版的方法。毕昇的实验依托已有的雕版和造纸技术，后人称道的发明不代表当时印刷业立即全面采用活字。",
+      "timeline": [
+        {
+          "description": "《梦溪笔谈》只记庆历年间，1041年是区间起点，不是确切制作年。",
+          "title": "庆历年间活字试制",
+          "year": 1041
+        }
+      ],
+      "works": [],
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "参与四川交子官办制度的初期管理。"
+      ],
+      "deathYear": null,
+      "evaluation": "纸币获得官府信用，同时产生发行与兑换风险。",
+      "eventIds": [
+        "song-jiaozi-official"
+      ],
+      "historiography": "交子的起点是商人实践，官办制度不意味着纸币一开始便全国通用。",
+      "id": "person-xue-tian",
+      "identities": [
+        {
+          "description": "益州转运使，参与四川交子官办制度的初期管理。",
+          "endYear": 1023,
+          "roleId": "official",
+          "startYear": 1023
+        }
+      ],
+      "legacy": "参与四川交子官办制度的初期管理。",
+      "name": "薛田",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "songshi-zhonghua-1977"
+      ],
+      "summary": "薛田在益州任职时参与管理交子。四川商人此前以纸券解决铁钱沉重、远距离支付不便的问题，官府接管发行则改变了原有的信用关系。他的事迹主要保存在制度记载中，不能把交子的发明或整个纸币制度归于一名地方官。",
+      "timeline": [
+        {
+          "description": "益州官府接管交子发行并设立管理机构。",
+          "title": "益州交子官办",
+          "year": 1023
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    }
+  ]
+}
