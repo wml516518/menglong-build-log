@@ -9,6 +9,11 @@ deathYear: 1735
 roleIds: []
 eventIds:
   - kangqian
+  - kangxi-death-yongzheng-accession
+  - kiakhta-treaty
+  - opium-ban-1729
+  - yongzheng-death
+  - yongzheng-fiscal-reforms
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

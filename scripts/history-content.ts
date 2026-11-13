@@ -1,12 +1,13 @@
-import matter from 'gray-matter';
-import { mkdtemp, mkdir, readFile, readdir, readlink, realpath, lstat, rename, rm, stat, writeFile } from 'node:fs/promises';
+import { assertUniqueEditorialPeriods, generatedFiles, stableJson } from './history-content/generate';
+import { mkdtemp, mkdir, readlink, realpath, lstat, rename, rm, stat, writeFile } from 'node:fs/promises';
 import { basename, dirname, join, relative, resolve, sep } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { z } from 'zod';
+import { validateContentQuality, type ContentQualityReport } from './history-content/quality';
+import { markdownFiles, normalizeAliases, parseFrontmatter, readCatalog, readCoreDetails, readEventCatalogs, mergeEventArchives, validated } from './history-content/catalog';
 import {
-  eraSchema, eventArchiveSchema, eventIndexSchema, personArchiveSchema, personIndexSchema,
-  placeIndexSchema, relationSchema, sourceSchema, themeArchiveSchema,
-  type HistoryEra, type HistoryEventArchive, type PersonArchive
+  eraSchema, personArchiveSchema,
+  placeIndexSchema, politySchema, relationSchema, sourceSchema, themeArchiveSchema, editorialPeriodSchema,
+  type HistoryEra, type PersonArchive
 } from '../src/history/content/schema';
 
 export interface CompileOptions {
@@ -14,6 +15,7 @@ export interface CompileOptions {
   publicOutputRoot: string;
   /** Its parent is a dedicated generated directory, replaced as a unit. */
   compatibilityOutputFile?: string;
+  enforceFinalTargets?: boolean;
 }
 export interface CompileReport {
   eventCount: number;
@@ -22,6 +24,8 @@ export interface CompileReport {
   sourceCount: number;
   themeCount: number;
   errorCount: 0;
+  placeCount: number;
+  contentQuality: ContentQualityReport;
 }
 
 const compareId = (a: { id: string }, b: { id: string }) => a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
@@ -29,74 +33,31 @@ const chronological = (a: { startYear: number; endYear: number; id: string }, b:
   a.startYear - b.startYear || a.endYear - b.endYear || compareId(a, b);
 const peopleChronological = (a: PersonArchive, b: PersonArchive) =>
   (a.birthYear ?? Infinity) - (b.birthYear ?? Infinity) || (a.deathYear ?? Infinity) - (b.deathYear ?? Infinity) || compareId(a, b);
-const normalizeAliases = (aliases: unknown) => Array.isArray(aliases)
-  ? [...new Set(aliases.map(alias => typeof alias === 'string' ? alias.normalize('NFKC').trim().replace(/\s+/g, ' ') : alias))].sort()
-  : aliases;
-
-function validated<T>(schema: z.ZodType<T>, value: unknown, label: string): T {
-  const result = schema.safeParse(value);
-  if (!result.success) throw new Error(`${label}: ${result.error.issues.map(issue => `${issue.path.join('.') || '记录'} ${issue.message}`).join('; ')}`);
-  return result.data;
-}
-async function readCatalog<T>(root: string, name: string, schema: z.ZodType<T>, label: string, optional = false): Promise<T[]> {
-  let text: string;
-  try { text = await readFile(join(root, 'manifest', `${name}.json`), 'utf8'); }
-  catch (error) { if (optional && (error as NodeJS.ErrnoException).code === 'ENOENT') return []; throw error; }
-  let records: unknown;
-  try { records = JSON.parse(text); } catch { throw new Error(`清单 ${name}.json 不是有效 JSON`); }
-  if (!Array.isArray(records)) throw new Error(`清单 ${name}.json 必须是数组`);
-  return records.map(record => validated(schema, record && typeof record === 'object' && 'aliases' in record
-    ? { ...record, aliases: normalizeAliases(record.aliases) } : record, `${label} ${record?.id ?? name}`));
-}
 function unique<T extends { id: string }>(records: T[], label: string): Map<string, T> {
   const index = new Map<string, T>();
-  for (const record of records) {
+  for (const record of [...records].sort(compareId)) {
     if (index.has(record.id)) throw new Error(`重复${label} ID: ${record.id}`);
     index.set(record.id, record);
   }
   return index;
 }
-async function markdownFiles(root: string): Promise<string[]> {
-  const entries = await readdir(root, { withFileTypes: true });
-  const result: string[] = [];
-  for (const entry of entries.sort((a, b) => a.name < b.name ? -1 : 1)) {
-    const path = join(root, entry.name);
-    if (entry.isDirectory()) result.push(...await markdownFiles(path));
-    else if (entry.isFile() && entry.name.endsWith('.md')) result.push(path);
-  }
-  return result;
-}
-async function readArchives(sourceRoot: string, eras: Map<string, HistoryEra>) {
-  const events: HistoryEventArchive[] = [];
+async function readPeople(sourceRoot: string, eras: Map<string, HistoryEra>) {
   const people: PersonArchive[] = [];
   const contentRoot = join(sourceRoot, 'content');
   for (const file of await markdownFiles(contentRoot)) {
     const parts = relative(contentRoot, file).split(sep);
     if (parts.length !== 3 || !['events', 'people'].includes(parts[1])) throw new Error(`档案路径无效: ${relative(sourceRoot, file)}`);
-    const isEvent = parts[1] === 'events';
-    const label = isEvent ? '事件' : '人物';
-    let parsed: ReturnType<typeof matter>;
-    const markdown = await readFile(file, 'utf8');
-    if (!/^(?:\uFEFF)?---\r?\n/.test(markdown)) throw new Error(`${label} ${basename(file, '.md')} 的 Frontmatter 仅支持 YAML`);
-    try { parsed = matter(markdown); }
-    catch (error) { throw new Error(`${label} ${basename(file, '.md')} 的 Frontmatter 无效: ${(error as Error).message}`); }
+    if (parts[1] === 'events') continue;
+    const parsed = await parseFrontmatter(file, '人物');
     const data = { ...parsed.data, aliases: normalizeAliases(parsed.data.aliases) };
     const id = parsed.data.id ?? basename(file, '.md');
-    if (isEvent) {
-      if ('background' in data) throw new Error(`事件 ${id} 的 background 必须写在 Markdown 正文`);
-      const event = validated(eventArchiveSchema, { ...data, background: parsed.content.trim() }, `事件 ${id}`);
-      reference(eras, event.eraId, `事件 ${id} 引用了不存在的时代`);
-      if (event.eraId !== parts[0]) throw new Error(`事件 ${id} 的目录时代 ${parts[0]} 与 eraId ${event.eraId} 不一致`);
-      events.push(event);
-    } else {
-      if ('summary' in data) throw new Error(`人物 ${id} 的 summary 必须写在 Markdown 正文`);
-      const person = validated(personArchiveSchema, { ...data, summary: parsed.content.trim() }, `人物 ${id}`);
-      reference(eras, person.primaryEraId, `人物 ${id} 引用了不存在的时代`);
-      if (person.primaryEraId !== parts[0]) throw new Error(`人物 ${id} 的目录时代 ${parts[0]} 与 primaryEraId ${person.primaryEraId} 不一致`);
-      people.push(person);
-    }
+    if ('summary' in data) throw new Error(`人物 ${id} 的 summary 必须写在 Markdown 正文`);
+    const person = validated(personArchiveSchema, { ...data, summary: parsed.content.trim() }, `${file}: 人物 ${id}`);
+    reference(eras, person.primaryEraId, `人物 ${id} 引用了不存在的时代`);
+    if (person.primaryEraId !== parts[0]) throw new Error(`人物 ${id} 的目录时代 ${parts[0]} 与 primaryEraId ${person.primaryEraId} 不一致`);
+    people.push(person);
   }
-  return { events, people };
+  return people;
 }
 function reference<T>(records: Map<string, T>, id: string, label: string): T {
   const record = records.get(id);
@@ -104,18 +65,32 @@ function reference<T>(records: Map<string, T>, id: string, label: string): T {
   return record;
 }
 
-async function loadContent(sourceRoot: string) {
+async function loadContent(sourceRoot: string, enforceFinalTargets: boolean) {
   const eras = await readCatalog(sourceRoot, 'eras', eraSchema, '时代');
   const sources = await readCatalog(sourceRoot, 'sources', sourceSchema, '来源');
   const themes = await readCatalog(sourceRoot, 'themes', themeArchiveSchema, '专题');
   // These schema-backed catalogs are optional until content authors use them.
   const places = await readCatalog(sourceRoot, 'places', placeIndexSchema, '地点', true);
+  const polities = await readCatalog(sourceRoot, 'polities', politySchema, '政权');
   const relations = await readCatalog(sourceRoot, 'relations', relationSchema, '关系', true);
   const eraMap = unique(eras, '时代');
-  const { events, people } = await readArchives(sourceRoot, eraMap);
+  const records = await readEventCatalogs(sourceRoot);
+  const periods = await readCatalog(sourceRoot, 'editorial-periods', editorialPeriodSchema, '编辑时期', records.length === 0);
+  assertUniqueEditorialPeriods(periods);
   const sourceMap = unique(sources, '来源');
-  const themeMap = unique(themes, '专题');
   const placeMap = unique(places, '地点');
+  const polityMap = unique(polities, '政权');
+  // Validate located references before aggregate quality checks for precise diagnostics.
+  for (const event of records) {
+    const label = `${join(sourceRoot, 'catalog/events', `${event.editorialPeriodId}.json`)}: 事件 ${event.id}`;
+    event.sourceRefs.forEach((ref, index) => reference(sourceMap, ref.sourceId, `${label} sourceRefs.${index}.sourceId 引用了不存在的来源`));
+    event.placeIds.forEach((id, index) => reference(placeMap, id, `${label} placeIds.${index} 引用了不存在的地点`));
+    event.polityIds.forEach((id, index) => reference(polityMap, id, `${label} polityIds.${index} 引用了不存在的政权`));
+  }
+  const contentQuality = validateContentQuality({ events: records, periods, sources }, { enforceFinalTargets });
+  const events = mergeEventArchives(records, await readCoreDetails(sourceRoot));
+  const people = await readPeople(sourceRoot, eraMap);
+  const themeMap = unique(themes, '专题');
   const relationMap = unique(relations, '关系');
   const eventMap = unique(events, '事件');
   const personMap = unique(people, '人物');
@@ -125,9 +100,7 @@ async function loadContent(sourceRoot: string) {
     const era = reference(eraMap, event.eraId, `事件 ${event.id} 引用了不存在的时代`);
     if (event.startYear < era.startYear || event.endYear > era.endYear) throw new Error(`事件 ${event.id} 的年代超出时代 ${era.id}`);
     for (const id of event.personIds) reference(personMap, id, `事件 ${event.id} 引用了不存在的人物`);
-    for (const id of event.sourceIds) reference(sourceMap, id, `事件 ${event.id} 引用了不存在的来源`);
     for (const id of event.themeIds) reference(themeMap, id, `事件 ${event.id} 引用了不存在的专题`);
-    for (const id of event.placeIds) reference(placeMap, id, `事件 ${event.id} 引用了不存在的地点`);
     for (const id of event.relationIds) {
       const relation = reference(relationMap, id, `事件 ${event.id} 引用了不存在的关系`);
       if (relation.fromId !== event.id && relation.toId !== event.id) throw new Error(`事件 ${event.id} 不是关系 ${id} 的端点`);
@@ -181,66 +154,18 @@ async function loadContent(sourceRoot: string) {
   for (const event of [...events].sort(compareId)) visit(event.id);
 
   return {
-    eras: eras.sort(chronological), events: events.sort(chronological), people: people.sort(peopleChronological),
-    sources: sources.sort(compareId), themes: themes.sort(compareId), places: places.sort(compareId), relations: relations.sort(compareId)
+    contentQuality, periods, eras: eras.sort(chronological), events: events.sort(chronological), people: people.sort(peopleChronological),
+    polities: polities.sort(compareId), sources: sources.sort(compareId), themes: themes.sort(compareId), places: places.sort(compareId), relations: relations.sort(compareId)
   };
 }
 
 type Content = Awaited<ReturnType<typeof loadContent>>;
+function baseReport(content: Content) {
+  return { eventCount: content.events.length, personCount: content.people.length, eraCount: content.eras.length, sourceCount: content.sources.length, themeCount: content.themes.length, errorCount: 0 as const };
+}
 function report(content: Content): CompileReport {
-  return { eventCount: content.events.length, personCount: content.people.length, eraCount: content.eras.length, sourceCount: content.sources.length, themeCount: content.themes.length, errorCount: 0 };
+  return { ...baseReport(content), placeCount: content.places.length, contentQuality: content.contentQuality };
 }
-function compactEvent(event: HistoryEventArchive) {
-  const { background: _b, causes: _c, course: _co, results: _r, impacts: _i, historiography: _h, ...metadata } = event;
-  return validated(eventIndexSchema, { ...metadata, year: event.startYear }, `事件索引 ${event.id}`);
-}
-function compactPerson(person: PersonArchive) {
-  const { id, name, aliases, primaryEraId, birthYear, deathYear, roleIds, eventIds, sourceIds } = person;
-  return validated(personIndexSchema, { id, name, aliases, primaryEraId, birthYear, deathYear, roleIds, eventIds, sourceIds }, `人物索引 ${id}`);
-}
-
-/** Object keys are lexical; arrays retain their editorial order or explicit record chronology. */
-function stableJson(value: unknown): string {
-  return `${JSON.stringify(value, (_, item) => item && typeof item === 'object' && !Array.isArray(item)
-    ? Object.fromEntries(Object.keys(item).sort().map(key => [key, item[key]])) : item, 2)}\n`;
-}
-const compatibilityEraIds = new Set(['tang', 'five-dynasties', 'song', 'yuan', 'ming', 'qing', 'modern']);
-function legacyEraId(event: HistoryEventArchive, eras: HistoryEra[]): string {
-  if (compatibilityEraIds.has(event.eraId)) return event.eraId;
-  // Future editorial eras can overlap the existing navigation without changing its contract.
-  return eras.filter(era => compatibilityEraIds.has(era.id) && event.startYear >= era.startYear && event.startYear <= era.endYear).at(-1)?.id ?? event.eraId;
-}
-function generatedFiles(content: Content): { publicFiles: Map<string, unknown>; compatibility: unknown } {
-  const { events, people, eras, sources, places, themes, relations } = content;
-  const personNames = new Map(people.map(person => [person.id, person.name]));
-  const indexes = { events: 'indexes/events.compact.json', people: 'indexes/people.compact.json', places: 'indexes/places.compact.json', themes: 'indexes/themes.compact.json' };
-  const manifest = {
-    version: 1, ...report(content), eras, indexes,
-    sources: 'sources.json', relations: 'relations.json',
-    eraBundles: Object.fromEntries(eras.map(era => [era.id, `eras/${era.id}.json`])),
-    eventEras: Object.fromEntries(events.map(event => [event.id, event.eraId])),
-    personEras: Object.fromEntries(people.map(person => [person.id, person.primaryEraId])),
-    themeArchives: Object.fromEntries(themes.map(theme => [theme.id, `themes/${theme.id}.json`]))
-  };
-  const compactEvents = events.map(compactEvent);
-  const publicFiles = new Map<string, unknown>([
-    ['manifest.json', manifest], [indexes.events, compactEvents], [indexes.people, people.map(compactPerson)],
-    [indexes.places, places], [indexes.themes, themes.map(({ id, title, summary, eventIds }) => ({ id, title, summary, eventIds }))],
-    ['sources.json', sources], ['relations.json', relations]
-  ]);
-  for (const era of eras) publicFiles.set(`eras/${era.id}.json`, { eraId: era.id, events: events.filter(event => event.eraId === era.id), people: people.filter(person => person.primaryEraId === era.id) });
-  for (const theme of themes) publicFiles.set(`themes/${theme.id}.json`, theme);
-  const compatibility = {
-    dynasties: eras.filter(era => compatibilityEraIds.has(era.id)).map(({ id, name, startYear, endYear, color, inscription }) => ({ id, name, start: startYear, end: endYear, color, inscription })),
-    historyEvents: events.map((event, index) => ({
-      ...compactEvents[index], dynasty: legacyEraId(event, eras), people: event.personIds.map(id => personNames.get(id)!),
-      story: [...new Set([event.background, ...event.course.map(entry => entry.description), ...event.results, ...event.impacts.map(impact => impact.text)])].join(''),
-      offset: event.layout.offset
-    }))
-  };
-  return { publicFiles, compatibility };
-}
-
 /** Resolve aliases even when only an ancestor (or a dangling symlink) exists. */
 async function filesystemRoot(path: string): Promise<string> {
   try { return await realpath(path); }
@@ -312,7 +237,7 @@ export async function compileHistoryContent(options: CompileOptions): Promise<Co
   const publicRoot = await filesystemRoot(resolve(options.publicOutputRoot));
   const compatibilityRoot = options.compatibilityOutputFile ? await filesystemRoot(dirname(resolve(options.compatibilityOutputFile))) : undefined;
   if (overlaps(sourceRoot, publicRoot) || (compatibilityRoot && (overlaps(sourceRoot, compatibilityRoot) || overlaps(publicRoot, compatibilityRoot)))) throw new Error('源目录和生成目录必须互不包含');
-  const content = await loadContent(sourceRoot);
+  const content = await loadContent(sourceRoot, options.enforceFinalTargets ?? true);
   const { publicFiles, compatibility } = generatedFiles(content);
   const outputs = [{ root: publicRoot, files: publicFiles }];
   if (compatibilityRoot) outputs.push({ root: compatibilityRoot, files: new Map([[basename(options.compatibilityOutputFile!), compatibility]]) });
@@ -325,9 +250,9 @@ async function main() {
   if (command !== 'compile' && command !== 'check') throw new Error('用法: tsx scripts/history-content.ts <check|compile>');
   const sourceRoot = resolve('history-content');
   const result = command === 'check'
-    ? report(await loadContent(sourceRoot))
-    : await compileHistoryContent({ sourceRoot, publicOutputRoot: resolve('public/history-content/generated'), compatibilityOutputFile: resolve('src/history/generated/compat-index.json') });
-  console.log(JSON.stringify(result));
+    ? report(await loadContent(sourceRoot, true))
+    : await compileHistoryContent({ sourceRoot, publicOutputRoot: resolve('public/history-content/generated'), compatibilityOutputFile: resolve('src/history/generated/compat-index.json'), enforceFinalTargets: true });
+  process.stdout.write(stableJson(result));
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   main().catch(error => { console.error((error as Error).message); process.exitCode = 1; });

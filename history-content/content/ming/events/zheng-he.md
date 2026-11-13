@@ -1,47 +1,16 @@
 ---
 id: zheng-he
-title: 郑和下西洋
-aliases: []
-startYear: 1405
-endYear: 1433
-yearPrecision: range
-eraId: ming
-polityIds: []
-period: 明代
-categories:
-  - diplomacy
-  - economy
-themeIds: []
-influence: 5
-summary: 大型船队七下西洋，连接亚洲与非洲海域。
 causes:
   - 明朝国家力量与海上交流需求支持大规模远航。
 course:
-  - year: 1405
+  - description: 郑和率领庞大船队自南京、太仓等地出发，遍访东南亚、南亚、阿拉伯半岛和东非沿岸。
     title: 郑和下西洋
-    description: 郑和率领庞大船队自南京、太仓等地出发，遍访东南亚、南亚、阿拉伯半岛和东非沿岸。
+    year: 1405
 results:
   - 航行展示了明代造船与组织能力，也通过贸易、册封和外交扩大联系，留下跨海交流的鲜明印记。
 impacts:
   - dimension: diplomacy
     text: 航行展示了明代造船与组织能力，也通过贸易、册封和外交扩大联系，留下跨海交流的鲜明印记。
-personIds:
-  - person-zheng-he
-  - person-zhu-di
-  - person-wang-jinghong
-placeIds: []
-parentId: null
-childIds: []
-relationIds: []
 historiography: 本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。
-sourceIds:
-  - bai-shouyi-general-history
-color: '#d76b4d'
-layout:
-  lane: diplomacy
-  offset:
-    - 1.8
-    - 0.8
 ---
-
 郑和率领庞大船队自南京、太仓等地出发，遍访东南亚、南亚、阿拉伯半岛和东非沿岸。

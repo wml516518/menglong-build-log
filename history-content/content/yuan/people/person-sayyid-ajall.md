@@ -8,6 +8,7 @@ birthYear: 1211
 deathYear: 1279
 roleIds: []
 eventIds:
+  - yuan-yunnan-province
   - province-system
 sourceIds:
   - bai-shouyi-general-history

@@ -9,8 +9,10 @@ deathYear: 649
 roleIds: []
 eventIds:
   - zhenguan
+  - tang-xuanwu-gate
 sourceIds:
   - bai-shouyi-general-history
+  - jiutangshu-zhonghua-1975
 yearPrecision: exact
 birthplaceId: null
 placeIds: []

@@ -19,7 +19,7 @@ export function HistoryHud({ currentYear, activeDynastyId, onSelectDynasty, onRe
         <p>中国历史 · 三维年表</p>
         <h1>历史星河</h1>
         <div className="brand-period">
-          <span>公元 618 - 1949</span>
+          <span>先秦 - 1949</span>
           <i aria-hidden="true" />
           <span className="current-year">当前 {currentYear}</span>
           <i aria-hidden="true" />

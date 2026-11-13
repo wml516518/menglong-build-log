@@ -1,25 +1,34 @@
 import { readFileSync } from 'node:fs';
 import { createHistoryContentLoader } from '../../src/history/content/loader';
 
+export const legacyEventIds = new Set('zhenguan kaiyuan anshi two-tax huang-chao chenqiao chanyuan wang-anshi jingkang yue-fei mongol-rise yuan-founded province-system zheng-he tumu zhang-juzheng imjin-war ming-fall kangqian opium-war taiping self-strengthening sino-japanese-war hundred-days boxer xinhai may-fourth northern-expedition victory-1945 prc-founded'.split(' '));
+
 /** Full static contracts, with richer relationships than the migration seed. */
 export function archiveFixture() {
   const read = (path: string) => JSON.parse(readFileSync(`public/history-content/generated/${path}`, 'utf8'));
   const manifest = read('manifest.json');
-  const events = read(manifest.indexes.events);
+  const events = read(manifest.indexes.events).filter((item: { id: string }) => legacyEventIds.has(item.id));
   const people = read(manifest.indexes.people);
   const tang = read('eras/tang.json');
+  tang.events = tang.events.filter((item: { id: string }) => legacyEventIds.has(item.id));
+  manifest.eventCount = events.length;
+  manifest.structuredEventCount = events.length;
+  manifest.basicEventCount = 0;
+  manifest.coreEventCount = events.length;
+  manifest.eventEras = Object.fromEntries(events.map((item: { id: string; eraId: string }) => [item.id, item.eraId]));
+  manifest.periodCounts = Object.fromEntries(Object.keys(manifest.periodCounts).map(id => [id, events.filter((item: { editorialPeriodId: string }) => item.editorialPeriodId === id).length]));
   const event = tang.events.find((item: { id: string }) => item.id === 'zhenguan');
   Object.assign(event, {
-    summary: '唐太宗在位期间，君臣以恢复生产、整顿政治和听取意见为主要施政方向。',
+    summary: '唐太宗在位期间，君臣以恢复生产、整顿政治和听取意见为主要施政方向。'.repeat(3),
     background: '隋末战乱之后，社会需要恢复。 [进一步阅读](https://example.org/history) [危险链接](javascript:alert%281%29)',
     causes: ['恢复社会生产。'], results: ['政局趋于稳定。'],
     impacts: [{ dimension: 'politics', text: '为后来的发展提供制度基础。' }],
     course: [{ year: 627, title: '纳谏与任贤', description: '**纳谏**成为政治实践。' }],
     placeIds: ['changan', 'missing-place'], themeIds: ['tang-journey', 'missing-theme'],
     childIds: ['kaiyuan'], relationIds: ['zhenguan-kaiyuan', 'missing-relation'],
-    sourceIds: ['bai-shouyi-general-history', 'history-institution', 'missing-source']
+    sourceRefs: ['bai-shouyi-general-history', 'history-institution', 'missing-source'].map(sourceId => ({ sourceId, locator: '唐代政治资料条目' }))
   });
-  Object.assign(events.find((item: { id: string }) => item.id === 'zhenguan'), { summary: event.summary, placeIds: event.placeIds, themeIds: event.themeIds, childIds: event.childIds, relationIds: event.relationIds, sourceIds: event.sourceIds });
+  Object.assign(events.find((item: { id: string }) => item.id === 'zhenguan'), { summary: '唐太宗在位期间，君臣以恢复生产、整顿政治和听取意见为主要施政方向。'.repeat(3), placeIds: event.placeIds, themeIds: event.themeIds, childIds: event.childIds, relationIds: event.relationIds, sourceIds: event.sourceRefs.map((ref: { sourceId: string }) => ref.sourceId) });
   const person = tang.people.find((item: { id: string }) => item.id === 'person-li-shimin');
   Object.assign(person, {
     timeline: [{ year: 626, title: '即位', description: '开始执政。' }, { year: 627, title: '改元贞观', description: '开展政治修整。' }],

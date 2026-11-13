@@ -22,10 +22,11 @@ function seededDirections(event: HistoryEvent) {
   return positions;
 }
 
-export function SelectionEffects({ event, dragOffset, reducedMotion }: {
+export function SelectionEffects({ event, dragOffset, reducedMotion, timelineX }: {
   event: HistoryEvent;
   dragOffset: readonly [number, number];
   reducedMotion: boolean;
+  timelineX?: number;
 }) {
   const group = useRef<THREE.Group>(null);
   const ringA = useRef<THREE.Mesh>(null);
@@ -33,7 +34,7 @@ export function SelectionEffects({ event, dragOffset, reducedMotion }: {
   const burst = useRef<THREE.Points>(null);
   const startedAt = useRef<number | null>(null);
   const positions = useMemo(() => seededDirections(event), [event]);
-  const position = getEventPosition(event, dragOffset);
+  const position = getEventPosition(event, dragOffset, timelineX);
 
   useFrame(({ clock }) => {
     if (startedAt.current === null) startedAt.current = clock.elapsedTime;
@@ -56,22 +57,22 @@ export function SelectionEffects({ event, dragOffset, reducedMotion }: {
 
   return (
     <group ref={group} position={position} key={event.id}>
-      <points ref={burst}>
+      <points ref={burst} raycast={() => {}}>
         <bufferGeometry><bufferAttribute attach="attributes-position" args={[positions, 3]} /></bufferGeometry>
         <pointsMaterial color={event.color} size={0.07} transparent opacity={0.86} depthWrite={false} blending={THREE.AdditiveBlending} />
       </points>
-      <mesh ref={ringA} rotation={[Math.PI / 2, 0, 0]}>
+      <mesh ref={ringA} raycast={() => {}} rotation={[Math.PI / 2, 0, 0]}>
         <ringGeometry args={[0.7, 0.73, 64]} />
         <meshBasicMaterial color="#e7c77d" side={THREE.DoubleSide} transparent opacity={0.54} blending={THREE.AdditiveBlending} depthWrite={false} />
       </mesh>
-      <mesh ref={ringB} rotation={[Math.PI / 2, 0, 0]}>
+      <mesh ref={ringB} raycast={() => {}} rotation={[Math.PI / 2, 0, 0]}>
         <ringGeometry args={[0.48, 0.5, 64]} />
         <meshBasicMaterial color={event.color} side={THREE.DoubleSide} transparent opacity={0.42} blending={THREE.AdditiveBlending} depthWrite={false} />
       </mesh>
       {event.people.map((person, index) => {
         const angle = (index / event.people.length) * Math.PI * 2;
         return (
-          <mesh key={person} position={[Math.cos(angle) * 1.05, -1.05 + index * 0.08, Math.sin(angle) * 0.45]} rotation={[0, 0, angle * 0.2]}>
+          <mesh key={person} raycast={() => {}} position={[Math.cos(angle) * 1.05, -1.05 + index * 0.08, Math.sin(angle) * 0.45]} rotation={[0, 0, angle * 0.2]}>
             <boxGeometry args={[0.46 + person.length * 0.05, 0.018, 0.018]} />
             <meshBasicMaterial color={index === 0 ? '#d64b36' : '#c7a35b'} transparent opacity={0.75} />
           </mesh>

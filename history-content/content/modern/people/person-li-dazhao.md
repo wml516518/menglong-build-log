@@ -8,6 +8,7 @@ deathYear: 1927
 roleIds: []
 eventIds:
   - may-fourth
+  - new-culture
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

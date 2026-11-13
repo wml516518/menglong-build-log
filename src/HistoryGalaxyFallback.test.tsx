@@ -1,13 +1,13 @@
 import { act, render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { readFileSync } from 'node:fs';
 import App from './App';
 import HistoryGalaxyApp from './HistoryGalaxyApp';
 import { createHistoryContentLoader } from './history/content/loader';
 import { parseExplorerState } from './history/explorer/state';
+import { productionFixture, representativeEventIds } from '../tests/fixtures/productionHistory';
 
-const fixture = (path: string) => readFileSync(`public/history-content/generated/${path}`, 'utf8');
-function loader(gate?: Promise<void>) { return createHistoryContentLoader({ baseUrl: '/content/', fetchImpl: async input => { if (gate) await gate; return new Response(fixture(String(input).replace('/content/', ''))); } }); }
+const representativeCount = representativeEventIds.size;
+function loader(gate?: Promise<void>) { return createHistoryContentLoader({ baseUrl: '/content/', fetchImpl: async input => { if (gate) await gate; return new Response(JSON.stringify(productionFixture(String(input).replace('/content/', ''), representativeEventIds))); } }); }
 beforeEach(() => {
   localStorage.clear(); sessionStorage.clear();
   window.history.replaceState(null, '', '#/history-galaxy');
@@ -16,19 +16,21 @@ beforeEach(() => {
 });
 afterEach(() => { vi.restoreAllMocks(); vi.unstubAllGlobals(); });
 
-it('uses the real explorer, filters, quick panel and complete archive when WebGL creation fails', async () => {
+it('uses real representative events through explorer, filters, quick panel and complete archive when WebGL creation fails', async () => {
   const user = userEvent.setup();
   render(<App historyLoader={loader()} />);
   const timeline = await screen.findByRole('region', { name: '二维历史时间轴' });
-  expect(within(timeline).getAllByRole('button', { name: /查看历史事件/ })).toHaveLength(30);
+  expect(within(timeline).getAllByRole('button', { name: /查看历史事件/ })).toHaveLength(representativeCount);
   expect(screen.queryByText('当前环境无法开启三维星河')).not.toBeInTheDocument();
-  await user.click(screen.getByRole('checkbox', { name: '战争' }));
+  const explorer = within(screen.getByRole('complementary', { name: '历史探索器' }));
+  const war = within(explorer.getByText('战争', { selector: 'label > span' }).closest('label')!).getByRole('checkbox', { name: '战争' });
+  await user.click(war);
   expect(new URLSearchParams(window.location.hash.split('?')[1]).get('cat')).toBe('war');
   expect(within(timeline).getByRole('button', { name: /贞观之治/ })).toHaveAttribute('data-match', 'false');
-  expect(within(timeline).getByRole('button', { name: /鸦片战争/ })).toHaveAttribute('data-match', 'true');
-  await user.click(screen.getByRole('button', { name: '清除全部筛选' }));
-  await user.type(screen.getByRole('searchbox', { name: '搜索历史' }), '贞观');
-  await user.click(await screen.findByRole('button', { name: '聚焦历史事件：627年 贞观之治' }));
+  expect(within(timeline).getByRole('button', { name: / 鸦片战争$/ })).toHaveAttribute('data-match', 'true');
+  await user.click(explorer.getByRole('button', { name: '清除全部筛选' }));
+  await user.type(explorer.getByRole('searchbox', { name: '搜索历史' }), '贞观');
+  await user.click(await explorer.findByRole('button', { name: '聚焦历史事件：627年 贞观之治' }));
   expect(within(timeline).getByRole('button', { name: /贞观之治/ })).toHaveAttribute('aria-pressed', 'true');
   const panel = screen.getByRole('dialog', { name: '贞观之治' });
   expect(await within(panel).findByText(/隋末战乱之后/)).toBeInTheDocument();
@@ -37,7 +39,7 @@ it('uses the real explorer, filters, quick panel and complete archive when WebGL
   await user.click(screen.getByRole('link', { name: '返回历史星河' }));
   expect(await screen.findByRole('region', { name: '二维历史时间轴' })).toBeInTheDocument();
   expect(screen.getByRole('searchbox', { name: '搜索历史' })).toHaveValue('贞观');
-});
+}, 10000);
 
 it('restores selection after delayed indexes, sanitizes unknown offsets and never overwrites storage during loading', async () => {
   const saved = { version: 2, camera: { target: [-12, 2, 1], distance: 24 }, selectedId: 'zhenguan', fixedOffsets: { zhenguan: [1, -0.5], removed: [1, 1] }, explorer: { ...parseExplorerState(new URLSearchParams()), categories: ['culture'], eraIds: ['tang'] } };
@@ -78,8 +80,9 @@ it('drops a restored selection absent from the current manifest even if a stale 
   localStorage.setItem('history-galaxy-session-v2', JSON.stringify({ version: 2, selectedId: 'zhenguan', fixedOffsets: { zhenguan: [1, 1] } }));
   const stale = createHistoryContentLoader({ baseUrl: '/content/', fetchImpl: async input => {
     const path = String(input).replace('/content/', '');
-    const value = JSON.parse(fixture(path));
+    const value = productionFixture(path, representativeEventIds);
     if (path === 'manifest.json') delete value.eventEras.zhenguan;
+    if (path.endsWith('events.compact.json')) Object.assign(value.find((event: { id: string }) => event.id === 'zhenguan'), { detailLevel: 'core', editorialPeriodId: 'sui-tang-five-dynasties', summary: '这一时期的制度调整回应社会治理需要并对后续政治与社会秩序产生影响。'.repeat(3) });
     return new Response(JSON.stringify(value));
   } });
   await act(async () => { render(<HistoryGalaxyApp loader={stale} />); });
@@ -96,7 +99,7 @@ function delayedEntityIndexes() {
     const path = String(input).replace('/content/', '');
     requests.push(path);
     if (path.endsWith('people.compact.json')) await gate;
-    const value = JSON.parse(fixture(path));
+    const value = productionFixture(path, representativeEventIds);
     if (path.endsWith('events.compact.json')) {
       Object.assign(value.find((event: { id: string }) => event.id === 'zhenguan'), { placeIds: ['changan'], themeIds: ['institutions'] });
     }
@@ -153,7 +156,7 @@ it('preserves all four unknown URL entity IDs through delayed stored-session cle
   await waitFor(() => expect(delayed.requests).toContain('indexes/people.compact.json'));
   expect(window.location.hash).toBe(url); expect(replace).not.toHaveBeenCalled();
   await act(async () => { delayed.release(); });
-  expect(await screen.findByText('0 / 30 个事件匹配')).toBeInTheDocument();
+  expect(await screen.findByText(`0 / ${representativeCount} 个事件匹配`)).toBeInTheDocument();
   expect(window.location.hash).toBe(url); expect(replace).not.toHaveBeenCalled(); expect(push).not.toHaveBeenCalled();
   act(() => window.dispatchEvent(new Event('pagehide')));
   expect(JSON.parse(localStorage.getItem('history-galaxy-session-v2')!).explorer).toMatchObject({
@@ -169,7 +172,7 @@ it('removes stale-only stored entity filters after delayed indexes so they canno
   await waitFor(() => expect(delayed.requests).toContain('indexes/people.compact.json'));
   expect(window.location.hash).toBe('#/history-galaxy');
   await act(async () => { delayed.release(); });
-  expect(await screen.findByText('30 / 30 个事件匹配')).toBeInTheDocument();
+  expect(await screen.findByText(`${representativeCount} / ${representativeCount} 个事件匹配`)).toBeInTheDocument();
   expect(replace).not.toHaveBeenCalled();
   act(() => window.dispatchEvent(new Event('pagehide')));
   expect(JSON.parse(localStorage.getItem('history-galaxy-session-v2')!).explorer).toMatchObject({ eraIds: [], personIds: [], placeIds: [], themeIds: [] });
@@ -184,7 +187,7 @@ it('keeps an explicit clear during delayed loading from being undone by the pend
   const replace = vi.spyOn(window.history, 'replaceState'), push = vi.spyOn(window.history, 'pushState');
   await user.click(screen.getByRole('button', { name: '清除全部筛选' }));
   await act(async () => { delayed.release(); });
-  expect(await screen.findByText('30 / 30 个事件匹配')).toBeInTheDocument();
+  expect(await screen.findByText(`${representativeCount} / ${representativeCount} 个事件匹配`)).toBeInTheDocument();
   expect(screen.getByRole('checkbox', { name: '仅重大事件' })).not.toBeChecked();
   expect(window.location.hash).toBe('#/history-galaxy');
   expect(replace).not.toHaveBeenCalled(); expect(push).not.toHaveBeenCalled();

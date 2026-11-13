@@ -12,6 +12,7 @@ import { yearToX, xToYear } from '../history/space';
 import { projectSceneEvents } from './sceneClustering';
 import { readFileSync } from 'node:fs';
 import { compactEventsForScene } from '../history/content/scene-adapter';
+import { createTimelineLayout, type TimelineLayout } from '../history/timelineLayout';
 
 const harness = vi.hoisted(() => ({ state: undefined as any, frame: undefined as any }));
 vi.mock('@react-three/fiber', async importOriginal => ({ ...await importOriginal<typeof import('@react-three/fiber')>(), useThree: (select: (state: any) => unknown) => select(harness.state), useFrame: (frame: any) => { harness.frame = frame; } }));
@@ -50,7 +51,7 @@ it.each([1.6, 0.46])('drills a large overview cluster inward to the next LOD ins
   expect(pose.position.distanceTo(pose.target)).toBeLessThan(42);
 });
 
-function setup(reducedMotion = true, initialCamera?: Partial<HistoryCameraState>) {
+function setup(reducedMotion = true, initialCamera?: Partial<HistoryCameraState>, timeline?: TimelineLayout) {
   const canvas = document.createElement('canvas'); document.body.append(canvas);
   Object.defineProperty(canvas, 'clientHeight', { value: 600 });
   canvas.setPointerCapture = vi.fn(); canvas.releasePointerCapture = vi.fn();
@@ -58,12 +59,31 @@ function setup(reducedMotion = true, initialCamera?: Partial<HistoryCameraState>
   harness.state = { camera, gl: { domElement: canvas } };
   const controls = new OrbitControls(camera, canvas);
   const onTravelYear = vi.fn(), onDistanceChange = vi.fn(), onCameraChange = vi.fn();
-  const { result, rerender, unmount } = renderHook(({ focusRequest, selectedEvent = null, selectedPosition, resetSignal = 0, selectionSignal = 0 }: { focusRequest?: ClusterFocusRequest; selectedEvent?: HistoryEvent | null; selectedPosition?: readonly [number, number, number]; resetSignal?: number; selectionSignal?: number }) => CameraRig({ selectedEvent, selectedPosition, resetSignal, selectionSignal, reducedMotion, controlsEnabled: true, onTravelYear, onDistanceChange, focusRequest, initialCamera, onCameraChange }), { initialProps: {} });
+  const { result, rerender, unmount } = renderHook(({ focusRequest, selectedEvent = null, selectedPosition, resetSignal = 0, selectionSignal = 0 }: { focusRequest?: ClusterFocusRequest; selectedEvent?: HistoryEvent | null; selectedPosition?: readonly [number, number, number]; resetSignal?: number; selectionSignal?: number }) => CameraRig({ selectedEvent, selectedPosition, resetSignal, selectionSignal, reducedMotion, controlsEnabled: true, onTravelYear, onDistanceChange, focusRequest, initialCamera, onCameraChange, timeline }), { initialProps: {} });
   result.current.props.ref.current = controls;
   for (const key of ['enableZoom', 'enablePan', 'minDistance', 'maxDistance', 'touches', 'minPolarAngle', 'maxPolarAngle']) if (result.current.props[key] !== undefined) (controls as any)[key] = result.current.props[key];
   controls.addEventListener('start', () => result.current.props.onStart());
   return { camera, canvas, controls, onTravelYear, onDistanceChange, onCameraChange, result, rerender, frame: () => act(() => harness.frame({}, 1 / 60)), close: () => { unmount(); controls.dispose(); canvas.remove(); } };
 }
+
+it('travels beyond the old 64-unit rail, reports the correct calendar and saves the extended coordinate system', () => {
+  const events = compactEventsForScene(JSON.parse(readFileSync('public/history-content/generated/indexes/events.compact.json', 'utf8')), []);
+  const timeline = createTimelineLayout(events);
+  const f = setup(true, undefined, timeline);
+  const event = events.find(event => event.id === 'xinhai')!;
+  const position = getEventPosition(event, [0, 0], timeline.eventXs.get(event.id));
+  f.rerender({ selectedEvent: event, selectedPosition: position }); f.frame();
+  expect(f.controls.target.x).toBeGreaterThan(100);
+  const before = f.controls.target.x;
+  f.canvas.dispatchEvent(new WheelEvent('wheel', { deltaY: 90, shiftKey: true, cancelable: true })); f.frame();
+  expect(f.controls.target.x).toBeGreaterThan(before);
+  expect(f.onTravelYear).toHaveBeenLastCalledWith(timeline.xToYear(f.controls.target.x));
+  expect(f.onCameraChange.mock.lastCall?.[0].timelineLayout).toBe('spaced-v1');
+  f.rerender({ resetSignal: 1 }); f.frame();
+  expect(f.controls.target.distanceTo(new THREE.Vector3(0, 0.8, 0))).toBeLessThan(1e-9);
+  expect(f.camera.position.distanceTo(new THREE.Vector3(0, 9.5, 26))).toBeLessThan(1e-9);
+  f.close();
+});
 
 it.each([{ width: 1440, height: 900 }, { width: 390, height: 844 }])('defaults and resets to 701 with production events visible (%j)', viewport => {
   const aspect = viewport.width / viewport.height;

@@ -1,0 +1,5216 @@
+[
+  {
+    "aliases": [],
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "childIds": [
+      "nanjing-treaty"
+    ],
+    "color": "#df6148",
+    "endYear": 1842,
+    "eraId": "modern",
+    "id": "opium-war",
+    "influence": 5,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.8,
+        0.4
+      ]
+    },
+    "parentId": null,
+    "period": "中国近代",
+    "personIds": [
+      "person-lin-zexu",
+      "person-minning",
+      "person-guan-tianpei"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "qing",
+      "united-kingdom"
+    ],
+    "relationIds": [],
+    "startYear": 1840,
+    "summary": "战争与条约体系开启中国近代历史转折。林则徐在广东禁烟后，英国以军事力量发动战争。清政府战败并签订《南京条约》，通商口岸、关税与领土问题改变了原有对外秩序。战争暴露制度与技术差距，也推动中国人重新认识世界。",
+    "themeIds": [],
+    "title": "鸦片战争",
+    "yearPrecision": "range",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十一卷《近代前编》，鸦片战争的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“鸦片战争”条，事件经过与历史影响部分"
+      }
+    ]
+  },
+  {
+    "id": "nanjing-treaty",
+    "title": "南京条约签订",
+    "aliases": [],
+    "startYear": 1842,
+    "endYear": 1842,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清政府在英军进逼南京后与英国签约，割让香港岛，开放广州、厦门、福州、宁波和上海五口，承诺赔款并废除公行贸易垄断。条约及续订章程改变沿海通商规则，关税自主和司法管辖随后受到限制，清朝原有口岸管理体系被迫重组。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": "opium-war",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.74,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“鸦片战争”条：南京条约签订的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "humen-treaty",
+    "title": "虎门条约签订",
+    "aliases": [],
+    "startYear": 1843,
+    "endYear": 1843,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "耆英与英国代表璞鼎查在虎门签订五口通商附粘善后条款，进一步落实南京条约后的通商安排。英国取得领事裁判权、片面最惠国待遇等特权，通商口岸的司法与贸易由此出现特殊制度，这些条款又成为其他国家要求类似权益的依据。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.37,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“虎门条约”条：虎门条约签订的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "huangpu-treaty",
+    "title": "黄埔条约签订",
+    "aliases": [],
+    "startYear": 1844,
+    "endYear": 1844,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "法国代表拉萼尼与清朝代表耆英在黄埔签订通商条约，法国获得五口贸易、领事裁判等特权，并可在通商口岸建造教堂。法国随后继续交涉传教问题，宗教活动与外交保护逐渐结合，地方教务纠纷因而可能转化为清廷与外国使节之间的争端。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0.37,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“黄埔条约”条：黄埔条约签订的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "wangxia-treaty",
+    "title": "望厦条约签订",
+    "aliases": [],
+    "startYear": 1844,
+    "endYear": 1844,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清朝代表耆英与美国代表顾盛在澳门望厦签订条约，美国取得五口通商及领事裁判等权益。条款禁止美国商人参与鸦片贸易，同时扩大领事介入诉讼的权限，使美国正式进入中国的条约关系网络，清廷处理西方各国的方式进一步制度化。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“望厦条约”条：望厦条约签订的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war",
+      "society"
+    ],
+    "childIds": [
+      "taiping-nanjing-capital",
+      "tianchao-land-system",
+      "tianjing-incident",
+      "zizheng-xinpian",
+      "taiping-tianjing-fall"
+    ],
+    "color": "#cf4e39",
+    "endYear": 1864,
+    "eraId": "modern",
+    "id": "taiping",
+    "influence": 5,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.4,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "中国近代",
+    "personIds": [
+      "person-hong-xiuquan",
+      "person-zeng-guofan",
+      "person-li-xiucheng"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "qing",
+      "taiping-heavenly-kingdom"
+    ],
+    "relationIds": [],
+    "startYear": 1851,
+    "summary": "持续十余年的大规模战争席卷南方。太平军自广西金田起义，定都天京并控制长江中下游大片地区。清朝依靠地方团练和湘淮军逐步反攻。战争造成巨大人口与经济损失，也促使地方军事、财政力量上升，改变晚清权力结构。",
+    "themeIds": [],
+    "title": "太平天国",
+    "yearPrecision": "range",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十一卷《近代前编》，太平天国的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“太平天国”条，事件经过与历史影响部分"
+      }
+    ]
+  },
+  {
+    "id": "haiguo-tuzhi-expanded",
+    "title": "海国图志百卷本刊行",
+    "aliases": [],
+    "startYear": 1852,
+    "endYear": 1852,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "thought",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "魏源在先前五十卷和六十卷本基础上扩编海国图志，汇集世界地理、各国沿革、军事技术与海防主张。百卷本扩大知识容量，仍带有编译材料来源不一的局限，其经世取向促使读者把域外知识同海防筹划联系起来，并在日本产生广泛传播。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        0.74,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“魏源”条：海国图志百卷本刊行的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "taiping-nanjing-capital",
+    "title": "太平军定都天京",
+    "aliases": [],
+    "startYear": 1853,
+    "endYear": 1853,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "太平军沿长江东下攻占南京，改名天京并在此建立政权中枢。建都使起义军拥有经营江南的基地，也要求其处理城市供应、官制与军事分工。此后北伐、西征和江南战事并行，天京成为太平天国与清朝长期争夺长江流域的中心。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "taiping",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.11,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“太平天国”条：太平军定都天京的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "tianchao-land-system",
+    "title": "天朝田亩制度颁布",
+    "aliases": [],
+    "startYear": 1853,
+    "endYear": 1853,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "太平天国在定都天京后颁行天朝田亩制度，以人口和土地等级安排均分田地，并把基层编制与公共仓储相联系。文件表达消除贫富悬殊的理想，但战争、地方生产关系和军政需要使其未能全面实行，不能把纸面规划直接当作实际土地制度。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "taiping",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.48,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“天朝田亩制度”条：天朝田亩制度颁布的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "tianjing-incident",
+    "title": "天京事变",
+    "aliases": [],
+    "startYear": 1856,
+    "endYear": 1856,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "太平天国领导层在权力冲突中发生严重内讧，杨秀清、韦昌辉等先后被杀，石达开随后离开天京。事变削弱指挥体系和部众信任，使洪秀全不得不另用年轻将领重整军政，清军则利用内部危机加紧围攻，战争走向受到深刻影响。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "taiping",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.48,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“天京事变”条：天京事变的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "second-opium-war",
+    "title": "第二次鸦片战争",
+    "aliases": [],
+    "startYear": 1856,
+    "endYear": 1860,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "polityIds": [
+      "qing",
+      "united-kingdom",
+      "french-second-empire"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "英国以亚罗号事件、法国以马神甫事件为借口发动战争，英法联军先攻广州，继而北上迫使清廷签订天津条约。清廷与列强围绕换约再起冲突，联军攻占北京并焚掠圆明园，北京条约确认新增权益，中国通商与外交秩序再次受到强制改变。",
+    "personIds": [
+      "person-yi-xin"
+    ],
+    "placeIds": [
+      "beijing",
+      "guangzhou"
+    ],
+    "parentId": null,
+    "childIds": [
+      "tianjin-treaties",
+      "beijing-treaties"
+    ],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.11,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“第二次鸦片战争”条：第二次鸦片战争的年代、经过与制度背景"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十一卷《近代前编》：第二次鸦片战争（1856—1860年）的叙述"
+      }
+    ]
+  },
+  {
+    "id": "aigun-treaty",
+    "title": "瑷珲条约签订",
+    "aliases": [],
+    "startYear": 1858,
+    "endYear": 1858,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "俄国东西伯利亚总督穆拉维约夫利用清朝内外战争交困之机，与黑龙江将军奕山签订瑷珲条约。条约把黑龙江以北、外兴安岭以南大片土地划归俄国，并暂置乌苏里江以东为两国共管，清廷随后在北京条约中确认，东北边界格局发生重大变化。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.74,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“瑷珲条约”条：瑷珲条约签订的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "tianjin-treaties",
+    "title": "天津条约签订",
+    "aliases": [],
+    "startYear": 1858,
+    "endYear": 1858,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "英法联军攻占大沽并进逼天津，清政府分别同俄、美、英、法签约。条约扩大通商口岸、允许外国使节驻京，并涉及内地旅行与传教，冲击清廷原有对外交往方式。各国随后要求换约，清廷内部对履约的反复又把外交争端带回军事对抗。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "second-opium-war",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.37,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“天津条约”条：天津条约签订的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "zizheng-xinpian",
+    "title": "资政新篇提出",
+    "aliases": [],
+    "startYear": 1859,
+    "endYear": 1859,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "thought",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "洪仁玕进入天京后提出资政新篇，主张学习西方技术与管理方法，兴办交通、矿业、银行等事业，并讨论新闻与社会救济。方案反映其在香港接触域外知识的经验，虽获洪秀全认可，却受战局、财力和地方执行条件限制，未成为普遍实施的政策。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "taiping",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        0,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“资政新篇”条：资政新篇提出的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "beijing-treaties",
+    "title": "北京条约签订",
+    "aliases": [],
+    "startYear": 1860,
+    "endYear": 1860,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "英法军队占领北京后，恭亲王奕䜣分别与英法代表缔结条约，确认天津条约并增加赔款、开放天津，英国还取得九龙司地方一区。中俄北京条约另把乌苏里江以东划归俄国，清廷由此承受领土、通商与外交制度上的多重损失。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "second-opium-war",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0.37,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“北京条约”条：北京条约签订的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "xinyou-coup",
+    "title": "辛酉政变",
+    "aliases": [],
+    "startYear": 1861,
+    "endYear": 1861,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "咸丰帝死于热河后，肃顺等八大臣受命辅政，慈安、慈禧两太后与恭亲王奕䜣结盟，回京后以政变罢黜顾命集团。两宫垂帘听政的体制随之确立，中央权力重新组合，清廷在镇压太平天国和应对列强的压力下开始容纳部分洋务主张。",
+    "personIds": [
+      "person-yi-xin"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.74,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“辛酉政变”条：辛酉政变的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "zongli-yamen",
+    "title": "总理各国事务衙门设立",
+    "aliases": [],
+    "startYear": 1861,
+    "endYear": 1861,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "清廷在北京设置总理各国事务衙门，由奕䜣等主持，集中处理与西方国家的外交交涉、通商事务及部分洋务事业。它突破由礼部、理藩院等分掌外务的旧格局，但与军机处、地方督抚之间仍有职权交叠，体现危机中逐步形成的专门外交机构。",
+    "personIds": [
+      "person-yi-xin"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.11,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“总理各国事务衙门”条：总理各国事务衙门设立的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy",
+      "science"
+    ],
+    "childIds": [
+      "tongwen-guan",
+      "jiangnan-arsenal",
+      "fuzhou-shipyard",
+      "jiangnan-translation-bureau",
+      "students-america",
+      "china-merchants-steam",
+      "kaiping-mines",
+      "tianjin-shanghai-telegraph",
+      "beiyang-fleet",
+      "hanyang-ironworks"
+    ],
+    "color": "#78a9b5",
+    "endYear": 1895,
+    "eraId": "modern",
+    "id": "self-strengthening",
+    "influence": 4,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        1.2,
+        1.1
+      ]
+    },
+    "parentId": null,
+    "period": "中国近代",
+    "personIds": [
+      "person-zeng-guofan",
+      "person-li-hongzhang",
+      "person-zuo-zongtang"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "qing"
+    ],
+    "relationIds": [],
+    "startYear": 1861,
+    "summary": "以自强求富为目标兴办近代工业与教育。部分清朝官员推动兵工厂、船政、矿务、电报与新式学堂建设，并派遣留学生出国。他们希望在维护既有政治秩序的同时学习西方技术。洋务事业成果有限却培养了近代企业、人才与工业基础。",
+    "themeIds": [],
+    "title": "洋务运动",
+    "yearPrecision": "range",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十一卷《近代前编》，洋务运动的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“洋务运动”条，事件经过与历史影响部分"
+      }
+    ]
+  },
+  {
+    "id": "tongwen-guan",
+    "title": "京师同文馆创办",
+    "aliases": [],
+    "startYear": 1862,
+    "endYear": 1862,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "culture",
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清政府为培养通晓外国文字的交涉人才，在北京开办同文馆，最初设置英文教学，后增法文、俄文及天文算学等课程。外语训练逐渐连接翻译与科学知识，馆中聘用外国教习也引起争论，新式专门教育由外交实务需要进入清朝官办教育体系。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "self-strengthening",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        1.48,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“同文馆”条：京师同文馆创办的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "taiping-tianjing-fall",
+    "title": "天京陷落",
+    "aliases": [],
+    "startYear": 1864,
+    "endYear": 1864,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "曾国荃率湘军长期围困天京，最终攻破城墙，太平天国首都陷落，洪秀全此前已病死。城中军民遭受严重杀戮，李秀成被俘，幼天王出逃后亦被捕。首都失守标志太平天国中央政权覆灭，但部分余部仍继续作战，南方社会重建远未完成。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "taiping",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.48,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“太平天国”条：天京陷落的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "jiangnan-arsenal",
+    "title": "江南制造总局创办",
+    "aliases": [],
+    "startYear": 1865,
+    "endYear": 1865,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "science",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "曾国藩、李鸿章推动在上海购入机器设备，合并既有军械制造力量，创办江南制造总局。总局生产枪炮、弹药和轮船，并逐步汇集工匠与技术人员，成为洋务军事工业的重要基地，其官办经费与进口技术也显露出近代军工建设对财政和外部设备的依赖。",
+    "personIds": [
+      "person-zeng-guofan",
+      "person-li-hongzhang"
+    ],
+    "placeIds": [
+      "shanghai"
+    ],
+    "parentId": "self-strengthening",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -1.11,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“江南制造总局”条：江南制造总局创办的年代、经过与制度背景"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十一卷《近代前编》：江南制造总局创办（1865年）的叙述"
+      }
+    ]
+  },
+  {
+    "id": "fuzhou-shipyard",
+    "title": "福州船政创办",
+    "aliases": [],
+    "startYear": 1866,
+    "endYear": 1866,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "science",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "左宗棠奏设福州船政，沈葆桢继任主持，在马尾建设船厂并开办船政学堂，聘请法国技术人员教学造船。制造与驾驶教育相配合，培养了早期海军和工程人才，船政既需要昂贵设备和持续拨款，也逐步形成中方自行掌握技术的训练机制。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "self-strengthening",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -0.74,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“福州船政局”条：福州船政创办的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "jiangnan-translation-bureau",
+    "title": "江南制造局翻译馆开办",
+    "aliases": [],
+    "startYear": 1868,
+    "endYear": 1868,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "science",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "江南制造局附设翻译馆，徐寿、华蘅芳等与傅兰雅等合作，以口译、笔述和校订方式翻译西方科学与技术书籍。译书覆盖机器、化学、数学和军事，尝试建立中文术语体系，使制造局的知识活动不只服务武器生产，也向社会传播新的学科分类。",
+    "personIds": [],
+    "placeIds": [
+      "shanghai"
+    ],
+    "parentId": "self-strengthening",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -0.37,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“洋务运动”条：江南制造局翻译馆开办的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "tianjin-missionary-incident",
+    "title": "天津教案",
+    "aliases": [],
+    "startYear": 1870,
+    "endYear": 1870,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "religion",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "天津育婴堂与教会活动引发谣言和民众猜疑，法国领事丰大业与地方官交涉时发生冲突，群众焚毁教堂并杀死传教人员与外国人。曾国藩、李鸿章先后处理善后，清廷在列强压力下惩办人员并赔款，教务、地方社会与外交保护之间的矛盾集中暴露。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“天津教案”条：天津教案的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "china-merchants-steam",
+    "title": "轮船招商局开办",
+    "aliases": [],
+    "startYear": 1872,
+    "endYear": 1872,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "李鸿章支持在上海筹设轮船招商局，以官督商办方式组织华商资本经营轮运，希望分取外国轮船公司的航运利益。招商局承运漕粮和商业货物，经营中兼具官方资源与商股约束，揭示洋务民用企业在市场竞争、官员干预和资本筹集之间的复杂处境。",
+    "personIds": [],
+    "placeIds": [
+      "shanghai"
+    ],
+    "parentId": "self-strengthening",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.74,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“轮船招商局”条：轮船招商局开办的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "students-america",
+    "title": "幼童留美计划启动",
+    "aliases": [],
+    "startYear": 1872,
+    "endYear": 1872,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "culture",
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "在容闳倡议和曾国藩、李鸿章支持下，清政府分批选派幼童赴美国学习，第一批学生启程后寄居美国家庭并进入当地学校。计划意在培养工程与军事人才，却因文化适应及清廷疑虑而于后来中断，留学生的语言、技术和社会经验仍影响铁路、矿务等事业。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "self-strengthening",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0.37,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“留美幼童”条：幼童留美计划启动的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "japan-taiwan-expedition",
+    "title": "日本侵台与北京专约",
+    "aliases": [],
+    "startYear": 1874,
+    "endYear": 1874,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing",
+      "japanese-empire"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "日本以琉球漂民在台湾遇害为由出兵台湾南部，清廷派沈葆桢赴台交涉并加强防务。中日最后订立北京专约，日军撤出，清政府支付款项；交涉同时暴露清廷对边地治理的薄弱，促使修路、设防和行政措施在台湾进一步展开。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        1.11,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“中日北京专约”条：日本侵台与北京专约的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "xinjiang-reconquest",
+    "title": "清军收复新疆",
+    "aliases": [],
+    "startYear": 1876,
+    "endYear": 1878,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "左宗棠在朝廷海防与塞防争论后主持西征，刘锦棠等率军分路推进，击败阿古柏政权并收复南北疆主要城镇。军粮运输、借款与后勤筹划是战事的重要条件，清廷随后面对俄国占据伊犁的问题，军事胜利并未立即完成全部边界交涉。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.48,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“左宗棠收复新疆”条：清军收复新疆的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "kaiping-mines",
+    "title": "开平矿务局创办",
+    "aliases": [],
+    "startYear": 1878,
+    "endYear": 1878,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "economy",
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "李鸿章支持唐廷枢在开平筹办煤矿，采用机器采煤、通风和排水设备，为轮船与军工提供燃料。矿务局以官督商办形式集资经营，煤炭开采又带动运输线路建设，矿产、机械与交通开始在同一企业网络中相互配合，推动北方近代工业发展。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "self-strengthening",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -1.48,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“开平矿务局”条：开平矿务局创办的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "tianjin-shanghai-telegraph",
+    "title": "津沪电报线路开通",
+    "aliases": [],
+    "startYear": 1881,
+    "endYear": 1881,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "science",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清政府在李鸿章推动下建成天津至上海的电报干线，把南北重要政商中心连接起来。电报缩短奏报、军情与商业信息的传递时间，并催生线路维护和电报人才训练，国家对通信的管理同时与商人使用需求结合，改变了依靠驿递和邮船的通讯节奏。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "self-strengthening",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -1.11,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“洋务运动”条：津沪电报线路开通的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "xinjiang-province",
+    "title": "新疆建省",
+    "aliases": [],
+    "startYear": 1884,
+    "endYear": 1884,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清廷在收复新疆及中俄伊犁交涉之后，决定设置新疆省，任命刘锦棠为首任巡抚。建省把府州县行政、赋税与屯垦安排进一步推广至天山南北，仍需调适当地族群和既有治理形式，边疆由军府体系向省制转变，中央与地方的财政负担也随之变化。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.74,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“新疆”条：新疆建省的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "sino-french-war",
+    "title": "中法战争",
+    "aliases": [],
+    "startYear": 1884,
+    "endYear": 1885,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "法国扩大对越南的控制并向中国施压，中法在越南、福建和台湾等处交战，福州船政水师在马尾遭到重创。冯子材等在镇南关取胜后，清廷仍与法国议和并承认其对越南的保护关系，军事局部胜负与外交结局并不一致，西南边境秩序由此改变。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.37,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“中法战争”条：中法战争的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "taiwan-province",
+    "title": "台湾建省",
+    "aliases": [],
+    "startYear": 1885,
+    "endYear": 1885,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "清廷在中法战争后加强台湾的行政地位，决定建省并由刘铭传主持省务。此后推行清丈、税务和交通建设，同时面对经费不足、地方利益与山地治理等难题。建省使台湾防务与财政得到更集中规划，但新制度的推展并非在全岛均匀完成。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“台湾”条：台湾建省的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "beiyang-fleet",
+    "title": "北洋海军正式成军",
+    "aliases": [],
+    "startYear": 1888,
+    "endYear": 1888,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清廷颁行北洋海军章程，北洋水师正式成军，丁汝昌任提督，以旅顺、威海等为基地，拥有定远、镇远等铁甲舰。舰队汇集海外购舰、船政人才与沿海基地建设成果，但经费补给、训练和全国海军指挥仍有缺陷，现代军舰并未自动带来完整海防体系。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "self-strengthening",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.37,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“北洋海军”条：北洋海军正式成军的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "hanyang-ironworks",
+    "title": "汉阳铁厂开工建设",
+    "aliases": [],
+    "startYear": 1890,
+    "endYear": 1890,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "economy",
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "张之洞将原拟在广东兴办的炼铁计划移至湖北，在汉阳建设铁厂，利用邻近煤铁资源配套生产。厂址、矿石性质和进口设备之间的适配问题增加成本，建厂展示清末重工业追赶的规模，也表明购置机器必须同原料试验、运输及经营管理同步安排。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "self-strengthening",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.74,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“汉阳铁厂”条：汉阳铁厂开工建设的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "childIds": [
+      "shimonoseki-treaty"
+    ],
+    "color": "#d6503c",
+    "endYear": 1895,
+    "eraId": "modern",
+    "id": "sino-japanese-war",
+    "influence": 5,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.7,
+        0.3
+      ]
+    },
+    "parentId": null,
+    "period": "中国近代",
+    "personIds": [
+      "person-deng-shichang",
+      "person-li-hongzhang",
+      "person-zaitian"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "qing",
+      "japanese-empire"
+    ],
+    "relationIds": [],
+    "startYear": 1894,
+    "summary": "海陆战败震动社会，改革呼声急剧上升。中日围绕朝鲜局势爆发战争，北洋海军与清军相继失利。《马关条约》带来割地、赔款与开放设厂等后果。战败打破洋务自强的信心，促使更多知识分子转向制度改革与民族救亡。",
+    "themeIds": [],
+    "title": "甲午战争",
+    "yearPrecision": "range",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十一卷《近代前编》，甲午战争的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“中日甲午战争”条，事件经过与历史影响部分"
+      }
+    ]
+  },
+  {
+    "id": "dasheng-cotton-mill",
+    "title": "大生纱厂筹建",
+    "aliases": [],
+    "startYear": 1895,
+    "endYear": 1895,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "economy",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "张謇在南通筹建大生纱厂，利用当地棉产和商股资源，引入机器纺纱，并在资金和设备调集上寻求官方支持。筹办过程历时数年才投产，说明民族工业并非单凭倡议即可建立；企业后来同地方教育和公共事业相联系，形成实业与地方建设相互支撑的实践。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -1.48,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“张謇”条：大生纱厂筹建的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "shimonoseki-treaty",
+    "title": "马关条约签订",
+    "aliases": [],
+    "startYear": 1895,
+    "endYear": 1895,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清朝在甲午战争失败后派李鸿章赴日议和，签订马关条约，割让台湾及澎湖列岛等地，支付巨额赔款，并同意增开口岸和日本在通商口岸设厂。列强随后干涉辽东归属，赔款与借款加重财政压力，社会各界关于改革和救亡的讨论迅速扩展。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "sino-japanese-war",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        1.11,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“马关条约”条：马关条约签订的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "taiwan-resistance-1895",
+    "title": "台湾军民反割台斗争",
+    "aliases": [],
+    "startYear": 1895,
+    "endYear": 1895,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "马关条约割台的消息传来后，台湾士绅与军民组织抵抗，成立短暂的台湾民主国，刘永福等继续作战。日军由北向南推进，地方义勇在多处阻击，最终主要城镇相继失守；抵抗显示割让并非得到当地社会接受，也开启此后长期而多样的反殖民斗争。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.48,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“台湾人民抗日斗争”条：台湾军民反割台斗争的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "shiwu-bao",
+    "title": "时务报创刊",
+    "aliases": [],
+    "startYear": 1896,
+    "endYear": 1896,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "thought",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "黄遵宪、汪康年、梁启超等在上海创办时务报，以政论和译述介绍各国制度、外交形势及改革主张。报刊通过书局和士人网络流通，使维新讨论越出奏折和书院范围，论说文字也形成更直接的公共表达方式，为随后变法提供了舆论与知识资源。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        -1.11,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“时务报”条：时务报创刊的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "commercial-press",
+    "title": "商务印书馆创办",
+    "aliases": [],
+    "startYear": 1897,
+    "endYear": 1897,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "culture",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "夏瑞芳等在上海创办商务印书馆，初以印刷业务立足，继而发展编译、教材和辞书出版。机器印刷与学校扩张形成相互需求，出版企业把知识传播、市场经营与编辑专业分工结合起来，逐渐成为近代教育读物和公共阅读的重要供应者。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -0.37,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“商务印书馆”条：商务印书馆创办的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "jiaozhou-lease",
+    "title": "德国强租胶州湾",
+    "aliases": [],
+    "startYear": 1897,
+    "endYear": 1898,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "德国以山东发生教案为借口派兵占领胶州湾，随后迫使清廷签订租借条约，取得租界及山东铁路、矿业方面权益。列强争夺沿海据点的行动进一步加速，山东主权与经济利益受到牵制，这一问题延续至第一次世界大战后的国际谈判与国内抗议。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.74,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“胶州湾租借条约”条：德国强租胶州湾的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution",
+      "thought"
+    ],
+    "childIds": [
+      "peking-university-founded"
+    ],
+    "color": "#d7a455",
+    "endYear": 1898,
+    "eraId": "modern",
+    "id": "hundred-days",
+    "influence": 4,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.3,
+        -1
+      ]
+    },
+    "parentId": null,
+    "period": "中国近代",
+    "personIds": [
+      "person-zaitian",
+      "person-kang-youwei",
+      "person-liang-qichao"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "qing"
+    ],
+    "relationIds": [],
+    "startYear": 1898,
+    "summary": "短暂的制度改革尝试在政变中终止。维新人士推动光绪帝发布改革诏令，涉及教育、行政、经济和军事。百日之后，保守力量发动政变，核心政策被废止，多名维新人士遇害或流亡。其失败仍传播了变法、民权与新学思想。",
+    "themeIds": [],
+    "title": "戊戌变法",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十一卷《近代前编》，戊戌变法的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“戊戌变法”条，事件经过与历史影响部分"
+      }
+    ]
+  },
+  {
+    "id": "peking-university-founded",
+    "title": "京师大学堂创办",
+    "aliases": [],
+    "startYear": 1898,
+    "endYear": 1898,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "culture",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清廷在戊戌变法期间批准创办京师大学堂，由孙家鼐主持筹办，既办高等教育又一度承担全国学务管理职能。政变后它成为少数保留的新政措施之一，后虽因庚子战乱停顿，仍延续为新式大学的重要制度基础，课程与师资配置体现传统学术同新学的交汇。",
+    "personIds": [
+      "person-zaitian"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": "hundred-days",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“京师大学堂”条：京师大学堂创办的年代、经过与制度背景"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十一卷《近代前编》：京师大学堂创办（1898年）的叙述"
+      },
+      {
+        "sourceId": "pku-official-history",
+        "locator": "“北大简介”首段：1898年创办、京师大学堂及1912年改名"
+      }
+    ]
+  },
+  {
+    "id": "open-door-notes",
+    "title": "美国提出门户开放照会",
+    "aliases": [],
+    "startYear": 1899,
+    "endYear": 1900,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "美国国务卿海约翰先后向有关列强发出照会，要求在各国势力范围内维持通商机会及中国关税制度，并在庚子危机中重申领土和行政完整。政策主要保护美国商业进入中国的条件，并不取消不平等条约权益，列强竞争由此增添多边协调的外交语言。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0.37,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“门户开放政策”条：美国提出门户开放照会的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "southeast-mutual-protection",
+    "title": "东南互保",
+    "aliases": [],
+    "startYear": 1900,
+    "endYear": 1900,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "义和团事态与列强进军华北之际，刘坤一、张之洞等督抚同上海领事团协商，约定保护东南通商和地方秩序。地方大员对清廷宣战部署采取变通，使东南免于直接卷入部分战事，也凸显中央号令与地方军政资源之间的裂缝，督抚在外交中的作用明显上升。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "boxer",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0.74,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“东南互保”条：东南互保的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "society",
+      "diplomacy"
+    ],
+    "childIds": [
+      "boxer-protocol",
+      "southeast-mutual-protection"
+    ],
+    "color": "#bd4939",
+    "endYear": 1901,
+    "eraId": "modern",
+    "id": "boxer",
+    "influence": 4,
+    "layout": {
+      "lane": "society",
+      "offset": [
+        -0.9,
+        1.2
+      ]
+    },
+    "parentId": null,
+    "period": "中国近代",
+    "personIds": [
+      "person-cixi",
+      "person-zhao-sanduo",
+      "person-nie-shicheng"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "qing"
+    ],
+    "relationIds": [],
+    "startYear": 1900,
+    "summary": "民间排外运动与列强入侵交织升级。华北民间组织以扶清灭洋为口号发展，攻击教会与外国势力。清廷态度反复，八国联军随后攻占北京。《辛丑条约》带来巨额赔款和主权损失，晚清改革与政治危机进一步加速。",
+    "themeIds": [],
+    "title": "义和团运动",
+    "yearPrecision": "range",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十一卷《近代前编》，义和团运动的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“义和团运动”条，事件经过与历史影响部分"
+      }
+    ]
+  },
+  {
+    "id": "boxer-protocol",
+    "title": "辛丑条约签订",
+    "aliases": [],
+    "startYear": 1901,
+    "endYear": 1901,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清廷在八国联军占领北京后与十一国签订辛丑条约，承担巨额赔款及利息，允许外国军队驻守北京至山海关沿线要地，并划定使馆区。条约还要求惩办官员和限制民众反外活动，使财政与首都安全受到更直接约束，推动清廷寻找维持统治的新政策。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "boxer",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        1.11,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“辛丑条约”条：辛丑条约签订的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "late-qing-new-policies",
+    "title": "清末新政启动",
+    "aliases": [],
+    "startYear": 1901,
+    "endYear": 1911,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清廷在庚子危机后下诏变法，逐步改革军制、学制、官制与法律，鼓励工商并整顿财政。新军、学堂和商会得到发展，改革同时加重地方筹款压力，旧权力安排与新制度发生摩擦；新政扩大受教育和组织化群体，却未能消解帝国面临的政治合法性危机。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [
+      "guimao-school-system",
+      "imperial-exams-abolished",
+      "constitutional-preparation",
+      "provincial-assemblies"
+    ],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.48,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“清末新政”条：清末新政启动的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "guimao-school-system",
+    "title": "癸卯学制颁行",
+    "aliases": [],
+    "startYear": 1904,
+    "endYear": 1904,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清廷在此前改书院为学堂和颁布学堂章程的基础上，于一九〇四年重新颁行学校规章，规定各级学堂的章程与管理体制。新式学校逐步覆盖小学、中学和大学，以及文法理工农医等学科，改革同停科举、设学部和奖励留学相衔接，使近代教育体系获得制度框架。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "late-qing-new-policies",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.48,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史（2）“清末‘新政’”条，“废科举、办学堂、奖游学”段：1902、1904年学堂章程及各级学堂管理体制",
+        "note": "已读取百科电子文本的二次镜像；该段将1904年规章称为《重订学堂章程》。镜像不是出版社认证影印，未据其文件编号推定纸本页码。"
+      }
+    ]
+  },
+  {
+    "id": "imperial-exams-abolished",
+    "title": "科举制度废除",
+    "aliases": [],
+    "startYear": 1905,
+    "endYear": 1905,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "袁世凯、张之洞等督抚联衔奏请停科举、广学校，清廷随即下令自丙午科起停止乡试、会试及各省岁科考试。原有通过经典考试取得仕途资格的主要道路被关闭，新式教育由此获得更强吸引力，旧学士人的生计、身份与地方社会地位也面临重新调整。",
+    "personIds": [
+      "person-cixi"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": "late-qing-new-policies",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.11,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“科举制度”条：科举制度废除的年代、经过与制度背景"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十一卷《近代前编》：科举制度废除（1905年）的叙述"
+      }
+    ]
+  },
+  {
+    "id": "tongmenghui-founded",
+    "title": "中国同盟会成立",
+    "aliases": [],
+    "startYear": 1905,
+    "endYear": 1905,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "孙中山、黄兴等在东京联合兴中会、华兴会等革命力量成立同盟会，以民报宣传革命纲领，提出驱除鞑虏、恢复中华、创立民国、平均地权。组织把分散团体纳入较广的联络网络，但地域派系、筹款和起义路线仍有分歧，革命并非由单一中心完全控制。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.74,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“中国同盟会”条：中国同盟会成立的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "jingzhang-railway",
+    "title": "京张铁路修建",
+    "aliases": [],
+    "startYear": 1905,
+    "endYear": 1909,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "science",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "詹天佑主持修建北京至张家口的铁路，在关沟险段采用适应坡度与地形的线路方案，并组织中国工程人员施工。铁路建成连接京畿与塞外，打破外国工程师垄断重大铁路工程的印象，但其成就依赖持续勘测、施工组织和资金安排，不能归结为单项技术传奇。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        0,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“詹天佑”条：京张铁路修建的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "constitutional-preparation",
+    "title": "清廷宣布预备立宪",
+    "aliases": [],
+    "startYear": 1906,
+    "endYear": 1906,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清廷在派遣大臣考察各国政治后宣布预备立宪，同时强调大权统于朝廷，庶政公诸舆论。改革承诺引发地方士绅、商人与留学生期待，随后围绕期限和责任内阁发生争论，朝廷试图以制度调整延续君权，却使社会获得要求公开政治参与的新依据。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "late-qing-new-policies",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.37,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“预备立宪”条：清廷宣布预备立宪的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "provincial-assemblies",
+    "title": "各省咨议局成立",
+    "aliases": [],
+    "startYear": 1909,
+    "endYear": 1909,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清廷依预备立宪安排在多数省份设立咨议局，经有限资格选举产生议员，讨论地方预算、税收和公共事务。商绅及立宪派借此形成跨地区联络，议事权与督抚行政权之间却缺少稳定制衡，咨议局后来成为请愿速开国会与辛亥年省级政治转向的重要平台。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "late-qing-new-policies",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.37,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“咨议局”条：各省咨议局成立的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "railway-protection",
+    "title": "保路运动",
+    "aliases": [],
+    "startYear": 1911,
+    "endYear": 1911,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "society",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "清廷宣布铁路干线收归国有，并与外国银行团订立借款合同，四川等地商民因股款处置与路权问题抗议。四川保路同志会组织罢市、请愿，成都流血事件使冲突升级，清廷调兵入川削弱湖北防务，经济权益争执与反对皇族内阁的政治不满相互汇合。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0.74,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“保路运动”条：保路运动的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics",
+      "thought"
+    ],
+    "childIds": [
+      "republic-founded",
+      "qing-abdication",
+      "provisional-constitution"
+    ],
+    "color": "#e0aa4f",
+    "endYear": 1912,
+    "eraId": "modern",
+    "id": "xinhai",
+    "influence": 5,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.8,
+        0.5
+      ]
+    },
+    "parentId": null,
+    "period": "中国近代",
+    "personIds": [
+      "person-sun-zhongshan",
+      "person-huang-xing",
+      "person-li-yuanhong"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "qing",
+      "republic-of-china"
+    ],
+    "relationIds": [],
+    "startYear": 1911,
+    "summary": "武昌起义引发各省响应，帝制走向终结。武昌新军起义后，多省相继宣布独立。革命力量与北洋集团谈判，清帝退位，中华民国建立。两千余年的皇帝制度由此终结，但国家统一、权力结构与社会转型的难题并未随之消失。",
+    "themeIds": [],
+    "title": "辛亥革命",
+    "yearPrecision": "range",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十一卷《近代前编》，辛亥革命的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“辛亥革命”条，事件经过与历史影响部分"
+      }
+    ]
+  },
+  {
+    "id": "provisional-constitution",
+    "title": "中华民国临时约法颁布",
+    "aliases": [],
+    "startYear": 1912,
+    "endYear": 1912,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "南京临时参议院制定、孙中山公布中华民国临时约法，规定主权属于国民全体及人民的基本权利，设计参议院、总统与国务员的权力关系。文件试图以责任内阁等安排约束继任总统，但军事实力和政治组织并未服从纸面制度，宪政原则很快受到现实挑战。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "xinhai",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.11,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“中华民国临时约法”条：中华民国临时约法颁布的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "qing-abdication",
+    "title": "清帝退位诏书发布",
+    "aliases": [],
+    "startYear": 1912,
+    "endYear": 1912,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "南北议和与各省独立形成压力，隆裕太后以宣统帝名义颁布退位诏书，清朝皇权统治宣告结束。优待条件及对皇室的安排构成政治妥协，袁世凯随即取得临时大总统职位；帝制的制度终结并未自动完成军队国家化，统一政府仍须面对南北力量协调。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "xinhai",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.48,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“辛亥革命”条：清帝退位诏书发布的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "republic-founded",
+    "title": "中华民国临时政府成立",
+    "aliases": [],
+    "startYear": 1912,
+    "endYear": 1912,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "孙中山在南京就任临时大总统，中华民国临时政府成立，采用公历并着手建立共和官制。政府既要筹措财政、协调独立各省，又须与北方袁世凯谈判，军政资源受制于地方实力，国家名义从王朝转为共和国的同时，权力移交方式仍由战争与协商共同决定。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": "xinhai",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.48,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“中华民国临时政府”条：中华民国临时政府成立的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "second-revolution",
+    "title": "二次革命",
+    "aliases": [],
+    "startYear": 1913,
+    "endYear": 1913,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "袁世凯未经国会同意办理善后大借款，并罢免部分南方都督，革命党人在江西、江苏等地起兵反袁。各省行动缺少协调，军事力量悬殊，起兵很快失败，孙中山等流亡海外；此后袁进一步压制国民党和国会，政治竞争的合法空间显著缩小。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.74,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“二次革命”条：二次革命的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "song-jiaoren-assassinated",
+    "title": "宋教仁遇刺与政党政治受挫",
+    "aliases": [],
+    "startYear": 1913,
+    "endYear": 1913,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "国民党在国会选举中取得优势后，宋教仁在上海火车站遭枪击并伤重去世，案件线索牵涉政府人员，引发对袁世凯集团的强烈质疑。政党内阁的期待转为激烈对抗，司法追究与政治协商均未能化解冲突，民初议会制度在武力和行政权压力下面临危机。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.11,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“宋教仁”条：宋教仁遇刺与政党政治受挫的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "science-society",
+    "title": "中国科学社成立",
+    "aliases": [],
+    "startYear": 1915,
+    "endYear": 1915,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "science",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "任鸿隽、杨杏佛、赵元任等留美学生组织中国科学社，并以科学杂志传播自然科学知识、研究方法和科学精神。社团随后在国内开展出版、讲演与研究活动，试图把学术共同体建设同社会启蒙联系起来，科学不再只是少数官办技术机构的事务。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "science-society-to-central-academia"
+    ],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        0.37,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "nju-science-society-history",
+        "locator": "“中国第一个综合性自然科学民间社团——中国科学社”节：1915年1月《科学》创刊、10月25日通过总章；“中国最早的综合性学术期刊——《科学》”节：科学精神与科学救国",
+        "note": "《南京大学报》第1109期，2013年9月30日，“特别报道”。网页顶栏同时显示2020年总第1284期，采用文章本身的期号与日期；正文实际使用三连短横线作节标题分隔符。"
+      }
+    ]
+  },
+  {
+    "id": "twenty-one-demands",
+    "title": "日本提出二十一条",
+    "aliases": [],
+    "startYear": 1915,
+    "endYear": 1915,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "日本借欧洲列强忙于大战之机，向袁世凯政府提出涉及山东、南满、东蒙古和中国内政等要求。交涉消息引发抵制与舆论压力，袁政府在最后通牒下接受部分要求并订约，第五号多项要求被暂置，不能把最初全部条款等同最终正式承诺。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“二十一条”条：日本提出二十一条的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "national-protection-war",
+    "title": "护国战争",
+    "aliases": [],
+    "startYear": 1915,
+    "endYear": 1916,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "袁世凯推动恢复帝制后，蔡锷、唐继尧等在云南宣布独立，护国军出兵四川、广西等地，各省相继反对称帝。北洋内部也出现离心，袁被迫取消帝制并于不久后去世，战争守住共和国名义，却未建立能够稳定约束军阀的中央政治秩序。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.74,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“护国战争”条：护国战争的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "new-culture",
+    "title": "新文化运动兴起",
+    "aliases": [],
+    "startYear": 1915,
+    "endYear": 1919,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "thought",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "陈独秀在上海创办青年杂志，后改名新青年，并与北京大学的学术网络相结合，倡导民主、科学及个性解放。胡适等推进白话文，知识界围绕伦理、文学与传统展开论争；五四前后运动与社会政治议题加深交汇，各参与者的思想道路也逐渐发生分化。",
+    "personIds": [
+      "person-chen-duxiu",
+      "person-cai-yuanpei",
+      "person-li-dazhao"
+    ],
+    "placeIds": [
+      "beijing",
+      "shanghai"
+    ],
+    "parentId": null,
+    "childIds": [
+      "literary-reform",
+      "diary-madman"
+    ],
+    "relationIds": [
+      "new-culture-to-pku-women-admission"
+    ],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        -0.37,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“新文化运动”条：新文化运动兴起的年代、经过与制度背景"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十一卷《近代前编》：新文化运动兴起（1915—1919年）的叙述"
+      },
+      {
+        "sourceId": "pku-official-history",
+        "locator": "“北大简介”第二、三段：新文化运动中心、蔡元培改革及陈独秀等任职"
+      }
+    ]
+  },
+  {
+    "id": "constitutional-protection",
+    "title": "护法运动展开",
+    "aliases": [],
+    "startYear": 1917,
+    "endYear": 1917,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "段祺瑞政府拒绝恢复临时约法和国会后，孙中山联合南下议员在广州组织军政府，提出护法旗帜。运动依靠西南实力派却与其目标不尽一致，国会合法性与地方军事利益交织，使共和法统的维护缺少统一资源，南北对立也因此获得新的政治形式。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.48,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“护法运动”条：护法运动展开的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "literary-reform",
+    "title": "文学改良刍议发表",
+    "aliases": [],
+    "startYear": 1917,
+    "endYear": 1917,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "culture",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "胡适在新青年发表文学改良刍议，提出不摹仿古人、重视文法和使用白话等主张，陈独秀随后倡言文学革命。争论把语言形式同思想表达、读者范围联系起来，白话创作和刊物实验逐渐增多，但旧文学并未立即消失，新旧书写在社会中长期并存。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "new-culture",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        1.48,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“新文化运动”条：文学改良刍议发表的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "zhang-xun-restoration",
+    "title": "张勋复辟失败",
+    "aliases": [],
+    "startYear": 1917,
+    "endYear": 1917,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "张勋借调停府院之争率军进入北京，拥溥仪复辟清朝，恢复帝号和旧制，引起社会与各地政治力量反对。段祺瑞组织讨逆军进攻北京，复辟仅十余日即告失败，共和制度的名义得以维持，北洋内部围绕中央控制权的争夺则继续升级。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.11,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“张勋复辟”条：张勋复辟失败的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "diary-madman",
+    "title": "狂人日记发表",
+    "aliases": [],
+    "startYear": 1918,
+    "endYear": 1918,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "culture",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "鲁迅以笔名在新青年发表狂人日记，以日记体、白话叙事和被害体验揭示礼教压迫，成为新文学的重要作品。小说借吃人意象反思传统伦理与社会关系，其文学形式与思想批判相结合，既推动白话小说实验，也使读者面对现代个体与旧社会规范的张力。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "new-culture",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -1.11,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“鲁迅”条：狂人日记发表的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "thought",
+      "society"
+    ],
+    "childIds": [],
+    "color": "#78b6a3",
+    "endYear": 1919,
+    "eraId": "modern",
+    "id": "may-fourth",
+    "influence": 5,
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        -1.5,
+        -0.6
+      ]
+    },
+    "parentId": null,
+    "period": "中国近代",
+    "personIds": [
+      "person-chen-duxiu",
+      "person-li-dazhao",
+      "person-cai-yuanpei"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "relationIds": [],
+    "startYear": 1919,
+    "summary": "青年学生与社会各界共同推动思想和政治觉醒。巴黎和会的山东问题引发北京学生抗议，运动迅速扩展到工人、商人和多个城市。它既是一场爱国政治运动，也与新文化、白话文、科学民主思潮交汇，深刻影响此后的社会组织与思想选择。",
+    "themeIds": [],
+    "title": "五四运动",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十二卷《近代后编》，五四运动的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“五四运动”条，事件经过与历史影响部分"
+      }
+    ]
+  },
+  {
+    "id": "communist-manifesto-chinese",
+    "title": "共产党宣言首个中文全译本出版",
+    "aliases": [],
+    "startYear": 1920,
+    "endYear": 1920,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "thought",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "陈望道在义乌完成共产党宣言译稿后赴上海，将译文连同日文、英文版本交李汉俊校对，再经陈独秀复校并由自己改定。一九二〇年八月，上海社会主义研究社将其列为丛书第一种正式出版，中文读者由此获得完整译本，翻译、校阅与出版成为理论传播的相连环节。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        -0.37,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "fudan-chen-wangdao-shanghai",
+        "locator": "“在这里，《共产党宣言》中译本进行正式出版前的校阅”节：1920年5月携译稿来沪、日英文本与两次校阅、8月上海社会主义研究社正式出版"
+      }
+    ]
+  },
+  {
+    "id": "pku-women-admission",
+    "title": "北京大学开放女禁",
+    "aliases": [],
+    "startYear": 1920,
+    "endYear": 1920,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "society",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "王兰、奚浈、查晓园等女性以旁听生身份进入北京大学，蔡元培及校方逐步接受男女同校，并在当年正式招生中允许女子报考。女性争取求学的主动行动与大学改革相互推动，国立大学的性别门槛由此松动，但入学机会、人数和社会条件仍有明显限制。",
+    "personIds": [
+      "person-cai-yuanpei"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "new-culture-to-pku-women-admission"
+    ],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        -0.74,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“蔡元培”条：北京大学开放女禁的年代、经过与制度背景"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十二卷《近代后编》：北京大学开放女禁（1920年）的叙述"
+      },
+      {
+        "sourceId": "pku-museum-century",
+        "locator": "“五四运动前后的北京大学”展区，“招收女生”展项",
+        "note": "官网可核对展项标签；姓名及旁听与正式录取的区别另据蔡元培条和通史，不声称展项网页提供全文。"
+      }
+    ]
+  },
+  {
+    "id": "ccp-founded",
+    "title": "中国共产党成立",
+    "aliases": [],
+    "startYear": 1921,
+    "endYear": 1921,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "各地共产党早期组织代表在上海举行第一次全国代表大会，后转移至嘉兴南湖继续会议，通过纲领并建立中央领导机构。中国共产党由此形成全国性组织，陈独秀、李大钊等早期活动与工人运动和国际共产主义网络汇合，成立并不意味着其策略和组织规模已经定型。",
+    "personIds": [],
+    "placeIds": [
+      "shanghai",
+      "jiaxing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“中国共产党第一次全国代表大会”条：中国共产党成立的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "washington-conference-china",
+    "title": "华盛顿会议与九国公约",
+    "aliases": [],
+    "startYear": 1921,
+    "endYear": 1922,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "中国代表参加华盛顿会议，要求解决山东问题并取消外国在华特权，中日另订条约处理山东权益。九国公约提出尊重中国主权、独立及门户开放，但没有废除不平等条约体系，会议成果体现战后列强协调，也显示中国外交诉求与既有国际秩序之间的落差。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0.37,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“华盛顿会议”条：华盛顿会议与九国公约的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "an-yuan-strike",
+    "title": "安源路矿工人大罢工",
+    "aliases": [],
+    "startYear": 1922,
+    "endYear": 1922,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "society",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "安源路矿工人在工人俱乐部组织下举行罢工，李立三、刘少奇等参与领导，提出改善待遇和保障组织权利等要求。罢工通过谈判取得若干成果，俱乐部的教育、互助与工会活动扩大影响，展示早期共产党组织把日常劳动利益同集体行动结合起来的方式。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0.74,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“安源路矿工人大罢工”条：安源路矿工人大罢工的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "jinghan-strike",
+    "title": "京汉铁路工人大罢工",
+    "aliases": [],
+    "startYear": 1923,
+    "endYear": 1923,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "society",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "京汉铁路工人为抗议总工会成立受到阻挠而举行全线罢工，吴佩孚军队在江岸等处镇压，林祥谦、施洋等遇害。铁路交通的中断显示产业工人的组织能力，流血事件则使工运遭受重挫，促使共产党重新考虑孤立工人斗争与更广政治联盟之间的关系。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        1.11,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“京汉铁路工人大罢工”条：京汉铁路工人大罢工的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "kuomintang-first-congress",
+    "title": "国民党一大与第一次国共合作",
+    "aliases": [],
+    "startYear": 1924,
+    "endYear": 1924,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "孙中山主持国民党第一次全国代表大会，重新解释三民主义，并确认共产党人以个人身份加入国民党的合作方式。改组加强党组织与群众工作，苏联顾问和援助也进入广州革命基地，联合阵线为军事和社会动员创造条件，同时保留双方纲领与组织上的差异。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.48,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“中国国民党第一次全国代表大会”条：国民党一大与第一次国共合作的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "whampoa-academy",
+    "title": "黄埔军校创办",
+    "aliases": [],
+    "startYear": 1924,
+    "endYear": 1924,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "culture",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "孙中山在广州黄埔创办陆军军官学校，蒋介石任校长，后由周恩来等主持政治工作，苏联提供顾问与援助。学校把军事训练同政治教育结合，为国民革命军培养骨干，其师生此后进入不同政治阵营，军校网络成为民国军事与政治关系的重要组成部分。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -1.48,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“黄埔军官学校”条：黄埔军校创办的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "may-thirtieth",
+    "title": "五卅运动",
+    "aliases": [],
+    "startYear": 1925,
+    "endYear": 1925,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "society",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "上海工人顾正红被日资纱厂人员枪杀后，学生和市民举行抗议，租界巡捕在南京路开枪造成死伤。上海工人、学生与商人开展罢工、罢课和罢市，运动扩展全国，把劳动条件、租界司法与反帝诉求联结起来，也考验不同社会团体维持联合行动的能力。",
+    "personIds": [
+      "person-chen-duxiu"
+    ],
+    "placeIds": [
+      "shanghai"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "may-thirtieth-to-canton-hongkong-strike"
+    ],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        -1.11,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“五卅运动”条：五卅运动的年代、经过与制度背景"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十二卷《近代后编》：五卅运动（1925年）的叙述"
+      }
+    ]
+  },
+  {
+    "id": "canton-hongkong-strike",
+    "title": "省港大罢工",
+    "aliases": [],
+    "startYear": 1925,
+    "endYear": 1926,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "society",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "香港及广州工人为声援五卅运动举行大罢工，沙基惨案使抗议进一步扩大，罢工委员会在广州组织救济与封锁香港行动。持续一年多的斗争显示跨城市工人组织力量，也造成就业和财政压力，国民革命形势变化及参与者的生计需求最终促成罢工结束。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "may-thirtieth-to-canton-hongkong-strike"
+    ],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        -0.74,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“省港大罢工”条：省港大罢工的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "childIds": [],
+    "color": "#7596ba",
+    "endYear": 1928,
+    "eraId": "modern",
+    "id": "northern-expedition",
+    "influence": 4,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.1,
+        1
+      ]
+    },
+    "parentId": null,
+    "period": "中国近代",
+    "personIds": [
+      "person-sun-zhongshan",
+      "person-jiang-jieshi",
+      "person-ye-ting"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "relationIds": [],
+    "startYear": 1926,
+    "summary": "国民革命军北上，军阀割据格局受到冲击。在国共合作背景下，国民革命军从广东出师，向湖南、湖北、江西和长江流域推进。北伐削弱多支军阀力量并推动形式上的统一，但阵营分裂与新的政治冲突很快出现。",
+    "themeIds": [],
+    "title": "北伐战争",
+    "yearPrecision": "range",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十二卷《近代后编》，北伐战争的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“北伐战争”条，事件经过与历史影响部分"
+      }
+    ]
+  },
+  {
+    "id": "april-twelfth",
+    "title": "四一二政变",
+    "aliases": [],
+    "startYear": 1927,
+    "endYear": 1927,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "蒋介石在上海借助军警与帮会力量解除工人纠察队武装，镇压共产党人和工会积极分子，国民党内部合作关系急剧破裂。南京国民政府随后成立，与武汉方面形成对峙；政变不仅改变国共关系，也直接摧毁上海部分公开工人组织，造成大量人员死伤。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.37,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“四一二反革命政变”条：四一二政变的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "autumn-harvest-uprising",
+    "title": "秋收起义与转向井冈山",
+    "aliases": [],
+    "startYear": 1927,
+    "endYear": 1927,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "毛泽东领导湘赣边界秋收起义，原拟攻取长沙的行动受挫后，率部转向山区，并在三湾整顿部队组织。进军井冈山意味着军事策略由争取城市转向立足农村的尝试，地方武装合作、群众关系和给养问题逐步成为维系革命武装的重要条件。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.37,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“秋收起义”条：秋收起义与转向井冈山的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "nanchang-uprising",
+    "title": "南昌起义",
+    "aliases": [],
+    "startYear": 1927,
+    "endYear": 1927,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "周恩来、贺龙、叶挺、朱德、刘伯承等领导部队在南昌起义，试图在国共合作破裂后保存并重建革命武装。部队随后南下广东，经历战斗、损失与分散，部分余部继续转战，起义由此成为共产党独立领导武装斗争的重要节点，而非立即建立稳固根据地。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“南昌起义”条：南昌起义的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "nanjing-government",
+    "title": "南京国民政府成立",
+    "aliases": [],
+    "startYear": 1927,
+    "endYear": 1927,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "蒋介石等在南京建立国民政府，与武汉国民政府并立，标志国民党阵营内部权力重组。其后宁汉合流和军事推进改变南北政治格局，但财政基础、地方军事集团及党政关系仍未稳定，南京政权的成立不能等同于全国行政与军事控制的即时统一。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.74,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“南京国民政府”条：南京国民政府成立的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "central-academia",
+    "title": "中央研究院正式成立",
+    "aliases": [],
+    "startYear": 1928,
+    "endYear": 1928,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "science",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "国立中央研究院在上海召开首次院务会议，蔡元培任首任院长，统筹自然科学与人文社会科学研究机构。它以专门研究和学术评议为目标，把分散的调查、实验与文献整理纳入全国性组织，科研制度由大学教学之外获得新的平台，实际运作仍受经费和战局制约。",
+    "personIds": [
+      "person-cai-yuanpei"
+    ],
+    "placeIds": [
+      "shanghai"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "science-society-to-central-academia"
+    ],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        1.11,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“中央研究院”条：中央研究院正式成立的年代、经过与制度背景"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十二卷《近代后编》：中央研究院正式成立（1928年）的叙述"
+      }
+    ]
+  },
+  {
+    "id": "northeast-flag-replacement",
+    "title": "东北易帜",
+    "aliases": [],
+    "startYear": 1928,
+    "endYear": 1928,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "张作霖在皇姑屯被日军炸死后，张学良继掌东北军政，宣布改悬青天白日满地红旗，服从南京国民政府。易帜使北洋政权时期的南北分裂在名义上结束，东北地方军政与财政仍保有较强独立性，国家统一的象征和实际权力整合之间存在明显距离。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.48,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“东北易帜”条：东北易帜的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "gutian-conference",
+    "title": "古田会议",
+    "aliases": [],
+    "startYear": 1929,
+    "endYear": 1929,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "红四军在福建上杭古田召开党的代表大会，通过由毛泽东起草的决议，讨论军队政治工作、党内教育及纠正非组织观点。会议将党对军队的领导与基层组织建设加以制度化，为红军整训提供原则，其落实仍依赖此后训练、纪律和战斗实践的持续调整。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.48,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“古田会议”条：古田会议的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "chinese-left-writers",
+    "title": "中国左翼作家联盟成立",
+    "aliases": [],
+    "startYear": 1930,
+    "endYear": 1930,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "culture",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "鲁迅、茅盾等在上海参与成立中国左翼作家联盟，联系文学创作、理论讨论与反压迫活动，推动文艺大众化的探索。联盟在国民党统治下受到查禁与迫害，成员围绕文学形式和政治任务亦有争论，左翼文学由此形成组织网络，却始终不是观点完全一致的单一群体。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -1.11,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史（3）“左联”条：开头“中国左翼作家联盟的通称”、1930年3月2日上海成立，及刊物、镇压与内部错误倾向各段"
+      }
+    ]
+  },
+  {
+    "id": "ruijin-soviet-government",
+    "title": "中华苏维埃共和国临时中央政府成立",
+    "aliases": [],
+    "startYear": 1931,
+    "endYear": 1931,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "中华苏维埃第一次全国代表大会在江西瑞金召开，通过宪法大纲等文件并成立临时中央政府，毛泽东任中央执行委员会主席。各根据地尝试统一政权、土地和财政制度，但交通阻隔与军事压力限制实际统合，地方实践仍存在差异，不能把中央名义等同全面行政覆盖。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.11,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“中华苏维埃共和国”条：中华苏维埃共和国临时中央政府成立的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "september-eighteenth",
+    "title": "九一八事变",
+    "aliases": [],
+    "startYear": 1931,
+    "endYear": 1931,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china",
+      "japanese-empire"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "日本关东军以柳条湖铁路爆炸为借口，袭击沈阳北大营及城区，继而向东北各地扩张。东北军在不抵抗政策影响下撤退，日本随后扶植伪满洲国，东北民众和义勇军展开抗日活动；局部侵略迅速改变中国安全处境，外交申诉与民间抵制也随之扩大。",
+    "personIds": [],
+    "placeIds": [
+      "shenyang"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.48,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“九一八事变”条：九一八事变的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "january-twenty-eighth",
+    "title": "一二八淞沪抗战",
+    "aliases": [],
+    "startYear": 1932,
+    "endYear": 1932,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china",
+      "japanese-empire"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "日军在上海制造事端并发动进攻，十九路军与第五军等抵抗，市民组织救护、募捐和支援。战事波及闸北等城区，居民与文化机构遭受严重损失，双方最后签订淞沪停战协定，局部停战没有消除日本继续侵略的威胁，也未恢复受损的城市生活。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.74,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“一二八事变”条：一二八淞沪抗战的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "long-march",
+    "title": "红军长征",
+    "aliases": [],
+    "startYear": 1934,
+    "endYear": 1936,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "中央红军在第五次反围剿失败后离开中央根据地，经历湘江战斗、遵义会议及此后转战，抵达陕北。红二、红四方面军等也先后进行战略转移，主要红军会师结束长征，部队遭受巨大损失但保留骨干，革命中心转移至西北并重新谋划抗日战略。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“长征”条：红军长征的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "december-ninth",
+    "title": "一二九运动",
+    "aliases": [],
+    "startYear": 1935,
+    "endYear": 1935,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "society",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "北平学生在华北危机加深之际举行游行请愿，反对日本侵略及华北自治活动，要求停止内战、共同抗日。示威遭军警阻拦后继续扩大，并得到全国多地学生与社会团体声援，救亡诉求通过学生组织、演讲和宣传队进入更广泛的公共讨论。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0.37,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“一二九运动”条：一二九运动的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "legal-tender-reform",
+    "title": "法币改革",
+    "aliases": [],
+    "startYear": 1935,
+    "endYear": 1935,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "南京国民政府宣布以中央、中国、交通三行发行的钞票为法币，废止银元流通并集中白银，随后扩充发行机构。改革回应国际银价变化引起的白银外流与金融紧缩，有利于统一币制和调节信用，同时把货币稳定更紧密地系于政府财政、外汇与银行治理。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.37,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“法币”条：法币改革的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "xian-incident",
+    "title": "西安事变",
+    "aliases": [],
+    "startYear": 1936,
+    "endYear": 1936,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "张学良、杨虎城在西安扣留蒋介石，要求停止内战和抗日，事件引发南京与各方的紧张交涉。周恩来等参与协商，蒋获释返回南京，事变最终以和平方式解决；停止大规模内战和国共关系调整由此获得重要契机，但具体承诺与后来执行仍有分歧。",
+    "personIds": [],
+    "placeIds": [
+      "xian"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.74,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“西安事变”条：西安事变的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "lugouqiao",
+    "title": "七七事变与全面抗战爆发",
+    "aliases": [],
+    "startYear": 1937,
+    "endYear": 1937,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "polityIds": [
+      "republic-of-china",
+      "japanese-empire"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "日军在北平卢沟桥附近演习后借口士兵失踪要求入城搜查，遭拒后发动攻击，中国第二十九军抵抗。局部交涉未能阻止日本增兵与扩大进攻，华北战事迅速升级，全国性抗战动员随之展开，国共合作也在共同抵抗侵略的压力下进一步形成。",
+    "personIds": [
+      "person-jiang-jieshi"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "lugouqiao-to-shanghai-battle-1937"
+    ],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.11,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“七七事变”条：七七事变与全面抗战爆发的年代、经过与制度背景"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十二卷《近代后编》：七七事变与全面抗战爆发（1937年）的叙述"
+      }
+    ]
+  },
+  {
+    "id": "shanghai-battle-1937",
+    "title": "淞沪会战",
+    "aliases": [],
+    "startYear": 1937,
+    "endYear": 1937,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china",
+      "japanese-empire"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "中日军队在上海及周边展开大规模会战，中国军队投入多个师抵御日军陆海空进攻，战事持续数月。日军在杭州湾登陆后中国部队撤退，上海陷落，军民付出沉重代价；战争同时促使工业、学校与人员向内地迁移，沿海经济和城市生活遭到严重破坏。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "lugouqiao-to-shanghai-battle-1937"
+    ],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.48,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“淞沪会战”条：淞沪会战的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "nanjing-massacre",
+    "title": "南京大屠杀",
+    "aliases": [],
+    "startYear": 1937,
+    "endYear": 1938,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china",
+      "japanese-empire"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "日军攻占南京后，对已解除武装的中国军人及平民实施大规模杀戮、强奸、抢劫和纵火，暴行持续数周。安全区中的中外救援者记录并努力保护难民，战后审判以证言、档案等追究罪责，幸存者记忆与多类史料共同保存了侵略战争对城市社会的灾难。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.48,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“南京大屠杀”条：南京大屠杀的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "southwest-university",
+    "title": "西南联合大学组建",
+    "aliases": [],
+    "startYear": 1937,
+    "endYear": 1938,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "culture",
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "北京大学、清华大学、南开大学因抗战南迁，先在长沙组成临时大学，后转移昆明并改称国立西南联合大学。师生在空袭、校舍短缺和物资困难中维持教学研究，三校合作保存高等教育力量，也以课程、实验和学术训练为战时中国培养多领域人才。",
+    "personIds": [],
+    "placeIds": [
+      "kunming"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -1.11,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“西南联合大学”条：西南联合大学组建的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "taierzhuang-battle",
+    "title": "台儿庄战役",
+    "aliases": [],
+    "startYear": 1938,
+    "endYear": 1938,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china",
+      "japanese-empire"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "中国军队在徐州会战中于台儿庄及其周边抵御日军进攻，李宗仁组织各部协同作战，孙连仲等部守城牵制，汤恩伯部从侧后攻击。战役取得胜利，振奋全国抗战信心，但徐州战局随后继续变化，局部战果不等于日军战略进攻已被完全遏止。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.74,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“台儿庄战役”条：台儿庄战役的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "wuhan-battle",
+    "title": "武汉会战",
+    "aliases": [],
+    "startYear": 1938,
+    "endYear": 1938,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china",
+      "japanese-empire"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "中国军队在长江两岸和大别山、鄱阳湖一带抵御日军向武汉推进，战线广阔，战斗持续数月。国民政府已先后把重要机关与部分工矿设备内迁，随后撤出武汉，城市失守；中国没有因日军占据交通中心而停止抵抗，战争逐渐进入更持久的消耗阶段。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“武汉会战”条：武汉会战的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "yellow-river-dike-breach",
+    "title": "花园口决堤",
+    "aliases": [],
+    "startYear": 1938,
+    "endYear": 1938,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "society",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "国民政府为阻滞日军西进，在郑州附近炸开黄河堤防，洪水淹没河南、安徽和江苏大片地区。军事行动给进攻造成一定障碍，却使众多居民死亡、流离失所，农田与交通长期受损；决策保密及灾后救济不足，更加重黄泛区社会承受的战争代价。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        -0.37,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“花园口决堤”条：花园口决堤的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "hundred-regiments",
+    "title": "百团大战",
+    "aliases": [],
+    "startYear": 1940,
+    "endYear": 1940,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china",
+      "japanese-empire"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "八路军在华北组织大规模交通破袭与据点攻击，重点打击正太铁路等日军运输线，并发动地方力量配合作战。行动破坏占领军交通和部分工矿设施，显示敌后抗战规模，日军随后加强报复与扫荡，根据地军民承受更重压力，战役评价须结合前后局势考察。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.37,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“百团大战”条：百团大战的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "new-fourth-army-incident",
+    "title": "皖南事变",
+    "aliases": [],
+    "startYear": 1941,
+    "endYear": 1941,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "新四军军部及所属皖南部队奉命北移途中遭国民党军队包围攻击，叶挺被扣，项英等遇害，大批官兵伤亡或被俘。国共双方围绕军令与责任激烈交涉，中共随后重建新四军军部，事件严重损害合作关系，但全国抗日统一战线并未因此完全瓦解。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.74,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“皖南事变”条：皖南事变的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "yanan-literature-forum",
+    "title": "延安文艺座谈会",
+    "aliases": [],
+    "startYear": 1942,
+    "endYear": 1942,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "culture",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "中共在延安召开文艺座谈会，毛泽东围绕文艺与社会生活、服务对象和政治关系发表讲话，回应根据地作家与文化工作者的争论。座谈会推动文艺工作更重视工农兵群众与实践经验，也形成对创作方向的政治规范，后来文艺政策深受其影响。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        1.48,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“在延安文艺座谈会上的讲话”条：延安文艺座谈会的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "henan-famine",
+    "title": "河南大饥荒",
+    "aliases": [],
+    "startYear": 1942,
+    "endYear": 1943,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "society",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "河南在旱灾、蝗灾、战争与征粮压力交织下发生严重饥荒，农村粮食和家庭资产迅速耗尽，大批灾民外出逃荒。地方报告、新闻采访和救济行动逐渐揭示灾情，援助仍难覆盖广泛需求，灾害说明自然冲击与战时治理失灵如何共同摧毁农民生计。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        1.11,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“抗日战争”条：河南大饥荒的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "cairo-declaration",
+    "title": "开罗宣言发表",
+    "aliases": [],
+    "startYear": 1943,
+    "endYear": 1943,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "diplomacy",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "蒋介石、罗斯福、丘吉尔在开罗会晤后发表宣言，提出对日作战目标及战后处置原则，涉及归还日本从中国窃取的领土，包括东北、台湾和澎湖列岛。宣言以战时盟国声明表达共同立场，后与波茨坦公告及受降安排相衔接，中国参与战后国际秩序规划的地位上升。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1.48,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“开罗会议”条：开罗宣言发表的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "chongqing-negotiations",
+    "title": "重庆谈判",
+    "aliases": [],
+    "startYear": 1945,
+    "endYear": 1945,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "politics",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "抗日战争结束后，毛泽东、周恩来等赴重庆与蒋介石及国民党方面谈判，围绕和平建国、军队和解放区政权等问题协商。双方签署政府与中共代表会谈纪要，即双十协定，确认部分政治原则，却未解决军事与地方权力的核心分歧，和平前景仍取决于后续落实。",
+    "personIds": [],
+    "placeIds": [
+      "chongqing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.11,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“重庆谈判”条：重庆谈判的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war",
+      "society"
+    ],
+    "childIds": [],
+    "color": "#d6ad56",
+    "endYear": 1945,
+    "eraId": "modern",
+    "id": "victory-1945",
+    "influence": 5,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.8,
+        0.3
+      ]
+    },
+    "parentId": null,
+    "period": "中国近代",
+    "personIds": [
+      "person-yang-jingyu",
+      "person-zhang-zizhong",
+      "person-zuo-quan"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "republic-of-china",
+      "japanese-empire"
+    ],
+    "relationIds": [],
+    "startYear": 1945,
+    "summary": "十四年艰苦抗战迎来胜利，中国战场影响世界反法西斯战争。自九一八事变至日本宣布投降，中国军民经历长期、广泛而惨烈的抵抗。正面战场、敌后战场与国际援助共同构成抗战全局。胜利结束日本侵略，也以巨大牺牲重塑中国的国家认同与国际地位。",
+    "themeIds": [],
+    "title": "抗日战争胜利",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十二卷《近代后编》，抗日战争胜利的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“抗日战争”条，事件经过与历史影响部分"
+      }
+    ]
+  },
+  {
+    "id": "political-consultative-1946",
+    "title": "政治协商会议召开",
+    "aliases": [],
+    "startYear": 1946,
+    "endYear": 1946,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "国民党、共产党、民主同盟、青年党及无党派人士在重庆召开政治协商会议，讨论政府改组、和平建国纲领、军事问题与宪法草案。会议形成多项决议，反映战后社会要求民主与和平的期待，但各方对落实程序和权力分享存在冲突，协议未能阻止全面内战。",
+    "personIds": [],
+    "placeIds": [
+      "chongqing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.74,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“政治协商会议”条：政治协商会议召开的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "civil-war-1946",
+    "title": "全面内战与国共政权转折",
+    "aliases": [],
+    "startYear": 1946,
+    "endYear": 1949,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "国民党军队大规模进攻中原解放区后，内战从局部冲突发展为全国性军事对抗。中共军队在战略防御后转入进攻，连续取得大规模战役胜利，南京国民政府对大陆的控制逐步瓦解；军事、土地政策、财政崩溃和社会动员交织，促成一九四九年的政权转折。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [
+      "land-law-outline",
+      "liaoshen-campaign",
+      "huaihai-campaign",
+      "pingjin-campaign",
+      "yangtze-crossing"
+    ],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.37,
+        -0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“解放战争”条：全面内战与国共政权转折的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "land-law-outline",
+    "title": "中国土地法大纲公布",
+    "aliases": [],
+    "startYear": 1947,
+    "endYear": 1947,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "中共召开全国土地会议后公布中国土地法大纲，提出废除封建性及半封建性剥削的土地制度，实行耕者有其田。各解放区组织土地重新分配，改变地主、农民之间的资源关系，执行中也出现侵犯中农利益等偏差，后来通过纠偏调适政策与基层社会的关系。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "civil-war-1946",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        -0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“中国土地法大纲”条：中国土地法大纲公布的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "liaoshen-campaign",
+    "title": "辽沈战役",
+    "aliases": [],
+    "startYear": 1948,
+    "endYear": 1948,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "东北野战军先攻锦州，切断东北国民党军向关内撤退的重要通道，随后在长春、辽西和沈阳等处取得胜利。战役结束使中共控制东北主要地区并取得战略后方，国民党丧失大量部队和工业资源，双方全国兵力对比由此发生显著变化。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "civil-war-1946",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.37,
+        -0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“辽沈战役”条：辽沈战役的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "huaihai-campaign",
+    "title": "淮海战役",
+    "aliases": [],
+    "startYear": 1948,
+    "endYear": 1949,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "华东野战军与中原野战军在徐州及周边分割围歼国民党军多个兵团，战事从碾庄、双堆集发展到陈官庄。大规模民工运输和地方粮秣供应支撑前线，战役削弱国民党在长江以北的主力，亦使解放区社会承担沉重动员任务，军事胜负与后勤组织密切相连。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "civil-war-1946",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.74,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“淮海战役”条：淮海战役的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "pingjin-campaign",
+    "title": "平津战役",
+    "aliases": [],
+    "startYear": 1948,
+    "endYear": 1949,
+    "yearPrecision": "range",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "东北与华北部队共同作战，先控制张家口、天津等要地，再以军事压力和谈判促成傅作义部接受北平和平改编。战役结束改变华北控制格局，北平避免大规模城内作战，谈判方案与战场态势相互配合，城市接管随即涉及军队、治安和公共设施的重整。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "civil-war-1946",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.11,
+        0.28
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“平津战役”条：平津战役的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "id": "cppcc-first-plenary",
+    "title": "中国人民政治协商会议第一届全体会议",
+    "aliases": [],
+    "startYear": 1949,
+    "endYear": 1949,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "peoples-republic-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "institution",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "各党派、人民团体、地区、军队及其他方面代表在北平召开会议，通过共同纲领，决定国都、纪年、国旗及代国歌，选举中央人民政府委员会。会议在普选全国人民代表大会尚未召开时承担筹建国家政权的职能，建立开国时的基本政治与组织安排。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "cppcc-first-plenary-to-prc-founded"
+    ],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.48,
+        0.84
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“中国人民政治协商会议第一届全体会议”条：中国人民政治协商会议第一届全体会议的年代、经过与制度背景"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics",
+      "society"
+    ],
+    "childIds": [],
+    "color": "#e0b058",
+    "endYear": 1949,
+    "eraId": "modern",
+    "id": "prc-founded",
+    "influence": 5,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.9,
+        -0.4
+      ]
+    },
+    "parentId": null,
+    "period": "中国近代",
+    "personIds": [
+      "person-mao-zedong",
+      "person-zhou-enlai",
+      "person-song-qingling"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "peoples-republic-china"
+    ],
+    "relationIds": [
+      "cppcc-first-plenary-to-prc-founded"
+    ],
+    "startYear": 1949,
+    "summary": "新的国家政权成立，中国现代历史进入新阶段。1949 年 10 月 1 日，中华人民共和国中央人民政府成立。长期革命与战争之后，国家开始重建政治、经济与社会秩序。此后发生的制度建设与发展道路选择，构成中国当代历史的起点。",
+    "themeIds": [],
+    "title": "中华人民共和国成立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "modern",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十二卷《近代后编》，中华人民共和国成立的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-historical-chronology",
+        "locator": "1949年条：9月21日至30日中国人民政治协商会议第一届全体会议；10月1日中华人民共和国开国大典"
+      }
+    ]
+  },
+  {
+    "id": "yangtze-crossing",
+    "title": "渡江战役与南京解放",
+    "aliases": [],
+    "startYear": 1949,
+    "endYear": 1949,
+    "yearPrecision": "exact",
+    "eraId": "modern",
+    "editorialPeriodId": "modern",
+    "detailLevel": "basic",
+    "polityIds": [
+      "republic-of-china"
+    ],
+    "period": "中国近代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "国共北平和平谈判未能达成协议后，人民解放军在长江中下游展开渡江作战，突破国民党防线并进入南京。南京国民政府在大陆的统治中心瓦解，部队继续向东南和内地推进，战役将三大战役后的军事优势转化为跨越长江的政权接管进程。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": "civil-war-1946",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78a9b5",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.48,
+        0.56
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“渡江战役”条：渡江战役与南京解放的年代、经过与制度背景"
+      }
+    ]
+  }
+]

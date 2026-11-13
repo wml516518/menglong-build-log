@@ -1,6 +1,6 @@
 _translation:
   policyVersion: 1
-  sourceHash: 79ae697ce49420036e9f8c85d4ab05c3d293c80220f443d204ff26971ba5efe3
+  sourceHash: 319a19616c65ece15e60c11f3d259c08bf11c411d87a5401baf2ebdcae935368
 about: 'I focus on full-stack development, AI products, and productivity tools. This site will document my portfolio roadmap, starting from a personal homepage and gradually expanding into deployable AI applications. I will also continuously record the technical choices and iteration process in real projects.'
 contact:
   - href: 'https://github.com/wml516518'
@@ -15,9 +15,9 @@ historyGalaxy:
   stack:
     - Three.js
     - React Three Fiber
-    - 30 historical events
+    - 1200 events / 200 core archives
   status: Interactive 3D experience
-  summary: 'Travel from the Tang dynasty to 1949, move event stars across a living timeline, and explore the people and stories behind each turning point.'
+  summary: 'Travel from pre-Qin times to 1949, explore 1200 sourced historical events and 200 core archives, and read the people and stories along the timeline.'
   title: History Galaxy
 homeSectionOrder:
   - buildLog

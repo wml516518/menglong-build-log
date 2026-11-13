@@ -9,6 +9,7 @@ roleIds: []
 eventIds:
   - self-strengthening
   - sino-japanese-war
+  - jiangnan-arsenal
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

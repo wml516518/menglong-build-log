@@ -12,6 +12,7 @@ eventIds:
   - ming-fall
 sourceIds:
   - bai-shouyi-general-history
+  - mingshi-zhonghua-1974
 yearPrecision: exact
 birthplaceId: null
 placeIds: []

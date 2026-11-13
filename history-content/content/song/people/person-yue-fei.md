@@ -8,6 +8,7 @@ deathYear: 1142
 roleIds: []
 eventIds:
   - yue-fei
+  - song-yue-fei-xiangyang
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

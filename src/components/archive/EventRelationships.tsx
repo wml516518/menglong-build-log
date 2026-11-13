@@ -1,12 +1,12 @@
 import { RotateCcw } from 'lucide-react';
 import { useHistoryContent } from '../../history/content/store';
-import type { CompactHistoryEventIndex, HistoryEventArchive, RelationType } from '../../history/content/schema';
+import type { CompactHistoryEventIndex, RelationType } from '../../history/content/schema';
 import { EntityLink, MissingRecord, useArchiveResource } from './ArchivePrimitives';
 
 const relationNames: Record<RelationType, [string, string]> = {
   cause: ['促成', '起因于'], consequence: ['后续结果', '前序事件'], parallel: ['同时期事件', '同时期事件'], contrast: ['对照事件', '对照事件'], 'part-of': ['隶属事件', '包含事件']
 };
-export function EventRelationships({ event, quick = false }: { event: CompactHistoryEventIndex | HistoryEventArchive; quick?: boolean }) {
+export function EventRelationships({ event, quick = false }: { event: Pick<CompactHistoryEventIndex, 'id' | 'parentId' | 'childIds' | 'relationIds'>; quick?: boolean }) {
   const { getRelations } = useHistoryContent();
   const { state, retry } = useArchiveResource(getRelations, event.relationIds.length > 0);
   const hasRelations = event.parentId || event.childIds.length || event.relationIds.length;

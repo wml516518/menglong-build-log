@@ -7,9 +7,12 @@ birthYear: 1528
 deathYear: 1588
 roleIds: []
 eventIds:
+  - qi-jiguang-coastal-defense
+  - qi-jiguang-taizhou-victories
   - zhang-juzheng
 sourceIds:
   - bai-shouyi-general-history
+  - mingshi-zhonghua-1974
 yearPrecision: exact
 birthplaceId: null
 placeIds: []

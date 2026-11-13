@@ -10,8 +10,10 @@ roleIds: []
 eventIds:
   - kaiyuan
   - anshi
+  - tang-xuanzong-accession
 sourceIds:
   - bai-shouyi-general-history
+  - jiutangshu-zhonghua-1975
 yearPrecision: exact
 birthplaceId: null
 placeIds: []

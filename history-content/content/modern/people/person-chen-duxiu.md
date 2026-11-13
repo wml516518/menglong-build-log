@@ -8,6 +8,8 @@ deathYear: 1942
 roleIds: []
 eventIds:
   - may-fourth
+  - may-thirtieth
+  - new-culture
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

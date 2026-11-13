@@ -8,6 +8,11 @@ deathYear: 1678
 roleIds: []
 eventIds:
   - ming-fall
+  - qing-conquest-yunnan
+  - shanhai-pass-battle
+  - southern-ming-resistance
+  - three-feudatories-revolt
+  - wu-sangui-proclaims-emperor
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

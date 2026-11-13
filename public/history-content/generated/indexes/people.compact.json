@@ -1,0 +1,3466 @@
+[
+  {
+    "aliases": [],
+    "birthYear": 579,
+    "deathYear": 648,
+    "eventIds": [
+      "zhenguan"
+    ],
+    "id": "person-fang-xuanling",
+    "name": "房玄龄",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 580,
+    "deathYear": 643,
+    "eventIds": [
+      "zhenguan"
+    ],
+    "id": "person-wei-zheng",
+    "name": "魏征",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [
+      "李世民"
+    ],
+    "birthYear": 598,
+    "deathYear": 649,
+    "eventIds": [
+      "zhenguan",
+      "tang-xuanwu-gate"
+    ],
+    "id": "person-li-shimin",
+    "name": "唐太宗",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "jiutangshu-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 650,
+    "deathYear": 721,
+    "eventIds": [
+      "kaiyuan"
+    ],
+    "id": "person-yao-chong",
+    "name": "姚崇",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 663,
+    "deathYear": 737,
+    "eventIds": [
+      "kaiyuan"
+    ],
+    "id": "person-song-jing",
+    "name": "宋璟",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [
+      "李隆基"
+    ],
+    "birthYear": 685,
+    "deathYear": 762,
+    "eventIds": [
+      "kaiyuan",
+      "anshi",
+      "tang-xuanzong-accession"
+    ],
+    "id": "person-li-longji",
+    "name": "唐玄宗",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "jiutangshu-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 697,
+    "deathYear": 781,
+    "eventIds": [
+      "anshi"
+    ],
+    "id": "person-guo-ziyi",
+    "name": "郭子仪",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 703,
+    "deathYear": 757,
+    "eventIds": [
+      "anshi"
+    ],
+    "id": "person-an-lushan",
+    "name": "安禄山",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 703,
+    "deathYear": 761,
+    "eventIds": [
+      "anshi"
+    ],
+    "id": "person-shi-siming",
+    "name": "史思明",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 727,
+    "deathYear": 781,
+    "eventIds": [
+      "two-tax"
+    ],
+    "id": "person-yang-yan",
+    "name": "杨炎",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [
+      "李适"
+    ],
+    "birthYear": 742,
+    "deathYear": 805,
+    "eventIds": [
+      "two-tax"
+    ],
+    "id": "person-li-kuo",
+    "name": "唐德宗",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [
+      "宋太祖"
+    ],
+    "birthYear": 927,
+    "deathYear": 976,
+    "eventIds": [
+      "chenqiao",
+      "song-civil-military-separation"
+    ],
+    "id": "person-zhao-kuangyin",
+    "name": "赵匡胤",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 928,
+    "deathYear": 984,
+    "eventIds": [
+      "chenqiao"
+    ],
+    "id": "person-shi-shouxin",
+    "name": "石守信",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 939,
+    "deathYear": 997,
+    "eventIds": [
+      "song-northern-han-fall"
+    ],
+    "id": "person-zhao-guangyi",
+    "name": "赵光义",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "songshi-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [
+      "萧绰"
+    ],
+    "birthYear": 953,
+    "deathYear": 1009,
+    "eventIds": [
+      "chanyuan",
+      "liao-empress-xiao-regency"
+    ],
+    "id": "person-xiao-chuo",
+    "name": "萧太后",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 961,
+    "deathYear": 1023,
+    "eventIds": [
+      "chanyuan"
+    ],
+    "id": "person-kou-zhun",
+    "name": "寇准",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [
+      "赵恒"
+    ],
+    "birthYear": 968,
+    "deathYear": 1022,
+    "eventIds": [
+      "chanyuan",
+      "song-liao-chanzhou-campaign"
+    ],
+    "id": "person-zhao-heng",
+    "name": "宋真宗",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 989,
+    "deathYear": 1052,
+    "eventIds": [
+      "song-qingli-reforms"
+    ],
+    "id": "person-fan-zhongyan",
+    "name": "范仲淹",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "songshi-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1003,
+    "deathYear": 1048,
+    "eventIds": [
+      "western-xia-founded"
+    ],
+    "id": "person-li-yuanhao",
+    "name": "李元昊",
+    "primaryEraId": "song-liao-jin-xia",
+    "roleIds": [],
+    "sourceIds": [
+      "songshi-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1019,
+    "deathYear": 1086,
+    "eventIds": [
+      "wang-anshi",
+      "song-zi-zhi-tong-jian"
+    ],
+    "id": "person-sima-guang",
+    "name": "司马光",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1021,
+    "deathYear": 1086,
+    "eventIds": [
+      "wang-anshi",
+      "song-baojia"
+    ],
+    "id": "person-wang-anshi",
+    "name": "王安石",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1037,
+    "deathYear": 1101,
+    "eventIds": [
+      "song-wutai-poetry"
+    ],
+    "id": "person-su-shi",
+    "name": "苏轼",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "songshi-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [
+      "赵顼"
+    ],
+    "birthYear": 1048,
+    "deathYear": 1085,
+    "eventIds": [
+      "wang-anshi"
+    ],
+    "id": "person-zhao-xu",
+    "name": "宋神宗",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1068,
+    "deathYear": 1123,
+    "eventIds": [
+      "jurchen-jin-founded"
+    ],
+    "id": "person-wanyan-aguda",
+    "name": "完颜阿骨打",
+    "primaryEraId": "song-liao-jin-xia",
+    "roleIds": [],
+    "sourceIds": [
+      "jinshi-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [
+      "完颜晟"
+    ],
+    "birthYear": 1075,
+    "deathYear": 1135,
+    "eventIds": [
+      "jingkang"
+    ],
+    "id": "person-wanyan-sheng",
+    "name": "金太宗",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [
+      "赵佶"
+    ],
+    "birthYear": 1082,
+    "deathYear": 1135,
+    "eventIds": [
+      "jingkang",
+      "song-jin-sea-alliance"
+    ],
+    "id": "person-zhao-ji",
+    "name": "宋徽宗",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1089,
+    "deathYear": 1151,
+    "eventIds": [
+      "yue-fei",
+      "song-huangtiandang"
+    ],
+    "id": "person-han-shizhong",
+    "name": "韩世忠",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1090,
+    "deathYear": 1155,
+    "eventIds": [
+      "yue-fei",
+      "song-shaoxing-peace"
+    ],
+    "id": "person-qin-hui",
+    "name": "秦桧",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [
+      "赵桓"
+    ],
+    "birthYear": 1100,
+    "deathYear": 1161,
+    "eventIds": [
+      "jingkang"
+    ],
+    "id": "person-zhao-huan",
+    "name": "宋钦宗",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1103,
+    "deathYear": 1142,
+    "eventIds": [
+      "yue-fei",
+      "song-yue-fei-xiangyang"
+    ],
+    "id": "person-yue-fei",
+    "name": "岳飞",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1107,
+    "deathYear": 1187,
+    "eventIds": [
+      "southern-song-founded"
+    ],
+    "id": "person-zhao-gou",
+    "name": "赵构",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "songshi-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1110,
+    "deathYear": 1174,
+    "eventIds": [
+      "song-caishi-battle"
+    ],
+    "id": "person-yu-yunwen",
+    "name": "虞允文",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "songshi-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1130,
+    "deathYear": 1200,
+    "eventIds": [
+      "song-ehu-debate",
+      "song-zhu-xi-commentaries"
+    ],
+    "id": "person-zhu-xi",
+    "name": "朱熹",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "china-kongzi-ehu"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1152,
+    "deathYear": 1207,
+    "eventIds": [
+      "song-kaixi-expedition"
+    ],
+    "id": "person-han-tuozhou",
+    "name": "韩侂胄",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "songshi-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [
+      "铁木真"
+    ],
+    "birthYear": 1162,
+    "deathYear": 1227,
+    "eventIds": [
+      "mongol-rise",
+      "western-xia-fall"
+    ],
+    "id": "person-temujin",
+    "name": "成吉思汗",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1170,
+    "deathYear": 1223,
+    "eventIds": [
+      "mongol-rise"
+    ],
+    "id": "person-muqali",
+    "name": "木华黎",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1198,
+    "deathYear": 1234,
+    "eventIds": [
+      "jin-fall"
+    ],
+    "id": "person-wanyan-shouxu",
+    "name": "完颜守绪",
+    "primaryEraId": "song-liao-jin-xia",
+    "roleIds": [],
+    "sourceIds": [
+      "jinshi-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [
+      "赛典赤·赡思丁"
+    ],
+    "birthYear": 1211,
+    "deathYear": 1279,
+    "eventIds": [
+      "yuan-yunnan-province",
+      "province-system"
+    ],
+    "id": "person-sayyid-ajall",
+    "name": "赛典赤",
+    "primaryEraId": "yuan",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [
+      "元世祖"
+    ],
+    "birthYear": 1215,
+    "deathYear": 1294,
+    "eventIds": [
+      "yuan-founded",
+      "yuan-dadu-capital",
+      "province-system",
+      "yuan-xuanzheng-institute"
+    ],
+    "id": "person-kublai",
+    "name": "忽必烈",
+    "primaryEraId": "yuan",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1216,
+    "deathYear": 1274,
+    "eventIds": [
+      "yuan-founded",
+      "yuan-dadu-capital"
+    ],
+    "id": "person-liu-bingzhong",
+    "name": "刘秉忠",
+    "primaryEraId": "yuan",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1231,
+    "deathYear": 1316,
+    "eventIds": [
+      "yuan-siwa-observations",
+      "yuan-shoushi-calendar",
+      "yuan-grand-canal-tonghui"
+    ],
+    "id": "person-guo-shoujing",
+    "name": "郭守敬",
+    "primaryEraId": "yuan",
+    "roleIds": [],
+    "sourceIds": [
+      "yuanshi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1254,
+    "deathYear": 1322,
+    "eventIds": [
+      "yuan-zhao-mengfu-quehua"
+    ],
+    "id": "person-zhao-mengfu",
+    "name": "赵孟頫",
+    "primaryEraId": "yuan",
+    "roleIds": [],
+    "sourceIds": [
+      "yuanshi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [
+      "元仁宗"
+    ],
+    "birthYear": 1285,
+    "deathYear": 1320,
+    "eventIds": [
+      "yuan-examination-restored",
+      "yuan-examination-first"
+    ],
+    "id": "person-yuan-renzong",
+    "name": "爱育黎拔力八达",
+    "primaryEraId": "yuan",
+    "roleIds": [],
+    "sourceIds": [
+      "yuanshi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1314,
+    "deathYear": 1356,
+    "eventIds": [
+      "yuan-toqto-first-chancellorship",
+      "yuan-three-histories",
+      "yuan-toqto-gaoyou-campaign"
+    ],
+    "id": "person-toqto",
+    "name": "脱脱",
+    "primaryEraId": "yuan",
+    "roleIds": [],
+    "sourceIds": [
+      "yuanshi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [
+      "元顺帝"
+    ],
+    "birthYear": 1320,
+    "deathYear": 1370,
+    "eventIds": [
+      "yuan-dadu-fall"
+    ],
+    "id": "person-yuan-shundi",
+    "name": "妥懽帖睦尔",
+    "primaryEraId": "yuan",
+    "roleIds": [],
+    "sourceIds": [
+      "yuanshi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1328,
+    "deathYear": 1398,
+    "eventIds": [
+      "ming-founded-1368",
+      "hu-weiyong-chancellor-abolished"
+    ],
+    "id": "person-zhu-yuanzhang",
+    "name": "朱元璋",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "mingshi-zhonghua-1974",
+      "ming-shilu-zhongyang"
+    ]
+  },
+  {
+    "aliases": [
+      "朱棣"
+    ],
+    "birthYear": 1360,
+    "deathYear": 1424,
+    "eventIds": [
+      "beijing-capital-1421",
+      "jingnan-campaign",
+      "zheng-he"
+    ],
+    "id": "person-zhu-di",
+    "name": "明成祖",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1371,
+    "deathYear": 1433,
+    "eventIds": [
+      "zheng-he",
+      "zheng-he-first-voyage",
+      "zheng-he-seventh-voyage"
+    ],
+    "id": "person-zheng-he",
+    "name": "郑和",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1377,
+    "deathYear": null,
+    "eventIds": [
+      "jianwen-accession",
+      "jingnan-campaign"
+    ],
+    "id": "person-jianwen-emperor",
+    "name": "建文帝",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "mingshi-zhonghua-1974",
+      "ming-shilu-zhongyang"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1398,
+    "deathYear": 1457,
+    "eventIds": [
+      "beijing-defense-1449",
+      "duomen-coup",
+      "tumu"
+    ],
+    "id": "person-yu-qian",
+    "name": "于谦",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1399,
+    "deathYear": 1435,
+    "eventIds": [
+      "ming-withdrawal-vietnam"
+    ],
+    "id": "person-zhu-zhanji",
+    "name": "明宣宗",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [
+      "朱祁镇"
+    ],
+    "birthYear": 1427,
+    "deathYear": 1464,
+    "eventIds": [
+      "duomen-coup",
+      "tumu",
+      "yingzong-returned",
+      "zhengtong-accession"
+    ],
+    "id": "person-zhu-qizhen",
+    "name": "明英宗",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1472,
+    "deathYear": 1529,
+    "eventIds": [
+      "wang-yangming-longchang",
+      "prince-ning-rebellion",
+      "wang-yangming-death"
+    ],
+    "id": "person-wang-yangming",
+    "name": "王守仁",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "mingshi-zhonghua-1974",
+      "wang-yangming-quanshu"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1507,
+    "deathYear": 1567,
+    "eventIds": [
+      "jiajing-accession",
+      "grand-rites-controversy",
+      "renyin-palace-plot"
+    ],
+    "id": "person-zhu-houcong",
+    "name": "明世宗",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1507,
+    "deathYear": 1582,
+    "eventIds": [
+      "altan-beijing-siege",
+      "altan-peace-negotiations",
+      "altan-investiture"
+    ],
+    "id": "person-altan-khan",
+    "name": "俺答汗",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1518,
+    "deathYear": 1593,
+    "eventIds": [
+      "li-shizhen-bencao"
+    ],
+    "id": "person-li-shizhen",
+    "name": "李时珍",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "mingshi-zhonghua-1974",
+      "bencao-gangmu-jinling"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1525,
+    "deathYear": 1582,
+    "eventIds": [
+      "single-whip-national-push",
+      "wanli-accession",
+      "zhang-juzheng",
+      "zhang-juzheng-death",
+      "zhang-juzheng-kaocheng",
+      "zhang-juzheng-mourning-dispute"
+    ],
+    "id": "person-zhang-juzheng",
+    "name": "张居正",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1528,
+    "deathYear": 1588,
+    "eventIds": [
+      "qi-jiguang-coastal-defense",
+      "qi-jiguang-taizhou-victories",
+      "zhang-juzheng"
+    ],
+    "id": "person-qi-jiguang",
+    "name": "戚继光",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1531,
+    "deathYear": 1598,
+    "eventIds": [
+      "imjin-war",
+      "imjin-war-end"
+    ],
+    "id": "person-deng-zilong",
+    "name": "邓子龙",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1537,
+    "deathYear": 1572,
+    "eventIds": [
+      "longqing-maritime-opening"
+    ],
+    "id": "person-zhu-zaihou",
+    "name": "明穆宗",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1549,
+    "deathYear": 1598,
+    "eventIds": [
+      "imjin-pyongyang-campaign",
+      "imjin-war"
+    ],
+    "id": "person-li-rusong",
+    "name": "李如松",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1550,
+    "deathYear": 1612,
+    "eventIds": [
+      "donglin-academy-restored"
+    ],
+    "id": "person-gu-xiancheng",
+    "name": "顾宪成",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1552,
+    "deathYear": 1610,
+    "eventIds": [
+      "ricci-zhaoqing-residence",
+      "ricci-first-world-map",
+      "ricci-beijing",
+      "kunyu-wanguo-quantu",
+      "euclid-elements-translation"
+    ],
+    "id": "person-matteo-ricci",
+    "name": "利玛窦",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "mingshi-zhonghua-1974",
+      "ricci-china-journals"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1559,
+    "deathYear": 1626,
+    "eventIds": [
+      "jurchen-later-jin-founded",
+      "later-jin-seven-grievances",
+      "sarhu-battle"
+    ],
+    "id": "person-nurhaci",
+    "name": "努尔哈赤",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "mingshi-zhonghua-1974",
+      "qing-taizu-shilu"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1562,
+    "deathYear": 1633,
+    "eventIds": [
+      "euclid-elements-translation"
+    ],
+    "id": "person-xu-guangqi",
+    "name": "徐光启",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [
+      "明神宗",
+      "朱翊钧"
+    ],
+    "birthYear": 1563,
+    "deathYear": 1620,
+    "eventIds": [
+      "imjin-war",
+      "wanli-accession",
+      "zhang-juzheng"
+    ],
+    "id": "person-zhu-yijun",
+    "name": "万历帝",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1587,
+    "deathYear": null,
+    "eventIds": [
+      "tiangong-kaiwu"
+    ],
+    "id": "person-song-yingxing",
+    "name": "宋应星",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "tiangong-kaiwu-1637",
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1606,
+    "deathYear": 1645,
+    "eventIds": [
+      "dashun-founded-xian",
+      "late-ming-rebellions",
+      "ming-fall"
+    ],
+    "id": "person-li-zicheng",
+    "name": "李自成",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [
+      "明思宗",
+      "朱由检"
+    ],
+    "birthYear": 1611,
+    "deathYear": 1644,
+    "eventIds": [
+      "ming-fall"
+    ],
+    "id": "person-zhu-youjian",
+    "name": "崇祯帝",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1612,
+    "deathYear": 1650,
+    "eventIds": [
+      "qing-entry-beijing-1644",
+      "queue-order-1645",
+      "shanhai-pass-battle"
+    ],
+    "id": "person-dorgon",
+    "name": "多尔衮",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "qingshigao-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1612,
+    "deathYear": 1678,
+    "eventIds": [
+      "ming-fall",
+      "qing-conquest-yunnan",
+      "shanhai-pass-battle",
+      "southern-ming-resistance",
+      "three-feudatories-revolt",
+      "wu-sangui-proclaims-emperor"
+    ],
+    "id": "person-wu-sangui",
+    "name": "吴三桂",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1621,
+    "deathYear": 1696,
+    "eventIds": [
+      "penghu-battle-1683",
+      "taiwan-zheng-surrender"
+    ],
+    "id": "person-shi-lang",
+    "name": "施琅",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "qingshigao-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1624,
+    "deathYear": 1662,
+    "eventIds": [
+      "southern-ming-resistance",
+      "zheng-taiwan-expedition"
+    ],
+    "id": "person-zheng-chenggong",
+    "name": "郑成功",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "qingshigao-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1636,
+    "deathYear": 1703,
+    "eventIds": [
+      "nerchinsk-treaty"
+    ],
+    "id": "person-songgotu",
+    "name": "索额图",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "qingshigao-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1644,
+    "deathYear": 1697,
+    "eventIds": [
+      "galdan-death",
+      "jao-modo-battle",
+      "qing-dzungar-war",
+      "ulan-butung-battle"
+    ],
+    "id": "person-galdan",
+    "name": "噶尔丹",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "qingshigao-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [
+      "玄烨"
+    ],
+    "birthYear": 1654,
+    "deathYear": 1722,
+    "eventIds": [
+      "imperial-atlas-survey",
+      "jao-modo-battle",
+      "kangqian",
+      "kangxi-death-yongzheng-accession",
+      "kangxi-personal-rule",
+      "nerchinsk-treaty",
+      "oboi-arrest",
+      "qing-dzungar-war",
+      "qing-tibet-expedition",
+      "shunzhi-death",
+      "taiwan-zheng-surrender",
+      "three-feudatories-revolt",
+      "ulan-butung-battle"
+    ],
+    "id": "person-xuanye",
+    "name": "康熙帝",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1663,
+    "deathYear": 1738,
+    "eventIds": [
+      "imperial-atlas-survey"
+    ],
+    "id": "person-regis",
+    "name": "雷孝思",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "qingshigao-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1667,
+    "deathYear": 1741,
+    "eventIds": [
+      "kiakhta-treaty"
+    ],
+    "id": "person-tulishen",
+    "name": "图理琛",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "qingshigao-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [
+      "胤禛"
+    ],
+    "birthYear": 1678,
+    "deathYear": 1735,
+    "eventIds": [
+      "kangqian",
+      "kangxi-death-yongzheng-accession",
+      "kiakhta-treaty",
+      "opium-ban-1729",
+      "yongzheng-death",
+      "yongzheng-fiscal-reforms"
+    ],
+    "id": "person-yinzhen",
+    "name": "雍正帝",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [
+      "弘历"
+    ],
+    "birthYear": 1711,
+    "deathYear": 1799,
+    "eventIds": [
+      "canton-system-1757",
+      "dzungar-conquest-1755",
+      "jinchuan-wars",
+      "kangqian",
+      "macartney-embassy",
+      "qianlong-abdication-announced",
+      "qianlong-accession",
+      "qing-dzungar-war",
+      "siku-quanshu",
+      "yongzheng-death"
+    ],
+    "id": "person-hongli",
+    "name": "乾隆帝",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1715,
+    "deathYear": 1763,
+    "eventIds": [
+      "dream-red-chamber"
+    ],
+    "id": "person-cao-xueqin",
+    "name": "曹雪芹",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "qingshigao-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1717,
+    "deathYear": 1797,
+    "eventIds": [
+      "jinchuan-wars",
+      "second-jinchuan-war"
+    ],
+    "id": "person-agui",
+    "name": "阿桂",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "qingshigao-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1724,
+    "deathYear": 1805,
+    "eventIds": [
+      "siku-quanshu"
+    ],
+    "id": "person-ji-yun",
+    "name": "纪昀",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "qingshigao-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1737,
+    "deathYear": 1806,
+    "eventIds": [
+      "macartney-embassy"
+    ],
+    "id": "person-george-macartney",
+    "name": "乔治·马戛尔尼",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "qingshigao-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1760,
+    "deathYear": 1820,
+    "eventIds": [
+      "heshen-fall",
+      "jiaqing-accession",
+      "jiaqing-death",
+      "qianlong-abdication-announced",
+      "white-lotus-rebellion"
+    ],
+    "id": "person-yongyan",
+    "name": "嘉庆帝",
+    "primaryEraId": "qing",
+    "roleIds": [],
+    "sourceIds": [
+      "qingshigao-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1781,
+    "deathYear": 1841,
+    "eventIds": [
+      "opium-war"
+    ],
+    "id": "person-guan-tianpei",
+    "name": "关天培",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [
+      "旻宁"
+    ],
+    "birthYear": 1782,
+    "deathYear": 1850,
+    "eventIds": [
+      "daoguang-accession",
+      "jiaqing-death",
+      "lin-zexu-canton-1839",
+      "opium-war"
+    ],
+    "id": "person-minning",
+    "name": "道光帝",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "qing-shilu-zhonghua",
+      "qingshigao-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1785,
+    "deathYear": 1850,
+    "eventIds": [
+      "humen-opium-destruction",
+      "lin-zexu-canton-1839",
+      "opium-war"
+    ],
+    "id": "person-lin-zexu",
+    "name": "林则徐",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "qing-shilu-zhonghua",
+      "qingshigao-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1811,
+    "deathYear": 1872,
+    "eventIds": [
+      "taiping",
+      "self-strengthening",
+      "jiangnan-arsenal"
+    ],
+    "id": "person-zeng-guofan",
+    "name": "曾国藩",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1812,
+    "deathYear": 1885,
+    "eventIds": [
+      "self-strengthening"
+    ],
+    "id": "person-zuo-zongtang",
+    "name": "左宗棠",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1814,
+    "deathYear": 1864,
+    "eventIds": [
+      "taiping"
+    ],
+    "id": "person-hong-xiuquan",
+    "name": "洪秀全",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1823,
+    "deathYear": 1864,
+    "eventIds": [
+      "taiping"
+    ],
+    "id": "person-li-xiucheng",
+    "name": "李秀成",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1823,
+    "deathYear": 1901,
+    "eventIds": [
+      "self-strengthening",
+      "sino-japanese-war",
+      "jiangnan-arsenal"
+    ],
+    "id": "person-li-hongzhang",
+    "name": "李鸿章",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [
+      "恭亲王"
+    ],
+    "birthYear": 1833,
+    "deathYear": 1898,
+    "eventIds": [
+      "second-opium-war",
+      "zongli-yamen",
+      "xinyou-coup"
+    ],
+    "id": "person-yi-xin",
+    "name": "奕䜣",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "encyclopedia-china-history",
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1835,
+    "deathYear": 1908,
+    "eventIds": [
+      "boxer",
+      "imperial-exams-abolished"
+    ],
+    "id": "person-cixi",
+    "name": "慈禧太后",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1836,
+    "deathYear": 1900,
+    "eventIds": [
+      "boxer"
+    ],
+    "id": "person-nie-shicheng",
+    "name": "聂士成",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1841,
+    "deathYear": 1902,
+    "eventIds": [
+      "boxer"
+    ],
+    "id": "person-zhao-sanduo",
+    "name": "赵三多",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1849,
+    "deathYear": 1894,
+    "eventIds": [
+      "sino-japanese-war"
+    ],
+    "id": "person-deng-shichang",
+    "name": "邓世昌",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1858,
+    "deathYear": 1927,
+    "eventIds": [
+      "hundred-days"
+    ],
+    "id": "person-kang-youwei",
+    "name": "康有为",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1864,
+    "deathYear": 1928,
+    "eventIds": [
+      "xinhai"
+    ],
+    "id": "person-li-yuanhong",
+    "name": "黎元洪",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [
+      "孙文",
+      "孙逸仙"
+    ],
+    "birthYear": 1866,
+    "deathYear": 1925,
+    "eventIds": [
+      "xinhai",
+      "northern-expedition"
+    ],
+    "id": "person-sun-zhongshan",
+    "name": "孙中山",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1868,
+    "deathYear": 1940,
+    "eventIds": [
+      "may-fourth",
+      "central-academia",
+      "new-culture",
+      "pku-women-admission"
+    ],
+    "id": "person-cai-yuanpei",
+    "name": "蔡元培",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [
+      "载湉"
+    ],
+    "birthYear": 1871,
+    "deathYear": 1908,
+    "eventIds": [
+      "sino-japanese-war",
+      "hundred-days",
+      "peking-university-founded"
+    ],
+    "id": "person-zaitian",
+    "name": "光绪帝",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1873,
+    "deathYear": 1929,
+    "eventIds": [
+      "hundred-days"
+    ],
+    "id": "person-liang-qichao",
+    "name": "梁启超",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1874,
+    "deathYear": 1916,
+    "eventIds": [
+      "xinhai"
+    ],
+    "id": "person-huang-xing",
+    "name": "黄兴",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1879,
+    "deathYear": 1942,
+    "eventIds": [
+      "may-fourth",
+      "may-thirtieth",
+      "new-culture"
+    ],
+    "id": "person-chen-duxiu",
+    "name": "陈独秀",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [
+      "蒋中正"
+    ],
+    "birthYear": 1887,
+    "deathYear": 1975,
+    "eventIds": [
+      "northern-expedition",
+      "lugouqiao"
+    ],
+    "id": "person-jiang-jieshi",
+    "name": "蒋介石",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1889,
+    "deathYear": 1927,
+    "eventIds": [
+      "may-fourth",
+      "new-culture"
+    ],
+    "id": "person-li-dazhao",
+    "name": "李大钊",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1891,
+    "deathYear": 1940,
+    "eventIds": [
+      "victory-1945"
+    ],
+    "id": "person-zhang-zizhong",
+    "name": "张自忠",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1893,
+    "deathYear": 1976,
+    "eventIds": [
+      "prc-founded"
+    ],
+    "id": "person-mao-zedong",
+    "name": "毛泽东",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1893,
+    "deathYear": 1981,
+    "eventIds": [
+      "prc-founded"
+    ],
+    "id": "person-song-qingling",
+    "name": "宋庆龄",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1896,
+    "deathYear": 1946,
+    "eventIds": [
+      "northern-expedition"
+    ],
+    "id": "person-ye-ting",
+    "name": "叶挺",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1898,
+    "deathYear": 1976,
+    "eventIds": [
+      "prc-founded"
+    ],
+    "id": "person-zhou-enlai",
+    "name": "周恩来",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1905,
+    "deathYear": 1940,
+    "eventIds": [
+      "victory-1945"
+    ],
+    "id": "person-yang-jingyu",
+    "name": "杨靖宇",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": 1905,
+    "deathYear": 1942,
+    "eventIds": [
+      "victory-1945"
+    ],
+    "id": "person-zuo-quan",
+    "name": "左权",
+    "primaryEraId": "modern",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": 878,
+    "eventIds": [
+      "huang-chao"
+    ],
+    "id": "person-wang-xianzhi",
+    "name": "王仙芝",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": 884,
+    "eventIds": [
+      "huang-chao"
+    ],
+    "id": "person-huang-chao",
+    "name": "黄巢",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": 1264,
+    "eventIds": [
+      "song-diaoyu-defense"
+    ],
+    "id": "person-wang-jian",
+    "name": "王坚",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "songshi-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": 1279,
+    "eventIds": [
+      "song-yamen-battle"
+    ],
+    "id": "person-zhang-shijie",
+    "name": "张世杰",
+    "primaryEraId": "song-liao-jin-xia",
+    "roleIds": [],
+    "sourceIds": [
+      "songshi-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": 1292,
+    "eventIds": [
+      "song-xiangyang-fall"
+    ],
+    "id": "person-lu-wenhuan",
+    "name": "吕文焕",
+    "primaryEraId": "song-liao-jin-xia",
+    "roleIds": [],
+    "sourceIds": [
+      "songshi-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": 1302,
+    "eventIds": [
+      "yuan-sea-transport"
+    ],
+    "id": "person-zhang-xuan",
+    "name": "张瑄",
+    "primaryEraId": "yuan",
+    "roleIds": [],
+    "sourceIds": [
+      "yuanshi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": 1323,
+    "eventIds": [
+      "yuan-south-slope-coup"
+    ],
+    "id": "person-baizhu",
+    "name": "拜住",
+    "primaryEraId": "yuan",
+    "roleIds": [],
+    "sourceIds": [
+      "yuanshi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": 1333,
+    "eventIds": [
+      "yuan-two-capitals-war"
+    ],
+    "id": "person-yan-tiemu-er",
+    "name": "燕铁木儿",
+    "primaryEraId": "yuan",
+    "roleIds": [],
+    "sourceIds": [
+      "yuanshi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": 1353,
+    "eventIds": [
+      "yuan-jialu-river"
+    ],
+    "id": "person-jia-lu",
+    "name": "贾鲁",
+    "primaryEraId": "yuan",
+    "roleIds": [],
+    "sourceIds": [
+      "yuanshi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": 1363,
+    "eventIds": [
+      "yuan-red-turban-uprising",
+      "yuan-song-pretender-han-lin-er"
+    ],
+    "id": "person-liu-futong",
+    "name": "刘福通",
+    "primaryEraId": "yuan",
+    "roleIds": [],
+    "sourceIds": [
+      "yuanshi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": 1380,
+    "eventIds": [
+      "hu-weiyong-chancellor-abolished"
+    ],
+    "id": "person-hu-weiyong",
+    "name": "胡惟庸",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": 1455,
+    "eventIds": [
+      "tumu"
+    ],
+    "id": "person-esen",
+    "name": "也先",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "changping-battle"
+    ],
+    "id": "person-bai-qi",
+    "name": "白起",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "shiji-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "ban-chao-western-regions"
+    ],
+    "id": "person-ban-chao",
+    "name": "班超",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "houhanshu-zhonghua-1965",
+      "zizhi-tongjian-zhonghua-1956"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "song-moving-type"
+    ],
+    "id": "person-bi-sheng",
+    "name": "毕昇",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "mengxi-bitan-zhonghua-2009"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "emperor-moves-xu"
+    ],
+    "id": "person-cao-cao",
+    "name": "曹操",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "houhanshu-zhonghua-1965",
+      "zizhi-tongjian-zhonghua-1956"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "cao-pi-wei-founded"
+    ],
+    "id": "person-cao-pi",
+    "name": "曹丕",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "sanguozhi-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "later-zhou-guo-rong",
+      "song-founding-prelude"
+    ],
+    "id": "person-chai-rong",
+    "name": "柴荣",
+    "primaryEraId": "five-dynasties",
+    "roleIds": [],
+    "sourceIds": [
+      "jiuwudaishi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "chen-founded"
+    ],
+    "id": "person-chen-baxian",
+    "name": "陈霸先",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "chenshu-zhonghua-1972"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "wei-nine-rank"
+    ],
+    "id": "person-chen-qun",
+    "name": "陈群",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "sanguozhi-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "chen-sheng-uprising"
+    ],
+    "id": "person-chen-sheng",
+    "name": "陈胜",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "hanshu-zhonghua-1962",
+      "shiji-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "confucius-teaching"
+    ],
+    "id": "person-confucius",
+    "name": "孔子",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "lunyu-yang-1980"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "northern-wei-equal-field"
+    ],
+    "id": "person-feng-empress-dowager",
+    "name": "冯太后",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "weishu-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "guan-zhong-governance"
+    ],
+    "id": "person-guan-zhong",
+    "name": "管仲",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "guoyu-shanghai-1978"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "later-zhou-founded"
+    ],
+    "id": "person-guo-wei",
+    "name": "郭威",
+    "primaryEraId": "five-dynasties",
+    "roleIds": [],
+    "sourceIds": [
+      "jiuwudaishi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "hanfeizi-statecraft"
+    ],
+    "id": "person-han-fei",
+    "name": "韩非",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "hanfeizi-chen-2000"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "tang-han-yu-classical"
+    ],
+    "id": "person-han-yu",
+    "name": "韩愈",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "jiutangshu-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "wudi-death-regency"
+    ],
+    "id": "person-huo-guang",
+    "name": "霍光",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "hanshu-zhonghua-1962"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "mobei-campaign"
+    ],
+    "id": "person-huo-qubing",
+    "name": "霍去病",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "hanshu-zhonghua-1962",
+      "shiji-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "chengpu-battle"
+    ],
+    "id": "person-jin-wengong",
+    "name": "晋文公",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "zuozhuan-yang-1981"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "tang-li-bai-poetry"
+    ],
+    "id": "person-li-bai",
+    "name": "李白",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "jiutangshu-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "southern-tang-founded"
+    ],
+    "id": "person-li-bian",
+    "name": "李昪",
+    "primaryEraId": "five-dynasties",
+    "roleIds": [],
+    "sourceIds": [
+      "jiuwudaishi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "later-tang-founded"
+    ],
+    "id": "person-li-cunxu",
+    "name": "李存勖",
+    "primaryEraId": "five-dynasties",
+    "roleIds": [],
+    "sourceIds": [
+      "jiuwudaishi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "qin-commandery-system"
+    ],
+    "id": "person-li-si",
+    "name": "李斯",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "shiji-zhonghua-1959",
+      "zizhi-tongjian-zhonghua-1956"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "later-tang-mingzong-reforms"
+    ],
+    "id": "person-li-siyuan",
+    "name": "李嗣源",
+    "primaryEraId": "five-dynasties",
+    "roleIds": [],
+    "sourceIds": [
+      "jiuwudaishi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "tang-huichang-persecution"
+    ],
+    "id": "person-li-yan",
+    "name": "李炎",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "jiutangshu-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "first-partisan-prohibition"
+    ],
+    "id": "person-li-ying",
+    "name": "李膺",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "houhanshu-zhonghua-1965",
+      "zizhi-tongjian-zhonghua-1956"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "tang-founded"
+    ],
+    "id": "person-li-yuan",
+    "name": "李渊",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "jiutangshu-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "chu-han-war",
+      "han-founded"
+    ],
+    "id": "person-liu-bang",
+    "name": "刘邦",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "hanshu-zhonghua-1962",
+      "shiji-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "shu-han-founded"
+    ],
+    "id": "person-liu-bei",
+    "name": "刘备",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "sanguozhi-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "kunyang-battle",
+      "eastern-han-founded"
+    ],
+    "id": "person-liu-xiu",
+    "name": "刘秀",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "houhanshu-zhonghua-1965",
+      "zizhi-tongjian-zhonghua-1956"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "liu-song-founded"
+    ],
+    "id": "person-liu-yu",
+    "name": "刘裕",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "songshu-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "later-han-founded"
+    ],
+    "id": "person-liu-zhiyuan",
+    "name": "刘知远",
+    "primaryEraId": "five-dynasties",
+    "roleIds": [],
+    "sourceIds": [
+      "jiuwudaishi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "lu-first-acre-tax"
+    ],
+    "id": "person-lu-xuangong",
+    "name": "鲁宣公",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "zuozhuan-yang-1981"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "mencius-benevolent-rule"
+    ],
+    "id": "person-mencius",
+    "name": "孟子",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "mengzi-yang-1960"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "mozi-inclusive-care"
+    ],
+    "id": "person-mozi",
+    "name": "墨子",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "mozi-sun-2001"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "pan-geng-migration"
+    ],
+    "id": "person-pan-geng",
+    "name": "盘庚",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "shangshu-kong-1980"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "wuyue-founded"
+    ],
+    "id": "person-qian-liu",
+    "name": "钱镠",
+    "primaryEraId": "five-dynasties",
+    "roleIds": [],
+    "sourceIds": [
+      "jiuwudaishi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "qin-unifies-six-states"
+    ],
+    "id": "person-qin-shihuang",
+    "name": "秦始皇",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "shiji-zhonghua-1959",
+      "zizhi-tongjian-zhonghua-1956"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "salt-iron-debate"
+    ],
+    "id": "person-sang-hongyang",
+    "name": "桑弘羊",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "hanshu-zhonghua-1962",
+      "yantie-lun-wang-1992"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "shang-yang-reform"
+    ],
+    "id": "person-shang-yang",
+    "name": "商鞅",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "shiji-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "gonghe-regency"
+    ],
+    "id": "person-shao-mugong-hu",
+    "name": "召穆公虎",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "guoyu-shanghai-1978"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "later-jin-founded"
+    ],
+    "id": "person-shi-jingtang",
+    "name": "石敬瑭",
+    "primaryEraId": "five-dynasties",
+    "roleIds": [],
+    "sourceIds": [
+      "jiuwudaishi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "yongjia-disaster"
+    ],
+    "id": "person-sima-chi",
+    "name": "司马炽",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "jinshu-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "qin-conquers-shu"
+    ],
+    "id": "person-sima-cuo",
+    "name": "司马错",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "zhanguoce-he-1990"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "taichu-calendar"
+    ],
+    "id": "person-sima-qian",
+    "name": "司马迁",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "hanshu-zhonghua-1962",
+      "shiji-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "eastern-jin-founded"
+    ],
+    "id": "person-sima-rui",
+    "name": "司马睿",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "jinshu-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "jin-founded",
+      "jin-unifies-wu"
+    ],
+    "id": "person-sima-yan",
+    "name": "司马炎",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "jinshu-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "sui-revises-laws"
+    ],
+    "id": "person-su-wei",
+    "name": "苏威",
+    "primaryEraId": "sui-tang",
+    "roleIds": [],
+    "sourceIds": [
+      "suishu-zhonghua-1973"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "sun-quan-wu-founded"
+    ],
+    "id": "person-sun-quan",
+    "name": "孙权",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "sanguozhi-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "tang-hedong-hebei-jiedushi"
+    ],
+    "id": "person-tian-chengsi",
+    "name": "田承嗣",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "jiutangshu-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "northern-wei-luoyang-capital"
+    ],
+    "id": "person-tuoba-hong",
+    "name": "元宏",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "weishu-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "northern-wei-unifies-north"
+    ],
+    "id": "person-tuoba-tao",
+    "name": "拓跋焘",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "weishu-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "wang-dun-rebellion"
+    ],
+    "id": "person-wang-dun",
+    "name": "王敦",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "jinshu-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "zheng-he",
+      "zheng-he-first-voyage"
+    ],
+    "id": "person-wang-jinghong",
+    "name": "王景弘",
+    "primaryEraId": "ming",
+    "roleIds": [],
+    "sourceIds": [
+      "bai-shouyi-general-history",
+      "mingshi-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "wang-mang-regency",
+      "wang-mang-imperial-seal",
+      "xin-dynasty-founded"
+    ],
+    "id": "person-wang-mang",
+    "name": "王莽",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "hanshu-zhonghua-1962",
+      "zizhi-tongjian-zhonghua-1956"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "tang-yongzhen-reform"
+    ],
+    "id": "person-wang-shuwen",
+    "name": "王叔文",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "jiutangshu-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "yuan-wang-zhen-nongshu"
+    ],
+    "id": "person-wang-zhen",
+    "name": "王祯",
+    "primaryEraId": "yuan",
+    "roleIds": [],
+    "sourceIds": [
+      "chnmuseum-nongshu",
+      "wangzhen-nongshu"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "boju-battle"
+    ],
+    "id": "person-wu-helv",
+    "name": "吴王阖庐",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "shiji-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "chu-wuqi-reforms"
+    ],
+    "id": "person-wu-qi",
+    "name": "吴起",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "shiji-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "tang-wu-zhou-founded"
+    ],
+    "id": "person-wu-zetian",
+    "name": "武则天",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "jiutangshu-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "xiangshu-truce"
+    ],
+    "id": "person-xiang-xu",
+    "name": "向戌",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "zuozhuan-yang-1981"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "julu-battle"
+    ],
+    "id": "person-xiang-yu",
+    "name": "项羽",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "hanshu-zhonghua-1962",
+      "shiji-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "liang-wudi-buddhism"
+    ],
+    "id": "person-xiao-yan",
+    "name": "萧衍",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "liangshu-zhonghua-1973"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "feishui-battle"
+    ],
+    "id": "person-xie-xuan",
+    "name": "谢玄",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "jinshu-zhonghua-1974"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "tang-buddhist-translation"
+    ],
+    "id": "person-xuanzang",
+    "name": "玄奘",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "jiutangshu-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "song-jiaozi-official"
+    ],
+    "id": "person-xue-tian",
+    "name": "薛田",
+    "primaryEraId": "song",
+    "roleIds": [],
+    "sourceIds": [
+      "songshi-zhonghua-1977"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "xunzi-learning"
+    ],
+    "id": "person-xunzi",
+    "name": "荀子",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "xunzi-wang-1988"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "sui-yangdi-accession",
+      "sui-grand-canal",
+      "sui-korean-campaign",
+      "sui-rebellions"
+    ],
+    "id": "person-yang-guang",
+    "name": "杨广",
+    "primaryEraId": "sui-tang",
+    "roleIds": [],
+    "sourceIds": [
+      "suishu-zhonghua-1973"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "sui-kaihuang-treasury"
+    ],
+    "id": "person-yang-jian",
+    "name": "杨坚",
+    "primaryEraId": "sui-tang",
+    "roleIds": [],
+    "sourceIds": [
+      "suishu-zhonghua-1973"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "sui-jiangnan-revolt"
+    ],
+    "id": "person-yang-su",
+    "name": "杨素",
+    "primaryEraId": "sui-tang",
+    "roleIds": [],
+    "sourceIds": [
+      "suishu-zhonghua-1973"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "tang-kaiyuan-astronomy"
+    ],
+    "id": "person-yi-xing",
+    "name": "一行",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "jiutangshu-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "yue-destroys-wu"
+    ],
+    "id": "person-yue-goujian",
+    "name": "越王勾践",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "guoyu-shanghai-1978"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "western-wei-fubing"
+    ],
+    "id": "person-yuwen-tai",
+    "name": "宇文泰",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "zhoushu-zhonghua-1971"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "northern-zhou-conquers-qi"
+    ],
+    "id": "person-yuwen-yong",
+    "name": "宇文邕",
+    "primaryEraId": "wei-jin",
+    "roleIds": [],
+    "sourceIds": [
+      "zhoushu-zhonghua-1971"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "tang-wu-zhou-end"
+    ],
+    "id": "person-zhang-jianzhi",
+    "name": "张柬之",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "jiutangshu-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "yellow-turban-uprising"
+    ],
+    "id": "person-zhang-jiao",
+    "name": "张角",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "houhanshu-zhonghua-1965",
+      "zizhi-tongjian-zhonghua-1956"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "zhang-qian-first-mission"
+    ],
+    "id": "person-zhang-qian",
+    "name": "张骞",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "hanshu-zhonghua-1962",
+      "shiji-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "tang-zhenguan-law"
+    ],
+    "id": "person-zhangsun-wuji",
+    "name": "长孙无忌",
+    "primaryEraId": "tang",
+    "roleIds": [],
+    "sourceIds": [
+      "jiutangshu-zhonghua-1975"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "zhao-cavalry-reform"
+    ],
+    "id": "person-zhao-wulingwang",
+    "name": "赵武灵王",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "shiji-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "zhao-jinyang-siege"
+    ],
+    "id": "person-zhao-xiangzi",
+    "name": "赵襄子",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "shiji-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "western-regions-protectorate"
+    ],
+    "id": "person-zheng-ji",
+    "name": "郑吉",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "hanshu-zhonghua-1962",
+      "houhanshu-zhonghua-1965"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "three-jin-recognized"
+    ],
+    "id": "person-zhou-weiliewang",
+    "name": "周威烈王",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "zizhi-tongjian-zhonghua-1956"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "zhou-conquest-shang"
+    ],
+    "id": "person-zhou-wuwang",
+    "name": "周武王",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "shiji-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "seven-kingdoms-rebellion"
+    ],
+    "id": "person-zhou-yafu",
+    "name": "周亚夫",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "hanshu-zhonghua-1962",
+      "shiji-zhonghua-1959"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "red-cliffs-battle"
+    ],
+    "id": "person-zhou-yu",
+    "name": "周瑜",
+    "primaryEraId": "qin-han",
+    "roleIds": [],
+    "sourceIds": [
+      "sanguozhi-zhonghua-1959",
+      "zizhi-tongjian-zhonghua-1956"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "three-guards-rebellion",
+      "chengzhou-construction"
+    ],
+    "id": "person-zhougong-dan",
+    "name": "周公旦",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "shangshu-kong-1980"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "later-liang-founded"
+    ],
+    "id": "person-zhu-wen",
+    "name": "朱温",
+    "primaryEraId": "five-dynasties",
+    "roleIds": [],
+    "sourceIds": [
+      "jiuwudaishi-zhonghua-1976"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "zhuangzi-freedom"
+    ],
+    "id": "person-zhuangzi",
+    "name": "庄子",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "zhuangzi-guo-1961"
+    ]
+  },
+  {
+    "aliases": [],
+    "birthYear": null,
+    "deathYear": null,
+    "eventIds": [
+      "zichan-zheng-reforms"
+    ],
+    "id": "person-zichan",
+    "name": "子产",
+    "primaryEraId": "pre-qin",
+    "roleIds": [],
+    "sourceIds": [
+      "zuozhuan-yang-1981"
+    ]
+  }
+]

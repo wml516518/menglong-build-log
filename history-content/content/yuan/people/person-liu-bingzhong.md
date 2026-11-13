@@ -8,6 +8,7 @@ deathYear: 1274
 roleIds: []
 eventIds:
   - yuan-founded
+  - yuan-dadu-capital
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

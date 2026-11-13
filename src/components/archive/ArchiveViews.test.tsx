@@ -31,6 +31,14 @@ it('renders the complete event structure with Markdown, indexed entities and sem
   // Names come from compact indexes; unrelated person archives are never requested.
   expect(fixture.requests.filter(path => path.startsWith('eras/'))).toEqual(['eras/tang.json']);
 });
+it('renders an outgoing part-of relation as belonging to the broader event', async () => {
+  const fixture = archiveFixture();
+  fixture.records[fixture.manifest.relations] = [{ id: 'zhenguan-kaiyuan', fromId: 'zhenguan', toId: 'kaiyuan', type: 'part-of' }];
+  open('history-event', 'zhenguan', fixture);
+  const graph = await screen.findByRole('list', { name: '事件关系' });
+  expect(await within(graph).findByText('隶属事件')).toBeInTheDocument();
+  expect(within(graph).getAllByRole('link', { name: '开元盛世' }).length).toBeGreaterThan(0);
+});
 it('renders chronological life, identity changes, works, relations, events, interpretation and sources', async () => {
   const fixture = archiveFixture();
   fixture.person.timeline.reverse();
@@ -165,4 +173,71 @@ it('shows a missing primary even when its manifest era exists but contains no ma
   open('history-event', 'zhenguan', fixture);
   expect(await screen.findByRole('heading', { name: '未找到历史档案' })).toBeInTheDocument();
   expect(fixture.requests.filter(path => path.startsWith('eras/'))).toHaveLength(1);
+});
+
+function tierFixture(detailLevel: 'basic' | 'core') {
+  const fixture = archiveFixture();
+  const { sourceRefs, background, causes, course, results, impacts, historiography, ...common } = fixture.event;
+  const record = { ...common, detailLevel, editorialPeriodId: 'sui-tang-five-dynasties',
+    summary: '唐太宗在位期间君臣以恢复生产整顿政治和听取意见为主要施政方向并调整制度使社会逐渐恢复发展。'.repeat(2),
+    sourceRefs: [{ sourceId: sourceRefs[0].sourceId, locator: '卷二·贞观纪事', note: '年代以本卷记载为据。' }, { sourceId: sourceRefs[1].sourceId, locator: '唐代条目' }],
+    ...(detailLevel === 'core' ? { background, causes, course, results, impacts, historiography } : {}) };
+  Object.keys(fixture.event).forEach(key => delete fixture.event[key]);
+  Object.assign(fixture.event, record);
+  Object.assign(fixture.events.find((event: { id: string }) => event.id === record.id), { detailLevel, editorialPeriodId: record.editorialPeriodId, summary: record.summary });
+  if (detailLevel === 'basic') { fixture.manifest.basicEventCount++; fixture.manifest.coreEventCount--; }
+  return fixture;
+}
+
+it.each(['basic', 'core'] as const)('renders truthful %s full archives and precise citations', async detailLevel => {
+  const fixture = tierFixture(detailLevel);
+  open('history-event', 'zhenguan', fixture);
+  const title = await screen.findByRole('heading', { level: 1, name: '贞观之治' });
+  expect(title).toHaveFocus();
+  expect(screen.getByText(fixture.event.summary)).toBeInTheDocument();
+  expect(screen.getByText('627 年 — 649 年')).toBeInTheDocument();
+  expect(screen.getByText('政治、制度')).toBeInTheDocument();
+  expect(await screen.findByText('卷二·贞观纪事')).toBeInTheDocument();
+  expect(screen.getByText('年代以本卷记载为据。')).toBeInTheDocument();
+  for (const name of ['历史背景', '原因', '发展过程', '结果', '影响', '史学说明']) {
+    if (detailLevel === 'core') expect(screen.getByRole('heading', { name, exact: true })).toBeInTheDocument();
+    else expect(screen.queryByRole('heading', { name, exact: true })).not.toBeInTheDocument();
+  }
+  expect(screen.queryByText('基础档案') !== null).toBe(detailLevel === 'basic');
+  expect(screen.getByRole('heading', { name: '关系图' })).toBeInTheDocument();
+});
+
+it.each(['basic', 'core'] as const)('retries %s full archives and sources without losing navigation', async detailLevel => {
+  const fixture = tierFixture(detailLevel);
+  fixture.failures.add('eras/tang.json');
+  open('history-event', 'zhenguan', fixture);
+  expect(await screen.findByRole('alert')).toHaveTextContent('历史档案加载失败');
+  fixture.failures.clear();
+  fixture.failures.add(fixture.manifest.sources);
+  await userEvent.click(screen.getByRole('button', { name: '重试' }));
+  expect(await screen.findByRole('heading', { level: 1, name: '贞观之治' })).toHaveFocus();
+  expect(await screen.findByRole('alert')).toHaveTextContent('参考资料加载失败');
+  fixture.failures.clear();
+  await userEvent.click(screen.getByRole('button', { name: '重试参考资料' }));
+  expect(await screen.findByText('卷二·贞观纪事')).toBeInTheDocument();
+  expect(screen.getByRole('link', { name: '返回历史星河' })).toBeInTheDocument();
+  expect(fixture.requests.filter(path => path.startsWith('eras/'))).toHaveLength(2);
+});
+
+it('renders mixed string and located references, including separate citations to one source', async () => {
+  const { SourcesList } = await import('./SourcesList');
+  const { HistoryContentProvider } = await import('../../history/content/store');
+  const fixture = archiveFixture();
+  render(<HistoryContentProvider loader={fixture.loader}><SourcesList references={[
+    'history-institution',
+    { sourceId: 'history-institution', locator: '唐代第一节', note: '据本节核对。' },
+    { sourceId: 'history-institution', locator: '唐代第二节' }
+  ]} /></HistoryContentProvider>);
+  const sources = await screen.findByRole('list', { name: '参考资料' });
+  expect(within(sources).getAllByRole('link', { name: /历史资料目录/ })).toHaveLength(3);
+  const items = within(sources).getAllByRole('listitem');
+  expect(items[0]).toHaveTextContent('资料编写组 · 历史研究机构 · 唐代');
+  expect(items[0]).not.toHaveTextContent('唐代第一节');
+  expect(items[1]).toHaveTextContent('唐代第一节据本节核对。');
+  expect(items[2]).toHaveTextContent('唐代第二节');
 });

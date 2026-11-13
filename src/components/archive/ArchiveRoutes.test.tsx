@@ -1,11 +1,12 @@
-import { readFileSync } from 'node:fs';
-import { act, cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { act, cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../../App';
 import { getHistoryReturnLocation, rememberHistoryLocation, restoreHistoryReturnLocation } from '../../routes';
 import { createHistoryContentLoader } from '../../history/content/loader';
+import { HISTORY_SESSION_KEY, loadHistorySession } from '../../history/session';
+import { productionFixture, representativeEventIds } from '../../../tests/fixtures/productionHistory';
 
-function fixtureLoader() {
+function fixtureLoader(allEvents = false) {
   const requests: string[] = [];
   let broken = false;
   let brokenIndex = false;
@@ -17,7 +18,7 @@ function fixtureLoader() {
     if (gate) await gate;
     if (brokenIndex && path.endsWith('events.compact.json')) throw new Error('offline');
     if (broken && path.startsWith('eras/')) throw new Error('offline');
-    return new Response(readFileSync(`public/history-content/generated/${path}`, 'utf8'));
+    return new Response(JSON.stringify(productionFixture(path, allEvents ? undefined : representativeEventIds)));
   } });
   return { loader, requests, breakEra: () => { broken = true; }, repair: () => { broken = false; brokenIndex = false; }, breakIndex: () => { brokenIndex = true; },
     pause: () => { gate = new Promise<void>(resolve => { paused = resolve; }); }, resume: () => { paused?.(); gate = undefined; } };
@@ -48,6 +49,26 @@ it.each([['event/zhenguan', '贞观之治'], ['person/person-li-shimin', '唐太
   expect(document.title).toContain('历史星河');
   expect(screen.getByRole('link', { name: '返回历史星河' })).toHaveAttribute('href', '#/history-galaxy');
 });
+it.each([
+  ['erlitou-urban-center', '二里头都邑形成', false],
+  ['pan-geng-migration', '盘庚迁殷', true]
+])('reads the production %s archive at its declared detail level', async (id, title, core) => {
+  window.location.hash = `#/history-galaxy/event/${id}`;
+  render(<App historyLoader={fixtureLoader(true).loader} />);
+  const heading = await screen.findByRole('heading', { level: 1, name: title });
+  const archive = within(heading.closest('article')!);
+  expect(archive.getByRole('heading', { name: '参考资料' })).toBeInTheDocument();
+  const sources = await archive.findByRole('list', { name: '参考资料' });
+  expect(within(sources).getAllByRole('listitem').length).toBeGreaterThan(0);
+  expect(sources).not.toHaveTextContent('史料未详');
+  if (core) {
+    for (const name of ['历史背景', '原因', '发展过程', '结果', '影响', '史学说明']) expect(archive.getByRole('heading', { name, exact: true })).toBeInTheDocument();
+    expect(archive.queryByText('基础档案')).not.toBeInTheDocument();
+  } else {
+    expect(archive.getByText('基础档案')).toBeInTheDocument();
+    expect(archive.queryByRole('heading', { name: '历史背景' })).not.toBeInTheDocument();
+  }
+});
 it('exposes loading and return navigation while pending', async () => {
   window.location.hash = '#/history-galaxy/event/zhenguan';
   const fixture = fixtureLoader(); fixture.pause();
@@ -77,16 +98,24 @@ it.each(['event/missing', 'person/missing', 'theme/missing'])('shows unknown %s 
   expect(screen.getByRole('link', { name: '返回历史星河' })).toBeInTheDocument();
 });
 it('uses browser Back to restore the full galaxy query with one provider', async () => {
+  const camera = { target: [-12, 2, 1], distance: 24 };
+  localStorage.setItem(HISTORY_SESSION_KEY, JSON.stringify({ version: 2, camera }));
   window.history.replaceState(null, '', '/#/history-galaxy?era=tang&q=唐');
   const fixture = fixtureLoader();
   render(<App historyLoader={fixture.loader} />);
-  await screen.findByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' });
-  await userEvent.click(screen.getByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' }));
-  await userEvent.click(screen.getByRole('link', { name: '阅读完整档案' }));
+  const timeline = within(await screen.findByRole('region', { name: '二维历史时间轴' }));
+  await timeline.findByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' });
+  await userEvent.click(timeline.getByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' }));
+  await userEvent.click(within(screen.getByRole('dialog', { name: '贞观之治' })).getByRole('link', { name: '阅读完整档案' }));
   await screen.findByRole('heading', { level: 1, name: '贞观之治' });
   await userEvent.click(screen.getByRole('link', { name: '返回历史星河' }));
   await waitFor(() => expect(window.location.hash).toBe('#/history-galaxy?era=tang&q=%E5%94%90'));
-  await screen.findByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' });
+  const restored = within(await screen.findByRole('region', { name: '二维历史时间轴' }));
+  expect(await restored.findByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' })).toHaveAttribute('aria-pressed', 'true');
+  expect(within(screen.getByRole('complementary', { name: '历史探索器' })).getByRole('searchbox', { name: '搜索历史' })).toHaveValue('唐');
+  act(() => window.dispatchEvent(new Event('pagehide')));
+  expect(loadHistorySession()?.camera).toEqual(camera);
+  expect(loadHistorySession()?.explorer).toMatchObject({ text: '唐', eraIds: ['tang'] });
   expect(fixture.requests.filter(path => path === 'manifest.json')).toHaveLength(1);
   await act(async () => { window.history.forward(); await new Promise(resolve => setTimeout(resolve, 20)); });
   expect(await screen.findByRole('heading', { level: 1, name: '贞观之治' })).toBeInTheDocument();
@@ -130,4 +159,21 @@ it('does not mistake Back from a galaxy for a new forward archive entry', async 
   await userEvent.click(screen.getByRole('link', { name: '返回历史星河' }));
   await waitFor(() => expect(window.location.hash).toBe('#/history-galaxy?era=song&q=water'));
   await screen.findByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' });
+});
+
+it('keeps missing structured records missing without rendering a legacy narrative', async () => {
+  const { archiveFixture } = await import('../../../tests/fixtures/historyArchives');
+  const fixture = archiveFixture();
+  fixture.manifest.structuredEventCount--;
+  fixture.manifest.periodCounts['sui-tang-five-dynasties']--;
+  fixture.manifest.eventCount--;
+  fixture.manifest.coreEventCount--;
+  fixture.records[fixture.manifest.indexes.events] = fixture.events.filter((event: { id: string }) => event.id !== 'zhenguan');
+  const tang = fixture.records['eras/tang.json'] as { events: { id: string }[] };
+  tang.events = tang.events.filter(event => event.id !== 'zhenguan');
+  window.history.replaceState(null, '', '/#/history-galaxy/event/zhenguan');
+  render(<App historyLoader={fixture.loader} />);
+  expect(await screen.findByRole('heading', { name: '未找到历史档案' })).toBeInTheDocument();
+  expect(screen.queryByText('基础档案')).not.toBeInTheDocument();
+  expect(screen.queryByRole('heading', { name: '原因' })).not.toBeInTheDocument();
 });

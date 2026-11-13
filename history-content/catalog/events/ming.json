@@ -1,0 +1,5968 @@
+[
+  {
+    "id": "ming-capture-dadu",
+    "title": "明军攻取大都",
+    "aliases": [],
+    "startYear": 1368,
+    "endYear": 1368,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "yuan",
+      "northern-yuan"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "洪武元年八月庚午，徐达进入大都，封存府库图籍，守卫宫门并禁止士卒侵扰，同时遣将巡查古北口诸隘。此条记录军队入城后的接管与秩序安排，和此前元廷离城另作两个阶段。明廷随后将大都路改为北平府，都城的官署、文书与军事防务转入明朝体系，接收城池仍须落实为持续治理。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "ming-founded-to-capture-dadu",
+      "yuan-withdrawal-to-ming-occupation"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.19999999999999996,
+        1.2000000000000002
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二《太祖本纪二》洪武元年八月庚午徐达入元都、封府库图籍及壬午改北平府条",
+        "note": "据维基文库《明史》卷2在线录文核对；不将此前闰七月宫廷离城再计入本条，未校勘所列点校本。"
+      }
+    ]
+  },
+  {
+    "id": "ming-founded-1368",
+    "title": "明朝建立",
+    "aliases": [],
+    "startYear": 1368,
+    "endYear": 1368,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "yuan"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "朱元璋在应天即皇帝位，建国号明、改元洪武，随后以南京为中心重建中央官署和礼制。同年北伐军进入元大都，南北政治格局由元明鼎革转为新王朝的制度整合，明初国家秩序由此展开。应天的即位、定国号与建元使朱元璋的吴王政权转为皇朝，北伐尚在进行，新朝先在江南建立发令与授官的中心。",
+    "personIds": [
+      "person-zhu-yuanzhang"
+    ],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "ming-founded-to-capture-dadu"
+    ],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.19999999999999996,
+        1.2000000000000002
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二《太祖本纪二》洪武元年正月即位及八月克大都条"
+      },
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明太祖实录》洪武元年正月乙亥即位条；八月癸丑大将军克元都条"
+      },
+      {
+        "sourceId": "mingshi-jishi-benmo-zhonghua",
+        "locator": "《明史纪事本末·开国规模》洪武元年正月即皇帝位条"
+      }
+    ]
+  },
+  {
+    "id": "ming-law-code-first",
+    "title": "洪武律初颁",
+    "aliases": [],
+    "startYear": 1368,
+    "endYear": 1368,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "明太祖命群臣以唐律为基础整理律令，洪武元年颁行律令，为新王朝审判、行政与社会控制建立成文依据。此后条文多次修订，直到洪武三十年定本，初颁节点反映明初法制随国家建设逐步成形。初颁律令分别列出刑罚与行政约束，官府审案有了明朝自己的文本依据，洪武后期定律仍承接这次修订的起点。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.19999999999999996,
+        1.2000000000000002
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷九十三《刑法志一》洪武元年命儒臣修律令条"
+      }
+    ]
+  },
+  {
+    "id": "ming-joseon-predecessor-tribute",
+    "title": "高丽遣使入贡",
+    "aliases": [],
+    "startYear": 1369,
+    "endYear": 1369,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "goryeo"
+    ],
+    "period": "明代",
+    "categories": [
+      "diplomacy",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "洪武二年高丽遣使奉表进贡，明廷回赐并建立诏敕往来，东亚册封关系开始由元代秩序转接到明朝。双方围绕历法、服制和边界继续交涉，这一节点显示新王朝通过礼仪外交确认区域地位。高丽奉表承认明朝新君，明廷以诏敕、回赐回应，使双方公文往来开始以明朝年号和君臣礼仪重新组织。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1.8,
+        -0.5999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百二十《外国传一·朝鲜》洪武二年高丽遣使奉表贡方物条"
+      }
+    ]
+  },
+  {
+    "id": "hongwu-first-examination",
+    "title": "洪武首次开科取士",
+    "aliases": [],
+    "startYear": 1370,
+    "endYear": 1370,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "洪武三年明廷举行建国后的首次会试和殿试，以经义策问选拔进士，尝试用科举补充新官僚。制度随后一度停罢并调整，到洪武十八年才稳定恢复，因此这次开科是明代科举重建的起点而非连续常制。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.10000000000000009,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷六十九《选举志一》洪武三年诏设科举取士条"
+      }
+    ]
+  },
+  {
+    "id": "hongwu-kaizhong",
+    "title": "开中法推行",
+    "aliases": [],
+    "startYear": 1370,
+    "endYear": 1370,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "明廷令商人向边地输送粮草，按数领取盐引到指定盐场支盐销售，以商业运输补充军镇供给。开中法把盐业专卖与边防后勤结合，后来因纳银、折色和权贵占引而变化，是明代财政市场化的重要制度节点。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.10000000000000009,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷八十《食货志四》洪武三年山西行省请令商人输粮太原给盐引条"
+      }
+    ]
+  },
+  {
+    "id": "hongwu-sea-ban",
+    "title": "洪武海禁令",
+    "aliases": [],
+    "startYear": 1371,
+    "endYear": 1371,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "洪武四年明廷申禁濒海民众私自出海并限制民间海外贸易，把合法往来集中到朝贡和官方许可渠道。禁令意在防倭与控制沿海，却未使海上交换停止，走私、岛屿据点和地方生计由此长期与国家政策拉扯。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.5999999999999999,
+        -1.2999999999999998
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明太祖实录》洪武四年十二月仍禁濒海民不得私出海条"
+      }
+    ]
+  },
+  {
+    "id": "ming-conquest-sichuan",
+    "title": "明平明夏",
+    "aliases": [],
+    "startYear": 1371,
+    "endYear": 1371,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "ming-xia"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "傅友德、汤和等分路进攻四川，洪武四年明升投降，明夏政权结束。四川纳入明朝版图后设置布政使司和卫所，长江上游的军事威胁解除，但战后户口恢复、粮运和地方治理仍需长期经营。明夏据重庆控制长江上游，明军从水陆两路逼近使明升失去继续抵抗的条件，宋元以来四川割据由此再次归于统一朝廷。",
+    "personIds": [],
+    "placeIds": [
+      "chengdu",
+      "chongqing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.5999999999999999,
+        -1.2999999999999998
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二《太祖本纪二》洪武四年明升降、平四川条"
+      }
+    ]
+  },
+  {
+    "id": "hongwu-mobei-expedition",
+    "title": "洪武五年漠北远征",
+    "aliases": [],
+    "startYear": 1372,
+    "endYear": 1372,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "northern-yuan"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "徐达、李文忠、冯胜三路深入漠北，主力在岭北受挫，另两路取得局部战果。远征显示明军离开农耕补给区后受到交通、气候与北元骑兵牵制，明廷随后在进攻与边墙卫所防御之间反复调整。三路军分道出塞却未能合成预期优势，徐达中路遭到北元军抵抗，说明洪武初年夺取大都并未摧毁草原军力。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.40000000000000013,
+        -0.19999999999999996
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二《太祖本纪二》洪武五年大将军徐达等出塞征元条"
+      }
+    ]
+  },
+  {
+    "id": "hongwu-sacrificial-reform",
+    "title": "洪武祀典整顿",
+    "aliases": [],
+    "startYear": 1373,
+    "endYear": 1373,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "明太祖命礼官考订天地、宗庙、社稷及历代帝王祀典，裁并被认为不合礼制的地方神祠。国家以祭祀等级重申皇权和行政秩序，同时地方社会仍保留多样信仰，官定祀典与民间实践形成持续互动。天地、宗庙与社稷分别有规定的祭位和仪节，礼官以国家祀典区分可祭之神与应禁之祠，地方祭祀由此接受朝廷分类。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.3,
+        0.8999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷四十七《礼志一》洪武初定郊社宗庙祀典条"
+      }
+    ]
+  },
+  {
+    "id": "hongwu-community-schools",
+    "title": "社学推广",
+    "aliases": [],
+    "startYear": 1375,
+    "endYear": 1375,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "culture",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "洪武年间明廷诏令府州县在乡里设社学，延请师儒教授民间子弟读书识礼。社学规模和延续程度各地不一，却把国家倡导的伦理教化带到基层，与家塾、书院和地方善举共同构成乡村教育网络。社学以民间子弟为受教者，由乡里延师授课，教授识字读书与礼仪，官府教化因而不只限于准备科举的府县生员。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0.9999999999999998,
+        0.20000000000000018
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷六十九《选举志一》洪武八年诏天下立社学条"
+      }
+    ]
+  },
+  {
+    "id": "ming-paper-money",
+    "title": "大明宝钞发行",
+    "aliases": [],
+    "startYear": 1375,
+    "endYear": 1375,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "洪武八年设宝钞提举司，印行大明通行宝钞并禁止金银交易，试图以国家纸币统一支付。因发行缺乏兑换准备且持续增印，宝钞逐渐贬值，民间仍转向铜钱和白银，反映明初货币管制的限度。宝钞面额由官府规定而不能随时换回金银，禁用金银也未提供兑换来源，持钞者须自行承担钞价下跌的损失。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.9999999999999998,
+        0.20000000000000018
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷八十一《食货志五》洪武八年造大明宝钞条"
+      }
+    ]
+  },
+  {
+    "id": "ming-three-commissions",
+    "title": "地方三司确立",
+    "aliases": [],
+    "startYear": 1376,
+    "endYear": 1376,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "洪武九年改行中书省为承宣布政使司，并以都指挥使司掌军、提刑按察使司掌刑察，使地方财赋、司法与军事分属不同机构。三司互不统属而受中央节制，成为明代省级治理的基本框架。布政司向户部等衙门报财赋，按察司核刑狱，都司管理卫所兵马，原来行省集中的职权被拆入三条中央管辖线。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "three-commissions-to-hu-weiyong"
+    ],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1,
+        1.3000000000000003
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷七十五《职官志四》承宣布政使司、都指挥使司、提刑按察使司沿革条"
+      }
+    ]
+  },
+  {
+    "id": "hu-weiyong-chancellor-abolished",
+    "title": "胡惟庸案与废中书省",
+    "aliases": [],
+    "startYear": 1380,
+    "endYear": 1380,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "洪武十三年胡惟庸以谋逆罪被诛，太祖随即罢中书省、废丞相，由六部分理政务并直接对皇帝负责。案件后来牵连扩大，改变中央决策结构，使皇权承担更多日常政务，也为内阁等辅助机制留下空间。",
+    "personIds": [
+      "person-hu-weiyong",
+      "person-zhu-yuanzhang"
+    ],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "three-commissions-to-hu-weiyong"
+    ],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.6,
+        -0.09999999999999987
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百零八《奸臣传·胡惟庸》及卷一百零九《宰辅年表一》洪武十三年条"
+      },
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明太祖实录》洪武十三年正月诛胡惟庸、罢中书省条"
+      },
+      {
+        "sourceId": "mingshi-jishi-benmo-zhonghua",
+        "locator": "《明史纪事本末·胡蓝之狱》洪武十三年诛胡惟庸、罢中书省条"
+      }
+    ]
+  },
+  {
+    "id": "hongwu-lijia-system",
+    "title": "里甲制度编定",
+    "aliases": [],
+    "startYear": 1381,
+    "endYear": 1381,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "明廷以一百一十户编为一里，推丁粮较多者任里长，其余分十甲，轮流承担催征和徭役。里甲把户籍、赋役与基层组织联结起来，既帮助国家深入乡村，也使豪强规避、户口逃移和役负不均成为长期问题。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.09999999999999987,
+        1
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷七十七《食货志一》洪武十四年诏天下编赋役黄册并载里甲法条"
+      }
+    ]
+  },
+  {
+    "id": "hongwu-yellow-registers",
+    "title": "赋役黄册编造",
+    "aliases": [],
+    "startYear": 1381,
+    "endYear": 1381,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "洪武十四年明廷命各地以户为单位登记人口、田产和赋役，按里甲体系汇编黄册并逐级上报。黄册为征税和差役提供依据，但人口迁移、隐漏与抄造误差不断累积，后世需反复清查和重新编审。册分存户部及布政司、府县等层级，按户载明丁口与田粮，里甲轮役所需的户等与负担因此可以据册查核。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.09999999999999987,
+        1
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷七十七《食货志一》洪武十四年诏天下编赋役黄册条"
+      }
+    ]
+  },
+  {
+    "id": "ming-conquest-yunnan",
+    "title": "明军平定云南",
+    "aliases": [],
+    "startYear": 1381,
+    "endYear": 1381,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "northern-yuan"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "傅友德、蓝玉、沐英率军进入云南，击败元梁王势力，昆明等地相继归附。明廷随后设置布政司、卫所并保留部分土官体系，使军事征服与多族群地方治理并行，云南由此纳入明代行政版图。明军由贵州向云南推进并夺取昆明，梁王不能再以元朝名义统治滇地，后续设司建卫由胜利后的驻军接续实施。",
+    "personIds": [],
+    "placeIds": [
+      "kunming"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.09999999999999987,
+        1
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三《太祖本纪三》洪武十四年命傅友德等征云南条"
+      }
+    ]
+  },
+  {
+    "id": "hongwu-guozijian-expansion",
+    "title": "南京国子监扩建",
+    "aliases": [],
+    "startYear": 1382,
+    "endYear": 1382,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "culture",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "洪武十五年前后明廷扩充南京国子监，征集各地生员入监学习经史、律令和政务，并选监生出任官职。国子监既培养官僚也承担刻书和文化传播，但其仕进渠道后来逐渐受科举挤压。监生不仅在堂肄业，也可到官署历事，学习经史与接触实际公文相结合，为明初各衙门补充办事与任官人员。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        1.8,
+        -0.7999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷六十九《选举志一》洪武中增广国子生及监生历事条"
+      }
+    ]
+  },
+  {
+    "id": "ming-yunnan-administration",
+    "title": "云南布政司设置",
+    "aliases": [],
+    "startYear": 1382,
+    "endYear": 1382,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "云南军事平定后，明廷在昆明设置承宣布政使司及相关军政机构，并由沐氏长期镇守。流官行政、卫所屯田与土司承袭同时存在，使云南治理呈现中央制度和地方传统并用的格局。昆明成为布政司治所，民政由流官经办，驻军另受军事系统节制，原有土官的承袭则纳入明廷认可的名分。",
+    "personIds": [],
+    "placeIds": [
+      "kunming"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.8,
+        -0.7999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷四十六《地理志七》云南布政使司沿革条"
+      }
+    ]
+  },
+  {
+    "id": "hongwu-da-gao",
+    "title": "《大诰》颁行",
+    "aliases": [],
+    "startYear": 1385,
+    "endYear": 1385,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "明太祖汇集惩治官民案件和训诫，于洪武十八年起陆续颁布《大诰》，要求民间传习并以重刑震慑贪腐。文本反映开国皇帝越出常律的治理方式，其普及一度广泛，太祖去世后实际适用迅速减弱。诰中以具体案件示惩，要求官民读习皇帝训诫，法律教育与重刑威慑被合在同一文本中，不能仅视为普通律条汇编。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.5,
+        -0.3999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷九十三《刑法志一》洪武十八年颁《大诰》条"
+      }
+    ]
+  },
+  {
+    "id": "ming-liaodong-control",
+    "title": "明军控制辽东",
+    "aliases": [],
+    "startYear": 1387,
+    "endYear": 1387,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "northern-yuan"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "冯胜、傅友德、蓝玉率军北进，元将纳哈出归降，明朝进一步控制辽东并布置卫所。辽东成为连接女真、朝鲜和北元的边疆地带，军屯、马市与羁縻卫所共同塑造后续复杂关系。纳哈出所部降附减少明军东北方向的敌对兵力，辽东由此可进一步布置卫所，北平通向东北的陆路控制随之加强。",
+    "personIds": [],
+    "placeIds": [
+      "liaoyang"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.8,
+        -1.0999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三《太祖本纪三》洪武二十年纳哈出降、辽东平条"
+      }
+    ]
+  },
+  {
+    "id": "hongwu-fish-scale-registers",
+    "title": "鱼鳞图册编造",
+    "aliases": [],
+    "startYear": 1387,
+    "endYear": 1393,
+    "yearPrecision": "range",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "洪武后期各地丈量田亩，绘列田块形状、四至、土质与业主，汇成鱼鳞图册，用以核定税粮。图册与黄册分别从土地和户口掌握赋役基础，实际质量受地方丈量能力与豪强隐田影响。鱼鳞图以相邻田块逐一绘列，记业主与四至以防争界，核税时可由田块追查纳粮责任，与按户编造的黄册互相参照。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.8,
+        -1.0999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷七十七《食货志一》洪武二十年遣国子生量田、二十六年图册成条"
+      }
+    ]
+  },
+  {
+    "id": "ming-buir-lake-victory",
+    "title": "捕鱼儿海之战",
+    "aliases": [],
+    "startYear": 1388,
+    "endYear": 1388,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "northern-yuan"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "蓝玉率军深入漠北，在捕鱼儿海突袭北元营地，俘获宗室、官属和大批牲畜，北元主力遭受重创。此役提高明初北方军事优势，但草原政权并未消失，边境攻守仍延续数代。北元朝廷的家属、官属与牲畜大批被俘，蓝玉打击的是随蒙古大汗移动的营地，也削弱其再次组织远征的资源。",
+    "personIds": [],
+    "placeIds": [
+      "buir-lake"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.9000000000000001,
+        0
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三《太祖本纪三》洪武二十一年蓝玉袭破元主于捕鱼儿海条"
+      }
+    ]
+  },
+  {
+    "id": "hongwu-census-1391",
+    "title": "洪武二十四年户口统计",
+    "aliases": [],
+    "startYear": 1391,
+    "endYear": 1391,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "economy",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "洪武二十四年前后黄册体系汇总全国户口与田土，为中央估算税粮、军需和徭役提供规模依据。统计数字并非现代人口普查，仍受漏报、逃户和口径差异影响，却留下观察明初社会恢复的重要截面。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -1.4,
+        0.40000000000000013
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷七十七《食货志一》洪武二十四年天下户口田土数条"
+      }
+    ]
+  },
+  {
+    "id": "crown-prince-zhu-biao-death",
+    "title": "太子朱标去世",
+    "aliases": [],
+    "startYear": 1392,
+    "endYear": 1392,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "洪武二十五年皇太子朱标病逝，太祖改立皇孙朱允炆为继承人。储位安排改变宗室权力预期，诸王握有兵权而新君资历较浅，为建文削藩与靖难战争埋下直接的政治背景。继承人从皇子转为皇孙，朱允炆越过诸位在世皇叔承接东宫位置，太祖原有的父子传位安排因此改变。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.30000000000000004,
+        -1.4
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三《太祖本纪三》洪武二十五年皇太子标薨条"
+      }
+    ]
+  },
+  {
+    "id": "lan-yu-case",
+    "title": "蓝玉案",
+    "aliases": [],
+    "startYear": 1393,
+    "endYear": 1393,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "洪武二十六年大将蓝玉以谋反罪被诛，众多勋贵和军官受牵连。案件清洗开国军事集团，加强皇帝对军权的直接控制，却也削弱能够统率大军的宿将群体，影响建文时期的军事资源。蓝玉由征元主将转成谋反案首，所部与姻亲勋臣也遭追查，开国功臣凭军功形成的政治网络在案件中被大幅拆散。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.7,
+        -0.2999999999999998
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三《太祖本纪三》洪武二十六年诛凉国公蓝玉条"
+      }
+    ]
+  },
+  {
+    "id": "huang-ming-zuxun",
+    "title": "《皇明祖训》定本",
+    "aliases": [],
+    "startYear": 1395,
+    "endYear": 1395,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "洪武二十八年重定《皇明祖训》，规范宗室封爵、朝觐、婚姻和藩王职责，并告诫后世皇帝防范权臣。祖训成为明代政治的权威文本，却无法消除宗藩财政负担和皇位继承中的现实冲突。祖训把皇子封藩后的朝觐、婚姻和行为写为家法，试图以开国皇帝的训示约束后世君臣与宗室交往。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.7,
+        -0.9999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷一百十六《诸王世表一》及《皇明祖训》洪武二十八年定本条"
+      }
+    ]
+  },
+  {
+    "id": "hongwu-south-north-exam-case",
+    "title": "南北榜案",
+    "aliases": [],
+    "startYear": 1397,
+    "endYear": 1397,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "洪武三十年会试录取者多为南方士人，北方考生申诉后，太祖另行复试并严惩主考官，形成南北两榜。事件显示科举评价与地域文化差异相互纠缠，也促使后来的分卷、分区录取讨论。南方考生几占初榜使北士质疑主考偏私，太祖亲自介入复核并另取北士，同年取士因而留下两次榜单。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.4000000000000001,
+        1.2000000000000002
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷七十《选举志二》洪武三十年会试南北榜案条"
+      }
+    ]
+  },
+  {
+    "id": "jianwen-accession",
+    "title": "建文帝即位",
+    "aliases": [],
+    "startYear": 1398,
+    "endYear": 1398,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "洪武三十一年太祖去世，皇太孙朱允炆即位并改元建文。新朝起用齐泰、黄子澄等推行削藩，试图收回诸王军政权力，却因步骤和军事应对失当迅速激化燕王反抗。朱允炆以皇孙身份继位，齐泰、黄子澄辅佐年轻皇帝收回藩权，中央诏令直接触及拥有护卫军的诸位皇叔。",
+    "personIds": [
+      "person-jianwen-emperor"
+    ],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.6000000000000001,
+        -0.5999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷四《恭闵帝本纪》洪武三十一年皇太孙即皇帝位条"
+      }
+    ]
+  },
+  {
+    "id": "jingnan-campaign",
+    "title": "靖难之役",
+    "aliases": [],
+    "startYear": 1399,
+    "endYear": 1402,
+    "yearPrecision": "range",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "建文帝削藩后，燕王朱棣以“清君侧”为名起兵，战争在华北和运河沿线持续近三年。燕军最终攻入南京，建文帝下落成为疑案，朱棣即位，宗藩叛乱转化为皇位更替并重塑明代政治中心。燕军以北平为根本而沿运河南下，屡次交战后最终直趋南京，战争胜负由控制首都而非逐处收取全部州县决定。",
+    "personIds": [
+      "person-zhu-di",
+      "person-jianwen-emperor"
+    ],
+    "placeIds": [
+      "beijing",
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "jingnan-to-capture-nanjing",
+      "jingnan-to-beijing-capital"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.0999999999999999,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷五《成祖本纪一》建文元年至四年靖难战事条"
+      },
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明太宗实录》建文元年七月燕王起兵条；建文四年六月入金川门条"
+      },
+      {
+        "sourceId": "mingshi-jishi-benmo-zhonghua",
+        "locator": "《明史纪事本末·燕王起兵》建文元年北平起兵、四年入南京条"
+      }
+    ]
+  },
+  {
+    "id": "jingnan-capture-nanjing",
+    "title": "燕军攻入南京",
+    "aliases": [],
+    "startYear": 1402,
+    "endYear": 1402,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "建文四年六月燕军渡江进入南京，宫中起火，建文帝去向不明，燕王随后即皇帝位。攻城是靖难战争的终点，也是永乐政权合法性争议的起点，许多建文旧臣因此遭清洗或被迫改仕。金川门被打开后燕军进入城内，宫火又使建文帝下落失去确证，朱棣须在军事占领的同时确立继位叙述。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "jingnan-to-capture-nanjing"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.2000000000000002,
+        0.8999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷五《成祖本纪一》建文四年六月入金川门、宫中火条"
+      }
+    ]
+  },
+  {
+    "id": "yongle-encyclopedia-ordered",
+    "title": "《永乐大典》开纂",
+    "aliases": [],
+    "startYear": 1403,
+    "endYear": 1403,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "culture",
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "永乐元年成祖命解缙等汇辑经史子集、释藏道经与各类技术文献，按韵编排成大型类书。工程调动翰林和国子监学者，既体现国家文化资源的集中，也为许多后来散佚文本保留片段。解缙等须从不同门类书籍摘录材料，再按字韵归类，开纂诏命确立的是汇集旧书的工作，并非逐项撰写新论著。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0.4999999999999998,
+        -0.8999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷五《成祖本纪一》永乐元年七月命解缙等纂集经史百家书条"
+      }
+    ]
+  },
+  {
+    "id": "ming-japan-tally-trade",
+    "title": "明日勘合贸易建立",
+    "aliases": [],
+    "startYear": 1404,
+    "endYear": 1404,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "muromachi-japan"
+    ],
+    "period": "明代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "永乐二年明廷与室町幕府以勘合凭证核验使船，足利义满接受明朝册封并遣使贸易。制度试图区分官方使团与倭寇，促进宁波港的中日商品交换，但日本国内权力变化使往来时断时续。勘合可由双方核对，使抵港船只获得朝贡使船身份，宁波接待人员据此验明来历，贸易资格与幕府的对明名分相连。",
+    "personIds": [],
+    "placeIds": [
+      "ningbo"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1.5,
+        0.20000000000000018
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百二十二《外国传三·日本》永乐二年封日本国王并给勘合条"
+      }
+    ]
+  },
+  {
+    "id": "zheng-he-first-voyage",
+    "title": "郑和首次下西洋",
+    "aliases": [],
+    "startYear": 1405,
+    "endYear": 1405,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "永乐三年郑和、王景弘率大型船队从太仓刘家港启航，经占城、爪哇、满剌加抵达印度洋沿岸。首次航行建立多处官方往来，也伴随武装护航与地方冲突，为后续六次远航形成组织经验。郑和与王景弘统率的是奉敕使团和护航军士，船队在各港停泊、宣诏和回载使臣，组成此后远航反复采用的往返模式。",
+    "personIds": [
+      "person-zheng-he",
+      "person-wang-jinghong"
+    ],
+    "placeIds": [
+      "taicang"
+    ],
+    "parentId": "zheng-he",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0.19999999999999996,
+        1.3000000000000003
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷六《成祖本纪二》永乐三年六月命郑和等通使西洋条"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "childIds": [
+      "zheng-he-first-voyage",
+      "zheng-he-seventh-voyage",
+      "zheng-he-voyages-end"
+    ],
+    "color": "#d76b4d",
+    "endYear": 1433,
+    "eraId": "ming",
+    "id": "zheng-he",
+    "influence": 5,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        1.8,
+        0.8
+      ]
+    },
+    "parentId": null,
+    "period": "明代",
+    "personIds": [
+      "person-zheng-he",
+      "person-zhu-di",
+      "person-wang-jinghong"
+    ],
+    "placeIds": [
+      "nanjing",
+      "taicang"
+    ],
+    "polityIds": [
+      "ming"
+    ],
+    "relationIds": [],
+    "startYear": 1405,
+    "summary": "大型船队七下西洋，连接亚洲与非洲海域。郑和率领庞大船队自南京、太仓等地出发，遍访东南亚、南亚、阿拉伯半岛和东非沿岸。航行展示了明代造船与组织能力，也通过贸易、册封和外交扩大联系，留下跨海交流的鲜明印记。",
+    "themeIds": [],
+    "title": "郑和下西洋",
+    "yearPrecision": "range",
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百零四《宦官传一·郑和》永乐三年至宣德五年七下西洋条"
+      },
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明成祖实录》永乐三年六月己卯命郑和等使西洋诸国条"
+      },
+      {
+        "sourceId": "yingya-shenglan",
+        "locator": "《瀛涯胜览》马欢自序永乐十一年、十九年与宣德六年随郑和使西洋条"
+      }
+    ]
+  },
+  {
+    "id": "beijing-palace-construction",
+    "title": "北京宫城营建",
+    "aliases": [],
+    "startYear": 1406,
+    "endYear": 1406,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "永乐四年起明廷大规模征调工匠、军民和物料营建北京宫殿，并配套修筑城垣、衙署和祭坛。工程推动北方都城格局形成，也造成长期运输和劳役负担，显示迁都计划依赖全国资源动员。木材、砖石与工匠从多地运入北京，宫殿建筑须与城内官署和坛庙配套，皇帝常驻所需空间先于正式迁都着手营造。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "beijing-construction-to-capital"
+    ],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.8,
+        -0.4999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷六《成祖本纪二》永乐四年诏建北京宫殿条"
+      }
+    ]
+  },
+  {
+    "id": "ming-invasion-dai-viet",
+    "title": "明军攻入安南",
+    "aliases": [],
+    "startYear": 1406,
+    "endYear": 1406,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "ho-dai-viet"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "永乐四年成祖以陈氏后裔被杀和胡氏篡位为由派军南下，张辅、沐晟攻破多处关隘，次年俘胡季犛。明廷随后把安南改为交趾布政司，军事干预转为直接统治并引发持续反抗。明军突破胡朝防线并俘获其君臣后，没有仅扶立一个受封国王，而把占领地改设三司，改变了原先出兵的政治形式。",
+    "personIds": [],
+    "placeIds": [
+      "thang-long"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "invasion-to-vietnam-withdrawal"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.8,
+        -0.4999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷六《成祖本纪二》永乐四年命朱能、张辅等征安南条"
+      }
+    ]
+  },
+  {
+    "id": "jiaozhi-province-established",
+    "title": "交趾布政司设置",
+    "aliases": [],
+    "startYear": 1407,
+    "endYear": 1407,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "ho-dai-viet"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "明军灭胡朝后在升龙设置交趾布政使司、按察司和都指挥使司，并推行郡县、赋税和学校制度。直接统治触及地方权力与资源，反抗不断扩大，说明行政建置不能替代对当地社会的稳定整合。布政、按察与都司分别管理民赋、刑察和军队，交趾由外藩转为明朝内地式行政单位，官员直接向明廷负责。",
+    "personIds": [],
+    "placeIds": [
+      "thang-long"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.10000000000000009,
+        0.6000000000000001
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷四十五《地理志六》交趾布政使司永乐五年置条"
+      }
+    ]
+  },
+  {
+    "id": "karmapa-nanjing-visit",
+    "title": "噶玛巴赴南京",
+    "aliases": [],
+    "startYear": 1407,
+    "endYear": 1407,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "religion",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "藏传佛教噶玛噶举黑帽系第五世活佛德银协巴应成祖邀请到南京，主持法会并获封大宝法王。明廷以多封众建方式联系藏地宗教领袖，既借助宗教声望，也未建立元代式单一教派垄断。德银协巴在南京为明廷举行荐福法会，所得大宝法王封号确认朝廷与特定宗教领袖的联系，未把全部藏地僧团合为一属。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b27a9e",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        -0.10000000000000009,
+        0.6000000000000001
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百三十一《西域传三·乌斯藏》永乐间封大宝法王条"
+      }
+    ]
+  },
+  {
+    "id": "yongle-encyclopedia-completed",
+    "title": "《永乐大典》重修完成",
+    "aliases": [],
+    "startYear": 1408,
+    "endYear": 1408,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "culture",
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "永乐六年姚广孝等完成重修的大型类书，正文按《洪武正韵》韵目编排，汇录数千种文献。全书卷帙浩繁而未刻印，仅缮写正本与副本流传，后来散佚严重，残卷仍是辑佚和校勘的重要资料。按韵编排让读者可由字头检索旧书内容，整段抄录又保存原文，抄本的体量使保管、传写与后来辑佚都成为问题。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        1.5999999999999999,
+        -1.2
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷六《成祖本纪二》永乐六年十二月《永乐大典》成条"
+      }
+    ]
+  },
+  {
+    "id": "yongle-first-mongol-expedition",
+    "title": "永乐首次亲征漠北",
+    "aliases": [],
+    "startYear": 1410,
+    "endYear": 1410,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "northern-yuan"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "永乐八年成祖率军北征，先击败拒绝通好的鞑靼本雅失里与阿鲁台部，随后班师。亲征显示皇帝试图主动控制草原局势，但远距离补给耗费巨大，北方诸部也在瓦剌与鞑靼之间不断重组。本雅失里与阿鲁台各自退避使明军难以一次尽歼其众，成祖在胜后班师，草原诸部仍保有重新集结的空间。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.3,
+        1
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷六《成祖本纪二》永乐八年亲征本雅失里、阿鲁台条"
+      }
+    ]
+  },
+  {
+    "id": "yongle-grand-canal-restored",
+    "title": "会通河重开",
+    "aliases": [],
+    "startYear": 1411,
+    "endYear": 1411,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "economy",
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "永乐九年宋礼采用白英建议，引汶水分流南北并修建闸坝，恢复会通河漕运。运河整治使江南粮食可由内河直达北京，减少海运风险，为迁都后的首都供应提供关键基础设施。汶水被导向运河高段，再向南北分流，闸坝调蓄使漕船越过山东水脊，会通河因而重新接通南北漕运。",
+    "personIds": [],
+    "placeIds": [
+      "dongping"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.7,
+        -0.7999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷八十五《河渠志三》永乐九年宋礼开会通河、白英导汶水条"
+      }
+    ]
+  },
+  {
+    "id": "zheng-he-fourth-voyage",
+    "title": "郑和第四次远航",
+    "aliases": [],
+    "startYear": 1413,
+    "endYear": 1413,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "永乐十一年郑和船队再次出航，航线越过印度抵达忽鲁谟斯等西印度洋港口，随行使臣与多国互换礼物。远航扩大明廷对印度洋政治和商贸网络的认识，也增加船队补给与外交协调难度。忽鲁谟斯处于波斯湾入口，远抵此港使明朝使团接触西印度洋商路，不再只以东南亚及印度东岸港口为主要范围。",
+    "personIds": [],
+    "placeIds": [
+      "taicang"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1,
+        1.4
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷七《成祖本纪三》永乐十一年九月命郑和等使西洋条"
+      }
+    ]
+  },
+  {
+    "id": "zheng-he-fifth-voyage",
+    "title": "郑和第五次远航",
+    "aliases": [],
+    "startYear": 1417,
+    "endYear": 1417,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "diplomacy",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "永乐十五年船队护送多国使臣归国并继续前往阿拉伯半岛、东非沿岸，带回长颈鹿等异域物产。朝廷将部分珍禽解释为祥瑞，海上外交因而同时具有政治仪式、知识传播和商品交换意义。护送使臣归国让既有朝贡关系继续周转，长颈鹿等活体动物随船抵达明廷，又把港口间的物产交换转成宫廷祥瑞展示。",
+    "personIds": [],
+    "placeIds": [
+      "taicang"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1.6,
+        0
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷七《成祖本纪三》永乐十五年五月命郑和送古里等国使臣归国条"
+      }
+    ]
+  },
+  {
+    "id": "eastern-depot-founded",
+    "title": "东厂设置",
+    "aliases": [],
+    "startYear": 1420,
+    "endYear": 1420,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "永乐十八年成祖设东厂，由亲信宦官掌管侦缉，与锦衣卫共同监视官民和审查政治案件。宦官直接获得皇帝授权，使情报和司法监督绕过常规官署，后世厂卫权力随皇帝信任而扩张或收缩。东厂以宦官提督而不循六部常规审案程序，向皇帝直接报送侦缉消息，内廷遂获得一套专门的官民监视机构。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.19999999999999996,
+        0.40000000000000013
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷七十四《职官志三》东厂永乐十八年设条"
+      }
+    ]
+  },
+  {
+    "id": "forbidden-city-inaugurated",
+    "title": "北京宫殿建成",
+    "aliases": [],
+    "startYear": 1420,
+    "endYear": 1420,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "culture",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "永乐十八年底北京宫殿告成，次年朝廷在奉天殿举行大朝会，皇城与坛庙构成新的礼制空间。宫殿建成并不只是建筑事件，它将皇权仪式、中央官署和城市供应集中到北京。奉天殿成为皇帝接受百官朝贺的正殿，宫城完工把迁都所需的朝会场所落实，北京因而能够接纳常设朝廷。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "capital-to-forbidden-city"
+    ],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -0.19999999999999996,
+        0.40000000000000013
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷七《成祖本纪三》永乐十八年十一月北京宫殿成条"
+      }
+    ]
+  },
+  {
+    "id": "beijing-capital-1421",
+    "title": "明朝迁都北京",
+    "aliases": [],
+    "startYear": 1421,
+    "endYear": 1421,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "永乐十九年明廷正式以北京为京师，南京保留一套中央官署作为留都。迁都使政治中心靠近北方边防，并依赖运河漕粮和全国物资维持庞大城市，形成此后明清两代首都格局。北京承接皇帝日常朝会及主要决策，南京官署仍按留都名义保留，京师与留都由此分别承担不同政务。",
+    "personIds": [
+      "person-zhu-di"
+    ],
+    "placeIds": [
+      "beijing",
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "jingnan-to-beijing-capital",
+      "beijing-construction-to-capital",
+      "capital-to-forbidden-city"
+    ],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.4999999999999998,
+        -1.4
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷七《成祖本纪三》永乐十九年正月北京为京师条"
+      },
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明太宗实录》永乐十九年正月朔御奉天殿条"
+      },
+      {
+        "sourceId": "cambridge-ming-political-history",
+        "locator": "《剑桥中国明代史（上卷）》第四章“建文、永乐、洪熙和宣德之治，1399—1435年”迁都北京节"
+      }
+    ]
+  },
+  {
+    "id": "zheng-he-sixth-voyage",
+    "title": "郑和第六次远航",
+    "aliases": [],
+    "startYear": 1421,
+    "endYear": 1421,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "永乐十九年郑和等再次护送多国使臣回国，船队分航印度洋多个港口并维持既有朝贡联系。此次出航与北京迁都同年，说明明廷在巨额陆上建设之外仍维持远洋外交投入。返国使臣由官船护送，抵达各国后又可迎来下一批来贡人员，舰队航次同时承担去程宣谕与送使归国的任务。",
+    "personIds": [],
+    "placeIds": [
+      "taicang"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        1.4999999999999998,
+        -1.4
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷七《成祖本纪三》永乐十九年正月命郑和等送诸国使臣还国条"
+      }
+    ]
+  },
+  {
+    "id": "hongxi-accession",
+    "title": "洪熙帝即位",
+    "aliases": [],
+    "startYear": 1424,
+    "endYear": 1424,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "永乐二十二年成祖北征途中去世，太子朱高炽即位，改元洪熙。新帝起用杨士奇等文臣，停止部分远征和采办，减轻若干刑罚与差役，短暂统治体现永乐政策后的财政和行政调整。朱高炽长期居京监国，登位后把处理留守政务的文臣带入新朝，永乐朝频繁亲征的统治节奏转为停罢与休息。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.8,
+        -0.9999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷八《仁宗本纪》永乐二十二年八月皇太子即皇帝位条"
+      }
+    ]
+  },
+  {
+    "id": "hongxi-policy-reversal",
+    "title": "洪熙停罢远征采办",
+    "aliases": [],
+    "startYear": 1424,
+    "endYear": 1424,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "economy",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "仁宗即位后下令停止下西洋宝船和云南、交趾等处采办，召回部分营造人员，并赈恤受灾地区。政策针对永乐末年的军费与工程负担，但因在位不足一年，许多措施由宣德朝继续权衡。停造宝船与停罢采办分别减少远航筹备和地方供应，召回工役人员则中止部分营造，仁宗将节省直接落实为项目撤停。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.8,
+        -0.9999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷八《仁宗本纪》洪熙元年停下西洋宝船及诸处采办条"
+      }
+    ]
+  },
+  {
+    "id": "han-prince-rebellion",
+    "title": "汉王朱高煦叛乱",
+    "aliases": [],
+    "startYear": 1426,
+    "endYear": 1426,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "宣德元年汉王朱高煦在乐安起兵，宣宗亲征并迅速迫其投降，随后削除汉藩。事件解决永乐诸子间残余的皇位竞争，加强新帝威望，也使宗室军事独立受到进一步限制。朱高煦据乐安起事未能获得足够外援，宣宗亲临城下使其迅速请降，叛乱没有发展为如靖难之役那样的长期南北战争。",
+    "personIds": [],
+    "placeIds": [
+      "lean-shandong"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.1,
+        1.2000000000000002
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷九《宣宗本纪》宣德元年八月亲征高煦、乐安降条"
+      }
+    ]
+  },
+  {
+    "id": "xuande-porcelain-production",
+    "title": "宣德官窑烧造",
+    "aliases": [],
+    "startYear": 1426,
+    "endYear": 1435,
+    "yearPrecision": "range",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "culture",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "宣德时期景德镇御器厂按宫廷需求烧造青花、祭红等瓷器，器物常署宣德年款。官窑把原料、工匠与审美标准纳入国家采办，也带动民窑技术和海内外市场，成为明代工艺史的重要节点。饶州奉命烧造龙凤等纹样的器物，宫廷指定的式样、数量与交纳期限进入生产过程，御器烧造具有明确的差办性质。",
+    "personIds": [],
+    "placeIds": [
+      "jingdezhen"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -1.1,
+        1.2000000000000002
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明宣宗实录》宣德元年九月命饶州造瓷器条；宣德八年十二月饶州造龙凤瓷器条"
+      }
+    ]
+  },
+  {
+    "id": "ming-withdrawal-vietnam",
+    "title": "明军撤出交趾",
+    "aliases": [],
+    "startYear": 1427,
+    "endYear": 1427,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "黎利领导的反明力量持续扩张，明军在崒洞、支棱等地受挫后议和，宣德二年撤回交趾官军，册立陈氏名义继承安排随后由黎朝取代。撤军结束二十年直接统治，明越关系重回册封外交。王通撤军意味着交趾三司失去驻军支持，明廷从直接征赋、派官转向寻找可册立的当地君主，黎利逐步取得政治主动。",
+    "personIds": [
+      "person-zhu-zhanji"
+    ],
+    "placeIds": [
+      "thang-long"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "invasion-to-vietnam-withdrawal"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.5999999999999999,
+        -0.5999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷九《宣宗本纪》宣德二年交趾罢兵条"
+      },
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明宣宗实录》宣德二年十一月敕王通撤军条"
+      },
+      {
+        "sourceId": "dai-viet-su-ky-toan-thu",
+        "locator": "《大越史记全书》本纪实录卷十黎太祖丁未年支棱、昌江战胜及王通撤军条"
+      }
+    ]
+  },
+  {
+    "id": "zheng-he-seventh-voyage",
+    "title": "郑和第七次远航",
+    "aliases": [],
+    "startYear": 1430,
+    "endYear": 1433,
+    "yearPrecision": "range",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "宣德五年明廷再命郑和率船队出使西洋，次年由太仓启航，经东南亚和印度抵达忽鲁谟斯等地。此次航行为国家船队最后一次大规模远航，返程后官方远洋活动逐步收缩。明廷在停航数年后重新发敕组织出使，船队沿既有港口链往返，宣德朝这次恢复航行并未成为此后按期续办的常制。",
+    "personIds": [
+      "person-zheng-he"
+    ],
+    "placeIds": [
+      "taicang"
+    ],
+    "parentId": "zheng-he",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1.7,
+        -0.19999999999999996
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷九《宣宗本纪》宣德五年六月命郑和复使西洋条"
+      }
+    ]
+  },
+  {
+    "id": "zheng-he-voyages-end",
+    "title": "郑和远航结束",
+    "aliases": [],
+    "startYear": 1433,
+    "endYear": 1433,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "宣德八年前后第七次船队陆续返航，持续二十八年的大型官方远航告一段落。此后明廷仍有朝贡使船和民间海贸，但不再维持同等规模的国家舰队，海上联系转向更分散的形式。最后一航之后诸国来贡仍见于朝廷记载，古里等港的往来没有随舰队停航同时消失，远航结束指的是大型官船组织的收缩。",
+    "personIds": [],
+    "placeIds": [
+      "taicang"
+    ],
+    "parentId": "zheng-he",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.30000000000000004,
+        0.20000000000000018
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百二十四《外国传五·古里》宣德间郑和最后出使及诸国来贡条"
+      }
+    ]
+  },
+  {
+    "id": "zhengtong-accession",
+    "title": "明英宗即位",
+    "aliases": [],
+    "startYear": 1435,
+    "endYear": 1435,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "宣德十年宣宗去世，九岁的朱祁镇即位，太皇太后张氏与三杨等辅政。幼主时期政务依赖内阁和司礼监协调，王振后来受宠掌权，为正统后期决策结构和土木之变埋下背景。朱祁镇年幼，内阁杨士奇、杨荣、杨溥延续宣德政务，太皇太后又居尊位，登位初期并非由王振一人掌握全部朝政。",
+    "personIds": [
+      "person-zhu-qizhen"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.6000000000000001,
+        -0.4999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十《英宗前纪》宣德十年正月皇太子即皇帝位条"
+      }
+    ]
+  },
+  {
+    "id": "zhengtong-silver-grain-tax",
+    "title": "江南税粮折银",
+    "aliases": [],
+    "startYear": 1436,
+    "endYear": 1436,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "正统元年明廷准许江南部分税粮折纳白银，称金花银，用于北京官俸和宫廷支出。折银降低长途实物运输成本，也推动财政货币化；但折色价格和征收环节仍可能把风险转嫁给纳税户。南畿、浙江及江西湖广的部分税粮转以银交纳，粮食不必全数运至京仓，中央支用则从粮额转为收取折色银两。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        1.0999999999999999,
+        0.6000000000000001
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷七十八《食货志二》正统元年令南畿、浙江、江西湖广税粮折银条"
+      }
+    ]
+  },
+  {
+    "id": "ming-border-horse-markets",
+    "title": "正统朝北边马市",
+    "aliases": [],
+    "startYear": 1436,
+    "endYear": 1449,
+    "yearPrecision": "range",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "oirat",
+      "northern-yuan"
+    ],
+    "period": "明代",
+    "categories": [
+      "economy",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "正统年间明廷在大同、宣府等边镇与蒙古诸部开展马市，以布帛、粮茶换取马匹，并试图用贸易稳定边界。马市常随战争开闭，既是军马来源，也是谈判、走私和边民生计交汇的制度空间。马市由边镇查验来马并估定交换物，蒙古牧养所得与明地布粮在指定地点交易，开市或闭市成为边臣可用的交涉手段。",
+    "personIds": [],
+    "placeIds": [
+      "datong"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        1.0999999999999999,
+        0.6000000000000001
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷八十一《食货志五》正统间开大同等处马市条"
+      }
+    ]
+  },
+  {
+    "id": "yongle-northern-canon",
+    "title": "《永乐北藏》刊成",
+    "aliases": [],
+    "startYear": 1440,
+    "endYear": 1440,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "religion",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "明廷在北京刻印的大藏经于正统初年陆续完成，因版藏北方而称《永乐北藏》。工程延续永乐朝的佛教文化政策，汇集寺院校勘与雕版资源，刻本流布也影响明代寺院经典收藏。题记与经牌保存了刊刻工程的完成节点，经版留在北京，刷印本据此成为北方寺院获取成套佛经的一项来源。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b27a9e",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0.4999999999999998,
+        -0.7999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "ming-beizang",
+        "locator": "《大明三藏圣教北藏》正统五年刊成题记及经牌"
+      }
+    ]
+  },
+  {
+    "id": "wang-zhen-dominance",
+    "title": "王振专权",
+    "aliases": [],
+    "startYear": 1442,
+    "endYear": 1442,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "太皇太后张氏去世后，司礼监太监王振更深介入票拟传奉和官员升黜，并影响边事决策。宦官权力并非独立官署，而来自皇帝信任与内外廷互动，其专权最终与英宗亲征及土木危机相连。张太皇太后在世时对王振有所约束，其去世后皇帝近侍更易把个人意见带入朝廷决策，外朝大臣失去一重制衡。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.19999999999999996,
+        1.4
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百零四《宦官传一·王振》太皇太后崩后用事条"
+      }
+    ]
+  },
+  {
+    "id": "beijing-defense-1449",
+    "title": "北京保卫战",
+    "aliases": [],
+    "startYear": 1449,
+    "endYear": 1449,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "oirat"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "土木败讯传至北京后，于谦反对南迁，拥立朱祁钰并整顿京营、调集勤王军。瓦剌也先挟英宗逼近城下未能破城，明军守住首都，使国家政权在皇帝被俘的危机中继续运转。于谦把守军布置于京城各门外拒敌，城内已由景帝主持朝廷，也先挟持英宗因而未能迫使北京开门迎纳。",
+    "personIds": [
+      "person-yu-qian"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "tumu-to-beijing-defense",
+      "beijing-defense-to-yingzong-return"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.9999999999999998,
+        0.40000000000000013
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷一百七十《于谦传》守北京拒也先条"
+      },
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明英宗实录》正统十四年十月也先犯京师条"
+      },
+      {
+        "sourceId": "mingshi-jishi-benmo-zhonghua",
+        "locator": "《明史纪事本末·景帝登极守御》正统十四年十月北京九门守御条"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "childIds": [],
+    "color": "#cc5944",
+    "endYear": 1449,
+    "eraId": "ming",
+    "id": "tumu",
+    "influence": 4,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.4,
+        -0.9
+      ]
+    },
+    "parentId": null,
+    "period": "明代",
+    "personIds": [
+      "person-zhu-qizhen",
+      "person-yu-qian",
+      "person-esen"
+    ],
+    "placeIds": [
+      "tumu-fortress"
+    ],
+    "polityIds": [
+      "ming",
+      "oirat"
+    ],
+    "relationIds": [
+      "tumu-to-beijing-defense"
+    ],
+    "startYear": 1449,
+    "summary": "皇帝被俘，北京保卫战重塑明朝政治。明英宗亲征瓦剌，在土木堡遭遇惨败并被俘。于谦等人拥立景帝、组织北京防御，避免了都城失守。事件暴露军事指挥与宫廷决策问题，也引出之后夺门之变等一系列权力震荡。",
+    "themeIds": [],
+    "title": "土木堡之变",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十《英宗前纪》正统十四年八月土木兵败、帝北狩条"
+      },
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明英宗实录》正统十四年八月土木之变条"
+      },
+      {
+        "sourceId": "mingshi-jishi-benmo-zhonghua",
+        "locator": "《明史纪事本末·土木之变》正统十四年八月土木兵败、英宗被俘条"
+      }
+    ]
+  },
+  {
+    "id": "yingzong-returned",
+    "title": "英宗返京",
+    "aliases": [],
+    "startYear": 1450,
+    "endYear": 1450,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "oirat"
+    ],
+    "period": "明代",
+    "categories": [
+      "diplomacy",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "景泰元年也先在交涉后送还明英宗，英宗回到北京后被尊为太上皇并幽居南宫。皇帝回归没有恢复原有权力，反而形成两位君主并存的紧张局面，成为夺门之变的直接背景。景帝已在北京即皇帝位，迎还英宗只能先以太上皇相待，南宫隔居使被俘前的君臣关系没有随着回京自动复原。",
+    "personIds": [
+      "person-zhu-qizhen"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "beijing-defense-to-yingzong-return"
+    ],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1,
+        -1.4
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十一《景帝本纪》景泰元年八月上皇还京条"
+      }
+    ]
+  },
+  {
+    "id": "jingtai-heir-change",
+    "title": "景泰易储",
+    "aliases": [],
+    "startYear": 1452,
+    "endYear": 1452,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "景泰三年景帝废英宗之子朱见深的太子位，改立己子朱见济，朝臣在威逼和赏赐中接受。朱见济次年早夭后储位空缺，皇位继承的不确定性加深宫廷派系竞争。朱见深原以英宗之子承储，易储改以景帝亲子继位，把两位皇帝之间的权力紧张具体转成下一代的皇位归属问题。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.3,
+        0.8000000000000003
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十一《景帝本纪》景泰三年废皇太子见深、立见济条"
+      }
+    ]
+  },
+  {
+    "id": "duomen-coup",
+    "title": "夺门之变",
+    "aliases": [],
+    "startYear": 1457,
+    "endYear": 1457,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "景泰八年景帝病重，石亨、徐有贞、曹吉祥等迎太上皇朱祁镇入奉天殿复位，改元天顺。于谦等随即被捕处死，政变重新安排功臣和官僚集团，也成为宫门军事行动改变皇位的典型。太上皇由南宫被迎至朝会正殿，群臣在朝见时面对的是已经复位的英宗，控制宫门与殿廷先于公开颁布改元。",
+    "personIds": [
+      "person-zhu-qizhen",
+      "person-yu-qian"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.19999999999999996,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十二《英宗后纪》景泰八年正月复辟、改元天顺条"
+      }
+    ]
+  },
+  {
+    "id": "cao-qin-rebellion",
+    "title": "曹钦之变",
+    "aliases": [],
+    "startYear": 1461,
+    "endYear": 1461,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "天顺五年武将曹钦因惧怕清算，率部在北京发动叛乱，攻打宫门并杀伤大臣，最终兵败自尽。事件暴露京营和降附军人的管理问题，也促使朝廷进一步整顿首都军事控制。叛军试图控制宫门却未能挟持皇帝，京中官军反击后曹钦败死，朝廷由此清除曹氏所掌握的首都武装势力。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.8,
+        -0.8999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十二《英宗后纪》天顺五年七月曹钦反条"
+      }
+    ]
+  },
+  {
+    "id": "chenghua-accession",
+    "title": "成化帝即位",
+    "aliases": [],
+    "startYear": 1464,
+    "endYear": 1464,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "天顺八年英宗去世，太子朱见深即位，改元成化。新帝为于谦平反并恢复部分景泰旧臣名誉，但长期宠信万贵妃和宦官，西厂等机构后来影响朝政，呈现修复与专断并存。朱见深曾因景泰易储失去太子位，英宗复辟后才恢复储位，新君处理于谦等旧案时也面对自身经历过的继承争议。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.5999999999999999,
+        -0.4999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十三《宪宗本纪一》天顺八年正月皇太子即皇帝位条"
+      }
+    ]
+  },
+  {
+    "id": "jingxiang-refugee-uprising",
+    "title": "荆襄流民起义",
+    "aliases": [],
+    "startYear": 1465,
+    "endYear": 1465,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "society",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "成化初年荆襄山区聚集大量无籍流民，刘通、石龙等起事，明廷派军镇压并处置流民。随后设置郧阳府、编户安置，说明单纯军事清剿之外，人口迁徙和土地生计需要行政回应。无籍人口难以纳入原有赋役册，设郧阳府与编户使流民有了新的管辖和登记所在，安置成为清剿之后必须接续的措施。",
+    "personIds": [],
+    "placeIds": [
+      "yunyang"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b97858",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        -1.4,
+        0.6000000000000001
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷一百七十八《项忠传》成化元年讨荆襄刘通及置郧阳条"
+      }
+    ]
+  },
+  {
+    "id": "yansui-great-wall",
+    "title": "延绥边墙修筑",
+    "aliases": [],
+    "startYear": 1474,
+    "endYear": 1474,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "northern-yuan"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "成化十年余子俊主持修筑延绥边墙，利用墩台、壕堑和堡寨连接黄土高原北缘防线。边墙不是封闭国界，而与军屯、马市和巡逻体系配合，反映明中期由远征转向固定边防。余子俊以连缀墩堡缩短各驻点之间的空隙，警报可沿边墙传递，巡守部队由单独据堡转为沿线互相策应。",
+    "personIds": [],
+    "placeIds": [
+      "ordos"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.9,
+        -1.0999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷一百七十八《余子俊传》成化十年筑延绥边墙条"
+      }
+    ]
+  },
+  {
+    "id": "western-depot-founded",
+    "title": "西厂设置",
+    "aliases": [],
+    "startYear": 1477,
+    "endYear": 1477,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "成化十三年宦官汪直奉命设西厂，侦察范围越过东厂和锦衣卫，多次制造大狱。官员反对后西厂一度撤销又复设，说明特务机构的兴废取决于皇帝授权，也加剧正常监察与秘密侦缉冲突。汪直以皇帝亲信身份差遣官校越境侦察，案件可以绕过地方衙门上报，西厂扩张因此直接冲击既有司法与监察管辖。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.4999999999999998,
+        -0.7
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百零四《宦官传一·汪直》成化十三年置西厂条"
+      }
+    ]
+  },
+  {
+    "id": "western-depot-abolished",
+    "title": "西厂罢撤",
+    "aliases": [],
+    "startYear": 1482,
+    "endYear": 1482,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "成化十八年汪直失宠，西厂最终罢撤，相关官校被裁并或转隶。撤厂并未结束厂卫政治，东厂和锦衣卫仍继续运作，此事显示特殊侦缉机构可以因权力格局变化迅速扩张和收缩。汪直被调离并失去皇帝支持后，专为其侦缉设立的机构不再维持，罢厂针对这套人马而非废去锦衣卫、东厂全部职权。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.5999999999999999,
+        -0.9999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百零四《宦官传一·汪直》成化十八年罢西厂条"
+      }
+    ]
+  },
+  {
+    "id": "hongzhi-accession",
+    "title": "弘治帝即位",
+    "aliases": [],
+    "startYear": 1487,
+    "endYear": 1487,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "成化二十三年朱祐樘即位，改元弘治，清理传奉官和冗员，起用较有声望的文臣。朝廷试图修复成化后期的用人和财政问题，史家称为“弘治中兴”，但边防、土地兼并等压力仍在。朱祐樘承位后裁减成化朝以近幸传旨授予的官职，登位初年的用人整顿因此直接触及先帝所留的特殊恩赏。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1,
+        -1.2999999999999998
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十五《孝宗本纪》成化二十三年九月皇太子即皇帝位条"
+      }
+    ]
+  },
+  {
+    "id": "hongzhi-administration-reform",
+    "title": "弘治裁抑冗滥",
+    "aliases": [],
+    "startYear": 1488,
+    "endYear": 1488,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "弘治初年朝廷裁革通过传奉取得的官职，整顿内外官署并广开言路，刘健、李东阳等参与政务。改革改善部分行政秩序，却未根本改变宦官、宗室和土地财政对国家资源的长期占用。传奉授官绕过吏部常规铨选，孝宗裁罢此类冗员，使受宠获职者失去名额，整顿首先落在官员任用与俸禄支出上。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.7,
+        -0.19999999999999996
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十五《孝宗本纪》弘治元年罢传奉官、汰冗员条"
+      }
+    ]
+  },
+  {
+    "id": "liu-daxia-yellow-river",
+    "title": "刘大夏治理黄河",
+    "aliases": [],
+    "startYear": 1494,
+    "endYear": 1494,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "science",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "弘治年间黄河在河南、山东多次决口，刘大夏等主持筑堤疏浚并调整漕运水路。治河需要在防洪、灌溉和运河供水之间取舍，工程成效常受泥沙和后续维护影响，体现明代水利治理的复杂性。张秋决口冲击南北漕路，刘大夏以筑塞和疏导恢复河道秩序，治河的紧迫目标是使洪水不再截断运河通行。",
+    "personIds": [],
+    "placeIds": [
+      "dongping"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4aa8a1",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -0.19999999999999996,
+        0.6000000000000001
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷一百八十二《刘大夏传》弘治间治张秋决河条"
+      }
+    ]
+  },
+  {
+    "id": "hongzhi-da-ming-huidian",
+    "title": "弘治重修《大明会典》",
+    "aliases": [],
+    "startYear": 1497,
+    "endYear": 1502,
+    "yearPrecision": "range",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "弘治十年孝宗命徐溥等以历朝事例增修官修会典，至弘治十五年完成并进呈。会典按六部和诸衙门分类汇录制度、职掌与案例，为官员查考行政程序提供依据，也保留明代典章沿革。目录以衙门为纲把职掌与事例排在一起，进书表标明编纂告成，官员得以按所办事务查找前朝已有的程序。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.2,
+        1
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "da-ming-huidian-wanli",
+        "locator": "《大明会典》弘治十五年进书表及目录"
+      }
+    ]
+  },
+  {
+    "id": "zhengde-accession",
+    "title": "正德帝即位",
+    "aliases": [],
+    "startYear": 1505,
+    "endYear": 1505,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "弘治十八年孝宗去世，朱厚照即位，改元正德。青年皇帝倚重刘瑾等宦官并追求宫廷游乐，大学士与言官多次谏争，中央决策逐渐围绕皇帝近侍和既有官僚体系展开冲突。朱厚照由东宫进入皇位，孝宗朝老臣仍在内阁，新帝身边宦官与外朝辅臣对劝谏和任官的影响开始重新消长。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        1.1
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十六《武宗本纪》弘治十八年五月皇太子即皇帝位条"
+      }
+    ]
+  },
+  {
+    "id": "liu-jin-dominance",
+    "title": "刘瑾掌权",
+    "aliases": [],
+    "startYear": 1506,
+    "endYear": 1506,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "正德元年刘瑾掌司礼监并控制奏章传递，打击反对官员，增设罚米和查盘以聚敛。其权势来自接近皇帝而非正式宰辅职位，内阁、六部与言官因此在制度程序和传奉命令之间艰难周旋。司礼监居皇帝与外朝章奏之间，刘瑾借掌印和传达取得干预公文的便利，官员能否上达意见因而受到近侍控制。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.7,
+        -0.7
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百零四《宦官传一·刘瑾》正德初掌司礼监用事条"
+      }
+    ]
+  },
+  {
+    "id": "wang-yangming-longchang",
+    "title": "王阳明龙场悟道",
+    "aliases": [],
+    "startYear": 1508,
+    "endYear": 1508,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "thought",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "王守仁因反对刘瑾被贬贵州龙场驿，正德三年前后在艰苦环境中反思朱子格物说，形成“心即理”的思想转折。龙场经历后来被弟子视为心学成熟节点，但其思想仍在讲学、平乱和晚年著述中继续发展。",
+    "personIds": [
+      "person-wang-yangming"
+    ],
+    "placeIds": [
+      "longchang-guizhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "longchang-to-ning-prince"
+    ],
+    "color": "#6c78b8",
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        1.4000000000000001,
+        -1.4
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷一百九十五《王守仁传》谪龙场驿、悟格物致知条"
+      },
+      {
+        "sourceId": "wang-yangming-quanshu",
+        "locator": "《王阳明全集》卷三十三《年谱一》正德三年龙场悟道条"
+      }
+    ]
+  },
+  {
+    "id": "anhua-prince-rebellion",
+    "title": "安化王叛乱",
+    "aliases": [],
+    "startYear": 1510,
+    "endYear": 1510,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "正德五年宁夏安化王朱寘鐇利用军民不满起兵，杀害地方官并以讨刘瑾为名，旋即被官军平定。叛乱暴露边镇军饷和宗藩矛盾，也被朝臣用来追究刘瑾乱政责任。朱寘鐇借讨刘瑾号召边军，却未能把宁夏之变扩展为各镇响应，平叛后朝廷反而追查刘瑾对军民的搜括。",
+    "personIds": [],
+    "placeIds": [
+      "xingqing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.0999999999999999,
+        0.8000000000000003
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷一百十七《诸王传二·庆王》正德五年安化王寘鐇反条"
+      }
+    ]
+  },
+  {
+    "id": "liu-jin-executed",
+    "title": "刘瑾伏诛",
+    "aliases": [],
+    "startYear": 1510,
+    "endYear": 1510,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "安化王叛乱平定后，宦官张永等揭发刘瑾谋逆，武宗下令抄家并凌迟处死。刘瑾倒台使大量受害官员获释或复职，却未终结皇帝倚重近侍和绕过常规行政的政治模式。抄籍刘瑾家产把查办从官职延伸至聚敛所得，先前受其罚责的人与案件重新进入复核，司礼监则仍然继续存在。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.0999999999999999,
+        0.8000000000000003
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百零四《宦官传一·刘瑾》正德五年籍没伏诛条"
+      }
+    ]
+  },
+  {
+    "id": "liu-liu-rebellion",
+    "title": "刘六刘七起义",
+    "aliases": [],
+    "startYear": 1511,
+    "endYear": 1511,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "society",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "正德六年刘六、刘七等在北直隶、山东起事，骑兵快速流动并攻掠多地，明军历时两年才平定。事件与土地、徭役和地方治安困境相连，显示京畿周边也存在严重社会压力。起义队伍以骑兵转移，越过府县边界后迫使官军连续追剿，战事由京畿向山东等地扩散而非固定守据一座州城。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b97858",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        -0.9,
+        -0.9999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十六《武宗本纪》正德六年至七年刘六、刘七等流动作乱条"
+      }
+    ]
+  },
+  {
+    "id": "portuguese-arrive-guangzhou",
+    "title": "葡萄牙使团抵广州",
+    "aliases": [],
+    "startYear": 1517,
+    "endYear": 1517,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "portuguese-empire"
+    ],
+    "period": "明代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "正德十二年葡萄牙人费尔南·佩雷斯·德·安德拉德船队抵达广州，并派托梅·皮雷斯谋求入京通商。使团带来印度洋贸易信息，但后续冲突和礼仪疑虑使正式外交失败，私人海贸仍继续发展。船队先到广东再谋求派员入京，通商请求须通过沿海官员与朝廷的多层接待，携货抵港并不等同已获正式贡使资格。",
+    "personIds": [],
+    "placeIds": [
+      "guangzhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1.8,
+        -0.19999999999999996
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百二十五《外国传六·佛郎机》正德十二年佛郎机至广东条"
+      }
+    ]
+  },
+  {
+    "id": "prince-ning-rebellion",
+    "title": "宁王朱宸濠叛乱",
+    "aliases": [],
+    "startYear": 1519,
+    "endYear": 1519,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "正德十四年宁王朱宸濠在南昌起兵，企图沿江攻取南京，王守仁迅速调集地方军并在鄱阳湖附近将其击败。平乱展现地方官临机动员能力，也使王阳明的政治声望与心学传播相互加强。朱宸濠离开南昌向长江下游进军，王守仁先夺其后方再迎击回师，使宁王未能把封地叛乱发展为占领南京的局面。",
+    "personIds": [
+      "person-wang-yangming"
+    ],
+    "placeIds": [
+      "nanchang"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "longchang-to-ning-prince"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.5999999999999999,
+        -0.8999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷一百十七《诸王传二·宁王》正德十四年宸濠反及被擒条"
+      }
+    ]
+  },
+  {
+    "id": "jiajing-accession",
+    "title": "嘉靖帝入继大统",
+    "aliases": [],
+    "startYear": 1521,
+    "endYear": 1521,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "正德十六年武宗无子去世，兴献王之子朱厚熜由安陆入京即皇帝位，改元嘉靖。以藩王身份继统使其生父母名分成为政治核心，皇权与文官礼制解释随即发生长期争论。朱厚熜继承的是帝位而非先被武宗收为皇子，入京后的礼仪安排因此立即涉及如何称孝宗及自己的生父。",
+    "personIds": [
+      "person-zhu-houcong"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.3,
+        1.3000000000000003
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十七《世宗本纪一》正德十六年四月入京即皇帝位条"
+      }
+    ]
+  },
+  {
+    "id": "grand-rites-controversy",
+    "title": "大礼议",
+    "aliases": [],
+    "startYear": 1521,
+    "endYear": 1524,
+    "yearPrecision": "range",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "嘉靖帝坚持尊生父兴献王为皇考，杨廷和等主张以孝宗为宗法父亲，争论延续到嘉靖三年。皇帝借礼制解释确立继统权威，反对官员遭廷杖或罢黜，中央人事格局也随之重组。杨廷和所据的是入继宗法，嘉靖帝强调本生父子的关系，称孝宗与兴献王为皇考的选择遂成为皇帝继位依据之争。",
+    "personIds": [
+      "person-zhu-houcong"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [
+      "left-gate-protest"
+    ],
+    "relationIds": [
+      "grand-rites-to-left-gate"
+    ],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.3,
+        1.3000000000000003
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷一百九十一《杨廷和传》嘉靖大礼议及左顺门廷杖条"
+      },
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明世宗实录》嘉靖元年四月议兴献帝称号条；嘉靖三年七月戊寅左顺门群臣伏哭条"
+      },
+      {
+        "sourceId": "mingshi-jishi-benmo-zhonghua",
+        "locator": "《明史纪事本末·大礼议》嘉靖三年左顺门哭谏廷杖条"
+      }
+    ]
+  },
+  {
+    "id": "ningbo-tribute-incident",
+    "title": "宁波争贡事件",
+    "aliases": [],
+    "startYear": 1523,
+    "endYear": 1523,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "muromachi-japan"
+    ],
+    "period": "明代",
+    "categories": [
+      "diplomacy",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "嘉靖二年日本大内氏与细川氏使团在宁波争夺勘合真伪和贸易次序，发生杀掠并追击至绍兴。事件促使明廷收紧对日贡市，合法渠道缩减又刺激沿海走私和倭寇网络。两支日本使团都要求优先验贡，勘合和席次之争演为港内杀掠，宁波管理贡船的核验程序也随暴力冲突而失效。",
+    "personIds": [],
+    "placeIds": [
+      "ningbo"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0.9999999999999998,
+        0.6000000000000001
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百二十二《外国传三·日本》嘉靖二年宁波争贡条"
+      }
+    ]
+  },
+  {
+    "id": "left-gate-protest",
+    "title": "左顺门哭谏",
+    "aliases": [],
+    "startYear": 1524,
+    "endYear": 1524,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "嘉靖三年百余名官员在左顺门跪哭，反对尊称兴献帝，皇帝命锦衣卫逮捕并廷杖，十余人伤重而死。哭谏使礼议从学术争论变成公开政治惩罚，标志嘉靖帝压倒主要反对力量。官员以集体跪哭试图阻止礼部改称，嘉靖帝却以逮系和廷杖回应，官僚依靠共同抗议限制诏令的办法遭到压制。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": "grand-rites-controversy",
+    "childIds": [],
+    "relationIds": [
+      "grand-rites-to-left-gate"
+    ],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1,
+        -1.2
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十七《世宗本纪一》嘉靖三年七月群臣伏左顺门哭争大礼条"
+      }
+    ]
+  },
+  {
+    "id": "wang-yangming-death",
+    "title": "王阳明病逝",
+    "aliases": [],
+    "startYear": 1529,
+    "endYear": 1529,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "thought",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "嘉靖七年末王守仁平定广西思恩、田州事务后归途中病逝于南安，其弟子继续整理语录和书信。心学此后分化为多个讲学群体，既推动士人道德实践，也引发关于空谈和狂禅的批评。王守仁归途中仍在广西军务余波之中，身后弟子以语录、书信整理师说，实际仕宦经历由此与心学文本的传承相接。",
+    "personIds": [
+      "person-wang-yangming"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#6c78b8",
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        0.09999999999999987,
+        1.4
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷一百九十五《王守仁传》嘉靖七年卒于南安条"
+      }
+    ]
+  },
+  {
+    "id": "jiajing-ritual-reforms",
+    "title": "嘉靖郊祀礼制改革",
+    "aliases": [],
+    "startYear": 1530,
+    "endYear": 1530,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "religion",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "嘉靖九年明廷调整天地祭祀，将天地合祀改为南北郊分祀，并另建日月坛。改革借复古礼学重塑北京礼仪空间，也是皇帝在大礼议胜利后继续以礼制表达权威的举措。天坛与地坛分处京城南北，日坛、月坛另有坛所，祭天地从同场合祀改为分别行礼，朝廷须配套制定不同祭仪。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b27a9e",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        1.8,
+        -0.3999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷四十七《礼志一》嘉靖九年更定南北郊分祀条"
+      }
+    ]
+  },
+  {
+    "id": "jiajing-northern-defense",
+    "title": "嘉靖中期整顿北边防务",
+    "aliases": [],
+    "startYear": 1541,
+    "endYear": 1550,
+    "yearPrecision": "range",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "northern-yuan"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "嘉靖中期蒙古俺答部压力上升，明廷在宣府、大同等镇增修堡寨、调换将领并议复马市。朝廷内部在拒贡与互市之间分歧明显，边防政策受军费、将领能力和贸易需求共同制约。宣府、大同处在俺答南下通道上，边臣须同时守堡与议市，能否以马市满足互易需要成为朝廷争论的实际方案。",
+    "personIds": [],
+    "placeIds": [
+      "datong"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.7,
+        0.10000000000000009
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷九十一《兵志三》嘉靖二十年至二十九年俺答扰边及宣大防务条"
+      }
+    ]
+  },
+  {
+    "id": "renyin-palace-plot",
+    "title": "壬寅宫变",
+    "aliases": [],
+    "startYear": 1542,
+    "endYear": 1542,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "嘉靖二十一年宫女杨金英等企图在宫中勒死世宗，因绳结失误而失败，涉案者及相关妃嫔被处死。事件反映宫廷严酷生活和皇帝长期炼丹斋醮背景，也使世宗此后更少居于正式朝会空间。行刺来自日常近侍的宫女而非外朝军队，寝宫内的谋杀险情使妃嫔与宫婢一并遭到追究，惩处范围越出直接动手者。",
+    "personIds": [
+      "person-zhu-houcong"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        1.2000000000000002
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十八《世宗本纪二》嘉靖二十一年十月宫婢谋逆条"
+      }
+    ]
+  },
+  {
+    "id": "shuangyu-port-destroyed",
+    "title": "双屿港被毁",
+    "aliases": [],
+    "startYear": 1548,
+    "endYear": 1548,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "嘉靖二十七年朱纨督军攻破浙江双屿港，焚毁葡萄牙与中国海商长期经营的走私据点。军事清剿暂时打散贸易网络，却未消除海外需求，商人与武装集团转移到沿海其他岛屿继续活动。双屿作为海岛港湾汇聚中外走私船，明军夺港焚船破坏其停泊与储货条件，海商随后必须另找避风和交易据点。",
+    "personIds": [],
+    "placeIds": [
+      "shuangyu"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.9,
+        -0.8999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百零五《朱纨传》嘉靖二十七年讨平双屿条"
+      }
+    ]
+  },
+  {
+    "id": "altan-beijing-siege",
+    "title": "庚戌之变",
+    "aliases": [],
+    "startYear": 1550,
+    "endYear": 1550,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "northern-yuan"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "嘉靖二十九年俺答汗突破古北口一带防线，进逼北京并焚掠京郊，明军闭城固守，蒙古军数日后撤退。危机暴露北边军备和指挥问题，也使互市与防御孰先的争论更加迫切。俺答军到达京郊而未攻入城内，城外焚掠与城内闭守同时发生，古北口至北京的防线薄弱因此直接呈现于朝廷面前。",
+    "personIds": [
+      "person-altan-khan"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "altan-siege-to-investiture"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.2000000000000002,
+        1.3000000000000003
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十八《世宗本纪二》嘉靖二十九年八月俺答犯京师条"
+      }
+    ]
+  },
+  {
+    "id": "shanghai-city-wall",
+    "title": "上海筑城抗倭",
+    "aliases": [],
+    "startYear": 1553,
+    "endYear": 1553,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "嘉靖三十二年倭寇侵扰江南后，上海官民迅速修筑城墙和城门，以保护县治、仓储和居民。城市防御由地方官、士绅与民众共同筹资出力，显示沿海战争如何改变基层城市空间。县城原有街市与仓储被城垣圈入，城门控制出入并供守军设防，上海在倭警下由开放聚落转成具备围守设施的县城。",
+    "personIds": [],
+    "placeIds": [
+      "shanghai"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.19999999999999996,
+        -1.2
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷九十一《兵志三》嘉靖中倭患及沿海府县筑城条"
+      }
+    ]
+  },
+  {
+    "id": "wangjiangjing-battle",
+    "title": "王江泾大捷",
+    "aliases": [],
+    "startYear": 1555,
+    "endYear": 1555,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "嘉靖三十四年明军在嘉兴王江泾击败大股倭寇，俘斩甚众，缓解江南腹地压力。战役虽获胜，沿海武装来源包含日本人和中国海商，单次会战不能解决海禁、走私与地方防务的结构矛盾。张经调集各路兵力会战王江泾，胜利来自集结后的正面交锋，江南此前分散应敌的被动局面获得暂时缓解。",
+    "personIds": [],
+    "placeIds": [
+      "jiaxing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "wangjiangjing-to-qi-defense"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.10000000000000009,
+        1
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百零五《张经传》嘉靖三十四年王江泾破倭条"
+      }
+    ]
+  },
+  {
+    "id": "qi-jiguang-coastal-defense",
+    "title": "戚继光整顿海防",
+    "aliases": [],
+    "startYear": 1555,
+    "endYear": 1567,
+    "yearPrecision": "range",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "嘉靖中期戚继光在浙江招募训练新军，依据沿海地形创制营阵并严格军纪，随后转战福建。其部队与俞大猷等协同清剿倭寇，使东南防务从临时征调转向较稳定的训练、堡寨和水陆协作。募兵编伍把军士按队组合并反复操练，长短兵器依队形配合，台州与平海作战由此有较稳定的基层战斗单位。",
+    "personIds": [
+      "person-qi-jiguang"
+    ],
+    "placeIds": [
+      "taizhou-zhejiang"
+    ],
+    "parentId": null,
+    "childIds": [
+      "qi-jiguang-taizhou-victories",
+      "xinghua-campaign",
+      "wokou-suppression-southeast"
+    ],
+    "relationIds": [
+      "wangjiangjing-to-qi-defense"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.10000000000000009,
+        1
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百一十二《戚继光传》浙江练兵、台州及平海战事条"
+      },
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明世宗实录》嘉靖四十年四月台州捷报条；嘉靖四十二年四月平海卫捷报条"
+      },
+      {
+        "sourceId": "jixiao-xinshu",
+        "locator": "《纪效新书》卷一《束伍篇》与卷二《操令篇》募兵编伍训练条"
+      }
+    ]
+  },
+  {
+    "id": "shaanxi-earthquake-1556",
+    "title": "嘉靖关中大地震",
+    "aliases": [],
+    "startYear": 1556,
+    "endYear": 1556,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "society",
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "嘉靖三十四年十二月关中、陕南和山西多地发生强烈地震，房屋、窑洞和城垣大量倒塌，死伤极为严重。朝廷减免赋税并赈济，灾害也揭示黄土窑居、人口密集与冬季救援困难叠加的风险。震区跨陕西、山西、河南，冬季屋宇坍毁使幸存者同时缺少住处与粮食，免税和赈给须在多省州县分别落实。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b97858",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        1.5999999999999999,
+        -0.7999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷十八《世宗本纪二》嘉靖三十四年十二月山西陕西河南同时地震条"
+      }
+    ]
+  },
+  {
+    "id": "portuguese-macau-settlement",
+    "title": "葡萄牙人居留澳门",
+    "aliases": [],
+    "startYear": 1557,
+    "endYear": 1557,
+    "yearPrecision": "circa",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "portuguese-empire"
+    ],
+    "period": "明代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "嘉靖三十六年前后葡萄牙商人获准在澳门长期停泊居留，向广东地方缴纳地租并受明朝官府管理。澳门连接日本、东南亚和欧洲航线，形成跨国贸易节点，但主权、司法和税收始终处于协商状态。葡商以澳门作停泊和仓储据点，货船往来于广东与外海，缴地租和受地方查验使居留贸易嵌入明朝沿海管理。",
+    "personIds": [],
+    "placeIds": [
+      "macau"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "macau-to-longqing-opening"
+    ],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.40000000000000013,
+        0.30000000000000004
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百二十五《外国传六·佛郎机》嘉靖间据澳门互市条"
+      }
+    ]
+  },
+  {
+    "id": "qi-jiguang-taizhou-victories",
+    "title": "戚继光台州九战",
+    "aliases": [],
+    "startYear": 1561,
+    "endYear": 1561,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "嘉靖四十年倭寇侵入浙江台州地区，戚继光率新军在花街、上峰岭等地连续作战，解救多处城镇。胜利验证针对性训练和鸳鸯阵等战术，也减轻浙东百姓长期承受的掳掠。戚军在台州分赴多处迎战，训练过的队伍可以按敌情转换进击方向，九战的记述集中表现连续出击而非一次城池围攻。",
+    "personIds": [
+      "person-qi-jiguang"
+    ],
+    "placeIds": [
+      "taizhou-zhejiang"
+    ],
+    "parentId": "qi-jiguang-coastal-defense",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1,
+        -1.0999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百一十二《戚继光传》嘉靖四十年台州九战皆捷条"
+      }
+    ]
+  },
+  {
+    "id": "xinghua-campaign",
+    "title": "兴化抗倭战事",
+    "aliases": [],
+    "startYear": 1562,
+    "endYear": 1563,
+    "yearPrecision": "range",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "嘉靖四十一年倭寇攻陷福建兴化府城，次年戚继光、俞大猷等合军收复平海卫并清剿据点。战事促使浙兵入闽协防，显示沿海威胁跨越省界，需要统一调度水陆兵力。兴化府城失陷后平海卫成为倭寇据点，戚继光入闽与福建军队会合，收复行动把浙江练成的部队投入邻省沿海。",
+    "personIds": [],
+    "placeIds": [
+      "putian"
+    ],
+    "parentId": "qi-jiguang-coastal-defense",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.7,
+        0
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百一十二《戚继光传》嘉靖四十二年会师平海、复兴化条"
+      }
+    ]
+  },
+  {
+    "id": "wokou-suppression-southeast",
+    "title": "东南倭患基本平定",
+    "aliases": [],
+    "startYear": 1565,
+    "endYear": 1565,
+    "yearPrecision": "circa",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "嘉靖四十四年前后明军在福建、广东连续攻破海上武装据点，东南大规模倭患逐渐平息。军事胜利与海商网络重组并行，随后隆庆开放部分民间贸易，为沿海治理提供不同于全面禁海的路径。闽广据点被逐一攻破后，大股武装难以再长期占领沿海城镇，明军的清剿范围由浙江南移到福建、广东。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "qi-jiguang-coastal-defense",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.6,
+        0.40000000000000013
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷九十一《兵志三》嘉靖末闽广倭寇渐平条"
+      }
+    ]
+  },
+  {
+    "id": "longqing-maritime-opening",
+    "title": "隆庆开海",
+    "aliases": [],
+    "startYear": 1567,
+    "endYear": 1567,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "隆庆元年福建巡抚涂泽民请开海禁，月港允许民间商船领引出洋，按船征税并限制航线。开放把部分走私转入合法管理，促进东南亚贸易与白银输入，但对日本航线仍有禁令。给引让商船按船籍、航向申报出洋，月港成为办理许可与征税的口岸，民间海贸因而取得可核验的合法手续。",
+    "personIds": [
+      "person-zhu-zaihou"
+    ],
+    "placeIds": [
+      "yuegang"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "macau-to-longqing-opening"
+    ],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        1.8,
+        -0.2999999999999998
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷八十一《食货志五》隆庆初福建开海条"
+      },
+      {
+        "sourceId": "da-ming-huidian-wanli",
+        "locator": "《大明会典》卷一百一十三《兵部·海道》福建商船给引条"
+      }
+    ]
+  },
+  {
+    "id": "altan-peace-negotiations",
+    "title": "俺答封贡谈判",
+    "aliases": [],
+    "startYear": 1570,
+    "endYear": 1570,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "northern-yuan"
+    ],
+    "period": "明代",
+    "categories": [
+      "diplomacy",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "隆庆四年俺答汗之孙把汉那吉投奔明朝，宣大总督王崇古以此推动交换人质和议和。朝廷经过激烈争论，同意册封与互市方案，使长期边战转向制度化贸易谈判。把汉那吉的去留成为明廷与俺答交换条件的筹码，王崇古将处置来降者与册封开市联系起来，才使边事转入连续谈判。",
+    "personIds": [
+      "person-altan-khan"
+    ],
+    "placeIds": [
+      "datong"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "altan-talks-to-investiture"
+    ],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.5,
+        0.10000000000000009
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百二十二《王崇古传》隆庆四年把汉那吉来降、议封贡条"
+      }
+    ]
+  },
+  {
+    "id": "altan-investiture",
+    "title": "隆庆封贡",
+    "aliases": [],
+    "startYear": 1571,
+    "endYear": 1571,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "northern-yuan"
+    ],
+    "period": "明代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "隆庆五年明廷封俺答为顺义王，并在宣府、大同等地开放马市，蒙古诸部以马匹换取布帛粮茶。封贡显著减少北边大规模冲突，推动边镇市场和民间往来，同时仍需处理部族内部竞争与走私。册封使俺答取得明廷认可的王号，随后马市实际购入蒙古马匹，文书上的封贡约定由边镇的官市交换落实。",
+    "personIds": [
+      "person-altan-khan"
+    ],
+    "placeIds": [
+      "datong"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "altan-siege-to-investiture",
+      "altan-talks-to-investiture"
+    ],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        1.2,
+        1.2000000000000002
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百二十二《王崇古传》隆庆五年封俺答、开贡市条"
+      },
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明穆宗实录》隆庆五年三月封俺答顺义王条"
+      },
+      {
+        "sourceId": "wanli-wugong-lu",
+        "locator": "《万历武功录》卷八《俺答列传下》隆庆五年（1571）“其五月，俺答遣使奉表称臣……使太史奉金册封俺答为顺义王”段；“自五月二十八……至六月十四，官易俺答马可一千三百七十匹”段"
+      }
+    ]
+  },
+  {
+    "id": "wanli-accession",
+    "title": "万历帝即位",
+    "aliases": [],
+    "startYear": 1572,
+    "endYear": 1572,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "隆庆六年穆宗去世，十岁的朱翊钧即位，李太后、冯保与首辅张居正共同辅政。幼主时期形成强有力的行政整顿和财政改革，皇帝成年后则逐步改变早期权力安排。李太后管束幼帝起居，冯保掌内廷传达，张居正主持外朝章奏，三者配合使年幼皇帝时期的政令仍能集中推行。",
+    "personIds": [
+      "person-zhu-yijun",
+      "person-zhang-juzheng"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.8,
+        -0.5999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二十《神宗本纪一》隆庆六年六月皇太子即皇帝位条"
+      }
+    ]
+  },
+  {
+    "id": "zhang-juzheng-kaocheng",
+    "title": "考成法推行",
+    "aliases": [],
+    "startYear": 1573,
+    "endYear": 1573,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "institution",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "万历元年张居正推动考成法，以六科核查六部、内阁稽核章奏完成期限，强化行政责任。制度提高诏令执行速度，也使官员考核集中于首辅权力，张居正去世后受到清算。章奏所列事务规定办结时限，六部与六科逐层稽查，内阁再核完成情况，考成把日常公文处理变成可追问的责任。",
+    "personIds": [
+      "person-zhang-juzheng"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "kaocheng-to-zhang-reform"
+    ],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.9000000000000001,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百一十三《张居正传》万历初创考成法条"
+      }
+    ]
+  },
+  {
+    "id": "zhang-juzheng-mourning-dispute",
+    "title": "张居正夺情",
+    "aliases": [],
+    "startYear": 1577,
+    "endYear": 1577,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "万历五年张居正父亲去世，按礼应离职守丧，皇帝命其夺情留任，反对官员遭廷杖或贬黜。争论把儒家孝制、国家政务和首辅权力置于冲突中，也加深士大夫对改革集团的不满。留任让张居正不必按通常丁忧制度离开中枢，反对者便以守丧礼法质问首辅，皇帝又通过惩罚言官维持其在位。",
+    "personIds": [
+      "person-zhang-juzheng"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.30000000000000004,
+        -0.8999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百一十三《张居正传》万历五年父丧夺情条"
+      }
+    ]
+  },
+  {
+    "id": "single-whip-national-push",
+    "title": "一条鞭法推向全国",
+    "aliases": [],
+    "startYear": 1581,
+    "endYear": 1581,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "万历九年明廷在清丈基础上把田赋、徭役和杂派多折银合并，按田亩与丁粮征收，各地执行方式仍有差异。一条鞭法简化征收并扩大白银需求，也使无银农户更受市场价格波动影响。田亩与丁粮决定各户折银份额，原来分别征派的役务归入银额后，民户须先取得白银再向官府完纳。",
+    "personIds": [
+      "person-zhang-juzheng"
+    ],
+    "placeIds": [],
+    "parentId": "zhang-juzheng",
+    "childIds": [],
+    "relationIds": [
+      "single-whip-to-zhang-reform",
+      "single-whip-to-tanding",
+      "two-tax-to-single-whip"
+    ],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.30000000000000004,
+        0.6000000000000001
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷七十八《食货志二》万历九年行一条鞭法条"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution",
+      "economy"
+    ],
+    "childIds": [
+      "single-whip-national-push"
+    ],
+    "color": "#c98a55",
+    "endYear": 1582,
+    "eraId": "ming",
+    "id": "zhang-juzheng",
+    "influence": 4,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.7,
+        0.2
+      ]
+    },
+    "parentId": null,
+    "period": "明代",
+    "personIds": [
+      "person-zhang-juzheng",
+      "person-zhu-yijun",
+      "person-qi-jiguang"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "polityIds": [
+      "ming"
+    ],
+    "relationIds": [
+      "kaocheng-to-zhang-reform",
+      "single-whip-to-zhang-reform",
+      "zhang-reform-to-death"
+    ],
+    "startYear": 1581,
+    "summary": "一条鞭法等举措整顿财政与行政。张居正主政期间考成官吏、清丈土地，并推动一条鞭法，将多项赋役折银归并征收。改革短期改善财政和行政效率，但也依赖强势政治支持。其身后政策与评价反复，折射晚明制度困境。",
+    "themeIds": [],
+    "title": "张居正改革",
+    "yearPrecision": "range",
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百一十三《张居正传》万历初考成、清丈及一条鞭条"
+      },
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明神宗实录》万历九年十二月清丈田亩告成条"
+      },
+      {
+        "sourceId": "zhang-taiyue-ji",
+        "locator": "《张太岳集·请稽查章奏随事考成以修实政疏》"
+      }
+    ]
+  },
+  {
+    "id": "zhang-juzheng-death",
+    "title": "张居正去世",
+    "aliases": [],
+    "startYear": 1582,
+    "endYear": 1582,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "万历十年张居正病逝，皇帝起初赐祭葬，随后在反对者推动下追夺官爵并查抄家产。身后清算削弱改革权威，却没有完全逆转一条鞭和财政折银，显示政策效果与个人政治评价并不相同。皇帝在首辅生前所给的信任转为死后追责，家产查抄与官爵剥夺落到张氏家族，财政制度却仍有自身的征收惯性。",
+    "personIds": [
+      "person-zhang-juzheng"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "zhang-reform-to-death"
+    ],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.4000000000000001,
+        -1.2
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百一十三《张居正传》万历十年卒及身后追夺条"
+      }
+    ]
+  },
+  {
+    "id": "ricci-zhaoqing-residence",
+    "title": "利玛窦居留肇庆",
+    "aliases": [],
+    "startYear": 1583,
+    "endYear": 1583,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "culture",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "万历十一年耶稣会士利玛窦获准在肇庆居留，学习汉语并制作地图、钟表等物品与士人交往。他逐步调整服饰和传教策略，以数学、地理知识作为交流媒介，为后来进入北京奠定基础。在广东取得住处让利玛窦能够持续学汉语与接待士人，地图和钟表成为谈论西方知识的实物入口，传教开始依赖当地交游。",
+    "personIds": [
+      "person-matteo-ricci"
+    ],
+    "placeIds": [
+      "zhaoqing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "ricci-zhaoqing-to-beijing"
+    ],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -0.6000000000000001,
+        -0.09999999999999987
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百二十六《外国传七·意大里亚》利玛窦万历间入广东条"
+      }
+    ]
+  },
+  {
+    "id": "ricci-first-world-map",
+    "title": "利玛窦绘世界地图",
+    "aliases": [],
+    "startYear": 1584,
+    "endYear": 1584,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "science",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "利玛窦在肇庆绘制中文世界地图，把欧洲经纬地理知识与中国地名系统结合，向士人展示更广阔的海陆分布。地图在不同城市多次增订重刻，其版式和中心位置也随读者需求调整。汉字地名使原本以欧洲语言标示的海陆可以进入中文阅读，肇庆士人由图面接触各洲相对位置，文字翻译成为绘图的一部分。",
+    "personIds": [
+      "person-matteo-ricci"
+    ],
+    "placeIds": [
+      "zhaoqing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4aa8a1",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        1.0999999999999999,
+        1
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "ricci-china-journals",
+        "locator": "《利玛窦中国札记》第一卷肇庆绘图段"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "childIds": [
+      "imjin-pyongyang-campaign",
+      "imjin-war-end"
+    ],
+    "color": "#be654d",
+    "endYear": 1598,
+    "eraId": "ming",
+    "id": "imjin-war",
+    "influence": 3,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.7,
+        1.3
+      ]
+    },
+    "parentId": null,
+    "period": "明代",
+    "personIds": [
+      "person-zhu-yijun",
+      "person-li-rusong",
+      "person-deng-zilong"
+    ],
+    "placeIds": [
+      "seoul",
+      "pyongyang",
+      "namhae"
+    ],
+    "polityIds": [
+      "ming",
+      "joseon",
+      "toyotomi-japan"
+    ],
+    "relationIds": [],
+    "startYear": 1592,
+    "summary": "明军入朝作战，东亚秩序经历巨大冲击。日本丰臣政权出兵朝鲜后，明朝应请求派军援助。战争延续多年，陆海战场交错，最终日军撤退。明朝承担了沉重财政与军事消耗，朝鲜遭受严重破坏，日本国内权力格局也随之变化。",
+    "themeIds": [],
+    "title": "万历援朝",
+    "yearPrecision": "range",
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百二十《外国传一·朝鲜》万历二十年至二十六年援朝战争条"
+      },
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明神宗实录》万历二十年十二月命李如松东征条；万历二十六年十二月援朝军撤还条"
+      },
+      {
+        "sourceId": "joseon-seonjo-revised-sillok",
+        "locator": "《宣祖修正实录》宣祖二十五年（1592）四月十四日“倭贼大举入寇，陷釜山镇”条；宣祖二十五年（1592）五月一日“即遣人移咨辽东，告急请兵，此请援天朝之始”条"
+      },
+      {
+        "sourceId": "joseon-seonjo-sillok",
+        "locator": "《宣祖实录》宣祖三十一年（1598）十二月二十一日“众倭将皆听撤去”条；宣祖三十三年（1600）十一月十六日“宗社灰烬，车驾西迁”及“调遣几十万兵、放散几百万银、漕转几千万谷”条"
+      }
+    ]
+  },
+  {
+    "id": "imjin-pyongyang-campaign",
+    "title": "明军收复平壤",
+    "aliases": [],
+    "startYear": 1593,
+    "endYear": 1593,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "joseon",
+      "toyotomi-japan"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "万历二十年日本军队占领朝鲜多地，明廷派李如松率军入援，次年正月联合朝鲜军收复平壤。胜利扭转初期败局，但碧蹄馆受挫后战事转入和谈与拉锯，战争并未迅速结束。李如松分兵攻城，以炮火配合步骑逼近各门，日军退出平壤后，明朝援军得以在朝鲜北部重新建立推进据点。",
+    "personIds": [
+      "person-li-rusong"
+    ],
+    "placeIds": [
+      "pyongyang"
+    ],
+    "parentId": "imjin-war",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.5999999999999999,
+        -0.7
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百三十八《李如松传》万历二十一年正月克平壤条"
+      }
+    ]
+  },
+  {
+    "id": "li-shizhen-bencao",
+    "title": "《本草纲目》刊行",
+    "aliases": [],
+    "startYear": 1596,
+    "endYear": 1596,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "science",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "李时珍历经多年采集、辨析药物并修订旧本草分类，《本草纲目》在万历二十四年由金陵书坊刊行。全书记录药物形态、产地和方剂，也保存大量自然知识，其具体疗效仍需以现代医学方法辨别。刊本以部类统摄药物，逐项列名称、释名与应用，李时珍的考订得以随金陵书坊印本流传，而不再仅限于手稿与家传。",
+    "personIds": [
+      "person-li-shizhen"
+    ],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "bencao-to-tiangong"
+    ],
+    "color": "#4aa8a1",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -0.7,
+        -0.2999999999999998
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百九十九《方伎传·李时珍》著《本草纲目》条"
+      },
+      {
+        "sourceId": "bencao-gangmu-jinling",
+        "locator": "《本草纲目》万历二十四年金陵胡承龙刊本序与目录"
+      }
+    ]
+  },
+  {
+    "id": "wanli-mine-tax-eunuchs",
+    "title": "矿监税使四出",
+    "aliases": [],
+    "startYear": 1596,
+    "endYear": 1596,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "economy",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "万历二十四年后神宗派宦官到各地征收矿税、商税，常以开矿名义侵扰商民并与地方官冲突。矿监税使增加内库收入，却破坏既有财政程序，引发城市抗税和士绅强烈反对。中官以开矿和榷税名义自设征收，商货与民产均可能被勒取，款项进入内库，使地方官原有的财政管辖受到挤压。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.7,
+        -0.2999999999999998
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "ming-shilu-zhongyang",
+        "locator": "《明神宗实录》万历二十四年闰八月遣中官开矿榷税条"
+      }
+    ]
+  },
+  {
+    "id": "imjin-war-end",
+    "title": "露梁海战与日军撤退",
+    "aliases": [],
+    "startYear": 1598,
+    "endYear": 1598,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "joseon",
+      "toyotomi-japan"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "万历二十六年丰臣秀吉死后日军撤离朝鲜，明朝水军与朝鲜水军在露梁海峡截击，邓子龙、李舜臣战死。撤军结束七年战争，三国都付出巨大人员和财政代价，东北亚秩序进入重建。露梁截击针对从沿海据点撤走的日军船队，邓子龙与李舜臣均在水战中阵亡，战争终局仍伴随激烈的海上追击。",
+    "personIds": [
+      "person-deng-zilong"
+    ],
+    "placeIds": [
+      "namhae"
+    ],
+    "parentId": "imjin-war",
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1,
+        -0.9999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百四十七《邓子龙传》万历二十六年露梁海战阵亡条"
+      }
+    ]
+  },
+  {
+    "id": "ricci-beijing",
+    "title": "利玛窦进入北京",
+    "aliases": [],
+    "startYear": 1601,
+    "endYear": 1601,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "culture",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "万历二十九年利玛窦携自鸣钟、地图等礼物获准入北京居住，与徐光启、李之藻等士人讨论数学、天文和宗教。交流促成多种译著，也在礼仪和教义理解上留下后来争论。自鸣钟进献给宫廷后需要保养，利玛窦因此获得留京条件，他与士人的会面有了固定驻地，译书合作遂能持续开展。",
+    "personIds": [
+      "person-matteo-ricci"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "ricci-zhaoqing-to-beijing",
+      "ricci-beijing-to-world-map"
+    ],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0.40000000000000013,
+        -0.5999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百二十六《外国传七·意大里亚》利玛窦至京条"
+      },
+      {
+        "sourceId": "ricci-china-journals",
+        "locator": "《利玛窦中国札记》第四卷进入北京及获准居留段"
+      }
+    ]
+  },
+  {
+    "id": "kunyu-wanguo-quantu",
+    "title": "《坤舆万国全图》刊刻",
+    "aliases": [],
+    "startYear": 1602,
+    "endYear": 1602,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "science",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "万历三十年利玛窦与李之藻在北京刊印《坤舆万国全图》，用中文标注各洲、海洋和众多国家。地图把欧洲地理知识带入士人视野，同时吸收中国制图表达，成为晚明知识交流的代表实物。图上以中文地名、经纬线和图注解释海陆位置，李之藻参与刊印使这套地理表达以多幅拼合的大型版图面向读者。",
+    "personIds": [
+      "person-matteo-ricci"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "ricci-beijing-to-world-map"
+    ],
+    "color": "#4aa8a1",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -1.6,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "kunyu-wanguo-map",
+        "locator": "《坤舆万国全图》万历三十年北京刊本题记与图注"
+      }
+    ]
+  },
+  {
+    "id": "donglin-academy-restored",
+    "title": "东林书院复建",
+    "aliases": [],
+    "startYear": 1604,
+    "endYear": 1604,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "thought",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "万历三十二年顾宪成、高攀龙等在无锡修复东林书院，定期讲学并议论政务，吸引江南士人。东林群体以道德名节批评矿税和官场弊病，后来在党争中被对手概括为政治派系。书院恢复讲会后，顾宪成等把经学讨论与官员进退、地方弊政相联，固定会讲场所成为江南士人聚议的据点。",
+    "personIds": [
+      "person-gu-xiancheng"
+    ],
+    "placeIds": [
+      "wuxi"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "donglin-to-nanjing-case"
+    ],
+    "color": "#6c78b8",
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        1.8,
+        -0.19999999999999996
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百三十一《顾宪成传》万历三十二年修东林书院条"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第九卷《中古时代·明时期》晚明东林讲会与党争部分"
+      }
+    ]
+  },
+  {
+    "id": "euclid-elements-translation",
+    "title": "《几何原本》前六卷译成",
+    "aliases": [],
+    "startYear": 1607,
+    "endYear": 1607,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "science",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "万历三十五年徐光启与利玛窦合作译出欧几里得《几何原本》前六卷，创造或固定多种中文几何术语。译本以定义、公理和证明展示演绎方法，对晚明数学与知识论讨论产生持续影响。利玛窦口授、徐光启笔受与润色，使点线面和命题证明可用中文连续表述，译书只完成原著前六卷而未涵盖全书。",
+    "personIds": [
+      "person-matteo-ricci",
+      "person-xu-guangqi"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4aa8a1",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -0.5,
+        0.20000000000000018
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jihe-yuanben-1607",
+        "locator": "《几何原本》万历三十五年徐光启序及前六卷"
+      }
+    ]
+  },
+  {
+    "id": "late-wanli-succession-crises",
+    "title": "明末三案",
+    "aliases": [],
+    "startYear": 1615,
+    "endYear": 1620,
+    "yearPrecision": "range",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "万历四十八年前后梃击、红丸、移宫三案围绕太子安全、光宗死因和后宫迁移接连发生，官员各引证据互相攻讦。案件真相与政治立场交织，强化门户标签并影响天启朝用人。梃击追究闯入太子宫门者，红丸追问光宗服药身亡，移宫争论李选侍迁出，三案各自牵涉新旧君主交替时的宫廷控制。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.7,
+        0.30000000000000004
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二十一《神宗本纪二》、卷二十二《光宗本纪》及卷二百四十四相关列传三案条"
+      }
+    ]
+  },
+  {
+    "id": "jurchen-later-jin-founded",
+    "title": "努尔哈赤建后金",
+    "aliases": [],
+    "startYear": 1616,
+    "endYear": 1616,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "jurchen-later-jin"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "万历四十四年努尔哈赤在赫图阿拉称汗，建国号金，以八旗组织统合女真诸部。新政权控制辽东周边资源并与明朝关系迅速恶化，成为明清转型最重要的边疆力量。汗号与金国名号使建州诸部的联盟具备独立朝廷的表达，赫图阿拉成为发号施令的据点，原先明朝边卫关系因而改变。",
+    "personIds": [
+      "person-nurhaci"
+    ],
+    "placeIds": [
+      "hetu-ala"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "jurchen-later-jin-to-seven-grievances"
+    ],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        1.4
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-taizu-shilu",
+        "locator": "《清太祖高皇帝实录》卷五天命元年正月称覆育列国英明汗条"
+      }
+    ]
+  },
+  {
+    "id": "nanjing-christianity-case",
+    "title": "南京教案",
+    "aliases": [],
+    "startYear": 1616,
+    "endYear": 1616,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "religion",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "万历四十四年南京礼部侍郎沈㴶上疏指斥天主教，地方官驱逐部分传教士并查禁教堂书籍。案件反映新宗教进入中国后在礼仪、政治忠诚和知识交流上的争议，禁令在不同地区执行并不一致。沈㴶以礼部官员身份论列西教，驱逐传教士又限制其居处和书籍，围绕西学的士人交游因而遭遇官府查禁。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "donglin-to-nanjing-case"
+    ],
+    "color": "#b27a9e",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        1.4
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百二十六《外国传七·意大里亚》万历四十四年南京逐西洋人条"
+      }
+    ]
+  },
+  {
+    "id": "later-jin-seven-grievances",
+    "title": "努尔哈赤以七大恨告天",
+    "aliases": [],
+    "startYear": 1618,
+    "endYear": 1618,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "jurchen-later-jin"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "万历四十六年努尔哈赤列举“七大恨”誓师攻明，先后攻取抚顺、清河等地，明金关系转为全面战争。檄文把长期边贸、部族冲突和建州损失整合为战争理由，是辽东格局突变的标志。抚顺从明朝边贸口岸转为后金占领地，誓师宣言与攻取城堡相接，原有通过市赏维持的边境关系转入武力争夺。",
+    "personIds": [
+      "person-nurhaci"
+    ],
+    "placeIds": [
+      "hetu-ala",
+      "fushun"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "seven-grievances-to-sarhu",
+      "jurchen-later-jin-to-seven-grievances"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.30000000000000004,
+        0.7000000000000002
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二十一《神宗本纪二》万历四十六年建州陷抚顺条"
+      },
+      {
+        "sourceId": "qing-taizu-shilu",
+        "locator": "《清太祖高皇帝实录》卷五天命三年四月以七大恨告天条"
+      }
+    ]
+  },
+  {
+    "id": "sarhu-battle",
+    "title": "萨尔浒之战",
+    "aliases": [],
+    "startYear": 1619,
+    "endYear": 1619,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "jurchen-later-jin"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "万历四十七年明廷调集多路大军进攻后金，努尔哈赤集中兵力在萨尔浒等地逐路击破明军。战败使明朝失去辽东战略主动，军费和兵源压力陡增，后金则加快向辽沈扩张。明军四路推进时彼此距离较远，后金利用内线先后集中对付各路，原定夹击反成多支军队被逐次击败的局面。",
+    "personIds": [
+      "person-nurhaci"
+    ],
+    "placeIds": [
+      "sarhu"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "seven-grievances-to-sarhu"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.4000000000000001,
+        -1.0999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百五十九《杨镐传》万历四十七年四路出师、败于萨尔浒条"
+      }
+    ]
+  },
+  {
+    "id": "ningyuan-victory",
+    "title": "宁远之战",
+    "aliases": [],
+    "startYear": 1626,
+    "endYear": 1626,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "jurchen-later-jin"
+    ],
+    "period": "明代",
+    "categories": [
+      "war",
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "天启六年努尔哈赤攻宁远，袁崇焕凭城防守并使用红夷大炮击退后金军，努尔哈赤数月后去世。胜利证明坚城、火器和海上补给可以协同抗敌，但未扭转辽东总体劣势。袁崇焕拒绝放弃宁远，将守军集中在城墙火力掩护之下，后金军接近城垣时遭炮击，明军无须出城与骑兵野战。",
+    "personIds": [],
+    "placeIds": [
+      "ningyuan"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.5,
+        0.8000000000000003
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷二百五十九《袁崇焕传》天启六年守宁远、炮伤敌军条"
+      }
+    ]
+  },
+  {
+    "id": "late-ming-rebellions",
+    "title": "晚明民变扩展",
+    "aliases": [],
+    "startYear": 1627,
+    "endYear": 1644,
+    "yearPrecision": "range",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "society",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "天启末至崇祯年间，陕西灾荒、军饷拖欠和驿站裁撤促使多支武装起事，李自成、张献忠等在镇压与招抚间反复流动。灾害、财政和战争相互放大，民变最终发展为挑战王朝统治的政权竞争。陕西起事队伍在官军追击下流入河南、湖广等地，受灾饥民与失饷军士不断加入，朝廷的地方平乱逐步变成跨省战争。",
+    "personIds": [
+      "person-li-zicheng"
+    ],
+    "placeIds": [
+      "xian"
+    ],
+    "parentId": null,
+    "childIds": [
+      "dashun-founded-xian"
+    ],
+    "relationIds": [
+      "dashun-founded-part-of-late-rebellions"
+    ],
+    "color": "#b97858",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0.19999999999999996,
+        -0.9999999999999999
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百零九《流贼传》天启末至崇祯十七年各部起事条"
+      },
+      {
+        "sourceId": "chongzhen-changbian",
+        "locator": "《崇祯长编》崇祯元年陕西饥民起事条；崇祯四年河南流贼条"
+      }
+    ]
+  },
+  {
+    "id": "tiangong-kaiwu",
+    "title": "《天工开物》刊行",
+    "aliases": [],
+    "startYear": 1637,
+    "endYear": 1637,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming"
+    ],
+    "period": "明代",
+    "categories": [
+      "science",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "宋应星在崇祯十年刊行《天工开物》，按谷物、纺织、冶炼、制盐、造纸等门类记录生产技术并配图。著作重视工序、材料和劳动经验，为研究晚明手工业提供系统文本，但并非官方技术标准。十八卷从乃粒、乃服等篇展开，用图示配合文字讲述稼穑与百工，种植、织造和冶炼被放在同一部生产知识书中叙述。",
+    "personIds": [
+      "person-song-yingxing"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "bencao-to-tiangong"
+    ],
+    "color": "#4aa8a1",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -1.3,
+        1.3000000000000003
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "tiangong-kaiwu-1637",
+        "locator": "《天工开物》崇祯十年初刊本宋应星序及十八卷目录"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第九卷《中古时代·明时期》晚明科学技术与宋应星部分"
+      }
+    ]
+  },
+  {
+    "id": "dashun-founded-xian",
+    "title": "李自成在西安建大顺",
+    "aliases": [],
+    "startYear": 1644,
+    "endYear": 1644,
+    "yearPrecision": "exact",
+    "eraId": "ming",
+    "polityIds": [
+      "ming",
+      "dashun"
+    ],
+    "period": "明代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "崇祯十七年正月，李自成在西安建号大顺，改元永昌，并设置大学士、六政府等官职，封授功臣爵位。起义军以新的国号、纪年与官僚名目组织统治，显示其从流动作战转向建立政权的尝试。此条聚焦西安建号和设官，统治制度能否稳定运行仍取决于军队、地方行政与财赋支持，不能仅凭改元便认定已有全国秩序。",
+    "personIds": [
+      "person-li-zicheng"
+    ],
+    "placeIds": [
+      "xian"
+    ],
+    "parentId": "late-ming-rebellions",
+    "childIds": [],
+    "relationIds": [
+      "dashun-founded-part-of-late-rebellions"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.5,
+        0.30000000000000004
+      ]
+    },
+    "editorialPeriodId": "ming",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "卷三百零九《流贼传·李自成》崇祯十七年正月庚寅朔称王西安、国号大顺改元永昌及设官封爵段",
+        "note": "据维基文库《明史》卷309在线录文核对；本书系正月初一，与《明季北略》的初三有异，只采用月份，未校勘所列点校本。"
+      },
+      {
+        "sourceId": "mingji-beilue",
+        "locator": "《明季北略》卷二十《李自成僭号》正月初三壬辰西安建号、永昌年号与六政府段",
+        "note": "据维基文库《明季北略》卷20在线录文核对；日次与《明史》不同，不据此确定公历日，未校勘所列点校本。"
+      }
+    ]
+  }
+]

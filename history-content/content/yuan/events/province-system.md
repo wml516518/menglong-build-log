@@ -1,45 +1,16 @@
 ---
 id: province-system
-title: 行省制度
-aliases: []
-startYear: 1280
-endYear: 1280
-yearPrecision: exact
-eraId: yuan
-polityIds: []
-period: 元代
-categories:
-  - institution
-themeIds: []
-influence: 4
-summary: 广域治理推动地方行政体系重新组织。
 causes:
-  - 辽阔疆域下的军政财政事务需要分层处理。
+  - 蒙古征取云南后，宗王镇抚军民，朝廷需要在当地建立可持续的行政机构。
 course:
-  - year: 1280
-    title: 行省制度
-    description: 元朝在中央中书省之外设置行中书省，处理军政与财政事务，以适应辽阔疆域的治理需要。
+  - year: 1274
+    title: 云南行省设置
+    description: 至元十一年，朝廷设置云南行中书省，治中庆路；命赛典赤赡思丁以平章政事行省云南，他赴任时先与镇守宗王协商施政。
 results:
-  - 其辖区与权力结构经历变化，却为后世省级行政区划提供了重要制度来源，影响延续至明清。
+  - 云南行省以中庆路为治所，成为朝廷处理当地军政事务的机构；赛典赤随后继续协调宗王与地方首领。
 impacts:
   - dimension: institution
-    text: 其辖区与权力结构经历变化，却为后世省级行政区划提供了重要制度来源，影响延续至明清。
-personIds:
-  - person-kublai
-  - person-sayyid-ajall
-placeIds: []
-parentId: null
-childIds: []
-relationIds: []
-historiography: 本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。
-sourceIds:
-  - bai-shouyi-general-history
-color: '#7599b2'
-layout:
-  lane: institution
-  offset:
-    - -0.8
-    - 1.1
+    text: 云南行省的设置体现元朝在西南将朝廷任官与地方治理相结合，后续辖区和职掌仍经历调整。
+historiography: 《元史》卷九十一明确记云南行省至元十一年始置、治中庆路，卷一百二十五记赛典赤同年受命；这不等于全国行省同年创制，各省设置年代须分别考证。
 ---
-
-元朝在中央中书省之外设置行中书省，处理军政与财政事务，以适应辽阔疆域的治理需要。
+蒙古征取云南后，世祖曾由宗王镇抚当地军民，但朝廷仍需建立常驻行政机构。至元十一年（1274），云南行中书省设置，治中庆路；赛典赤赡思丁受命以平章政事行省云南。他赴任时先同镇守宗王沟通，随后推行朝廷政令。《元史》将设省、任命和后续治理分开记载，因此这个有明确纪年的云南节点不等于全国行省同年创制。

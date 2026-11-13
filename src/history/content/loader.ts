@@ -1,26 +1,36 @@
 import { z } from 'zod';
-import { eraSchema, eventArchiveSchema, eventIndexSchema, personArchiveSchema, personIndexSchema, placeIndexSchema, relationSchema, sourceSchema, themeArchiveSchema, themeIndexSchema, type ThemeArchive } from './schema';
+import { eraSchema, editorialPeriodSchema, historyEventArchiveSchema, eventIndexSchema, personArchiveSchema, personIndexSchema, placeIndexSchema, relationSchema, sourceSchema, themeArchiveSchema, themeIndexSchema, type ThemeArchive, type HistoryEventArchive } from './schema';
 
 const path = z.string().min(1);
 const eraId = eraSchema.shape.id;
 const paths = z.record(eraId, path);
 const count = z.number().int().nonnegative();
 const manifestSchema = z.strictObject({
-  version: z.literal(1), eras: z.array(eraSchema), eraBundles: paths,
+  version: z.literal(2), structuredEventCount: count, legacyEventCount: z.literal(0), basicEventCount: count, coreEventCount: count,
+  editorialPeriods: z.array(editorialPeriodSchema), periodCounts: z.record(eraId, count),
+  legacyEventIds: z.array(eventIndexSchema.shape.id).length(0), eras: z.array(eraSchema), eraBundles: paths,
   indexes: z.strictObject({ events: path, people: path, places: path, themes: path }),
   eventEras: z.record(eventIndexSchema.shape.id, eraId),
   personEras: z.record(personIndexSchema.shape.id, eraId),
   sources: path, relations: path, themeArchives: paths,
   eraCount: count, eventCount: count, personCount: count, sourceCount: count, themeCount: count, errorCount: count
 });
-const eraBundleSchema = z.strictObject({ eraId, events: z.array(eventArchiveSchema), people: z.array(personArchiveSchema) })
-  .superRefine((bundle, ctx) => {
-    if (bundle.events.some(event => event.eraId !== bundle.eraId) || bundle.people.some(person => person.primaryEraId !== bundle.eraId)) {
-      ctx.addIssue({ code: 'custom', message: 'Archive belongs to a different era' });
-    }
-  });
 export type HistoryManifest = z.infer<typeof manifestSchema>;
-export type HistoryEraBundle = z.infer<typeof eraBundleSchema>;
+export interface HistoryEraBundle {
+  eraId: string;
+  events: HistoryEventArchive[];
+  people: z.infer<typeof personArchiveSchema>[];
+}
+function eraBundleSchema(manifest: HistoryManifest, requestedEra: string) {
+  return z.strictObject({ eraId, events: z.array(historyEventArchiveSchema), people: z.array(personArchiveSchema) })
+    .superRefine((bundle, ctx) => {
+      if (bundle.eraId !== requestedEra || bundle.events.some(event => event.eraId !== requestedEra || manifest.eventEras[event.id] !== requestedEra) || bundle.people.some(person => person.primaryEraId !== requestedEra)) {
+        ctx.addIssue({ code: 'custom', message: 'Archive belongs to a different visual era' });
+      }
+      const ids = bundle.events.map(event => event.id);
+      if (new Set(ids).size !== ids.length) ctx.addIssue({ code: 'custom', message: 'Bundle does not match manifest events' });
+    });
+}
 export type HistoryContentErrorKind = 'network' | 'http' | 'json' | 'validation' | 'not-found';
 export class HistoryContentError extends Error {
   readonly cause: unknown;
@@ -58,8 +68,21 @@ export function createHistoryContentLoader({ baseUrl = `${import.meta.env.BASE_U
     requests.set(cacheKey, pending);
     return pending;
   }
-  const loadHistoryManifest = () => request('manifest.json', manifestSchema, 'manifest');
-  const loadEventIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.events, z.array(eventIndexSchema), 'event-index'));
+  const loadHistoryManifest = () => request('manifest.json', manifestSchema.superRefine((manifest, ctx) => {
+    // Editorial period counts partition all catalog records.
+    const periodIds = manifest.editorialPeriods.map(period => period.id);
+    if (new Set(periodIds).size !== periodIds.length || periodIds.length !== Object.keys(manifest.periodCounts).length || periodIds.some(id => !Object.hasOwn(manifest.periodCounts, id))) ctx.addIssue({ code: 'custom', message: 'periodCounts keys must match editorialPeriods' });
+    if (manifest.eventCount !== manifest.structuredEventCount || manifest.basicEventCount + manifest.coreEventCount !== manifest.eventCount || Object.values(manifest.periodCounts).reduce((sum, count) => sum + count, 0) !== manifest.structuredEventCount) ctx.addIssue({ code: 'custom', message: 'Inconsistent manifest populations' });
+  }), 'manifest');
+  const loadEventIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.events, z.array(eventIndexSchema).superRefine((events, ctx) => {
+    const periodHistogram = new Map<string, number>();
+    for (const event of events) if (event.editorialPeriodId !== undefined) periodHistogram.set(event.editorialPeriodId, (periodHistogram.get(event.editorialPeriodId) ?? 0) + 1);
+    if ([...periodHistogram.keys()].some(id => !Object.hasOwn(manifest.periodCounts, id)) || manifest.editorialPeriods.some(period => manifest.periodCounts[period.id] !== (periodHistogram.get(period.id) ?? 0))) ctx.addIssue({ code: 'custom', message: 'Index period histogram does not match manifest' });
+    const basicCount = events.filter(event => event.detailLevel === 'basic').length;
+    const coreCount = events.filter(event => event.detailLevel === 'core').length;
+    if (basicCount !== manifest.basicEventCount || coreCount !== manifest.coreEventCount || basicCount + coreCount !== manifest.eventCount) ctx.addIssue({ code: 'custom', message: 'Index detail levels do not match manifest populations' });
+    if (new Set(events.map(event => event.id)).size !== events.length || events.some(event => event.detailLevel === undefined || event.editorialPeriodId === undefined || (Object.hasOwn(manifest.eventEras, event.id) && manifest.eventEras[event.id] !== event.eraId))) ctx.addIssue({ code: 'custom', message: 'Index does not match manifest mapping' });
+  }), 'event-index'));
   const loadPeopleIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.people, z.array(personIndexSchema), 'person-index'));
   const loadPlaceIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.places, z.array(placeIndexSchema), 'place-index'));
   const loadThemeIndex = () => loadHistoryManifest().then(manifest => request(manifest.indexes.themes, z.array(themeIndexSchema), 'theme-index'));
@@ -82,7 +105,7 @@ export function createHistoryContentLoader({ baseUrl = `${import.meta.env.BASE_U
     const pending = loadHistoryManifest().then(manifest => {
       const relativePath = Object.hasOwn(manifest.eraBundles, requestedEra) ? manifest.eraBundles[requestedEra] : undefined;
       if (!relativePath) throw new HistoryContentError('not-found', `${base}manifest.json`, requestedEra);
-      const schema = eraBundleSchema.refine(bundle => bundle.eraId === requestedEra, 'Requested era does not match bundle');
+      const schema = eraBundleSchema(manifest, requestedEra);
       return request(relativePath, schema, `era:${requestedEra}`, requestedEra);
     }).catch(error => { eras.delete(requestedEra); throw error; });
     eras.set(requestedEra, pending);

@@ -9,7 +9,9 @@ deathYear: 1294
 roleIds: []
 eventIds:
   - yuan-founded
+  - yuan-dadu-capital
   - province-system
+  - yuan-xuanzheng-institute
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact
