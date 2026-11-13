@@ -1,6 +1,6 @@
 _translation:
   policyVersion: 1
-  sourceHash: 8c20007f5ea71a20534a35d912116a2d4daf942f4bd9bf2ec7ffb30ec5add755
+  sourceHash: 79ae697ce49420036e9f8c85d4ab05c3d293c80220f443d204ff26971ba5efe3
 about: 'I focus on full-stack development, AI products, and productivity tools. This site will document my portfolio roadmap, starting from a personal homepage and gradually expanding into deployable AI applications. I will also continuously record the technical choices and iteration process in real projects.'
 contact:
   - href: 'https://github.com/wml516518'
@@ -55,7 +55,7 @@ projects:
       - Render
       - Netlify
     status: Live
-    summary: 'A League of Legends Q&A Agent based on official Data Dragon data: the model must query champions, items, and abilities through whitelisted tools, and the chat page displays collapsible tool-call traces.'
+    summary: 'Based on official Data Dragon data + sample strategy corpus: the Agent autonomously routes between structured queries and vector retrieval, and the chat page displays a collapsible tool-call trace.'
     title: LOL-RAG League of Legends Data Agent
   - githubUrl: 'https://github.com/wml516518/weekend-merge'
     liveUrl: 'https://weekend-merge-wml516518.netlify.app'

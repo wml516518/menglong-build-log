@@ -47,7 +47,7 @@ historyGalaxy:
 projects:
   - title: LOL-RAG 英雄联盟数据 Agent
     status: 已上线
-    summary: 基于官方 Data Dragon 数据的英雄联盟问答 Agent：模型必须通过白名单工具查询英雄、装备与技能，对话页展示可折叠的工具调用轨迹。
+    summary: 基于官方 Data Dragon 数据 + 示例攻略语料：Agent 在结构化查询与向量检索之间自主路由，对话页展示可折叠的工具调用轨迹。
     stack:
       - React
       - FastAPI
