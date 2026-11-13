@@ -74,6 +74,17 @@ it('associates each mobile tab with its actual labelled panel', async () => {
 });
 afterEach(() => { vi.useRealTimers(); vi.unstubAllGlobals(); });
 
+it('makes room for the focused event on narrow desktops and restores exploration on demand', async () => {
+  vi.stubGlobal('matchMedia', (query: string) => ({ matches: query === '(max-width: 1180px)', media: query, addEventListener() {}, removeEventListener() {} }));
+  await openApp();
+  await userEvent.click(eventButton('贞观之治'));
+  expect(screen.getByRole('dialog', { name: '贞观之治' })).toBeVisible();
+  expect(screen.queryByRole('complementary', { name: '历史探索器' })).not.toBeInTheDocument();
+  await userEvent.click(screen.getByRole('button', { name: '展开历史探索器' }));
+  expect(screen.getByRole('complementary', { name: '历史探索器' })).toBeVisible();
+  expect(screen.queryByRole('dialog', { name: '贞观之治' })).not.toBeInTheDocument();
+});
+
 it('restores combined period, category, year and influence filters from the URL and dims every unmatched event', async () => {
   window.history.replaceState(null, '', '#/history-galaxy?era=tang&cat=war&from=700&to=800&min=5&keep=a&keep=b');
   await openApp(productionFixture('indexes/events.compact.json'));

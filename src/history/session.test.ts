@@ -31,6 +31,13 @@ it('keeps explicit URL keys authoritative, including empty or invalid values, an
   expect(resolveSessionExplorer(explorer(), new URLSearchParams('keep=ok'))).toEqual(explorer());
 });
 
+it('round trips the elongated timeline camera without truncating it to legacy bounds', () => {
+  const camera = { target: [1420, 2, -1], distance: 18, timelineLayout: 'spaced-v1' };
+  expect(sanitizeHistorySession({ version: 2, camera })?.camera).toEqual(camera);
+  expect(sanitizeHistorySession({ version: 2, camera: { ...camera, target: [1e8, 100, -100] } })?.camera?.target).toEqual([4096, 12, -12]);
+  expect(sanitizeHistorySession({ version: 2, camera: { ...camera, timelineLayout: 'unknown' } })?.camera).toEqual({ target: [32, 2, -1], distance: 18 });
+});
+
 it('survives denied reads/writes, quota failures, and a denied localStorage getter', () => {
   const denied = { getItem: () => { throw new Error('denied'); }, setItem: () => { throw new Error('quota'); } };
   expect(loadHistorySession(denied)).toBeNull();

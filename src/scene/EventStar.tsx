@@ -13,6 +13,7 @@ interface EventStarProps {
   dragOffset: readonly [number, number];
   reducedMotion: boolean;
   opacity?: number;
+  timelineX?: number;
   onSelect: (event: HistoryEvent) => void;
   onHover: (id: string | null) => void;
   onDragOffset: (id: string, offset: readonly [number, number]) => void;
@@ -21,19 +22,18 @@ interface EventStarProps {
   onDragStart?: (event: HistoryEvent, start: StarPointerStart) => void;
 }
 
-export function getEventPosition(event: HistoryEvent, dragOffset: readonly [number, number] = [0, 0]): [number, number, number] {
-  const x = yearToX(event.year);
+export function getEventPosition(event: HistoryEvent, dragOffset: readonly [number, number] = [0, 0], x = yearToX(event.year)): [number, number, number] {
   return [x, getTimelineY(x) + event.offset[0] + 1.1 + dragOffset[0], getTimelineZ(x) + event.offset[1] + dragOffset[1]];
 }
 
-export function EventStar({ event, selected, hovered, dragOffset, reducedMotion, onSelect, onHover, onDragOffset, onDragStateChange, dragStart, onDragStart, opacity = 1 }: EventStarProps) {
+export function EventStar({ event, selected, hovered, dragOffset, reducedMotion, onSelect, onHover, onDragOffset, onDragStateChange, dragStart, onDragStart, opacity = 1, timelineX }: EventStarProps) {
   const group = useRef<THREE.Group>(null);
   const glow = useRef<THREE.Mesh>(null);
   const currentOffset = useRef<[number, number]>([dragOffset[0], dragOffset[1]]);
   const session = useRef<(() => void) | null>(null);
   const callbacks = useRef({ onSelect, onHover, onDragOffset, onDragStateChange });
   callbacks.current = { onSelect, onHover, onDragOffset, onDragStateChange };
-  const basePosition = getEventPosition(event);
+  const basePosition = getEventPosition(event, [0, 0], timelineX);
   const radius = influenceToScale(event.influence);
 
   useEffect(() => {
@@ -76,7 +76,7 @@ export function EventStar({ event, selected, hovered, dragOffset, reducedMotion,
   return (
     <group
       ref={group}
-      position={getEventPosition(event, dragOffset)}
+      position={getEventPosition(event, dragOffset, timelineX)}
       onPointerDown={pointer => {
         pointer.stopPropagation();
         const start = { pointerId: pointer.pointerId, clientX: pointer.nativeEvent.clientX, clientY: pointer.nativeEvent.clientY, target: pointer.nativeEvent.target as HTMLElement };
@@ -99,13 +99,13 @@ export function EventStar({ event, selected, hovered, dragOffset, reducedMotion,
           toneMapped={false}
         />
       </mesh>
-      <mesh ref={glow}>
+      <mesh ref={glow} raycast={() => {}}>
         <icosahedronGeometry args={[radius * 1.8, 1]} />
         <meshBasicMaterial color={event.color} transparent opacity={(selected ? 0.2 : 0.08) * opacity} wireframe blending={THREE.AdditiveBlending} depthWrite={false} />
       </mesh>
       {(selected || hovered) ? <pointLight color={event.color} intensity={(selected ? 4.8 : 1.4) * opacity} distance={selected ? 7 : 3.2} decay={2} /> : null}
       {(hovered || selected) ? (
-        <mesh position={[0, radius + 0.42, 0]} rotation={[Math.PI / 2, 0, 0]}>
+        <mesh raycast={() => {}} position={[0, radius + 0.42, 0]} rotation={[Math.PI / 2, 0, 0]}>
           <ringGeometry args={[radius * 0.42, radius * 0.49, 32]} />
           <meshBasicMaterial color={selected ? '#f0d28c' : event.color} side={THREE.DoubleSide} transparent opacity={0.78 * opacity} blending={THREE.AdditiveBlending} depthWrite={false} />
         </mesh>

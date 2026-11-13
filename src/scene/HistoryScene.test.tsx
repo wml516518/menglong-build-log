@@ -8,10 +8,31 @@ import { CameraRig } from './CameraRig';
 import { ClusterField } from './ClusterField';
 import { SceneProjection } from './SceneProjection';
 import type { ClusterResult } from '../history/clustering/protocol';
+import { readFileSync } from 'node:fs';
+import { compactEventsForScene } from '../history/content/scene-adapter';
+import { createTimelineLayout } from '../history/timelineLayout';
+import { yearToX } from '../history/space';
 
 vi.mock('@react-three/fiber', async importOriginal => ({ ...await importOriginal<typeof import('@react-three/fiber')>(), useThree: () => ({ size: { width: 1440, height: 900 } }) }));
 
 const callbacks = () => ({ onSelect: vi.fn(), onHover: vi.fn(), onTravelYear: vi.fn() });
+it('migrates a legacy restored camera through its calendar year before passing it to the rig', () => {
+  const initialCamera = { target: [yearToX(1911), 2, 1] as const, distance: 25 };
+  const { result } = renderHook(() => SceneContents({ events: historyEvents, initialCamera, selectedEvent: null, hoveredId: null, resetSignal: 0, selectionSignal: 0, reducedMotion: true, ...callbacks() }));
+  const rig = children(result.current).find(child => child.type === CameraRig);
+  expect(rig.props.initialCamera).toEqual({ ...initialCamera, target: [createTimelineLayout(historyEvents).yearToX(1911), 2, 1], timelineLayout: 'spaced-v1' });
+});
+it('keeps every production event separated along the chronology, including events in the same year', () => {
+  const events = compactEventsForScene(JSON.parse(readFileSync('public/history-content/generated/indexes/events.compact.json', 'utf8')), []);
+  const { result } = renderHook(() => SceneContents({ events, selectedEvent: null, hoveredId: null, resetSignal: 0, selectionSignal: 0, reducedMotion: true, ...callbacks() }));
+  const projection = children(result.current).find(child => child.type === SceneProjection);
+  const positions = projection.props.positions as ReadonlyMap<string, readonly number[]>;
+  const ordered = [...events].sort((a, b) => a.year - b.year || a.id.localeCompare(b.id));
+  expect(positions.size).toBe(1200);
+  for (let index = 1; index < ordered.length; index++) {
+    expect(positions.get(ordered[index].id)![0] - positions.get(ordered[index - 1].id)![0], `${ordered[index - 1].id} / ${ordered[index].id}`).toBeGreaterThanOrEqual(2.39);
+  }
+});
 it('ignores context loss from a removed canvas but reports loss on a live one', () => {
   const onUnavailable = vi.fn();
   const tree = HistoryScene({ events: [], selectedEvent: null, hoveredId: null, resetSignal: 0, selectionSignal: 0, reducedMotion: true, ...callbacks(), onUnavailable });

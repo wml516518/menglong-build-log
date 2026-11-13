@@ -178,7 +178,7 @@ export function HistoryGalaxyExperience() {
               })()
             : '拖动星河 · 选择历史光点'}</span>
         <div><i /><i /><i /></div>
-        <small>DRAG TO ORBIT · SCROLL TO TRAVEL</small>
+        <small>滚轮缩放 · Shift + 滚轮沿时间轴移动</small>
       </div>
 
       {selectedCompactEvent ? (
