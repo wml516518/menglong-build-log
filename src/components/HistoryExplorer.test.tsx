@@ -7,18 +7,19 @@ import type { CompactHistoryEventIndex } from '../history/content/schema';
 import { createSearchWorkerHandler } from '../history/search/search.worker';
 import type { SearchRequest, SearchResponse, SearchWorker } from '../history/search/protocol';
 import { legacyEventIds } from '../../tests/fixtures/historyArchives';
+import { productionFixture, representativeEventIds } from '../../tests/fixtures/productionHistory';
 
 const fixture = (path: string) => JSON.parse(readFileSync(`public/history-content/generated/${path}`, 'utf8'));
 const productionCount = fixture('manifest.json').eventCount;
 const place = { id: 'changan', name: '长安', modernName: '西安', aliases: [], historicalNames: [], coordinates: [108.9, 34.3], eventIds: ['zhenguan'] };
 const theme = { id: 'institutions', title: '制度的沿革与社会变迁专题', summary: '沿着制度理解历史。', eventIds: ['zhenguan'] };
 function testLoader(events?: CompactHistoryEventIndex[]) {
+  events ??= fixture('indexes/events.compact.json').filter((event: CompactHistoryEventIndex) => representativeEventIds.has(event.id)).map((event: CompactHistoryEventIndex) => event.id === 'zhenguan' ? { ...event, placeIds: ['changan'], themeIds: ['institutions'] } : event);
+  const eventIds = new Set(events.map(event => event.id));
   return createHistoryContentLoader({ baseUrl: '/content/', fetchImpl: async input => {
     const path = String(input).replace('/content/', '');
     const value = path.endsWith('places.compact.json') ? [place] : path.endsWith('themes.compact.json') ? [theme]
-      : path.endsWith('events.compact.json') ? (events ?? fixture(path).map((event: CompactHistoryEventIndex) => event.id === 'zhenguan' ? { ...event, placeIds: ['changan'], themeIds: ['institutions'] } : event)) : fixture(path);
-    if (events && path === 'manifest.json') { value.legacyEventIds = []; value.legacyEventCount = 0; value.structuredEventCount = events.length; value.coreEventCount = events.filter(event => event.detailLevel === 'core').length; value.basicEventCount = events.filter(event => event.detailLevel === 'basic').length; value.eventCount = events.length; value.periodCounts = Object.fromEntries(Object.keys(value.periodCounts).map(id => [id, events.filter(event => event.editorialPeriodId === id).length])); }
-    if (events && path.startsWith('eras/')) value.events = value.events.filter((event: { id: string }) => events.some(item => item.id === event.id));
+      : path.endsWith('events.compact.json') ? events : productionFixture(path, eventIds);
     return new Response(JSON.stringify(value));
   } });
 }
@@ -49,7 +50,11 @@ async function openApp(events?: CompactHistoryEventIndex[]) {
 function explorer() { return within(screen.queryByRole('complementary', { name: '历史探索器' }) ?? screen.getByRole('dialog', { name: '历史探索' })); }
 function checkbox(name: string) { return within(explorer().getByText(name, { selector: 'label > span, label > span > strong' }).closest('label')!).getByRole('checkbox', { name, exact: true }); }
 function timeline() { return within(screen.getByRole('region', { name: '二维历史时间轴' })); }
-function eventButton(title: string) { return timeline().getByRole('button', { name: new RegExp(`查看历史事件：.* ${title}$`) }); }
+function eventButton(title: string) {
+  const button = timeline().getByText(title, { selector: 'strong' }).closest('button')!;
+  expect(button).toHaveAccessibleName(new RegExp(`查看历史事件：.* ${title}$`));
+  return button;
+}
 function resultButtons() { return within(explorer().getByRole('list', { name: '搜索结果' })).getAllByRole('button'); }
 
 beforeEach(() => {
@@ -71,7 +76,7 @@ afterEach(() => { vi.useRealTimers(); vi.unstubAllGlobals(); });
 
 it('restores combined period, category, year and influence filters from the URL and dims every unmatched event', async () => {
   window.history.replaceState(null, '', '#/history-galaxy?era=tang&cat=war&from=700&to=800&min=5&keep=a&keep=b');
-  await openApp();
+  await openApp(productionFixture('indexes/events.compact.json'));
   expect(checkbox('战争')).toBeChecked();
   expect(explorer().getByRole('spinbutton', { name: '起始年份' })).toHaveValue(700);
   expect(explorer().getByRole('slider', { name: '最低影响力' })).toHaveValue('5');
@@ -117,7 +122,7 @@ it('keeps typing responsive and replaces the URL and ranked Chinese search only 
 
 it('focuses the exact searched event and retains the query while opening its archive', async () => {
   const user = userEvent.setup();
-  await openApp();
+  await openApp(productionFixture('indexes/events.compact.json'));
   await user.type(explorer().getByRole('searchbox', { name: '搜索历史' }), '贞观');
   await user.click(await explorer().findByRole('button', { name: '聚焦历史事件：627年 贞观之治' }));
   expect(screen.getByRole('dialog', { name: '贞观之治' })).toHaveFocus();

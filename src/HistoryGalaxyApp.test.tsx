@@ -3,10 +3,11 @@ import userEvent from '@testing-library/user-event';
 import HistoryGalaxyApp from './HistoryGalaxyApp';
 import { readFileSync } from 'node:fs';
 import { createHistoryContentLoader } from './history/content/loader';
+import { productionFixture, representativeEventIds } from '../tests/fixtures/productionHistory';
 
 const fixture = (path: string) => JSON.parse(readFileSync(`public/history-content/generated/${path}`, 'utf8'));
 const productionCount = fixture('manifest.json').eventCount;
-const testLoader = () => createHistoryContentLoader({ baseUrl: '/content/', fetchImpl: async input => new Response(JSON.stringify(fixture(String(input).replace('/content/', '')))) });
+const testLoader = (allEvents = false) => createHistoryContentLoader({ baseUrl: '/content/', fetchImpl: async input => new Response(JSON.stringify(productionFixture(String(input).replace('/content/', ''), allEvents ? undefined : representativeEventIds))) });
 const timeline = () => within(screen.getByRole('region', { name: '二维历史时间轴' }));
 
 describe('History Galaxy app', () => {
@@ -14,14 +15,14 @@ describe('History Galaxy app', () => {
     let broken = true;
     const loader = createHistoryContentLoader({ baseUrl: '/content/', fetchImpl: async input => {
       const path = String(input).replace('/content/', '');
-      return broken && path.endsWith('events.compact.json') ? new Response('', { status: 503 }) : new Response(JSON.stringify(fixture(path)));
+      return broken && path.endsWith('events.compact.json') ? new Response('', { status: 503 }) : new Response(JSON.stringify(productionFixture(path, representativeEventIds)));
     } });
     render(<HistoryGalaxyApp loader={loader} />);
     const alert = await screen.findByRole('alert');
     expect(alert.closest('[aria-label="历史内容状态"]')).not.toBeNull();
     broken = false;
     await userEvent.click(within(alert).getByRole('button', { name: '重试历史内容' }));
-    expect(await timeline().findAllByRole('button')).toHaveLength(productionCount);
+    expect(await timeline().findAllByRole('button')).toHaveLength(representativeEventIds.size);
   });
   it('provides a route back to the portfolio homepage', async () => {
     await act(async () => { render(<HistoryGalaxyApp loader={testLoader()} />); });
@@ -43,7 +44,7 @@ describe('History Galaxy app', () => {
   });
 
   it('provides all production historical events as accessible controls', async () => {
-    await act(async () => { render(<HistoryGalaxyApp loader={testLoader()} />); });
+    await act(async () => { render(<HistoryGalaxyApp loader={testLoader(true)} />); });
 
     expect(timeline().getAllByRole('button')).toHaveLength(productionCount);
     expect(timeline().getByRole('button', { name: '查看历史事件：627 年 — 649 年 贞观之治' })).toBeInTheDocument();
@@ -117,16 +118,20 @@ describe('History Galaxy app', () => {
 describe('compact content integration', () => {
   it('opens basic and core archives among all 1200 production events', async () => {
     const user = userEvent.setup();
-    await act(async () => { render(<HistoryGalaxyApp loader={testLoader()} />); });
+    await act(async () => { render(<HistoryGalaxyApp loader={testLoader(true)} />); });
     const events = timeline();
     expect(events.getAllByRole('button')).toHaveLength(1200);
     expect(screen.getByText('全部事件 1200')).toBeInTheDocument();
-    await user.click(events.getByRole('button', { name: /二里头都邑形成/ }));
+    const basicButton = events.getByText('二里头都邑形成', { selector: 'strong' }).closest('button')!;
+    expect(basicButton).toHaveAccessibleName(/二里头都邑形成/);
+    await user.click(basicButton);
     const basic = within(screen.getByRole('dialog', { name: '二里头都邑形成' }));
     expect(await basic.findByText('基础档案')).toBeInTheDocument();
     expect(basic.getByRole('link', { name: /完整/ })).toHaveAttribute('href', expect.stringContaining('/event/erlitou-urban-center'));
     await user.click(basic.getByRole('button', { name: '关闭故事' }));
-    await user.click(events.getByRole('button', { name: /贞观之治/ }));
+    const coreButton = events.getByText('贞观之治', { selector: 'strong' }).closest('button')!;
+    expect(coreButton).toHaveAccessibleName(/贞观之治/);
+    await user.click(coreButton);
     const core = within(screen.getByRole('dialog', { name: '贞观之治' }));
     expect(await core.findByText(/隋末战乱之后，统治者需要恢复生产与政治秩序/)).toBeInTheDocument();
     expect(core.getByRole('link', { name: /完整/ })).toHaveAttribute('href', expect.stringContaining('/event/zhenguan'));
@@ -168,7 +173,7 @@ describe('compact content integration', () => {
     const loader = createHistoryContentLoader({ baseUrl: '/content/', fetchImpl: async input => {
       const path = String(input).replace('/content/', '');
       if (broken && path === 'eras/tang.json') throw new Error('offline');
-      return new Response(JSON.stringify(fixture(path)));
+      return new Response(JSON.stringify(productionFixture(path, representativeEventIds)));
     } });
     const user = userEvent.setup();
     render(<HistoryGalaxyApp loader={loader} />);

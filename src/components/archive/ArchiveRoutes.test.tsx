@@ -1,12 +1,12 @@
-import { readFileSync } from 'node:fs';
 import { act, cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../../App';
 import { getHistoryReturnLocation, rememberHistoryLocation, restoreHistoryReturnLocation } from '../../routes';
 import { createHistoryContentLoader } from '../../history/content/loader';
 import { HISTORY_SESSION_KEY, loadHistorySession } from '../../history/session';
+import { productionFixture, representativeEventIds } from '../../../tests/fixtures/productionHistory';
 
-function fixtureLoader() {
+function fixtureLoader(allEvents = false) {
   const requests: string[] = [];
   let broken = false;
   let brokenIndex = false;
@@ -18,7 +18,7 @@ function fixtureLoader() {
     if (gate) await gate;
     if (brokenIndex && path.endsWith('events.compact.json')) throw new Error('offline');
     if (broken && path.startsWith('eras/')) throw new Error('offline');
-    return new Response(readFileSync(`public/history-content/generated/${path}`, 'utf8'));
+    return new Response(JSON.stringify(productionFixture(path, allEvents ? undefined : representativeEventIds)));
   } });
   return { loader, requests, breakEra: () => { broken = true; }, repair: () => { broken = false; brokenIndex = false; }, breakIndex: () => { brokenIndex = true; },
     pause: () => { gate = new Promise<void>(resolve => { paused = resolve; }); }, resume: () => { paused?.(); gate = undefined; } };
@@ -54,7 +54,7 @@ it.each([
   ['pan-geng-migration', '盘庚迁殷', true]
 ])('reads the production %s archive at its declared detail level', async (id, title, core) => {
   window.location.hash = `#/history-galaxy/event/${id}`;
-  render(<App historyLoader={fixtureLoader().loader} />);
+  render(<App historyLoader={fixtureLoader(true).loader} />);
   const heading = await screen.findByRole('heading', { level: 1, name: title });
   const archive = within(heading.closest('article')!);
   expect(archive.getByRole('heading', { name: '参考资料' })).toBeInTheDocument();

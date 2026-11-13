@@ -1,4 +1,4 @@
-import { act, render, screen, waitFor } from '@testing-library/react';
+import { act, render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { readFileSync } from 'node:fs';
 import HistoryGalaxyApp from './HistoryGalaxyApp';
@@ -13,6 +13,7 @@ vi.mock('@react-three/fiber', async importOriginal => ({
 }));
 function loader() { return createHistoryContentLoader({ baseUrl: '/content/', fetchImpl: async input => new Response(readFileSync(`public/history-content/generated/${String(input).replace('/content/', '')}`, 'utf8')) }); }
 const productionCount = JSON.parse(readFileSync('public/history-content/generated/manifest.json', 'utf8')).eventCount;
+beforeAll(async () => { await import('./scene/HistoryScene'); });
 beforeEach(() => {
   window.history.replaceState(null, '', '#/history-galaxy');
   vi.stubGlobal('WebGLRenderingContext', class {});
@@ -23,28 +24,31 @@ afterEach(() => { vi.restoreAllMocks(); vi.unstubAllGlobals(); });
 
 it('uses scene viewport membership to dim context without removing its events and updates it when the camera moves', async () => {
   const user = userEvent.setup();
-  render(<HistoryGalaxyApp loader={loader()} />);
+  await act(async () => { render(<HistoryGalaxyApp loader={loader()} />); });
   await waitFor(() => expect(boundary.scene?.events).toHaveLength(productionCount));
+  const controls = within(screen.getByRole('complementary', { name: '历史探索器' }));
   act(() => boundary.scene.onViewportChange(new Set(['zhenguan', 'kaiyuan'])));
-  await user.click(screen.getByRole('checkbox', { name: '仅当前视野' }));
+  await user.click(controls.getByRole('checkbox', { name: '仅当前视野' }));
   expect(new URLSearchParams(window.location.hash.split('?')[1]).get('view')).toBe('1');
   expect(boundary.scene.events).toHaveLength(productionCount);
   expect(boundary.scene.eventOpacities.get('zhenguan')).toBe(1);
   expect(boundary.scene.eventOpacities.get('anshi')).toBe(0.15);
-  expect(screen.getByRole('button', { name: '查看历史事件：755年 安史之乱' })).toHaveAttribute('data-match', 'false');
+  const contextEvent = screen.getByText('755年 安史之乱', { selector: 'button' });
+  expect(contextEvent).toHaveAccessibleName('查看历史事件：755年 安史之乱');
+  expect(contextEvent).toHaveAttribute('data-match', 'false');
   act(() => boundary.scene.onViewportChange(new Set(['anshi'])));
   expect(boundary.scene.eventOpacities.get('anshi')).toBe(1);
   expect(boundary.scene.eventOpacities.get('zhenguan')).toBe(0.15);
-  await user.click(screen.getByRole('button', { name: '清除全部筛选' }));
+  await user.click(controls.getByRole('button', { name: '清除全部筛选' }));
   expect([...boundary.scene.eventOpacities.values()].every(opacity => opacity === 1)).toBe(true);
 });
 
 it('sends ranked search targets to protection and the exact selected event to the camera flight boundary', async () => {
   const user = userEvent.setup();
-  render(<HistoryGalaxyApp loader={loader()} />);
+  await act(async () => { render(<HistoryGalaxyApp loader={loader()} />); });
   await waitFor(() => expect(boundary.scene?.events).toHaveLength(productionCount));
   await user.type(screen.getByRole('searchbox', { name: '搜索历史' }), '贞观');
-  const result = await screen.findByRole('button', { name: '聚焦历史事件：627年 贞观之治' });
+  const result = await within(screen.getByRole('complementary', { name: '历史探索器' })).findByRole('button', { name: '聚焦历史事件：627年 贞观之治' });
   expect(boundary.scene.searchTargetIds[0]).toBe('zhenguan');
   expect(boundary.scene.searchTargetIds).toContain('tang-zhenguan-law');
   expect(boundary.scene.eventOpacities.get('kaiyuan')).toBe(0.15);
@@ -56,7 +60,7 @@ it('sends ranked search targets to protection and the exact selected event to th
 
 it('restores camera and released offsets into WebGL and debounces changed state before a pagehide flush', async () => {
   localStorage.setItem('history-galaxy-session-v2', JSON.stringify({ version: 2, selectedId: 'zhenguan', camera: { target: [-12, 2, 1], distance: 24 }, fixedOffsets: { zhenguan: [1.2, -0.5], removed: [1, 1] } }));
-  render(<HistoryGalaxyApp loader={loader()} />);
+  await act(async () => { render(<HistoryGalaxyApp loader={loader()} />); });
   await waitFor(() => expect(boundary.scene?.events).toHaveLength(productionCount));
   expect(boundary.scene.initialCamera).toEqual({ target: [-12, 2, 1], distance: 24 });
   expect(boundary.scene.initialFixedOffsets).toEqual({ zhenguan: [1.2, -0.5] });
