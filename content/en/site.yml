@@ -58,15 +58,16 @@ projects:
     summary: 'Based on official Data Dragon data + sample strategy corpus: the Agent autonomously routes between structured queries and vector retrieval, and the chat page displays a collapsible tool-call trace.'
     title: LOL-RAG League of Legends Data Agent
   - githubUrl: 'https://github.com/wml516518/weekend-merge'
-    liveUrl: 'https://weekend-merge-wml516518.netlify.app'
+    liveUrl: 'https://weekendmerge.ailoong.net.cn'
     stack:
       - React
       - TypeScript
-      - Gemini Function Calling
-      - Netlify Functions
+      - DeepSeek Function Calling
+      - Node.js / SQLite
+      - Cloudflare Tunnel
       - Open-Meteo
     status: Live
-    summary: An observable two-person weekend planning Agent that generates three compromises and replans only affected stops after feedback.
+    summary: An observable 2–6 person weekend negotiation Agent where members submit preferences independently; DeepSeek uses controlled tool calls to generate three compromises and replans only affected stops after feedback.
     title: Weekend Merge
   - githubUrl: 'https://github.com/wml516518/menglong-build-log'
     liveUrl: 'https://menglong-build-log.netlify.app'
