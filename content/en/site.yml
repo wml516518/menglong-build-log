@@ -1,6 +1,6 @@
 _translation:
   policyVersion: 1
-  sourceHash: 79ae697ce49420036e9f8c85d4ab05c3d293c80220f443d204ff26971ba5efe3
+  sourceHash: dc849abaf2083fc94b634f6a245dc27d973af98b191a8a224368f209b9e90c1f
 about: 'I focus on full-stack development, AI products, and productivity tools. This site will document my portfolio roadmap, starting from a personal homepage and gradually expanding into deployable AI applications. I will also continuously record the technical choices and iteration process in real projects.'
 contact:
   - href: 'https://github.com/wml516518'
@@ -67,7 +67,7 @@ projects:
       - Cloudflare Tunnel
       - Open-Meteo
     status: Live
-    summary: An observable 2–6 person weekend negotiation Agent where members submit preferences independently; DeepSeek uses controlled tool calls to generate three compromises and replans only affected stops after feedback.
+    summary: 'Two-person to six-person weekend negotiation AI Agent, where members independently fill in preferences; DeepSeek generates three compromise plans through controlled tool calling, and after feedback, only reorders affected segments.'
     title: Weekend Merge
   - githubUrl: 'https://github.com/wml516518/menglong-build-log'
     liveUrl: 'https://menglong-build-log.netlify.app'

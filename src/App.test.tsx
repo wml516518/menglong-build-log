@@ -119,7 +119,7 @@ describe('App', () => {
     expect(within(englishCard).getByRole('link', { name: 'GitHub' }))
       .toHaveAttribute('href', 'https://github.com/wml516518/weekend-merge');
     expect(screen.getByText(
-      'An observable 2–6 person weekend negotiation Agent where members submit preferences independently through invite links; DeepSeek uses controlled tool calls to generate three compromise itineraries and replans only affected stops.'
+      'Two-person to six-person weekend negotiation AI Agent, where members independently fill in preferences; DeepSeek generates three compromise plans through controlled tool calling, and after feedback, only reorders affected segments.'
     )).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: '中' }));
