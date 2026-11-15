@@ -115,21 +115,21 @@ describe('App', () => {
     const projectSection = document.getElementById('projects')!;
     const englishCard = within(projectSection).getByRole('heading', { level: 3, name: 'Weekend Merge' }).closest('article')!;
     expect(within(englishCard).getByRole('link', { name: 'Live' }))
-      .toHaveAttribute('href', 'https://weekend-merge-wml516518.netlify.app');
+      .toHaveAttribute('href', 'https://weekendmerge.ailoong.net.cn');
     expect(within(englishCard).getByRole('link', { name: 'GitHub' }))
       .toHaveAttribute('href', 'https://github.com/wml516518/weekend-merge');
     expect(screen.getByText(
-      'An observable two-person weekend negotiation Agent that uses controlled tool calls to generate three compromise itineraries and locally replan only affected stops.'
+      'Two-person to six-person weekend negotiation AI Agent, where members independently fill in preferences; DeepSeek generates three compromise plans through controlled tool calling, and after feedback, only reorders affected segments.'
     )).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: '中' }));
 
     expect(screen.getAllByText('Weekend Merge / 周末共识局').length).toBeGreaterThanOrEqual(2);
     expect(screen.getByText(
-      '双人周末决策 Agent，通过可观察工具调用生成三套折中方案，并在否决后只重排受影响区段。'
+      '2–6 人周末协商 Agent，成员独立填写偏好，DeepSeek 通过受控工具调用生成三套折中方案，并在否决后只重排受影响区段。'
     )).toBeInTheDocument();
     expect(screen.getByText(
-      '一个面向双人周末协商的可观察 AI Agent，使用受控工具调用生成三套折中行程，并在否决地点后仅重排受影响区段。'
+      '面向 2–6 人周末协商的可观察 AI Agent，成员通过邀请链接独立填写偏好，DeepSeek 调用受控工具生成三套折中行程，并在否决地点后仅重排受影响区段。'
     )).toBeInTheDocument();
   });
 
