@@ -122,7 +122,7 @@ GitHub Actions 会在向 `main` 分支推送或提交 Pull Request 时自动执�
 
 仓库所有者可通过现有 Decap 内容后台使用 GitHub 账号登录，编辑中文主页、简历和 Build Log。保存后，Decap Turbo 会创建或更新 `cms/*` PR；GitHub Actions 自动生成英文、运行 CI、按已验证提交执行 squash merge。
 
-目前 CMS 的站点地址和 Decap Turbo 允许来源仍指向旧 Netlify 后台。迁移到正式域名后需要同步更新这些配置；这只是后台入口迁移，不改变中文唯一人工编辑源和 PR 审核流程。具体凭据与故障恢复见 [`docs/cms-operations.md`](docs/cms-operations.md)。
+CMS 的生产入口已迁到 <https://wml.ailoong.net.cn/admin/>，Decap Turbo 站点的后台地址也只允许该域名；这只是后台入口迁移，不改变中文唯一人工编辑源和 PR 审核流程。具体凭据与故障恢复见 [`docs/cms-operations.md`](docs/cms-operations.md)。
 
 - 只编辑 `content/zh/**`；`content/en/**` 是生成结果，不应手工修改。
 - 后台不提供绕过 CI 的直接发布，保存一次即可等待自动流程完成。
@@ -166,7 +166,7 @@ LOL RAG 在独立仓库构建并发布到 `/apps/lol-rag/`。Weekend Merge 保�
 
 CI 检查中英文内容、测试和两套构建，并上传各自的静态产物。只有启用 `SELF_HOST_DEPLOY_ENABLED=true` 并配置服务器凭据后，成功的 `main` push CI 才会触发自托管发布。每个应用使用自己的版本目录和 `current` 链接，主页发布不覆盖其他应用。
 
-当前线上已手工部署到 `wml.ailoong.net.cn`：主页、历史星河和 LOL RAG 均由 Nginx 从 `/srv/portfolio/static` 提供，AI Chat 与 LOL RAG 后端分别监听 `127.0.0.1:8001`、`8002`，公网入口由 Cloudflare Tunnel 转发。GitHub Actions 自动发布仍需配置服务器凭据和 `SELF_HOST_DEPLOY_ENABLED=true` 后启用。Nginx 路由、Cloudflare/HTTPS 配置说明见[部署手册](docs/deployment/single-domain.md)。`netlify.toml` 仅保留为迁移期间的旧平台配置。
+当前线上部署在 `wml.ailoong.net.cn`：主页、历史星河和 LOL RAG 均由 Nginx 从 `/srv/portfolio/static` 提供，AI Chat 与 LOL RAG 后端分别监听 `127.0.0.1:8001`、`8002`，公网入口由 Cloudflare Tunnel 转发。push 到 `main` 且 CI 通过后，`Deploy static sites` 会用 `SELF_HOST_DEPLOY_ENABLED=true` 自动发布静态站。Nginx 路由、Cloudflare/HTTPS 配置说明见[部署手册](docs/deployment/single-domain.md)。`netlify.toml` 仅保留为迁移期间的旧平台配置。
 
 ### Eat Card API
 
