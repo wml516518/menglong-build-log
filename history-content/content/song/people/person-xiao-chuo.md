@@ -9,6 +9,7 @@ deathYear: 1009
 roleIds: []
 eventIds:
   - chanyuan
+  - liao-empress-xiao-regency
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

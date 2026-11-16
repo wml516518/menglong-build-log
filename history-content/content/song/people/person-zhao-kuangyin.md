@@ -9,6 +9,7 @@ deathYear: 976
 roleIds: []
 eventIds:
   - chenqiao
+  - song-civil-military-separation
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

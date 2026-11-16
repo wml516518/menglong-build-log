@@ -12,6 +12,7 @@ import type { ScreenCluster } from '../history/clustering/protocol';
 import type { WorldPositions } from './ClusterField';
 import { getLodLevel, LOD_THRESHOLDS, type LodLevel } from '../history/lod';
 import { getEventPosition } from './EventStar';
+import { TIMELINE_LAYOUT_VERSION, type TimelineLayout } from '../history/timelineLayout';
 
 export interface ClusterFocusRequest { serial: number; cluster: ScreenCluster; memberPositions: readonly (readonly [number, number, number])[] }
 export type WheelIntent = { kind: 'zoom' } | { kind: 'travel'; delta: number };
@@ -56,20 +57,24 @@ interface CameraRigProps {
   controlsEnabled: boolean;
   focusRequest?: ClusterFocusRequest | null;
   onDistanceChange?: (distance: number) => void;
+  timeline?: TimelineLayout;
 }
 
-export function CameraRig({ selectedEvent, selectedPosition, resetSignal, selectionSignal, reducedMotion, onTravelYear, controlsEnabled, focusRequest, onDistanceChange, initialCamera, onCameraChange }: CameraRigProps) {
+export function CameraRig({ selectedEvent, selectedPosition, resetSignal, selectionSignal, reducedMotion, onTravelYear, controlsEnabled, focusRequest, onDistanceChange, initialCamera, onCameraChange, timeline }: CameraRigProps) {
+  const dateX = timeline?.yearToX ?? yearToX, calendarYear = timeline?.xToYear ?? xToYear;
+  const minX = timeline?.minX ?? -31, maxX = timeline?.maxX ?? 31;
   const camera = useThree((state) => state.camera);
+  const scene = useThree((state) => state.scene);
   const gl = useThree((state) => state.gl);
   const controls = useRef<OrbitControlsImpl>(null);
-  const travelTarget = useRef(initialCamera?.target ? new THREE.Vector3(...initialCamera.target) : selectedEvent ? new THREE.Vector3(...(selectedPosition ?? getEventPosition(selectedEvent))) : new THREE.Vector3(yearToX(DEFAULT_HISTORY_YEAR), 0.8, 0));
+  const travelTarget = useRef(initialCamera?.target ? new THREE.Vector3(...initialCamera.target) : selectedEvent ? new THREE.Vector3(...(selectedPosition ?? getEventPosition(selectedEvent))) : new THREE.Vector3(dateX(DEFAULT_HISTORY_YEAR), 0.8, 0));
   const initialized = useRef(false);
   const firstSelection = useRef(true);
   const lastReported = useRef<HistoryCameraState | null>(null);
   const sinceReport = useRef(0);
   const reportCamera = () => {
     if (!controls.current || !onCameraChange) return;
-    const state: HistoryCameraState = { target: controls.current.target.toArray() as [number, number, number], distance: camera.position.distanceTo(controls.current.target) };
+    const state: HistoryCameraState = { target: controls.current.target.toArray() as [number, number, number], distance: camera.position.distanceTo(controls.current.target), ...(timeline ? { timelineLayout: TIMELINE_LAYOUT_VERSION } : {}) };
     const previous = lastReported.current;
     if (previous && Math.abs(previous.distance - state.distance) < 0.001 && previous.target.every((value, index) => Math.abs(value - state.target[index]) < 0.001)) return;
     lastReported.current = state; sinceReport.current = 0;
@@ -80,7 +85,7 @@ export function CameraRig({ selectedEvent, selectedPosition, resetSignal, select
     return () => { window.removeEventListener('pagehide', reportCamera, true); reportCamera(); };
   }, [camera, onCameraChange]);
   const resetRequested = useRef(false);
-  const resetPosition = useRef(new THREE.Vector3(yearToX(DEFAULT_HISTORY_YEAR), 9.5, 26));
+  const resetPosition = useRef(new THREE.Vector3(dateX(DEFAULT_HISTORY_YEAR), 9.5, 26));
   const focusAnimation = useRef<ReturnType<typeof clusterCameraPose>>(undefined);
   const lastDistance = useRef<{ distance: number; level: LodLevel } | null>(null);
 
@@ -96,10 +101,10 @@ export function CameraRig({ selectedEvent, selectedPosition, resetSignal, select
   useEffect(() => {
     if (resetSignal === 0) return;
     focusAnimation.current = undefined;
-    travelTarget.current.set(yearToX(DEFAULT_HISTORY_YEAR), 0.8, 0);
+    travelTarget.current.set(dateX(DEFAULT_HISTORY_YEAR), 0.8, 0);
     resetRequested.current = true;
     onTravelYear(DEFAULT_HISTORY_YEAR);
-  }, [onTravelYear, resetSignal]);
+  }, [onTravelYear, resetSignal, dateX]);
 
   useEffect(() => {
     if (!focusRequest || !controls.current || !(camera instanceof THREE.PerspectiveCamera)) return;
@@ -123,14 +128,14 @@ export function CameraRig({ selectedEvent, selectedPosition, resetSignal, select
       event.preventDefault();
       event.stopImmediatePropagation();
       focusAnimation.current = undefined;
-      travelTarget.current.x = THREE.MathUtils.clamp(travelTarget.current.x + intent.delta * 0.012, -31, 31);
-      onTravelYear(xToYear(travelTarget.current.x));
+      travelTarget.current.x = THREE.MathUtils.clamp(travelTarget.current.x + intent.delta * 0.012, minX, maxX);
+      onTravelYear(calendarYear(travelTarget.current.x));
     };
     // Capture only timeline gestures before OrbitControls' wheel listener.
     // Ordinary vertical wheel reaches OrbitControls unchanged for dolly zoom.
     canvas.addEventListener('wheel', onWheel, { capture: true, passive: false });
     return () => canvas.removeEventListener('wheel', onWheel, true);
-  }, [controlsEnabled, gl, onTravelYear]);
+  }, [controlsEnabled, gl, onTravelYear, minX, maxX, calendarYear]);
 
   useFrame((_, delta) => {
     const factor = reducedMotion ? 1 : 1 - Math.exp(-delta * 2.8);
@@ -142,7 +147,7 @@ export function CameraRig({ selectedEvent, selectedPosition, resetSignal, select
           const distance = initialCamera.distance ?? Math.hypot(8.7, 26);
           camera.position.copy(travelTarget.current).add(new THREE.Vector3(0, 8.7, 26).normalize().multiplyScalar(distance));
           controls.current.update();
-          onTravelYear(xToYear(travelTarget.current.x));
+          onTravelYear(calendarYear(travelTarget.current.x));
         }
       }
       const pose = focusAnimation.current;
@@ -167,6 +172,10 @@ export function CameraRig({ selectedEvent, selectedPosition, resetSignal, select
       sinceReport.current += delta;
       if (!lastReported.current || sinceReport.current >= 0.2) reportCamera();
       const distance = camera.position.distanceTo(controls.current.target);
+      if (scene.fog instanceof THREE.Fog) {
+        scene.fog.near = Math.max(20, distance * 0.7);
+        scene.fog.far = Math.max(76, distance * 2.4);
+      }
       const previous = lastDistance.current;
       const level = getLodLevel(distance, previous?.level);
       if (!previous || level !== previous.level || Math.abs(distance - previous.distance) >= Math.max(0.5, previous.distance * 0.02)) {

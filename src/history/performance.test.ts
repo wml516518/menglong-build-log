@@ -1,7 +1,8 @@
 import { readFileSync, readdirSync } from 'node:fs';
+import { gzipSync } from 'node:zlib';
 import { describe, expect, it } from 'vitest';
 import { generateScaleFixture } from './fixtures/generateScaleFixture';
-import { categoryIds, eventIndexSchema, type HistoryEra } from './content/schema';
+import { categoryIds, eventIndexSchema, type CompactHistoryEventIndex, type HistoryEra } from './content/schema';
 import { clusterEvents } from './clustering/cluster';
 import { getVisibilityBudget, selectProtectedEventIds } from './lod';
 import { filterEvents, parseExplorerState } from './explorer/state';
@@ -11,6 +12,16 @@ import type { SearchResponse } from './search/protocol';
 
 const eras: HistoryEra[] = JSON.parse(readFileSync('public/history-content/generated/manifest.json', 'utf8')).eras;
 describe('encyclopedia scale', () => {
+  it('ships 1200 real records with 1000 basic and 200 core archives below 450 KiB gzip', () => {
+    const compact = readFileSync('public/history-content/generated/indexes/events.compact.json');
+    const events: CompactHistoryEventIndex[] = JSON.parse(compact.toString());
+    expect(events).toHaveLength(1200);
+    expect(new Set(events.map(event => event.id)).size).toBe(1200);
+    expect(events.filter(event => event.detailLevel === 'basic')).toHaveLength(1000);
+    expect(events.filter(event => event.detailLevel === 'core')).toHaveLength(200);
+    expect(new Set(events.map(event => event.editorialPeriodId)).size).toBe(9);
+    expect(gzipSync(compact).byteLength).toBeLessThan(450 * 1024);
+  });
   it('keeps synthetic fixture imports out of production source modules', () => {
     const production = readdirSync('src', { recursive: true }).map(String).filter(path => /\.(ts|tsx)$/.test(path) && !/\.test\./.test(path) && !path.startsWith('history/fixtures/'));
     for (const path of production) {

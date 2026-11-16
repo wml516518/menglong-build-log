@@ -7,9 +7,12 @@ birthYear: 1606
 deathYear: 1645
 roleIds: []
 eventIds:
+  - dashun-founded-xian
+  - late-ming-rebellions
   - ming-fall
 sourceIds:
   - bai-shouyi-general-history
+  - mingshi-zhonghua-1974
 yearPrecision: exact
 birthplaceId: null
 placeIds: []

@@ -8,9 +8,13 @@ birthYear: 1427
 deathYear: 1464
 roleIds: []
 eventIds:
+  - duomen-coup
   - tumu
+  - yingzong-returned
+  - zhengtong-accession
 sourceIds:
   - bai-shouyi-general-history
+  - mingshi-zhonghua-1974
 yearPrecision: exact
 birthplaceId: null
 placeIds: []

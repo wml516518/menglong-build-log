@@ -8,8 +8,10 @@ deathYear: 1598
 roleIds: []
 eventIds:
   - imjin-war
+  - imjin-war-end
 sourceIds:
   - bai-shouyi-general-history
+  - mingshi-zhonghua-1974
 yearPrecision: exact
 birthplaceId: null
 placeIds: []

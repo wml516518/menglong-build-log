@@ -8,6 +8,7 @@ deathYear: 1086
 roleIds: []
 eventIds:
   - wang-anshi
+  - song-baojia
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "abbasid-caliphate",
+    "name": "阿拔斯王朝",
+    "aliases": [],
+    "startYear": 750,
+    "endYear": 1258
+  },
+  {
+    "id": "baekje",
+    "name": "百济",
+    "aliases": [],
+    "startYear": -18,
+    "endYear": 660
+  },
+  {
+    "id": "cai",
+    "name": "蔡",
+    "aliases": [],
+    "startYear": -1046,
+    "endYear": -447
+  },
+  {
+    "id": "cao-wei",
+    "name": "曹魏",
+    "startYear": 220,
+    "endYear": 265,
+    "aliases": [
+      "魏（三国）"
+    ]
+  },
+  {
+    "id": "chen",
+    "name": "陈（南朝）",
+    "startYear": 557,
+    "endYear": 589,
+    "aliases": [
+      "南陈"
+    ]
+  },
+  {
+    "id": "chen-state",
+    "name": "陈",
+    "aliases": [],
+    "startYear": -1046,
+    "endYear": -478
+  },
+  {
+    "id": "cheng-han",
+    "name": "成汉",
+    "aliases": [],
+    "startYear": 304,
+    "endYear": 347
+  },
+  {
+    "id": "chu",
+    "name": "楚",
+    "startYear": -1030,
+    "endYear": -223,
+    "aliases": [
+      "楚国"
+    ]
+  },
+  {
+    "id": "chu-ten-kingdoms",
+    "name": "楚（十国）",
+    "startYear": 907,
+    "endYear": 951,
+    "aliases": [
+      "马楚"
+    ]
+  },
+  {
+    "id": "dai-viet-later-le",
+    "name": "大越后黎朝",
+    "startYear": 1428,
+    "endYear": 1789,
+    "aliases": [
+      "后黎朝"
+    ]
+  },
+  {
+    "id": "dali",
+    "name": "大理",
+    "startYear": 937,
+    "endYear": 1253,
+    "aliases": [
+      "大理国"
+    ]
+  },
+  {
+    "id": "dashun",
+    "name": "大顺",
+    "startYear": 1644,
+    "endYear": 1645,
+    "aliases": [
+      "李自成政权"
+    ]
+  },
+  {
+    "id": "dutch-republic",
+    "name": "荷兰共和国",
+    "startYear": 1588,
+    "endYear": 1795,
+    "aliases": []
+  },
+  {
+    "id": "dzungar-khanate",
+    "name": "准噶尔汗国",
+    "startYear": 1634,
+    "endYear": 1758,
+    "aliases": []
+  },
+  {
+    "id": "eastern-han",
+    "name": "东汉",
+    "startYear": 25,
+    "endYear": 220,
+    "aliases": [
+      "后汉"
+    ]
+  },
+  {
+    "id": "eastern-jin",
+    "name": "东晋",
+    "startYear": 317,
+    "endYear": 420,
+    "aliases": []
+  },
+  {
+    "id": "eastern-turkic",
+    "name": "东突厥",
+    "startYear": 583,
+    "endYear": 630,
+    "aliases": []
+  },
+  {
+    "id": "eastern-wei",
+    "name": "东魏",
+    "startYear": 534,
+    "endYear": 550,
+    "aliases": []
+  },
+  {
+    "id": "eastern-wu",
+    "name": "孙吴",
+    "startYear": 229,
+    "endYear": 280,
+    "aliases": [
+      "东吴"
+    ]
+  },
+  {
+    "id": "eastern-zhou",
+    "name": "东周",
+    "startYear": -770,
+    "endYear": -256,
+    "aliases": []
+  },
+  {
+    "id": "former-qin",
+    "name": "前秦",
+    "startYear": 351,
+    "endYear": 394,
+    "aliases": []
+  },
+  {
+    "id": "former-shu",
+    "name": "前蜀",
+    "startYear": 907,
+    "endYear": 925,
+    "aliases": []
+  },
+  {
+    "id": "former-yan",
+    "name": "前燕",
+    "aliases": [],
+    "startYear": 337,
+    "endYear": 370
+  },
+  {
+    "id": "french-second-empire",
+    "name": "法兰西第二帝国",
+    "aliases": [],
+    "startYear": 1852,
+    "endYear": 1870
+  },
+  {
+    "id": "goguryeo",
+    "name": "高句丽",
+    "aliases": [],
+    "startYear": -37,
+    "endYear": 668
+  },
+  {
+    "id": "gorkha-nepal",
+    "name": "尼泊尔廓尔喀王朝",
+    "startYear": 1768,
+    "endYear": 2008,
+    "aliases": []
+  },
+  {
+    "id": "goryeo",
+    "name": "高丽",
+    "startYear": 918,
+    "endYear": 1392,
+    "aliases": []
+  },
+  {
+    "id": "great-britain",
+    "name": "大不列颠王国",
+    "startYear": 1707,
+    "endYear": 1801,
+    "aliases": []
+  },
+  {
+    "id": "han-song",
+    "name": "韩林儿宋政权",
+    "startYear": 1355,
+    "endYear": 1366,
+    "aliases": [
+      "小明王政权"
+    ]
+  },
+  {
+    "id": "han-warring-states",
+    "name": "韩",
+    "startYear": -403,
+    "endYear": -230,
+    "aliases": [
+      "韩国"
+    ]
+  },
+  {
+    "id": "han-zhao",
+    "name": "汉赵",
+    "aliases": [],
+    "startYear": 304,
+    "endYear": 329
+  },
+  {
+    "id": "helian-xia",
+    "name": "夏（十六国）",
+    "aliases": [],
+    "startYear": 407,
+    "endYear": 431
+  },
+  {
+    "id": "ho-dai-viet",
+    "name": "大虞胡朝",
+    "startYear": 1400,
+    "endYear": 1407,
+    "aliases": [
+      "安南胡朝"
+    ]
+  },
+  {
+    "id": "japanese-empire",
+    "name": "日本帝国",
+    "aliases": [
+      "日本（明治至战后宪法施行前）"
+    ],
+    "startYear": 1868,
+    "endYear": 1947
+  },
+  {
+    "id": "jin-jurchen",
+    "name": "金",
+    "startYear": 1115,
+    "endYear": 1234,
+    "aliases": [
+      "女真金"
+    ]
+  },
+  {
+    "id": "jin-spring-autumn",
+    "name": "晋",
+    "aliases": [],
+    "startYear": -1033,
+    "endYear": -376
+  },
+  {
+    "id": "jingnan",
+    "name": "荆南",
+    "startYear": 924,
+    "endYear": 963,
+    "aliases": [
+      "南平"
+    ]
+  },
+  {
+    "id": "joseon",
+    "name": "朝鲜王朝",
+    "startYear": 1392,
+    "endYear": 1910,
+    "aliases": [
+      "李氏朝鲜"
+    ]
+  },
+  {
+    "id": "jurchen-later-jin",
+    "name": "女真后金",
+    "startYear": 1616,
+    "endYear": 1636,
+    "aliases": [
+      "爱新国"
+    ]
+  },
+  {
+    "id": "kamakura-japan",
+    "name": "镰仓幕府",
+    "startYear": 1185,
+    "endYear": 1333,
+    "aliases": [
+      "日本（镰仓时代）"
+    ]
+  },
+  {
+    "id": "konbaung-burma",
+    "name": "缅甸贡榜王朝",
+    "startYear": 1752,
+    "endYear": 1885,
+    "aliases": []
+  },
+  {
+    "id": "later-han",
+    "name": "后汉（五代）",
+    "startYear": 947,
+    "endYear": 951,
+    "aliases": []
+  },
+  {
+    "id": "later-jin",
+    "name": "后晋",
+    "startYear": 936,
+    "endYear": 947,
+    "aliases": []
+  },
+  {
+    "id": "later-jin-jurchen",
+    "name": "后金",
+    "startYear": 1616,
+    "endYear": 1636,
+    "aliases": []
+  },
+  {
+    "id": "later-liang",
+    "name": "后梁",
+    "startYear": 907,
+    "endYear": 923,
+    "aliases": []
+  },
+  {
+    "id": "later-qin",
+    "name": "后秦",
+    "aliases": [],
+    "startYear": 384,
+    "endYear": 417
+  },
+  {
+    "id": "later-shu",
+    "name": "后蜀",
+    "startYear": 934,
+    "endYear": 965,
+    "aliases": []
+  },
+  {
+    "id": "later-tang",
+    "name": "后唐",
+    "startYear": 923,
+    "endYear": 936,
+    "aliases": []
+  },
+  {
+    "id": "later-yan",
+    "name": "后燕",
+    "aliases": [],
+    "startYear": 384,
+    "endYear": 407
+  },
+  {
+    "id": "later-zhao",
+    "name": "后赵",
+    "aliases": [],
+    "startYear": 319,
+    "endYear": 351
+  },
+  {
+    "id": "later-zhou",
+    "name": "后周",
+    "startYear": 951,
+    "endYear": 960,
+    "aliases": []
+  },
+  {
+    "id": "liang",
+    "name": "梁（南朝）",
+    "startYear": 502,
+    "endYear": 557,
+    "aliases": [
+      "南梁"
+    ]
+  },
+  {
+    "id": "liao",
+    "name": "辽",
+    "startYear": 916,
+    "endYear": 1125,
+    "aliases": [
+      "契丹国"
+    ]
+  },
+  {
+    "id": "liu-song",
+    "name": "刘宋",
+    "startYear": 420,
+    "endYear": 479,
+    "aliases": [
+      "南朝宋"
+    ]
+  },
+  {
+    "id": "lu",
+    "name": "鲁",
+    "aliases": [],
+    "startYear": -1043,
+    "endYear": -256
+  },
+  {
+    "id": "majapahit",
+    "name": "满者伯夷",
+    "startYear": 1293,
+    "endYear": 1527,
+    "aliases": [
+      "麻喏巴歇"
+    ]
+  },
+  {
+    "id": "min",
+    "name": "闽",
+    "startYear": 909,
+    "endYear": 945,
+    "aliases": []
+  },
+  {
+    "id": "ming",
+    "name": "明",
+    "startYear": 1368,
+    "endYear": 1644,
+    "aliases": [
+      "明朝"
+    ]
+  },
+  {
+    "id": "ming-xia",
+    "name": "明夏",
+    "startYear": 1362,
+    "endYear": 1371,
+    "aliases": [
+      "大夏（明升）"
+    ]
+  },
+  {
+    "id": "mongol-empire",
+    "name": "大蒙古国",
+    "startYear": 1206,
+    "endYear": 1271,
+    "aliases": [
+      "蒙古帝国（元建号前）"
+    ]
+  },
+  {
+    "id": "muromachi-japan",
+    "name": "室町幕府",
+    "startYear": 1336,
+    "endYear": 1573,
+    "aliases": [
+      "日本室町时代"
+    ]
+  },
+  {
+    "id": "nanzhao",
+    "name": "南诏",
+    "aliases": [],
+    "startYear": 738,
+    "endYear": 902
+  },
+  {
+    "id": "northern-han",
+    "name": "北汉",
+    "startYear": 951,
+    "endYear": 979,
+    "aliases": []
+  },
+  {
+    "id": "northern-liang",
+    "name": "北凉",
+    "aliases": [],
+    "startYear": 397,
+    "endYear": 439
+  },
+  {
+    "id": "northern-qi",
+    "name": "北齐",
+    "startYear": 550,
+    "endYear": 577,
+    "aliases": []
+  },
+  {
+    "id": "northern-song",
+    "name": "北宋",
+    "startYear": 960,
+    "endYear": 1127,
+    "aliases": []
+  },
+  {
+    "id": "northern-wei",
+    "name": "北魏",
+    "startYear": 386,
+    "endYear": 534,
+    "aliases": []
+  },
+  {
+    "id": "northern-yan",
+    "name": "北燕",
+    "aliases": [],
+    "startYear": 407,
+    "endYear": 436
+  },
+  {
+    "id": "northern-yuan",
+    "name": "北元",
+    "startYear": 1368,
+    "endYear": 1635,
+    "aliases": [
+      "蒙古大汗政权"
+    ]
+  },
+  {
+    "id": "northern-zhou",
+    "name": "北周",
+    "startYear": 557,
+    "endYear": 581,
+    "aliases": []
+  },
+  {
+    "id": "oirat",
+    "name": "瓦剌",
+    "startYear": 1399,
+    "endYear": 1635,
+    "aliases": [
+      "卫拉特"
+    ]
+  },
+  {
+    "id": "papal-states",
+    "name": "教皇国",
+    "startYear": 756,
+    "endYear": 1870,
+    "aliases": [
+      "罗马教廷"
+    ]
+  },
+  {
+    "id": "peoples-republic-china",
+    "name": "中华人民共和国",
+    "aliases": [],
+    "startYear": 1949,
+    "endYear": 9999
+  },
+  {
+    "id": "portuguese-empire",
+    "name": "葡萄牙帝国",
+    "startYear": 1415,
+    "endYear": 1999,
+    "aliases": [
+      "葡萄牙海外帝国"
+    ]
+  },
+  {
+    "id": "qi-jiang",
+    "name": "齐（姜齐）",
+    "startYear": -1046,
+    "endYear": -386,
+    "aliases": [
+      "姜齐"
+    ]
+  },
+  {
+    "id": "qi-tian",
+    "name": "齐（田齐）",
+    "startYear": -386,
+    "endYear": -221,
+    "aliases": [
+      "田齐"
+    ]
+  },
+  {
+    "id": "qin",
+    "name": "秦",
+    "startYear": -221,
+    "endYear": -207,
+    "aliases": [
+      "秦朝"
+    ]
+  },
+  {
+    "id": "qin-state",
+    "name": "秦国",
+    "aliases": [],
+    "startYear": -770,
+    "endYear": -221
+  },
+  {
+    "id": "qing",
+    "name": "清",
+    "startYear": 1636,
+    "endYear": 1912,
+    "aliases": [
+      "清朝"
+    ]
+  },
+  {
+    "id": "republic-of-china",
+    "name": "中华民国（大陆时期）",
+    "startYear": 1912,
+    "endYear": 1949,
+    "aliases": [
+      "民国大陆时期"
+    ]
+  },
+  {
+    "id": "rouran",
+    "name": "柔然",
+    "aliases": [],
+    "startYear": 330,
+    "endYear": 555
+  },
+  {
+    "id": "russian-empire",
+    "name": "俄罗斯帝国",
+    "startYear": 1721,
+    "endYear": 1917,
+    "aliases": []
+  },
+  {
+    "id": "shang",
+    "name": "商",
+    "startYear": -1600,
+    "endYear": -1046,
+    "aliases": [
+      "商朝",
+      "殷"
+    ]
+  },
+  {
+    "id": "shu-han",
+    "name": "蜀汉",
+    "startYear": 221,
+    "endYear": 263,
+    "aliases": [
+      "蜀"
+    ]
+  },
+  {
+    "id": "silla",
+    "name": "新罗",
+    "aliases": [],
+    "startYear": -57,
+    "endYear": 935
+  },
+  {
+    "id": "singhasari",
+    "name": "信诃沙里王国",
+    "startYear": 1222,
+    "endYear": 1292,
+    "aliases": [
+      "爪哇信诃沙里"
+    ]
+  },
+  {
+    "id": "song-state",
+    "name": "宋",
+    "aliases": [],
+    "startYear": -1040,
+    "endYear": -286
+  },
+  {
+    "id": "southern-han",
+    "name": "南汉",
+    "startYear": 917,
+    "endYear": 971,
+    "aliases": []
+  },
+  {
+    "id": "southern-ming",
+    "name": "南明",
+    "startYear": 1644,
+    "endYear": 1662,
+    "aliases": []
+  },
+  {
+    "id": "southern-qi",
+    "name": "南齐",
+    "startYear": 479,
+    "endYear": 502,
+    "aliases": []
+  },
+  {
+    "id": "southern-song",
+    "name": "南宋",
+    "startYear": 1127,
+    "endYear": 1279,
+    "aliases": []
+  },
+  {
+    "id": "southern-tang",
+    "name": "南唐",
+    "startYear": 937,
+    "endYear": 975,
+    "aliases": []
+  },
+  {
+    "id": "southern-yan",
+    "name": "南燕",
+    "aliases": [],
+    "startYear": 398,
+    "endYear": 410
+  },
+  {
+    "id": "sui",
+    "name": "隋",
+    "startYear": 581,
+    "endYear": 618,
+    "aliases": [
+      "隋朝"
+    ]
+  },
+  {
+    "id": "taiping-heavenly-kingdom",
+    "name": "太平天国",
+    "startYear": 1851,
+    "endYear": 1864,
+    "aliases": []
+  },
+  {
+    "id": "tang",
+    "name": "唐",
+    "startYear": 618,
+    "endYear": 907,
+    "aliases": [
+      "唐朝"
+    ]
+  },
+  {
+    "id": "tay-son-vietnam",
+    "name": "越南西山朝",
+    "startYear": 1778,
+    "endYear": 1802,
+    "aliases": []
+  },
+  {
+    "id": "tianwan",
+    "name": "天完",
+    "startYear": 1351,
+    "endYear": 1360,
+    "aliases": [
+      "徐寿辉政权"
+    ]
+  },
+  {
+    "id": "toyotomi-japan",
+    "name": "丰臣政权",
+    "startYear": 1585,
+    "endYear": 1600,
+    "aliases": [
+      "日本丰臣时代"
+    ]
+  },
+  {
+    "id": "tran-dai-viet",
+    "name": "陈朝大越",
+    "startYear": 1225,
+    "endYear": 1400,
+    "aliases": [
+      "安南陈朝"
+    ]
+  },
+  {
+    "id": "tsardom-russia",
+    "name": "俄罗斯沙皇国",
+    "startYear": 1547,
+    "endYear": 1721,
+    "aliases": []
+  },
+  {
+    "id": "tubo",
+    "name": "吐蕃",
+    "startYear": 618,
+    "endYear": 842,
+    "aliases": [
+      "吐蕃王朝"
+    ]
+  },
+  {
+    "id": "tungning",
+    "name": "台湾郑氏政权",
+    "startYear": 1661,
+    "endYear": 1683,
+    "aliases": []
+  },
+  {
+    "id": "united-kingdom",
+    "name": "英国",
+    "startYear": 1801,
+    "endYear": 9999,
+    "aliases": []
+  },
+  {
+    "id": "uyghur-khaganate",
+    "name": "回鹘汗国",
+    "startYear": 744,
+    "endYear": 840,
+    "aliases": [
+      "回纥汗国"
+    ]
+  },
+  {
+    "id": "wei-spring-autumn",
+    "name": "卫",
+    "aliases": [],
+    "startYear": -1040,
+    "endYear": -209
+  },
+  {
+    "id": "wei-warring-states",
+    "name": "魏（战国）",
+    "startYear": -403,
+    "endYear": -225,
+    "aliases": [
+      "魏国（战国）"
+    ]
+  },
+  {
+    "id": "western-han",
+    "name": "西汉",
+    "startYear": -202,
+    "endYear": 8,
+    "aliases": [
+      "前汉"
+    ]
+  },
+  {
+    "id": "western-jin",
+    "name": "西晋",
+    "startYear": 265,
+    "endYear": 316,
+    "aliases": []
+  },
+  {
+    "id": "western-liao",
+    "name": "西辽",
+    "startYear": 1124,
+    "endYear": 1218,
+    "aliases": []
+  },
+  {
+    "id": "western-turkic",
+    "name": "西突厥",
+    "startYear": 583,
+    "endYear": 657,
+    "aliases": []
+  },
+  {
+    "id": "western-wei",
+    "name": "西魏",
+    "startYear": 535,
+    "endYear": 557,
+    "aliases": []
+  },
+  {
+    "id": "western-xia",
+    "name": "西夏",
+    "startYear": 1038,
+    "endYear": 1227,
+    "aliases": []
+  },
+  {
+    "id": "western-zhou",
+    "name": "西周",
+    "startYear": -1046,
+    "endYear": -771,
+    "aliases": []
+  },
+  {
+    "id": "wu-spring-autumn",
+    "name": "吴",
+    "aliases": [],
+    "startYear": -585,
+    "endYear": -473
+  },
+  {
+    "id": "wu-ten-kingdoms",
+    "name": "吴（十国）",
+    "startYear": 902,
+    "endYear": 937,
+    "aliases": [
+      "杨吴"
+    ]
+  },
+  {
+    "id": "wu-zhou",
+    "name": "武周",
+    "startYear": 690,
+    "endYear": 705,
+    "aliases": []
+  },
+  {
+    "id": "wuyue",
+    "name": "吴越",
+    "startYear": 907,
+    "endYear": 978,
+    "aliases": []
+  },
+  {
+    "id": "xia",
+    "name": "夏",
+    "startYear": -2070,
+    "endYear": -1600,
+    "aliases": [
+      "夏朝"
+    ]
+  },
+  {
+    "id": "xin",
+    "name": "新",
+    "startYear": 9,
+    "endYear": 23,
+    "aliases": [
+      "新朝"
+    ]
+  },
+  {
+    "id": "xiongnu",
+    "name": "匈奴",
+    "startYear": -209,
+    "endYear": 48,
+    "aliases": [
+      "匈奴汗国（分裂前）"
+    ]
+  },
+  {
+    "id": "yan",
+    "name": "燕",
+    "startYear": -1046,
+    "endYear": -222,
+    "aliases": [
+      "燕国"
+    ]
+  },
+  {
+    "id": "yuan",
+    "name": "元",
+    "startYear": 1271,
+    "endYear": 1368,
+    "aliases": [
+      "元朝"
+    ]
+  },
+  {
+    "id": "yue",
+    "name": "越",
+    "aliases": [],
+    "startYear": -500,
+    "endYear": -306
+  },
+  {
+    "id": "zhang-zhou",
+    "name": "张士诚周政权",
+    "startYear": 1354,
+    "endYear": 1367,
+    "aliases": [
+      "大周（张士诚）"
+    ]
+  },
+  {
+    "id": "zhao",
+    "name": "赵",
+    "startYear": -403,
+    "endYear": -228,
+    "aliases": [
+      "赵国"
+    ]
+  },
+  {
+    "id": "zheng",
+    "name": "郑",
+    "aliases": [],
+    "startYear": -806,
+    "endYear": -375
+  }
+]

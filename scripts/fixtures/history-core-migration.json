@@ -1,0 +1,4642 @@
+{
+  "events": [
+    {
+      "aliases": [],
+      "background": "郑和率领庞大船队自南京、太仓等地出发，遍访东南亚、南亚、阿拉伯半岛和东非沿岸。",
+      "categories": [
+        "diplomacy",
+        "economy"
+      ],
+      "causes": [
+        "明朝国家力量与海上交流需求支持大规模远航。"
+      ],
+      "childIds": [],
+      "color": "#d76b4d",
+      "course": [
+        {
+          "description": "郑和率领庞大船队自南京、太仓等地出发，遍访东南亚、南亚、阿拉伯半岛和东非沿岸。",
+          "title": "郑和下西洋",
+          "year": 1405
+        }
+      ],
+      "endYear": 1433,
+      "eraId": "ming",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "zheng-he",
+      "impacts": [
+        {
+          "dimension": "diplomacy",
+          "text": "航行展示了明代造船与组织能力，也通过贸易、册封和外交扩大联系，留下跨海交流的鲜明印记。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          1.8,
+          0.8
+        ]
+      },
+      "parentId": null,
+      "period": "明代",
+      "personIds": [
+        "person-zheng-he",
+        "person-zhu-di",
+        "person-wang-jinghong"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "航行展示了明代造船与组织能力，也通过贸易、册封和外交扩大联系，留下跨海交流的鲜明印记。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1405,
+      "summary": "大型船队七下西洋，连接亚洲与非洲海域。",
+      "themeIds": [],
+      "title": "郑和下西洋",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "明英宗亲征瓦剌，在土木堡遭遇惨败并被俘。",
+      "categories": [
+        "war",
+        "politics"
+      ],
+      "causes": [
+        "明朝与瓦剌的冲突及朝廷军事决策促成亲征。"
+      ],
+      "childIds": [],
+      "color": "#cc5944",
+      "course": [
+        {
+          "description": "于谦等人拥立景帝、组织北京防御，避免了都城失守。",
+          "title": "土木堡之变",
+          "year": 1449
+        }
+      ],
+      "endYear": 1449,
+      "eraId": "ming",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "tumu",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "事件暴露军事指挥与宫廷决策问题，也引出之后夺门之变等一系列权力震荡。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -1.4,
+          -0.9
+        ]
+      },
+      "parentId": null,
+      "period": "明代",
+      "personIds": [
+        "person-zhu-qizhen",
+        "person-yu-qian",
+        "person-esen"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "事件暴露军事指挥与宫廷决策问题，也引出之后夺门之变等一系列权力震荡。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1449,
+      "summary": "皇帝被俘，北京保卫战重塑明朝政治。",
+      "themeIds": [],
+      "title": "土木堡之变",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "张居正主政期间考成官吏、清丈土地，并推动一条鞭法，将多项赋役折银归并征收。",
+      "categories": [
+        "institution",
+        "economy"
+      ],
+      "causes": [
+        "晚明财政及行政问题推动赋役与官僚考核改革。"
+      ],
+      "childIds": [],
+      "color": "#c98a55",
+      "course": [
+        {
+          "description": "改革短期改善财政和行政效率，但也依赖强势政治支持。",
+          "title": "张居正改革",
+          "year": 1581
+        }
+      ],
+      "endYear": 1582,
+      "eraId": "ming",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "zhang-juzheng",
+      "impacts": [
+        {
+          "dimension": "institution",
+          "text": "其身后政策与评价反复，折射晚明制度困境。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          1.7,
+          0.2
+        ]
+      },
+      "parentId": null,
+      "period": "明代",
+      "personIds": [
+        "person-zhang-juzheng",
+        "person-zhu-yijun",
+        "person-qi-jiguang"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "其身后政策与评价反复，折射晚明制度困境。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1581,
+      "summary": "一条鞭法等举措整顿财政与行政。",
+      "themeIds": [],
+      "title": "张居正改革",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "日本丰臣政权出兵朝鲜后，明朝应请求派军援助。",
+      "categories": [
+        "war",
+        "diplomacy"
+      ],
+      "causes": [
+        "日本丰臣政权侵入朝鲜，朝鲜请求明朝援助。"
+      ],
+      "childIds": [],
+      "color": "#be654d",
+      "course": [
+        {
+          "description": "战争延续多年，陆海战场交错，最终日军撤退。",
+          "title": "日军撤退",
+          "year": 1598
+        }
+      ],
+      "endYear": 1598,
+      "eraId": "ming",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "imjin-war",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "明朝承担了沉重财政与军事消耗，朝鲜遭受严重破坏，日本国内权力格局也随之变化。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -0.7,
+          1.3
+        ]
+      },
+      "parentId": null,
+      "period": "明代",
+      "personIds": [
+        "person-zhu-yijun",
+        "person-li-rusong",
+        "person-deng-zilong"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "明朝承担了沉重财政与军事消耗，朝鲜遭受严重破坏，日本国内权力格局也随之变化。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1592,
+      "summary": "明军入朝作战，东亚秩序经历巨大冲击。",
+      "themeIds": [],
+      "title": "万历援朝",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "林则徐在广东禁烟后，英国以军事力量发动战争。",
+      "categories": [
+        "war",
+        "diplomacy"
+      ],
+      "causes": [
+        "鸦片贸易、禁烟与英国扩张政策使中英冲突升级。"
+      ],
+      "childIds": [],
+      "color": "#df6148",
+      "course": [
+        {
+          "description": "清政府战败并签订《南京条约》，通商口岸、关税与领土问题改变了原有对外秩序。",
+          "title": "签订南京条约",
+          "year": 1842
+        }
+      ],
+      "endYear": 1842,
+      "eraId": "modern",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "opium-war",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "战争暴露制度与技术差距，也推动中国人重新认识世界。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          1.8,
+          0.4
+        ]
+      },
+      "parentId": null,
+      "period": "中国近代",
+      "personIds": [
+        "person-lin-zexu",
+        "person-minning",
+        "person-guan-tianpei"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "战争暴露制度与技术差距，也推动中国人重新认识世界。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1840,
+      "summary": "战争与条约体系开启中国近代历史转折。",
+      "themeIds": [],
+      "title": "鸦片战争",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "太平军自广西金田起义，定都天京并控制长江中下游大片地区。",
+      "categories": [
+        "war",
+        "society"
+      ],
+      "causes": [
+        "社会经济困难与宗教政治动员推动起义。"
+      ],
+      "childIds": [],
+      "color": "#cf4e39",
+      "course": [
+        {
+          "description": "清朝依靠地方团练和湘淮军逐步反攻。",
+          "title": "太平天国",
+          "year": 1851
+        }
+      ],
+      "endYear": 1864,
+      "eraId": "modern",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "taiping",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "战争造成巨大人口与经济损失，也促使地方军事、财政力量上升，改变晚清权力结构。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -1.4,
+          -0.7
+        ]
+      },
+      "parentId": null,
+      "period": "中国近代",
+      "personIds": [
+        "person-hong-xiuquan",
+        "person-zeng-guofan",
+        "person-li-xiucheng"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "战争造成巨大人口与经济损失，也促使地方军事、财政力量上升，改变晚清权力结构。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1851,
+      "summary": "持续十余年的大规模战争席卷南方。",
+      "themeIds": [],
+      "title": "太平天国",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "部分清朝官员推动兵工厂、船政、矿务、电报与新式学堂建设，并派遣留学生出国。",
+      "categories": [
+        "economy",
+        "science"
+      ],
+      "causes": [
+        "内外战争暴露军事技术与组织问题，部分官员主张学习西方技术。"
+      ],
+      "childIds": [],
+      "color": "#78a9b5",
+      "course": [
+        {
+          "description": "他们希望在维护既有政治秩序的同时学习西方技术。",
+          "title": "洋务运动",
+          "year": 1861
+        }
+      ],
+      "endYear": 1895,
+      "eraId": "modern",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "self-strengthening",
+      "impacts": [
+        {
+          "dimension": "economy",
+          "text": "洋务事业成果有限却培养了近代企业、人才与工业基础。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          1.2,
+          1.1
+        ]
+      },
+      "parentId": null,
+      "period": "中国近代",
+      "personIds": [
+        "person-zeng-guofan",
+        "person-li-hongzhang",
+        "person-zuo-zongtang"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "洋务事业成果有限却培养了近代企业、人才与工业基础。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1861,
+      "summary": "以自强求富为目标兴办近代工业与教育。",
+      "themeIds": [],
+      "title": "洋务运动",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "中日围绕朝鲜局势爆发战争，北洋海军与清军相继失利。",
+      "categories": [
+        "war",
+        "diplomacy"
+      ],
+      "causes": [
+        "日本对朝鲜扩张与清朝对朝政策发生冲突。"
+      ],
+      "childIds": [],
+      "color": "#d6503c",
+      "course": [
+        {
+          "description": "《马关条约》带来割地、赔款与开放设厂等后果。",
+          "title": "签订马关条约",
+          "year": 1895
+        }
+      ],
+      "endYear": 1895,
+      "eraId": "modern",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "sino-japanese-war",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "战败打破洋务自强的信心，促使更多知识分子转向制度改革与民族救亡。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -1.7,
+          0.3
+        ]
+      },
+      "parentId": null,
+      "period": "中国近代",
+      "personIds": [
+        "person-deng-shichang",
+        "person-li-hongzhang",
+        "person-zaitian"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "战败打破洋务自强的信心，促使更多知识分子转向制度改革与民族救亡。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1894,
+      "summary": "海陆战败震动社会，改革呼声急剧上升。",
+      "themeIds": [],
+      "title": "甲午战争",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "维新人士推动光绪帝发布改革诏令，涉及教育、行政、经济和军事。",
+      "categories": [
+        "institution",
+        "thought"
+      ],
+      "causes": [
+        "甲午战败后的危机促使维新人士呼吁制度改革。"
+      ],
+      "childIds": [],
+      "color": "#d7a455",
+      "course": [
+        {
+          "description": "百日之后，保守力量发动政变，核心政策被废止，多名维新人士遇害或流亡。",
+          "title": "戊戌变法",
+          "year": 1898
+        }
+      ],
+      "endYear": 1898,
+      "eraId": "modern",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "hundred-days",
+      "impacts": [
+        {
+          "dimension": "institution",
+          "text": "其失败仍传播了变法、民权与新学思想。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          1.3,
+          -1
+        ]
+      },
+      "parentId": null,
+      "period": "中国近代",
+      "personIds": [
+        "person-zaitian",
+        "person-kang-youwei",
+        "person-liang-qichao"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "其失败仍传播了变法、民权与新学思想。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1898,
+      "summary": "短暂的制度改革尝试在政变中终止。",
+      "themeIds": [],
+      "title": "戊戌变法",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "华北民间组织以扶清灭洋为口号发展，攻击教会与外国势力。",
+      "categories": [
+        "society",
+        "diplomacy"
+      ],
+      "causes": [
+        "列强侵略、教案与地方社会矛盾推动民间排外运动。"
+      ],
+      "childIds": [],
+      "color": "#bd4939",
+      "course": [
+        {
+          "description": "清廷态度反复，八国联军随后攻占北京。",
+          "title": "义和团运动",
+          "year": 1900
+        }
+      ],
+      "endYear": 1901,
+      "eraId": "modern",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "boxer",
+      "impacts": [
+        {
+          "dimension": "society",
+          "text": "《辛丑条约》带来巨额赔款和主权损失，晚清改革与政治危机进一步加速。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          -0.9,
+          1.2
+        ]
+      },
+      "parentId": null,
+      "period": "中国近代",
+      "personIds": [
+        "person-cixi",
+        "person-zhao-sanduo",
+        "person-nie-shicheng"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "《辛丑条约》带来巨额赔款和主权损失，晚清改革与政治危机进一步加速。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1900,
+      "summary": "民间排外运动与列强入侵交织升级。",
+      "themeIds": [],
+      "title": "义和团运动",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "武昌新军起义后，多省相继宣布独立。",
+      "categories": [
+        "politics",
+        "thought"
+      ],
+      "causes": [
+        "清末危机、革命组织活动与新军起义相互作用。"
+      ],
+      "childIds": [],
+      "color": "#e0aa4f",
+      "course": [
+        {
+          "description": "革命力量与北洋集团谈判，清帝退位，中华民国建立。",
+          "title": "清帝退位与民国建立",
+          "year": 1912
+        }
+      ],
+      "endYear": 1912,
+      "eraId": "modern",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "xinhai",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "两千余年的皇帝制度由此终结，但国家统一、权力结构与社会转型的难题并未随之消失。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          1.8,
+          0.5
+        ]
+      },
+      "parentId": null,
+      "period": "中国近代",
+      "personIds": [
+        "person-sun-zhongshan",
+        "person-huang-xing",
+        "person-li-yuanhong"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "两千余年的皇帝制度由此终结，但国家统一、权力结构与社会转型的难题并未随之消失。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1911,
+      "summary": "武昌起义引发各省响应，帝制走向终结。",
+      "themeIds": [],
+      "title": "辛亥革命",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "巴黎和会的山东问题引发北京学生抗议，运动迅速扩展到工人、商人和多个城市。",
+      "categories": [
+        "thought",
+        "society"
+      ],
+      "causes": [
+        "巴黎和会的山东问题引起社会强烈不满。"
+      ],
+      "childIds": [],
+      "color": "#78b6a3",
+      "course": [
+        {
+          "description": "巴黎和会的山东问题引发北京学生抗议，运动迅速扩展到工人、商人和多个城市。",
+          "title": "五四运动",
+          "year": 1919
+        }
+      ],
+      "endYear": 1919,
+      "eraId": "modern",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "may-fourth",
+      "impacts": [
+        {
+          "dimension": "thought",
+          "text": "它既是一场爱国政治运动，也与新文化、白话文、科学民主思潮交汇，深刻影响此后的社会组织与思想选择。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "thought",
+        "offset": [
+          -1.5,
+          -0.6
+        ]
+      },
+      "parentId": null,
+      "period": "中国近代",
+      "personIds": [
+        "person-chen-duxiu",
+        "person-li-dazhao",
+        "person-cai-yuanpei"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "它既是一场爱国政治运动，也与新文化、白话文、科学民主思潮交汇，深刻影响此后的社会组织与思想选择。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1919,
+      "summary": "青年学生与社会各界共同推动思想和政治觉醒。",
+      "themeIds": [],
+      "title": "五四运动",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "在国共合作背景下，国民革命军从广东出师，向湖南、湖北、江西和长江流域推进。",
+      "categories": [
+        "war",
+        "politics"
+      ],
+      "causes": [
+        "国共合作与反军阀诉求推动国民革命军北上。"
+      ],
+      "childIds": [],
+      "color": "#7596ba",
+      "course": [
+        {
+          "description": "在国共合作背景下，国民革命军从广东出师，向湖南、湖北、江西和长江流域推进。",
+          "title": "北伐战争",
+          "year": 1926
+        }
+      ],
+      "endYear": 1928,
+      "eraId": "modern",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "northern-expedition",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "北伐削弱多支军阀力量并推动形式上的统一，但阵营分裂与新的政治冲突很快出现。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          1.1,
+          1
+        ]
+      },
+      "parentId": null,
+      "period": "中国近代",
+      "personIds": [
+        "person-sun-zhongshan",
+        "person-jiang-jieshi",
+        "person-ye-ting"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "北伐削弱多支军阀力量并推动形式上的统一，但阵营分裂与新的政治冲突很快出现。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1926,
+      "summary": "国民革命军北上，军阀割据格局受到冲击。",
+      "themeIds": [],
+      "title": "北伐战争",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "自九一八事变至日本宣布投降，中国军民经历长期、广泛而惨烈的抵抗。",
+      "categories": [
+        "war",
+        "society"
+      ],
+      "causes": [
+        "中国军民的长期抵抗与世界反法西斯战争共同推动日本战败。"
+      ],
+      "childIds": [],
+      "color": "#d6ad56",
+      "course": [
+        {
+          "description": "正面战场、敌后战场与国际援助共同构成抗战全局。",
+          "title": "抗日战争胜利",
+          "year": 1945
+        }
+      ],
+      "endYear": 1945,
+      "eraId": "modern",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "victory-1945",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "胜利结束日本侵略，也以巨大牺牲重塑中国的国家认同与国际地位。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -1.8,
+          0.3
+        ]
+      },
+      "parentId": null,
+      "period": "中国近代",
+      "personIds": [
+        "person-yang-jingyu",
+        "person-zhang-zizhong",
+        "person-zuo-quan"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "胜利结束日本侵略，也以巨大牺牲重塑中国的国家认同与国际地位。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1945,
+      "summary": "十四年艰苦抗战迎来胜利，中国战场影响世界反法西斯战争。",
+      "themeIds": [],
+      "title": "抗日战争胜利",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "1949 年 10 月 1 日，中华人民共和国中央人民政府成立。",
+      "categories": [
+        "politics",
+        "society"
+      ],
+      "causes": [
+        "长期革命战争和建国筹备促成中央人民政府成立。"
+      ],
+      "childIds": [],
+      "color": "#e0b058",
+      "course": [
+        {
+          "description": "长期革命与战争之后，国家开始重建政治、经济与社会秩序。",
+          "title": "中华人民共和国成立",
+          "year": 1949
+        }
+      ],
+      "endYear": 1949,
+      "eraId": "modern",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "prc-founded",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "此后发生的制度建设与发展道路选择，构成中国当代历史的起点。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          1.9,
+          -0.4
+        ]
+      },
+      "parentId": null,
+      "period": "中国近代",
+      "personIds": [
+        "person-mao-zedong",
+        "person-zhou-enlai",
+        "person-song-qingling"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "此后发生的制度建设与发展道路选择，构成中国当代历史的起点。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1949,
+      "summary": "新的国家政权成立，中国现代历史进入新阶段。",
+      "themeIds": [],
+      "title": "中华人民共和国成立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "李自成军攻入北京，崇祯帝自缢，明朝中央政权终结。",
+      "categories": [
+        "politics",
+        "war"
+      ],
+      "causes": [
+        "财政困难、灾荒、起义与边防战争使明朝统治陷入危机。"
+      ],
+      "childIds": [],
+      "color": "#d44f39",
+      "course": [
+        {
+          "description": "随后清军入关，南明、农民军与地方力量继续长期角逐。",
+          "title": "明朝灭亡",
+          "year": 1644
+        }
+      ],
+      "endYear": 1644,
+      "eraId": "qing",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "ming-fall",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "1644 年不是简单的一日改朝换代，而是此后多年战争与秩序重建的开端。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          1.9,
+          -0.5
+        ]
+      },
+      "parentId": null,
+      "period": "清代",
+      "personIds": [
+        "person-zhu-youjian",
+        "person-li-zicheng",
+        "person-wu-sangui"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "1644 年不是简单的一日改朝换代，而是此后多年战争与秩序重建的开端。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1644,
+      "summary": "北京易主，多支力量竞逐天下。",
+      "themeIds": [],
+      "title": "明朝灭亡",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "三藩之乱平定后，清朝进入较长稳定时期。",
+      "categories": [
+        "economy",
+        "politics"
+      ],
+      "causes": [
+        "清初战争结束后的政治稳定与农业扩展支持人口经济增长。"
+      ],
+      "childIds": [],
+      "color": "#c7ad66",
+      "course": [
+        {
+          "description": "农业扩展、人口快速增长，国家完成多边疆地区治理与制度整合。",
+          "title": "康乾盛世",
+          "year": 1681
+        }
+      ],
+      "endYear": 1796,
+      "eraId": "qing",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "kangqian",
+      "impacts": [
+        {
+          "dimension": "economy",
+          "text": "繁荣之下，土地压力、财政结构和思想控制等问题也逐步累积，盛世包含复杂面向。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -1.3,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "清代",
+      "personIds": [
+        "person-xuanye",
+        "person-yinzhen",
+        "person-hongli"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "繁荣之下，土地压力、财政结构和思想控制等问题也逐步累积，盛世包含复杂面向。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1681,
+      "summary": "长期稳定、人口增长与疆域整合并行。",
+      "themeIds": [],
+      "title": "康乾盛世",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "后周军队北上途中在陈桥驿发生兵变，将领拥立赵匡胤即位。",
+      "categories": [
+        "politics",
+        "institution"
+      ],
+      "causes": [
+        "五代后期军队与政权更替紧密相连。"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "course": [
+        {
+          "description": "宋朝建立后逐步结束五代十国分裂局面，并通过收兵权、重文官等方式重塑国家结构。",
+          "title": "陈桥兵变",
+          "year": 960
+        }
+      ],
+      "endYear": 960,
+      "eraId": "song",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "chenqiao",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "其影响贯穿此后三百余年的制度与文化。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          1.6,
+          0.5
+        ]
+      },
+      "parentId": null,
+      "period": "宋代",
+      "personIds": [
+        "person-zhao-kuangyin",
+        "person-shi-shouxin"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "其影响贯穿此后三百余年的制度与文化。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 960,
+      "summary": "赵匡胤受拥立建立宋朝，开启新的统一进程。",
+      "themeIds": [],
+      "title": "陈桥兵变",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "辽军南下至澶州，宋真宗亲征后双方议和。",
+      "categories": [
+        "diplomacy",
+        "war"
+      ],
+      "causes": [
+        "宋辽长期军事竞争促使双方在澶州战事后寻求议和。"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "course": [
+        {
+          "description": "宋辽约为兄弟之国，并建立岁币与边境交往机制。",
+          "title": "澶渊之盟",
+          "year": 1004
+        }
+      ],
+      "endYear": 1005,
+      "eraId": "song",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "chanyuan",
+      "impacts": [
+        {
+          "dimension": "diplomacy",
+          "text": "盟约常被放在军事得失中评价，但长期和平也促进了贸易、人口休养与多民族地区的日常交流。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          -0.9,
+          -0.8
+        ]
+      },
+      "parentId": null,
+      "period": "宋代",
+      "personIds": [
+        "person-zhao-heng",
+        "person-xiao-chuo",
+        "person-kou-zhun"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "盟约常被放在军事得失中评价，但长期和平也促进了贸易、人口休养与多民族地区的日常交流。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1004,
+      "summary": "宋辽议和后维持了一个世纪左右的边境和平。",
+      "themeIds": [],
+      "title": "澶渊之盟",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "宋神宗任用王安石推行青苗、募役、保甲等新法，希望改善财政并增强军备。",
+      "categories": [
+        "institution",
+        "economy"
+      ],
+      "causes": [
+        "财政、边防及基层治理问题促使北宋寻求制度调整。"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "course": [
+        {
+          "description": "改革触及广泛利益，也引发激烈党争。",
+          "title": "王安石变法",
+          "year": 1069
+        }
+      ],
+      "endYear": 1085,
+      "eraId": "song",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "wang-anshi",
+      "impacts": [
+        {
+          "dimension": "institution",
+          "text": "其成败至今仍有讨论，但它集中展示了宋代国家面对财政、军事与社会治理难题的努力。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          1.9,
+          0.9
+        ]
+      },
+      "parentId": null,
+      "period": "宋代",
+      "personIds": [
+        "person-wang-anshi",
+        "person-zhao-xu",
+        "person-sima-guang"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "其成败至今仍有讨论，但它集中展示了宋代国家面对财政、军事与社会治理难题的努力。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1069,
+      "summary": "围绕富国强兵展开的一场系统性改革。",
+      "themeIds": [],
+      "title": "王安石变法",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "金军攻破开封，徽、钦二帝及大量宗室官员被俘，北宋灭亡。",
+      "categories": [
+        "war",
+        "politics"
+      ],
+      "causes": [
+        "宋金关系破裂与北宋军事政治危机相互叠加。"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "course": [
+        {
+          "description": "赵构随后在南方建立南宋。",
+          "title": "靖康之变",
+          "year": 1127
+        }
+      ],
+      "endYear": 1127,
+      "eraId": "song",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "jingkang",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "人口与技术向南迁移，进一步推动江南经济发展，也让收复故土成为此后长期的政治与文化主题。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -1.5,
+          0.3
+        ]
+      },
+      "parentId": null,
+      "period": "宋代",
+      "personIds": [
+        "person-zhao-ji",
+        "person-zhao-huan",
+        "person-wanyan-sheng"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "人口与技术向南迁移，进一步推动江南经济发展，也让收复故土成为此后长期的政治与文化主题。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1127,
+      "summary": "北宋都城陷落，政治中心转向江南。",
+      "themeIds": [],
+      "title": "靖康之变",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "南宋立国未稳，岳飞等将领组织军队抵御金军并多次北伐。",
+      "categories": [
+        "war",
+        "politics"
+      ],
+      "causes": [
+        "南宋立国初期需要抵御金军并稳定统治。"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "course": [
+        {
+          "description": "绍兴和议前后，岳飞被召回",
+          "title": "岳飞被召回",
+          "year": 1140
+        },
+        {
+          "description": "并遇害。",
+          "title": "岳飞遇害",
+          "year": 1142
+        }
+      ],
+      "endYear": 1142,
+      "eraId": "song",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "yue-fei",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "他的军事行动、政治处境与后世不断重塑的忠烈形象，共同构成中国历史记忆中的重要篇章。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          1.1,
+          -1.2
+        ]
+      },
+      "parentId": null,
+      "period": "宋代",
+      "personIds": [
+        "person-yue-fei",
+        "person-han-shizhong",
+        "person-qin-hui"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "他的军事行动、政治处境与后世不断重塑的忠烈形象，共同构成中国历史记忆中的重要篇章。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1134,
+      "summary": "南宋初年的抗金战争与忠烈记忆。",
+      "themeIds": [],
+      "title": "岳飞抗金",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "铁木真在斡难河源头被推举为成吉思汗，蒙古诸部由此形成更强的政治军事共同体。",
+      "categories": [
+        "politics",
+        "war",
+        "ethnicity"
+      ],
+      "causes": [
+        "草原诸部之间的战争与联盟重组推动政治集中。"
+      ],
+      "childIds": [],
+      "color": "#90aaba",
+      "course": [
+        {
+          "description": "铁木真在斡难河源头被推举为成吉思汗，蒙古诸部由此形成更强的政治军事共同体。",
+          "title": "蒙古崛起",
+          "year": 1206
+        }
+      ],
+      "endYear": 1206,
+      "eraId": "song",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "mongol-rise",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "此后的征服跨越欧亚，建立广阔交通网络，也带来大规模战争与人口变动，并深刻影响宋、金及中亚世界。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -2,
+          0.6
+        ]
+      },
+      "parentId": null,
+      "period": "宋代",
+      "personIds": [
+        "person-temujin",
+        "person-muqali"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "此后的征服跨越欧亚，建立广阔交通网络，也带来大规模战争与人口变动，并深刻影响宋、金及中亚世界。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1206,
+      "summary": "草原诸部统一，欧亚大陆格局随之改变。",
+      "themeIds": [],
+      "title": "蒙古崛起",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "唐太宗即位后减轻赋役、整顿吏治，并以开放姿态听取群臣意见。",
+      "categories": [
+        "politics",
+        "institution"
+      ],
+      "causes": [
+        "隋末战乱之后，统治者需要恢复生产与政治秩序。"
+      ],
+      "childIds": [],
+      "color": "#e5bc67",
+      "course": [
+        {
+          "description": "魏征等人的直谏成为后世政治叙事中的典范。",
+          "title": "贞观之治",
+          "year": 627
+        }
+      ],
+      "endYear": 649,
+      "eraId": "tang",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "zhenguan",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "稳定的制度与社会恢复，为唐朝此后的繁荣及更广阔的对外交流奠定了基础。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          1.4,
+          0.4
+        ]
+      },
+      "parentId": null,
+      "period": "唐代",
+      "personIds": [
+        "person-li-shimin",
+        "person-wei-zheng",
+        "person-fang-xuanling"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "稳定的制度与社会恢复，为唐朝此后的繁荣及更广阔的对外交流奠定了基础。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 627,
+      "summary": "纳谏、任贤与制度修整，塑造唐初政治气象。",
+      "themeIds": [],
+      "title": "贞观之治",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "开元前期政治相对清明，农业、手工业与商业持续发展。",
+      "categories": [
+        "economy",
+        "culture"
+      ],
+      "causes": [
+        "唐初以来的制度基础与社会恢复为经济文化发展提供条件。"
+      ],
+      "childIds": [],
+      "color": "#f0c96f",
+      "course": [
+        {
+          "description": "长安汇聚来自亚洲各地的商旅、宗教和艺术，诗歌与音乐蓬勃生长。",
+          "title": "开元盛世",
+          "year": 713
+        }
+      ],
+      "endYear": 741,
+      "eraId": "tang",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "kaiyuan",
+      "impacts": [
+        {
+          "dimension": "economy",
+          "text": "这一盛世既展示了唐代开放气象，也为后来的结构性矛盾埋下复杂伏笔。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          2.1,
+          -0.6
+        ]
+      },
+      "parentId": null,
+      "period": "唐代",
+      "personIds": [
+        "person-li-longji",
+        "person-yao-chong",
+        "person-song-jing"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "这一盛世既展示了唐代开放气象，也为后来的结构性矛盾埋下复杂伏笔。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 713,
+      "summary": "经济文化走向高峰，长安成为世界性都会。",
+      "themeIds": [],
+      "title": "开元盛世",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "安禄山、史思明相继起兵，战火波及北方广大地区。",
+      "categories": [
+        "war",
+        "politics"
+      ],
+      "causes": [
+        "边镇军权集中与中央政治失衡加剧矛盾。"
+      ],
+      "childIds": [],
+      "color": "#df553b",
+      "course": [
+        {
+          "description": "唐朝虽最终平乱，却付出人口流离、财政紧张与中央权威下降的代价。",
+          "title": "唐军平乱",
+          "year": 763
+        }
+      ],
+      "endYear": 763,
+      "eraId": "tang",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "anshi",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "藩镇力量由此坐大，国家重心与赋税体系也逐渐向东南地区转移。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -1.7,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "唐代",
+      "personIds": [
+        "person-an-lushan",
+        "person-shi-siming",
+        "person-li-longji",
+        "person-guo-ziyi"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "藩镇力量由此坐大，国家重心与赋税体系也逐渐向东南地区转移。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 755,
+      "summary": "八年战乱改变唐朝国势与社会结构。",
+      "themeIds": [],
+      "title": "安史之乱",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "面对均田制瓦解和旧有租庸调难以维系的现实，唐政府推行两税法，按夏秋两季征收，并更多依据财产确定税额。",
+      "categories": [
+        "institution",
+        "economy"
+      ],
+      "causes": [
+        "均田制和租庸调难以继续适应土地与人口变化。"
+      ],
+      "childIds": [],
+      "color": "#d9a85d",
+      "course": [
+        {
+          "description": "面对均田制瓦解和旧有租庸调难以维系的现实，唐政府推行两税法，按夏秋两季征收，并更多依据财产确定税额。",
+          "title": "两税法",
+          "year": 780
+        }
+      ],
+      "endYear": 780,
+      "eraId": "tang",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "two-tax",
+      "impacts": [
+        {
+          "dimension": "institution",
+          "text": "它回应了社会经济变化，也成为中国古代赋税制度由人丁向资产转变的重要节点。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          0.8,
+          -1.1
+        ]
+      },
+      "parentId": null,
+      "period": "唐代",
+      "personIds": [
+        "person-yang-yan",
+        "person-li-kuo"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "它回应了社会经济变化，也成为中国古代赋税制度由人丁向资产转变的重要节点。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 780,
+      "summary": "以资产和土地为基础重整国家税制。",
+      "themeIds": [],
+      "title": "两税法",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "晚唐赋役沉重、灾荒频仍，王仙芝、黄巢领导的起义迅速扩展。",
+      "categories": [
+        "war",
+        "society"
+      ],
+      "causes": [
+        "沉重赋役、灾荒与地方治理危机推动起义扩展。"
+      ],
+      "childIds": [],
+      "color": "#c84c36",
+      "course": [
+        {
+          "description": "起义军曾攻入长安，虽然最终失败，却严重削弱了中央与地方秩序。",
+          "title": "起义败亡",
+          "year": 884
+        }
+      ],
+      "endYear": 884,
+      "eraId": "tang",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "huang-chao",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "各地军镇在平乱中进一步扩张，唐朝走向不可逆的分裂。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -1.2,
+          0.2
+        ]
+      },
+      "parentId": null,
+      "period": "唐代",
+      "personIds": [
+        "person-huang-chao",
+        "person-wang-xianzhi"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "各地军镇在平乱中进一步扩张，唐朝走向不可逆的分裂。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 875,
+      "summary": "席卷多地的民变加速唐朝统治崩解。",
+      "themeIds": [],
+      "title": "黄巢起义",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "忽必烈采用“大元”国号，并以大都为政治中心。",
+      "categories": [
+        "politics",
+        "ethnicity"
+      ],
+      "causes": [
+        "蒙古帝国的扩张与华北治理需要形成新的国家组织。"
+      ],
+      "childIds": [],
+      "color": "#8ca8ba",
+      "course": [
+        {
+          "description": "元朝随后完成对南宋的战争，首次由北方草原政权统治整个传统中原地区。",
+          "title": "南宋覆亡",
+          "year": 1279
+        }
+      ],
+      "endYear": 1279,
+      "eraId": "yuan",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "yuan-founded",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "多元人口、广域交通与不同制度传统在同一帝国中并存。"
+        }
+      ],
+      "influence": 5,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          1.5,
+          -0.4
+        ]
+      },
+      "parentId": null,
+      "period": "元代",
+      "personIds": [
+        "person-kublai",
+        "person-liu-bingzhong"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "多元人口、广域交通与不同制度传统在同一帝国中并存。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1271,
+      "summary": "忽必烈定国号为元，新的王朝秩序形成。",
+      "themeIds": [],
+      "title": "元朝建立",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "元朝在中央中书省之外设置行中书省，处理军政与财政事务，以适应辽阔疆域的治理需要。",
+      "categories": [
+        "institution"
+      ],
+      "causes": [
+        "辽阔疆域下的军政财政事务需要分层处理。"
+      ],
+      "childIds": [],
+      "color": "#7599b2",
+      "course": [
+        {
+          "description": "元朝在中央中书省之外设置行中书省，处理军政与财政事务，以适应辽阔疆域的治理需要。",
+          "title": "行省制度",
+          "year": 1280
+        }
+      ],
+      "endYear": 1280,
+      "eraId": "yuan",
+      "historiography": "本条以通史相关时代的综述和人物传记为基础，区分事件进程与长期影响；简要叙述不代替对具体政策、战役和社会群体的专题研究。",
+      "id": "province-system",
+      "impacts": [
+        {
+          "dimension": "institution",
+          "text": "其辖区与权力结构经历变化，却为后世省级行政区划提供了重要制度来源，影响延续至明清。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -0.8,
+          1.1
+        ]
+      },
+      "parentId": null,
+      "period": "元代",
+      "personIds": [
+        "person-kublai",
+        "person-sayyid-ajall"
+      ],
+      "placeIds": [],
+      "polityIds": [],
+      "relationIds": [],
+      "results": [
+        "其辖区与权力结构经历变化，却为后世省级行政区划提供了重要制度来源，影响延续至明清。"
+      ],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "startYear": 1280,
+      "summary": "广域治理推动地方行政体系重新组织。",
+      "themeIds": [],
+      "title": "行省制度",
+      "yearPrecision": "exact"
+    }
+  ],
+  "people": [
+    {
+      "aliases": [
+        "朱棣"
+      ],
+      "birthYear": 1360,
+      "birthplaceId": null,
+      "contributions": [
+        "派遣郑和船队出海。"
+      ],
+      "deathYear": 1424,
+      "evaluation": "其政策展现了明代国家动员能力，也伴随战争和财政负担。",
+      "eventIds": [
+        "zheng-he"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhu-di",
+      "identities": [],
+      "legacy": "其政策展现了明代国家动员能力，也伴随战争和财政负担。",
+      "name": "明成祖",
+      "placeIds": [],
+      "primaryEraId": "ming",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "明朝皇帝，在位时期组织郑和远航，推进迁都北京等国家建设。",
+      "timeline": [
+        {
+          "description": "派遣郑和船队出海。",
+          "title": "主要活动",
+          "year": 1405
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1371,
+      "birthplaceId": null,
+      "contributions": [
+        "率领明代远洋船队开展外交与交流。"
+      ],
+      "deathYear": 1433,
+      "evaluation": "远航应结合明代政治目标、海上贸易和组织能力考察。",
+      "eventIds": [
+        "zheng-he"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zheng-he",
+      "identities": [],
+      "legacy": "远航应结合明代政治目标、海上贸易和组织能力考察。",
+      "name": "郑和",
+      "placeIds": [],
+      "primaryEraId": "ming",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "明代航海家，受命率船队多次远航，连接东南亚、南亚、阿拉伯半岛和东非等地区。",
+      "timeline": [
+        {
+          "description": "率领明代远洋船队开展外交与交流。",
+          "title": "主要活动",
+          "year": 1405
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1398,
+      "birthplaceId": null,
+      "contributions": [
+        "主持北京防御，维系明朝中央政权。"
+      ],
+      "deathYear": 1457,
+      "evaluation": "其政治遭遇与后世纪念反映了明代权力冲突。",
+      "eventIds": [
+        "tumu"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-yu-qian",
+      "identities": [],
+      "legacy": "其政治遭遇与后世纪念反映了明代权力冲突。",
+      "name": "于谦",
+      "placeIds": [],
+      "primaryEraId": "ming",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "明代政治人物，土木堡之变后参与拥立景帝，组织北京保卫战。",
+      "timeline": [
+        {
+          "description": "主持北京防御，维系明朝中央政权。",
+          "title": "主要活动",
+          "year": 1449
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "朱祁镇"
+      ],
+      "birthYear": 1427,
+      "birthplaceId": null,
+      "contributions": [
+        "亲征瓦剌失利，成为明代政治转折中的关键人物。"
+      ],
+      "deathYear": 1464,
+      "evaluation": "其经历反映了军事决策和宫廷权力关系的风险。",
+      "eventIds": [
+        "tumu"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhu-qizhen",
+      "identities": [],
+      "legacy": "其经历反映了军事决策和宫廷权力关系的风险。",
+      "name": "明英宗",
+      "placeIds": [],
+      "primaryEraId": "ming",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "明朝皇帝，土木堡之变中被瓦剌俘虏，归国后经历退位及复位。",
+      "timeline": [
+        {
+          "description": "亲征瓦剌失利，成为明代政治转折中的关键人物。",
+          "title": "主要活动",
+          "year": 1449
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1525,
+      "birthplaceId": null,
+      "contributions": [
+        "推动一条鞭法等改革措施。"
+      ],
+      "deathYear": 1582,
+      "evaluation": "改革效果及其对强势政治支持的依赖需要共同考察。",
+      "eventIds": [
+        "zhang-juzheng"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhang-juzheng",
+      "identities": [],
+      "legacy": "改革效果及其对强势政治支持的依赖需要共同考察。",
+      "name": "张居正",
+      "placeIds": [],
+      "primaryEraId": "ming",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "明代政治家，万历初年主持政务，以考成、清丈土地和赋役改革整顿国家财政行政。",
+      "timeline": [
+        {
+          "description": "推动一条鞭法等改革措施。",
+          "title": "主要活动",
+          "year": 1581
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1528,
+      "birthplaceId": null,
+      "contributions": [
+        "整顿军队、改进训练与防御。"
+      ],
+      "deathYear": 1588,
+      "evaluation": "其军事实践与明代军事制度变动密切相关。",
+      "eventIds": [
+        "zhang-juzheng"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-qi-jiguang",
+      "identities": [],
+      "legacy": "其军事实践与明代军事制度变动密切相关。",
+      "name": "戚继光",
+      "placeIds": [],
+      "primaryEraId": "ming",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "明代将领，曾组织东南沿海抗倭，后加强北部边防，以练兵和军队整顿著称。",
+      "timeline": [
+        {
+          "description": "整顿军队、改进训练与防御。",
+          "title": "主要活动",
+          "year": 1561
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1531,
+      "birthplaceId": null,
+      "contributions": [
+        "参与援朝海上作战。"
+      ],
+      "deathYear": 1598,
+      "evaluation": "其经历体现了东亚战争中陆海战场的相互关联。",
+      "eventIds": [
+        "imjin-war"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-deng-zilong",
+      "identities": [],
+      "legacy": "其经历体现了东亚战争中陆海战场的相互关联。",
+      "name": "邓子龙",
+      "placeIds": [],
+      "primaryEraId": "ming",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "明代将领，在援朝战争后期参与海战，1598年战死。",
+      "timeline": [
+        {
+          "description": "参与援朝海上作战。",
+          "title": "主要活动",
+          "year": 1598
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1549,
+      "birthplaceId": null,
+      "contributions": [
+        "率军参与援朝战争。"
+      ],
+      "deathYear": 1598,
+      "evaluation": "其军事活动是理解明朝对朝鲜援助的重要部分。",
+      "eventIds": [
+        "imjin-war"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-li-rusong",
+      "identities": [],
+      "legacy": "其军事活动是理解明朝对朝鲜援助的重要部分。",
+      "name": "李如松",
+      "placeIds": [],
+      "primaryEraId": "ming",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "明代将领，在万历援朝战争中统率明军参与陆上作战。",
+      "timeline": [
+        {
+          "description": "率军参与援朝战争。",
+          "title": "主要活动",
+          "year": 1593
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "明神宗",
+        "朱翊钧"
+      ],
+      "birthYear": 1563,
+      "birthplaceId": null,
+      "contributions": [
+        "统治时期实行财政改革并组织援朝战争。"
+      ],
+      "deathYear": 1620,
+      "evaluation": "其长期统治呈现晚明财政、边防与朝廷关系的多重矛盾。",
+      "eventIds": [
+        "zhang-juzheng",
+        "imjin-war"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhu-yijun",
+      "identities": [],
+      "legacy": "其长期统治呈现晚明财政、边防与朝廷关系的多重矛盾。",
+      "name": "万历帝",
+      "placeIds": [],
+      "primaryEraId": "ming",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "明朝皇帝，早期由张居正辅政，后期经历援朝战争等重大军事与财政事务。",
+      "timeline": [
+        {
+          "description": "统治时期实行财政改革并组织援朝战争。",
+          "title": "主要活动",
+          "year": 1581
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "参与土木堡之变及其后明瓦剌交涉。"
+      ],
+      "deathYear": 1455,
+      "evaluation": "其活动体现了明朝与北方草原力量之间的战争和互动。",
+      "eventIds": [
+        "tumu"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-esen",
+      "identities": [],
+      "legacy": "其活动体现了明朝与北方草原力量之间的战争和互动。",
+      "name": "也先",
+      "placeIds": [],
+      "primaryEraId": "ming",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "瓦剌首领，1449年击败明军并俘获明英宗，随后进攻北京。",
+      "timeline": [
+        {
+          "description": "参与土木堡之变及其后明瓦剌交涉。",
+          "title": "主要活动",
+          "year": 1449
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "参与郑和下西洋。"
+      ],
+      "deathYear": null,
+      "evaluation": "其事迹是认识大型船队协作与航海组织的线索。",
+      "eventIds": [
+        "zheng-he"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-wang-jinghong",
+      "identities": [],
+      "legacy": "其事迹是认识大型船队协作与航海组织的线索。",
+      "name": "王景弘",
+      "placeIds": [],
+      "primaryEraId": "ming",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "明代航海人物，与郑和共同参与远洋船队的组织和航行。",
+      "timeline": [
+        {
+          "description": "参与郑和下西洋。",
+          "title": "主要活动",
+          "year": 1405
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1781,
+      "birthplaceId": null,
+      "contributions": [
+        "组织虎门防御。"
+      ],
+      "deathYear": 1841,
+      "evaluation": "其经历体现了近代初期中国海防面临的技术与组织压力。",
+      "eventIds": [
+        "opium-war"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-guan-tianpei",
+      "identities": [],
+      "legacy": "其经历体现了近代初期中国海防面临的技术与组织压力。",
+      "name": "关天培",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "清代水师将领，参与广东海防，在鸦片战争中抵抗英军并战死。",
+      "timeline": [
+        {
+          "description": "组织虎门防御。",
+          "title": "主要活动",
+          "year": 1841
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "旻宁"
+      ],
+      "birthYear": 1782,
+      "birthplaceId": null,
+      "contributions": [
+        "统治时期清朝面临鸦片问题及对外战争。"
+      ],
+      "deathYear": 1850,
+      "evaluation": "其决策应放在清代制度、财政及国际环境中考察。",
+      "eventIds": [
+        "opium-war"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-minning",
+      "identities": [],
+      "legacy": "其决策应放在清代制度、财政及国际环境中考察。",
+      "name": "道光帝",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "清朝皇帝，在位期间发生鸦片战争，清政府战败并签订《南京条约》。",
+      "timeline": [
+        {
+          "description": "统治时期清朝面临鸦片问题及对外战争。",
+          "title": "主要活动",
+          "year": 1840
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1785,
+      "birthplaceId": null,
+      "contributions": [
+        "开展禁烟并组织海防。"
+      ],
+      "deathYear": 1850,
+      "evaluation": "其禁烟实践与近代对外关系转折密切相关。",
+      "eventIds": [
+        "opium-war"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-lin-zexu",
+      "identities": [],
+      "legacy": "其禁烟实践与近代对外关系转折密切相关。",
+      "name": "林则徐",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "清代政治人物，1839年在广东禁烟并主持虎门销烟，随后经历鸦片战争及其政治影响。",
+      "timeline": [
+        {
+          "description": "开展禁烟并组织海防。",
+          "title": "主要活动",
+          "year": 1839
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1811,
+      "birthplaceId": null,
+      "contributions": [
+        "组织湘军并推动部分近代军事工业。"
+      ],
+      "deathYear": 1872,
+      "evaluation": "其活动伴随地方军政力量上升，对晚清权力结构影响深远。",
+      "eventIds": [
+        "taiping",
+        "self-strengthening"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zeng-guofan",
+      "identities": [],
+      "legacy": "其活动伴随地方军政力量上升，对晚清权力结构影响深远。",
+      "name": "曾国藩",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "清代政治军事人物，组织湘军镇压太平天国，参与早期洋务事业。",
+      "timeline": [
+        {
+          "description": "组织湘军并推动部分近代军事工业。",
+          "title": "主要活动",
+          "year": 1853
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1812,
+      "birthplaceId": null,
+      "contributions": [
+        "推动福州船政等近代军事工业。"
+      ],
+      "deathYear": 1885,
+      "evaluation": "其经历连接晚清工业建设、军事财政与边疆治理。",
+      "eventIds": [
+        "self-strengthening"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zuo-zongtang",
+      "identities": [],
+      "legacy": "其经历连接晚清工业建设、军事财政与边疆治理。",
+      "name": "左宗棠",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "清代政治军事人物，参与洋务事业和西北军事行动，推动船政等建设。",
+      "timeline": [
+        {
+          "description": "推动福州船政等近代军事工业。",
+          "title": "主要活动",
+          "year": 1866
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1814,
+      "birthplaceId": null,
+      "contributions": [
+        "领导太平天国运动并建立政权。"
+      ],
+      "deathYear": 1864,
+      "evaluation": "其政治宗教主张和统治实践需结合战争与社会环境评价。",
+      "eventIds": [
+        "taiping"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-hong-xiuquan",
+      "identities": [],
+      "legacy": "其政治宗教主张和统治实践需结合战争与社会环境评价。",
+      "name": "洪秀全",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "太平天国领导者，参与金田起义，后定都天京，长期与清政府对抗。",
+      "timeline": [
+        {
+          "description": "领导太平天国运动并建立政权。",
+          "title": "主要活动",
+          "year": 1851
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1823,
+      "birthplaceId": null,
+      "contributions": [
+        "指挥太平军作战。"
+      ],
+      "deathYear": 1864,
+      "evaluation": "其经历与太平天国后期军事政治局势相关。",
+      "eventIds": [
+        "taiping"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-li-xiucheng",
+      "identities": [],
+      "legacy": "其经历与太平天国后期军事政治局势相关。",
+      "name": "李秀成",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "太平天国将领，参与长江中下游多次军事行动，天京陷落后被俘处死。",
+      "timeline": [
+        {
+          "description": "指挥太平军作战。",
+          "title": "主要活动",
+          "year": 1860
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1823,
+      "birthplaceId": null,
+      "contributions": [
+        "推动洋务建设并参与近代外交。"
+      ],
+      "deathYear": 1901,
+      "evaluation": "对其评价需兼顾近代化尝试、战争失利与晚清制度限制。",
+      "eventIds": [
+        "self-strengthening",
+        "sino-japanese-war"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-li-hongzhang",
+      "identities": [],
+      "legacy": "对其评价需兼顾近代化尝试、战争失利与晚清制度限制。",
+      "name": "李鸿章",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "清代政治军事人物，组织淮军，参与洋务工业与海军建设，并处理多项对外谈判。",
+      "timeline": [
+        {
+          "description": "推动洋务建设并参与近代外交。",
+          "title": "主要活动",
+          "year": 1862
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1835,
+      "birthplaceId": null,
+      "contributions": [
+        "参与晚清重大政治与对外决策。"
+      ],
+      "deathYear": 1908,
+      "evaluation": "其政治作用需结合朝廷权力结构及内外危机考察。",
+      "eventIds": [
+        "boxer"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-cixi",
+      "identities": [],
+      "legacy": "其政治作用需结合朝廷权力结构及内外危机考察。",
+      "name": "慈禧太后",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "晚清政治人物，长期掌握朝廷实权，涉及戊戌政变、义和团及晚清改革等决策。",
+      "timeline": [
+        {
+          "description": "参与晚清重大政治与对外决策。",
+          "title": "主要活动",
+          "year": 1900
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1836,
+      "birthplaceId": null,
+      "contributions": [
+        "参与天津防御作战。"
+      ],
+      "deathYear": 1900,
+      "evaluation": "其经历显示了1900年清军、义和团和列强关系的复杂性。",
+      "eventIds": [
+        "boxer"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-nie-shicheng",
+      "identities": [],
+      "legacy": "其经历显示了1900年清军、义和团和列强关系的复杂性。",
+      "name": "聂士成",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "清军将领，义和团与联军入侵交织期间驻守天津一带，在抵抗联军时战死。",
+      "timeline": [
+        {
+          "description": "参与天津防御作战。",
+          "title": "主要活动",
+          "year": 1900
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1841,
+      "birthplaceId": null,
+      "contributions": [
+        "组织山东民间反教会活动。"
+      ],
+      "deathYear": 1902,
+      "evaluation": "其活动应置于地方社会矛盾、教案与列强侵略背景中。",
+      "eventIds": [
+        "boxer"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhao-sanduo",
+      "identities": [],
+      "legacy": "其活动应置于地方社会矛盾、教案与列强侵略背景中。",
+      "name": "赵三多",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "山东民间反教会运动人物，是义和团早期活动的重要参与者。",
+      "timeline": [
+        {
+          "description": "组织山东民间反教会活动。",
+          "title": "主要活动",
+          "year": 1898
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1849,
+      "birthplaceId": null,
+      "contributions": [
+        "参与黄海海战。"
+      ],
+      "deathYear": 1894,
+      "evaluation": "其事迹是认识甲午海战与近代海防的重要线索。",
+      "eventIds": [
+        "sino-japanese-war"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-deng-shichang",
+      "identities": [],
+      "legacy": "其事迹是认识甲午海战与近代海防的重要线索。",
+      "name": "邓世昌",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "北洋海军将领，甲午战争黄海海战中指挥致远舰作战并牺牲。",
+      "timeline": [
+        {
+          "description": "参与黄海海战。",
+          "title": "主要活动",
+          "year": 1894
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1858,
+      "birthplaceId": null,
+      "contributions": [
+        "倡导维新并参与改革活动。"
+      ],
+      "deathYear": 1927,
+      "evaluation": "其思想传播与后来的政治选择应分阶段考察。",
+      "eventIds": [
+        "hundred-days"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-kang-youwei",
+      "identities": [],
+      "legacy": "其思想传播与后来的政治选择应分阶段考察。",
+      "name": "康有为",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "近代维新思想和政治活动人物，主张通过变法调整制度，参与戊戌维新。",
+      "timeline": [
+        {
+          "description": "倡导维新并参与改革活动。",
+          "title": "主要活动",
+          "year": 1898
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1864,
+      "birthplaceId": null,
+      "contributions": [
+        "参与辛亥后政权组织与民国政治。"
+      ],
+      "deathYear": 1928,
+      "evaluation": "其经历体现了革命、地方军政与中央权力重组的联系。",
+      "eventIds": [
+        "xinhai"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-li-yuanhong",
+      "identities": [],
+      "legacy": "其经历体现了革命、地方军政与中央权力重组的联系。",
+      "name": "黎元洪",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "近代政治人物，武昌起义后被推为湖北军政府都督，后在民国中央政治中任职。",
+      "timeline": [
+        {
+          "description": "参与辛亥后政权组织与民国政治。",
+          "title": "主要活动",
+          "year": 1911
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "孙文",
+        "孙逸仙"
+      ],
+      "birthYear": 1866,
+      "birthplaceId": null,
+      "contributions": [
+        "推动共和革命与国民革命组织。"
+      ],
+      "deathYear": 1925,
+      "evaluation": "应区分其生前活动与逝世后延续的政治影响。",
+      "eventIds": [
+        "xinhai",
+        "northern-expedition"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-sun-zhongshan",
+      "identities": [],
+      "legacy": "应区分其生前活动与逝世后延续的政治影响。",
+      "name": "孙中山",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "近代革命家，倡导建立共和国，辛亥革命后任临时大总统。其国民革命主张影响北伐，但本人未参加1926年出师。",
+      "timeline": [
+        {
+          "description": "推动共和革命与国民革命组织。",
+          "title": "主要活动",
+          "year": 1911
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1868,
+      "birthplaceId": null,
+      "contributions": [
+        "推动大学教育改革与学术交流。"
+      ],
+      "deathYear": 1940,
+      "evaluation": "其办学实践影响了现代大学与知识界的形成。",
+      "eventIds": [
+        "may-fourth"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-cai-yuanpei",
+      "identities": [],
+      "legacy": "其办学实践影响了现代大学与知识界的形成。",
+      "name": "蔡元培",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "近代教育家，任北京大学校长期间推进大学改革，支持学术发展并保护学生。",
+      "timeline": [
+        {
+          "description": "推动大学教育改革与学术交流。",
+          "title": "主要活动",
+          "year": 1919
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "载湉"
+      ],
+      "birthYear": 1871,
+      "birthplaceId": null,
+      "contributions": [
+        "支持戊戌维新改革。"
+      ],
+      "deathYear": 1908,
+      "evaluation": "其政治处境体现了晚清改革与宫廷权力之间的冲突。",
+      "eventIds": [
+        "sino-japanese-war",
+        "hundred-days"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zaitian",
+      "identities": [],
+      "legacy": "其政治处境体现了晚清改革与宫廷权力之间的冲突。",
+      "name": "光绪帝",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "清朝皇帝，戊戌年在维新人士推动下发布改革诏令，政变后受到限制。",
+      "timeline": [
+        {
+          "description": "支持戊戌维新改革。",
+          "title": "主要活动",
+          "year": 1898
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1873,
+      "birthplaceId": null,
+      "contributions": [
+        "参与戊戌维新并开展报刊与学术活动。"
+      ],
+      "deathYear": 1929,
+      "evaluation": "其著述和公共论述影响了近代知识与政治观念。",
+      "eventIds": [
+        "hundred-days"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-liang-qichao",
+      "identities": [],
+      "legacy": "其著述和公共论述影响了近代知识与政治观念。",
+      "name": "梁启超",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "近代思想家、政治活动家和学者，参与维新运动，流亡后通过报刊传播新思想。",
+      "timeline": [
+        {
+          "description": "参与戊戌维新并开展报刊与学术活动。",
+          "title": "主要活动",
+          "year": 1898
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1874,
+      "birthplaceId": null,
+      "contributions": [
+        "组织共和革命及武装斗争。"
+      ],
+      "deathYear": 1916,
+      "evaluation": "其活动与革命团体协作和辛亥军事进程密切相关。",
+      "eventIds": [
+        "xinhai"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-huang-xing",
+      "identities": [],
+      "legacy": "其活动与革命团体协作和辛亥军事进程密切相关。",
+      "name": "黄兴",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "近代革命家，参与同盟会及多次武装起义，在辛亥革命中承担重要军事工作。",
+      "timeline": [
+        {
+          "description": "组织共和革命及武装斗争。",
+          "title": "主要活动",
+          "year": 1911
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1879,
+      "birthplaceId": null,
+      "contributions": [
+        "推动新文化运动并参与五四时期思想传播。"
+      ],
+      "deathYear": 1942,
+      "evaluation": "其思想转变与近代社会组织和政治道路的选择相关。",
+      "eventIds": [
+        "may-fourth"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-chen-duxiu",
+      "identities": [],
+      "legacy": "其思想转变与近代社会组织和政治道路的选择相关。",
+      "name": "陈独秀",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "近代思想与政治活动人物，新文化运动倡导者，五四时期通过刊物及社会活动传播新思想。",
+      "timeline": [
+        {
+          "description": "推动新文化运动并参与五四时期思想传播。",
+          "title": "主要活动",
+          "year": 1919
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "蒋中正"
+      ],
+      "birthYear": 1887,
+      "birthplaceId": null,
+      "contributions": [
+        "指挥北伐等军事行动。"
+      ],
+      "deathYear": 1975,
+      "evaluation": "其军事政治活动需结合国共关系与民国国家建设考察。",
+      "eventIds": [
+        "northern-expedition"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-jiang-jieshi",
+      "identities": [],
+      "legacy": "其军事政治活动需结合国共关系与民国国家建设考察。",
+      "name": "蒋介石",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "近代政治军事人物，北伐时期任国民革命军总司令，后长期处于国民党军政中枢。",
+      "timeline": [
+        {
+          "description": "指挥北伐等军事行动。",
+          "title": "主要活动",
+          "year": 1926
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1889,
+      "birthplaceId": null,
+      "contributions": [
+        "传播新思想并参与社会政治组织。"
+      ],
+      "deathYear": 1927,
+      "evaluation": "其活动深刻影响中国近代思想及组织发展。",
+      "eventIds": [
+        "may-fourth"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-li-dazhao",
+      "identities": [],
+      "legacy": "其活动深刻影响中国近代思想及组织发展。",
+      "name": "李大钊",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "近代思想与政治活动人物，参与新文化及五四时期活动，是马克思主义在中国的早期传播者。",
+      "timeline": [
+        {
+          "description": "传播新思想并参与社会政治组织。",
+          "title": "主要活动",
+          "year": 1919
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1891,
+      "birthplaceId": null,
+      "contributions": [
+        "指挥抗日作战并战死。"
+      ],
+      "deathYear": 1940,
+      "evaluation": "其事迹反映了正面战场的抵抗与牺牲。",
+      "eventIds": [
+        "victory-1945"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhang-zizhong",
+      "identities": [],
+      "legacy": "其事迹反映了正面战场的抵抗与牺牲。",
+      "name": "张自忠",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "中国抗日将领，参与正面战场作战，1940年在枣宜会战中牺牲，未及亲见1945年胜利。",
+      "timeline": [
+        {
+          "description": "指挥抗日作战并战死。",
+          "title": "主要活动",
+          "year": 1940
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1893,
+      "birthplaceId": null,
+      "contributions": [
+        "参与建立中华人民共和国。"
+      ],
+      "deathYear": 1976,
+      "evaluation": "其政治活动与中国革命及国家制度建设紧密相连。",
+      "eventIds": [
+        "prc-founded"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-mao-zedong",
+      "identities": [],
+      "legacy": "其政治活动与中国革命及国家制度建设紧密相连。",
+      "name": "毛泽东",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "中国共产党和中华人民共和国主要领导人，1949年在开国典礼上宣布中华人民共和国中央人民政府成立。",
+      "timeline": [
+        {
+          "description": "参与建立中华人民共和国。",
+          "title": "主要活动",
+          "year": 1949
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1893,
+      "birthplaceId": null,
+      "contributions": [
+        "参与建国及社会公共事业。"
+      ],
+      "deathYear": 1981,
+      "evaluation": "其经历连接共和革命传统与新中国国家建设。",
+      "eventIds": [
+        "prc-founded"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-song-qingling",
+      "identities": [],
+      "legacy": "其经历连接共和革命传统与新中国国家建设。",
+      "name": "宋庆龄",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "近现代政治活动家，长期参与社会政治事务，1949年当选中央人民政府副主席。",
+      "timeline": [
+        {
+          "description": "参与建国及社会公共事业。",
+          "title": "主要活动",
+          "year": 1949
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1896,
+      "birthplaceId": null,
+      "contributions": [
+        "率独立团参与北伐。"
+      ],
+      "deathYear": 1946,
+      "evaluation": "其经历连接国民革命与此后的革命战争。",
+      "eventIds": [
+        "northern-expedition"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-ye-ting",
+      "identities": [],
+      "legacy": "其经历连接国民革命与此后的革命战争。",
+      "name": "叶挺",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "近代军事人物，北伐期间率独立团作战，后参与其他革命军事活动。",
+      "timeline": [
+        {
+          "description": "率独立团参与北伐。",
+          "title": "主要活动",
+          "year": 1926
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1898,
+      "birthplaceId": null,
+      "contributions": [
+        "参与建国与国家行政外交工作。"
+      ],
+      "deathYear": 1976,
+      "evaluation": "其活动是认识新中国政权组织和外交发展的重要线索。",
+      "eventIds": [
+        "prc-founded"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhou-enlai",
+      "identities": [],
+      "legacy": "其活动是认识新中国政权组织和外交发展的重要线索。",
+      "name": "周恩来",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "中国共产党和中华人民共和国领导人，参与建国筹备，任政务院总理等职务。",
+      "timeline": [
+        {
+          "description": "参与建国与国家行政外交工作。",
+          "title": "主要活动",
+          "year": 1949
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1905,
+      "birthplaceId": null,
+      "contributions": [
+        "组织东北抗日抵抗。"
+      ],
+      "deathYear": 1940,
+      "evaluation": "其事迹构成长期抗战与烈士纪念的重要部分。",
+      "eventIds": [
+        "victory-1945"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-yang-jingyu",
+      "identities": [],
+      "legacy": "其事迹构成长期抗战与烈士纪念的重要部分。",
+      "name": "杨靖宇",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "东北抗日联军领导人，在艰苦条件下组织抗日游击战争，1940年牺牲，未及亲见1945年胜利。",
+      "timeline": [
+        {
+          "description": "组织东北抗日抵抗。",
+          "title": "主要活动",
+          "year": 1940
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1905,
+      "birthplaceId": null,
+      "contributions": [
+        "参与敌后抗日军事组织与作战。"
+      ],
+      "deathYear": 1942,
+      "evaluation": "其事迹反映了敌后战场的抵抗与牺牲。",
+      "eventIds": [
+        "victory-1945"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zuo-quan",
+      "identities": [],
+      "legacy": "其事迹反映了敌后战场的抵抗与牺牲。",
+      "name": "左权",
+      "placeIds": [],
+      "primaryEraId": "modern",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "八路军将领，参与抗日根据地军事工作，1942年在作战中牺牲，未及亲见1945年胜利。",
+      "timeline": [
+        {
+          "description": "参与敌后抗日军事组织与作战。",
+          "title": "主要活动",
+          "year": 1942
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1606,
+      "birthplaceId": null,
+      "contributions": [
+        "领导明末起义并建立大顺政权。"
+      ],
+      "deathYear": 1645,
+      "evaluation": "其活动是明清之际秩序变动的重要部分。",
+      "eventIds": [
+        "ming-fall"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-li-zicheng",
+      "identities": [],
+      "legacy": "其活动是明清之际秩序变动的重要部分。",
+      "name": "李自成",
+      "placeIds": [],
+      "primaryEraId": "qing",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "明末起义领导者，建立大顺政权并于1644年攻入北京，随后在与清军等力量的争夺中失败。",
+      "timeline": [
+        {
+          "description": "领导明末起义并建立大顺政权。",
+          "title": "主要活动",
+          "year": 1644
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "明思宗",
+        "朱由检"
+      ],
+      "birthYear": 1611,
+      "birthplaceId": null,
+      "contributions": [
+        "在位时应对晚明多重政治军事危机。"
+      ],
+      "deathYear": 1644,
+      "evaluation": "评价其个人选择应结合晚明长期结构性困境。",
+      "eventIds": [
+        "ming-fall"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhu-youjian",
+      "identities": [],
+      "legacy": "评价其个人选择应结合晚明长期结构性困境。",
+      "name": "崇祯帝",
+      "placeIds": [],
+      "primaryEraId": "qing",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "明朝末代在北京统治的皇帝，面对财政、军政与社会危机，李自成军入北京后自缢。",
+      "timeline": [
+        {
+          "description": "在位时应对晚明多重政治军事危机。",
+          "title": "主要活动",
+          "year": 1644
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1612,
+      "birthplaceId": null,
+      "contributions": [
+        "参与明清之际及清初的军事政治竞争。"
+      ],
+      "deathYear": 1678,
+      "evaluation": "其经历反映了王朝转换与地方军权扩张的复杂关系。",
+      "eventIds": [
+        "ming-fall"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-wu-sangui",
+      "identities": [],
+      "legacy": "其经历反映了王朝转换与地方军权扩张的复杂关系。",
+      "name": "吴三桂",
+      "placeIds": [],
+      "primaryEraId": "qing",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "明末清初将领，1644年引清军入关，后成为清朝藩王并发动反清战争。",
+      "timeline": [
+        {
+          "description": "参与明清之际及清初的军事政治竞争。",
+          "title": "主要活动",
+          "year": 1644
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "玄烨"
+      ],
+      "birthYear": 1654,
+      "birthplaceId": null,
+      "contributions": [
+        "推进清初统一与边疆治理。"
+      ],
+      "deathYear": 1722,
+      "evaluation": "其统治与清朝长期稳定的形成相关，也需考察战争代价。",
+      "eventIds": [
+        "kangqian"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-xuanye",
+      "identities": [],
+      "legacy": "其统治与清朝长期稳定的形成相关，也需考察战争代价。",
+      "name": "康熙帝",
+      "placeIds": [],
+      "primaryEraId": "qing",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "清朝皇帝，在位时期平定三藩等政治军事行动，加强国家统治。",
+      "timeline": [
+        {
+          "description": "推进清初统一与边疆治理。",
+          "title": "主要活动",
+          "year": 1681
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "胤禛"
+      ],
+      "birthYear": 1678,
+      "birthplaceId": null,
+      "contributions": [
+        "加强财政行政管理。"
+      ],
+      "deathYear": 1735,
+      "evaluation": "其政策是理解清代国家治理和社会负担的重要环节。",
+      "eventIds": [
+        "kangqian"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-yinzhen",
+      "identities": [],
+      "legacy": "其政策是理解清代国家治理和社会负担的重要环节。",
+      "name": "雍正帝",
+      "placeIds": [],
+      "primaryEraId": "qing",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "清朝皇帝，整顿财政与行政，推动赋役及地方治理调整。",
+      "timeline": [
+        {
+          "description": "加强财政行政管理。",
+          "title": "主要活动",
+          "year": 1723
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "弘历"
+      ],
+      "birthYear": 1711,
+      "birthplaceId": null,
+      "contributions": [
+        "推进清代疆域与行政整合。"
+      ],
+      "deathYear": 1799,
+      "evaluation": "应结合人口压力、战争财政与思想控制评价其统治。",
+      "eventIds": [
+        "kangqian"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-hongli",
+      "identities": [],
+      "legacy": "应结合人口压力、战争财政与思想控制评价其统治。",
+      "name": "乾隆帝",
+      "placeIds": [],
+      "primaryEraId": "qing",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "清朝皇帝，在位期间疆域治理与人口经济发展并行，后期财政和吏治问题加深。",
+      "timeline": [
+        {
+          "description": "推进清代疆域与行政整合。",
+          "title": "主要活动",
+          "year": 1736
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "宋太祖"
+      ],
+      "birthYear": 927,
+      "birthplaceId": null,
+      "contributions": [
+        "建立宋朝并调整中央军政结构。"
+      ],
+      "deathYear": 976,
+      "evaluation": "宋初制度选择深刻影响此后文官政治。",
+      "eventIds": [
+        "chenqiao"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhao-kuangyin",
+      "identities": [],
+      "legacy": "宋初制度选择深刻影响此后文官政治。",
+      "name": "赵匡胤",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "宋朝建立者。960年经陈桥兵变即位，随后推进统一并加强中央对军政的控制。",
+      "timeline": [
+        {
+          "description": "建立宋朝并调整中央军政结构。",
+          "title": "主要活动",
+          "year": 960
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 928,
+      "birthplaceId": null,
+      "contributions": [
+        "参与宋朝建立过程。"
+      ],
+      "deathYear": 984,
+      "evaluation": "其政治际遇反映了宋初武将与皇权关系的调整。",
+      "eventIds": [
+        "chenqiao"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-shi-shouxin",
+      "identities": [],
+      "legacy": "其政治际遇反映了宋初武将与皇权关系的调整。",
+      "name": "石守信",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "后周、北宋将领，参与陈桥兵变，拥立赵匡胤。其经历与宋初军权调整相联系。",
+      "timeline": [
+        {
+          "description": "参与宋朝建立过程。",
+          "title": "主要活动",
+          "year": 960
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "萧绰"
+      ],
+      "birthYear": 953,
+      "birthplaceId": null,
+      "contributions": [
+        "参与辽朝军政与宋辽议和。"
+      ],
+      "deathYear": 1009,
+      "evaluation": "其活动体现了辽朝政治及宋辽关系的复杂性。",
+      "eventIds": [
+        "chanyuan"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-xiao-chuo",
+      "identities": [],
+      "legacy": "其活动体现了辽朝政治及宋辽关系的复杂性。",
+      "name": "萧太后",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "辽朝政治人物，长期参与朝政，曾率军南下，是澶渊议和的重要决策者。",
+      "timeline": [
+        {
+          "description": "参与辽朝军政与宋辽议和。",
+          "title": "主要活动",
+          "year": 1004
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 961,
+      "birthplaceId": null,
+      "contributions": [
+        "参与澶渊之盟前后的军政决策。"
+      ],
+      "deathYear": 1023,
+      "evaluation": "其形象与北宋对辽政策及士大夫政治相联系。",
+      "eventIds": [
+        "chanyuan"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-kou-zhun",
+      "identities": [],
+      "legacy": "其形象与北宋对辽政策及士大夫政治相联系。",
+      "name": "寇准",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "北宋政治人物，辽军南下时主张宋真宗亲征，参与澶州军事和议和决策。",
+      "timeline": [
+        {
+          "description": "参与澶渊之盟前后的军政决策。",
+          "title": "主要活动",
+          "year": 1004
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "赵恒"
+      ],
+      "birthYear": 968,
+      "birthplaceId": null,
+      "contributions": [
+        "参与形成澶渊之盟。"
+      ],
+      "deathYear": 1022,
+      "evaluation": "宋辽和约与其统治时期的边境秩序紧密相关。",
+      "eventIds": [
+        "chanyuan"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhao-heng",
+      "identities": [],
+      "legacy": "宋辽和约与其统治时期的边境秩序紧密相关。",
+      "name": "宋真宗",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "宋朝皇帝，辽军南下时前往澶州，随后与辽议和。",
+      "timeline": [
+        {
+          "description": "参与形成澶渊之盟。",
+          "title": "主要活动",
+          "year": 1004
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1019,
+      "birthplaceId": null,
+      "contributions": [
+        "参与新法争论并从事史学编纂。"
+      ],
+      "deathYear": 1086,
+      "evaluation": "其政治主张与史学工作均产生长期影响。",
+      "eventIds": [
+        "wang-anshi"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-sima-guang",
+      "identities": [],
+      "legacy": "其政治主张与史学工作均产生长期影响。",
+      "name": "司马光",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "北宋政治家、史学家，反对王安石部分新法，主持编纂《资治通鉴》。",
+      "timeline": [
+        {
+          "description": "参与新法争论并从事史学编纂。",
+          "title": "主要活动",
+          "year": 1069
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1021,
+      "birthplaceId": null,
+      "contributions": [
+        "推动青苗、募役、保甲等改革。"
+      ],
+      "deathYear": 1086,
+      "evaluation": "对新法效果与执行问题的讨论延续至今。",
+      "eventIds": [
+        "wang-anshi"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-wang-anshi",
+      "identities": [],
+      "legacy": "对新法效果与执行问题的讨论延续至今。",
+      "name": "王安石",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "北宋政治家、文学家，宋神宗时期主持新法，试图改善财政、军备与社会治理。",
+      "timeline": [
+        {
+          "description": "推动青苗、募役、保甲等改革。",
+          "title": "主要活动",
+          "year": 1069
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "赵顼"
+      ],
+      "birthYear": 1048,
+      "birthplaceId": null,
+      "contributions": [
+        "支持新法并调整国家治理。"
+      ],
+      "deathYear": 1085,
+      "evaluation": "其统治体现了北宋富国强兵的改革诉求。",
+      "eventIds": [
+        "wang-anshi"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhao-xu",
+      "identities": [],
+      "legacy": "其统治体现了北宋富国强兵的改革诉求。",
+      "name": "宋神宗",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "宋朝皇帝，支持王安石变法，希望应对北宋财政与边防问题。",
+      "timeline": [
+        {
+          "description": "支持新法并调整国家治理。",
+          "title": "主要活动",
+          "year": 1069
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "完颜晟"
+      ],
+      "birthYear": 1075,
+      "birthplaceId": null,
+      "contributions": [
+        "统治时期金朝扩大在北方的控制。"
+      ],
+      "deathYear": 1135,
+      "evaluation": "其统治与宋金政治格局的形成有关。",
+      "eventIds": [
+        "jingkang"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-wanyan-sheng",
+      "identities": [],
+      "legacy": "其统治与宋金政治格局的形成有关。",
+      "name": "金太宗",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "金朝皇帝，在位期间金军灭辽并攻取北宋都城开封。",
+      "timeline": [
+        {
+          "description": "统治时期金朝扩大在北方的控制。",
+          "title": "主要活动",
+          "year": 1127
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "赵佶"
+      ],
+      "birthYear": 1082,
+      "birthplaceId": null,
+      "contributions": [
+        "北宋末年在位，靖康之变后被俘。"
+      ],
+      "deathYear": 1135,
+      "evaluation": "其文化成就与政治责任需要分别评价。",
+      "eventIds": [
+        "jingkang"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhao-ji",
+      "identities": [],
+      "legacy": "其文化成就与政治责任需要分别评价。",
+      "name": "宋徽宗",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "宋朝皇帝，兼擅书画。靖康之变中被金军俘虏，其统治常与北宋末年政治危机一并讨论。",
+      "timeline": [
+        {
+          "description": "北宋末年在位，靖康之变后被俘。",
+          "title": "主要活动",
+          "year": 1127
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1089,
+      "birthplaceId": null,
+      "contributions": [
+        "组织南宋初年的抗金防御。"
+      ],
+      "deathYear": 1151,
+      "evaluation": "其经历体现了南宋立国初期的军事压力。",
+      "eventIds": [
+        "yue-fei"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-han-shizhong",
+      "identities": [],
+      "legacy": "其经历体现了南宋立国初期的军事压力。",
+      "name": "韩世忠",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "南宋将领，参与抗金作战，黄天荡战役是其军事生涯中的重要事件。",
+      "timeline": [
+        {
+          "description": "组织南宋初年的抗金防御。",
+          "title": "主要活动",
+          "year": 1130
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1090,
+      "birthplaceId": null,
+      "contributions": [
+        "推动绍兴和议及相关政治安排。"
+      ],
+      "deathYear": 1155,
+      "evaluation": "对其评价长期围绕议和政策与岳飞之死展开。",
+      "eventIds": [
+        "yue-fei"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-qin-hui",
+      "identities": [],
+      "legacy": "对其评价长期围绕议和政策与岳飞之死展开。",
+      "name": "秦桧",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "南宋宰相，主导对金议和，并与岳飞被害事件有密切联系。",
+      "timeline": [
+        {
+          "description": "推动绍兴和议及相关政治安排。",
+          "title": "主要活动",
+          "year": 1141
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "赵桓"
+      ],
+      "birthYear": 1100,
+      "birthplaceId": null,
+      "contributions": [
+        "应对金军围攻，经历靖康之变。"
+      ],
+      "deathYear": 1161,
+      "evaluation": "其遭遇成为北宋覆亡与南宋政治记忆的重要部分。",
+      "eventIds": [
+        "jingkang"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-zhao-huan",
+      "identities": [],
+      "legacy": "其遭遇成为北宋覆亡与南宋政治记忆的重要部分。",
+      "name": "宋钦宗",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "北宋末代皇帝，在位时面临金军进攻，开封陷落后被俘。",
+      "timeline": [
+        {
+          "description": "应对金军围攻，经历靖康之变。",
+          "title": "主要活动",
+          "year": 1127
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1103,
+      "birthplaceId": null,
+      "contributions": [
+        "参与南宋初年的抗金战争。"
+      ],
+      "deathYear": 1142,
+      "evaluation": "应区分其实际军事经历、政治处境与后世纪念。",
+      "eventIds": [
+        "yue-fei"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-yue-fei",
+      "identities": [],
+      "legacy": "应区分其实际军事经历、政治处境与后世纪念。",
+      "name": "岳飞",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "南宋将领，组织抗金作战并多次北伐，后被处死。其军事活动与后世忠烈记忆均影响深远。",
+      "timeline": [
+        {
+          "description": "参与南宋初年的抗金战争。",
+          "title": "主要活动",
+          "year": 1134
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "铁木真"
+      ],
+      "birthYear": 1162,
+      "birthplaceId": null,
+      "contributions": [
+        "建立蒙古政治军事共同体。"
+      ],
+      "deathYear": 1227,
+      "evaluation": "其征服兼有广域联系扩展与大规模战争破坏。",
+      "eventIds": [
+        "mongol-rise"
+      ],
+      "historiography": "生年有不同记载，此处采用约1162年的常见说法。生平提要依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-temujin",
+      "identities": [],
+      "legacy": "其征服兼有广域联系扩展与大规模战争破坏。",
+      "name": "成吉思汗",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "蒙古政治军事领袖，1206年统一草原诸部后被推举为成吉思汗。其扩张深刻改变欧亚局势。",
+      "timeline": [
+        {
+          "description": "建立蒙古政治军事共同体。",
+          "title": "主要活动",
+          "year": 1206
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1170,
+      "birthplaceId": null,
+      "contributions": [
+        "参与蒙古扩张与对金战争。"
+      ],
+      "deathYear": 1223,
+      "evaluation": "其活动与蒙古在华北的军政组织发展相关。",
+      "eventIds": [
+        "mongol-rise"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-muqali",
+      "identities": [],
+      "legacy": "其活动与蒙古在华北的军政组织发展相关。",
+      "name": "木华黎",
+      "placeIds": [],
+      "primaryEraId": "song",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "蒙古将领，协助成吉思汗作战，后主持对金战争。",
+      "timeline": [
+        {
+          "description": "参与蒙古扩张与对金战争。",
+          "title": "主要活动",
+          "year": 1217
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 579,
+      "birthplaceId": null,
+      "contributions": [
+        "参与唐初行政与制度建设。"
+      ],
+      "deathYear": 648,
+      "evaluation": "其活动体现了唐初文官集团在国家恢复中的作用。",
+      "eventIds": [
+        "zhenguan"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-fang-xuanling",
+      "identities": [],
+      "legacy": "其活动体现了唐初文官集团在国家恢复中的作用。",
+      "name": "房玄龄",
+      "placeIds": [],
+      "primaryEraId": "tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "唐初宰相，长期参与中枢政务，协助唐太宗选任官员、整顿制度。",
+      "timeline": [
+        {
+          "description": "参与唐初行政与制度建设。",
+          "title": "主要活动",
+          "year": 627
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 580,
+      "birthplaceId": null,
+      "contributions": [
+        "参与唐初政务并多次进谏。"
+      ],
+      "deathYear": 643,
+      "evaluation": "其直谏形象长期影响中国政治文化。",
+      "eventIds": [
+        "zhenguan"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-wei-zheng",
+      "identities": [],
+      "legacy": "其直谏形象长期影响中国政治文化。",
+      "name": "魏征",
+      "placeIds": [],
+      "primaryEraId": "tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "唐初政治人物，以向唐太宗进谏著称。其政论反映了唐初统治集团对隋亡教训的认识。",
+      "timeline": [
+        {
+          "description": "参与唐初政务并多次进谏。",
+          "title": "主要活动",
+          "year": 627
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "李世民"
+      ],
+      "birthYear": 598,
+      "birthplaceId": null,
+      "contributions": [
+        "任贤纳谏、调整赋役与吏治。"
+      ],
+      "deathYear": 649,
+      "evaluation": "贞观政治成为后世讨论君臣关系和治国方式的重要参照。",
+      "eventIds": [
+        "zhenguan"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-li-shimin",
+      "identities": [],
+      "legacy": "贞观政治成为后世讨论君臣关系和治国方式的重要参照。",
+      "name": "唐太宗",
+      "placeIds": [],
+      "primaryEraId": "tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "唐朝第二位皇帝。即位后任用魏征、房玄龄等人，整顿政治并促进社会恢复。",
+      "timeline": [
+        {
+          "description": "任贤纳谏、调整赋役与吏治。",
+          "title": "主要活动",
+          "year": 627
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 650,
+      "birthplaceId": null,
+      "contributions": [
+        "协助唐玄宗处理开元初年政务。"
+      ],
+      "deathYear": 721,
+      "evaluation": "与宋璟并称为开元名相，反映后世对开元政治的记忆。",
+      "eventIds": [
+        "kaiyuan"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-yao-chong",
+      "identities": [],
+      "legacy": "与宋璟并称为开元名相，反映后世对开元政治的记忆。",
+      "name": "姚崇",
+      "placeIds": [],
+      "primaryEraId": "tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "唐代政治人物，开元初年任宰相，参与吏治整顿和国家治理。",
+      "timeline": [
+        {
+          "description": "协助唐玄宗处理开元初年政务。",
+          "title": "主要活动",
+          "year": 713
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 663,
+      "birthplaceId": null,
+      "contributions": [
+        "参与开元时期行政整顿。"
+      ],
+      "deathYear": 737,
+      "evaluation": "其执政活动与开元前期政治秩序密切相关。",
+      "eventIds": [
+        "kaiyuan"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-song-jing",
+      "identities": [],
+      "legacy": "其执政活动与开元前期政治秩序密切相关。",
+      "name": "宋璟",
+      "placeIds": [],
+      "primaryEraId": "tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "唐代政治人物，开元时期任宰相，以整饬吏治、遵守法度受到后世重视。",
+      "timeline": [
+        {
+          "description": "参与开元时期行政整顿。",
+          "title": "主要活动",
+          "year": 716
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "李隆基"
+      ],
+      "birthYear": 685,
+      "birthplaceId": null,
+      "contributions": [
+        "主持开元前期政务。"
+      ],
+      "deathYear": 762,
+      "evaluation": "评价其统治需要同时考察前期发展与后期危机。",
+      "eventIds": [
+        "kaiyuan",
+        "anshi"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-li-longji",
+      "identities": [],
+      "legacy": "评价其统治需要同时考察前期发展与后期危机。",
+      "name": "唐玄宗",
+      "placeIds": [],
+      "primaryEraId": "tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "唐朝皇帝，开元时期任用姚崇、宋璟等人，经济文化有所发展。晚年政治失序与安史之乱使国势转折。",
+      "timeline": [
+        {
+          "description": "主持开元前期政务。",
+          "title": "主要活动",
+          "year": 713
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 697,
+      "birthplaceId": null,
+      "contributions": [
+        "参与平定安史之乱。"
+      ],
+      "deathYear": 781,
+      "evaluation": "其军事活动有助于维系唐朝中央政权。",
+      "eventIds": [
+        "anshi"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-guo-ziyi",
+      "identities": [],
+      "legacy": "其军事活动有助于维系唐朝中央政权。",
+      "name": "郭子仪",
+      "placeIds": [],
+      "primaryEraId": "tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "唐代将领，在安史之乱中组织作战，参与收复两京等军事行动。",
+      "timeline": [
+        {
+          "description": "参与平定安史之乱。",
+          "title": "主要活动",
+          "year": 756
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 703,
+      "birthplaceId": null,
+      "contributions": [
+        "发动安史之乱，造成严重战争破坏。"
+      ],
+      "deathYear": 757,
+      "evaluation": "其军政势力的形成反映了唐代边镇与中央关系的变化。",
+      "eventIds": [
+        "anshi"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-an-lushan",
+      "identities": [],
+      "legacy": "其军政势力的形成反映了唐代边镇与中央关系的变化。",
+      "name": "安禄山",
+      "placeIds": [],
+      "primaryEraId": "tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "唐代边将，兼领多个节度使职务，755年起兵反唐。其叛乱使唐朝陷入长期战争。",
+      "timeline": [
+        {
+          "description": "发动安史之乱，造成严重战争破坏。",
+          "title": "主要活动",
+          "year": 755
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 703,
+      "birthplaceId": null,
+      "contributions": [
+        "延续安史之乱中的军事对抗。"
+      ],
+      "deathYear": 761,
+      "evaluation": "其活动是理解战乱延续及河北军镇力量的重要线索。",
+      "eventIds": [
+        "anshi"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-shi-siming",
+      "identities": [],
+      "legacy": "其活动是理解战乱延续及河北军镇力量的重要线索。",
+      "name": "史思明",
+      "placeIds": [],
+      "primaryEraId": "tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "唐代边将，参与安禄山叛乱，后继续与唐军作战，是安史之乱的主要发动者之一。",
+      "timeline": [
+        {
+          "description": "延续安史之乱中的军事对抗。",
+          "title": "主要活动",
+          "year": 755
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 727,
+      "birthplaceId": null,
+      "contributions": [
+        "推动以资产和土地为依据的两税法。"
+      ],
+      "deathYear": 781,
+      "evaluation": "其改革是古代税制转变的重要环节。",
+      "eventIds": [
+        "two-tax"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-yang-yan",
+      "identities": [],
+      "legacy": "其改革是古代税制转变的重要环节。",
+      "name": "杨炎",
+      "placeIds": [],
+      "primaryEraId": "tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "唐代宰相，两税法的重要倡议和推行者，试图回应旧赋役制度难以维系的局面。",
+      "timeline": [
+        {
+          "description": "推动以资产和土地为依据的两税法。",
+          "title": "主要活动",
+          "year": 780
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "李适"
+      ],
+      "birthYear": 742,
+      "birthplaceId": null,
+      "contributions": [
+        "批准推行两税法。"
+      ],
+      "deathYear": 805,
+      "evaluation": "其统治反映了中唐中央财政与地方军政关系的紧张。",
+      "eventIds": [
+        "two-tax"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-li-kuo",
+      "identities": [],
+      "legacy": "其统治反映了中唐中央财政与地方军政关系的紧张。",
+      "name": "唐德宗",
+      "placeIds": [],
+      "primaryEraId": "tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "唐朝皇帝，在位时期实行两税法，面临财政困难与藩镇问题。",
+      "timeline": [
+        {
+          "description": "批准推行两税法。",
+          "title": "主要活动",
+          "year": 780
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "发动并扩展唐末起义。"
+      ],
+      "deathYear": 878,
+      "evaluation": "其活动反映了晚唐社会矛盾与地方秩序危机。",
+      "eventIds": [
+        "huang-chao"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-wang-xianzhi",
+      "identities": [],
+      "legacy": "其活动反映了晚唐社会矛盾与地方秩序危机。",
+      "name": "王仙芝",
+      "placeIds": [],
+      "primaryEraId": "tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "唐末起义领导者，与黄巢等人的活动共同构成晚唐社会动荡的重要部分。",
+      "timeline": [
+        {
+          "description": "发动并扩展唐末起义。",
+          "title": "主要活动",
+          "year": 875
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "领导唐末大规模起义。"
+      ],
+      "deathYear": 884,
+      "evaluation": "其兴败应结合灾荒、赋役与军镇政治考察。",
+      "eventIds": [
+        "huang-chao"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-huang-chao",
+      "identities": [],
+      "legacy": "其兴败应结合灾荒、赋役与军镇政治考察。",
+      "name": "黄巢",
+      "placeIds": [],
+      "primaryEraId": "tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "唐末起义领导者。起义军转战多地并攻入长安，对唐朝统治造成沉重打击。",
+      "timeline": [
+        {
+          "description": "领导唐末大规模起义。",
+          "title": "主要活动",
+          "year": 875
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [
+        "赛典赤·赡思丁"
+      ],
+      "birthYear": 1211,
+      "birthplaceId": null,
+      "contributions": [
+        "参与元代云南地方治理。"
+      ],
+      "deathYear": 1279,
+      "evaluation": "其地方行政实践是考察元代行省治理的重要线索。",
+      "eventIds": [
+        "province-system"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-sayyid-ajall",
+      "identities": [],
+      "legacy": "其地方行政实践是考察元代行省治理的重要线索。",
+      "name": "赛典赤",
+      "placeIds": [],
+      "primaryEraId": "yuan",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "元代政治人物，1274年起主持云南行省事务，任职期间推进地方行政与生产建设，1279年去世。",
+      "timeline": [
+        {
+          "description": "参与元代云南地方治理。",
+          "title": "主要活动",
+          "year": 1274
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [
+        "元世祖"
+      ],
+      "birthYear": 1215,
+      "birthplaceId": null,
+      "contributions": [
+        "建立元朝并推动广域行政组织。"
+      ],
+      "deathYear": 1294,
+      "evaluation": "其统治涉及不同制度传统与多元人口的整合。",
+      "eventIds": [
+        "yuan-founded",
+        "province-system"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-kublai",
+      "identities": [],
+      "legacy": "其统治涉及不同制度传统与多元人口的整合。",
+      "name": "忽必烈",
+      "placeIds": [],
+      "primaryEraId": "yuan",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "蒙古统治者、元朝建立者，1271年定国号为元，以大都为政治中心，随后完成对南宋的战争。",
+      "timeline": [
+        {
+          "description": "建立元朝并推动广域行政组织。",
+          "title": "主要活动",
+          "year": 1271
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1216,
+      "birthplaceId": null,
+      "contributions": [
+        "参与元初国家制度与大都规划。"
+      ],
+      "deathYear": 1274,
+      "evaluation": "其经历体现了元初政治建设中的多种知识与制度来源。",
+      "eventIds": [
+        "yuan-founded"
+      ],
+      "historiography": "本条为人物生平的简要提要，依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。",
+      "id": "person-liu-bingzhong",
+      "identities": [],
+      "legacy": "其经历体现了元初政治建设中的多种知识与制度来源。",
+      "name": "刘秉忠",
+      "placeIds": [],
+      "primaryEraId": "yuan",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "bai-shouyi-general-history"
+      ],
+      "summary": "元初政治人物，参与忽必烈时期的制度规划与都城建设。",
+      "timeline": [
+        {
+          "description": "参与元初国家制度与大都规划。",
+          "title": "主要活动",
+          "year": 1271
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    }
+  ]
+}

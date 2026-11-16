@@ -8,8 +8,10 @@ deathYear: null
 roleIds: []
 eventIds:
   - zheng-he
+  - zheng-he-first-voyage
 sourceIds:
   - bai-shouyi-general-history
+  - mingshi-zhonghua-1974
 yearPrecision: circa
 birthplaceId: null
 placeIds: []

@@ -7,9 +7,11 @@ birthYear: 1549
 deathYear: 1598
 roleIds: []
 eventIds:
+  - imjin-pyongyang-campaign
   - imjin-war
 sourceIds:
   - bai-shouyi-general-history
+  - mingshi-zhonghua-1974
 yearPrecision: exact
 birthplaceId: null
 placeIds: []

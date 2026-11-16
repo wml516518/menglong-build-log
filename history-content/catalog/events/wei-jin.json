@@ -1,0 +1,5084 @@
+[
+  {
+    "id": "cao-pi-wei-founded",
+    "title": "曹丕受禅建魏",
+    "aliases": [],
+    "startYear": 220,
+    "endYear": 220,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "汉献帝禅位于曹丕，魏王改元黄初并以洛阳为都。政权更替借助禅让仪式宣示合法性，曹氏此前掌握的军政组织成为新朝基础。蜀汉和江东没有接受这一继承叙事，三方围绕汉统、疆域和称帝资格继续竞争。",
+    "personIds": [
+      "person-cao-pi"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "cao-pi-wei-founded-to-shu-han-founded",
+      "cao-pi-wei-founded-to-wei-nine-rank"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷二《文帝纪》延康元年十月受禅段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷六十九《魏纪一》黄初元年受禅段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "wei-nine-rank",
+    "title": "魏初实行九品中正制",
+    "aliases": [],
+    "startYear": 220,
+    "endYear": 220,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "曹魏选任官员设置中正，由其品评州郡人才并向朝廷提供等级依据。制度回应战乱中乡里荐举失序的问题，却使门第、声望与官职取得渐趋相连。后世九品的具体运作多有变化，不能把魏初规定直接等同于晋代高门政治。",
+    "personIds": [
+      "person-chen-qun"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "cao-pi-wei-founded-to-wei-nine-rank"
+    ],
+    "color": "#a08a55",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷二十二《陈群传》九品官人法段"
+      },
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷四十五《刘毅传》论魏九品中正及其晋代弊病段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "shu-han-founded",
+    "title": "刘备在成都称帝",
+    "aliases": [],
+    "startYear": 221,
+    "endYear": 221,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "shu-han"
+    ],
+    "period": "三国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "曹丕代汉后，刘备在成都即皇帝位，仍以汉为国号并改元章武。益州政权借宗室身份主张延续汉统，同时面对荆州失守和与孙权关系破裂的压力。称帝巩固了成都朝廷的政治名分，却并未恢复对旧汉全境的控制。",
+    "personIds": [
+      "person-liu-bei"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "cao-pi-wei-founded-to-shu-han-founded",
+      "shu-han-founded-to-sun-quan-wu-founded",
+      "shu-han-founded-to-yiling-battle",
+      "shu-han-founded-to-baidi-tusuo"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷三十二《先主传》章武元年四月即位段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷六十九《魏纪一》黄初二年刘备称帝段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "yiling-battle",
+    "title": "夷陵之战与蜀军退却",
+    "aliases": [],
+    "startYear": 222,
+    "endYear": 222,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "shu-han",
+      "eastern-wu"
+    ],
+    "period": "三国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "刘备东征孙吴，陆逊在夷陵、猇亭一线持久相持后发动火攻，蜀军遭受重大损失。战后刘备退至白帝，蜀汉难以凭军事力量夺回荆州。吴蜀此后重新寻找共同抗魏的方式，三国边界由这场战役进一步稳定。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "shu-han-founded-to-yiling-battle"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷五十八《陆逊传》黄武元年猇亭破蜀军段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "baidi-tusuo",
+    "title": "刘备白帝托孤",
+    "aliases": [],
+    "startYear": 223,
+    "endYear": 223,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "shu-han"
+    ],
+    "period": "三国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "刘备病重于永安，托付诸葛亮辅佐刘禅，又以李严为副。托孤安排使新君继位时的军政权力有明确承接者，缓解夷陵战败后的朝廷危机。诸葛亮随后主持内政与对外战争，蜀汉权力结构在这一安排下维持多年。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "shu-han-founded-to-baidi-tusuo"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷三十五《诸葛亮传》先主病笃托孤段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zhuge-southern-campaign",
+    "title": "诸葛亮平定南中",
+    "aliases": [],
+    "startYear": 225,
+    "endYear": 225,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "shu-han"
+    ],
+    "period": "三国",
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "诸葛亮率军南征，平定益州南部诸郡的反抗，随后调整地方统治和征发安排。南中行动为蜀汉取得兵员与物资，也改变地方豪族、部族首领和成都政权之间的关系。史料对各地响应并不一致，不能把战后秩序描述为一次性全面整合。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#9d9466",
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷三十五《诸葛亮传》建兴三年南征段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zhuge-chushi-biao",
+    "title": "诸葛亮出师表与北伐动员",
+    "aliases": [],
+    "startYear": 227,
+    "endYear": 227,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "shu-han"
+    ],
+    "period": "三国",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "诸葛亮驻军汉中前上《出师表》，向刘禅说明北伐目标、用人原则与朝廷内外的职责。表文把先主遗命与恢复中原相连，也展示蜀汉在有限资源下维持政治动员的语言。其后广为传诵的文学地位，不应遮蔽当时具体的军政语境。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "zhuge-chushi-biao-to-jieting-battle"
+    ],
+    "color": "#8f86b2",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷三十五《诸葛亮传》建兴五年出师表全文"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "jieting-battle",
+    "title": "街亭失守",
+    "aliases": [],
+    "startYear": 228,
+    "endYear": 228,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "shu-han",
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "诸葛亮首次北伐进入陇右后，马谡在街亭失利，蜀军补给与退路受到威胁。诸葛亮撤军并处分有关将领，失去继续争夺西北的窗口。街亭并非整场北伐的唯一战场，却是迫使这次行动结束的关键节点。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "zhuge-chushi-biao-to-jieting-battle"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷三十五《诸葛亮传》建兴六年马谡失街亭段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "sun-quan-wu-founded",
+    "title": "孙权称帝建吴",
+    "aliases": [],
+    "startYear": 229,
+    "endYear": 229,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-wu"
+    ],
+    "period": "三国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "孙权在武昌称帝，国号吴，随后把都城重新安排在建业。此前江东政权长期在汉魏名号之间周旋，称帝使三国并立的政治格局得到正式表达。吴廷仍需处理地方士族、山越地区与长江防线，国家建立不等于内部治理已经完成。",
+    "personIds": [
+      "person-sun-quan"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "shu-han-founded-to-sun-quan-wu-founded",
+      "sun-quan-wu-founded-to-wu-jianye-capital"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷四十七《吴主传》黄龙元年夏四月即位段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷七十一《魏纪三》太和三年孙权称帝段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "wu-jianye-capital",
+    "title": "孙吴定都建业",
+    "aliases": [],
+    "startYear": 229,
+    "endYear": 229,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-wu"
+    ],
+    "period": "三国",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "孙权称帝后迁都建业，使长江下游的军事基地转为朝廷核心。新都连接江南农业、运输与江防体系，便于统合江东士族和沿江诸郡。建业后来多次成为南方王朝首都，但各朝疆域和城市规模不能由孙吴时的记载直接推定。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "sun-quan-wu-founded-to-wu-jianye-capital"
+    ],
+    "color": "#a08a55",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷四十七《吴主传》黄龙元年迁都建业段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "wei-northern-expeditions",
+    "title": "蜀魏祁山争夺",
+    "aliases": [],
+    "startYear": 231,
+    "endYear": 231,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "shu-han",
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "诸葛亮再出祁山，与司马懿所率魏军在陇右对峙，粮运问题持续限制蜀军行动。双方既有阵地争夺，也围绕西北郡县与后勤线路较量。此役反映蜀汉北伐并非单次决战，而是受人口、运输和防御体系约束的连续军事尝试。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "wei-northern-expeditions-to-wuzhangyuan-stalemate"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷三十五《诸葛亮传》建兴九年复出祁山段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "wu-sea-liaodong-mission",
+    "title": "孙吴遣使辽东",
+    "aliases": [],
+    "startYear": 233,
+    "endYear": 233,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-wu"
+    ],
+    "period": "三国",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "孙权希望联合辽东公孙渊牵制曹魏，派遣使节与兵员渡海，但公孙渊杀害来使并向魏示好。海上联络显示吴廷尝试突破长江战线的战略想象，也暴露远距离联盟受地方权力变动影响极大。失败造成财物和人员损失。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#739ca7",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷四十七《吴主传》嘉禾二年公孙渊事段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "wuzhangyuan-stalemate",
+    "title": "五丈原对峙与诸葛亮病逝",
+    "aliases": [],
+    "startYear": 234,
+    "endYear": 234,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "shu-han",
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "诸葛亮率军由斜谷进驻五丈原，尝试屯田以支持长期驻军；魏军坚守，双方未发生决定性大会战。诸葛亮病逝后蜀军撤回汉中。事件终结了他主持的北伐阶段，却没有立即结束蜀魏边境的军事压力。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "wei-northern-expeditions-to-wuzhangyuan-stalemate"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷三十五《诸葛亮传》建兴十二年据五丈原卒段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liaodong-campaign",
+    "title": "司马懿平辽东公孙渊",
+    "aliases": [],
+    "startYear": 238,
+    "endYear": 238,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "司马懿率魏军进攻辽东，围襄平并消灭公孙渊政权。曹魏由此直接控制长期半独立的东北边地，重新安排当地郡县与人口。战事还牵涉朝鲜半岛邻近区域的交通，但史书中的领土声索与实际治理范围应当区分。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷三《明帝纪》景初二年辽东平定段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "wei-japanese-mission",
+    "title": "倭使至魏朝",
+    "aliases": [],
+    "startYear": 238,
+    "endYear": 239,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "倭国女王卑弥呼遣使来到曹魏，魏廷授予封号并赐印绶、器物。记载显示海路、郡县与东亚地方权力网络的联系，也成为研究古代日本政治的重要中文材料。使节往来是互相利用名号和礼物的外交行为，不能简单视为日常行政统属。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#739ca7",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷三十《乌丸鲜卑东夷传》倭人条景初二年六月卑弥呼遣使段",
+        "note": "传本文字作景初二年（238）；另有景初三年（239）的异文与纪年考证，故范围记录238—239，未将异文冒充本传原字。"
+      },
+      {
+        "sourceId": "sakurai-makimuku-2019-tsukaguchi",
+        "locator": "《纒向学研究》第7号，塚口義信《再考・景初三年六月の倭女王の遣使について》，第39页起"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "gaopingling-coup",
+    "title": "高平陵政变",
+    "aliases": [],
+    "startYear": 249,
+    "endYear": 249,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "司马懿趁曹爽陪同皇帝谒陵时控制洛阳，迫使曹爽交出兵权，随后诛杀其党。曹魏朝廷的实际权力由此转向司马氏，但皇帝名号仍在。政变改变禁军、官僚和士族的联盟关系，为后续魏晋易代铺路。洛阳禁军的归属成为胜负关键。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "gaopingling-coup-to-jin-founded"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷一《宣帝纪》嘉平元年高平陵举兵段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "ji-kang-qin-fu",
+    "title": "嵇康《琴赋》与竹林交游",
+    "aliases": [],
+    "startYear": 250,
+    "endYear": 262,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "嵇康以音乐、养生和批评礼法的文章参与曹魏后期士人讨论，竹林交游后来被塑造成鲜明的文化记忆。《琴赋》把演奏经验与审美理想结合，显示玄学议论并非只有抽象辩论。作品具体写作年不可确考，这里取其活动时段。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8f86b2",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷四十九《嵇康传》好锻、善琴及文论段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "wang-ling-plot",
+    "title": "王凌谋立曹彪事泄",
+    "aliases": [],
+    "startYear": 251,
+    "endYear": 251,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "淮南重臣王凌谋废曹芳、改立曹彪，计划泄露后司马懿率军处置。王凌自尽，相关宗室和官员受牵连。此事显示曹魏宗室与司马氏之间的信任已严重破裂，也成为淮南后续反司马氏举兵的前奏。宗室改立计划未及实施。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷二十八《王凌传》嘉平三年谋立曹彪段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "cao-fang-deposed",
+    "title": "曹芳被废",
+    "aliases": [],
+    "startYear": 254,
+    "endYear": 254,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "司马师控制朝政后废去曹芳帝位，改立曹髦。此举将皇位继承置于掌权大臣的决定之下，进一步削弱曹魏皇室的自主性。朝廷仍沿用魏的制度与名号，政权名义和实际支配之间的距离因而扩大。新君仍由司马氏拥立。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷四《三少帝纪》嘉平六年废齐王芳立高贵乡公段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "guanqiu-jian-revolt",
+    "title": "毌丘俭文钦淮南起兵",
+    "aliases": [],
+    "startYear": 255,
+    "endYear": 255,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "镇守淮南的毌丘俭和文钦以反对司马师专权为名起兵，未能在中原获得持久响应。魏军击破其部，文钦奔吴。战事说明边镇可以借皇室名义挑战中央，却也受补给、地方支持和主力调动限制。文钦逃吴使边界纠纷延续。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷二十八《毌丘俭传》正元二年与文钦起兵段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zhuge-dan-revolt",
+    "title": "诸葛诞寿春起兵",
+    "aliases": [],
+    "startYear": 257,
+    "endYear": 258,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "cao-wei",
+      "eastern-wu"
+    ],
+    "period": "三国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "诸葛诞据寿春反抗司马昭，并接受孙吴援军，形成长期围城。魏军封锁寿春，城内粮尽、将领离心，最终攻破城池。淮南最后一次大规模反司马氏武装失败，使司马氏在魏国内部的军事优势更加稳固。吴军援助也未扭转围城态势。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷二十八《诸葛诞传》甘露二年寿春反至三年城陷段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "cao-mao-killed",
+    "title": "曹髦出宫讨司马昭被杀",
+    "aliases": [],
+    "startYear": 260,
+    "endYear": 260,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "曹髦亲率宫中人员试图讨伐司马昭，在洛阳街道上被杀。皇帝对掌权大臣的公开反击以失败告终，魏廷随即另立曹奂。史书对执行者与责任归属的书写各有侧重，但事件本身揭示司马氏权力已压过皇室。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷四《三少帝纪》甘露五年高贵乡公出兵被杀段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "shu-han-falls",
+    "title": "魏军入蜀与蜀汉灭亡",
+    "aliases": [],
+    "startYear": 263,
+    "endYear": 263,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "shu-han",
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "曹魏分道伐蜀，邓艾由阴平险道深入，刘禅在成都投降；姜维主力此前仍在剑阁抗击钟会。蜀汉政权终结并非单一战场的结果，而是边防突破、后方应变和政治抉择共同作用。魏随后必须安置原蜀官民与军队。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "shu-han-falls-to-jin-founded"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷三十三《后主传》景耀六年邓艾至成都、后主降段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zhong-hui-rebellion",
+    "title": "钟会成都兵变",
+    "aliases": [],
+    "startYear": 264,
+    "endYear": 264,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "cao-wei"
+    ],
+    "period": "三国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "灭蜀后钟会在成都企图据军反抗司马昭，姜维参与其谋，部下兵士哗变使计划迅速瓦解。钟会和姜维均在混乱中死亡。事件显示胜利后的占领军仍存在统帅、降将与士卒之间的利益裂隙，也影响魏对蜀地的接收。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷二十八《钟会传》景元五年成都反乱段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "jin-founded",
+    "title": "司马炎受禅建西晋",
+    "aliases": [],
+    "startYear": 265,
+    "endYear": 265,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-jin"
+    ],
+    "period": "三国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "司马炎接受魏元帝禅位，建立晋朝，以洛阳为都。司马氏此前多年控制曹魏军政，改朝换代通过礼仪和官制延续完成，未立即改变南方孙吴独立的现实。新朝继承北方行政资源，随后面对宗室分封与统一战争两项任务。",
+    "personIds": [
+      "person-sima-yan"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "gaopingling-coup-to-jin-founded",
+      "shu-han-falls-to-jin-founded",
+      "jin-founded-to-jin-unifies-wu"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷三《武帝纪》泰始元年十二月受禅段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷七十九《晋纪一》泰始元年受禅段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "jin-taishi-law",
+    "title": "西晋颁行泰始律",
+    "aliases": [],
+    "startYear": 268,
+    "endYear": 268,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-jin"
+    ],
+    "period": "三国",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "西晋整理魏以来法律，颁布泰始律，并以律、令、故事区分不同规范。张斐、杜预等人的注释帮助解释条文适用。法典建设服务于新朝对官吏和地方的统一管理，但法律文本的颁行与各地审判实践仍有距离。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a08a55",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷三十《刑法志》泰始三年奏成、泰始四年正月颁新律段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "jin-household-registration",
+    "title": "太康年间户口与占田课田",
+    "aliases": [],
+    "startYear": 280,
+    "endYear": 280,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-jin"
+    ],
+    "period": "西晋",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "西晋在统一后统计户口，并以占田、课田办法规定民户土地占有与租调负担。史书记载的户口数是朝廷登记结果，不等于实际人口完全无遗漏。制度试图在战后重建税源，也显示官品、性别与身份差异仍影响土地和赋役分配。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "jin-unifies-wu-to-jin-household-registration"
+    ],
+    "color": "#6e9b70",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷二十六《食货志》太康元年户数与占田课田令段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "jin-unifies-wu",
+    "title": "西晋灭吴完成统一",
+    "aliases": [],
+    "startYear": 280,
+    "endYear": 280,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-jin",
+      "eastern-wu"
+    ],
+    "period": "西晋",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "晋军沿长江多路进攻，王濬水师由上游东下，吴主孙皓在建业投降。自东汉末年延续的三国分立结束，晋廷取得全国名义上的统一。接收吴地需要整合南方官民、赋税和地方士族，军事胜利不自动解决这些治理问题。",
+    "personIds": [
+      "person-sima-yan"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "jin-founded-to-jin-unifies-wu",
+      "jin-unifies-wu-to-jin-household-registration"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷三《武帝纪》太康元年王濬入石头、孙皓降段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷八十一《晋纪三》太康元年孙皓降段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "chen-shou-sanguozhi",
+    "title": "陈寿撰《三国志》",
+    "aliases": [],
+    "startYear": 280,
+    "endYear": 297,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-jin"
+    ],
+    "period": "西晋",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "陈寿入晋后撰写魏、蜀、吴三书，合为《三国志》，以纪传体整理刚结束的分立历史。作品在材料取舍上兼顾晋朝政治语境与三国不同政权的记忆，后有裴松之注大幅补充异说。确切完稿年未载，年代只取陈寿在晋任职时期。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8f86b2",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷八十二《陈寿传》撰魏吴蜀三书段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "eight-princes-war",
+    "title": "八王之乱爆发",
+    "aliases": [],
+    "startYear": 291,
+    "endYear": 306,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-jin"
+    ],
+    "period": "西晋",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "惠帝时诸王与外戚围绕禁军和朝廷控制权反复起兵，洛阳政局多次改组。宗室分封并未形成稳定共治，反而在皇位权威薄弱时提供军队和地盘。多年混战消耗财政与兵力，间接削弱晋廷应对北方新兴势力的能力。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "eight-princes-war-to-yongjia-disaster"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷五十九《八王传》序及赵王伦、齐王冏等传"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "guo-xiang-zhuangzi-commentary",
+    "title": "郭象整理《庄子》注",
+    "aliases": [],
+    "startYear": 300,
+    "endYear": 312,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-jin"
+    ],
+    "period": "西晋",
+    "categories": [
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "郭象在西晋士人清谈背景下整理《庄子》注，吸收向秀旧说，并对《秋水》《至乐》等篇另作解释。注本流传推动玄学对自然、名教和个体处境的讨论。晋书明确记载向、郭文本的重合与争议，不能把整部注书无条件归为郭象独创。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#9780a4",
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷五十《郭象传》向秀旧注与郭象改定段",
+        "note": "《晋书》记郭象永嘉末卒，不载注书逐篇写作年月；取其西晋晚年活动范围。"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zhao-lun-usurpation",
+    "title": "赵王司马伦篡位",
+    "aliases": [],
+    "startYear": 301,
+    "endYear": 301,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-jin"
+    ],
+    "period": "西晋",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "司马伦控制惠帝后自立为帝，旋遭其他宗王联合讨伐而败亡。短暂篡位暴露皇帝与宗室之间已失去可持续的权力规则。各路军队借恢复正统之名进京，战后朝廷反而更依赖新一轮胜利者，内乱继续扩大。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷五十九《赵王伦传》永宁元年篡位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "li-xiong-cheng-han",
+    "title": "李雄在成都称王建成汉",
+    "aliases": [],
+    "startYear": 304,
+    "endYear": 304,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "cheng-han"
+    ],
+    "period": "西晋",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "巴氐李氏集团在益州建立政权，李雄据成都称王，后称帝。流民迁徙、地方守军冲突和蜀地自治诉求共同促成局势变化。成汉与北方刘氏政权不同，长期依托四川盆地经营，说明晋末崩解具有多个地区轨迹。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷一百二十一《李雄载记》成都称王段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liu-yuan-han-founded",
+    "title": "刘渊建立汉政权",
+    "aliases": [],
+    "startYear": 304,
+    "endYear": 304,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "han-zhao"
+    ],
+    "period": "西晋",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "南匈奴贵族刘渊在并州起兵，自称汉王，援引汉室姻亲与旧臣名号聚集部众。其政权最初并未控制整个北方，而是在晋室内乱中逐步扩展。汉国名号显示族属、政治继承与地方军事力量可以组合成新的合法性论述。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷一百一《刘元海载记》永兴元年称汉王段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "jin-huai-accession",
+    "title": "晋怀帝即位",
+    "aliases": [],
+    "startYear": 307,
+    "endYear": 307,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-jin"
+    ],
+    "period": "西晋",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "司马炽在惠帝死后即位，是为怀帝。朝廷试图从宗王战争中恢复秩序，却已失去对许多地方军镇的有效控制。皇帝仍可任命将相、调遣军队，但财政与交通断裂使诏令难以转化为稳定统治。洛阳朝廷尤其依赖临时军援。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷五《怀帝纪》光熙元年十一月即位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "yongjia-disaster",
+    "title": "洛阳陷落与永嘉之乱",
+    "aliases": [],
+    "startYear": 311,
+    "endYear": 311,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-jin",
+      "han-zhao"
+    ],
+    "period": "西晋",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "汉国军队攻陷洛阳，晋怀帝被俘，宫廷官员和居民遭大规模杀掠与流散。晋朝西部尚有抵抗中心，故洛阳陷落并非西晋法律意义上的终点。北方战乱促使士民南迁，改变江淮以南的人口与政治结构。",
+    "personIds": [
+      "person-sima-chi"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "eight-princes-war-to-yongjia-disaster",
+      "yongjia-disaster-to-chang-an-falls-316",
+      "yongjia-disaster-to-northern-refugees-cross-river"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷五《怀帝纪》永嘉五年刘曜陷洛阳、怀帝被执段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷八十七《晋纪九》永嘉五年洛阳陷落段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "northern-refugees-cross-river",
+    "title": "北方士民南渡",
+    "aliases": [],
+    "startYear": 311,
+    "endYear": 317,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-jin",
+      "eastern-jin"
+    ],
+    "period": "西晋",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "洛阳、长安相继受战乱威胁，北方官僚、士族与普通民众沿不同路线南下。迁徙并非单次整齐行动，既有携带家族资源者，也有失去土地的流民。新到人口参与江南开垦、军役和政权重建，同时与原有地方社会发生竞争。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yongjia-disaster-to-northern-refugees-cross-river",
+      "northern-refugees-cross-river-to-qiao-commandery-system"
+    ],
+    "color": "#89a47c",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷六十五《王导传》洛京倾覆后士庶渡江段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "chang-an-falls-316",
+    "title": "长安陷落与西晋终结",
+    "aliases": [],
+    "startYear": 316,
+    "endYear": 316,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-jin",
+      "han-zhao"
+    ],
+    "period": "西晋",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "汉国军队围困长安，粮尽之后晋愍帝出降，西晋在关中的最后朝廷终结。洛阳失陷后的五年间晋廷曾试图维持皇帝名号和西北抵抗。长安之败使司马氏在南方重建政权的政治选择更加迫切，也让北方陷入多国竞争。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yongjia-disaster-to-chang-an-falls-316",
+      "chang-an-falls-316-to-eastern-jin-founded"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷五《愍帝纪》建兴四年长安降汉段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "eastern-jin-founded",
+    "title": "司马睿在建康即位",
+    "aliases": [],
+    "startYear": 317,
+    "endYear": 318,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "司马睿先于建康称晋王，次年即皇帝位，东晋朝廷由此确立。王导等南渡士族与江东地方力量共同支持新政权，皇室权威依赖协商与军镇资源。南方延续晋号，并不意味着对北方旧郡县恢复了实际控制。",
+    "personIds": [
+      "person-sima-rui"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "chang-an-falls-316-to-eastern-jin-founded",
+      "eastern-jin-founded-to-wang-dun-rebellion",
+      "eastern-jin-founded-to-su-jun-rebellion"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷六《元帝纪》建武元年称晋王、太兴元年即皇帝位段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷九十《晋纪十二》太兴元年元帝即位段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "qiao-commandery-system",
+    "title": "东晋侨州郡县设置",
+    "aliases": [],
+    "startYear": 317,
+    "endYear": 330,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "东晋在江南为南渡士民侨置原籍州郡县，使流亡人口保留北方籍贯和一定的行政归属。侨置制度帮助朝廷安置集团、征发赋役，也使同一区域出现实土与侨治层次。后来的土断改革正是对这种复杂户籍格局的调整。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "northern-refugees-cross-river-to-qiao-commandery-system"
+    ],
+    "color": "#a08a55",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷十五《地理志》侨置州郡县叙述"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "jiangnan-clan-migration",
+    "title": "南迁士族定居江南",
+    "aliases": [],
+    "startYear": 317,
+    "endYear": 420,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "王、谢等北来士族与江东旧族围绕官职、田庄和婚姻建立新的地方秩序，普通迁民则更多依靠军屯与垦殖谋生。移民并非整齐划一的单向输入，身份和资源差别影响其经历。南迁群体长期改变江南政治文化，也带来地方利益摩擦。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#9d9466",
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷六十五《王导传》南渡士族安置及江左政事段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "later-zhao-founded",
+    "title": "石勒建立后赵",
+    "aliases": [],
+    "startYear": 319,
+    "endYear": 319,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "later-zhao"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "石勒在襄国称赵王，摆脱与刘氏汉国的从属关系，形成后赵政权。其军队与政务吸纳多种出身的人群，在河北争夺土地、城池与税源。后赵后来扩张到广阔北方，但建国之初仍处于诸政权交战的环境。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷一百四《石勒载记上》太兴二年称赵王段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "wang-dun-rebellion",
+    "title": "王敦起兵逼近建康",
+    "aliases": [],
+    "startYear": 322,
+    "endYear": 324,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "掌握长江上游军队的王敦以清君侧为名东下，迫使东晋朝廷妥协，建康权力一度受其控制。王敦死后部众继续抗拒朝廷而败。事件反映南渡政权对强大方镇的依赖与戒惧，皇室和士族联盟由此重新调整。",
+    "personIds": [
+      "person-wang-dun"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "eastern-jin-founded-to-wang-dun-rebellion"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷九十八《王敦传》永昌元年举兵至太宁二年败亡段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷九十二《晋纪十四》永昌元年王敦举兵段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "su-jun-rebellion",
+    "title": "苏峻攻入建康",
+    "aliases": [],
+    "startYear": 327,
+    "endYear": 329,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "苏峻拒绝朝廷调任，联合祖约起兵，攻陷建康并劫持成帝。陶侃、温峤等组织军队反攻，苏峻战死后叛乱才渐平。都城遭毁和流民军的军事化问题，使东晋重新讨论中央与外镇之间的权力边界。城中宫室与民居遭到毁坏。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "eastern-jin-founded-to-su-jun-rebellion"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷一百《苏峻传》咸和二年起兵、四年平定段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "cheng-han-conquest",
+    "title": "桓温灭成汉",
+    "aliases": [],
+    "startYear": 347,
+    "endYear": 347,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin",
+      "cheng-han"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "桓温率东晋军沿江入蜀，攻克成都，成汉君主李势投降。东晋收复四川盆地的重要财赋与人力来源，上游军镇的地位也随之增强。统一南方疆域与扩大方镇权力在此交织，为桓温后来干预朝政提供实力。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷九十八《桓温传》永和三年入蜀灭李势段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "ran-min-wei",
+    "title": "冉闵称魏与后赵瓦解",
+    "aliases": [],
+    "startYear": 350,
+    "endYear": 350,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "later-zhao"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "石虎死后后赵继承争斗激烈，冉闵掌兵并建立魏政权，邺城及周边爆发残酷的族群暴力。后赵崩解为前燕、前秦等势力扩张创造空间。史书的敌对称谓和杀戮数字需结合记述立场审视，不能用单一族群解释全部冲突。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷一百七《石季龙载记下》冉闵称帝及赵乱段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "former-qin-founded",
+    "title": "苻健建立前秦",
+    "aliases": [],
+    "startYear": 351,
+    "endYear": 351,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "former-qin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "氐族苻氏集团进入关中，苻健据长安称秦王，次年称帝，形成前秦。关中豪族、迁入人口与武装部众构成新政权的基础。前秦后来的北方统一并非建国时既定结果，而是经历与东晋、前燕、后赵遗绪的长期竞争。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷一百十二《苻健载记》关中称王段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "lanting-gathering",
+    "title": "兰亭修禊与《兰亭集序》",
+    "aliases": [],
+    "startYear": 353,
+    "endYear": 353,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "王羲之与士人于会稽山阴兰亭修禊、赋诗，序文将宴集之乐与生命短暂的感慨相连。后世把《兰亭集序》视为书法典范，真迹流传问题又形成独立的鉴藏史。一次地方雅集因此进入文学、书法和士人记忆的多重传统。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8f86b2",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷八十《王羲之传》永和九年兰亭修禊段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "huwens-first-northern-expedition",
+    "title": "桓温第一次北伐关中",
+    "aliases": [],
+    "startYear": 354,
+    "endYear": 354,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin",
+      "former-qin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "桓温率军攻向关中，一度逼近长安，却因粮道与敌军坚守而撤退。东晋虽以恢复故土动员，实际作战受远距离运输和北方政权的地方支撑制约。撤军损失与此前灭蜀的成功形成对照，也显示上游军镇扩张的限度。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷九十八《桓温传》永和十年伐秦至灞上段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "former-yan-enters-zhongyuan",
+    "title": "前燕占据邺城",
+    "aliases": [],
+    "startYear": 357,
+    "endYear": 357,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "former-yan"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "慕容儁控制河北后迁都邺城，将鲜卑慕容氏政权的核心推进中原。朝廷借旧有郡县和士人管理新领土，同时维持自身军事集团。迁都显示北方政权之间争夺的不仅是牧地，也包括农业税源和汉魏以来的政治中心。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷一百十《慕容儁载记》迁邺段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "gu-kaizhi-painting-tradition",
+    "title": "顾恺之人物画与画论",
+    "aliases": [],
+    "startYear": 360,
+    "endYear": 405,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "顾恺之以人物画和有关形神的画论著称，后世传本与题名作品共同塑造其艺术地位。东晋绘画重视人物神态与叙事表现，但现存摹本不能当作顾氏亲笔原作。活动年段只标示生涯，不给传世卷轴虚构确定创作年。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8f86b2",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "palace-museum-gu-kaizhi",
+        "locator": "《顾恺之》人物词条“传神写照”与画论作品段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "daoan-xiangyang",
+    "title": "释道安在襄阳组织译经",
+    "aliases": [],
+    "startYear": 365,
+    "endYear": 379,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "释道安在襄阳聚集僧众、讲解经典并整理译经目录，推动佛教文本辨伪和学派传播。襄阳处于南北交通要道，僧团的迁移与政局变化紧密相连。传记提供活动脉络，却不足以给每次讲经或目录编定指定确年。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#ba8b6b",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "chusanzangjiji-zhonghua-1995",
+        "locator": "卷十五《道安传》襄阳讲经、整理经录段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "former-qin-conquers-yan",
+    "title": "前秦灭前燕",
+    "aliases": [],
+    "startYear": 370,
+    "endYear": 370,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "former-qin",
+      "former-yan"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "苻坚遣王猛率军攻前燕，攻入邺城并俘获慕容暐。前秦取得河北大部和大量人口，军事扩张依赖关中与新占领地区的官僚配合。前燕旧部此后并未全部消失，淝水之败后慕容氏势力再次兴起。邺城随后成为前秦东部重镇。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷一百十三《苻坚载记上》王猛灭燕段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "former-qin-north-unity",
+    "title": "前秦统一北方大部",
+    "aliases": [],
+    "startYear": 376,
+    "endYear": 376,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "former-qin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "前秦先后灭前燕、前凉和代国，在淝水战前控制北方大部分地区。苻坚的朝廷容纳不同出身的官员与军队，但诸地区的利益和统合程度并不一致。表面统一使南征成为可能，也使大规模动员暴露内部脆弱性。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "former-qin-north-unity-to-feishui-battle"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷一百十三《苻坚载记上》前凉及代国降段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "feishui-battle",
+    "title": "淝水之战",
+    "aliases": [],
+    "startYear": 383,
+    "endYear": 383,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin",
+      "former-qin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "前秦大军南下，东晋谢玄等率北府兵在淝水一线迎击。秦军后撤让渡水岸时军心崩溃，晋军乘势取胜；苻坚北返后各地陆续反叛。战役保住东晋政权，却不是北方分裂的唯一原因，前秦内部统合问题同样关键。",
+    "personIds": [
+      "person-xie-xuan"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "former-qin-north-unity-to-feishui-battle",
+      "feishui-battle-to-later-yan-founded"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷一百十四《苻坚载记下》太元八年淝水段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷一百五《晋纪二十七》太元八年淝水段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "later-yan-founded",
+    "title": "慕容垂建立后燕",
+    "aliases": [],
+    "startYear": 384,
+    "endYear": 384,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "later-yan"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "前秦淝水失利后，慕容垂在河北恢复燕号，逐步建立后燕。原前燕军政网络、地方豪族与新的军事机会共同支撑其扩张。此事说明北方先前的统一并未消除旧政权记忆和将领的独立资源。河北的统治秩序再度重组。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "feishui-battle-to-later-yan-founded"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷一百二十三《慕容垂载记》太元九年称燕王段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-wei-founded",
+    "title": "拓跋珪重建代魏政权",
+    "aliases": [],
+    "startYear": 386,
+    "endYear": 386,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "拓跋珪在牛川复立代王位，随后改国号魏，北魏政权由此起步。其统治以拓跋部众为核心，同时吸纳代北各部和中原移民。后来统一北方的成就不能倒推为初年稳固，建国后仍需与后燕等强敌反复交战。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "northern-wei-founded-to-canhe-slope-battle",
+      "northern-wei-founded-to-northern-wei-unifies-north"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷二《太祖纪》登国元年即代王位、改号魏段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "canhe-slope-battle",
+    "title": "参合陂之战",
+    "aliases": [],
+    "startYear": 395,
+    "endYear": 395,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei",
+      "later-yan"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "拓跋珪率北魏军在参合陂击败后燕撤退部队，大量燕军被俘。胜利改变河北与代北之间的军事均势，为北魏南下打开机会。此役并未马上消灭后燕，而是在随后多年的攻城与政治分裂中产生持续影响。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "northern-wei-founded-to-canhe-slope-battle"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷二《太祖纪》登国十年参合陂破燕军段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "sun-en-uprising",
+    "title": "孙恩起兵袭会稽",
+    "aliases": [],
+    "startYear": 399,
+    "endYear": 402,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "孙恩利用东晋东南沿海的社会矛盾和宗教组织起兵，攻袭会稽并沿海反复进退。地方豪族、官府征发与信众网络交织，冲突延续数年。战事削弱江南旧有统治秩序，也促使刘裕等将领通过镇压获得军功。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#89a47c",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷一百《孙恩传》隆安三年会稽起兵及后续海上进退段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "faxian-india-journey",
+    "title": "法显西行求法",
+    "aliases": [],
+    "startYear": 399,
+    "endYear": 414,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "法显从长安出发，经中亚、印度求取佛教戒律文本，归国时选择海路。他的旅行记保存了沿线寺院、交通与社会观察，也体现东晋僧人对戒律传承的关切。行程跨越多个地区与年代，不能把所见制度概括为单一国家的常态。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#ba8b6b",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "chusanzangjiji-zhonghua-1995",
+        "locator": "卷十三《法显传》西行求戒律、海路归国段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "kumarajiva-changan",
+    "title": "鸠摩罗什入长安译经",
+    "aliases": [],
+    "startYear": 401,
+    "endYear": 401,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "later-qin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "后秦迎鸠摩罗什入长安，组织僧众合作翻译佛教经典。译场以口译、笔受和校订共同完成工作，形成深远影响的汉文译本。译经与后秦政治资源相连，却也依赖来自西域和中原的僧人网络，不能归功于单一译者。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#ba8b6b",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "chusanzangjiji-zhonghua-1995",
+        "locator": "卷十四《鸠摩罗什传》弘始三年入长安译经段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "huan-xuan-usurpation",
+    "title": "桓玄篡晋与刘裕起兵",
+    "aliases": [],
+    "startYear": 403,
+    "endYear": 404,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "桓玄依靠荆州军力进入建康，废晋安帝并建立楚政权；刘裕等北府将领随后起兵推翻他。一次改朝换代未能稳定江南，军镇对皇位的控制再度受到挑战。刘裕凭此取得朝廷核心权力，东晋晚期政治走向随之改变。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "jinshu-zhonghua-1974",
+        "locator": "卷九十九《桓玄传》元兴二年篡位及三年刘裕起兵段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "tao-yuanming-retires",
+    "title": "陶渊明辞彭泽归田",
+    "aliases": [],
+    "startYear": 405,
+    "endYear": 405,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "陶渊明短暂任彭泽令后辞官归田，以诗文书写农耕、贫困和仕隐选择。归隐不是脱离社会，田园生活仍受赋税与家计约束。后人以此建构士人节操典范，却需区分文学自述和官修传记对动机的不同强调。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8f86b2",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "songshu-zhonghua-1974",
+        "locator": "卷九十三《隐逸传》陶潜彭泽令去官段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liu-yu-conquers-southern-yan",
+    "title": "刘裕灭南燕",
+    "aliases": [],
+    "startYear": 410,
+    "endYear": 410,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin",
+      "southern-yan"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "刘裕北伐围攻广固，南燕君主慕容超被俘，山东沿海地区归东晋。战役使北府军获得威望与地盘，也带来俘虏安置和地方秩序重组。胜利不能等同于整个北方恢复，黄河以北仍有其他政权。广固之围持续消耗双方兵力。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "songshu-zhonghua-1974",
+        "locator": "卷一《武帝纪上》义熙六年广固平、南燕灭段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "tao-yuanming-peach-source",
+    "title": "《桃花源记》传播",
+    "aliases": [],
+    "startYear": 410,
+    "endYear": 420,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "陶渊明借桃花源故事想象与战乱隔绝的村落，作品以渔人偶入、再寻不得的结构讨论秩序与记忆。其成文确年没有可靠记载，故只以陶氏晚年文学活动为范围。文学寓言不能当作一处可直接定位的真实聚落。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8f86b2",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "taoyuanming-ji-zhonghua-1979",
+        "locator": "《陶渊明集》卷六《桃花源记并诗》"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liu-yu-conquers-later-qin",
+    "title": "刘裕入长安灭后秦",
+    "aliases": [],
+    "startYear": 417,
+    "endYear": 417,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-jin",
+      "later-qin"
+    ],
+    "period": "东晋与十六国",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "刘裕北伐夺取洛阳、长安，后秦君主姚泓投降。东晋军一度控制关中，但刘裕因建康政局返回，留守部队随后失去长安。短暂的军事收复与长期行政控制之间存在明显差别，关中得失也促成刘裕加速谋求皇位。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "songshu-zhonghua-1974",
+        "locator": "卷二《武帝纪中》义熙十三年入长安、姚泓降段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liu-song-founded",
+    "title": "刘裕受禅建立刘宋",
+    "aliases": [],
+    "startYear": 420,
+    "endYear": 420,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "southern-song"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "刘裕接受晋恭帝禅位，建立宋朝，以建康为都，后世称刘宋。北府军将领取得皇位，东晋以来士族和方镇的权力结构发生调整。南朝的开始并未消除北方政权，也没有让先前攻取的关中成为稳定疆域。",
+    "personIds": [
+      "person-liu-yu"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "liu-song-founded-to-southern-qi-founded"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "songshu-zhonghua-1974",
+        "locator": "卷三《武帝纪下》永初元年晋恭帝禅位段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷一百一十九《宋纪一》永初元年刘裕受禅段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "liu-song-wei-border-war",
+    "title": "刘宋与北魏河南争夺",
+    "aliases": [],
+    "startYear": 422,
+    "endYear": 423,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "southern-song",
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "刘裕死后北魏军南下争夺黄河南岸城镇，刘宋守军在虎牢、洛阳等处失利。双方边界并非由一次战斗固定，河南防线随军政资源反复变化。战事提示南朝新政权在皇位交接时难以同时维持北伐成果和都城安全。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "songshu-zhonghua-1974",
+        "locator": "卷九十五《索虏传》永初三年至景平元年河南战事段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "song-yuanjia-northern-campaign",
+    "title": "宋文帝元嘉北伐失利",
+    "aliases": [],
+    "startYear": 430,
+    "endYear": 431,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "southern-song",
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "宋文帝试图趁北魏西征夺回河南诸城，初期有所进展，魏军反击后南朝军队退回淮河以南。战事显示粮道、季节与边城守备对北伐同样重要。南北对峙由此继续，朝廷内部也需承担征役和失败造成的政治压力。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "songshu-zhonghua-1974",
+        "locator": "卷五《文帝纪》元嘉七年至八年北伐河南段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-wei-conquers-xia",
+    "title": "北魏攻灭夏国",
+    "aliases": [],
+    "startYear": 431,
+    "endYear": 431,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei",
+      "helian-xia"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "北魏连续攻取夏国关中与陇东据点，赫连定西走后被擒，赫连氏政权终结。北魏因而扩展到西北，但地方军镇与草原交通仍需经营。夏国遗民和军事集团被纳入新的统治体系，征服并非人口与制度的突然替换。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷四《世祖纪上》神麚四年赫连定被执段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-wei-conquers-yan",
+    "title": "北魏灭北燕",
+    "aliases": [],
+    "startYear": 436,
+    "endYear": 436,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei",
+      "northern-yan"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "北魏军攻入和龙，北燕主冯弘出奔高句丽，辽西地方政权结束。北魏取得连接东北与河北的军事通道，却仍须处理边境外交与迁徙人口。冯弘出逃说明政权灭亡与君主去向可分为不同过程。和龙旧地仍有边境防务压力。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷四《世祖纪上》太延二年攻和龙、冯弘奔高句丽段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-wei-unifies-north",
+    "title": "北魏灭北凉统一北方",
+    "aliases": [],
+    "startYear": 439,
+    "endYear": 439,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei",
+      "northern-liang"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "拓跋焘率军攻姑臧，北凉主沮渠牧犍投降，北魏控制河西走廊主要中心。自十六国竞争以来的北方大规模分裂告一段落，但边地仍有军事与外交压力。统一为后来的户籍、田制与文化整合提供更广阔空间。",
+    "personIds": [
+      "person-tuoba-tao"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "northern-wei-founded-to-northern-wei-unifies-north",
+      "northern-wei-unifies-north-to-liangzhou-scholars-east",
+      "northern-wei-unifies-north-to-northern-wei-equal-field"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷四《世祖纪下》太延五年姑臧平、沮渠牧犍降段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷一百二十三《宋纪五》元嘉十六年姑臧陷落段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "liangzhou-scholars-east",
+    "title": "凉州士人与僧侣东迁",
+    "aliases": [],
+    "startYear": 439,
+    "endYear": 450,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "北魏平北凉后迁徙河西官民、工匠与僧侣，凉州地区的经典、技术和佛教网络随之进入北方政治中心。迁徙包含强制与仕宦机会，不宜描述为单纯自愿交流。河西在丝路传播中的地位，因这些人的移动影响到中原文化。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "northern-wei-unifies-north-to-liangzhou-scholars-east"
+    ],
+    "color": "#9d9466",
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷一百一十四《释老志》平凉州后沙门及经典东传段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liu-song-yuanjia-prosperity",
+    "title": "元嘉年间江南农业恢复",
+    "aliases": [],
+    "startYear": 440,
+    "endYear": 453,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "southern-song"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "刘宋元嘉年间朝廷维持较长时期的内部秩序，江南农田、仓储与人口登记有所增长。官府财政依赖地方豪族与农户的劳作，也受北方战争和水旱影响。所谓元嘉之治是对一段治理表现的概括，不意味着各地收入或赋役负担完全相同。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#6e9b70",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "songshu-zhonghua-1974",
+        "locator": "卷五《文帝纪》元嘉政事及卷五十四《羊玄保传》农桑叙述"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-wei-steppe-relations",
+    "title": "北魏与柔然交涉",
+    "aliases": [],
+    "startYear": 440,
+    "endYear": 480,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei",
+      "rouran"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "北魏与柔然在北方草原持续交战又互通使节，边镇粮运、婚姻与部众归附交替出现。两国关系无法用单一战争概括，也受内部首领更替影响。长期边境压力塑造六镇军户和北魏国家的军事布局。互市和掠夺交替影响边地居民。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#739ca7",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷一百三《蠕蠕传》太武帝至孝文帝间和战段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-wei-silk-road",
+    "title": "北魏河西使节与商旅",
+    "aliases": [],
+    "startYear": 440,
+    "endYear": 500,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "北魏控制河西后，经走廊与西域诸国交换使节、马匹和货物。商旅活动依赖绿洲城邦、边镇与草原路线的安全，外交记录只呈现部分跨境往来。北朝文化中的外来器物和宗教传播，与这些不稳定的交通网络相联系。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#739ca7",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷一百二《西域传》诸国来贡、河西道路段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "tuoba-buddhist-suppression",
+    "title": "北魏太武帝禁佛",
+    "aliases": [],
+    "startYear": 446,
+    "endYear": 446,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "北魏太武帝下令禁毁佛教寺院与经像，沙门遭追捕，政策与军政猜疑、财政资源以及崔浩等人的意见有关。执行范围和持续时间因地方而异。文成帝后来恢复佛教，说明北魏宗教政策在政权需求变化中出现急剧转折。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#ba8b6b",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷一百一十四《释老志》太平真君七年禁佛焚经段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liu-song-sea-trade",
+    "title": "刘宋广州海舶与贡使",
+    "aliases": [],
+    "startYear": 450,
+    "endYear": 470,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "southern-song"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "刘宋沿海港口接待南海诸国使者与商人，朝贡礼仪和货物交换常在同一航线上发生。文书可见商品、船路和外交名号，但未必记录所有民间交易。广州等地因此成为江南政权接触东南亚的重要节点。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#739ca7",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "songshu-zhonghua-1974",
+        "locator": "卷九十七《夷蛮传》海南诸国使者与海路段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-wei-restores-buddhism",
+    "title": "北魏文成帝复兴佛教",
+    "aliases": [],
+    "startYear": 452,
+    "endYear": 452,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "文成帝即位后改变太武帝禁佛政策，允许僧侣与寺院恢复活动，朝廷重新利用佛教礼仪和造像。恢复并非简单回到旧状，僧官、寺产与国家监督关系逐步形成。此转折也使平城周边大型石窟营建获得政治条件。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#ba8b6b",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷一百一十四《释老志》兴安元年复佛法段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liu-song-prince-regicide",
+    "title": "刘劭弑宋文帝",
+    "aliases": [],
+    "startYear": 453,
+    "endYear": 453,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "southern-song"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "太子刘劭杀害宋文帝并夺位，江州刺史刘骏起兵入建康，击败刘劭后即帝位。宫廷继承危机迅速调动地方军镇，元嘉后期的稳定局面受到冲击。事件显示南朝皇位竞争与州镇兵权紧密相连。继位过程伴随宗室清洗。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "songshu-zhonghua-1974",
+        "locator": "卷六《孝武帝纪》元嘉三十年刘劭弑逆及讨平段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "yungang-grottoes",
+    "title": "云冈石窟开凿",
+    "aliases": [],
+    "startYear": 460,
+    "endYear": 470,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "北魏昙曜主持在平城西武州山开凿大型佛像石窟，皇室赞助与僧团组织共同投入劳力、物资。造像结合印度、中亚与北方艺术因素，成为研究北魏宗教与视觉政治的重要遗存。后续洞窟营建延续多年，不能都归入最初五窟的同一工程。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8f86b2",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷一百一十四《释老志》和平初昙曜于武州塞开窟五所段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zu-chongzhi-pi",
+    "title": "祖冲之圆周率计算",
+    "aliases": [],
+    "startYear": 460,
+    "endYear": 480,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "southern-song",
+      "southern-qi"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "祖冲之给出圆周率密率三百五十五比一百一十三，并规定上下界，显示精细的数值计算能力。记载出自历法论述，与测量、计算传统相连。原始推导手稿没有完整留存，不能据今人重构方法断言每一步都是其亲笔记录。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#72a6a8",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷十六《律历志上》祖冲之密率、盈朒二限段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zu-chongzhi-daming-calendar",
+    "title": "祖冲之编制大明历",
+    "aliases": [],
+    "startYear": 462,
+    "endYear": 462,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "southern-song"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "祖冲之向刘宋朝廷提出大明历，调整朔望、岁差等推算并与旧历争辩。历法工作服务于节气、祭祀和行政纪年，数学推算须经朝廷讨论才可能施行。其方案当时未获立即全面采用，后世评价不能写成当年已经成为全国通行历。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#72a6a8",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "songshu-zhonghua-1974",
+        "locator": "卷十三《律历志中》大明六年祖冲之上新历段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liu-song-succession-war",
+    "title": "刘宋泰始内战",
+    "aliases": [],
+    "startYear": 466,
+    "endYear": 466,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "southern-song"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "宋明帝即位后，江州刘子勋也被拥立，多州镇选边参战。明帝军取胜，但战争耗损江南兵力并使北魏趁机取得部分淮北州郡。南朝内争与南北边界变化因此相互牵连。淮北州郡的流失加剧边防负担。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "songshu-zhonghua-1974",
+        "locator": "卷八《明帝纪》泰始二年晋安王子勋称帝及诸州反应段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-wei-xiaowen-regency",
+    "title": "冯太后主持北魏改革",
+    "aliases": [],
+    "startYear": 471,
+    "endYear": 490,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "献文帝让位幼子后，冯太后在北魏朝廷长期主持政务，提拔官员并推动官僚、赋役和地方治理改革。改革不是单一诏令，而是在平城朝廷与各州执行中逐步展开。孝文帝成年后的制度调整与这一时期存在连续性。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a08a55",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷十三《皇后列传》文明太后临朝、用李冲定制段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "southern-qi-founded",
+    "title": "萧道成受禅建立南齐",
+    "aliases": [],
+    "startYear": 479,
+    "endYear": 479,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "southern-qi"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "萧道成接受刘宋顺帝禅位，南齐取代刘宋，仍以建康为政治中心。新朝继承南方的州郡与士族网络，也需要重新安排军功集团和宗室利益。南北对峙的格局没有因南方改朝而立即消失。齐廷须重新确立地方任命权。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "liu-song-founded-to-southern-qi-founded"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "nanqishu-zhonghua-1972",
+        "locator": "卷二《高帝纪下》建元元年宋顺帝禅位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-wei-equal-field",
+    "title": "北魏颁行均田令",
+    "aliases": [],
+    "startYear": 485,
+    "endYear": 485,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "北魏规定按人口与身份授给露田、桑田，并区分可归还和可继承土地，目标是稳定耕作与赋役来源。土地能否实际分配取决于当地人口和可用田亩，条文不等于全国平均占有。均田制后来影响北齐、北周及隋唐制度。",
+    "personIds": [
+      "person-feng-empress-dowager"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "northern-wei-unifies-north-to-northern-wei-equal-field",
+      "northern-wei-equal-field-to-northern-wei-three-elders"
+    ],
+    "color": "#a08a55",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷一百一十《食货志》太和九年均田诏及授田条"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷一百三十六《齐纪二》永明三年均田诏段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "northern-wei-three-elders",
+    "title": "北魏三长制整顿户籍",
+    "aliases": [],
+    "startYear": 486,
+    "endYear": 486,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "北魏设置邻、里、党三长以登记户口、征收赋税和管理徭役，削弱宗主督护对人口的私下控制。三长制与均田、租调改革相互配合，给国家提供基层组织。实际运行仍依靠地方人力，不能把制度公布视为隐户立即消失。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "northern-wei-equal-field-to-northern-wei-three-elders"
+    ],
+    "color": "#a08a55",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷一百一十《食货志》太和十年置三长、定户调段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-wei-luoyang-capital",
+    "title": "北魏迁都洛阳",
+    "aliases": [],
+    "startYear": 493,
+    "endYear": 494,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "孝文帝以南征为契机推动迁都，从平城移往洛阳，朝廷逐步接近中原旧都的官僚与交通网络。迁都遭部分代北贵族反对，须配合官制、礼制和驻军调整。它改变北魏权力重心，也加深了北方社会的文化与政治重组。",
+    "personIds": [
+      "person-tuoba-hong"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "northern-wei-luoyang-capital-to-northern-wei-surname-reform"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷七下《高祖纪下》太和十七至十八年迁洛段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷一百三十九《齐纪五》建武元年魏迁洛段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "northern-wei-luoyang-temples",
+    "title": "洛阳佛寺兴建",
+    "aliases": [],
+    "startYear": 495,
+    "endYear": 520,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "北魏迁都洛阳后皇室、贵族与官员赞助寺院，城市佛教空间迅速扩展。寺产、僧尼人数和国家监管成为朝廷讨论的现实问题。寺院不仅是信仰场所，也连接手工业、捐施与城市土地利用；各寺兴建年代仍需分别核实。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#ba8b6b",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷一百一十四《释老志》迁洛以后寺院兴建及僧尼管理段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-wei-surname-reform",
+    "title": "北魏拓跋皇族改姓元",
+    "aliases": [],
+    "startYear": 496,
+    "endYear": 496,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "孝文帝下诏将拓跋皇族姓氏改为元氏，把皇族身份与洛阳朝廷的新秩序相联系。此前已分别推行服饰与朝廷用语改革，改姓是其后续举措，并非这些命令同年颁行。新姓重塑贵族的政治表达，却不能说明代北传统即刻消失；改革还涉及官僚身份与权力配置。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "northern-wei-luoyang-capital-to-northern-wei-surname-reform"
+    ],
+    "color": "#9d9466",
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷七下《高祖纪下》太和二十年正月丁卯诏改姓为元氏段",
+        "note": "服饰改制见太和十八年十二月，朝廷禁北俗语言见太和十九年六月；两事仅为本条前情。"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "fan-zhen-shenmie-lun",
+    "title": "范缜《神灭论》引起论辩",
+    "aliases": [],
+    "startYear": 500,
+    "endYear": 510,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "southern-qi",
+      "liang"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "范缜以形神关系反对神不灭说，和佛教信众、王公之间发生持续论辩。《神灭论》把哲学问题放入南朝佛教兴盛与士人政治环境中。文章的讨论延续跨朝，不能把全部争论压缩到单一确年或视为南朝普遍立场。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#9780a4",
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "liangshu-zhonghua-1973",
+        "locator": "卷四十八《范缜传》神灭论与萧子良论辩段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liang-founded",
+    "title": "萧衍受禅建立梁朝",
+    "aliases": [],
+    "startYear": 502,
+    "endYear": 502,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "liang"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "萧衍在南齐末年战争中取得建康，接受禅位建立梁朝。新朝试图重建官僚秩序与文化礼仪，并延续南方对北魏的边防。梁初的制度建设和后来宫廷佛教活动属于不同阶段，不能由建国一年概括整个武帝统治。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "liang-founded-to-liang-wudi-buddhism"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "liangshu-zhonghua-1973",
+        "locator": "卷二《武帝纪中》天监元年齐和帝禅位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liang-wudi-buddhism",
+    "title": "梁武帝主持佛教政策",
+    "aliases": [],
+    "startYear": 502,
+    "endYear": 549,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "liang"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "梁武帝萧衍赞助寺院、讲经、制定僧俗相关政策，并在同泰寺举行舍身仪式。朝廷佛教与慈善、礼制及财政资源相连，既吸引士人参与也引起批评。其长期统治中政策先后变化，不能把全部活动绑定于建国年。",
+    "personIds": [
+      "person-xiao-yan"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "liang-founded-to-liang-wudi-buddhism"
+    ],
+    "color": "#ba8b6b",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "liangshu-zhonghua-1973",
+        "locator": "卷三《武帝纪下》舍道事佛、同泰寺讲经与舍身段"
+      },
+      {
+        "sourceId": "nanshi-zhonghua-1975",
+        "locator": "卷七《梁本纪中》武帝佛教与同泰寺段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "liang-zhiguan",
+    "title": "梁朝开设五馆",
+    "aliases": [],
+    "startYear": 505,
+    "endYear": 505,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "liang"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "梁武帝在建康设置五馆，招纳士人研习儒学经典，试图扩大朝廷教育与选官来源。馆学与世族家学并存，政策虽给寒门提供机会，也受师资、经费和官职结构约束。南朝文化不只有佛教寺院，儒学教育仍是国家建设的一部分。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8f86b2",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "liangshu-zhonghua-1973",
+        "locator": "卷四十八《儒林传·严植之》天监四年初置五经博士开馆段；卷二《武帝纪中》天监四年立五经博士段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zhongli-battle",
+    "title": "钟离之战梁军守城",
+    "aliases": [],
+    "startYear": 507,
+    "endYear": 507,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "liang",
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "北魏军围攻梁朝钟离，梁将韦叡、曹景宗组织援军，水陆配合击退围城部队。淮河沿线的城防、河道与后勤决定作战节奏，梁朝保住重要边城。此战并未改变南北总体分立，却限制北魏沿淮南进的能力。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "liangshu-zhonghua-1973",
+        "locator": "卷九《曹景宗传》天监六年钟离破魏军段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-wei-queen-dowager",
+    "title": "胡太后临朝与北魏政局",
+    "aliases": [],
+    "startYear": 515,
+    "endYear": 528,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "宣武帝死后胡太后临朝，北魏宫廷与外镇的权力分配更加紧张。她支持佛教营建，也面对财政、军镇和宗室争斗。后世常将北魏危机归于宫廷个人，但六镇与地方军事集团的结构性矛盾同样重要。宫廷营建也消耗国家财力。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷十三《皇后列传》宣武灵皇后临朝与河阴事段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liang-text-anthology",
+    "title": "《文选》编纂",
+    "aliases": [],
+    "startYear": 520,
+    "endYear": 531,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "liang"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "梁昭明太子萧统主持选录先秦至梁代诗赋文章，形成《文选》，后世成为文学教育的重要文本。选篇体现宫廷对文体和辞采的判断，也保存不少早期作品。具体编纂过程跨越数年，传记只说明萧统主持，不能指定所有篇章的确定选入年。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8f86b2",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "liangshu-zhonghua-1973",
+        "locator": "卷八《昭明太子传》萧统集文选三十卷段",
+        "note": "《梁书》记萧统主持编选，未给完整成书年；以其在世末期为区间上限。"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "six-towns-revolt",
+    "title": "北魏六镇起事",
+    "aliases": [],
+    "startYear": 523,
+    "endYear": 525,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "北魏北边六镇军户与官员关系恶化，沃野等镇相继起事，变乱扩展到河北。代北军事人口的地位下降、粮饷与迁洛后的政治重心变化共同影响局势。朝廷镇压和安置流民未能迅速恢复秩序，北魏分裂的条件由此积累。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "six-towns-revolt-to-eastern-western-wei-split"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷一百三《高车传》及卷七十四《尔朱荣传》六镇变乱段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "heyin-massacre",
+    "title": "河阴之变",
+    "aliases": [],
+    "startYear": 528,
+    "endYear": 528,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-wei"
+    ],
+    "period": "南北朝前期",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "尔朱荣入洛阳后在河阴杀害大批北魏宗室与官员，控制朝廷并拥立孝庄帝。暴力清洗摧毁了旧有中央官僚网络，也使军事实力对皇位的支配更加直接。史书所载死者人数有异，事件性质不因此改变。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷十《孝庄帝纪》武泰元年尔朱荣河阴杀百官段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "eastern-western-wei-split",
+    "title": "北魏分为东魏西魏",
+    "aliases": [],
+    "startYear": 534,
+    "endYear": 535,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "eastern-wei",
+      "western-wei"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "高欢控制的孝静帝朝廷迁往邺城，宇文泰在关中另立魏帝，北魏分成东西两个政权。双方都沿用魏的名号与制度，却依赖不同军政集团和地域资源。此后北齐、北周的形成源于这一分裂，而非一次直接的民族划线。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "six-towns-revolt-to-eastern-western-wei-split",
+      "eastern-western-wei-split-to-western-wei-fubing"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "weishu-zhonghua-1974",
+        "locator": "卷十二《孝静帝纪》天平元年迁邺与西魏立帝段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-zhou-su-chuo-reform",
+    "title": "苏绰为西魏北周奠定官制",
+    "aliases": [],
+    "startYear": 535,
+    "endYear": 546,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-wei"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "苏绰辅佐宇文泰整理文书、计帐和官员选任，强调治心、敦教化、尽地利等六条政务原则。制度建设帮助关中政权从军事联盟转向可征税、可任官的国家。六条是政务纲领，不应误写成一天完成的全部法令。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a08a55",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "zhoushu-zhonghua-1971",
+        "locator": "卷二十三《苏绰传》六条诏书、计帐与府兵改革段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "shayuan-battle",
+    "title": "沙苑之战西魏获胜",
+    "aliases": [],
+    "startYear": 537,
+    "endYear": 537,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-wei",
+      "eastern-wei"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "宇文泰率西魏军在沙苑击败高欢的东魏主力，稳住关中局势。双方兵力与战术细节在史书中带有胜负叙事色彩，但关中政权得以继续存在是明确后果。战后东西魏边界仍多次变化，胜利没有直接完成北方统一。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "zhoushu-zhonghua-1971",
+        "locator": "卷一《文帝纪上》大统三年沙苑破东魏军段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "western-wei-tuntian",
+    "title": "西魏关中屯田补给",
+    "aliases": [],
+    "startYear": 540,
+    "endYear": 550,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-wei"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "西魏在关中鼓励垦殖并利用军屯补给驻军，缓解东西魏长期对峙下的粮食压力。财政安排与地方豪右、军府征发相连，不能把屯田理解为全部由士兵耕作的统一模式。农业恢复支撑宇文泰集团维持独立，也影响其后北周的资源基础。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#6e9b70",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "zhoushu-zhonghua-1971",
+        "locator": "卷二十三《苏绰传》大统年间置屯田以资军国段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "western-wei-fubing",
+    "title": "西魏建立府兵组织",
+    "aliases": [],
+    "startYear": 542,
+    "endYear": 543,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-wei"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "宇文泰在关中整合部落武装与地方豪右，逐步建立以军府和将领统辖的兵力组织，后世称府兵。其形成并非某一年一次颁令，兵员来源、军府层级亦持续调整。该组织为北周和隋唐军事制度提供经验，但不能把唐代府兵细节倒置于西魏。",
+    "personIds": [
+      "person-yuwen-tai"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "eastern-western-wei-split-to-western-wei-fubing",
+      "western-wei-fubing-to-northern-zhou-conquers-qi"
+    ],
+    "color": "#a08a55",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "zhoushu-zhonghua-1971",
+        "locator": "卷二《文帝纪下》大统八年夏四月大会诸军于马牧、九年邙山战后广募关陇豪右段",
+        "note": "542—543年记录的是集军与扩募两个可直接核对的节点；府兵组织的形成延续其后，不能据此断言此时已有完整六军。"
+      },
+      {
+        "sourceId": "beishi-zhonghua-1974",
+        "locator": "卷九《周本纪上》大统九年邙山战后广募关陇豪右以增军旅段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "hou-jing-rebellion",
+    "title": "侯景之乱攻陷建康",
+    "aliases": [],
+    "startYear": 548,
+    "endYear": 552,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "liang"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "侯景投梁后据寿阳起兵，围困并攻陷建康，梁武帝死于台城。各地宗室和军镇相互争夺，陈霸先、王僧辩等逐渐击败侯景。长期战乱使江南人口、城市和财政遭严重破坏，也打乱梁朝皇位与州镇秩序。台城围困尤其重创建康民生。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [
+      "liang-tai-city-famine"
+    ],
+    "relationIds": [
+      "hou-jing-rebellion-to-chen-founded",
+      "liang-tai-city-famine-to-hou-jing-rebellion"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "liangshu-zhonghua-1973",
+        "locator": "卷五十六《侯景传》太清二年举兵至承圣元年败亡段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liang-tai-city-famine",
+    "title": "台城围困与梁武帝去世",
+    "aliases": [],
+    "startYear": 549,
+    "endYear": 549,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "liang"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "侯景军围困建康台城，城内粮食和补给耗尽，梁武帝在城破后去世。围城伤害的不只是宫廷，城中军民也承受饥馑与疾病。此条专记都城陷落时的社会灾难，侯景叛乱的起因、各路战争及其结束另有整体条目。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "hou-jing-rebellion",
+    "childIds": [],
+    "relationIds": [
+      "liang-tai-city-famine-to-hou-jing-rebellion"
+    ],
+    "color": "#89a47c",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "liangshu-zhonghua-1973",
+        "locator": "卷三《武帝纪下》太清三年台城陷、帝崩段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-qi-founded",
+    "title": "高洋受禅建立北齐",
+    "aliases": [],
+    "startYear": 550,
+    "endYear": 550,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-qi"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "高洋接受东魏孝静帝禅位，建立齐朝，后称北齐，控制河北、山东及黄河下游。高氏原有军政集团获得皇帝名号，但与西魏的对峙仍在。新朝还须协调鲜卑军人、汉地士族与地方官僚的利益。邺城仍为新朝的政治中心。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "beiqishu-zhonghua-1972",
+        "locator": "卷四《文宣帝纪》天保元年东魏禅位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "western-wei-sacking-jiangling",
+    "title": "西魏攻陷江陵",
+    "aliases": [],
+    "startYear": 554,
+    "endYear": 554,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "western-wei",
+      "liang"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "西魏军攻江陵，梁元帝萧绎被杀，城中大量人口被俘迁往关中。梁朝遭受重大打击，南方后续政权重建与西魏控制荆州的关系复杂化。大规模人口转移也把江陵士人、工匠和文献带入关陇社会。江陵文献散失亦为文化损失。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "zhoushu-zhonghua-1971",
+        "locator": "卷二《文帝纪下》恭帝元年伐江陵、梁元帝遇害段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "chen-founded",
+    "title": "陈霸先建立陈朝",
+    "aliases": [],
+    "startYear": 557,
+    "endYear": 557,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "chen"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "陈霸先控制建康并接受梁敬帝禅位，建立陈朝。侯景之乱后的江南仍有地方军镇和梁宗室势力，新政权最初疆域有限。陈廷逐步恢复财政、江防与行政，后来成为隋朝统一战争的南方对手。南方旧梁势力仍需逐一安抚。",
+    "personIds": [
+      "person-chen-baxian"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "hou-jing-rebellion-to-chen-founded",
+      "chen-founded-to-sui-conquers-chen"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "chenshu-zhonghua-1972",
+        "locator": "卷二《高祖纪下》永定元年梁敬帝禅位段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷一百六十七《陈纪一》永定元年陈霸先受禅段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "northern-zhou-founded",
+    "title": "宇文觉建立北周",
+    "aliases": [],
+    "startYear": 557,
+    "endYear": 557,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-zhou"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "宇文觉接受西魏恭帝禅位，建立周朝，后称北周。宇文氏军政集团继承关中和陇右资源，同时面临宗室、权臣及北齐压力。北周的建国与南朝陈的建立几乎同时，形成后期南北朝多政权并立的新格局。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "northern-zhou-founded-to-northern-zhou-conquers-qi"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "zhoushu-zhonghua-1971",
+        "locator": "卷三《孝闵帝纪》元年西魏恭帝禅位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "chen-ouyangwei-lingnan",
+    "title": "欧阳頠经营陈朝岭南",
+    "aliases": [],
+    "startYear": 557,
+    "endYear": 563,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "chen"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "陈朝建立后，欧阳頠率军安定岭南并出任广州刺史，把地方首领和州郡官府重新纳入建康朝廷的任命体系。岭南距离都城遥远，地方武装与族群关系影响政令执行。此举维系陈在南方的交通和贡赋，但并非所有山地地区都受直接治理。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a08a55",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "chenshu-zhonghua-1972",
+        "locator": "卷九《欧阳頠传》永定初平岭南、任广州刺史段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-zhou-buddhist-suppression",
+    "title": "北周武帝禁佛道",
+    "aliases": [],
+    "startYear": 574,
+    "endYear": 574,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-zhou"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "北周武帝下令废止佛教、道教组织，收归寺观财产并令僧道还俗，意在集中人力与财政资源。政策伴随北齐战争准备，也涉及儒、释、道论辩。其执行程度随地区而异，北周短期政策不能代表整个南北朝的宗教趋势。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#ba8b6b",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "zhoushu-zhonghua-1971",
+        "locator": "卷五《武帝纪上》建德三年诏断佛道二教段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "northern-zhou-conquers-qi",
+    "title": "北周灭北齐统一北方",
+    "aliases": [],
+    "startYear": 577,
+    "endYear": 577,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-zhou",
+      "northern-qi"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "北周武帝连续攻取晋阳、邺城，北齐主高纬出逃后被俘，北方再次归于一个朝廷。关陇军事与财政改革为胜利提供基础，但征服后仍需接收北齐官员和民户。统一北方为隋朝南征奠定条件，北周自身随后仍经历皇位转移。",
+    "personIds": [
+      "person-yuwen-yong"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "western-wei-fubing-to-northern-zhou-conquers-qi",
+      "northern-zhou-founded-to-northern-zhou-conquers-qi",
+      "northern-zhou-conquers-qi-to-sui-founded-northern-transition"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "zhoushu-zhonghua-1971",
+        "locator": "卷六《武帝纪下》建德六年入邺、齐后主被执段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷一百七十三《陈纪七》建德六年灭齐段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "northern-zhou-rebuild-east",
+    "title": "北周接收齐地户籍",
+    "aliases": [],
+    "startYear": 577,
+    "endYear": 579,
+    "yearPrecision": "range",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "northern-zhou"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "北周占领北齐故地后，朝廷需清查州郡、安置降官和军民，并将河北税源纳入关中财政体系。原齐制度不会在战后立刻消失，地方执行有延续与折衷。接收过程比战场胜利更能说明北方统一何以转化为可运作的行政秩序。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#6e9b70",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "zhoushu-zhonghua-1971",
+        "locator": "卷六《武帝纪下》灭齐后州郡户口与赦令段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "sui-founded-northern-transition",
+    "title": "杨坚代周建立隋朝",
+    "aliases": [],
+    "startYear": 581,
+    "endYear": 581,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "sui"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "杨坚以北周外戚和辅政者身份掌握朝政，接受静帝禅位，建立隋朝。关陇集团、北齐故地与南方陈朝仍须协调和征服，建国并不等于全国统一。此条归入魏晋南北朝的统一前奏，后续隋代制度和南征另由隋唐时期记述。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "northern-zhou-conquers-qi-to-sui-founded-northern-transition",
+      "sui-founded-northern-transition-to-sui-conquers-chen"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "zhoushu-zhonghua-1971",
+        "locator": "卷八《静帝纪》大定元年禅位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "chen-hou-zhu-rule",
+    "title": "陈后主即位",
+    "aliases": [],
+    "startYear": 582,
+    "endYear": 582,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "chen"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "陈叔宝在宣帝去世后即位，朝廷继续维持长江防线与江南行政。宫廷文学、官僚任免及地方军事压力同时存在，不能只用后世亡国叙事概括其统治。隋朝在北方完成权力整合后，陈面对的外部局势迅速变化。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "sui-conquers-chen-to-chen-hou-zhu-rule"
+    ],
+    "color": "#b46d55",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "chenshu-zhonghua-1972",
+        "locator": "卷六《后主纪》太建十四年正月即位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "sui-kaihuang-register",
+    "title": "开皇初年大索貌阅",
+    "aliases": [],
+    "startYear": 583,
+    "endYear": 589,
+    "yearPrecision": "circa",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "sui"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "隋朝要求地方核对户籍人口的年龄和身份，纠正隐漏与虚报，使纳税和服役对象更加明确。查户影响家庭、地方豪强与官府的利益关系，也增加了中央掌握人力的能力。政策成效依赖州县执行，统计增长不可直接解释为同年人口突然出生。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#89a47c",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二十四《食货志》开皇年间大索貌阅及户口增长段",
+        "note": "开皇年间清查户籍的具体起始年份有争论，583至589为可据政令讨论的宽范围。"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "sui-chen-campaign-deployment",
+    "title": "隋朝部署伐陈水陆诸军",
+    "aliases": [],
+    "startYear": 588,
+    "endYear": 588,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "sui"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "隋朝筹备伐陈，任命诸路将领并安排水陆军队沿长江推进，试图把北方兵力投送到建康周边。开战前的统帅分工和出兵路线有独立的政治意义，也与次年的渡江、陈后主被俘相区分。此项部署显示北朝统一后的资源开始指向南方。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "sui-chen-campaign-deployment-to-sui-conquers-chen"
+    ],
+    "color": "#a08a55",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷一百七十七《陈纪十一》开皇八年伐陈诸军水陆部署段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "sui-conquers-chen",
+    "title": "隋军渡江灭陈",
+    "aliases": [],
+    "startYear": 589,
+    "endYear": 589,
+    "yearPrecision": "exact",
+    "eraId": "wei-jin",
+    "editorialPeriodId": "wei-jin",
+    "polityIds": [
+      "sui",
+      "chen"
+    ],
+    "period": "南北朝后期",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "隋军多路渡江，韩擒虎、贺若弼等进入建康，陈后主被俘，南北朝长期分立结束。军事胜利后仍须接收江南州县与军队，安排旧陈官民。此条记述分裂时代的终点；隋代统一后的制度整合属于下一时期的连续过程。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "chen-founded-to-sui-conquers-chen",
+      "sui-founded-northern-transition-to-sui-conquers-chen",
+      "sui-chen-campaign-deployment-to-sui-conquers-chen",
+      "sui-conquers-chen-to-chen-hou-zhu-rule"
+    ],
+    "color": "#bb7454",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷一百七十七《陈纪十一》开皇九年韩擒虎、贺若弼入建康段"
+      }
+    ],
+    "detailLevel": "basic"
+  }
+]

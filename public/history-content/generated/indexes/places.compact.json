@@ -1,0 +1,1324 @@
+[
+  {
+    "aliases": [],
+    "coordinates": [
+      121.48,
+      53.38
+    ],
+    "eventIds": [
+      "albazin-first-siege",
+      "albazin-second-siege"
+    ],
+    "historicalNames": [],
+    "id": "albazin",
+    "modernName": "俄罗斯阿尔巴津诺",
+    "name": "雅克萨"
+  },
+  {
+    "aliases": [
+      "殷墟所在地"
+    ],
+    "coordinates": [
+      114.39,
+      36.1
+    ],
+    "eventIds": [],
+    "historicalNames": [],
+    "id": "anyang",
+    "modernName": "河南安阳",
+    "name": "安阳"
+  },
+  {
+    "aliases": [
+      "北平",
+      "大都",
+      "燕京"
+    ],
+    "coordinates": [
+      116.4,
+      39.9
+    ],
+    "eventIds": [
+      "altan-beijing-siege",
+      "amherst-embassy",
+      "anhui-opera-troupes-beijing",
+      "beijing-capital-1421",
+      "beijing-defense-1449",
+      "beijing-palace-construction",
+      "calendar-case",
+      "cao-qin-rebellion",
+      "chenghua-accession",
+      "cppcc-first-plenary",
+      "daoguang-accession",
+      "daqing-huidian-revision",
+      "dream-red-chamber",
+      "duomen-coup",
+      "eastern-depot-founded",
+      "edict-tolerating-christianity",
+      "eight-trigrams-uprising",
+      "euclid-elements-translation",
+      "forbidden-city-inaugurated",
+      "freeze-head-tax",
+      "grand-council-formed",
+      "grand-rites-controversy",
+      "heshen-fall",
+      "hongxi-accession",
+      "hongxi-policy-reversal",
+      "hongzhi-accession",
+      "hongzhi-administration-reform",
+      "hongzhi-da-ming-huidian",
+      "huang-juezi-memorial",
+      "imperial-exams-abolished",
+      "jahangir-captured",
+      "jiajing-accession",
+      "jiajing-ritual-reforms",
+      "jiaqing-accession",
+      "jiaqing-christian-ban",
+      "jingnan-campaign",
+      "jingtai-heir-change",
+      "kangxi-death-yongzheng-accession",
+      "kangxi-dictionary",
+      "kangxi-personal-rule",
+      "kangxi-succession-crisis",
+      "kunyu-wanguo-quantu",
+      "late-wanli-succession-crises",
+      "left-gate-protest",
+      "liu-jin-dominance",
+      "liu-jin-executed",
+      "lugouqiao",
+      "military-finance-council",
+      "ming-capture-dadu",
+      "ming-fall",
+      "new-culture",
+      "oboi-arrest",
+      "opium-crackdown-1838",
+      "opium-policy-debate",
+      "palace-memorial-system",
+      "peking-university-founded",
+      "pku-women-admission",
+      "qianlong-abdication-announced",
+      "qianlong-accession",
+      "qing-entry-beijing-1644",
+      "renyin-palace-plot",
+      "ricci-beijing",
+      "second-opium-war",
+      "shunzhi-death",
+      "siku-quanshu",
+      "tournon-mission",
+      "wang-zhen-dominance",
+      "wanli-accession",
+      "western-depot-abolished",
+      "western-depot-founded",
+      "xu-naiji-legalization-memorial",
+      "yanglian-silver",
+      "yingzong-returned",
+      "yongle-northern-canon",
+      "yongzheng-death",
+      "yuan-central-secretariat",
+      "yuan-dade-heaven-rite-1302",
+      "yuan-dadu-capital",
+      "yuan-dadu-fall",
+      "yuan-dadu-salt-retail-1334",
+      "yuan-examination-first",
+      "yuan-founded",
+      "yuan-grand-canal-tonghui",
+      "yuan-guozijian-quota-1287",
+      "yuan-kuizhang-pavilion",
+      "yuan-mongol-hanlin-rank-1301",
+      "yuan-renzong-accession",
+      "yuan-sea-transport",
+      "yuan-two-capitals-war",
+      "yuan-xuanzheng-commissioners-1323",
+      "yuan-xuanzheng-institute",
+      "yuan-zhizheng-sea-grain-crisis",
+      "zeng-jing-case",
+      "zhang-juzheng",
+      "zhang-juzheng-death",
+      "zhang-juzheng-kaocheng",
+      "zhang-juzheng-mourning-dispute",
+      "zhengde-accession",
+      "zhengtong-accession"
+    ],
+    "historicalNames": [],
+    "id": "beijing",
+    "modernName": "北京",
+    "name": "北京"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      115.78,
+      33.87
+    ],
+    "eventIds": [
+      "yuan-song-pretender-han-lin-er"
+    ],
+    "historicalNames": [],
+    "id": "bozhou",
+    "modernName": "安徽亳州",
+    "name": "亳州"
+  },
+  {
+    "aliases": [
+      "贝尔湖"
+    ],
+    "coordinates": [
+      117.68,
+      47.83
+    ],
+    "eventIds": [
+      "ming-buir-lake-victory"
+    ],
+    "historicalNames": [],
+    "id": "buir-lake",
+    "modernName": "蒙古国贝尔湖",
+    "name": "捕鱼儿海"
+  },
+  {
+    "aliases": [
+      "西安"
+    ],
+    "coordinates": [
+      108.94,
+      34.26
+    ],
+    "eventIds": [],
+    "historicalNames": [],
+    "id": "changan",
+    "modernName": "陕西西安",
+    "name": "长安"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      117.94,
+      40.97
+    ],
+    "eventIds": [
+      "chengde-mountain-resort"
+    ],
+    "historicalNames": [],
+    "id": "chengde",
+    "modernName": "河北承德",
+    "name": "热河"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      104.07,
+      30.67
+    ],
+    "eventIds": [
+      "ming-conquest-sichuan"
+    ],
+    "historicalNames": [],
+    "id": "chengdu",
+    "modernName": "四川成都",
+    "name": "成都"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      106.55,
+      29.56
+    ],
+    "eventIds": [
+      "chongqing-negotiations",
+      "ming-conquest-sichuan",
+      "political-consultative-1946"
+    ],
+    "historicalNames": [],
+    "id": "chongqing",
+    "modernName": "重庆",
+    "name": "重庆"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      113.3,
+      40.08
+    ],
+    "eventIds": [
+      "altan-investiture",
+      "altan-peace-negotiations",
+      "jiajing-northern-defense",
+      "ming-border-horse-markets"
+    ],
+    "historicalNames": [],
+    "id": "datong",
+    "modernName": "山西大同",
+    "name": "大同"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      116.49,
+      42.2
+    ],
+    "eventIds": [
+      "dolonnor-assembly"
+    ],
+    "historicalNames": [],
+    "id": "dolonnor",
+    "modernName": "内蒙古锡林郭勒多伦县",
+    "name": "多伦诺尔"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      116.46,
+      35.94
+    ],
+    "eventIds": [
+      "liu-daxia-yellow-river",
+      "yongle-grand-canal-restored",
+      "yuan-dongping-granary-1292"
+    ],
+    "historicalNames": [],
+    "id": "dongping",
+    "modernName": "山东泰安东平县",
+    "name": "东平"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      94.66,
+      40.14
+    ],
+    "eventIds": [],
+    "historicalNames": [],
+    "id": "dunhuang",
+    "modernName": "甘肃敦煌",
+    "name": "敦煌"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      112.75,
+      -7.25
+    ],
+    "eventIds": [
+      "yuan-java-expedition"
+    ],
+    "historicalNames": [],
+    "id": "east-java",
+    "modernName": "印度尼西亚东爪哇",
+    "name": "东爪哇"
+  },
+  {
+    "aliases": [
+      "抚顺城"
+    ],
+    "coordinates": [
+      123.96,
+      41.88
+    ],
+    "eventIds": [
+      "later-jin-seven-grievances"
+    ],
+    "historicalNames": [],
+    "id": "fushun",
+    "modernName": "辽宁抚顺",
+    "name": "抚顺"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      119.46,
+      32.79
+    ],
+    "eventIds": [
+      "yuan-toqto-gaoyou-campaign",
+      "yuan-zhang-shicheng-uprising"
+    ],
+    "historicalNames": [],
+    "id": "gaoyou",
+    "modernName": "江苏扬州高邮市",
+    "name": "高邮"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      113.26,
+      23.13
+    ],
+    "eventIds": [
+      "canton-merchant-debt-crisis",
+      "canton-system-1757",
+      "chuenpi-clash-1839",
+      "cohong-regulation",
+      "daoguang-opium-crackdown",
+      "kowloon-clash",
+      "lin-zexu-canton-1839",
+      "lintin-opium-depot",
+      "napier-canton-conflict",
+      "opium-ban-1800",
+      "opium-imports-surge",
+      "portuguese-arrive-guangzhou",
+      "qing-sea-trade-reopened",
+      "second-opium-war"
+    ],
+    "historicalNames": [],
+    "id": "guangzhou",
+    "modernName": "广东广州",
+    "name": "广州"
+  },
+  {
+    "aliases": [
+      "临安"
+    ],
+    "coordinates": [
+      120.16,
+      30.25
+    ],
+    "eventIds": [
+      "yuan-southern-local-administration",
+      "yuan-yan-you-land-survey",
+      "yuan-zhizheng-sea-grain-crisis"
+    ],
+    "historicalNames": [],
+    "id": "hangzhou",
+    "modernName": "浙江杭州",
+    "name": "杭州"
+  },
+  {
+    "aliases": [
+      "兴京"
+    ],
+    "coordinates": [
+      124.81,
+      41.69
+    ],
+    "eventIds": [
+      "jurchen-later-jin-founded",
+      "later-jin-seven-grievances"
+    ],
+    "historicalNames": [],
+    "id": "hetu-ala",
+    "modernName": "辽宁抚顺新宾县永陵镇",
+    "name": "赫图阿拉"
+  },
+  {
+    "aliases": [
+      "白茅堤附近"
+    ],
+    "coordinates": [
+      115.48,
+      35.23
+    ],
+    "eventIds": [
+      "yuan-jialu-river",
+      "yuan-yellow-river-floods"
+    ],
+    "historicalNames": [],
+    "id": "heze",
+    "modernName": "山东菏泽",
+    "name": "曹州"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      113.67,
+      22.82
+    ],
+    "eventIds": [
+      "humen-opium-destruction"
+    ],
+    "historicalNames": [],
+    "id": "humen",
+    "modernName": "广东东莞虎门",
+    "name": "虎门"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      81.32,
+      43.92
+    ],
+    "eventIds": [
+      "dzungar-conquest-1755",
+      "ili-general-established"
+    ],
+    "historicalNames": [],
+    "id": "ili",
+    "modernName": "新疆伊犁",
+    "name": "伊犁"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      106.9,
+      47.7
+    ],
+    "eventIds": [
+      "jao-modo-battle"
+    ],
+    "historicalNames": [],
+    "id": "jao-modo",
+    "modernName": "蒙古国乌兰巴托南部",
+    "name": "昭莫多"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      121.27,
+      31.38
+    ],
+    "eventIds": [
+      "jiading-resistance"
+    ],
+    "historicalNames": [],
+    "id": "jiading",
+    "modernName": "上海嘉定区",
+    "name": "嘉定"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      120.28,
+      31.91
+    ],
+    "eventIds": [
+      "jiangyin-resistance"
+    ],
+    "historicalNames": [],
+    "id": "jiangyin",
+    "modernName": "江苏无锡江阴市",
+    "name": "江阴"
+  },
+  {
+    "aliases": [
+      "王江泾"
+    ],
+    "coordinates": [
+      120.76,
+      30.75
+    ],
+    "eventIds": [
+      "ccp-founded",
+      "wangjiangjing-battle"
+    ],
+    "historicalNames": [],
+    "id": "jiaxing",
+    "modernName": "浙江嘉兴",
+    "name": "嘉兴"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      117.12,
+      36.65
+    ],
+    "eventIds": [
+      "yuan-famine-relief-1340s"
+    ],
+    "historicalNames": [],
+    "id": "jinan",
+    "modernName": "山东济南",
+    "name": "济南"
+  },
+  {
+    "aliases": [
+      "昌南"
+    ],
+    "coordinates": [
+      117.18,
+      29.27
+    ],
+    "eventIds": [
+      "xuande-porcelain-production"
+    ],
+    "historicalNames": [],
+    "id": "jingdezhen",
+    "modernName": "江西景德镇",
+    "name": "景德镇"
+  },
+  {
+    "aliases": [
+      "东京(北宋)",
+      "汴京"
+    ],
+    "coordinates": [
+      114.31,
+      34.8
+    ],
+    "eventIds": [
+      "yuan-chaghan-timur-defense"
+    ],
+    "historicalNames": [],
+    "id": "kaifeng",
+    "modernName": "河南开封",
+    "name": "开封"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      75.99,
+      39.47
+    ],
+    "eventIds": [
+      "altishahr-revolt",
+      "jahangir-rebellion",
+      "qing-conquest-xinjiang"
+    ],
+    "historicalNames": [],
+    "id": "kashgar",
+    "modernName": "新疆喀什",
+    "name": "喀什噶尔"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      106.45,
+      50.36
+    ],
+    "eventIds": [
+      "kiakhta-treaty"
+    ],
+    "historicalNames": [],
+    "id": "kiachta",
+    "modernName": "俄罗斯恰克图",
+    "name": "恰克图"
+  },
+  {
+    "aliases": [
+      "中庆路"
+    ],
+    "coordinates": [
+      102.71,
+      25.04
+    ],
+    "eventIds": [
+      "kunming-recovered-1681",
+      "ming-conquest-yunnan",
+      "ming-yunnan-administration",
+      "province-system",
+      "qing-conquest-yunnan",
+      "southwest-university",
+      "three-feudatories-revolt",
+      "yuan-yunnan-province"
+    ],
+    "historicalNames": [],
+    "id": "kunming",
+    "modernName": "云南昆明",
+    "name": "昆明"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      130.42,
+      33.59
+    ],
+    "eventIds": [
+      "yuan-japan-first-expedition",
+      "yuan-second-japan-expedition"
+    ],
+    "historicalNames": [],
+    "id": "kyushu",
+    "modernName": "日本九州北部",
+    "name": "九州"
+  },
+  {
+    "aliases": [
+      "乐安州"
+    ],
+    "coordinates": [
+      118.41,
+      37.05
+    ],
+    "eventIds": [
+      "han-prince-rebellion"
+    ],
+    "historicalNames": [],
+    "id": "lean-shandong",
+    "modernName": "山东东营广饶县",
+    "name": "乐安"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      91.13,
+      29.65
+    ],
+    "eventIds": [
+      "dzungar-invasion-tibet",
+      "gurkha-war-settlement",
+      "gyurme-namgyal-crisis",
+      "qing-tibet-expedition",
+      "tibet-polhanas-order",
+      "tibet-regulations-1751",
+      "tibet-twenty-nine-articles"
+    ],
+    "historicalNames": [],
+    "id": "lhasa",
+    "modernName": "西藏拉萨",
+    "name": "拉萨"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      123.24,
+      41.27
+    ],
+    "eventIds": [
+      "ming-liaodong-control",
+      "yuan-nayan-rebellion"
+    ],
+    "historicalNames": [],
+    "id": "liaoyang",
+    "modernName": "辽宁辽阳",
+    "name": "辽阳"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      106.59,
+      26.84
+    ],
+    "eventIds": [
+      "wang-yangming-longchang"
+    ],
+    "historicalNames": [],
+    "id": "longchang-guizhou",
+    "modernName": "贵州贵阳修文县",
+    "name": "龙场驿"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      112.45,
+      34.62
+    ],
+    "eventIds": [],
+    "historicalNames": [],
+    "id": "luoyang",
+    "modernName": "河南洛阳",
+    "name": "洛阳"
+  },
+  {
+    "aliases": [
+      "濠镜澳"
+    ],
+    "coordinates": [
+      113.54,
+      22.2
+    ],
+    "eventIds": [
+      "british-macau-occupation",
+      "portuguese-macau-settlement",
+      "tournon-mission",
+      "yongzheng-christian-ban"
+    ],
+    "historicalNames": [],
+    "id": "macau",
+    "modernName": "澳门特别行政区",
+    "name": "澳门"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      127.92,
+      34.72
+    ],
+    "eventIds": [
+      "imjin-war",
+      "imjin-war-end"
+    ],
+    "historicalNames": [],
+    "id": "namhae",
+    "modernName": "韩国庆尚南道南海郡",
+    "name": "露梁海峡"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      115.86,
+      28.68
+    ],
+    "eventIds": [
+      "jin-shenghuan-revolt",
+      "prince-ning-rebellion"
+    ],
+    "historicalNames": [],
+    "id": "nanchang",
+    "modernName": "江西南昌",
+    "name": "南昌"
+  },
+  {
+    "aliases": [
+      "应天府(明)",
+      "建康",
+      "金陵"
+    ],
+    "coordinates": [
+      118.8,
+      32.06
+    ],
+    "eventIds": [
+      "beijing-capital-1421",
+      "crown-prince-zhu-biao-death",
+      "hongwu-da-gao",
+      "hongwu-first-examination",
+      "hongwu-guozijian-expansion",
+      "hongwu-sacrificial-reform",
+      "hongwu-south-north-exam-case",
+      "hu-weiyong-chancellor-abolished",
+      "huang-ming-zuxun",
+      "jianwen-accession",
+      "jingnan-campaign",
+      "jingnan-capture-nanjing",
+      "karmapa-nanjing-visit",
+      "lan-yu-case",
+      "li-shizhen-bencao",
+      "ming-founded-1368",
+      "ming-joseon-predecessor-tribute",
+      "ming-law-code-first",
+      "ming-paper-money",
+      "nanjing-christianity-case",
+      "nanjing-fall-1645",
+      "nanjing-massacre",
+      "nanjing-treaty",
+      "republic-founded",
+      "yangtze-crossing",
+      "yongle-encyclopedia-completed",
+      "yongle-encyclopedia-ordered",
+      "yuan-jiaoqing-fall",
+      "zheng-he"
+    ],
+    "historicalNames": [],
+    "id": "nanjing",
+    "modernName": "江苏南京",
+    "name": "南京"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      116.58,
+      51.98
+    ],
+    "eventIds": [
+      "nerchinsk-treaty"
+    ],
+    "historicalNames": [],
+    "id": "nerchinsk",
+    "modernName": "俄罗斯涅尔琴斯克",
+    "name": "尼布楚"
+  },
+  {
+    "aliases": [
+      "明州"
+    ],
+    "coordinates": [
+      121.55,
+      29.87
+    ],
+    "eventIds": [
+      "ming-japan-tally-trade",
+      "ningbo-tribute-incident",
+      "qing-sea-trade-reopened"
+    ],
+    "historicalNames": [],
+    "id": "ningbo",
+    "modernName": "浙江宁波",
+    "name": "宁波"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      120.72,
+      40.62
+    ],
+    "eventIds": [
+      "ningyuan-victory"
+    ],
+    "historicalNames": [],
+    "id": "ningyuan",
+    "modernName": "辽宁葫芦岛兴城市",
+    "name": "宁远城"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      109.98,
+      39.82
+    ],
+    "eventIds": [
+      "yansui-great-wall"
+    ],
+    "historicalNames": [],
+    "id": "ordos",
+    "modernName": "内蒙古鄂尔多斯及河套地区",
+    "name": "河套"
+  },
+  {
+    "aliases": [
+      "莆田"
+    ],
+    "coordinates": [
+      119,
+      25.43
+    ],
+    "eventIds": [
+      "xinghua-campaign"
+    ],
+    "historicalNames": [],
+    "id": "putian",
+    "modernName": "福建莆田",
+    "name": "兴化府"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      125.75,
+      39.03
+    ],
+    "eventIds": [
+      "imjin-pyongyang-campaign",
+      "imjin-war"
+    ],
+    "historicalNames": [],
+    "id": "pyongyang",
+    "modernName": "朝鲜平壤",
+    "name": "平壤"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      115.43,
+      30.23
+    ],
+    "eventIds": [
+      "yuan-xu-shouhui-regime"
+    ],
+    "historicalNames": [],
+    "id": "qizhou",
+    "modernName": "湖北黄冈蕲春",
+    "name": "蕲州"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      118.68,
+      24.87
+    ],
+    "eventIds": [
+      "yuan-ibn-battuta-quanzhou",
+      "yuan-maritime-customs-rules-1293",
+      "yuan-quanzhou-maritime-control"
+    ],
+    "historicalNames": [],
+    "id": "quanzhou",
+    "modernName": "福建泉州",
+    "name": "泉州"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      116.99,
+      35.59
+    ],
+    "eventIds": [],
+    "historicalNames": [],
+    "id": "qufu",
+    "modernName": "山东曲阜",
+    "name": "曲阜"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      124.04,
+      41.88
+    ],
+    "eventIds": [
+      "sarhu-battle"
+    ],
+    "historicalNames": [],
+    "id": "sarhu",
+    "modernName": "辽宁抚顺萨尔浒",
+    "name": "萨尔浒"
+  },
+  {
+    "aliases": [
+      "汉阳"
+    ],
+    "coordinates": [
+      126.98,
+      37.57
+    ],
+    "eventIds": [
+      "imjin-war"
+    ],
+    "historicalNames": [],
+    "id": "seoul",
+    "modernName": "韩国首尔",
+    "name": "汉城"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      116.18,
+      42.35
+    ],
+    "eventIds": [
+      "yuan-chengzong-accession",
+      "yuan-dade-stipend-rice-1303",
+      "yuan-shundi-accession",
+      "yuan-south-slope-coup",
+      "yuan-two-capitals-war",
+      "yuan-wuzong-accession"
+    ],
+    "historicalNames": [],
+    "id": "shangdu",
+    "modernName": "内蒙古锡林郭勒正蓝旗",
+    "name": "上都"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      121.47,
+      31.23
+    ],
+    "eventIds": [
+      "ccp-founded",
+      "central-academia",
+      "china-merchants-steam",
+      "grain-sea-transport-trial",
+      "jiangnan-arsenal",
+      "jiangnan-translation-bureau",
+      "may-thirtieth",
+      "new-culture",
+      "shanghai-city-wall",
+      "yuan-maritime-customs-rules-1293"
+    ],
+    "historicalNames": [],
+    "id": "shanghai",
+    "modernName": "上海",
+    "name": "上海"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      119.76,
+      40
+    ],
+    "eventIds": [
+      "shanhai-pass-battle"
+    ],
+    "historicalNames": [],
+    "id": "shanhaiguan",
+    "modernName": "河北秦皇岛山海关区",
+    "name": "山海关"
+  },
+  {
+    "aliases": [
+      "盛京"
+    ],
+    "coordinates": [
+      123.43,
+      41.8
+    ],
+    "eventIds": [
+      "september-eighteenth"
+    ],
+    "historicalNames": [],
+    "id": "shenyang",
+    "modernName": "辽宁沈阳",
+    "name": "沈阳"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      122.14,
+      29.74
+    ],
+    "eventIds": [
+      "shuangyu-port-destroyed"
+    ],
+    "historicalNames": [],
+    "id": "shuangyu",
+    "modernName": "浙江舟山六横岛附近",
+    "name": "双屿港"
+  },
+  {
+    "aliases": [
+      "刘家港"
+    ],
+    "coordinates": [
+      121.11,
+      31.45
+    ],
+    "eventIds": [
+      "yuan-sea-transport",
+      "zheng-he",
+      "zheng-he-fifth-voyage",
+      "zheng-he-first-voyage",
+      "zheng-he-fourth-voyage",
+      "zheng-he-seventh-voyage",
+      "zheng-he-sixth-voyage",
+      "zheng-he-voyages-end"
+    ],
+    "historicalNames": [],
+    "id": "taicang",
+    "modernName": "江苏苏州太仓市",
+    "name": "太仓"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      120.2,
+      22.99
+    ],
+    "eventIds": [
+      "penghu-battle-1683",
+      "taiwan-prefecture-created",
+      "taiwan-zheng-surrender",
+      "zheng-taiwan-expedition"
+    ],
+    "historicalNames": [],
+    "id": "taiwan-tainan",
+    "modernName": "台湾台南",
+    "name": "台湾府城"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      121.42,
+      28.66
+    ],
+    "eventIds": [
+      "qi-jiguang-coastal-defense",
+      "qi-jiguang-taizhou-victories"
+    ],
+    "historicalNames": [],
+    "id": "taizhou-zhejiang",
+    "modernName": "浙江台州",
+    "name": "台州"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      88.88,
+      29.27
+    ],
+    "eventIds": [
+      "first-gurkha-tibet-war",
+      "second-gurkha-tibet-war"
+    ],
+    "historicalNames": [],
+    "id": "tashilhunpo",
+    "modernName": "西藏日喀则",
+    "name": "扎什伦布寺"
+  },
+  {
+    "aliases": [
+      "东京(陈朝)"
+    ],
+    "coordinates": [
+      105.85,
+      21.03
+    ],
+    "eventIds": [
+      "jiaozhi-province-established",
+      "ming-invasion-dai-viet",
+      "ming-withdrawal-vietnam",
+      "qing-vietnam-campaign",
+      "qing-vietnam-withdrawal",
+      "yuan-annam-campaign"
+    ],
+    "historicalNames": [],
+    "id": "thang-long",
+    "modernName": "越南河内",
+    "name": "升龙"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      115.52,
+      40.39
+    ],
+    "eventIds": [
+      "tumu"
+    ],
+    "historicalNames": [],
+    "id": "tumu-fortress",
+    "modernName": "河北张家口怀来县土木镇",
+    "name": "土木堡"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      117.2,
+      42.5
+    ],
+    "eventIds": [
+      "ulan-butung-battle"
+    ],
+    "historicalNames": [],
+    "id": "ulan-butung",
+    "modernName": "内蒙古赤峰克什克腾旗",
+    "name": "乌兰布通"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      114.31,
+      30.55
+    ],
+    "eventIds": [],
+    "historicalNames": [],
+    "id": "wuchang",
+    "modernName": "湖北武汉武昌区",
+    "name": "武昌"
+  },
+  {
+    "aliases": [
+      "东林书院"
+    ],
+    "coordinates": [
+      120.31,
+      31.49
+    ],
+    "eventIds": [
+      "donglin-academy-restored"
+    ],
+    "historicalNames": [],
+    "id": "wuxi",
+    "modernName": "江苏无锡",
+    "name": "无锡"
+  },
+  {
+    "aliases": [
+      "西安府"
+    ],
+    "coordinates": [
+      108.94,
+      34.34
+    ],
+    "eventIds": [
+      "dashun-founded-xian",
+      "late-ming-rebellions",
+      "xian-incident"
+    ],
+    "historicalNames": [],
+    "id": "xian",
+    "modernName": "陕西西安",
+    "name": "西安"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      108.71,
+      34.33
+    ],
+    "eventIds": [],
+    "historicalNames": [],
+    "id": "xianyang",
+    "modernName": "陕西咸阳",
+    "name": "咸阳"
+  },
+  {
+    "aliases": [
+      "银川"
+    ],
+    "coordinates": [
+      106.23,
+      38.49
+    ],
+    "eventIds": [
+      "anhua-prince-rebellion"
+    ],
+    "historicalNames": [],
+    "id": "xingqing",
+    "modernName": "宁夏银川",
+    "name": "兴庆府"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      119.42,
+      32.39
+    ],
+    "eventIds": [
+      "yangzhou-fall"
+    ],
+    "historicalNames": [],
+    "id": "yangzhou",
+    "modernName": "江苏扬州",
+    "name": "扬州"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      113.07,
+      22.3
+    ],
+    "eventIds": [
+      "yuan-founded"
+    ],
+    "historicalNames": [],
+    "id": "yashan",
+    "modernName": "广东江门新会区崖门",
+    "name": "崖山"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      115.81,
+      32.89
+    ],
+    "eventIds": [
+      "yuan-red-turban-uprising"
+    ],
+    "historicalNames": [],
+    "id": "yingzhou",
+    "modernName": "安徽阜阳",
+    "name": "颍州"
+  },
+  {
+    "aliases": [
+      "海澄月港"
+    ],
+    "coordinates": [
+      117.82,
+      24.43
+    ],
+    "eventIds": [
+      "longqing-maritime-opening"
+    ],
+    "historicalNames": [],
+    "id": "yuegang",
+    "modernName": "福建漳州龙海区海澄镇",
+    "name": "月港"
+  },
+  {
+    "aliases": [
+      "郧阳府"
+    ],
+    "coordinates": [
+      110.81,
+      32.84
+    ],
+    "eventIds": [
+      "jingxiang-refugee-uprising"
+    ],
+    "historicalNames": [],
+    "id": "yunyang",
+    "modernName": "湖北十堰郧阳区",
+    "name": "郧阳"
+  },
+  {
+    "aliases": [],
+    "coordinates": [
+      112.47,
+      23.05
+    ],
+    "eventIds": [
+      "ricci-first-world-map",
+      "ricci-zhaoqing-residence"
+    ],
+    "historicalNames": [],
+    "id": "zhaoqing",
+    "modernName": "广东肇庆",
+    "name": "肇庆"
+  }
+]

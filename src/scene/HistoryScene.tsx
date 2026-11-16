@@ -12,6 +12,8 @@ import { ClusterField } from './ClusterField';
 import { SceneProjection } from './SceneProjection';
 import type { ClusterResult, ScreenCluster } from '../history/clustering/protocol';
 import { getLodLevel, getVisibilityBudget, selectProtectedEventIds } from '../history/lod';
+import { createTimelineLayout, TIMELINE_LAYOUT_VERSION } from '../history/timelineLayout';
+import { xToYear } from '../history/space';
 import { SceneFallback } from './SceneFallback';
 import { SelectionEffects } from './SelectionEffects';
 import { StarField } from './StarField';
@@ -46,7 +48,11 @@ export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, s
   const [activeDrag, setActiveDrag] = useState<{ event: HistoryEvent; start: StarPointerStart } | null>(null);
   const [level, setLevel] = useState(() => getLodLevel(27.68));
   const [focusRequest, setFocusRequest] = useState<ClusterFocusRequest | null>(null);
-  const positions = useMemo(() => new Map(events.map(event => [event.id, getEventPosition(event, dragOffsets[event.id])])), [events, dragOffsets]);
+  const timeline = useMemo(() => createTimelineLayout(events), [events]);
+  const positions = useMemo(() => new Map(events.map(event => [event.id, getEventPosition(event, dragOffsets[event.id], timeline.eventXs.get(event.id))])), [events, dragOffsets, timeline]);
+  const restoredCamera = useMemo(() => initialCamera?.target && initialCamera.timelineLayout !== TIMELINE_LAYOUT_VERSION
+    ? { ...initialCamera, target: [timeline.yearToX(xToYear(initialCamera.target[0])), initialCamera.target[1], initialCamera.target[2]] as const, timelineLayout: TIMELINE_LAYOUT_VERSION }
+    : initialCamera, [initialCamera, timeline]);
   const [projection, setProjection] = useState<{ events: readonly HistoryEvent[]; positions: typeof positions; result: ClusterResult; singles: HistoryEvent[] } | null>(null);
   const onResult = useCallback((result: ClusterResult) => setProjection(previous => {
     const byId = new Map(events.map(event => [event.id, event]));
@@ -86,14 +92,15 @@ export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, s
       <directionalLight position={[-12, 14, 18]} color="#e0bd72" intensity={1.7} />
       <directionalLight position={[22, -4, -12]} color="#4f8391" intensity={1.1} />
       <StarField />
-      <TimelineRail />
+      <TimelineRail timeline={timeline} />
       <SceneProjection events={events} positions={positions} level={level} protectedIds={protectedIds} onResult={onResult} onViewportChange={onViewportChange} />
-      <InstancedEventField events={visibleSingles} excludedIds={promotedIds} dragOffsets={dragOffsets} reducedMotion={reducedMotion} onHover={onHover} onPromote={promote} eventOpacities={eventOpacities} />
+      <InstancedEventField events={visibleSingles} excludedIds={promotedIds} dragOffsets={dragOffsets} xPositions={timeline.eventXs} reducedMotion={reducedMotion} onHover={onHover} onPromote={promote} eventOpacities={eventOpacities} />
       <ClusterField clusters={clusters} positions={positions} focusBounds={focusBounds} eventOpacities={eventOpacities} labelBudget={Math.max(0, getVisibilityBudget(level, size.width < 768).labels - promotedEvents.length)} />
       {promotedEvents.map((event) => (
         <EventStar
           key={event.id}
           event={event}
+          timelineX={timeline.eventXs.get(event.id)}
           selected={selectedEvent?.id === event.id}
           hovered={hoveredId === event.id}
           dragOffset={dragOffsets[event.id] ?? [0, 0]}
@@ -111,12 +118,14 @@ export function SceneContents({ events, selectedEvent, hoveredId, resetSignal, s
         <SelectionEffects
           key={`${selectedEvent.id}-${selectionSignal}`}
           event={selectedEvent}
+          timelineX={timeline.eventXs.get(selectedEvent.id)}
           dragOffset={dragOffsets[selectedEvent.id] ?? [0, 0]}
           reducedMotion={reducedMotion}
         />
       ) : null}
       <CameraRig
-        initialCamera={initialCamera}
+        initialCamera={restoredCamera}
+        timeline={timeline}
         onCameraChange={onCameraChange}
         selectedEvent={selectedEvent}
         selectedPosition={selectedEvent ? positions.get(selectedEvent.id) : undefined}

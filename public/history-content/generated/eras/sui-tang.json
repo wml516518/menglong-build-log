@@ -1,0 +1,1674 @@
+{
+  "eraId": "sui-tang",
+  "events": [
+    {
+      "aliases": [],
+      "background": "开皇朝廷通过整顿户籍、赋税和仓储扩大国家财政。平陈后，江南税源被纳入统一账籍，仓廪积储逐渐增多；《隋书·食货志》特别叙述开皇十七年府库粮帛充盈。这里的积累是长期征收和行政组织的结果，不能倒置到隋朝建立的581年。\n\n国家储备增强了朝廷调运粮食、赈济灾荒和组织军役的能力，后来也为炀帝朝工程和战争提供物资基础。但府库充实并不等于所有地方民户宽裕。需要同时观察仓储规模、征收方式与支出方向，才能理解隋朝财政力量如何形成，又如何在短时间内被高强度动员消耗。",
+      "categories": [
+        "economy"
+      ],
+      "causes": [
+        "文帝朝核实户籍、调整赋役并管理官仓，意在恢复长期分裂后的税源和粮食调度。"
+      ],
+      "childIds": [],
+      "color": "#b58b38",
+      "course": [
+        {
+          "description": "平陈后，南方新纳州县的人口与田赋进入隋廷统计和征收体系。",
+          "title": "平陈后财赋入籍",
+          "year": 589
+        },
+        {
+          "description": "《隋书·食货志》以开皇十七年前后仓廪与府库丰盈说明国家积储。",
+          "title": "开皇十七年府库充实",
+          "year": 597
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 604,
+      "eraId": "sui-tang",
+      "historiography": "《隋书·食货志》着重表现开皇财政成效；府库数字与民间生活状况须分别衡量。",
+      "id": "sui-kaihuang-treasury",
+      "impacts": [
+        {
+          "dimension": "economy",
+          "text": "集中积储支撑隋末大规模征发，同时也使财富分配与民间负担成为政治问题。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.9,
+          -0.7
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [
+        "person-yang-jian"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [
+        "sui-kaihuang-treasury-to-sui-grand-canal"
+      ],
+      "results": [
+        "朝廷取得可用于赈济、军需和大型工程的粮帛储备，财政调度能力提高。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷二十四《食货志》",
+          "sourceId": "suishu-zhonghua-1973"
+        },
+        {
+          "locator": "卷175《陈纪》，581年相关记载",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 581,
+      "summary": "隋文帝时期朝廷清查户口、整顿赋役与仓储，使中央积累粮食与布帛储备。所谓“府库充实”是正史对政绩的概括，也涉及对民间资源的集中；财政改善为统一战争与官僚治理提供条件，同时不能抹去征收负担。",
+      "themeIds": [],
+      "title": "开皇财政积储",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#9b7a45",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 605,
+      "eraId": "sui-tang",
+      "id": "sui-three-provinces",
+      "influence": 2,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          1.35,
+          -0.35
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷二十八《百官志下》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 581,
+      "summary": "隋廷承接北朝官制并重新调整尚书、门下、内史等机构职掌，诏令起草、审议与执行逐渐分开。官署分工尚随皇帝和时局变化，不能把后世定型的三省六部原样投射到隋初；这一改革为唐制提供了重要制度资源。",
+      "themeIds": [],
+      "title": "隋朝三省分工形成",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "science"
+      ],
+      "childIds": [],
+      "color": "#4f8d8d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 583,
+      "eraId": "sui-tang",
+      "id": "sui-new-capital",
+      "influence": 2,
+      "layout": {
+        "lane": "science",
+        "offset": [
+          -1.35,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一《高祖纪上》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 582,
+      "summary": "隋文帝命高颎、宇文恺等规划营建新都大兴城，以应对旧长安水土、空间和行政设施的问题。规整的宫城、皇城和坊市体系服务于统一王朝的礼仪与管理需求；唐长安后来承袭并扩展这一城市格局。",
+      "themeIds": [],
+      "title": "大兴城营建",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#9b7a45",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 583,
+      "eraId": "sui-tang",
+      "id": "sui-revises-laws",
+      "influence": 2,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -0.9,
+          0.35
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [
+        "person-su-wei"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷二十五《刑法志》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 583,
+      "summary": "开皇年间朝廷修定律令，删减酷刑与繁密条款，确立以十二篇为主体的法典结构。法律文本并不等同于所有地方的实际执行，但它使中央治理有了相对统一的规范，也成为唐律继受和调整的重要基础。",
+      "themeIds": [],
+      "title": "开皇律修定",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#4d7aa4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 603,
+      "eraId": "sui-tang",
+      "id": "sui-tujue-split",
+      "influence": 2,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          0.45,
+          0.35
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui",
+        "eastern-turkic",
+        "western-turkic"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷八十四《北狄传》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 583,
+      "summary": "隋朝面对突厥内部的继承争端与东西势力分化，采用册封、通婚、互市和军事压力相结合的办法维护北部边境。各部联盟不断变化，不能把东、西突厥视为固定不变的两个国家；边境贸易与战备始终交织。",
+      "themeIds": [],
+      "title": "隋与东西突厥的分合外交",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#b58b38",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 604,
+      "eraId": "sui-tang",
+      "id": "sui-equal-field",
+      "influence": 2,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -0.45,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷二十四《食货志》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 583,
+      "summary": "隋政府延续北朝均田、租调和户籍制度，核查隐漏人口并试图把农户纳入统一赋役簿籍。登记数字增长既反映人口恢复，也有原先漏籍者重入统计的因素；田地分配与实际占有之间仍存在距离。地方授田仍取决于可分配土地与官府丈量。",
+      "themeIds": [],
+      "title": "隋朝均田与户籍整顿",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#b58b38",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 584,
+      "eraId": "sui-tang",
+      "id": "sui-guangtong-canal",
+      "influence": 2,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.45,
+          -0.35
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷二十四《食货志》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 584,
+      "summary": "隋廷在关中与黄河之间开凿广通渠，将潼关以东的粮食更便捷地送往京师。运粮水道缓解首都供应压力，也提示关中政治中心长期依靠东部财赋；它与炀帝时期贯通南北的运河工程不是同一工程。",
+      "themeIds": [],
+      "title": "广通渠开凿",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#9b7a45",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 584,
+      "eraId": "sui-tang",
+      "id": "sui-kaoji-officials",
+      "influence": 2,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          0,
+          -0.7
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷二十八《百官志下》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 584,
+      "summary": "隋文帝整顿地方官考核与任用，把州县长官纳入中央任免和考绩秩序。郡县治理从门阀和地方关系中逐步转向朝廷可调度的官僚体系，然而考课成效仍取决于监察与具体人事，不能视为一次完成。",
+      "themeIds": [],
+      "title": "隋朝考课制度整顿",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#b58b38",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 604,
+      "eraId": "sui-tang",
+      "id": "sui-yicang",
+      "influence": 2,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.9,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷二十四《食货志》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 585,
+      "summary": "隋朝推行义仓，令民间按收成储粮以备荒年，并在州县逐步形成仓储安排。制度意在缓解灾荒与粮价波动，但征收和保管也给地方官吏带来权力；其运作效果须结合地区、年份和实际放赈考察。放粮救荒与仓粮挪用都是衡量义仓的关键。",
+      "themeIds": [],
+      "title": "开皇义仓推行",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#9b7a45",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 605,
+      "eraId": "sui-tang",
+      "id": "sui-keju-exams",
+      "influence": 2,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          1.35,
+          0.35
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷二十八《百官志下》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 587,
+      "summary": "隋代官员选拔中出现秀才、明经等分科举荐与考试安排，朝廷试图扩大门第以外的取士渠道。它尚不是成熟的唐宋科举，荐举、家世和朝廷选考并存；但分科取士的制度实践深刻影响了后续官僚来源。",
+      "themeIds": [],
+      "title": "隋代分科取士兴起",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#9b7a45",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 591,
+      "eraId": "sui-tang",
+      "id": "sui-jiangnan-governance",
+      "influence": 2,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -0.9,
+          -0.7
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [
+        "sui-jiangnan-revolt-to-sui-jiangnan-governance"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷二《高祖纪下》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 589,
+      "summary": "灭陈后隋廷改置州县、清查户籍并派官治理江南，试图把南朝旧地纳入统一行政体系。地方豪强和旧官僚并非立即接受新法，江南出现抵抗与镇压；这一过程展示了军事统一之后的治理难题。新官署的设置也触发了高智慧等人的反抗。",
+      "themeIds": [],
+      "title": "隋朝接收江南州县",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "隋灭陈后，江南并未立即形成稳固的行政秩序。新任官吏接管州县，旧南朝官僚、地方豪强和居民面对徭役与身份调整。高智慧等举兵后，各地反抗并无统一号令，既有复旧政权的诉求，也有针对地方治理的冲突。\n\n朝廷调杨素等分路进军，逐渐压制主要起事力量，重新控制交通线和州县。平定使隋的行政体系能够向南方推进，但武力解决没有消除所有社会分歧。把事件置于589年统一之后，可以看到征服、接管与社会整合不是同一个瞬间完成的过程。",
+      "categories": [
+        "war"
+      ],
+      "causes": [
+        "平陈后隋廷改置州县和官吏，部分南方旧势力与居民对新统治不满。"
+      ],
+      "childIds": [],
+      "color": "#c84c36",
+      "course": [
+        {
+          "description": "高智慧等人在不同地区起事，叛军依托水道、山地和地方关系扩张。",
+          "title": "江南多地举兵",
+          "year": 590
+        },
+        {
+          "description": "朝廷调杨素等率军进击，逐步恢复江南主要州县和交通线的控制。",
+          "title": "杨素分路平定",
+          "year": 591
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 591,
+      "eraId": "sui-tang",
+      "historiography": "《隋书》从中央平乱立场记述起事；地方参与者的动机不能一律归结为复陈。",
+      "id": "sui-jiangnan-revolt",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "军事统一后的治理冲突表明旧有身份、地方权力与新税役秩序需要更长时间磨合。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -1.35,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [
+        "person-yang-su"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [
+        "sui-jiangnan-revolt-to-sui-jiangnan-governance"
+      ],
+      "results": [
+        "隋廷平息主要武装反抗，行政任命和赋役制度得以继续进入江南。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷二《高祖纪下》",
+          "sourceId": "suishu-zhonghua-1973"
+        },
+        {
+          "locator": "卷177《隋纪》，590年相关记载",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 590,
+      "summary": "隋灭陈后对江南州县和民众实施新政，地方旧势力与民众起兵反抗，朝廷调兵平定。起事与灭陈战役相隔一段时期，反映军事统一后的行政与社会冲突；各地参与者不同，不能把它概括为陈朝的统一复国战争。",
+      "themeIds": [],
+      "title": "平陈后江南反隋起事",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#8b6655",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 604,
+      "eraId": "sui-tang",
+      "id": "sui-ruzheng-mapping",
+      "influence": 2,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷二十四《食货志》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 590,
+      "summary": "隋朝通过输籍、貌阅等措施辨别年龄和身份，追索依附豪强而未在官府登记的人口。它提高国家征税与征役的能力，也改变百姓与地方大族的关系；史书所见户口增长并不能简单等同于自然人口激增。",
+      "themeIds": [],
+      "title": "隋朝户籍括户",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#9b7a45",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 607,
+      "eraId": "sui-tang",
+      "id": "sui-changes-counties",
+      "influence": 2,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -0.45,
+          -0.35
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷二十八《百官志下》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 590,
+      "summary": "隋朝对州、郡、县层级反复调整，以减少南北分治时代遗留的重叠官署和冗员。名称与辖区在文帝、炀帝时期并不完全相同，地方行政的整合是连续过程；唐初州县制度在此基础上重新安排。州县裁并改变官员编制与赋税上送路径。",
+      "themeIds": [],
+      "title": "隋朝州县层级调整",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#7862a9",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 595,
+      "eraId": "sui-tang",
+      "id": "sui-renshou-palace",
+      "influence": 2,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          1.35,
+          -0.7
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷二《高祖纪下》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 593,
+      "summary": "隋文帝在岐州营建仁寿宫，宫殿作为避暑与政治活动场所，征发工匠和民夫甚众。宏大建筑体现统一王朝的资源调度，也引出有关劳役、营造者功过与皇室生活的记载；不可仅把它视为建筑风格演进。",
+      "themeIds": [],
+      "title": "仁寿宫营建",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "religion"
+      ],
+      "childIds": [],
+      "color": "#8a668e",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 601,
+      "eraId": "sui-tang",
+      "id": "sui-jiaobu-buddhism",
+      "influence": 2,
+      "layout": {
+        "lane": "religion",
+        "offset": [
+          -1.35,
+          -0.35
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷二《高祖纪下》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 601,
+      "summary": "隋文帝下诏在多地建舍利塔，以佛教仪式联结皇权、地方官和寺院网络。诏令的传播依赖州县与僧众，宗教活动同时具有政治象征和地方社会意义；建塔的地点、次数与灵验叙事需分别看待。舍利分送和地方建塔使诏令进入各地寺院。",
+      "themeIds": [],
+      "title": "仁寿舍利塔诏建",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#4d7aa4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 609,
+      "eraId": "sui-tang",
+      "id": "sui-renshi-silk",
+      "influence": 2,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          -0.9,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷六十七《裴矩传》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 603,
+      "summary": "裴矩等人在张掖接触西域商使，朝廷借商贸信息了解诸国道路、物产与政治局势。隋代西域经营与对吐谷浑、突厥的关系相互牵连，朝廷图籍所描绘的路线不意味着各地都已稳定纳入统治。裴矩编写《西域图记》整合商旅所报信息。",
+      "themeIds": [],
+      "title": "隋朝西域商路再开",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 604,
+      "eraId": "sui-tang",
+      "id": "sui-yangdi-accession",
+      "influence": 2,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -0.45,
+          0.35
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [
+        "person-yang-guang"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷三《炀帝纪上》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 604,
+      "summary": "隋文帝去世后杨广即位，朝廷政策重心转向东都建设、水运与边疆远征。关于太子更替和文帝死因，正史叙述含有强烈道德判断，具体传闻不宜当作确证；即位后的大规模工程则有连续史料可考。东都营建随后改变了朝廷的政治活动中心。",
+      "themeIds": [],
+      "title": "隋炀帝即位",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#b58b38",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 605,
+      "eraId": "sui-tang",
+      "id": "sui-tongji-canal",
+      "influence": 2,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.9,
+          -0.35
+        ]
+      },
+      "parentId": "sui-grand-canal",
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [
+        "sui-tongji-canal-part-of-sui-grand-canal"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷三《炀帝纪上》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 605,
+      "summary": "大业元年朝廷动员民夫开通济渠，沟通黄河与淮河方向的水运，服务东都和江淮之间的粮物调拨。它是隋代运河体系的重要一段，既依托已有水系，也伴随沉重征役；不能和永济渠混同。东都经此获得从江淮运输粮物的新通道。",
+      "themeIds": [],
+      "title": "通济渠开凿",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "science"
+      ],
+      "childIds": [],
+      "color": "#4f8d8d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 606,
+      "eraId": "sui-tang",
+      "id": "sui-luoyang-capital",
+      "influence": 2,
+      "layout": {
+        "lane": "science",
+        "offset": [
+          0,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷三《炀帝纪上》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 605,
+      "summary": "隋炀帝命营东都洛阳，宫城、里坊与交通设施的建设汇集各地工匠和物资。东都连接黄河、洛水与运河线路，便利王朝调度东部资源；同时高强度征役成为大业时期社会负担的重要组成。宫城和城郭的营造延续了不止一年。",
+      "themeIds": [],
+      "title": "东都洛阳营建",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "隋代大运河是数段水道分期营建和整治的结果。605年的通济渠连通黄河、淮河，608年的永济渠向北接近涿郡，610年的江南河延伸至余杭。工程利用自然河流和既有渠道，功能也并不完全相同，分别服务东都供给、北方军运和江南漕运。\n\n水道使江南粮食与各地物资能够进入更大范围的运输网络，强化了都城和军镇对远方资源的调度。与此同时，开渠、筑堤与船运依赖大量人力，负担集中落在沿线民户。运河的长期经济作用与隋末征发压力并存，不能用其中一面抹去另一面。",
+      "categories": [
+        "economy"
+      ],
+      "causes": [
+        "统一后的朝廷需要连接关中、东都、江淮粮源与北方军镇，旧河道不足以承担不断扩大的转运。"
+      ],
+      "childIds": [
+        "sui-tongji-canal",
+        "sui-yongji-canal",
+        "sui-jiangnan-canal"
+      ],
+      "color": "#b58b38",
+      "course": [
+        {
+          "description": "朝廷开通沟通黄河与淮河的通济渠，使东都与江淮水路衔接。",
+          "title": "通济渠开凿",
+          "year": 605
+        },
+        {
+          "description": "永济渠向涿郡方向延伸，服务北方军事与物资转输。",
+          "title": "永济渠北伸",
+          "year": 608
+        },
+        {
+          "description": "江南河连接京口与余杭，完善长江以南的内河航道。",
+          "title": "江南河贯通",
+          "year": 610
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 610,
+      "eraId": "sui-tang",
+      "historiography": "《隋书·食货志》综合叙述河渠与财政，具体各段工期应与本纪逐项互证。",
+      "id": "sui-grand-canal",
+      "impacts": [
+        {
+          "dimension": "economy",
+          "text": "运河长期改变区域联系，但施工和漕运所需的大量征役也加重隋末社会压力。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.45,
+          -0.7
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [
+        "person-yang-guang"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [
+        "sui-tongji-canal-part-of-sui-grand-canal",
+        "sui-yongji-canal-part-of-sui-grand-canal",
+        "sui-jiangnan-canal-part-of-sui-grand-canal",
+        "sui-kaihuang-treasury-to-sui-grand-canal"
+      ],
+      "results": [
+        "多段新旧水道连成运输体系，南方粮物可经江淮进入东都并转送北方。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷二十四《食货志》",
+          "sourceId": "suishu-zhonghua-1973"
+        },
+        {
+          "locator": "卷180《隋纪》，605年相关记载",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 605,
+      "summary": "通济渠、永济渠与江南河等水道先后开凿或整治，连通黄河、淮河、长江与北方边镇。各段工程时间、功能和旧河道基础不同，不应写成同一年一次挖成；运输网络长期促进南北物资流动，征役却加剧隋末危机。",
+      "themeIds": [],
+      "title": "隋大运河体系形成",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#b58b38",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 608,
+      "eraId": "sui-tang",
+      "id": "sui-yongji-canal",
+      "influence": 2,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          1.35,
+          0
+        ]
+      },
+      "parentId": "sui-grand-canal",
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [
+        "sui-yongji-canal-part-of-sui-grand-canal"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷三《炀帝纪上》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 608,
+      "summary": "隋廷开永济渠使水运由黄河地区通向涿郡方向，朝廷借此供应北部边疆及高句丽战争准备。北方水道与南方通济渠作用不同；工程所需劳役与战争转输共同压迫沿线社会。涿郡成为北方军粮和兵员集结的终点之一。",
+      "themeIds": [],
+      "title": "永济渠开凿",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "ethnicity"
+      ],
+      "childIds": [],
+      "color": "#69804a",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 609,
+      "eraId": "sui-tang",
+      "id": "sui-qiang-toyuhun",
+      "influence": 2,
+      "layout": {
+        "lane": "ethnicity",
+        "offset": [
+          0.9,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷三《炀帝纪上》，大业四年至五年吐谷浑事",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 608,
+      "summary": "隋炀帝对青海一带的吐谷浑展开大规模军事行动，并设置郡县以图控制西域交通。朝廷所宣示的行政版图与边地实际控制未必一致，长途驻军和转输加重财政负担；这一西北经营也影响唐初边疆格局。",
+      "themeIds": [],
+      "title": "隋军进击吐谷浑",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#b58b38",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 610,
+      "eraId": "sui-tang",
+      "id": "sui-jiangnan-canal",
+      "influence": 2,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -1.35,
+          0.35
+        ]
+      },
+      "parentId": "sui-grand-canal",
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [
+        "sui-jiangnan-canal-part-of-sui-grand-canal"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷三《炀帝纪上》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 610,
+      "summary": "隋炀帝在江南修开水道，连接京口与余杭，扩大江南粮物和地方交通的水运范围。它与北方、淮河诸渠一道构成后称隋大运河的网络；具体水路利用旧河道和自然水系，不宜视为完全新辟的单一河槽。",
+      "themeIds": [],
+      "title": "江南河开凿",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "隋末起事首先在山东等地扩散，随后河南、河北、江淮各有军队聚集。参与者包括逃役农民、军吏、地方豪强和旧官僚，彼此并无统一指挥。征辽所需的转输、灾荒与严厉追捕促使更多人离开原有州县秩序。\n\n瓦岗等势力争夺粮仓和交通线，李渊又于617年在太原起兵并取得长安。隋廷虽仍保有部分宫廷和官署，却难以统一征税、运粮及调兵。到618年，多个政治中心并存，隋朝的终结已不能归因于单次战败或某一支起事队伍。",
+      "categories": [
+        "society"
+      ],
+      "causes": [
+        "征辽、宫殿与河渠工程的征役叠加灾荒，地方官府对逃役和聚众反抗难以控制。"
+      ],
+      "childIds": [],
+      "color": "#8b6655",
+      "course": [
+        {
+          "description": "王薄等在山东举兵，此后河南、河北和江淮陆续出现不同武装。",
+          "title": "山东起事扩散",
+          "year": 611
+        },
+        {
+          "description": "杨玄感在黎阳督运时起兵，转攻东都；遭朝廷军队夹击后兵败。",
+          "title": "杨玄感举兵",
+          "year": 613
+        },
+        {
+          "description": "李渊太原起兵并进入长安，隋廷对关中和中原的控制继续收缩。",
+          "title": "各方逐鹿",
+          "year": 617
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 618,
+      "eraId": "sui-tang",
+      "historiography": "正史常将不同反抗归入群盗叙事，需区分各支武装的地域与政治目标。",
+      "id": "sui-rebellions",
+      "impacts": [
+        {
+          "dimension": "society",
+          "text": "起事者背景和目标各异，隋亡是财政、战争和地方军事力量共同变化的结果。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          1.35,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [
+        "person-yang-guang"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [
+        "sui-korean-campaign-to-sui-rebellions",
+        "sui-rebellions-to-tang-founded"
+      ],
+      "results": [
+        "隋朝丧失对多地仓储、道路与军队的有效调度，数个竞争政权逐步形成。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷四《炀帝纪下》",
+          "sourceId": "suishu-zhonghua-1973"
+        },
+        {
+          "locator": "卷181《隋纪五》，大业七年王薄起事；卷182《隋纪六》，大业九年杨玄感黎阳起兵；卷183《隋纪七》，大业十三年李渊起兵",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 611,
+      "summary": "山东、河南和江淮等地起事不断，征役、灾荒、战争转输与地方秩序崩坏共同提供了动员条件。各支力量来源和目标并不相同，既有农民军，也有地方豪强与旧官僚；多中心割据逐步瓦解隋的财政和军事控制。",
+      "themeIds": [],
+      "title": "隋末群雄并起",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#c84c36",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 612,
+      "eraId": "sui-tang",
+      "id": "sui-salsu-retreat",
+      "influence": 2,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -0.45,
+          -0.7
+        ]
+      },
+      "parentId": "sui-korean-campaign",
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui",
+        "goguryeo"
+      ],
+      "relationIds": [
+        "sui-salsu-retreat-part-of-sui-korean-campaign"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷六十《宇文述传》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 612,
+      "summary": "第一次高句丽远征中，隋军深入后遭遇补给困难，回撤途中在萨水一带惨败。史书对出征和生还人数的夸张数字须审慎看待；战役暴露了跨辽东的距离、粮运和指挥问题，也影响朝廷继续征战的成本。",
+      "themeIds": [],
+      "title": "萨水之战与隋军撤退",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "炀帝为压制高句丽，调动各地士兵、船只和粮草，经涿郡向辽东集结。612年首次大战，辽东城久攻不克，深入平壤方向的军队在萨水撤退中损失惨重。萨水是第一次远征的具体战役，后来的再征不能并入这一年的战况。\n\n613年朝廷再次出兵时，杨玄感起事打断了军事部署；614年第三次出兵又以高句丽求和、隋军撤回告终。连续征战没有取得持久控制，却消耗军力和民间运输能力。对东北战争的执着与内地动乱相互放大，是理解隋末政治失序的重要线索。",
+      "categories": [
+        "war"
+      ],
+      "causes": [
+        "隋与高句丽在辽东边界和朝贡关系上长期对立，炀帝准备以水陆大军改变东北格局。"
+      ],
+      "childIds": [
+        "sui-salsu-retreat"
+      ],
+      "color": "#c84c36",
+      "course": [
+        {
+          "description": "隋军围攻辽东城，向平壤推进的部队在萨水撤退中遭到重创。",
+          "title": "首次大举东征",
+          "year": 612
+        },
+        {
+          "description": "炀帝再度调兵攻高句丽，杨玄感起事迫使朝廷转而应对内地危机。",
+          "title": "再次征发",
+          "year": 613
+        },
+        {
+          "description": "隋军继续进逼，高句丽遣使求和，朝廷撤军而未建立稳定控制。",
+          "title": "第三次出兵",
+          "year": 614
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 614,
+      "eraId": "sui-tang",
+      "historiography": "《隋书》对出征兵数与损失有夸张叙述，战役规模应结合纪传互证。",
+      "id": "sui-korean-campaign",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "远征与内地起事相互牵制，削弱朝廷在地方的征收和镇压能力。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -0.9,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [
+        "person-yang-guang"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "sui",
+        "goguryeo"
+      ],
+      "relationIds": [
+        "sui-korean-campaign-to-sui-rebellions",
+        "sui-salsu-retreat-part-of-sui-korean-campaign"
+      ],
+      "results": [
+        "连续征战未能征服高句丽，隋朝军队、运输和财政承受沉重损耗。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷四《炀帝纪下》",
+          "sourceId": "suishu-zhonghua-1973"
+        },
+        {
+          "locator": "卷181《隋纪》，612年相关记载",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 612,
+      "summary": "隋炀帝多次发动对高句丽的大规模征伐，军队远赴辽东，水陆转输与后勤组织极为艰巨。围城与回师的结果未达预期，士卒损失和频繁征役削弱王朝统治；战争与国内民变相互加剧，但不能把亡隋归于单一战役。",
+      "themeIds": [],
+      "title": "隋征高句丽",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#c84c36",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 613,
+      "eraId": "sui-tang",
+      "id": "sui-yang-xuangan-revolt",
+      "influence": 2,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0,
+          -0.35
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷七十《杨玄感传》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 613,
+      "summary": "杨玄感利用朝廷东征之际在黎阳起兵，攻向洛阳，地方精英和军队内部的不满由此显露。起兵最终失败，却牵制远征部署并促使朝廷加重镇压；它与各地农民起事并非同一组织。洛阳守军抵挡叛军，杨玄感最终败亡。",
+      "themeIds": [],
+      "title": "杨玄感起兵",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#8b6655",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 618,
+      "eraId": "sui-tang",
+      "id": "sui-wagang-rise",
+      "influence": 2,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          0.45,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷七十《李密传》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 613,
+      "summary": "翟让、李密等人聚集瓦岗力量，控制河南粮仓与交通要道，吸纳逃亡者及部分士人。瓦岗内部领导权与政治目标多次变化，最终未建立稳定统一政权；其活动显示隋末中央对粮道和地方秩序的失控。",
+      "themeIds": [],
+      "title": "瓦岗军兴起",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#4d7aa4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 615,
+      "eraId": "sui-tang",
+      "id": "sui-yanmen-siege",
+      "influence": 2,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          0.9,
+          0.35
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷四《炀帝纪下》",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 615,
+      "summary": "东突厥始毕可汗围困隋炀帝于雁门，隋廷求援并动员各地兵马，随后突厥撤围。事件说明北方联盟已随隋朝国势与边境政策变化而松动；史料中的求援经过需要与军事部署分开讨论。围城期间的求援暴露了隋与突厥关系恶化。",
+      "themeIds": [],
+      "title": "雁门之围",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 617,
+      "eraId": "sui-tang",
+      "id": "sui-li-yuan-taiyuan",
+      "influence": 2,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -1.35,
+          -0.7
+        ]
+      },
+      "parentId": null,
+      "period": "隋代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一《高祖纪》",
+          "sourceId": "jiutangshu-zhonghua-1975"
+        }
+      ],
+      "startYear": 617,
+      "summary": "李渊在太原起兵南下，取得长安并拥立隋宗室，先以隋臣名义掌握关中政权。起兵与各地反隋势力并行，后来的唐朝并非在这一年已统一全国；关中粮草和军队重组决定了其初期优势。长安政权仍保留隋恭帝的皇帝名号。",
+      "themeIds": [],
+      "title": "李渊太原起兵",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 618,
+      "eraId": "sui-tang",
+      "id": "sui-jiangdu-coup",
+      "influence": 2,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -0.9,
+          -0.35
+        ]
+      },
+      "parentId": null,
+      "period": "隋末",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "sui"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷四《炀帝纪下》，大业十四年三月江都事",
+          "sourceId": "suishu-zhonghua-1973"
+        }
+      ],
+      "startYear": 618,
+      "summary": "宇文化及等人在江都发动兵变，隋炀帝被杀，留守江都的中央权力结构崩溃。各地割据势力仍在竞争，长安与洛阳也分别存在隋室名号；江都之变是隋亡关键节点，却不等于所有隋朝统治同日终止。",
+      "themeIds": [],
+      "title": "江都兵变",
+      "yearPrecision": "exact"
+    }
+  ],
+  "people": [
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "他参与隋初中枢政务和律令制定，使新王朝有较统一的司法规范。"
+      ],
+      "deathYear": null,
+      "evaluation": "苏威的作用主要在法令和中枢行政，不能把律典形成归于他一人。",
+      "eventIds": [
+        "sui-revises-laws"
+      ],
+      "historiography": "《隋书》对苏威仕途褒贬并存，法律修订应与牛弘等人的工作合看。",
+      "id": "person-su-wei",
+      "identities": [],
+      "legacy": "开皇律为唐代律令体系提供了重要前身，苏威的参议反映隋初制度整合。",
+      "name": "苏威",
+      "placeIds": [],
+      "primaryEraId": "sui-tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "suishu-zhonghua-1973"
+      ],
+      "summary": "苏威是隋文帝朝参与中枢治理的重要官员。他参与修订开皇律令，推动减少繁苛条款，使新政权在南北统一前后有较一致的司法框架。其政治生涯跨越文帝、炀帝两朝，制度贡献与个人仕途评价需要分开。",
+      "timeline": [
+        {
+          "description": "苏威参与文帝朝法律修订，朝廷删繁就简，形成十二篇律的基本框架。",
+          "title": "参与开皇律令修定",
+          "year": 583
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "他推动东都和运河体系建设，扩大隋廷调度南北物资的能力。",
+        "连续对高句丽用兵及高强度征役加剧财政与社会压力。"
+      ],
+      "deathYear": null,
+      "evaluation": "杨广的工程和军事政策影响深远，不能只用后世暴君叙事替代各项措施的成本分析。",
+      "eventIds": [
+        "sui-yangdi-accession",
+        "sui-grand-canal",
+        "sui-korean-campaign",
+        "sui-rebellions"
+      ],
+      "historiography": "《隋书·炀帝纪》带有亡国史的道德评价，工程日期和战役经过应分别对照纪传。",
+      "id": "person-yang-guang",
+      "identities": [],
+      "legacy": "大运河网络在后世持续使用，而隋末战争与征发也成为后代讨论统治限度的案例。",
+      "name": "杨广",
+      "placeIds": [],
+      "primaryEraId": "sui-tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "suishu-zhonghua-1973"
+      ],
+      "summary": "隋炀帝杨广继位后营建东都、开凿多段运河，并多次远征高句丽。水运改善长期交通，却伴随密集征役；辽东战争又耗费军粮与士卒。618年江都兵变中他被杀，隋朝中央权力进一步瓦解。",
+      "timeline": [
+        {
+          "description": "杨广继文帝为帝，开始大规模经营东都与跨区域交通。",
+          "title": "继位为隋炀帝",
+          "year": 604
+        },
+        {
+          "description": "朝廷征发人力开凿通济渠，连接黄河与淮河水系。",
+          "title": "开通济渠",
+          "year": 605
+        },
+        {
+          "description": "杨广调集水陆大军进攻辽东，远征在围城与萨水撤退中遭受重创。",
+          "title": "首次征高句丽",
+          "year": 612
+        },
+        {
+          "description": "宇文化及等发动兵变，杨广在江都被杀。",
+          "title": "江都遇弑",
+          "year": 618
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "杨坚以统一州县、整顿户籍和仓储增强国家对粮帛的组织能力。"
+      ],
+      "deathYear": null,
+      "evaluation": "文帝朝积储来自长期制度调整与征收，不能将南方税源提前归入581年。",
+      "eventIds": [
+        "sui-kaihuang-treasury"
+      ],
+      "historiography": "《隋书》称颂开皇富庶，仍须同时考察民间负担与储备的实际用途。",
+      "id": "person-yang-jian",
+      "identities": [],
+      "legacy": "隋代统一和开皇制度成为唐初官制、律令与财政政策的重要基础。",
+      "name": "杨坚",
+      "placeIds": [],
+      "primaryEraId": "sui-tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "suishu-zhonghua-1973"
+      ],
+      "summary": "杨坚建立隋朝后整顿官制、户籍和赋役，589年平陈使南方纳入统一行政。朝廷在开皇后期积累粮帛，扩大赈济与调兵能力。他的统治奠定了隋唐制度连续性的基础，但府库增长与百姓生活不应直接画等号。",
+      "timeline": [
+        {
+          "description": "杨坚受北周禅位称帝，开始整合中枢制度与北方财政。",
+          "title": "建立隋朝",
+          "year": 581
+        },
+        {
+          "description": "隋军灭陈后，杨坚朝廷将江南州县纳入统一税籍与仓储体系。",
+          "title": "平陈后整合南方",
+          "year": 589
+        },
+        {
+          "description": "《隋书·食货志》以开皇十七年前后府库充实说明财政整合的结果。",
+          "title": "开皇朝府库积储",
+          "year": 597
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "他在江南战事中组织军队和水陆进兵，帮助朝廷恢复主要州县控制。"
+      ],
+      "deathYear": null,
+      "evaluation": "杨素的军事行动巩固隋的行政接管，也显示征服后地方整合仍有冲突。",
+      "eventIds": [
+        "sui-jiangnan-revolt"
+      ],
+      "historiography": "《隋书·杨素传》突出将领功绩，起事者动机应与地方税役和旧势力变化并读。",
+      "id": "person-yang-su",
+      "identities": [],
+      "legacy": "他的平乱经历常被纳入统一史叙事，但地方社会对新政权的反应同样值得观察。",
+      "name": "杨素",
+      "placeIds": [],
+      "primaryEraId": "sui-tang",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "suishu-zhonghua-1973"
+      ],
+      "summary": "杨素是隋初重要将领。平陈后江南多地反抗新官吏和州县安排，他受命率军分路平定，恢复朝廷对交通线与地方行政的控制。军事胜利解决了眼前战事，却没有使南方社会立刻完成政治整合。",
+      "timeline": [
+        {
+          "description": "杨素奉隋廷命分路进军，镇压平陈后江南各地的武装反抗。",
+          "title": "平定江南起事",
+          "year": 590
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    }
+  ]
+}

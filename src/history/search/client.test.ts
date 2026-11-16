@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { readFileSync } from 'node:fs';
 import { HistorySearchClient } from './client';
 import { createSearchWorkerHandler } from './search.worker';
 import type { SearchIndexes, SearchRequest, SearchResponse, SearchWorker } from './protocol';
@@ -51,6 +52,40 @@ function setup() {
 const ids = (results: { id: string }[]) => results.map(result => result.id);
 
 describe('history search worker', () => {
+  it('indexes all 1200 production events and deterministically searches representatives of nine periods', async () => {
+    const fixture = (path: string) => JSON.parse(readFileSync(`public/history-content/generated/indexes/${path}.compact.json`, 'utf8'));
+    const production: SearchIndexes = { events: fixture('events'), people: fixture('people'), places: fixture('places'), themes: fixture('themes') };
+    expect(production.events).toHaveLength(1200);
+    const worker = new LocalWorker();
+    const client = new HistorySearchClient({ indexes: production, workerFactory: () => worker });
+    const fallback = new HistorySearchClient({ indexes: production, workerFactory: () => { throw new Error('Worker unavailable'); } });
+    const representatives = [
+      ['盘庚迁殷', 'pan-geng-migration', 'pre-qin'],
+      ['秦推行郡县统治', 'qin-commandery-system', 'qin-han'],
+      ['曹丕受禅建魏', 'cao-pi-wei-founded', 'wei-jin'],
+      ['开皇财政积储', 'sui-kaihuang-treasury', 'sui-tang-five-dynasties'],
+      ['陈桥兵变', 'chenqiao', 'song-liao-jin-xia'],
+      ['元朝建立', 'yuan-founded', 'yuan'],
+      ['明朝建立', 'ming-founded-1368', 'ming'],
+      ['明朝灭亡', 'ming-fall', 'qing'],
+      ['鸦片战争', 'opium-war', 'modern']
+    ];
+    try {
+      for (const [text, id, period] of representatives) {
+        expect(production.events.find(event => event.id === id)?.editorialPeriodId).toBe(period);
+        const first = await client.query({ text });
+        expect(first[0]?.id).toBe(id);
+        expect(await client.query({ text })).toEqual(first);
+        expect((await fallback.query({ text }))[0]?.id).toBe(id);
+      }
+      const init = worker.requests[0];
+      expect(init.type === 'init' && init.documents.length).toBe(1200);
+      const first = await client.query({ text: '制度', limit: 1200 });
+      const reversed = new HistorySearchClient({ indexes: { ...production, events: [...production.events].reverse() }, workerFactory: () => new LocalWorker() });
+      try { expect(ids(await reversed.query({ text: '制度', limit: 1200 }))).toEqual(ids(first)); }
+      finally { reversed.dispose(); }
+    } finally { client.dispose(); fallback.dispose(); }
+  });
   it('orders exact title, event alias, and linked person above prose irrespective of influence', async () => {
     const data: SearchIndexes = { ...indexes, events: [
       event('prose', '另一事件', { summary: '嬴政', influence: 5 }),

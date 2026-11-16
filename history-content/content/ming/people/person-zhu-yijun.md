@@ -9,10 +9,12 @@ birthYear: 1563
 deathYear: 1620
 roleIds: []
 eventIds:
-  - zhang-juzheng
   - imjin-war
+  - wanli-accession
+  - zhang-juzheng
 sourceIds:
   - bai-shouyi-general-history
+  - mingshi-zhonghua-1974
 yearPrecision: exact
 birthplaceId: null
 placeIds: []

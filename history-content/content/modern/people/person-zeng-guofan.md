@@ -9,6 +9,7 @@ roleIds: []
 eventIds:
   - taiping
   - self-strengthening
+  - jiangnan-arsenal
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

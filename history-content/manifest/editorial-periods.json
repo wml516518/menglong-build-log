@@ -1,0 +1,74 @@
+[
+  {
+    "id": "pre-qin",
+    "name": "先秦",
+    "startYear": -2070,
+    "endYear": -221,
+    "eventQuota": 170,
+    "coreQuota": 25
+  },
+  {
+    "id": "qin-han",
+    "name": "秦汉",
+    "startYear": -221,
+    "endYear": 220,
+    "eventQuota": 130,
+    "coreQuota": 22
+  },
+  {
+    "id": "wei-jin",
+    "name": "魏晋南北朝",
+    "startYear": 220,
+    "endYear": 589,
+    "eventQuota": 120,
+    "coreQuota": 18
+  },
+  {
+    "id": "sui-tang-five-dynasties",
+    "name": "隋唐五代",
+    "startYear": 581,
+    "endYear": 960,
+    "eventQuota": 160,
+    "coreQuota": 30
+  },
+  {
+    "id": "song-liao-jin-xia",
+    "name": "宋辽金夏",
+    "startYear": 907,
+    "endYear": 1279,
+    "eventQuota": 170,
+    "coreQuota": 30
+  },
+  {
+    "id": "yuan",
+    "name": "元",
+    "startYear": 1271,
+    "endYear": 1368,
+    "eventQuota": 70,
+    "coreQuota": 12
+  },
+  {
+    "id": "ming",
+    "name": "明",
+    "startYear": 1368,
+    "endYear": 1644,
+    "eventQuota": 130,
+    "coreQuota": 22
+  },
+  {
+    "id": "qing",
+    "name": "清前中期",
+    "startYear": 1644,
+    "endYear": 1840,
+    "eventQuota": 130,
+    "coreQuota": 21
+  },
+  {
+    "id": "modern",
+    "name": "近代史",
+    "startYear": 1840,
+    "endYear": 1949,
+    "eventQuota": 120,
+    "coreQuota": 20
+  }
+]

@@ -1,0 +1,5415 @@
+[
+  {
+    "id": "qin-commandery-system",
+    "title": "秦推行郡县统治",
+    "aliases": [],
+    "startYear": -221,
+    "endYear": -221,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "统一后群臣争论是否重新分封诸子，李斯主张以郡县治理新领土，秦廷遂由中央任命地方官吏。三十六郡是当时的记载数字，随后边地开拓又有调整。此举削弱了世袭诸侯割据的制度基础，也使地方行政直接依赖朝廷的任免、文书与监察。",
+    "personIds": [
+      "person-li-si"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "qin-unifies-six-states-to-qin-commandery-system",
+      "qin-commandery-system-to-han-commandery-kingdoms"
+    ],
+    "color": "#b28354",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷六《秦始皇本纪》廷议封建与分天下为三十六郡段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "《秦纪》秦始皇二十六年郡县之议"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "qin-currency-standard",
+    "title": "秦统一货币形制",
+    "aliases": [],
+    "startYear": -221,
+    "endYear": -221,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "秦统一后以半两钱作为通行铜币形制，试图将列国旧币纳入新的税收和交易秩序。货币标准与度量衡、文书行政共同服务于跨地域治理。传世叙述给出朝廷制度方向，实际流通仍受铸造、运输及地方存量制约，因此不能把制度公布等同于市场立即统一。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#668b72",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷六《秦始皇本纪》一法度衡石丈尺与史记卷三十《平准书》秦钱段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "qin-emperor-title",
+    "title": "秦定皇帝尊号",
+    "aliases": [],
+    "startYear": -221,
+    "endYear": -221,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "秦王与群臣讨论统一后君主的称号，采用皇帝之名，并以始皇帝自称。尊号把新王朝的统治与诸侯王区别开来，配合诏令、玺印和继承称谓建立最高权力的象征秩序。称号本身不能说明各地治理已经稳固，却清楚表明秦廷所宣示的政治范围。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷六《秦始皇本纪》议帝号段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "qin-measures-standard",
+    "title": "秦统一度量衡",
+    "aliases": [],
+    "startYear": -221,
+    "endYear": -221,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "秦廷要求各地采用统一的长度、容量和重量标准，并通过刻辞器物宣示法令。相同尺度便于税粮核算、工程征发和跨地区交易，但地方旧习不可能一夜消失。出土秦权、秦量显示标准化确有物质载体，也提醒研究者区分中央命令与不同地区的实际执行。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b28354",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷六《秦始皇本纪》一法度衡石丈尺段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "qin-script-standard",
+    "title": "秦统一文字书写",
+    "aliases": [],
+    "startYear": -221,
+    "endYear": -221,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "李斯参与整理秦廷使用的书写规范，统一后的官方文书逐渐以秦系文字为准。所谓书同文主要指行政和规范文字，不意味着民间字体瞬间消失；出土简牍仍可见多样写法。这项措施降低跨地域官文书沟通的障碍，同时为后来汉字书写传统提供重要制度背景。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#9777a0",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷六《秦始皇本纪》书同文字段与卷八十七《李斯列传》"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "qin-unifies-six-states",
+    "title": "秦灭六国",
+    "aliases": [],
+    "startYear": -221,
+    "endYear": -221,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "秦在十年间先后灭韩、赵、魏、楚、燕、齐，齐王投降后原有诸侯体系终结。统一不是一场单独战役，而是长期军政改革与列国相互削弱的结果。新政权获得直接安排各地官吏与赋役的条件，也面临如何统治差异很大的原六国地区。",
+    "personIds": [
+      "person-qin-shihuang"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "qin-unifies-six-states-to-qin-commandery-system"
+    ],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷六《秦始皇本纪》秦王二十六年灭齐段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "《秦纪》秦王政二十六年灭齐"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "qin-roads-network",
+    "title": "秦修驰道与直道",
+    "aliases": [],
+    "startYear": -220,
+    "endYear": -212,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "秦廷以咸阳为枢纽兴修通往东方和北边的道路，驰道与直道分别服务于巡行、军队调动和边防联系。道路并非同时竣工，修筑还需要征发大量人力。交通网络加强了中央对远方郡县的控制，也使沿线居民承担劳役与供给，反映统一治理的能力和成本。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b28354",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷六《秦始皇本纪》治驰道及三十五年作直道段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "lingqu-canal",
+    "title": "灵渠沟通湘漓水系",
+    "aliases": [],
+    "startYear": -218,
+    "endYear": -214,
+    "yearPrecision": "circa",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "秦经营岭南需要将长江流域物资输往南方，湘水与漓水之间的灵渠工程提供了跨流域通道。后世地理与工程记载补充了其具体构造，秦代开凿的年代和工程细节仍应分别判断。水道改善军需转运，也推动岭南与内地后续联系，不能只当作一次战役的附属设施。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#608c9b",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷一百一十二《平津侯主父列传》秦使监禄凿渠运粮段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "qin-southern-campaign",
+    "title": "秦经略岭南",
+    "aliases": [],
+    "startYear": -218,
+    "endYear": -214,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "秦军向岭南推进，设置南海、桂林、象郡，并迁徙人口驻守新占地区。山地、河流与当地族群的抵抗使这一扩张成为持续过程，不能仅由设郡诏令概括。秦廷把南方纳入郡县名义下的同时，也扩大了兵员、粮运与移民的负担，为秦末岭南相对独立留下条件。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷六《秦始皇本纪》三十三年略取陆梁地段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "meng-tian-ordos",
+    "title": "蒙恬北逐匈奴",
+    "aliases": [],
+    "startYear": -215,
+    "endYear": -215,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "秦始皇命蒙恬率军北进，夺取黄河河套以南地区，并在边地配置戍卒和行政据点。史书把这次行动置于统一后防备匈奴的背景中；边境并不是固定线，而随军队、移民和补给能力变动。战果扩大了秦的北方控制，同时增加了长期驻防的财政与劳役压力。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷八十八《蒙恬列传》北逐戎狄与收河南地段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "qin-wall-links",
+    "title": "秦连缀北方长城",
+    "aliases": [],
+    "startYear": -214,
+    "endYear": -210,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "秦利用战国旧有边墙，在北方修筑与连接防御设施，蒙恬所部负责部分边段。现存各时期长城不能一概归于秦，文献所述路线也需同考古遗迹对照。边墙配合道路、烽候与驻军形成防御体系，却依赖持续的人力运输，成为统一帝国边防的一项沉重工程。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b28354",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷八十八《蒙恬列传》筑长城因地形段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "qin-book-prohibition",
+    "title": "秦议禁私学与焚书",
+    "aliases": [],
+    "startYear": -213,
+    "endYear": -213,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "李斯在朝廷争论中主张限制私人以古书议论时政，秦始皇批准焚毁部分民间典籍，医药、卜筮与种树之书等有豁免。史书所载禁令的范围与执行效果需要区分，不能据此推断所有古书皆灭。这一政策显示帝国试图控制政治解释权，也激化了后世对秦治理的批评。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78916d",
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷六《秦始皇本纪》三十四年李斯议焚书段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "qin-prince-fusu-exile",
+    "title": "扶苏赴上郡监军",
+    "aliases": [],
+    "startYear": -212,
+    "endYear": -212,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "扶苏因劝谏始皇帝处理诸生的方式而被派往上郡，协助蒙恬军务。太子继承安排并未因此得到清晰制度保障，皇帝去世后的诏令真伪成为关键政治问题。此事把宫廷意见分歧、北边军权和继承危机连接起来，但不能预设扶苏后来必然能够继位。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷六《秦始皇本纪》扶苏谏与上郡监蒙恬段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "qin-fangshi-search",
+    "title": "秦始皇求仙活动",
+    "aliases": [],
+    "startYear": -212,
+    "endYear": -210,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "始皇帝延揽方士求取仙药，派人赴海上寻找神仙，并将巡行、祭祀与长生愿望相连。方士失信和宫廷惩罚在《史记》中交织出现，相关叙述带有对秦君主的道德评判。求仙活动反映战国以来神仙信仰进入皇权实践，也消耗了朝廷资源与政治信任。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a87a83",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷六《秦始皇本纪》卢生侯生与海上求仙段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "qin-shihuang-death",
+    "title": "秦始皇沙丘去世",
+    "aliases": [],
+    "startYear": -210,
+    "endYear": -210,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "秦始皇在第五次巡行途中病逝于沙丘，随行的赵高、李斯和胡亥掌握最初的消息与诏令传递。皇帝去世时远离都城，加剧继承安排的不透明，也使中央官僚和宫廷近臣的抉择格外重要。史书记述包含戏剧化细节，研究继位过程仍须区分可证事实与叙事安排。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷六《秦始皇本纪》三十七年沙丘崩段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "qin-succession-plot",
+    "title": "沙丘之变与胡亥即位",
+    "aliases": [],
+    "startYear": -210,
+    "endYear": -210,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "赵高与李斯在始皇帝死后推动胡亥继位，并以诏令迫使扶苏、蒙恬失去权力。《史记》将此写成秦亡的重要转折，具体密谋对话无法独立核实，但继承结果及其对北边军权的冲击明确。胡亥即位后中央政治更依赖近臣操控，原有高度集权制度暴露出继承脆弱性。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷六《秦始皇本纪》赵高说胡亥、李斯更遗诏段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "chen-sheng-uprising",
+    "title": "陈胜吴广起义",
+    "aliases": [],
+    "startYear": -209,
+    "endYear": -209,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [],
+    "period": "秦及楚汉",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "陈胜、吴广在戍卒赴渔阳途中于大泽乡起事，借扶苏、项燕之名号召各地响应。史书强调延期受罚的直接诱因，秦法细节与天气情节仍需谨慎使用；更广泛的征发和地方矛盾同样重要。起义迅速扩散，虽然陈胜政权短暂，却开启了秦末大规模反秦动员。",
+    "personIds": [
+      "person-chen-sheng"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "chen-sheng-uprising-to-xiang-liang-uprising"
+    ],
+    "color": "#7e916e",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷四十八《陈涉世家》大泽乡起事段"
+      },
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷三十一《陈胜项籍传》陈胜吴广起事"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "liu-bang-pei-uprising",
+    "title": "刘邦沛县起兵",
+    "aliases": [],
+    "startYear": -209,
+    "endYear": -209,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [],
+    "period": "秦及楚汉",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "刘邦原为泗水亭长，秦末动乱中与萧何、曹参等人在沛县组织力量，被推为沛公。地方吏员、乡里关系和流亡者共同构成这支队伍，说明反秦并非只有贵族复国一条路径。刘邦的早期政治资源来自基层行政经验，随后才在更大范围的楚军联盟中扩张。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#7e916e",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷八《高祖本纪》沛公起兵段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "xiang-liang-uprising",
+    "title": "项梁会稽起兵",
+    "aliases": [],
+    "startYear": -209,
+    "endYear": -209,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [],
+    "period": "秦及楚汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "陈胜起事后，项梁和项籍在会稽杀郡守、召集旧楚人士，形成江东反秦武装。项氏家族的楚国旧声望帮助他们吸纳兵众，但初期并未取得各地起义的统一指挥权。会稽起兵显示秦郡县官府在危机中可能迅速失去地方控制，也为后来楚军北上奠定基础。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "chen-sheng-uprising-to-xiang-liang-uprising"
+    ],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷七《项羽本纪》项梁项籍会稽起兵段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zhang-han-counteroffensive",
+    "title": "章邯镇压关东起义",
+    "aliases": [],
+    "startYear": -208,
+    "endYear": -208,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "qin"
+    ],
+    "period": "秦及楚汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "秦将章邯率军东出，击败多支反秦队伍，陈胜政权覆灭后又攻杀项梁。秦朝仍有组织大规模军事反击的能力，诸起义军的联合与号令则并不稳定。章邯的胜利未能恢复地方秩序，后续巨鹿战局和秦廷内斗使秦军优势逐渐瓦解。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷六《秦始皇本纪》二世二年章邯东击盗段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "julu-battle",
+    "title": "巨鹿之战",
+    "aliases": [],
+    "startYear": -207,
+    "endYear": -207,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [],
+    "period": "秦及楚汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "项羽率楚军渡河救援被秦军围困的赵地，击败秦将王离部，诸侯军因而转向拥戴项羽。战役并不等于秦军全部立即消失，章邯主力后来仍曾对峙并投降。巨鹿改变了反秦联盟内的军事威望分配，也使秦廷丧失重新控制关东的关键机会。",
+    "personIds": [
+      "person-xiang-yu"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "julu-battle-to-liu-bang-enters-guanzhong"
+    ],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷七《项羽本纪》项羽破釜沉舟救巨鹿段"
+      },
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷三十一《陈胜项籍传》项羽巨鹿破秦军"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "liu-bang-enters-guanzhong",
+    "title": "刘邦入关受秦降",
+    "aliases": [],
+    "startYear": -207,
+    "endYear": -207,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [],
+    "period": "秦及楚汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "刘邦军先于项羽进入关中，秦王子婴出降，秦朝政权至此结束。刘邦约法三章、封存府库并安抚吏民的记述，体现争取关中支持的政治策略，但其具体执行仍有争论。关中的接收为之后楚汉竞争提供人口和财赋基础，也暴露盟军对战后分配的分歧。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "julu-battle-to-liu-bang-enters-guanzhong"
+    ],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷八《高祖本纪》子婴降于轵道旁段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "hongmen-feast",
+    "title": "鸿门宴",
+    "aliases": [],
+    "startYear": -206,
+    "endYear": -206,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [],
+    "period": "秦及楚汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "项羽与刘邦在关中归属争端中于鸿门会面，刘邦依靠张良等人斡旋而脱身。宴会的具体对话主要出自《史记》的叙事，难以逐句当作现场记录；其政治背景则是两支反秦军力量悬殊又相互猜疑。此次会面未能解决关中控制问题，后来双方仍走向长期战争。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷七《项羽本纪》鸿门会刘邦段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "xiang-yu-enfeoffment",
+    "title": "项羽分封十八王",
+    "aliases": [],
+    "startYear": -206,
+    "endYear": -206,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [],
+    "period": "秦及楚汉",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "秦亡后项羽以西楚霸王身份重新分配诸侯王封地，将关中分给三秦，刘邦改封汉王。分封试图回应各路军事首领的利益，却与先入关中者和原六国王族的期待冲突。新的政治地图很快引发叛乱，说明推翻秦朝并未自动产生稳定的国家制度。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b28354",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷七《项羽本纪》分封诸侯王段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "chu-han-war",
+    "title": "楚汉战争",
+    "aliases": [],
+    "startYear": -206,
+    "endYear": -202,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [],
+    "period": "秦及楚汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "刘邦和项羽围绕关中、荥阳、成皋及诸侯归附持续交战，双方都借封王、粮运和地方联盟扩大力量。战争中阵营多次改变，不能简化为两军连续正面决战。汉军最终利用韩信等部的支持形成合围，项羽败亡后刘邦获得建立统一王朝的军事条件。",
+    "personIds": [
+      "person-liu-bang"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [
+      "gaixia-battle"
+    ],
+    "relationIds": [
+      "chu-han-war-to-han-founded",
+      "gaixia-battle-part-of-chu-han-war"
+    ],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷七《项羽本纪》汉王与楚相持至垓下段"
+      },
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷一《高帝纪》汉王与项羽争天下"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "gaixia-battle",
+    "title": "垓下之战",
+    "aliases": [],
+    "startYear": -202,
+    "endYear": -202,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [],
+    "period": "西汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "汉军与盟军在垓下包围项羽，楚军困乏，项羽突围后死于乌江。《史记》以四面楚歌等场景塑造悲剧结局，具体细节应与战局结果分开理解。垓下胜利使刘邦阵营结束对项羽的长期争夺，也为诸侯推戴刘邦即皇帝位铺平道路。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "chu-han-war",
+    "childIds": [],
+    "relationIds": [
+      "gaixia-battle-part-of-chu-han-war"
+    ],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷七《项羽本纪》垓下围楚与乌江自刎段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "han-founded",
+    "title": "刘邦即皇帝位",
+    "aliases": [],
+    "startYear": -202,
+    "endYear": -202,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "项羽败亡后诸侯王劝刘邦即皇帝位，汉朝以楚汉战争的胜利者身份建立。新政权既继承秦的皇帝与郡县框架，又须安置功臣和异姓王，统一远未转化为稳定的地方控制。刘邦随后调整封国与中央关系，为西汉初年的政治格局奠定基础。",
+    "personIds": [
+      "person-liu-bang"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "chu-han-war-to-han-founded",
+      "han-founded-to-han-commandery-kingdoms"
+    ],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷八《高祖本纪》诸侯王请尊汉王为皇帝段"
+      },
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷一《高帝纪》高帝五年即位"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "han-commandery-kingdoms",
+    "title": "汉初郡国并行",
+    "aliases": [],
+    "startYear": -202,
+    "endYear": -195,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "汉初中央直接管辖郡县，同时把大块地域封给诸侯王，形成郡国并行的地方结构。封王是战争联盟和宗室安置的产物，不能简单视为恢复周代封建。王国拥有一定财政和官吏权力，后来与朝廷的紧张关系促使文景两朝逐步削弱其自主性。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "qin-commandery-system-to-han-commandery-kingdoms",
+      "han-founded-to-han-commandery-kingdoms",
+      "han-commandery-kingdoms-to-seven-kingdoms-rebellion"
+    ],
+    "color": "#b28354",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷十九《百官公卿表》汉兴郡国与卷一《高帝纪》封王段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "han-nine-chapters-law",
+    "title": "萧何整理汉律",
+    "aliases": [],
+    "startYear": -202,
+    "endYear": -195,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "汉初萧何据秦律整理新政权法令，后世称为九章律。文献强调承袭秦法而有所增损，但完整条文已经不存，不能由名称推知全部司法实践。律令为郡县行政、刑罚和赋役提供统一框架，也说明汉初治理并非彻底抛弃秦的制度遗产。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b28354",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷二十三《刑法志》萧何攟摭秦法作律九章段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "baideng-encirclement",
+    "title": "白登之围",
+    "aliases": [],
+    "startYear": -200,
+    "endYear": -200,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "刘邦北击匈奴时在白登被冒顿单于军围困，汉军最终脱险。史书对围困日数和解围计策有不同叙述，核心事实是新朝无法凭一次进军压倒北方政权。此后汉廷转向和亲、边市及防御并用，边境关系长期在军事压力与谈判之间摇摆。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷一百一十《匈奴列传》冒顿围高帝白登段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "white-horse-oath",
+    "title": "白马之盟",
+    "aliases": [],
+    "startYear": -196,
+    "endYear": -196,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "史书记载高祖与群臣以白马盟誓，约定非刘氏不得为王、无功不得封侯。盟辞的形成和后世转述需谨慎看待，但它表达了功臣与宗室之间划定政治资格的努力。高祖去世后吕氏封王又引发争议，盟约遂成为反对吕氏掌权者援引的正当性语言。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷九《吕太后本纪》高祖刑白马盟段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "lu-hou-regency",
+    "title": "吕后临朝称制",
+    "aliases": [],
+    "startYear": -188,
+    "endYear": -180,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "惠帝去世后吕后以太后身份掌握朝政，任用吕氏亲族并处理诸侯王与功臣关系。她没有使用皇帝称号，却实际主持中央决策，显示早期汉朝的继承与辅政制度尚在调整。史书评价常受后来清除吕氏的政治立场影响，需区分政策事实与人物褒贬。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷三《高后纪》高后称制诸事"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "emperor-wen-accession",
+    "title": "汉文帝即位",
+    "aliases": [],
+    "startYear": -180,
+    "endYear": -180,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "代王刘恒在诛吕后被迎入长安，即位为汉文帝。他以较低姿态处理功臣和宗室，随后逐步调整官吏任用与地方封国。文帝时期常被后世概括为宽政节俭，但具体财政与刑法改革有不同阶段，不能把一朝政策压缩成单一诏令。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷四《文帝纪》代王入未央宫即皇帝位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "lu-clan-removal",
+    "title": "诛吕安刘",
+    "aliases": [],
+    "startYear": -180,
+    "endYear": -180,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "吕后死后周勃、陈平等联合刘氏宗室，夺取北军控制并清除吕氏掌权者，随后迎立代王刘恒。行动以恢复刘氏统治为名，也重新分配了功臣、外戚与宗室的权力。宫廷政变解决了当时继承危机，却未消除汉代外戚参与中央政治的制度可能。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷九《吕太后本纪》周勃入北军诛诸吕段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "wen-jing-rent-reductions",
+    "title": "文景时期减轻田租",
+    "aliases": [],
+    "startYear": -179,
+    "endYear": -141,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "文帝、景帝时期朝廷多次减免田租，谷物积累与国家财政状况有所改善。《汉书·食货志》的繁荣叙述具有概括性，不应掩盖地区差异和豪强兼并。较轻的农业税负为恢复生产提供空间，也使武帝后来大规模用兵时拥有可动员的储备。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#668b72",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷二十四《食货志》文景减田租与民富段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "jia-yi-security-memorial",
+    "title": "贾谊论治安与诸侯",
+    "aliases": [],
+    "startYear": -174,
+    "endYear": -174,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "贾谊在文帝朝提出《治安策》，批评诸侯势大以及边患、礼制和赋役等问题，主张通过分割封国和制度整顿巩固中央。篇章是政治建言，不能把所提措施都视为当年已实施。它显示汉初知识人把秦亡经验与现实治理相连，也为后来的削藩议论提供语言资源。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78916d",
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷四十八《贾谊传》治安策论诸侯王与匈奴段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "wen-penalty-reform",
+    "title": "文帝废除肉刑",
+    "aliases": [],
+    "startYear": -167,
+    "endYear": -167,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "淳于意获罪后其女缇萦上书，文帝下令改革黥、劓、斩趾等肉刑。新刑罚在执行中仍可能致死，景帝朝又继续调整，故不能把废除肉刑写成刑罚立即宽缓。此事体现朝廷以诏令修订律制，也留下讨论惩罚、人身与国家权力的重要案例。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b28354",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷二十三《刑法志》缇萦上书与文帝除肉刑段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "jing-succession",
+    "title": "汉景帝即位",
+    "aliases": [],
+    "startYear": -157,
+    "endYear": -157,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "文帝去世后刘启继位，景帝面对诸侯王势力、财政恢复与北方边防等问题。其在位期间中央逐步收缩王国权力，但削藩引起军事反抗。景帝朝是汉初郡国并行格局发生转折的时期，后世所谓文景之治也需结合税役和地方社会的实际差异理解。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷五《景帝纪》孝景皇帝即位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "seven-kingdoms-rebellion",
+    "title": "七国之乱",
+    "aliases": [],
+    "startYear": -154,
+    "endYear": -154,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "吴王刘濞联合楚、赵等国以诛晁错为名起兵，朝廷派周亚夫等率军平叛。晁错被杀未使叛军停战，表明冲突涉及王国财政、军力与中央削地。平乱后诸侯王直接治民的权力继续缩减，西汉中央集权获得新的制度条件。",
+    "personIds": [
+      "person-zhou-yafu"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "han-commandery-kingdoms-to-seven-kingdoms-rebellion"
+    ],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷一百六《吴王濞列传》吴楚七国反段"
+      },
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷三十五《荆燕吴传》吴王濞举兵"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "wudi-accession",
+    "title": "汉武帝即位",
+    "aliases": [],
+    "startYear": -141,
+    "endYear": -141,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "景帝去世后刘彻即位，初期政策仍受窦太后及既有官僚格局制约。武帝后来在边防、财政、选官和礼制方面密集改革，但这些变化分布于数十年，不能都归在即位一刻。即位标志西汉政治进入新的阶段，也为与匈奴关系由和亲转向主动出击创造条件。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷六《武帝纪》景帝后三年即位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zhang-qian-first-mission",
+    "title": "张骞第一次出使西域",
+    "aliases": [],
+    "startYear": -139,
+    "endYear": -126,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "武帝派张骞寻找大月氏以牵制匈奴，张骞途中被拘留多年，抵达后未能促成军事联盟，但带回中亚诸国的地理与政治信息。出使往返时间长，不能化作一次顺利开通的通商旅行。其报告使汉廷更清楚河西以西的联系网络，为后来西域外交提供依据。",
+    "personIds": [
+      "person-zhang-qian"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "zhang-qian-first-mission-to-western-regions-protectorate"
+    ],
+    "color": "#5c88a2",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷一百二十三《大宛列传》张骞初使月氏段"
+      },
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷六十一《张骞李广利传》张骞初使月氏"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "dong-zhongshu-responses",
+    "title": "董仲舒贤良对策",
+    "aliases": [],
+    "startYear": -134,
+    "endYear": -134,
+    "yearPrecision": "circa",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "董仲舒在贤良对策中把君主政治与天人感应、经学教化相结合，并论及统一学术标准。传世对策的文本层次和提出年份有学术讨论，不能把后来儒学独尊归结为一份奏策立即生效。其主张反映武帝朝寻求新的政治解释体系，影响后世对经学与皇权关系的理解。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#78916d",
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷五十六《董仲舒传》天人三策与罢黜百家议段",
+        "note": "传文未将三次对策逐篇系年；前134年只是武帝初期的约略锚点，文本层次和年代均有争论。"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "mayi-ambush",
+    "title": "马邑之谋",
+    "aliases": [],
+    "startYear": -133,
+    "endYear": -133,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "汉廷以边市贸易诱使匈奴单于接近马邑，部署大军伏击，计划被识破后双方关系明显恶化。此事通常被视为汉匈由和亲转向大规模战争的转折，但此前边境冲突并未停止。失败的伏击没有取得战果，却推动朝廷持续扩军和重新思考北方边防。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#5c88a2",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷一百一十《匈奴列传》马邑伏兵与单于觉察段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "han-xiongnu-first-campaigns",
+    "title": "汉军四路出塞",
+    "aliases": [],
+    "startYear": -129,
+    "endYear": -129,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "汉廷派卫青等四路军出塞攻击匈奴，诸军战果悬殊，卫青取得龙城之捷，其余部队多未奏效。此次行动显示远征依赖熟悉地理、骑兵机动和稳定补给，不能只凭军队规模判断成败。此后汉朝逐步建立更连续的主动出击策略，也承担更高的军费。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷一百一十一《卫将军骠骑列传》元光六年四将出塞段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "henan-recovery",
+    "title": "卫青收复河南地",
+    "aliases": [],
+    "startYear": -127,
+    "endYear": -127,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "卫青率军夺取匈奴所控的河套以南地区，汉廷随后设置朔方、五原等边郡并组织移民。军事占领只有与屯戍、筑城和运输相结合才能延续，边郡建设因此十分耗费资源。这次行动改变了关中北部的防御形势，也加深汉匈在草原边缘的持续竞争。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷一百一十一《卫将军骠骑列传》卫青取河南地段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "hexi-campaigns",
+    "title": "霍去病河西之战",
+    "aliases": [],
+    "startYear": -121,
+    "endYear": -121,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "霍去病两次深入河西，击败匈奴右部，浑邪王后来率众降汉。汉廷逐步在河西设置武威、酒泉等郡，为通往西域的道路提供驻防节点。战役胜利并不意味着走廊立即完全安定，移民和补给仍需长期经营；河西地理位置使其具有外交与贸易意义。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷一百一十一《卫将军骠骑列传》霍去病春夏两出河西段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "mobei-campaign",
+    "title": "漠北之战",
+    "aliases": [],
+    "startYear": -119,
+    "endYear": -119,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "卫青、霍去病分别率大军深入漠北，汉军击败匈奴主力并获得显著战功，同时付出严重马匹和物资损耗。战役削弱匈奴在南部草原的控制，但没有结束汉匈往来与冲突。远征的代价推动朝廷探索盐铁、均输等财政措施。",
+    "personIds": [
+      "person-huo-qubing"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "mobei-campaign-to-salt-iron-monopoly"
+    ],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷一百一十一《卫将军骠骑列传》卫青霍去病出漠北段"
+      },
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷五十五《卫青霍去病传》元狩四年漠北战"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "salt-iron-monopoly",
+    "title": "汉武帝盐铁官营",
+    "aliases": [],
+    "startYear": -119,
+    "endYear": -119,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "武帝朝在财政压力下将盐、铁经营纳入官府系统，任用官吏监督生产与销售。政策并非各地形式完全一致，私人经营与官营范围也不断调整。盐铁收入为边防和朝廷开支提供资源，同时引发官府逐利、产品质量及民间负担的争论，后来成为盐铁会议焦点。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "mobei-campaign-to-salt-iron-monopoly",
+      "salt-iron-monopoly-to-salt-iron-debate"
+    ],
+    "color": "#668b72",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷二十四《食货志》元狩四年置盐铁官段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "five-zhu-coin",
+    "title": "汉铸五铢钱",
+    "aliases": [],
+    "startYear": -118,
+    "endYear": -118,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "朝廷改铸五铢钱以整顿此前币制混乱，随后逐步收紧地方铸币权。统一币名和重量有利于赋税核算及大范围交易，但实际钱币成色和铸造权仍经历多次调整。五铢钱在后世长期流通，说明西汉这轮货币改革具有超出当朝财政危机的制度影响。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#668b72",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷二十四《食货志》元狩五年铸五铢钱段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "nanyue-conquest",
+    "title": "汉平南越",
+    "aliases": [],
+    "startYear": -111,
+    "endYear": -111,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "南越宫廷内亲汉与反汉势力冲突后，汉廷遣军南下，攻占番禺并废除南越王国。朝廷随后在岭南设置郡县，重新连接秦末以来相对独立的南方区域。军事征服不等于地方社会迅速同化，交通、族群与官吏治理问题此后仍长期存在。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷一百一十三《南越列传》元鼎六年汉兵灭南越段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "wiman-joseon-conquest",
+    "title": "汉灭卫氏朝鲜",
+    "aliases": [],
+    "startYear": -108,
+    "endYear": -108,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "汉与卫氏朝鲜因边境通行和外交冲突走向战争，汉军围攻王险城后朝鲜国灭亡。汉廷在当地设置郡县，其实际控制范围随抵抗和行政调整变化。事件扩大西汉在东北亚的政治联系，但不应把后来的地方建制直接投射到当年的军事征服过程。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#5c88a2",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷一百一十五《朝鲜列传》汉使涉何与王险城之战段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "taichu-calendar",
+    "title": "太初改历",
+    "aliases": [],
+    "startYear": -104,
+    "endYear": -104,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "秦及汉初沿用以十月为岁首的历制。武帝朝太史官与历家重订历法，太初元年改以孟春正月为岁首，并重新校定朔闰、日辰与节气推算。司马迁参与朝廷议历，唐都划分天部，落下闳负责运算，邓平的历法方案被采用。新历同时调整国家纪年、祭祀与农时的安排。",
+    "personIds": [
+      "person-sima-qian"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "taichu-calendar-to-sima-qian-history"
+    ],
+    "color": "#608c9b",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷二十一《律历志》太初历制定与元封七年改元段"
+      },
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷二十六《历书》太初改历"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "sima-qian-history",
+    "title": "司马迁撰成史记",
+    "aliases": [],
+    "startYear": -104,
+    "endYear": -91,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "司马迁承继父亲史学计划，整理本纪、表、书、世家、列传，试图贯通上古至汉武帝时期的历史。成书过程跨越多年，具体定稿年代有争议，不能以一个精确年份概括。此书既记述帝王也保存不同群体的行动，成为后世纪传体史学的重要范例。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "taichu-calendar-to-sima-qian-history"
+    ],
+    "color": "#9777a0",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "shiji-zhonghua-1959",
+        "locator": "卷一百三十《太史公自序》作史记段"
+      },
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷六十二《司马迁传》报任安书述撰史记段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "witchcraft-crisis",
+    "title": "巫蛊之祸",
+    "aliases": [],
+    "startYear": -91,
+    "endYear": -91,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "武帝晚年追查巫蛊，江充等人与太子刘据的冲突升级，长安发生武装对抗，太子兵败自杀。案件中的告发、搜查和镇压交织宫廷继承危机，许多细节来自事后追述。朝廷后来为太子平反，事件暴露专断调查对官僚、宗室和普通居民的巨大伤害。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷六十三《武五子传》戾太子据巫蛊起兵段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "wudi-death-regency",
+    "title": "武帝遗诏托孤",
+    "aliases": [],
+    "startYear": -87,
+    "endYear": -87,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "武帝病重时安排霍光等辅佐年幼的昭帝，长期在位的皇帝去世后，军政决策转入辅政大臣之手。遗命既是继承安排，也是对朝廷不同势力的权力再分配。霍光此后逐步成为核心人物，昭帝时期的政令需结合辅政结构理解，不能简单归于幼主个人。",
+    "personIds": [
+      "person-huo-guang"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷六十八《霍光金日磾传》武帝临终属霍光辅少主段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zhao-emperor-accession",
+    "title": "汉昭帝即位",
+    "aliases": [],
+    "startYear": -87,
+    "endYear": -87,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "刘弗陵在武帝去世后即位，年龄尚幼，霍光等大臣主持政务。武帝末年战争和财政政策留下的压力，需要通过减轻赋役与维持边防同时应对。昭帝朝的重要政策往往体现辅政集团的讨论结果，而非单一皇帝决断，也成为后来霍光权势的制度背景。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷七《昭帝纪》后元二年即位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "salt-iron-debate",
+    "title": "盐铁会议",
+    "aliases": [],
+    "startYear": -81,
+    "endYear": -81,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "昭帝朝召集贤良文学与官员讨论盐铁官营、均输、酒榷等政策。双方分别强调民间负担、边防经费及国家调节市场的必要，争论并未一次解决全部财政问题。后来的《盐铁论》保存经整理的辩论文本，须区分会议事实与文学化编排；它成为研究汉代政策分歧的重要材料。",
+    "personIds": [
+      "person-sang-hongyang"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "salt-iron-monopoly-to-salt-iron-debate"
+    ],
+    "color": "#668b72",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷二十四《食货志》始元六年诏贤良文学议盐铁段"
+      },
+      {
+        "sourceId": "yantie-lun-wang-1992",
+        "locator": "《盐铁论·本议》贤良文学与大夫议盐铁"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "liu-he-deposed",
+    "title": "昌邑王刘贺被废",
+    "aliases": [],
+    "startYear": -74,
+    "endYear": -74,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "昭帝无子去世后霍光迎立昌邑王刘贺，旋即以行为失德为由召集大臣废黜，另择宗室继位。废立理由主要由胜利者掌握的文书叙述，需结合新出土材料审慎评估。事件显示辅政大臣在继承危机中的非常权力，也反映皇帝合法性需要朝廷共同承认。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷六十八《霍光金日磾传》昌邑王即位二十七日被废段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "xuan-emperor-accession",
+    "title": "汉宣帝即位",
+    "aliases": [],
+    "startYear": -74,
+    "endYear": -74,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "霍光等在废昌邑王后迎立武帝曾孙刘病已，宣帝以特殊的民间成长经历进入皇位。初年仍由霍光主持政务，随后皇权逐步重新集中。宣帝朝常以法治与吏治见称，但这些政策变化需要放在霍氏辅政结束和地方社会恢复的过程中理解。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷八《宣帝纪》元平元年迎曾孙病已即位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "han-wusun-joint-raid",
+    "title": "汉乌孙合击匈奴",
+    "aliases": [],
+    "startYear": -71,
+    "endYear": -71,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "汉廷与乌孙约定联合出兵匈奴，乌孙军取得战果，汉军多路远征的收益并不一致。联盟体现西域婚姻外交和草原政治竞争相互交织，不能当作汉朝单方面指挥乌孙。匈奴受到多方压力后内部形势变化，汉在西域的活动空间随之扩大。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#5c88a2",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十四《匈奴传》本始三年乌孙与汉兵击匈奴段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "huo-guang-death",
+    "title": "霍光去世与权力移转",
+    "aliases": [],
+    "startYear": -68,
+    "endYear": -68,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "长期辅政的霍光去世后，宣帝逐渐亲自控制朝廷任免与决策，霍氏家族仍占有重要职位。辅政权力转移并非瞬间完成，皇帝需要处理多年积累的姻亲和官僚网络。霍光身后获得礼遇，而其家族随后遭到清算，形成个人功绩与外戚政治风险的鲜明对照。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷六十八《霍光金日磾传》霍光薨与宣帝亲政段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "huo-family-purge",
+    "title": "霍氏谋反案",
+    "aliases": [],
+    "startYear": -66,
+    "endYear": -66,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "霍光死后其家族因权势与皇帝发生尖锐冲突，霍禹等被控谋反并遭诛除。史书以霍氏专权为主要解释，也记录宣帝逐渐收回任命权的背景。事件使辅政外戚集团失去政治基础，说明早期汉朝仍缺少稳定限制皇亲与大臣权力的制度边界。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷六十八《霍光金日磾传》霍禹等谋反被诛段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zhao-chongguo-tuntian",
+    "title": "赵充国屯田西羌",
+    "aliases": [],
+    "startYear": -61,
+    "endYear": -61,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "西羌动乱时赵充国主张留军屯田、待其分化，反对一味速战。屯田使驻军部分粮食就地生产，缓解长距离运输压力，但部署与撤军仍经过多次廷议。此事保存了边防将领关于财政、地理和族群关系的细致论证，不能把屯田看作不需军事保障的和平方案。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b28354",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷六十九《赵充国辛庆忌传》赵充国上屯田奏段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "western-regions-protectorate",
+    "title": "西域都护设置",
+    "aliases": [],
+    "startYear": -60,
+    "endYear": -60,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "匈奴日逐王降汉后郑吉得以统护西域南北道，汉廷设置西域都护以协调诸国、屯田和交通。都护权力依靠当地联盟与驻军，不能理解为对所有绿洲直接实行郡县统治。制度化的使节与军政网络使河西以西联系更稳定，也随汉朝内政强弱而伸缩。",
+    "personIds": [
+      "person-zheng-ji"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "zhang-qian-first-mission-to-western-regions-protectorate",
+      "western-regions-protectorate-to-ban-chao-western-regions"
+    ],
+    "color": "#b28354",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十六《西域传》郑吉并护南北道号都护段"
+      },
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷八十八《西域列传》汉置西域都护"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "huhanye-court-visit",
+    "title": "呼韩邪单于入朝",
+    "aliases": [],
+    "startYear": -51,
+    "endYear": -51,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "匈奴内部分裂后呼韩邪单于亲赴长安，汉廷给予礼遇和物资支持，双方形成不同于单纯和亲的政治关系。入朝包含单于自身争夺草原权力的需求，也服务汉廷稳定北边的目标。它并不表示匈奴全部并入汉朝，而是边境秩序通过仪式与互惠重新安排。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#5c88a2",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十四《匈奴传》呼韩邪单于朝汉受礼段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "shiqu-classics-debate",
+    "title": "石渠阁经义会议",
+    "aliases": [],
+    "startYear": -51,
+    "endYear": -51,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "宣帝召集诸儒在石渠阁讨论五经异同，由朝廷裁定部分解释并增设博士。会议显示经学不只是私人讲授，也参与官学和政治权威的形成。不同学派分歧并未因此完全消失，传世记载侧重制度结果，具体辩论内容还需结合相关经说考察。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#9777a0",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷八《宣帝纪》甘露三年诏诸儒讲五经同异段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "yuan-emperor-accession",
+    "title": "汉元帝即位",
+    "aliases": [],
+    "startYear": -49,
+    "endYear": -49,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "宣帝去世后刘奭继位，元帝朝儒生与外戚在朝廷决策中影响增强，边疆与财政问题仍延续。后世常以崇儒评价元帝，但具体任官与法令并不形成单一政策方向。此时匈奴关系相对缓和，西域事务仍需使者和军队维持，西汉内外治理出现新的权衡。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九《元帝纪》黄龙元年即位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zhizhi-campaign",
+    "title": "陈汤击斩郅支单于",
+    "aliases": [],
+    "startYear": -36,
+    "endYear": -36,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "甘延寿与陈汤率西域兵攻破郅支单于据守的城郭，事后朝廷围绕擅自出兵及战功奖赏发生争论。战役发生在中亚地方政治网络中，不能描写成汉军独力完成的跨洲征服。它说明西域都护体系能动员盟军，也揭示边将行动与中央授权之间的张力。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷七十《傅常郑甘陈段传》甘延寿陈汤攻郅支城段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "cheng-emperor-accession",
+    "title": "汉成帝即位",
+    "aliases": [],
+    "startYear": -33,
+    "endYear": -33,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "元帝去世后刘骜即位，成帝朝王氏外戚权力不断增强，中央官僚职位与宫廷亲属关系更加紧密。史书也记录灾异、财政和吏治争论，不能把政治变化全归于皇帝个人生活。王氏在这一时期积累的声望和职位，为王莽后来进入最高权力层提供条件。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷十《成帝纪》竟宁元年即位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "wang-zhaojun-marriage",
+    "title": "王昭君出塞",
+    "aliases": [],
+    "startYear": -33,
+    "endYear": -33,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "呼韩邪单于再次入朝并请求婚姻，宫女王昭君随行出塞，成为汉匈和亲关系的一部分。后世诗文对其身世、画工与悲情作了大量加工，须与《汉书》所记外交经过区分。婚姻并非单靠一位女性维持和平，而是双方权力和边境利益安排的象征。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#5c88a2",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十四《匈奴传》竟宁元年呼韩邪愿婿汉氏与昭君出塞段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "wang-family-regency",
+    "title": "王氏外戚掌握朝政",
+    "aliases": [],
+    "startYear": -33,
+    "endYear": -7,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "王政君家族成员在成帝朝相继担任大司马等要职，形成持续的外戚辅政网络。其权势来自皇太后身份、官僚任命与朝臣联盟，而非某次单独政变。长期集中权力引发批评，却也使王莽后来能以家族声望和政治清议进入辅政核心。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#7e916e",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十八《元后传》王凤王音王商王根相继辅政段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liu-xiang-collation",
+    "title": "刘向校理宫廷藏书",
+    "aliases": [],
+    "startYear": -26,
+    "endYear": -8,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "成帝命刘向校理宫廷藏书，他比对经传、诸子与诗赋的异本，为各书写出叙录，辨析文字脱误和篇目次第。校书历时多年，刘向至绥和元年去世仍未完成全部工程。其逐书校勘和叙录为后续总目提供材料，但本阶段不等于最终分类目录已经编成。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "liu-xiang-collation-to-liu-xin-qilue"
+    ],
+    "color": "#9777a0",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷三十《艺文志》刘向校经传诸子诗赋及叙录段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liu-xin-qilue",
+    "title": "刘歆编成七略",
+    "aliases": [],
+    "startYear": -8,
+    "endYear": -5,
+    "yearPrecision": "circa",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "刘向身后，刘歆承接尚未完成的宫廷校书，并把已有的逐书叙录与后续整理成果汇为《七略》，按学术门类说明书籍源流。它与父亲的逐书校勘是前后相接的两阶段，成书年份仍有不同考订。原书已佚，其分类框架主要经《汉书·艺文志》保存。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "liu-xiang-collation-to-liu-xin-qilue"
+    ],
+    "color": "#9777a0",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷三十《艺文志》刘歆总群书奏七略段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "ai-emperor-accession",
+    "title": "汉哀帝即位",
+    "aliases": [],
+    "startYear": -7,
+    "endYear": -7,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "成帝无子，定陶王刘欣被立为太子后即位。哀帝朝帝系、太后尊号与外戚权力发生冲突，政局频繁更换重要官员。朝廷试图处理土地与奴婢集中问题，但改革受到既得利益阻力；这一时期的短促统治加深西汉末年的继承不稳定。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷十一《哀帝纪》绥和二年即位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "ai-land-cap-proposal",
+    "title": "哀帝限田限奴议",
+    "aliases": [],
+    "startYear": -7,
+    "endYear": -1,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "哀帝朝师丹等提出限制诸侯、列侯及富民占田和蓄奴数量，以缓解土地兼并和贫民困境。方案遭遇权贵抵制，未能按设想全面实施。史书记载的是改革争论和受阻过程，不能将议案当成已经实行的全国土地制度；它仍揭示西汉末年的社会压力。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#668b72",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷二十四《食货志》师丹建限田奴婢议段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "dong-xian-favor",
+    "title": "董贤受宠与权力集中",
+    "aliases": [],
+    "startYear": -2,
+    "endYear": -1,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "哀帝宠信董贤，使其迅速获得高官、封赏与宫廷资源，朝廷对任官资格和皇帝私人关系的边界产生争论。传世叙事常以道德化语言评价二人，研究政治影响仍须看具体职位和财产分配。哀帝死后董贤失势，反映缺乏独立权力基础的近臣处境。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#7e916e",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十三《佞幸传》董贤贵幸及大司马段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "wang-mang-regency",
+    "title": "王莽辅佐平帝",
+    "aliases": [],
+    "startYear": -1,
+    "endYear": 5,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "western-han"
+    ],
+    "period": "西汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "哀帝死后王政君召回王莽，平帝年幼，王莽以大司马身份掌握朝政。他一面扩大儒者支持和礼制工程，一面通过任官与联姻控制宫廷。摄政过程跨越数年，并非在改朝前一次完成；汉廷内部的合法性语言逐渐被用于扩大王莽个人权力。",
+    "personIds": [
+      "person-wang-mang"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "wang-mang-regency-to-xin-dynasty-founded"
+    ],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十九《王莽传》平帝立王莽秉政段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "《汉纪》平帝元始年间王莽辅政"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "wang-mang-acting-emperor",
+    "title": "王莽居摄称假皇帝",
+    "aliases": [],
+    "startYear": 6,
+    "endYear": 6,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [],
+    "period": "西汉",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "平帝去世后王莽立年幼的孺子婴，自己以居摄和假皇帝名义主持政务。称号保留奉汉的外观，却使诏令、祭祀与官员任命进一步集中于王莽。各地出现反对居摄的动乱，说明礼制安排不能自动化解王朝继承和政治忠诚的争议。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b28354",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十九《王莽传》居摄元年称假皇帝段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "wang-mang-imperial-seal",
+    "title": "王莽即位后索取汉传国玺",
+    "aliases": [],
+    "startYear": 9,
+    "endYear": 9,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "xin"
+    ],
+    "period": "新莽与更始",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "王莽即位并建立新朝以后，派使者向太皇太后王政君索取汉室传国玺。王政君起初拒交，后将玺掷地，史书借这一场面表现汉室名义权威向新朝转移时的冲突。索玺与改国号同属政权交替，却是即位后的另一项宫廷行动，也不代表地方社会已接受新政权。",
+    "personIds": [
+      "person-wang-mang"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "xin-dynasty-founded-to-wang-mang-imperial-seal"
+    ],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十八《元后传》王莽即位后遣安阳侯索传国玺段",
+        "note": "《资治通鉴》列于初始元年岁末，旧历十二月被新朝改作始建国元年正月；公元9年为换算锚点，索玺在即位之后。"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷三十六《汉纪》初始元年岁末王莽即位后索汉传国玺"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "wang-mang-wangtian",
+    "title": "王莽推行王田制",
+    "aliases": [],
+    "startYear": 9,
+    "endYear": 9,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "xin"
+    ],
+    "period": "新莽与更始",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "王莽宣布土地改称王田，限制买卖并试图按照古代理想重新分配。政策触动大土地所有者与地方交易习惯，很快遇到执行困难，后又放宽限制。制度文本体现新朝借经典整顿社会的愿望，实际效果不能按诏令字面推定，也不能把它等同成熟的均田制度。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#668b72",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十九《王莽传》始建国元年令天下田曰王田段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "xin-dynasty-founded",
+    "title": "王莽建立新朝",
+    "aliases": [],
+    "startYear": 9,
+    "endYear": 9,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "xin"
+    ],
+    "period": "新莽与更始",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "王莽正式改国号为新，以禅让和古制为统治正当性，结束西汉皇帝世系的直接统治。新朝承接旧官僚体系，又频繁改动官名、爵制与土地政策。改朝不仅是宫廷礼仪变化，也改变各地税赋和官吏执行的规则，地方能否接受这些变动成为关键。",
+    "personIds": [
+      "person-wang-mang"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "wang-mang-regency-to-xin-dynasty-founded",
+      "xin-dynasty-founded-to-wang-mang-imperial-seal"
+    ],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十九《王莽传》初始元年岁末即真天子位并改国号新段",
+        "note": "旧历初始元年十一月即位，宣布以随后十二月为始建国元年正月；公元9年为即位的换算年。"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷三十六《汉纪》初始元年岁末即位并定国号新"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "wang-mang-coinage",
+    "title": "新朝多次改铸货币",
+    "aliases": [],
+    "startYear": 9,
+    "endYear": 14,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "xin"
+    ],
+    "period": "新莽与更始",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "王莽先后推出不同面额与形制的钱币、刀币和布币，希望重新规定财富流通与国家铸币权。频繁变更使币值和实际交易关系混乱，市场对新钱接受程度不一。史书强烈批评政策扰民，研究者仍需结合出土钱币区分发行范围和使用时间。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#668b72",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十九《王莽传》始建国至天凤货布货泉改制段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "xin-five-equalizations",
+    "title": "新朝五均六筦",
+    "aliases": [],
+    "startYear": 10,
+    "endYear": 10,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "xin"
+    ],
+    "period": "新莽与更始",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "新朝设置五均官并加强盐铁、酒等经营与山泽税收，试图调节物价、控制资源和增加财政收入。制度设计借用了西汉官营经验，但官员营私与地方执行成本遭到时人批评。政策影响不能简单用理想中的平价买卖说明，需看到国家干预市场与征收压力同时加重。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#668b72",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十九《王莽传》始建国二年五均六筦段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "lulin-uprising",
+    "title": "绿林军兴起",
+    "aliases": [],
+    "startYear": 17,
+    "endYear": 17,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "xin"
+    ],
+    "period": "新莽与更始",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "荆州地区饥荒与地方治理危机中，王匡、王凤等聚众于绿林山，形成反新朝武装。起义队伍后来分化又与刘氏宗室合作，不能从最初活动直接推定复汉目标。它显示新朝财政与行政政策在灾害冲击下失去地方支持，也为更始政权提供军事力量。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#7e916e",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十九《王莽传》天凤四年绿林起兵段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "red-eyebrows-uprising",
+    "title": "赤眉军兴起",
+    "aliases": [],
+    "startYear": 18,
+    "endYear": 18,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "xin"
+    ],
+    "period": "新莽与更始",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "樊崇领导的青徐农民武装以赤色眉记辨识队伍，逐渐在山东一带壮大。其成员诉求、军纪和政治目标随战争形势变化，不能只当作王朝复辟的工具。赤眉与绿林是不同的反新力量，后来在关中与更始政权冲突，推动东汉建立前的长期混战。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#7e916e",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十九《王莽传》樊崇起琅邪与赤眉众段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "kunyang-battle",
+    "title": "昆阳之战",
+    "aliases": [],
+    "startYear": 23,
+    "endYear": 23,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [],
+    "period": "新莽与更始",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "王莽派大军围攻昆阳，刘秀率少量兵力突围求援、回击围城部队，新军溃败。传世史书对双方人数有夸张可能，胜负及其对新朝威信的打击则十分明确。战役使更始集团取得战略主动，也提升刘秀在反新联盟中的军事声望。",
+    "personIds": [
+      "person-liu-xiu"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "kunyang-battle-to-wang-mang-fall"
+    ],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷一《光武帝纪》更始元年昆阳大破王莽军段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "《汉纪》更始元年昆阳之战"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "wang-mang-fall",
+    "title": "长安陷落王莽被杀",
+    "aliases": [],
+    "startYear": 23,
+    "endYear": 23,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "xin"
+    ],
+    "period": "新莽与更始",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "更始军进入长安，宫城被攻破，王莽遇害，新朝作为中央政权终结。王莽末年的灾害、征发和多路起义共同削弱统治，不能把崩溃只归因于一次战役。新朝灭亡后各地仍有割据，刘氏宗室之间也未形成统一秩序，随后东汉重建经历长期战争。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "kunyang-battle-to-wang-mang-fall",
+      "wang-mang-fall-to-eastern-han-founded"
+    ],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "hanshu-zhonghua-1962",
+        "locator": "卷九十九《王莽传》地皇四年长安陷落王莽死段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "eastern-han-founded",
+    "title": "刘秀建立东汉",
+    "aliases": [],
+    "startYear": 25,
+    "endYear": 25,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "刘秀在河北取得军事与地方支持后于鄗即皇帝位，沿用汉国号，后世称东汉或后汉。即位并不代表全国统一，更始、赤眉及西南割据势力仍在。刘秀通过联络豪强、任命官吏和军事征服逐步重建中央权力，使西汉制度在新的政治联盟中延续。",
+    "personIds": [
+      "person-liu-xiu"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "wang-mang-fall-to-eastern-han-founded"
+    ],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷一《光武帝纪》建武元年即皇帝位段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "《汉纪》光武帝建武元年即位"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "gongsun-shu-defeat",
+    "title": "东汉平定公孙述",
+    "aliases": [],
+    "startYear": 36,
+    "endYear": 36,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "公孙述据蜀多年，刘秀派岑彭、吴汉等进军，成都陷落后其政权终结。蜀地防线与长江上游交通使战争持续较长，不能只由最终攻城概括。东汉取得巴蜀后才基本结束主要区域性割据，中央仍需通过地方官员和交通网络巩固统治。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷十三《隗嚣公孙述列传》建武十二年成都破公孙述段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "eastern-han-five-zhu",
+    "title": "光武帝恢复五铢钱",
+    "aliases": [],
+    "startYear": 40,
+    "endYear": 40,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "新莽币制多次改动后，光武帝下令恢复五铢钱，以整顿流通和税赋核算。货币恢复不等于经济秩序立即回到西汉旧状，地方交易还受到战乱、物资短缺与铸币能力影响。这项政策体现东汉对汉制的选择性继承，也反映新朝改币造成的长期市场混乱。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#668b72",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷一《光武帝纪》建武十六年复五铢钱段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "southern-xiongnu-submission",
+    "title": "南匈奴内附东汉",
+    "aliases": [],
+    "startYear": 48,
+    "endYear": 48,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "匈奴内部再度分裂，日逐王比自立为南单于并请求归附东汉。汉廷允许其部众居于边郡附近，提供一定保护与物资，双方关系包含军事互助和朝贡礼仪。内附并不表示南匈奴失去全部自治，北匈奴仍继续活动，边境格局因而变得更复杂。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#5c88a2",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷八十九《南匈奴列传》建武二十四年日逐王比自立归汉段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "ming-emperor-accession",
+    "title": "汉明帝即位",
+    "aliases": [],
+    "startYear": 57,
+    "endYear": 57,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "光武帝去世后刘庄继位，朝廷继续整顿官僚、边防与礼制。明帝时期对儒学和宗庙礼仪的投入，与对北匈奴和西域的军事活动并行。后世关于明帝求佛的叙事带有传说层次，不能据此把这一朝的政治文化简化为单一宗教转向。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷二《显宗孝明帝纪》中元二年即位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "ming-buddhism-tradition",
+    "title": "明帝求佛传说形成",
+    "aliases": [],
+    "startYear": 57,
+    "endYear": 75,
+    "yearPrecision": "circa",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "《后汉书》记述明帝梦见金人、派使者求佛法的传统，但文本写成较晚，传入时间与具体使者不可据传说精确确定。汉代西域交通和商旅为佛教东传提供条件，宫廷传说反映后世对其起源的解释。应把信仰传播的长期过程与某一年建寺的传奇分开。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a87a83",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷八十八《西域列传》论佛教入中国与明帝梦金人段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "ban-chao-western-regions",
+    "title": "班超经营西域",
+    "aliases": [],
+    "startYear": 73,
+    "endYear": 102,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "班超从鄯善、于阗等地出使与驻守，利用当地联盟恢复东汉在西域诸国的影响。其行动跨越近三十年，既有外交谈判，也有军事胁迫和地方政权更替。西域关系依赖使者个人经验、边郡补给与绿洲社会合作，不能视为朝廷在远方直接建立均一郡县。",
+    "personIds": [
+      "person-ban-chao"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "western-regions-protectorate-to-ban-chao-western-regions",
+      "ban-chao-western-regions-to-ban-yong-western-regions"
+    ],
+    "color": "#5c88a2",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷四十七《班梁列传》永平十八年陈睦遇害、班超守疏勒逾年及奉诏返疏勒至永元归洛阳段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷四十六《汉纪》章帝建初元年罢西域都护、召还班超及于阗折返段"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "zhang-emperor-accession",
+    "title": "汉章帝即位",
+    "aliases": [],
+    "startYear": 75,
+    "endYear": 75,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "明帝去世后刘炟即位，章帝朝朝廷继续关注经学、刑罚和边疆政务。其在位时期白虎观经义讨论与西域军事行动并存，不能只以宽厚或儒学一个标签概括。中央在处理地方赋役与宗室权力时保留光武、明帝时代的制度框架，也作出具体调整。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷三《肃宗孝章帝纪》永平十八年即位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "baihu-classics-meeting",
+    "title": "白虎观议经",
+    "aliases": [],
+    "startYear": 79,
+    "endYear": 79,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "章帝召集诸儒在白虎观讨论五经异同，班固等参与记录，相关解释后来与《白虎通义》相联系。会议体现国家以学术讨论整理礼制和政治名分的努力，传世文本并非逐字速记。经学在东汉官僚任用和礼仪秩序中具有实际作用，但不同学派争论仍持续。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#9777a0",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷三《肃宗孝章帝纪》建初四年诏诸儒会白虎观段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "dou-xian-northern-campaign",
+    "title": "窦宪击北匈奴",
+    "aliases": [],
+    "startYear": 89,
+    "endYear": 89,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "窦宪率汉军和南匈奴等部北征，在稽落山击败北匈奴，并于燕然山刻石纪功。战役离不开草原盟军参与，胜利后的北匈奴迁徙和各部重组也非单次战斗可解释。军事威望使窦氏外戚权力上升，随后又与皇帝及宦官发生激烈冲突。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷二十三《窦融列传》窦宪出塞与燕然勒功段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "dou-clan-overthrow",
+    "title": "和帝诛窦氏",
+    "aliases": [],
+    "startYear": 92,
+    "endYear": 92,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "和帝与郑众等合谋收回窦宪兵权，窦氏集团被清除，皇帝得以亲政。宦官在协助政变中获得信任，此后宫廷内廷力量与外戚之间的竞争更加突出。事件不是宦官专权的唯一源头，却表明幼主、外戚和近侍的权力结构容易反复失衡。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷四《孝和孝殇帝纪》永元四年诛窦宪段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "shuowen-composition",
+    "title": "许慎编说文解字",
+    "aliases": [],
+    "startYear": 100,
+    "endYear": 121,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "许慎按部首整理汉字，分析字形和本义，其《说文解字》历经多年编纂，后由其子进献朝廷。字书保存东汉经学与文字学的知识组织方式，不可把所释古文字全部视为现代考古定论。它为后世训诂、字形研究提供持续使用的框架。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#608c9b",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷七十九《儒林列传》许慎著说文解字段"
+      },
+      {
+        "sourceId": "shuowen-zhonghua-1963",
+        "locator": "《说文解字·叙》部首编排及许冲建光元年上书表"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "cai-lun-paper",
+    "title": "蔡伦改进造纸",
+    "aliases": [],
+    "startYear": 105,
+    "endYear": 105,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "蔡伦向和帝进献以树皮、麻头、旧布和鱼网等制成的纸，受到朝廷称许。考古发现更早的纸类材料，故不能称他独自发明纸；《后汉书》支持的是改进与推广的宫廷记录。纸逐渐成为书写材料之一，但取代简帛是跨越多代的缓慢过程。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#608c9b",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷七十八《宦者列传》蔡伦用树肤麻头敝布鱼网造纸段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "he-emperor-death",
+    "title": "和帝去世与幼主继位",
+    "aliases": [],
+    "startYear": 105,
+    "endYear": 106,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "和帝去世后婴儿刘隆继位，数月后也去世，朝廷再次面临幼主继承和太后辅政问题。邓太后在此期间主持决策，东汉皇位更替与外戚政治紧密结合。短暂的殇帝朝没有独立完整的政策周期，却成为安帝继位之前制度压力集中显现的阶段。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷四《孝和孝殇帝纪》永元十七年崩及延平元年殇帝立段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "qiang-frontier-war",
+    "title": "东汉西羌战事扩大",
+    "aliases": [],
+    "startYear": 110,
+    "endYear": 118,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "东汉西部羌人诸部与边郡官吏冲突升级，战争、迁徙和财政耗费持续多年。不同羌部立场不一，既有反抗也有与汉军合作，不能用一个统一族群意志解释。朝廷的强制迁徙和军费负担进一步加重关中、陇西地区社会压力，影响东汉边防政策。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8c8165",
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷八十七《西羌列传》永初年间羌种反叛与汉军征讨段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "ban-yong-western-regions",
+    "title": "班勇复通西域",
+    "aliases": [],
+    "startYear": 121,
+    "endYear": 127,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "班勇在西域交通再度中断后提出利用屯田和地方联盟恢复联系，任西域长史并驻柳中。其影响范围与班超时代不同，需要在北匈奴、羌人和绿洲诸国竞争中逐步重建。此事说明东汉西域经营并非一次永久完成的扩张，而是随中央资源反复变化。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "ban-chao-western-regions-to-ban-yong-western-regions"
+    ],
+    "color": "#5c88a2",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷四十七《班梁列传》班勇长史屯柳中与西域诸国段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "shun-emperor-accession",
+    "title": "汉顺帝即位",
+    "aliases": [],
+    "startYear": 125,
+    "endYear": 125,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "安帝去世后阎氏外戚拥立少帝，宦官孙程等发动宫廷行动迎立刘保为顺帝。皇位更替依赖内廷、外戚和官僚的协商及武力，显示继承程序脆弱。顺帝朝随后面对西羌边患、地方财政和官僚监察问题，宫廷政变并未解决这些长期治理压力。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷六《孝顺孝冲孝质帝纪》延光四年顺帝即位段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zhang-heng-seismoscope",
+    "title": "张衡制造候风地动仪",
+    "aliases": [],
+    "startYear": 132,
+    "endYear": 132,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "张衡制作候风地动仪，史书描述器物外形和远方地震触发铜丸的机制。原器已不存，现代复原模型的结构不能直接当作东汉实物。记载反映朝廷重视异常天象与地动的观测，也显示技术知识与官员的历算、礼制职责相互联系。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "zhang-heng-seismoscope-to-seismoscope-longxi-signal"
+    ],
+    "color": "#608c9b",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷五十九《张衡列传》阳嘉元年造候风地动仪段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "seismoscope-longxi-signal",
+    "title": "地动仪报告陇西地震",
+    "aliases": [],
+    "startYear": 132,
+    "endYear": 139,
+    "yearPrecision": "circa",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "《后汉书》在阳嘉元年造地动仪之后记一侧铜丸落下，洛阳未觉地动，数日后驿使报告陇西地震。传文没有为这一报告单独系年；这里的132年至139年只是制造仪器到张衡去世的传记边界，并非事件确年。故事支持史家对远方地动感知的叙述，却不足以复原全部机械结构。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "zhang-heng-seismoscope-to-seismoscope-longxi-signal"
+    ],
+    "color": "#608c9b",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷五十九《张衡列传》一龙机发而京师不觉陇西地震段",
+        "note": "本传阳嘉元年记制造地动仪，随后叙无确年陇西报告，并记张衡永和四年卒；132—139仅作传记框架，不是两种地震年代考订。"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liang-ji-regency",
+    "title": "梁冀掌握朝政",
+    "aliases": [],
+    "startYear": 141,
+    "endYear": 159,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "梁商死后梁冀任大将军，凭借外戚身份和宫廷姻亲关系长期控制任官与皇位安排。多位幼主相继即位使辅政权力难以移交，地方官吏和朝臣对梁氏权势多有批评。梁冀的地位并非只由个人跋扈造成，更与东汉继承制度和太后临朝结构相连。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷三十四《梁统列传》梁冀继大将军至专权段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "an-shigao-translations",
+    "title": "安世高在洛阳译经",
+    "aliases": [],
+    "startYear": 148,
+    "endYear": 170,
+    "yearPrecision": "circa",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "安息僧安世高至洛阳译出禅观、阿毗昙等佛教经典，参与早期汉语佛典形成。译经时间跨越桓帝时期，具体经目和译者归属在后世目录中有争论。此事比明帝求佛传说更能显示佛教经由西域人群、城市交往和翻译实践逐步进入东汉社会。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a87a83",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "chusanzangjiji-zhonghua-1995",
+        "locator": "卷十三《安世高传》入洛阳与译经段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liang-ji-overthrown",
+    "title": "桓帝诛梁冀",
+    "aliases": [],
+    "startYear": 159,
+    "endYear": 159,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "桓帝联络单超等宦官夺取宫门与兵权，梁冀及其亲族被清除，大量财产被没收。行动使皇帝摆脱长期外戚控制，协助政变的宦官却由此获封侯与要职。政变改变了掌权者，却没有建立稳定的权力制衡机制，为后来的清议和党锢冲突留下背景。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷七《孝桓帝纪》延熹二年诛梁冀段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "huan-laozi-worship",
+    "title": "桓帝宫廷祭祀老子",
+    "aliases": [],
+    "startYear": 165,
+    "endYear": 165,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "桓帝朝遣使祭祀老子，并将其与宫廷求福活动相连。此类礼仪反映黄老、神仙观念与皇权实践的结合，但不能直接等同后来制度化道教的全部教义和组织。史书记述的是宫廷祭祀行为，地方信仰和教团活动另有历史脉络，东汉宗教景观因而呈现多源并存。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a87a83",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷七《孝桓帝纪》延熹八年遣使祠老子段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "first-partisan-prohibition",
+    "title": "第一次党锢之祸",
+    "aliases": [],
+    "startYear": 166,
+    "endYear": 167,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "延熹九年，宦官与李膺等清议士人冲突升级，朝廷下诏搜捕党人并将多人系狱；次年赦归乡里，却终身禁锢不得任官。逮捕与禁锢是相隔一年的处置阶段。党人并非现代政党，而是通过师友和乡评形成声望的士人网络；禁锢打击了朝廷吸纳批评的渠道。",
+    "personIds": [
+      "person-li-ying"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "first-partisan-prohibition-to-second-partisan-prohibition"
+    ],
+    "color": "#7e916e",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷六十七《党锢列传》延熹九年系狱与十年赦归终身禁锢段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "《汉纪》桓帝延熹九年党人逮捕"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "second-partisan-prohibition",
+    "title": "第二次党锢之祸",
+    "aliases": [],
+    "startYear": 169,
+    "endYear": 169,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "灵帝即位后宦官集团再度追究士人清议，李膺、杜密等遭杀害，受禁锢者范围扩大。朝廷把交游与舆论批评定为政治罪名，影响仕途、家族和地方关系。两次党锢并非完全相同的案件，但合起来削弱了中央吸纳批评的能力，也加深士人与内廷的对立。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "first-partisan-prohibition-to-second-partisan-prohibition"
+    ],
+    "color": "#7e916e",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷六十七《党锢列传》建宁二年侯览曹节等诛党人段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "taipingdao-network",
+    "title": "太平道传播与组织",
+    "aliases": [],
+    "startYear": 170,
+    "endYear": 184,
+    "yearPrecision": "circa",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "张角兄弟以太平道治病、符水与讲道在州郡招收信众，逐渐建立跨地区组织。其传播年份只能大致估计，不能把教团每个阶段精确排入年表。宗教实践与疫病、地方社会失序及官府治理不足相互关联，后来成为黄巾起义动员的重要基础，但信仰活动并不等同于起兵。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a87a83",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷七十一《皇甫嵩朱儁列传》张角事黄老道符水咒说段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "xiping-stone-classics",
+    "title": "熹平石经刊刻",
+    "aliases": [],
+    "startYear": 175,
+    "endYear": 183,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "灵帝朝蔡邕等校正经书文字并刻石置于太学门外，供士人摹写核对。刻石工程历时多年，不宜把所有经文完成日期归于最初奏请之年。石经反映朝廷希望统一经典文本、维护官学权威，也为书法和经学版本史留下可见材料。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#9777a0",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷七十九《儒林列传》熹平四年蔡邕正五经文字刻石段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "yellow-turban-uprising",
+    "title": "黄巾起义",
+    "aliases": [],
+    "startYear": 184,
+    "endYear": 184,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "张角领导的太平道信众在多州同时起事，以黄巾为标识，朝廷派皇甫嵩、朱儁等镇压。主力虽在当年遭击败，各地余部与其他武装仍长期活动。起义揭示东汉地方财政、灾荒与政治信任的危机，镇压过程中地方长官和军阀获得更大兵权。",
+    "personIds": [
+      "person-zhang-jiao"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yellow-turban-uprising-to-western-garden-army"
+    ],
+    "color": "#7e916e",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷七十一《皇甫嵩朱儁列传》中平元年张角黄巾起事段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "《汉纪》灵帝中平元年黄巾起兵"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "liangzhou-revolt",
+    "title": "凉州羌胡与边军叛乱",
+    "aliases": [],
+    "startYear": 184,
+    "endYear": 189,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "凉州边地羌、胡部众与汉军将领发生叛乱，韩遂等势力在混战中崛起。参与者来源复杂，不能把事件归因于单一族群的共同意志。朝廷为镇压投入兵员和财赋，却未能恢复稳定行政控制，西北军队此后成为汉末中央权力争夺的重要力量。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8c8165",
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷八《孝灵帝纪》中平元年至六年凉州羌胡叛段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "western-garden-army",
+    "title": "灵帝设置西园八校尉",
+    "aliases": [],
+    "startYear": 188,
+    "endYear": 188,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "灵帝在洛阳设西园八校尉，集中训练京师军队，袁绍、曹操等人曾任相关职务。新军旨在强化皇帝对武装力量的直接掌握，却也使宫廷与外朝在军事指挥上竞争。灵帝去世后这一编制未能稳定地支撑中央，军队和将领转而卷入继承危机。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yellow-turban-uprising-to-western-garden-army"
+    ],
+    "color": "#b28354",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷八《孝灵帝纪》中平五年置西园八校尉段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "dong-zhuo-takes-luoyang",
+    "title": "董卓控制洛阳朝廷",
+    "aliases": [],
+    "startYear": 189,
+    "endYear": 189,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "董卓率凉州军入洛阳，控制宫廷，废少帝而立刘协为献帝，并清除反对者。其权力依靠军队而非正常官僚程序，使中央诏令与军事胁迫紧密相连。各地州郡长官随后以讨董为名聚兵，汉廷名义仍在，实际统治能力却迅速瓦解。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷七十二《董卓列传》董卓入洛阳废少帝立献帝段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "he-jin-assassinated",
+    "title": "何进被宦官杀害",
+    "aliases": [],
+    "startYear": 189,
+    "endYear": 189,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "大将军何进与士人官僚谋划清除宦官，行动迟疑期间被张让等诱入宫中杀害。袁绍等随即率兵攻入宫廷，宦官集团遭大规模屠杀。内廷与外戚的冲突演变为武装政变，使洛阳防务崩溃，也为董卓率军进入都城打开机会。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷六十九《窦何列传》何进入宫被张让等杀段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "anti-dong-coalition",
+    "title": "关东诸侯起兵讨董",
+    "aliases": [],
+    "startYear": 190,
+    "endYear": 190,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "袁绍等关东州郡长官组织联军反对董卓，彼此军政目标并不完全一致。联军虽使董卓难以安居洛阳，却缺乏统一指挥和稳定供给，后来各地势力相互争夺。讨董行动表面维护汉室，实际推动地方军队和财政脱离中央控制，成为汉末割据的转折。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷七十二《董卓列传》初平元年关东州郡起兵段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "luoyang-destruction",
+    "title": "董卓迁都长安并焚洛阳",
+    "aliases": [],
+    "startYear": 190,
+    "endYear": 190,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "面对关东联军，董卓挟献帝西迁长安，强迫洛阳居民迁徙并焚毁宫室。迁都破坏旧都的人口、财产与政治象征，也使朝廷在军队控制下进一步失去独立性。史书对破坏规模可能有修辞，但大规模迁徙和都城功能中断是汉末社会灾难的重要部分。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#7e916e",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷七十二《董卓列传》徙天子西都长安焚洛阳宫室段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "zhang-lu-hanzhong",
+    "title": "张鲁据汉中行五斗米道",
+    "aliases": [],
+    "startYear": 191,
+    "endYear": 215,
+    "yearPrecision": "range",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "张鲁在汉中建立以祭酒组织、义舍和宗教戒律结合的地方秩序，与东汉朝廷关系时断时续。其据地时间较长，五斗米道也不能只按一次军事叛乱理解。信仰组织参与粮食救济和地方治理，后来曹操入汉中时仍需处理信众及其首领的安置。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a87a83",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷七十五《刘焉袁术吕布列传》张鲁据汉中以鬼道教民段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "dong-zhuo-killed",
+    "title": "王允吕布诛董卓",
+    "aliases": [],
+    "startYear": 192,
+    "endYear": 192,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "司徒王允联络吕布在长安杀死董卓，试图结束凉州军控制朝廷的局面。董卓部将随后攻入长安，王允被杀，献帝继续受军阀挟持。刺杀结束了董卓个人统治，却没有恢复中央财政和军队秩序，反而使各派军队争夺更为激烈。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷七十二《董卓列传》初平三年王允吕布杀卓段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "cao-cao-tuntian",
+    "title": "曹操在许下推行屯田",
+    "aliases": [],
+    "startYear": 196,
+    "endYear": 196,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "曹操政权在许县附近组织屯田，集中流民与军人耕作以供军粮，随后扩展相关管理机构。屯田不仅是农业生产，也关系人口编管、军队补给和地方税收。其收益随土地、水利和战况变化，不能把后来的军政优势全部归因于一个农业措施。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "emperor-moves-xu-to-cao-cao-tuntian"
+    ],
+    "color": "#668b72",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷一《武帝纪》建安元年用枣祗韩浩议募民屯田段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "emperor-moves-xu",
+    "title": "曹操迎献帝都许",
+    "aliases": [],
+    "startYear": 196,
+    "endYear": 196,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "献帝脱离长安诸将控制后，曹操迎至许县并以朝廷名义发布政令。皇帝仍保有汉室合法性象征，实际军政资源则由曹操掌握。各地诸侯对诏令的接受程度不同，许都朝廷成为争取官职与政治名分的重要中心，也使曹操获得独特优势。",
+    "personIds": [
+      "person-cao-cao"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "emperor-moves-xu-to-cao-cao-tuntian"
+    ],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷九《孝献帝纪》建安元年曹操迎帝都许段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "《汉纪》献帝建安元年迁许"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "xiapi-lu-bu-defeat",
+    "title": "曹操攻灭吕布",
+    "aliases": [],
+    "startYear": 198,
+    "endYear": 198,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "曹操围攻吕布据守的下邳，借决水与内部倒戈攻破城池，吕布被杀。吕布此前多次在关东势力之间转移，反映汉末联盟和地盘归属迅速变动。下邳之役使曹操获得徐州战略空间，但北方仍有袁绍等强敌，统一并未由此完成。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷七十五《刘焉袁术吕布列传》建安三年下邳吕布败段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "guandu-battle",
+    "title": "官渡之战",
+    "aliases": [],
+    "startYear": 200,
+    "endYear": 200,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "袁绍与曹操在官渡地区长期对峙，曹军袭击乌巢粮屯后袁军崩溃。战役关键涉及补给、指挥和盟友选择，不宜只用兵力多寡解释。曹操取得北方竞争的决定性优势，但袁氏诸子仍据有河北，后续平定经历多年战争。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷七十四《袁绍刘表列传》官渡之战袁绍败段"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "red-cliffs-battle",
+    "title": "赤壁之战",
+    "aliases": [],
+    "startYear": 208,
+    "endYear": 208,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "曹操南下荆州后与孙权、刘备联盟在长江中游交战，曹军败退。史书对火攻、疫病、战场位置等细节记述不一，但联盟抵抗阻止曹操立即控制江东明确。赤壁之后荆州归属继续争夺，南北政治分立逐步形成，不能把三国局面视为一战当日完成。",
+    "personIds": [
+      "person-zhou-yu"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "red-cliffs-battle-to-liu-bei-takes-yizhou"
+    ],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷五十四《周瑜鲁肃吕蒙传》周瑜赤壁破曹公段"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "《汉纪》献帝建安十三年赤壁战"
+      }
+    ],
+    "detailLevel": "core"
+  },
+  {
+    "id": "cao-cao-duke-wei",
+    "title": "曹操封魏公加九锡",
+    "aliases": [],
+    "startYear": 213,
+    "endYear": 213,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "建安十八年五月，曹操取得魏公爵位并加九锡，在仍奉汉献帝为皇帝的名义秩序中提高自身地位。九锡以车马、衣服、弓矢等特殊礼遇表达超出一般臣僚的权势，反映汉末封爵与政治权力的重新配置。此时获得的是公爵而非皇帝位，不能与后来曹丕受禅建立魏朝算作同一次权力交接。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b86860",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "houhanshu-zhonghua-1965",
+        "locator": "卷九《孝献帝纪》建安十八年五月丙申曹操为魏公加九锡条及九锡注",
+        "note": "据维基文库《后汉书》卷9在线录文核对；未校勘所列中华书局点校本。"
+      }
+    ],
+    "detailLevel": "basic"
+  },
+  {
+    "id": "liu-bei-takes-yizhou",
+    "title": "刘备取得益州",
+    "aliases": [],
+    "startYear": 214,
+    "endYear": 214,
+    "yearPrecision": "exact",
+    "eraId": "qin-han",
+    "editorialPeriodId": "qin-han",
+    "polityIds": [
+      "eastern-han"
+    ],
+    "period": "东汉",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "刘备受刘璋邀请入蜀，双方随后决裂，刘备军围成都迫使刘璋投降。益州提供人口、粮食和山川屏障，改变刘备在荆州之外缺乏稳定根据地的处境。征服过程中地方士人与军队的选择十分关键，也为以后蜀汉政权的建立创造条件。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "red-cliffs-battle-to-liu-bei-takes-yizhou"
+    ],
+    "color": "#a8504b",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "sanguozhi-zhonghua-1959",
+        "locator": "卷三十二《先主传》建安十九年刘璋降成都段"
+      }
+    ],
+    "detailLevel": "basic"
+  }
+]

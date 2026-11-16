@@ -16,6 +16,7 @@ const httpUrl = z.string().trim().url().refine(
   (value) => /^https?:/i.test(value),
   { message: 'Expected an HTTP or HTTPS URL' }
 );
+const projectUrl = z.union([httpUrl, z.string().trim().regex(/^\/(?:[a-z0-9]+(?:-[a-z0-9]+)*\/)*$/)]);
 const href = z.union([httpUrl, z.string().trim().regex(/^mailto:[^\s]+$/)]);
 const translationMetadataSchema = z.object({
   sourceHash: copy,
@@ -48,7 +49,7 @@ export const siteDocumentSchema = z.object({
     title: copy, status: copy, summary: copy, stack: z.array(copy), action: copy, imageAlt: copy
   }).strict(),
   projects: z.array(z.object({
-    title: copy, status: copy, summary: copy, stack: z.array(copy), githubUrl: httpUrl, liveUrl: httpUrl
+    title: copy, status: copy, summary: copy, stack: z.array(copy), githubUrl: httpUrl, liveUrl: projectUrl
   }).strict()),
   contact: z.array(z.object({ label: copy, value: copy, href }).strict()),
   seo: z.object({

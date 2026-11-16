@@ -1,0 +1,1526 @@
+[
+  {
+    "fromId": "albazin-first-siege",
+    "id": "albazin-one-to-nerchinsk",
+    "toId": "nerchinsk-treaty",
+    "type": "cause"
+  },
+  {
+    "fromId": "albazin-second-siege",
+    "id": "albazin-two-to-nerchinsk",
+    "toId": "nerchinsk-treaty",
+    "type": "cause"
+  },
+  {
+    "fromId": "altan-beijing-siege",
+    "id": "altan-siege-to-investiture",
+    "toId": "altan-investiture",
+    "type": "contrast"
+  },
+  {
+    "fromId": "altan-peace-negotiations",
+    "id": "altan-talks-to-investiture",
+    "toId": "altan-investiture",
+    "type": "cause"
+  },
+  {
+    "fromId": "amursana-revolt",
+    "id": "amursana-to-war",
+    "toId": "qing-dzungar-war",
+    "type": "part-of"
+  },
+  {
+    "fromId": "anshi",
+    "id": "anshi-to-tang-hedong-hebei-jiedushi",
+    "toId": "tang-hedong-hebei-jiedushi",
+    "type": "consequence"
+  },
+  {
+    "fromId": "imperial-atlas-survey",
+    "id": "atlas-to-nerchinsk",
+    "toId": "nerchinsk-treaty",
+    "type": "consequence"
+  },
+  {
+    "fromId": "ban-chao-western-regions",
+    "id": "ban-chao-western-regions-to-ban-yong-western-regions",
+    "toId": "ban-yong-western-regions",
+    "type": "consequence"
+  },
+  {
+    "fromId": "beijing-palace-construction",
+    "id": "beijing-construction-to-capital",
+    "toId": "beijing-capital-1421",
+    "type": "cause"
+  },
+  {
+    "fromId": "beijing-defense-1449",
+    "id": "beijing-defense-to-yingzong-return",
+    "toId": "yingzong-returned",
+    "type": "consequence"
+  },
+  {
+    "fromId": "li-shizhen-bencao",
+    "id": "bencao-to-tiangong",
+    "toId": "tiangong-kaiwu",
+    "type": "parallel"
+  },
+  {
+    "fromId": "boju-battle",
+    "id": "boju-battle-to-shen-baoxu-qin-aid",
+    "toId": "shen-baoxu-qin-aid",
+    "type": "consequence"
+  },
+  {
+    "fromId": "cao-pi-wei-founded",
+    "id": "cao-pi-wei-founded-to-shu-han-founded",
+    "toId": "shu-han-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "cao-pi-wei-founded",
+    "id": "cao-pi-wei-founded-to-wei-nine-rank",
+    "toId": "wei-nine-rank",
+    "type": "parallel"
+  },
+  {
+    "fromId": "beijing-capital-1421",
+    "id": "capital-to-forbidden-city",
+    "toId": "forbidden-city-inaugurated",
+    "type": "parallel"
+  },
+  {
+    "fromId": "chang-an-falls-316",
+    "id": "chang-an-falls-316-to-eastern-jin-founded",
+    "toId": "eastern-jin-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "changping-battle",
+    "id": "changping-battle-to-handan-relief",
+    "toId": "handan-relief",
+    "type": "consequence"
+  },
+  {
+    "fromId": "chen-founded",
+    "id": "chen-founded-to-sui-conquers-chen",
+    "toId": "sui-conquers-chen",
+    "type": "consequence"
+  },
+  {
+    "fromId": "chen-sheng-uprising",
+    "id": "chen-sheng-uprising-to-xiang-liang-uprising",
+    "toId": "xiang-liang-uprising",
+    "type": "consequence"
+  },
+  {
+    "fromId": "chengzhou-construction",
+    "id": "chengzhou-construction-to-kangshu-fief",
+    "toId": "kangshu-fief",
+    "type": "parallel"
+  },
+  {
+    "fromId": "chonger-returns-jin",
+    "id": "chonger-returns-jin-to-chengpu-battle",
+    "toId": "chengpu-battle",
+    "type": "cause"
+  },
+  {
+    "fromId": "chu-han-war",
+    "id": "chu-han-war-to-han-founded",
+    "toId": "han-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "chuenpi-clash-1839",
+    "id": "chuenpi-to-lin",
+    "toId": "lin-zexu-canton-1839",
+    "type": "part-of"
+  },
+  {
+    "fromId": "cohong-regulation",
+    "id": "cohong-to-canton",
+    "toId": "canton-system-1757",
+    "type": "part-of"
+  },
+  {
+    "fromId": "confucius-teaching",
+    "id": "confucius-teaching-to-confucius-travels",
+    "toId": "confucius-travels",
+    "type": "parallel"
+  },
+  {
+    "fromId": "cppcc-first-plenary",
+    "id": "cppcc-first-plenary-to-prc-founded",
+    "toId": "prc-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "dashun-founded-xian",
+    "id": "dashun-founded-part-of-late-rebellions",
+    "toId": "late-ming-rebellions",
+    "type": "part-of"
+  },
+  {
+    "fromId": "donglin-academy-restored",
+    "id": "donglin-to-nanjing-case",
+    "toId": "nanjing-christianity-case",
+    "type": "parallel"
+  },
+  {
+    "fromId": "dzungar-conquest-1755",
+    "id": "dzungar-conquest-to-war",
+    "toId": "qing-dzungar-war",
+    "type": "part-of"
+  },
+  {
+    "fromId": "dzungar-invasion-tibet",
+    "id": "dzungar-tibet-to-expedition",
+    "toId": "qing-tibet-expedition",
+    "type": "cause"
+  },
+  {
+    "fromId": "qing-dzungar-war",
+    "id": "dzungar-to-kangqian",
+    "toId": "kangqian",
+    "type": "parallel"
+  },
+  {
+    "fromId": "eastern-jin-founded",
+    "id": "eastern-jin-founded-to-su-jun-rebellion",
+    "toId": "su-jun-rebellion",
+    "type": "consequence"
+  },
+  {
+    "fromId": "eastern-jin-founded",
+    "id": "eastern-jin-founded-to-wang-dun-rebellion",
+    "toId": "wang-dun-rebellion",
+    "type": "consequence"
+  },
+  {
+    "fromId": "eastern-western-wei-split",
+    "id": "eastern-western-wei-split-to-western-wei-fubing",
+    "toId": "western-wei-fubing",
+    "type": "consequence"
+  },
+  {
+    "fromId": "eight-princes-war",
+    "id": "eight-princes-war-to-yongjia-disaster",
+    "toId": "yongjia-disaster",
+    "type": "consequence"
+  },
+  {
+    "fromId": "emperor-moves-xu",
+    "id": "emperor-moves-xu-to-cao-cao-tuntian",
+    "toId": "cao-cao-tuntian",
+    "type": "parallel"
+  },
+  {
+    "fromId": "feishui-battle",
+    "id": "feishui-battle-to-later-yan-founded",
+    "toId": "later-yan-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "first-jinchuan-settlement",
+    "id": "first-jinchuan-to-war",
+    "toId": "jinchuan-wars",
+    "type": "part-of"
+  },
+  {
+    "fromId": "first-partisan-prohibition",
+    "id": "first-partisan-prohibition-to-second-partisan-prohibition",
+    "toId": "second-partisan-prohibition",
+    "type": "consequence"
+  },
+  {
+    "fromId": "former-qin-north-unity",
+    "id": "former-qin-north-unity-to-feishui-battle",
+    "toId": "feishui-battle",
+    "type": "consequence"
+  },
+  {
+    "fromId": "gaixia-battle",
+    "id": "gaixia-battle-part-of-chu-han-war",
+    "toId": "chu-han-war",
+    "type": "part-of"
+  },
+  {
+    "fromId": "galdan-death",
+    "id": "galdan-to-dzungar",
+    "toId": "qing-dzungar-war",
+    "type": "part-of"
+  },
+  {
+    "fromId": "gaopingling-coup",
+    "id": "gaopingling-coup-to-jin-founded",
+    "toId": "jin-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "gonghe-regency",
+    "id": "gonghe-regency-to-xuan-restoration",
+    "toId": "xuan-restoration",
+    "type": "consequence"
+  },
+  {
+    "fromId": "left-gate-protest",
+    "id": "grand-rites-to-left-gate",
+    "toId": "grand-rites-controversy",
+    "type": "part-of"
+  },
+  {
+    "fromId": "guan-zhong-governance",
+    "id": "guan-zhong-governance-to-kuiqiu-covenant",
+    "toId": "kuiqiu-covenant",
+    "type": "consequence"
+  },
+  {
+    "fromId": "han-commandery-kingdoms",
+    "id": "han-commandery-kingdoms-to-seven-kingdoms-rebellion",
+    "toId": "seven-kingdoms-rebellion",
+    "type": "cause"
+  },
+  {
+    "fromId": "han-founded",
+    "id": "han-founded-to-han-commandery-kingdoms",
+    "toId": "han-commandery-kingdoms",
+    "type": "consequence"
+  },
+  {
+    "fromId": "hanfeizi-persuasion",
+    "id": "hanfeizi-statecraft-to-hanfeizi-persuasion",
+    "toId": "hanfeizi-statecraft",
+    "type": "part-of"
+  },
+  {
+    "fromId": "hou-jing-rebellion",
+    "id": "hou-jing-rebellion-to-chen-founded",
+    "toId": "chen-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "huang-chao",
+    "id": "huang-chao-to-tang-zhu-wen-defects",
+    "toId": "tang-zhu-wen-defects",
+    "type": "consequence"
+  },
+  {
+    "fromId": "humen-opium-destruction",
+    "id": "humen-to-lin",
+    "toId": "lin-zexu-canton-1839",
+    "type": "part-of"
+  },
+  {
+    "fromId": "huohao-gongfei",
+    "id": "huohao-to-yongzheng",
+    "toId": "yongzheng-fiscal-reforms",
+    "type": "part-of"
+  },
+  {
+    "fromId": "ming-invasion-dai-viet",
+    "id": "invasion-to-vietnam-withdrawal",
+    "toId": "ming-withdrawal-vietnam",
+    "type": "consequence"
+  },
+  {
+    "fromId": "jao-modo-battle",
+    "id": "jao-to-dzungar",
+    "toId": "qing-dzungar-war",
+    "type": "part-of"
+  },
+  {
+    "fromId": "jiading-resistance",
+    "id": "jiading-to-queue",
+    "toId": "queue-order-1645",
+    "type": "part-of"
+  },
+  {
+    "fromId": "jiangyin-resistance",
+    "id": "jiangyin-to-queue",
+    "toId": "queue-order-1645",
+    "type": "part-of"
+  },
+  {
+    "fromId": "jin-capital-zhongdu",
+    "id": "jin-capital-zhongdu-to-jin-capital-move",
+    "toId": "jin-capital-move",
+    "type": "cause"
+  },
+  {
+    "fromId": "jin-chu-first-truce",
+    "id": "jin-chu-first-truce-to-xiangshu-truce",
+    "toId": "xiangshu-truce",
+    "type": "parallel"
+  },
+  {
+    "fromId": "jin-fall",
+    "id": "jin-fall-to-song-mongol-alliance-talks",
+    "toId": "song-mongol-alliance-talks",
+    "type": "consequence"
+  },
+  {
+    "fromId": "jin-founded",
+    "id": "jin-founded-to-jin-unifies-wu",
+    "toId": "jin-unifies-wu",
+    "type": "consequence"
+  },
+  {
+    "fromId": "jin-unifies-wu",
+    "id": "jin-unifies-wu-to-jin-household-registration",
+    "toId": "jin-household-registration",
+    "type": "consequence"
+  },
+  {
+    "fromId": "jinchuan-surrender-1776",
+    "id": "jinchuan-end-to-war",
+    "toId": "jinchuan-wars",
+    "type": "part-of"
+  },
+  {
+    "fromId": "jingnan-campaign",
+    "id": "jingnan-to-beijing-capital",
+    "toId": "beijing-capital-1421",
+    "type": "consequence"
+  },
+  {
+    "fromId": "jingnan-campaign",
+    "id": "jingnan-to-capture-nanjing",
+    "toId": "jingnan-capture-nanjing",
+    "type": "consequence"
+  },
+  {
+    "fromId": "julu-battle",
+    "id": "julu-battle-to-liu-bang-enters-guanzhong",
+    "toId": "liu-bang-enters-guanzhong",
+    "type": "parallel"
+  },
+  {
+    "fromId": "jurchen-jin-founded",
+    "id": "jurchen-jin-founded-to-jin-jurchen-unification",
+    "toId": "jin-jurchen-unification",
+    "type": "consequence"
+  },
+  {
+    "fromId": "jurchen-later-jin-founded",
+    "id": "jurchen-later-jin-to-seven-grievances",
+    "toId": "later-jin-seven-grievances",
+    "type": "consequence"
+  },
+  {
+    "fromId": "zhang-juzheng-kaocheng",
+    "id": "kaocheng-to-zhang-reform",
+    "toId": "zhang-juzheng",
+    "type": "cause"
+  },
+  {
+    "fromId": "kiakhta-treaty",
+    "id": "kiakhta-to-nerchinsk",
+    "toId": "nerchinsk-treaty",
+    "type": "consequence"
+  },
+  {
+    "fromId": "kowloon-clash",
+    "id": "kowloon-to-lin",
+    "toId": "lin-zexu-canton-1839",
+    "type": "part-of"
+  },
+  {
+    "fromId": "kunming-recovered-1681",
+    "id": "kunming-to-three-feudatories",
+    "toId": "three-feudatories-revolt",
+    "type": "part-of"
+  },
+  {
+    "fromId": "kunyang-battle",
+    "id": "kunyang-battle-to-wang-mang-fall",
+    "toId": "wang-mang-fall",
+    "type": "consequence"
+  },
+  {
+    "fromId": "later-han-founded",
+    "id": "later-han-founded-to-later-zhou-founded",
+    "toId": "later-zhou-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "later-jin-founded",
+    "id": "later-jin-founded-to-later-han-founded",
+    "toId": "later-han-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "later-liang-founded",
+    "id": "later-liang-founded-to-later-tang-founded",
+    "toId": "later-tang-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "later-liang-founded",
+    "id": "later-liang-founded-to-wuyue-founded",
+    "toId": "wuyue-founded",
+    "type": "parallel"
+  },
+  {
+    "fromId": "later-tang-founded",
+    "id": "later-tang-founded-to-later-jin-founded",
+    "toId": "later-jin-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "later-zhou-founded",
+    "id": "later-zhou-founded-to-later-zhou-guo-rong",
+    "toId": "later-zhou-guo-rong",
+    "type": "consequence"
+  },
+  {
+    "fromId": "later-zhou-guo-rong",
+    "id": "later-zhou-guo-rong-to-song-founding-prelude",
+    "toId": "song-founding-prelude",
+    "type": "consequence"
+  },
+  {
+    "fromId": "liang-founded",
+    "id": "liang-founded-to-liang-wudi-buddhism",
+    "toId": "liang-wudi-buddhism",
+    "type": "consequence"
+  },
+  {
+    "fromId": "liang-tai-city-famine",
+    "id": "liang-tai-city-famine-to-hou-jing-rebellion",
+    "toId": "hou-jing-rebellion",
+    "type": "part-of"
+  },
+  {
+    "fromId": "liao-empress-xiao-regency",
+    "id": "liao-empress-xiao-regency-to-chanyuan",
+    "toId": "chanyuan",
+    "type": "cause"
+  },
+  {
+    "fromId": "liu-song-founded",
+    "id": "liu-song-founded-to-southern-qi-founded",
+    "toId": "southern-qi-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "liu-xiang-collation",
+    "id": "liu-xiang-collation-to-liu-xin-qilue",
+    "toId": "liu-xin-qilue",
+    "type": "consequence"
+  },
+  {
+    "fromId": "wang-yangming-longchang",
+    "id": "longchang-to-ning-prince",
+    "toId": "prince-ning-rebellion",
+    "type": "parallel"
+  },
+  {
+    "fromId": "lu-first-acre-tax",
+    "id": "lu-first-acre-tax-to-lu-hill-levy",
+    "toId": "lu-hill-levy",
+    "type": "parallel"
+  },
+  {
+    "fromId": "lugouqiao",
+    "id": "lugouqiao-to-shanghai-battle-1937",
+    "toId": "shanghai-battle-1937",
+    "type": "consequence"
+  },
+  {
+    "fromId": "macartney-rejected-requests",
+    "id": "macartney-reply-to-embassy",
+    "toId": "macartney-embassy",
+    "type": "part-of"
+  },
+  {
+    "fromId": "macartney-embassy",
+    "id": "macartney-to-canton",
+    "toId": "canton-system-1757",
+    "type": "parallel"
+  },
+  {
+    "fromId": "portuguese-macau-settlement",
+    "id": "macau-to-longqing-opening",
+    "toId": "longqing-maritime-opening",
+    "type": "parallel"
+  },
+  {
+    "fromId": "may-thirtieth",
+    "id": "may-thirtieth-to-canton-hongkong-strike",
+    "toId": "canton-hongkong-strike",
+    "type": "consequence"
+  },
+  {
+    "fromId": "mencius-fields",
+    "id": "mencius-benevolent-rule-to-mencius-fields",
+    "toId": "mencius-benevolent-rule",
+    "type": "part-of"
+  },
+  {
+    "fromId": "ming-founded-1368",
+    "id": "ming-founded-to-capture-dadu",
+    "toId": "ming-capture-dadu",
+    "type": "consequence"
+  },
+  {
+    "fromId": "mobei-campaign",
+    "id": "mobei-campaign-to-salt-iron-monopoly",
+    "toId": "salt-iron-monopoly",
+    "type": "consequence"
+  },
+  {
+    "fromId": "mozi-inclusive-care",
+    "id": "mozi-inclusive-care-to-mozi-frugality",
+    "toId": "mozi-frugality",
+    "type": "parallel"
+  },
+  {
+    "fromId": "napier-canton-conflict",
+    "id": "napier-to-canton",
+    "toId": "canton-system-1757",
+    "type": "part-of"
+  },
+  {
+    "fromId": "new-culture",
+    "id": "new-culture-to-pku-women-admission",
+    "toId": "pku-women-admission",
+    "type": "consequence"
+  },
+  {
+    "fromId": "northern-refugees-cross-river",
+    "id": "northern-refugees-cross-river-to-qiao-commandery-system",
+    "toId": "qiao-commandery-system",
+    "type": "consequence"
+  },
+  {
+    "fromId": "northern-wei-equal-field",
+    "id": "northern-wei-equal-field-to-northern-wei-three-elders",
+    "toId": "northern-wei-three-elders",
+    "type": "consequence"
+  },
+  {
+    "fromId": "northern-wei-founded",
+    "id": "northern-wei-founded-to-canhe-slope-battle",
+    "toId": "canhe-slope-battle",
+    "type": "consequence"
+  },
+  {
+    "fromId": "northern-wei-founded",
+    "id": "northern-wei-founded-to-northern-wei-unifies-north",
+    "toId": "northern-wei-unifies-north",
+    "type": "consequence"
+  },
+  {
+    "fromId": "northern-wei-luoyang-capital",
+    "id": "northern-wei-luoyang-capital-to-northern-wei-surname-reform",
+    "toId": "northern-wei-surname-reform",
+    "type": "consequence"
+  },
+  {
+    "fromId": "northern-wei-unifies-north",
+    "id": "northern-wei-unifies-north-to-liangzhou-scholars-east",
+    "toId": "liangzhou-scholars-east",
+    "type": "consequence"
+  },
+  {
+    "fromId": "northern-wei-unifies-north",
+    "id": "northern-wei-unifies-north-to-northern-wei-equal-field",
+    "toId": "northern-wei-equal-field",
+    "type": "consequence"
+  },
+  {
+    "fromId": "northern-zhou-conquers-qi",
+    "id": "northern-zhou-conquers-qi-to-sui-founded-northern-transition",
+    "toId": "sui-founded-northern-transition",
+    "type": "consequence"
+  },
+  {
+    "fromId": "northern-zhou-founded",
+    "id": "northern-zhou-founded-to-northern-zhou-conquers-qi",
+    "toId": "northern-zhou-conquers-qi",
+    "type": "consequence"
+  },
+  {
+    "fromId": "opium-ban-1729",
+    "id": "opium-1800-to-ban",
+    "toId": "opium-ban-1800",
+    "type": "consequence"
+  },
+  {
+    "fromId": "opium-ban-1729",
+    "id": "opium-1838-to-ban",
+    "toId": "opium-crackdown-1838",
+    "type": "consequence"
+  },
+  {
+    "fromId": "palace-memorial-system",
+    "id": "palace-memorial-to-yongzheng",
+    "toId": "yongzheng-fiscal-reforms",
+    "type": "part-of"
+  },
+  {
+    "fromId": "pan-geng-migration",
+    "id": "pan-geng-migration-to-wu-ding-revival",
+    "toId": "wu-ding-revival",
+    "type": "consequence"
+  },
+  {
+    "fromId": "penghu-battle-1683",
+    "id": "penghu-to-taiwan",
+    "toId": "taiwan-zheng-surrender",
+    "type": "part-of"
+  },
+  {
+    "fromId": "province-system",
+    "id": "province-system-to-yuan-yunnan-province",
+    "toId": "yuan-yunnan-province",
+    "type": "parallel"
+  },
+  {
+    "fromId": "qin-commandery-system",
+    "id": "qin-commandery-system-to-han-commandery-kingdoms",
+    "toId": "han-commandery-kingdoms",
+    "type": "consequence"
+  },
+  {
+    "fromId": "qin-conquers-shu",
+    "id": "qin-conquers-shu-to-qin-shu-local-control",
+    "toId": "qin-shu-local-control",
+    "type": "consequence"
+  },
+  {
+    "fromId": "qin-unifies-six-states",
+    "id": "qin-unifies-six-states-to-qin-commandery-system",
+    "toId": "qin-commandery-system",
+    "type": "consequence"
+  },
+  {
+    "fromId": "dream-red-chamber",
+    "id": "red-chamber-to-siku",
+    "toId": "siku-quanshu",
+    "type": "parallel"
+  },
+  {
+    "fromId": "red-cliffs-battle",
+    "id": "red-cliffs-battle-to-liu-bei-takes-yizhou",
+    "toId": "liu-bei-takes-yizhou",
+    "type": "consequence"
+  },
+  {
+    "fromId": "ricci-beijing",
+    "id": "ricci-beijing-to-world-map",
+    "toId": "kunyu-wanguo-quantu",
+    "type": "consequence"
+  },
+  {
+    "fromId": "ricci-zhaoqing-residence",
+    "id": "ricci-zhaoqing-to-beijing",
+    "toId": "ricci-beijing",
+    "type": "consequence"
+  },
+  {
+    "fromId": "salt-iron-monopoly",
+    "id": "salt-iron-monopoly-to-salt-iron-debate",
+    "toId": "salt-iron-debate",
+    "type": "cause"
+  },
+  {
+    "fromId": "science-society",
+    "id": "science-society-to-central-academia",
+    "toId": "central-academia",
+    "type": "contrast"
+  },
+  {
+    "fromId": "second-jinchuan-war",
+    "id": "second-jinchuan-to-war",
+    "toId": "jinchuan-wars",
+    "type": "part-of"
+  },
+  {
+    "fromId": "later-jin-seven-grievances",
+    "id": "seven-grievances-to-sarhu",
+    "toId": "sarhu-battle",
+    "type": "consequence"
+  },
+  {
+    "fromId": "shang-yang-reform",
+    "id": "shang-yang-reform-to-shang-yang-execution",
+    "toId": "shang-yang-execution",
+    "type": "consequence"
+  },
+  {
+    "fromId": "shanhai-pass-battle",
+    "id": "shanhai-pass-to-entry",
+    "toId": "qing-entry-beijing-1644",
+    "type": "part-of"
+  },
+  {
+    "fromId": "shu-han-falls",
+    "id": "shu-han-falls-to-jin-founded",
+    "toId": "jin-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "shu-han-founded",
+    "id": "shu-han-founded-to-baidi-tusuo",
+    "toId": "baidi-tusuo",
+    "type": "consequence"
+  },
+  {
+    "fromId": "shu-han-founded",
+    "id": "shu-han-founded-to-sun-quan-wu-founded",
+    "toId": "sun-quan-wu-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "shu-han-founded",
+    "id": "shu-han-founded-to-yiling-battle",
+    "toId": "yiling-battle",
+    "type": "consequence"
+  },
+  {
+    "fromId": "siku-book-collection",
+    "id": "siku-books-to-siku",
+    "toId": "siku-quanshu",
+    "type": "part-of"
+  },
+  {
+    "fromId": "siku-censorship",
+    "id": "siku-censor-to-siku",
+    "toId": "siku-quanshu",
+    "type": "part-of"
+  },
+  {
+    "fromId": "siku-quanshu",
+    "id": "siku-to-kangqian",
+    "toId": "kangqian",
+    "type": "parallel"
+  },
+  {
+    "fromId": "single-whip-national-push",
+    "id": "single-whip-to-tanding",
+    "toId": "tanding-rumu",
+    "type": "contrast"
+  },
+  {
+    "fromId": "single-whip-national-push",
+    "id": "single-whip-to-zhang-reform",
+    "toId": "zhang-juzheng",
+    "type": "part-of"
+  },
+  {
+    "fromId": "six-towns-revolt",
+    "id": "six-towns-revolt-to-eastern-western-wei-split",
+    "toId": "eastern-western-wei-split",
+    "type": "consequence"
+  },
+  {
+    "fromId": "song-caishi-battle",
+    "id": "song-caishi-battle-to-jin-southern-invasion",
+    "toId": "jin-southern-invasion",
+    "type": "parallel"
+  },
+  {
+    "fromId": "song-liao-chanzhou-campaign",
+    "id": "song-chanyuan-part-song-liao-chanzhou-campaign",
+    "toId": "chanyuan",
+    "type": "part-of"
+  },
+  {
+    "fromId": "song-civil-military-separation",
+    "id": "song-civil-military-separation-to-chenqiao",
+    "toId": "chenqiao",
+    "type": "consequence"
+  },
+  {
+    "fromId": "song-diaoyu-defense",
+    "id": "song-diaoyu-defense-to-song-diaoyu-fortress",
+    "toId": "song-diaoyu-fortress",
+    "type": "consequence"
+  },
+  {
+    "fromId": "song-ehu-debate",
+    "id": "song-ehu-debate-to-song-zhu-xi-commentaries",
+    "toId": "song-zhu-xi-commentaries",
+    "type": "cause"
+  },
+  {
+    "fromId": "song-huangtiandang",
+    "id": "song-huangtiandang-to-jingkang",
+    "toId": "jingkang",
+    "type": "consequence"
+  },
+  {
+    "fromId": "song-jiaozi-official",
+    "id": "song-jiaozi-official-to-song-quanzhou-maritime-office",
+    "toId": "song-quanzhou-maritime-office",
+    "type": "parallel"
+  },
+  {
+    "fromId": "song-jin-sea-alliance",
+    "id": "song-jin-sea-alliance-to-jurchen-jin-founded",
+    "toId": "jurchen-jin-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "song-kaixi-expedition",
+    "id": "song-kaixi-expedition-to-song-jiading-peace",
+    "toId": "song-jiading-peace",
+    "type": "cause"
+  },
+  {
+    "fromId": "song-moving-type",
+    "id": "song-moving-type-to-song-press-printing",
+    "toId": "song-press-printing",
+    "type": "parallel"
+  },
+  {
+    "fromId": "song-northern-han-fall",
+    "id": "song-northern-han-fall-to-song-gaoliang-river",
+    "toId": "song-gaoliang-river",
+    "type": "cause"
+  },
+  {
+    "fromId": "song-local-academies",
+    "id": "song-qingli-part-song-local-academies",
+    "toId": "song-qingli-reforms",
+    "type": "part-of"
+  },
+  {
+    "fromId": "song-qingli-reforms",
+    "id": "song-qingli-reforms-to-wang-anshi",
+    "toId": "wang-anshi",
+    "type": "cause"
+  },
+  {
+    "fromId": "song-baojia",
+    "id": "song-reform-part-song-baojia",
+    "toId": "wang-anshi",
+    "type": "part-of"
+  },
+  {
+    "fromId": "song-ever-normal-granaries",
+    "id": "song-reform-part-song-ever-normal-granaries",
+    "toId": "wang-anshi",
+    "type": "part-of"
+  },
+  {
+    "fromId": "song-green-sprouts",
+    "id": "song-reform-part-song-green-sprouts",
+    "toId": "wang-anshi",
+    "type": "part-of"
+  },
+  {
+    "fromId": "song-service-exemption",
+    "id": "song-reform-part-song-service-exemption",
+    "toId": "wang-anshi",
+    "type": "part-of"
+  },
+  {
+    "fromId": "song-shaoxing-peace",
+    "id": "song-shaoxing-peace-to-yue-fei",
+    "toId": "yue-fei",
+    "type": "parallel"
+  },
+  {
+    "fromId": "song-later-shu-fall",
+    "id": "song-unification-part-song-later-shu-fall",
+    "toId": "song-northern-unification",
+    "type": "part-of"
+  },
+  {
+    "fromId": "song-nantang-fall",
+    "id": "song-unification-part-song-nantang-fall",
+    "toId": "song-northern-unification",
+    "type": "part-of"
+  },
+  {
+    "fromId": "song-northern-han-fall",
+    "id": "song-unification-part-song-northern-han-fall",
+    "toId": "song-northern-unification",
+    "type": "part-of"
+  },
+  {
+    "fromId": "song-wuyue-submission",
+    "id": "song-unification-part-song-wuyue-submission",
+    "toId": "song-northern-unification",
+    "type": "part-of"
+  },
+  {
+    "fromId": "song-wutai-poetry",
+    "id": "song-wutai-poetry-to-wang-anshi",
+    "toId": "wang-anshi",
+    "type": "parallel"
+  },
+  {
+    "fromId": "song-xiangyang-fall",
+    "id": "song-xiangyang-part-song-xiangyang-fall",
+    "toId": "song-xiangyang-siege",
+    "type": "part-of"
+  },
+  {
+    "fromId": "song-yamen-battle",
+    "id": "song-yamen-battle-to-song-linan-surrender",
+    "toId": "song-linan-surrender",
+    "type": "consequence"
+  },
+  {
+    "fromId": "song-yancheng-battle",
+    "id": "song-yue-part-song-yancheng-battle",
+    "toId": "yue-fei",
+    "type": "part-of"
+  },
+  {
+    "fromId": "song-yue-fei-xiangyang",
+    "id": "song-yue-part-song-yue-fei-xiangyang",
+    "toId": "yue-fei",
+    "type": "part-of"
+  },
+  {
+    "fromId": "song-zhu-xi-commentaries",
+    "id": "song-zhu-xi-commentaries-to-song-zhu-xi-white-deer",
+    "toId": "song-zhu-xi-white-deer",
+    "type": "parallel"
+  },
+  {
+    "fromId": "song-zi-zhi-tong-jian",
+    "id": "song-zi-zhi-tong-jian-to-song-yuanyou-reversal",
+    "toId": "song-yuanyou-reversal",
+    "type": "parallel"
+  },
+  {
+    "fromId": "southern-song-founded",
+    "id": "southern-song-founded-to-jingkang",
+    "toId": "jingkang",
+    "type": "consequence"
+  },
+  {
+    "fromId": "southern-tang-founded",
+    "id": "southern-tang-founded-to-southern-tang-jiangnan-economy",
+    "toId": "southern-tang-jiangnan-economy",
+    "type": "consequence"
+  },
+  {
+    "fromId": "sui-chen-campaign-deployment",
+    "id": "sui-chen-campaign-deployment-to-sui-conquers-chen",
+    "toId": "sui-conquers-chen",
+    "type": "consequence"
+  },
+  {
+    "fromId": "sui-conquers-chen",
+    "id": "sui-conquers-chen-to-chen-hou-zhu-rule",
+    "toId": "chen-hou-zhu-rule",
+    "type": "contrast"
+  },
+  {
+    "fromId": "sui-founded-northern-transition",
+    "id": "sui-founded-northern-transition-to-sui-conquers-chen",
+    "toId": "sui-conquers-chen",
+    "type": "consequence"
+  },
+  {
+    "fromId": "sui-jiangnan-canal",
+    "id": "sui-jiangnan-canal-part-of-sui-grand-canal",
+    "toId": "sui-grand-canal",
+    "type": "part-of"
+  },
+  {
+    "fromId": "sui-jiangnan-revolt",
+    "id": "sui-jiangnan-revolt-to-sui-jiangnan-governance",
+    "toId": "sui-jiangnan-governance",
+    "type": "parallel"
+  },
+  {
+    "fromId": "sui-kaihuang-treasury",
+    "id": "sui-kaihuang-treasury-to-sui-grand-canal",
+    "toId": "sui-grand-canal",
+    "type": "contrast"
+  },
+  {
+    "fromId": "sui-korean-campaign",
+    "id": "sui-korean-campaign-to-sui-rebellions",
+    "toId": "sui-rebellions",
+    "type": "cause"
+  },
+  {
+    "fromId": "sui-rebellions",
+    "id": "sui-rebellions-to-tang-founded",
+    "toId": "tang-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "sui-salsu-retreat",
+    "id": "sui-salsu-retreat-part-of-sui-korean-campaign",
+    "toId": "sui-korean-campaign",
+    "type": "part-of"
+  },
+  {
+    "fromId": "sui-tongji-canal",
+    "id": "sui-tongji-canal-part-of-sui-grand-canal",
+    "toId": "sui-grand-canal",
+    "type": "part-of"
+  },
+  {
+    "fromId": "sui-yongji-canal",
+    "id": "sui-yongji-canal-part-of-sui-grand-canal",
+    "toId": "sui-grand-canal",
+    "type": "part-of"
+  },
+  {
+    "fromId": "sun-quan-wu-founded",
+    "id": "sun-quan-wu-founded-to-wu-jianye-capital",
+    "toId": "wu-jianye-capital",
+    "type": "consequence"
+  },
+  {
+    "fromId": "taichu-calendar",
+    "id": "taichu-calendar-to-sima-qian-history",
+    "toId": "sima-qian-history",
+    "type": "parallel"
+  },
+  {
+    "fromId": "zheng-taiwan-expedition",
+    "id": "taiwan-expedition-to-southern-end",
+    "toId": "southern-ming-resistance",
+    "type": "part-of"
+  },
+  {
+    "fromId": "taiwan-zheng-surrender",
+    "id": "taiwan-to-kangqian",
+    "toId": "kangqian",
+    "type": "parallel"
+  },
+  {
+    "fromId": "tanding-rumu",
+    "id": "tanding-to-yongzheng",
+    "toId": "yongzheng-fiscal-reforms",
+    "type": "part-of"
+  },
+  {
+    "fromId": "tang-buddhist-translation",
+    "id": "tang-buddhist-translation-to-tang-zhenguan-geography",
+    "toId": "tang-zhenguan-geography",
+    "type": "consequence"
+  },
+  {
+    "fromId": "tang-changan-foreign-merchants",
+    "id": "tang-changan-foreign-merchants-part-of-tang-changan-hubs",
+    "toId": "tang-changan-hubs",
+    "type": "part-of"
+  },
+  {
+    "fromId": "tang-changan-recovered",
+    "id": "tang-changan-recovered-part-of-anshi",
+    "toId": "anshi",
+    "type": "part-of"
+  },
+  {
+    "fromId": "tang-founded",
+    "id": "tang-founded-to-tang-xuanwu-gate",
+    "toId": "tang-xuanwu-gate",
+    "type": "consequence"
+  },
+  {
+    "fromId": "tang-han-yu-classical",
+    "id": "tang-han-yu-classical-to-tang-bai-juyi-new-yuefu",
+    "toId": "tang-bai-juyi-new-yuefu",
+    "type": "parallel"
+  },
+  {
+    "fromId": "tang-hedong-hebei-jiedushi",
+    "id": "tang-hedong-hebei-jiedushi-to-two-tax",
+    "toId": "two-tax",
+    "type": "parallel"
+  },
+  {
+    "fromId": "tang-huaixi-campaign",
+    "id": "tang-huaixi-campaign-part-of-tang-yuanhe-reconquest",
+    "toId": "tang-yuanhe-reconquest",
+    "type": "part-of"
+  },
+  {
+    "fromId": "tang-huang-chao-changan",
+    "id": "tang-huang-chao-changan-part-of-huang-chao",
+    "toId": "huang-chao",
+    "type": "part-of"
+  },
+  {
+    "fromId": "tang-huang-chao-guangzhou",
+    "id": "tang-huang-chao-guangzhou-part-of-huang-chao",
+    "toId": "huang-chao",
+    "type": "part-of"
+  },
+  {
+    "fromId": "tang-huichang-persecution",
+    "id": "tang-huichang-persecution-to-tang-niuli-faction",
+    "toId": "tang-niuli-faction",
+    "type": "parallel"
+  },
+  {
+    "fromId": "tang-li-bai-poetry",
+    "id": "tang-li-bai-poetry-to-tang-wang-wei-painting",
+    "toId": "tang-wang-wei-painting",
+    "type": "parallel"
+  },
+  {
+    "fromId": "tang-shi-siming-rebellion",
+    "id": "tang-shi-siming-rebellion-part-of-anshi",
+    "toId": "anshi",
+    "type": "part-of"
+  },
+  {
+    "fromId": "tang-wu-zhou-end",
+    "id": "tang-wu-zhou-end-to-tang-zhongzong-return",
+    "toId": "tang-zhongzong-return",
+    "type": "consequence"
+  },
+  {
+    "fromId": "tang-wu-zhou-founded",
+    "id": "tang-wu-zhou-founded-to-tang-wu-zhou-end",
+    "toId": "tang-wu-zhou-end",
+    "type": "consequence"
+  },
+  {
+    "fromId": "tang-xuanwu-gate",
+    "id": "tang-xuanwu-gate-to-zhenguan",
+    "toId": "zhenguan",
+    "type": "consequence"
+  },
+  {
+    "fromId": "tang-xuanzong-accession",
+    "id": "tang-xuanzong-accession-to-kaiyuan",
+    "toId": "kaiyuan",
+    "type": "consequence"
+  },
+  {
+    "fromId": "tang-yonghui-code",
+    "id": "tang-yonghui-code-part-of-tang-zhenguan-law",
+    "toId": "tang-zhenguan-law",
+    "type": "part-of"
+  },
+  {
+    "fromId": "tang-yongzhen-reform",
+    "id": "tang-yongzhen-reform-to-tang-liu-zongyuan-thought",
+    "toId": "tang-liu-zongyuan-thought",
+    "type": "consequence"
+  },
+  {
+    "fromId": "tang-zhu-wen-defects",
+    "id": "tang-zhu-wen-defects-to-later-liang-founded",
+    "toId": "later-liang-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "ming-three-commissions",
+    "id": "three-commissions-to-hu-weiyong",
+    "toId": "hu-weiyong-chancellor-abolished",
+    "type": "parallel"
+  },
+  {
+    "fromId": "three-feudatories-revolt",
+    "id": "three-feudatories-to-kangqian",
+    "toId": "kangqian",
+    "type": "parallel"
+  },
+  {
+    "fromId": "three-guards-rebellion",
+    "id": "three-guards-rebellion-to-chengzhou-construction",
+    "toId": "chengzhou-construction",
+    "type": "consequence"
+  },
+  {
+    "fromId": "three-jin-recognized",
+    "id": "three-jin-recognized-to-jin-final-partition",
+    "toId": "jin-final-partition",
+    "type": "consequence"
+  },
+  {
+    "fromId": "qing-tibet-expedition",
+    "id": "tibet-1751-to-expedition",
+    "toId": "tibet-regulations-1751",
+    "type": "consequence"
+  },
+  {
+    "fromId": "tumu",
+    "id": "tumu-to-beijing-defense",
+    "toId": "beijing-defense-1449",
+    "type": "consequence"
+  },
+  {
+    "fromId": "two-tax",
+    "id": "two-tax-to-single-whip",
+    "toId": "single-whip-national-push",
+    "type": "contrast"
+  },
+  {
+    "fromId": "ulan-butung-battle",
+    "id": "ulan-to-dzungar",
+    "toId": "qing-dzungar-war",
+    "type": "part-of"
+  },
+  {
+    "fromId": "wang-mang-fall",
+    "id": "wang-mang-fall-to-eastern-han-founded",
+    "toId": "eastern-han-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "wang-mang-regency",
+    "id": "wang-mang-regency-to-xin-dynasty-founded",
+    "toId": "xin-dynasty-founded",
+    "type": "consequence"
+  },
+  {
+    "fromId": "wangjiangjing-battle",
+    "id": "wangjiangjing-to-qi-defense",
+    "toId": "qi-jiguang-coastal-defense",
+    "type": "parallel"
+  },
+  {
+    "fromId": "wei-northern-expeditions",
+    "id": "wei-northern-expeditions-to-wuzhangyuan-stalemate",
+    "toId": "wuzhangyuan-stalemate",
+    "type": "consequence"
+  },
+  {
+    "fromId": "western-regions-protectorate",
+    "id": "western-regions-protectorate-to-ban-chao-western-regions",
+    "toId": "ban-chao-western-regions",
+    "type": "contrast"
+  },
+  {
+    "fromId": "western-wei-fubing",
+    "id": "western-wei-fubing-to-northern-zhou-conquers-qi",
+    "toId": "northern-zhou-conquers-qi",
+    "type": "consequence"
+  },
+  {
+    "fromId": "western-xia-fall",
+    "id": "western-xia-fall-to-mongol-rise",
+    "toId": "mongol-rise",
+    "type": "consequence"
+  },
+  {
+    "fromId": "western-xia-founded",
+    "id": "western-xia-founded-to-song-xia-peace",
+    "toId": "song-xia-peace",
+    "type": "cause"
+  },
+  {
+    "fromId": "white-lotus-end-1804",
+    "id": "white-lotus-end-to-war",
+    "toId": "white-lotus-rebellion",
+    "type": "part-of"
+  },
+  {
+    "fromId": "white-lotus-fortified-villages",
+    "id": "white-lotus-forts-to-war",
+    "toId": "white-lotus-rebellion",
+    "type": "part-of"
+  },
+  {
+    "fromId": "wu-sangui-proclaims-emperor",
+    "id": "wu-emperor-to-three-feudatories",
+    "toId": "three-feudatories-revolt",
+    "type": "part-of"
+  },
+  {
+    "fromId": "wu-yue-fujiao",
+    "id": "wu-yue-fujiao-to-yue-destroys-wu",
+    "toId": "yue-destroys-wu",
+    "type": "consequence"
+  },
+  {
+    "fromId": "wuqi-west-river",
+    "id": "wuqi-west-river-to-chu-wuqi-reforms",
+    "toId": "chu-wuqi-reforms",
+    "type": "consequence"
+  },
+  {
+    "fromId": "xin-dynasty-founded",
+    "id": "xin-dynasty-founded-to-wang-mang-imperial-seal",
+    "toId": "wang-mang-imperial-seal",
+    "type": "consequence"
+  },
+  {
+    "fromId": "xunzi-human-nature",
+    "id": "xunzi-learning-to-xunzi-human-nature",
+    "toId": "xunzi-learning",
+    "type": "part-of"
+  },
+  {
+    "fromId": "yellow-turban-uprising",
+    "id": "yellow-turban-uprising-to-western-garden-army",
+    "toId": "western-garden-army",
+    "type": "consequence"
+  },
+  {
+    "fromId": "yongjia-disaster",
+    "id": "yongjia-disaster-to-chang-an-falls-316",
+    "toId": "chang-an-falls-316",
+    "type": "consequence"
+  },
+  {
+    "fromId": "yongjia-disaster",
+    "id": "yongjia-disaster-to-northern-refugees-cross-river",
+    "toId": "northern-refugees-cross-river",
+    "type": "consequence"
+  },
+  {
+    "fromId": "yongzheng-fiscal-reforms",
+    "id": "yongzheng-to-kangqian",
+    "toId": "kangqian",
+    "type": "parallel"
+  },
+  {
+    "fromId": "yuan-examination-restored",
+    "id": "yuan-examination-restored-to-yuan-examination-first",
+    "toId": "yuan-examination-first",
+    "type": "consequence"
+  },
+  {
+    "fromId": "yuan-founded",
+    "id": "yuan-founded-to-yuan-dadu-capital",
+    "toId": "yuan-dadu-capital",
+    "type": "consequence"
+  },
+  {
+    "fromId": "yuan-jialu-river",
+    "id": "yuan-jialu-river-to-yuan-red-turban-uprising",
+    "toId": "yuan-red-turban-uprising",
+    "type": "parallel"
+  },
+  {
+    "fromId": "yuan-red-turban-uprising",
+    "id": "yuan-red-turban-uprising-to-yuan-dadu-fall",
+    "toId": "yuan-dadu-fall",
+    "type": "consequence"
+  },
+  {
+    "fromId": "yuan-sea-transport",
+    "id": "yuan-sea-transport-to-yuan-sea-transport-office",
+    "toId": "yuan-sea-transport-office",
+    "type": "consequence"
+  },
+  {
+    "fromId": "yuan-sea-transport",
+    "id": "yuan-sea-transport-to-yuan-zhizheng-sea-grain-crisis",
+    "toId": "yuan-zhizheng-sea-grain-crisis",
+    "type": "contrast"
+  },
+  {
+    "fromId": "yuan-shoushi-calendar",
+    "id": "yuan-shoushi-calendar-to-yuan-grand-canal-tonghui",
+    "toId": "yuan-grand-canal-tonghui",
+    "type": "parallel"
+  },
+  {
+    "fromId": "yuan-siwa-observations",
+    "id": "yuan-siwa-observations-to-yuan-shoushi-calendar",
+    "toId": "yuan-shoushi-calendar",
+    "type": "cause"
+  },
+  {
+    "fromId": "yuan-south-slope-coup",
+    "id": "yuan-south-slope-coup-to-yuan-two-capitals-war",
+    "toId": "yuan-two-capitals-war",
+    "type": "consequence"
+  },
+  {
+    "fromId": "yuan-two-capitals-war",
+    "id": "yuan-two-capitals-war-to-yuan-shundi-accession",
+    "toId": "yuan-shundi-accession",
+    "type": "consequence"
+  },
+  {
+    "fromId": "yuan-dadu-fall",
+    "id": "yuan-withdrawal-to-ming-occupation",
+    "toId": "ming-capture-dadu",
+    "type": "consequence"
+  },
+  {
+    "fromId": "yuan-xuanzheng-institute",
+    "id": "yuan-xuanzheng-institute-to-yuan-xuanzheng-commissioners-1323",
+    "toId": "yuan-xuanzheng-commissioners-1323",
+    "type": "consequence"
+  },
+  {
+    "fromId": "yuan-yan-you-land-survey",
+    "id": "yuan-yan-you-land-survey-to-yuan-land-survey-reversal",
+    "toId": "yuan-land-survey-reversal",
+    "type": "consequence"
+  },
+  {
+    "fromId": "yuan-zhiyuan-paper-money",
+    "id": "yuan-zhiyuan-paper-money-to-yuan-zhida-silver-note",
+    "toId": "yuan-zhida-silver-note",
+    "type": "contrast"
+  },
+  {
+    "fromId": "yuan-zhizheng-sea-grain-crisis",
+    "id": "yuan-zhizheng-sea-grain-crisis-to-yuan-dadu-fall",
+    "toId": "yuan-dadu-fall",
+    "type": "cause"
+  },
+  {
+    "fromId": "qing-conquest-yunnan",
+    "id": "yunnan-to-southern-end",
+    "toId": "southern-ming-resistance",
+    "type": "part-of"
+  },
+  {
+    "fromId": "zhang-heng-seismoscope",
+    "id": "zhang-heng-seismoscope-to-seismoscope-longxi-signal",
+    "toId": "seismoscope-longxi-signal",
+    "type": "consequence"
+  },
+  {
+    "fromId": "zhang-qian-first-mission",
+    "id": "zhang-qian-first-mission-to-western-regions-protectorate",
+    "toId": "western-regions-protectorate",
+    "type": "consequence"
+  },
+  {
+    "fromId": "zhang-juzheng",
+    "id": "zhang-reform-to-death",
+    "toId": "zhang-juzheng-death",
+    "type": "consequence"
+  },
+  {
+    "fromId": "zhao-cavalry-reform",
+    "id": "zhao-cavalry-reform-to-changping-battle",
+    "toId": "changping-battle",
+    "type": "contrast"
+  },
+  {
+    "fromId": "zhao-jinyang-siege",
+    "id": "zhao-jinyang-siege-to-three-jin-recognized",
+    "toId": "three-jin-recognized",
+    "type": "consequence"
+  },
+  {
+    "fromId": "zhou-conquest-shang",
+    "id": "zhou-conquest-shang-to-three-guards-rebellion",
+    "toId": "three-guards-rebellion",
+    "type": "consequence"
+  },
+  {
+    "fromId": "zhuangzi-skill-knowledge",
+    "id": "zhuangzi-freedom-to-zhuangzi-skill-knowledge",
+    "toId": "zhuangzi-freedom",
+    "type": "part-of"
+  },
+  {
+    "fromId": "zhuge-chushi-biao",
+    "id": "zhuge-chushi-biao-to-jieting-battle",
+    "toId": "jieting-battle",
+    "type": "consequence"
+  },
+  {
+    "fromId": "zichan-zheng-reforms",
+    "id": "zichan-zheng-reforms-to-zichan-bronze-law",
+    "toId": "zichan-bronze-law",
+    "type": "consequence"
+  }
+]

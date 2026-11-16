@@ -8,7 +8,19 @@ birthYear: 1654
 deathYear: 1722
 roleIds: []
 eventIds:
+  - imperial-atlas-survey
+  - jao-modo-battle
   - kangqian
+  - kangxi-death-yongzheng-accession
+  - kangxi-personal-rule
+  - nerchinsk-treaty
+  - oboi-arrest
+  - qing-dzungar-war
+  - qing-tibet-expedition
+  - shunzhi-death
+  - taiwan-zheng-surrender
+  - three-feudatories-revolt
+  - ulan-butung-battle
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

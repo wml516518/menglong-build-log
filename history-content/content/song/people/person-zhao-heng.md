@@ -9,6 +9,7 @@ deathYear: 1022
 roleIds: []
 eventIds:
   - chanyuan
+  - song-liao-chanzhou-campaign
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

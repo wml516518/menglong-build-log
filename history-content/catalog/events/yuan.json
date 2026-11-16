@@ -1,0 +1,3101 @@
+[
+  {
+    "id": "yuan-central-secretariat",
+    "title": "罢尚书省，政务归中书",
+    "aliases": [],
+    "startYear": 1271,
+    "endYear": 1271,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "至元八年，朝廷罢尚书省，政务重新集中于中书省。中书省统领六部并处理官员任命、财政文书与地方行省奏报，成为元朝行政中枢。尚书省后来曾数次复置又裁撤，这次调整说明中央机构仍在试验，并非一经定制便从此不变；皇帝和宗王的直接决策也始终影响中书省运作。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷八十五《百官志一》中书省，至元八年罢尚书省"
+      }
+    ],
+    "color": "#7aafbd",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.7,
+        -0.9
+      ]
+    }
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics",
+      "ethnicity"
+    ],
+    "childIds": [],
+    "color": "#8ca8ba",
+    "endYear": 1279,
+    "eraId": "yuan",
+    "id": "yuan-founded",
+    "influence": 5,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.5,
+        -0.4
+      ]
+    },
+    "parentId": null,
+    "period": "元代",
+    "personIds": [
+      "person-kublai",
+      "person-liu-bingzhong"
+    ],
+    "placeIds": [
+      "beijing",
+      "yashan"
+    ],
+    "polityIds": [
+      "mongol-empire",
+      "southern-song",
+      "yuan"
+    ],
+    "relationIds": [
+      "yuan-founded-to-yuan-dadu-capital"
+    ],
+    "startYear": 1271,
+    "summary": "忽必烈定国号为元，新的王朝秩序形成。忽必烈采用“大元”国号，并以大都为政治中心。元朝随后完成对南宋的战争，首次由北方草原政权统治整个传统中原地区。多元人口、广域交通与不同制度传统在同一帝国中并存。",
+    "themeIds": [],
+    "title": "元朝建立",
+    "yearPrecision": "range",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷七《世祖纪四》至元八年定国号大元"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "《中国历史（三）》“元朝”条，至元八年定国号"
+      },
+      {
+        "sourceId": "songshi-zhonghua-1977",
+        "locator": "《宋史》卷四十七《瀛国公·二王附》帝昺，祥兴二年崖山战、帝昺入海段"
+      }
+    ]
+  },
+  {
+    "id": "yuan-dadu-capital",
+    "title": "大都新城营建",
+    "aliases": [],
+    "startYear": 1272,
+    "endYear": 1276,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "core",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "忽必烈将中都改称大都，围绕新都的宫城、皇城和街道持续施工。都城接近草原与华北交通带，又可凭借运河和海路接收江南粮食。规划并非在改名当年完工，旧城与新城的功能曾并存，显示元初政治中心的形成是连续的工程和行政过程。",
+    "personIds": [
+      "person-kublai",
+      "person-liu-bingzhong"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-founded-to-yuan-dadu-capital"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷七《世祖纪四》至元九年改中都为大都；卷五十八《地理志一》大都路"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第八卷《中古时代·元时期》上册《第二节 都城、两都制度》大都新城营建段"
+      }
+    ],
+    "color": "#7aafbd",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.05,
+        -0.9
+      ]
+    }
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "childIds": [],
+    "color": "#7599b2",
+    "endYear": 1274,
+    "eraId": "yuan",
+    "id": "province-system",
+    "influence": 4,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.8,
+        1.1
+      ]
+    },
+    "parentId": null,
+    "period": "元代",
+    "personIds": [
+      "person-kublai",
+      "person-sayyid-ajall"
+    ],
+    "placeIds": [
+      "kunming"
+    ],
+    "polityIds": [
+      "yuan"
+    ],
+    "relationIds": [
+      "province-system-to-yuan-yunnan-province"
+    ],
+    "startYear": 1274,
+    "summary": "广域治理推动地方行政体系重新组织。至元十一年，朝廷设置云南行中书省，命赛典赤赡思丁主持军政事务，治所在中庆路。行省作为中书省派出机构，在边疆统筹官员、赋税和军务，但仍需与宗王及地方首领协商。云南这一有明确纪年的节点，不能据此把全国行省误定为同一年建立。",
+    "themeIds": [],
+    "title": "云南行省设置",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十一《百官志七》云南行省至元十一年始置、治中庆路；卷一百二十五《赛典赤赡思丁传》同年奉命行省云南"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "《中国历史（三）》“行中书省”条，云南行省与地方制度部分"
+      }
+    ]
+  },
+  {
+    "id": "yuan-japan-first-expedition",
+    "title": "元军首次渡海攻日本",
+    "aliases": [],
+    "startYear": 1274,
+    "endYear": 1274,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "goryeo",
+      "kamakura-japan",
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "元廷命忻都等率军经高丽渡海攻日本，军队在九州北部登陆后未能建立持续据点，随即撤回。征讨依赖高丽造船、征夫和海上补给，海况与战斗损失交织；不能用后世单一的风暴故事解释整个行动，也不能把两次远征合为一次。",
+    "personIds": [],
+    "placeIds": [
+      "kyushu"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷八《世祖纪五》至元十一年征日本；卷二百八《日本传》"
+      }
+    ],
+    "color": "#d7a084",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        -0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-yunnan-province",
+    "title": "赛典赤治理云南",
+    "aliases": [],
+    "startYear": 1274,
+    "endYear": 1279,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "赛典赤奉命主持云南行省事务，调整赋役、修治道路并兴办学校，在原大理辖区与各地部族之间建立新的官府联系。其措施需要借助地方首领和既有社会网络，不能理解为一纸诏令便完成全境同质化治理；这段任职也是行省制度在边疆实践的具体例证。",
+    "personIds": [
+      "person-sayyid-ajall"
+    ],
+    "placeIds": [
+      "kunming"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "province-system-to-yuan-yunnan-province"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷一百二十五《赛典赤赡思丁传》云南行省任事及兴学校"
+      }
+    ],
+    "color": "#caa89a",
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        -0.35,
+        -0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-southern-local-administration",
+    "title": "江南州县纳入元朝行政",
+    "aliases": [],
+    "startYear": 1276,
+    "endYear": 1280,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "southern-song",
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "元军进入临安后，朝廷逐步接收江南路府州县，任命地方官并处理旧宋户籍、赋税与仓储。军事上的占领和行政上的稳定相隔数年，地方官与旧有士人、商人之间必须重新协商。此条记录接收治理的过程，区别于宋代目录中的临安失守和崖山战役。",
+    "personIds": [],
+    "placeIds": [
+      "hangzhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九《世祖纪六》至元十三年临安降后江南官署设置；卷六十二《地理志五》江浙"
+      }
+    ],
+    "color": "#7aafbd",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.35,
+        -0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-quanzhou-maritime-control",
+    "title": "泉州海贸转入元朝管辖",
+    "aliases": [],
+    "startYear": 1276,
+    "endYear": 1281,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "southern-song",
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "泉州原有港口、商人和市舶网络在宋元政权更替中继续活动，元廷通过地方官与港口税务接管海上贸易。蒲寿庚等人的政治选择影响交接，但港口经济并未因一次降附就自动恢复平稳；海商的利益、货物航线和地方秩序仍需分别观察。",
+    "personIds": [],
+    "placeIds": [
+      "quanzhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九《世祖纪六》至元十三年泉州降；卷九十四《食货志二》市舶"
+      }
+    ],
+    "color": "#b9bc77",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.7,
+        -0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-siwa-observations",
+    "title": "四海测验与新历观测",
+    "aliases": [],
+    "startYear": 1279,
+    "endYear": 1280,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "郭守敬与太史院人员在多地观测日影和星象，以不同纬度所得数据校正旧历。观测需要仪器、人员和驿路配合，所得数值进入后来授时历的编算。它是制历之前独立的测量工作，不能把各地观测点误写成同一座天文台，也不宜用现代精度概念替代当时历法目标。",
+    "personIds": [
+      "person-guo-shoujing"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-siwa-observations-to-yuan-shoushi-calendar"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷四十八《天文志一》四海测验；卷一百六十四《郭守敬传》"
+      }
+    ],
+    "color": "#83bbc4",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        1.05,
+        -0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-shoushi-calendar",
+    "title": "授时历颁行",
+    "aliases": [],
+    "startYear": 1280,
+    "endYear": 1281,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "core",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "许衡、郭守敬等奉命整理观测成果与推步方法，至元十七年新历告成，次年正式施用。授时历改善节气与朔望计算，服务朝廷祭祀和农业时令；其制定不是郭守敬一人完成，也不能把后世沿用的所有历法改革都归于这一次颁历。",
+    "personIds": [
+      "person-guo-shoujing"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-shoushi-calendar-to-yuan-grand-canal-tonghui",
+      "yuan-siwa-observations-to-yuan-shoushi-calendar"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷五十二《历志一》至元十七年历成、十八年颁用；卷一百六十四《郭守敬传》"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "《中国历史（三）》“授时历”条"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第八卷《中古时代·元时期》下册《第四节 授时历》至元十八年颁历段"
+      }
+    ],
+    "color": "#83bbc4",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -1.05,
+        -0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-buddhist-daoist-dispute",
+    "title": "元廷诏焚道藏伪妄经文",
+    "aliases": [],
+    "startYear": 1281,
+    "endYear": 1281,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "至元十八年二月，忽必烈诏谕道教真人祁志诚等焚毁被朝廷认定为伪妄的道藏经文及印板。这道命令延续此前佛教与道教之间的经典真伪争执，但本纪记录的是针对特定文本的处置。它不等于元廷废除道教，寺观、道士和地方信众仍存在；官方裁断也不能代表各地宗教关系均按同一方式变化。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷十一《世祖纪八》至元十八年二月诏焚道藏伪妄经文及板"
+      }
+    ],
+    "color": "#cfb08d",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        -0.35,
+        -0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-second-japan-expedition",
+    "title": "元军再次攻日本",
+    "aliases": [],
+    "startYear": 1281,
+    "endYear": 1281,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "goryeo",
+      "kamakura-japan",
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "元廷分别调集江南与高丽军船，再度向日本九州进攻，两路会合与粮水补给都面临困难。海上风暴重创船队，军队撤退，朝廷此后仍有再征议论却未实行同等规模的战役。此役与1274年的远征在征发地区、兵力组织和结局上应当分开。",
+    "personIds": [],
+    "placeIds": [
+      "kyushu"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷十一《世祖纪八》至元十八年征日本；卷二百八《日本传》"
+      }
+    ],
+    "color": "#d7a084",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.7,
+        -0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-sea-transport",
+    "title": "江南粮食海运北上",
+    "aliases": [],
+    "startYear": 1282,
+    "endYear": 1284,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "core",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "元廷试用江南海船将粮食沿海北运，朱清、张瑄等熟悉航线的海商参与组织船队。大都周边的粮食供应因此增加一条水路，但海难、运费和沿岸仓储始终限制效率。海运与运河并行，不是后者的简单替代，也不是一次试航便形成稳定制度。",
+    "personIds": [
+      "person-zhang-xuan"
+    ],
+    "placeIds": [
+      "beijing",
+      "taicang"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-sea-transport-to-yuan-sea-transport-office",
+      "yuan-sea-transport-to-yuan-zhizheng-sea-grain-crisis"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十三《食货志一》海运，至元十九年朱清、张瑄海漕"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "《中国历史（三）》“元代海运”条，至元海漕初创段"
+      }
+    ],
+    "color": "#b9bc77",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        -0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-station-households-exempt-1283",
+    "title": "至元二十年免站户杂役",
+    "aliases": [],
+    "startYear": 1283,
+    "endYear": 1283,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "至元二十年，朝廷下令免除站户承担的和顾、和买及其他杂泛差役，同时仍要求他们自备驿站所需物资。站户负责马匹、车辆和沿途接待，负担过重容易逃亡，影响诏令与军情传递。免役是对驿传劳力的调节，不等于站户从此无需供给，也不能把各地水陆驿站视为同一种制度。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷一百零一《兵志四》站赤，至元二十年免站户杂泛差役"
+      }
+    ],
+    "color": "#7aafbd",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "yuan-sea-transport-office",
+    "title": "海运粮船管理制度形成",
+    "aliases": [],
+    "startYear": 1283,
+    "endYear": 1292,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "海运从试办转为按年调运后，官府登记粮额、船只和航线，并把江南征收与北方仓储接起来。朝廷利用海商经验，却同时要监督押运和核算损耗；不同年份的运量起伏很大。管理机构的形成与1282年的首批海运是相连而不相同的过程。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-sea-transport-to-yuan-sea-transport-office"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十三《食货志一》海运，至元二十年后岁运数与运粮官"
+      }
+    ],
+    "color": "#7aafbd",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.35,
+        -0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-annam-campaign",
+    "title": "元朝对安南多次用兵",
+    "aliases": [],
+    "startYear": 1285,
+    "endYear": 1288,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "tran-dai-viet",
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "元军数度进入安南，试图迫使陈朝接受宗主关系和军事要求，陆路与海路军队都受到补给、气候和抵抗影响。撤军后双方仍维持使节往来，战争没有使安南成为元朝普通行省。各次战役由不同将领指挥，不能压缩成一场单一胜败。",
+    "personIds": [],
+    "placeIds": [
+      "thang-long"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷二百九《安南传》至元二十二年至二十五年用兵"
+      }
+    ],
+    "color": "#d7a084",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.7,
+        -0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-guozijian-quota-1287",
+    "title": "国子监定生员额",
+    "aliases": [],
+    "startYear": 1287,
+    "endYear": 1287,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "至元二十四年朝廷为国子监规定生员二百人、伴读二十人，并明确祭酒、司业等职。入学者以官员子弟为主，也有从一般民户选出的陪堂生，名额反映教育资源的身份分配。国子监既传授儒学，也承担培养多种出身的朝廷人才之职，不能与全民开放的学校混同。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷八十七《百官志三》国子监，至元二十四年定生员二百、伴读二十"
+      }
+    ],
+    "color": "#caa89a",
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        0.7,
+        -0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-zhiyuan-paper-money",
+    "title": "至元通行宝钞发行",
+    "aliases": [],
+    "startYear": 1287,
+    "endYear": 1287,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "朝廷发行至元通行宝钞，试图调整中统钞与新钞的兑换和流通。纸币使跨地区税收与军费支付较为便利，却依赖发行约束、税款回收和市场信任；法令中的比价与民间实际交易并不总能一致。此项改革属于元朝多次钞法变动中的一个明确节点。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-zhiyuan-paper-money-to-yuan-zhida-silver-note"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十三《食货志一》钞法，至元二十四年更造至元钞"
+      }
+    ],
+    "color": "#b9bc77",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        1.05,
+        -0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-nayan-rebellion",
+    "title": "乃颜叛乱与东北平定",
+    "aliases": [],
+    "startYear": 1287,
+    "endYear": 1288,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "宗王乃颜联合东北地区势力反对忽必烈，元廷调集军队镇压，战事延及次年。叛乱表明皇位虽已稳定，宗王在封地和军队上仍有独立资源。朝廷取胜后继续调整诸王和边地驻军，不能把东北边疆的政治整合视作此前一次建号便完成。",
+    "personIds": [],
+    "placeIds": [
+      "liaoyang"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷十五《世祖纪十二》至元二十四年乃颜叛；卷一百五十四《李庭传》"
+      }
+    ],
+    "color": "#d7a084",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.05,
+        -0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-xuanzheng-institute",
+    "title": "宣政院定制",
+    "aliases": [],
+    "startYear": 1288,
+    "endYear": 1288,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "core",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "元廷将总制院改为宣政院，管理佛教事务以及吐蕃地区的军政事项，院使与僧官共同参与治理。其职权并不意味着整个西藏地方都由同一套州县制度直接管理；寺院、地方领袖和朝廷任命之间存在复杂协商。宣政院是元代多元治理结构的重要机关。",
+    "personIds": [
+      "person-kublai"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-xuanzheng-institute-to-yuan-xuanzheng-commissioners-1323"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷八十七《百官志三》宣政院，至元二十五年改总制院"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "《中国历史（三）》“宣政院”条"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第八卷《中古时代·元时期》上册《对吐蕃的管理》宣政院段"
+      }
+    ],
+    "color": "#7aafbd",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.7,
+        -0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-jiangnan-field-colonies",
+    "title": "江南行大司农司与营田",
+    "aliases": [],
+    "startYear": 1288,
+    "endYear": 1292,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "元廷在江南设置行大司农司和营田司，管理农桑、水利与部分屯田事务，希望把新征服地区的生产更稳定地纳入财政。官府鼓励耕作与地方自有的田产、租佃关系相接，也可能增加行政干预；机构存在不等于所有地区农田都由国家直接经营。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十三《食货志一》农桑，至元二十五年立行大司农司及营田司"
+      }
+    ],
+    "color": "#b9bc77",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.35,
+        -0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-salt-price-1289",
+    "title": "至元二十六年增盐引价",
+    "aliases": [],
+    "startYear": 1289,
+    "endYear": 1289,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "元廷在江南盐业纳入财政后，至元二十六年将每引盐价增至五十贯。盐引是官府规定的运销凭证，价格变化会传导到盐商和买盐民户，却不能直接按名义涨价推算每地的实付额。这次调整是后续元贞、至大再度提高盐引价的前段，与多年连续提价过程有明确时间边界。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十四《食货志二》盐法，至元二十六年每引五十贯"
+      }
+    ],
+    "color": "#b9bc77",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        -0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-fubeli-tax-relief-1291",
+    "title": "至元二十八年减免腹里包银",
+    "aliases": [],
+    "startYear": 1291,
+    "endYear": 1291,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "至元二十八年，元廷下令免除腹里诸路包银和俸钞，并减免大都、上都等十路丝线等负担。包银和丝线原本按户征纳，诏令针对的是明确地区与税目，不能等同于全国赋役一并废止。灾害与人口流移促使朝廷调整征取，减免能否落到民户，还取决于地方核册与执行。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十六《食货志四》赈恤，至元二十八年免腹里诸路包银、俸钞"
+      }
+    ],
+    "color": "#a3bbb0",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        1.05,
+        -0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-dongping-granary-1292",
+    "title": "东平开义仓赈饥",
+    "aliases": [],
+    "startYear": 1292,
+    "endYear": 1292,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "至元二十九年东平一带发生饥荒，官府发放义仓储粮救助居民。义仓原由乡社积存粮食，开仓是否及时取决于地方上报、存粮和运输。史志明确记载这次放赈，却没有足够材料说明所有受灾家庭得到同等数量，故救济命令与实际效果仍需区分。",
+    "personIds": [],
+    "placeIds": [
+      "dongping"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十六《食货志四》常平义仓，至元二十九年东平饥发义仓"
+      }
+    ],
+    "color": "#a3bbb0",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        -1.05,
+        -0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-grand-canal-tonghui",
+    "title": "通惠河兴工与开通",
+    "aliases": [],
+    "startYear": 1292,
+    "endYear": 1293,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "郭守敬主持引白浮泉等水入大都，改造闸坝和航道，使漕船更便捷地接近京城。工程的水量控制、船闸运作和维护成本同样关键，不能只说一条河道从杭州直达宫门。通惠河改善了大都末端漕运条件，与海运仍长期并行。",
+    "personIds": [
+      "person-guo-shoujing"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-shoushi-calendar-to-yuan-grand-canal-tonghui"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷六十四《河渠志一》通惠河，至元二十八年至三十年开凿"
+      }
+    ],
+    "color": "#b9bc77",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.35,
+        -0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-java-expedition",
+    "title": "元军远征爪哇",
+    "aliases": [],
+    "startYear": 1292,
+    "endYear": 1293,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "majapahit",
+      "singhasari",
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "元廷命史弼等率舰队进攻爪哇，在当地王位争端中与一方势力合作，随后遭反击而撤离。航行跨越南海与岛屿海峡，后勤和对地方政治的误判影响结果。远征显示元朝海上投射能力，也说明把远方国家纳入常设行政体系并非容易之事。",
+    "personIds": [],
+    "placeIds": [
+      "east-java"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷十七《世祖纪十四》至元二十九年征爪哇；卷二百十《爪哇传》"
+      }
+    ],
+    "color": "#d7a084",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.7,
+        -0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-maritime-customs-rules-1293",
+    "title": "至元三十年定市舶抽分杂禁",
+    "aliases": [],
+    "startYear": 1293,
+    "endYear": 1293,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "至元三十年，元廷制定市舶抽分杂禁，规定泉州、上海等港口对海商货物的抽分、查验与违禁处置，并调整部分市舶司设置。规则把海上贸易纳入更细的税收和登记程序，也限制金银铜铁及人口私运出海。条文显示朝廷试图同时取得税收和维持贸易，不能据此断言各港执行完全一致。",
+    "personIds": [],
+    "placeIds": [
+      "quanzhou",
+      "shanghai"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十四《食货志二》市舶，至元三十年抽分杂禁"
+      }
+    ],
+    "color": "#b9bc77",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -1.05,
+        0
+      ]
+    }
+  },
+  {
+    "id": "yuan-chengzong-accession",
+    "title": "元成宗即位",
+    "aliases": [],
+    "startYear": 1294,
+    "endYear": 1294,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "忽必烈去世后，铁穆耳在宗王和朝臣支持下即位为元成宗。新皇帝延续部分世祖政策，同时面对军费、赏赐与边疆关系的压力。继位依赖家族协商和朝廷支持，而不只是预先写定的直线继承；此后的财政收支问题也由此成为大德朝的重要议题。",
+    "personIds": [],
+    "placeIds": [
+      "shangdu"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷十八《成宗纪一》至元三十一年即位"
+      }
+    ],
+    "color": "#a7b9bb",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.05,
+        -0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-zhao-mengfu-quehua",
+    "title": "赵孟頫作《鹊华秋色图》",
+    "aliases": [],
+    "startYear": 1295,
+    "endYear": 1295,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "赵孟頫为友人周密绘《鹊华秋色图》，在画中以记忆和文人笔法呈现济南鹊山、华不注山。作品有元贞元年的自题，可与泛称“元代山水画兴盛”区别为具体创作事件。画卷的赠答、题跋和后世收藏使它的文化意义超出作画当时。",
+    "personIds": [
+      "person-zhao-mengfu"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "quehua-autograph",
+        "locator": "《鹊华秋色图》卷末赵孟頫元贞元年自题"
+      },
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷一百七十二《赵孟頫传》"
+      }
+    ],
+    "color": "#d3a6aa",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -0.7,
+        0
+      ]
+    }
+  },
+  {
+    "id": "yuan-salt-price-rise",
+    "title": "盐引价格连续提高",
+    "aliases": [],
+    "startYear": 1296,
+    "endYear": 1315,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "元朝对盐采取官府控制与商人运销结合的办法，元贞至延祐间盐引价格多次上调。名义收入增加未必等于民间负担均匀分配，沿海煮盐者、运商与买盐百姓承受不同压力。史志列出分期价格，故不能把七年的连续调整写成某年一次涨价。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十四《食货志二》盐法，元贞丙申至延祐乙卯盐引增价"
+      }
+    ],
+    "color": "#b9bc77",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.35,
+        0
+      ]
+    }
+  },
+  {
+    "id": "yuan-medicine-bureaus-1299",
+    "title": "大德三年重设惠民药局",
+    "aliases": [],
+    "startYear": 1299,
+    "endYear": 1299,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "惠民药局在至元二十五年因官本亏失被撤，成宗大德三年朝廷又准旧例在各路重设。官府提供经营本金、安排医者，意在让贫病民众取得药物。重设说明早期药局运行并不稳定，制度覆盖范围与地方经费、药材供应有关，不能把诏令写成全国医疗条件已经改善。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十六《食货志四》惠民药局，成宗大德三年各路复置"
+      }
+    ],
+    "color": "#a3bbb0",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        -0.7,
+        -0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-mongol-hanlin-rank-1301",
+    "title": "蒙古翰林院升正二品",
+    "aliases": [],
+    "startYear": 1301,
+    "endYear": 1301,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "成宗大德五年蒙古翰林院升为正二品官署，继续负责蒙古文字的诏书翻译、书写和相关文书工作。朝廷同时使用多种语言和文字，文书传达需要译者、必阇赤及汉文官员协作。机构升秩体现蒙古语文行政的地位，却不表示其他文书体系被取消。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷八十七《百官志三》蒙古翰林院，大德五年升正二品"
+      }
+    ],
+    "color": "#caa89a",
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        -0.35,
+        -0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-dade-heaven-rite-1302",
+    "title": "大德六年南郊摄祀天地",
+    "aliases": [],
+    "startYear": 1302,
+    "endYear": 1302,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "大德六年朝廷在南郊合祭昊天上帝与皇地祇，命哈剌哈孙代皇帝行礼。礼官以经典与历朝制度讨论仪式，元廷又保留草原拜天传统，表明国家礼制并非简单复制宋制。这是有明确年月的官方祭祀活动，不能代表各地佛教、道教和穆斯林社群的日常信仰。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷七十二《祭祀志一》郊祀上，大德六年遣哈剌哈孙摄祀天地"
+      }
+    ],
+    "color": "#cfb08d",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        -0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-dade-stipend-rice-1303",
+    "title": "大德七年增官吏俸米",
+    "aliases": [],
+    "startYear": 1303,
+    "endYear": 1303,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "成宗大德七年朝廷增给内外官吏俸米，按原俸数分档计算，非产米的上都、大同等地另以钞折给。政策意在维持官员生活与行政运转，却需仓储和运输配合，实际获得米还是钞因地区而异。它也是财政支出增加的具体节点，与笼统的“元代官俸优厚”不能画等号。",
+    "personIds": [],
+    "placeIds": [
+      "shangdu"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十六《食货志四》俸秩，大德七年加给内外官吏俸米"
+      }
+    ],
+    "color": "#b9bc77",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.35,
+        -0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-wuzong-accession",
+    "title": "元武宗即位",
+    "aliases": [],
+    "startYear": 1307,
+    "endYear": 1307,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "成宗去世后，海山凭借北边军队与宗王支持至上都即位，是为元武宗。其弟爱育黎拔力八达被立为皇太子，朝廷试图以兄终弟及安排继承，但后来仍出现新的皇位争议。军队支持、人事任命与宗王协商共同决定了这次政权交接。",
+    "personIds": [],
+    "placeIds": [
+      "shangdu"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷二十二《武宗纪一》大德十一年五月甲申于上都大安阁即位"
+      }
+    ],
+    "color": "#a7b9bb",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.7,
+        0
+      ]
+    }
+  },
+  {
+    "id": "yuan-zhida-silver-note",
+    "title": "至大银钞发行与废止",
+    "aliases": [],
+    "startYear": 1309,
+    "endYear": 1311,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "武宗朝发行至大银钞，并试图配合铸钱调整旧钞兑换，短时间内形成多种货币并行。仁宗即位后废止新钞，说明财政改革缺乏稳定的政治和市场条件。法令上的币值与民间接受程度不能画等号，也不可把这次试验同后来的至正钞混为一谈。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-zhiyuan-paper-money-to-yuan-zhida-silver-note"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十三《食货志一》钞法，武宗至大二年银钞与仁宗罢钞"
+      }
+    ],
+    "color": "#b9bc77",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        1.05,
+        0
+      ]
+    }
+  },
+  {
+    "id": "yuan-renzong-accession",
+    "title": "元仁宗即位",
+    "aliases": [],
+    "startYear": 1311,
+    "endYear": 1311,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "武宗死后，爱育黎拔力八达依前述继承安排即位为仁宗，废除部分至大新政并重新配置中枢人事。继位看似遵守兄弟协议，后来皇位传给仁宗之子英宗，又改变了武宗一系的预期。皇室协议、财政政策和官僚支持在此相互牵连。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷二十四《仁宗纪一》至大四年即位"
+      }
+    ],
+    "color": "#a7b9bb",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.05,
+        0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-wang-zhen-nongshu",
+    "title": "王祯《农书》成书",
+    "aliases": [],
+    "startYear": 1313,
+    "endYear": 1313,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "王祯编成《农书》，将农桑通论、百谷种植和农器图谱合为一体，记录不同地区的生产经验。书中器械图文尤其有助于比较水车、纺织和耕作技术，但刊行并不意味着各地立即照书改造农具。它把地方农政实践转化为可传阅的知识材料。",
+    "personIds": [
+      "person-wang-zhen"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "wangzhen-nongshu",
+        "locator": "《王祯农书》原序、农桑通诀、农器图谱"
+      }
+    ],
+    "color": "#83bbc4",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        0,
+        0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-examination-restored",
+    "title": "延祐科举复行",
+    "aliases": [],
+    "startYear": 1313,
+    "endYear": 1315,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "core",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "仁宗下诏恢复科举，规定乡试、会试和廷试的考试程序，延祐二年出现首批登第者。考试为士人提供进入官僚体系的道路，但录取名额、试题与身份分组仍反映元朝的社会等级。它不是唐宋科举的原样复活，也未取代荐举和世袭等其他用人方式。",
+    "personIds": [
+      "person-yuan-renzong"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-examination-restored-to-yuan-examination-first"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷八十一《选举志一》皇庆二年复科举诏、延祐二年廷试"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第八卷《中古时代·元时期》上册《科举取士》延祐复科段"
+      }
+    ],
+    "color": "#7aafbd",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.35,
+        0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-yan-you-land-survey",
+    "title": "延祐经理清丈江南田亩",
+    "aliases": [],
+    "startYear": 1314,
+    "endYear": 1315,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "仁宗朝派员在江浙、江西、河南核报田亩，意在查出隐田并调整税额。官吏执行急迫，虚报和攀诬使贫户受累，引发地方不安；朝廷次年承认弊端并部分减免。土地清丈的政策目标与实际结果有明显落差，不能只据增加的登记数字判断成效。",
+    "personIds": [],
+    "placeIds": [
+      "hangzhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-yan-you-land-survey-to-yuan-land-survey-reversal"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十三《食货志一》经理，延祐元年章闾奏议与江浙、江西、河南实施"
+      }
+    ],
+    "color": "#b9bc77",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.7,
+        0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-examination-first",
+    "title": "延祐首次会试廷试",
+    "aliases": [],
+    "startYear": 1315,
+    "endYear": 1315,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "恢复科举的诏令之后，元廷在延祐二年举行会试和廷试，明确用经义、策问评选士人。考题和名额按蒙古、色目、汉人、南人分组安排，既给儒学经典新的官方地位，也保留差别待遇。此条记录首届考试本身，与1313年发布的恢复诏令分开。",
+    "personIds": [
+      "person-yuan-renzong"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-examination-restored-to-yuan-examination-first"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷八十一《选举志一》延祐二年会试与廷试"
+      }
+    ],
+    "color": "#b6a5cb",
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        0.35,
+        0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-land-survey-reversal",
+    "title": "延祐经理弊政调整",
+    "aliases": [],
+    "startYear": 1315,
+    "endYear": 1318,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "清丈田亩引出虚增税额和官吏攀诬后，仁宗下诏免除部分自实田租，随后又减河南若干虚报数字。调整说明朝廷承认地方执行失当，但纠错过程持续数年，不能简单说改革一宣布就全面取消。民户、官府与地主之间的账册争议仍影响赋役分摊。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-yan-you-land-survey-to-yuan-land-survey-reversal"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十三《食货志一》经理，次年免三省自实田租、延祐五年减河南虚额"
+      }
+    ],
+    "color": "#a3bbb0",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0.7,
+        0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-yingzong-accession",
+    "title": "元英宗即位",
+    "aliases": [],
+    "startYear": 1320,
+    "endYear": 1320,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "仁宗去世后，硕德八剌即位为英宗，朝廷围绕财政和司法进一步整顿。新帝试图借中书官员加强政令执行，也触动贵族和近臣利益。即位本身不能解释三年后的南坡之变，却为理解改革、人事冲突和宫廷风险提供起点。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷二十七《英宗纪一》延祐七年即位"
+      }
+    ],
+    "color": "#a7b9bb",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.05,
+        0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-dayuan-tongzhi",
+    "title": "《大元通制》颁行",
+    "aliases": [],
+    "startYear": 1323,
+    "endYear": 1323,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "英宗朝整理历年条格、断例和制诏，编成《大元通制》作为司法和行政参考。它汇集既有规则，并非从零制定一部完全统一的刑典；不同地方仍依赖官员解释与旧例。颁行与皇帝遇弑同在至治三年，应分清法典的制度意义和宫廷政变的政治结果。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷一百零二《刑法志一》大元通制，至治三年颁行"
+      }
+    ],
+    "color": "#7aafbd",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.7,
+        0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-south-slope-coup",
+    "title": "南坡之变",
+    "aliases": [],
+    "startYear": 1323,
+    "endYear": 1323,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "core",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "英宗与丞相拜住自上都南返时，在南坡遭铁失等人袭击，二人被杀。政变打断正在推进的中枢整顿，晋王也孙铁木儿随后被迎立。史书对各参与者动机的归咎带有事后政治判断，较可靠的是行宫袭击、死亡及继承权力重新分配的经过。",
+    "personIds": [
+      "person-baizhu"
+    ],
+    "placeIds": [
+      "shangdu"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-south-slope-coup-to-yuan-two-capitals-war"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷二十八《英宗纪二》至治三年南坡遇弑；卷一百三十六《拜住传》"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "《中国历史（三）》“南坡之变”条"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第八卷《中古时代·元时期》上册《第二节 至治新政和南坡之变》南坡事变段"
+      }
+    ],
+    "color": "#a7b9bb",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.35,
+        0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-xuanzheng-commissioners-1323",
+    "title": "宣政院增置院使六员",
+    "aliases": [],
+    "startYear": 1323,
+    "endYear": 1323,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "至治三年，朝廷把宣政院院使增置为六员。宣政院管理佛教僧徒及吐蕃事务，遇大规模征调还须会同枢密院议事，官员任用兼及军民与僧俗。增官反映相关事务在中枢的行政分量，却不能直接推断吐蕃各地寺院或地方政权在这一年同时改变治理方式。该节点也显示宣政院在1288年更名后仍持续调整。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-xuanzheng-institute-to-yuan-xuanzheng-commissioners-1323"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷八十七《百官志三》宣政院，至治三年置院使六员"
+      }
+    ],
+    "color": "#cfb08d",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        1.05,
+        0.3
+      ]
+    }
+  },
+  {
+    "id": "yuan-taiding-succession",
+    "title": "泰定帝即位与政变善后",
+    "aliases": [],
+    "startYear": 1323,
+    "endYear": 1324,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "南坡政变后，也孙铁木儿在北方即位，朝廷处置铁失等参与者，并调整英宗旧臣与宗王关系。新皇帝虽借政变获得皇位，却仍需追究直接行凶者以维持秩序。善后体现元代皇位继承中宗王、禁卫与中书官员之间的反复博弈。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷二十九《泰定帝纪一》至治三年即位及诛铁失"
+      }
+    ],
+    "color": "#a7b9bb",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-two-capitals-war",
+    "title": "两都之战",
+    "aliases": [],
+    "startYear": 1328,
+    "endYear": 1329,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "core",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "泰定帝去世后，大都权臣燕铁木儿拥立图帖睦尔，上都另一集团拥立阿速吉八，双方调兵争夺皇位。大都一方取得军事优势，但继承安排并未就此稳定，次年还出现明宗入主。两都之战是多支宗王与军队的较量，不宜化作一次宫门争执。",
+    "personIds": [
+      "person-yan-tiemu-er"
+    ],
+    "placeIds": [
+      "beijing",
+      "shangdu"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-south-slope-coup-to-yuan-two-capitals-war",
+      "yuan-two-capitals-war-to-yuan-shundi-accession"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷三十二《文宗纪一》天历元年大都拥立与上都兵争；卷一百三十八《燕铁木儿传》"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "《中国历史（三）》“两都之战”条"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第八卷《中古时代·元时期》下册《两都之战》大都与上都兵争段"
+      }
+    ],
+    "color": "#d7a084",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.35,
+        0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-mingzong-death",
+    "title": "元明宗暴卒",
+    "aliases": [],
+    "startYear": 1329,
+    "endYear": 1329,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "和世㻋在皇位争夺后入主，赴上都途中突然去世，文宗随后再次即位。关于死因，史料与后世解释存在歧异，不能把谋杀推测写成无争议的事实。可以确定的是短暂的明宗之位没有解决皇族继承冲突，反而巩固了大都权臣的政治空间。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷三十一《明宗纪》天历二年即位与暴卒；卷三十二《文宗纪一》"
+      }
+    ],
+    "color": "#a7b9bb",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.7,
+        0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-kuizhang-pavilion",
+    "title": "奎章阁设立与文治活动",
+    "aliases": [],
+    "startYear": 1329,
+    "endYear": 1332,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "文宗设置奎章阁，召集虞集等儒臣参与典籍校理、书画鉴赏和诏令文字工作。宫廷文治为文人提供职位与作品流通渠道，同时受皇帝个人兴趣和政局变化制约。奎章阁不是取代中书省的政务中枢，其文化功能应与政治宣传分开评价。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷三十一《明宗纪》天历二年二月文宗立奎章阁学士院于京师；卷八十八《百官志四》奎章阁学士院"
+      }
+    ],
+    "color": "#d3a6aa",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        1.05,
+        0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-lugui-bu-preface",
+    "title": "钟嗣成作《录鬼簿》序",
+    "aliases": [],
+    "startYear": 1330,
+    "endYear": 1330,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "钟嗣成在至顺元年为《录鬼簿》作序，记下编录杂剧、散曲作者及作品的缘由，希望让出身卑微、未获正史立传的艺人留下姓名。书中收集关汉卿等作家的剧目资料，现存传本又经后续增补。序文能确定初编的时间，却不能据此推定所录每部剧都在1330年首次演出。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "lugui-bu",
+        "locator": "《录鬼簿》卷首钟嗣成序，至顺元年庚午题年"
+      }
+    ],
+    "color": "#d3a6aa",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0.35,
+        0
+      ]
+    }
+  },
+  {
+    "id": "yuan-jingshi-dadian",
+    "title": "《经世大典》编纂",
+    "aliases": [],
+    "startYear": 1331,
+    "endYear": 1332,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "文宗朝命虞集等编纂《经世大典》，汇集元代制度沿革、行政文书与典章资料。原书大部散佚，后世依《元史》和引文窥见其结构，不能把今存节录当作完整原本。编纂显示朝廷希望把多朝变化的制度经验整理为可供官员参照的知识。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷三十五《文宗纪四》至顺二年命修经世大典；卷一百八十一《虞集传》"
+      }
+    ],
+    "color": "#7aafbd",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.05,
+        0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-shundi-accession",
+    "title": "元顺帝即位",
+    "aliases": [],
+    "startYear": 1333,
+    "endYear": 1333,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "宁宗早逝后，妥懽帖睦尔经宗王和权臣商议即位，是为元顺帝。帝位转换仍受此前两都之战的派系关系影响，少年皇帝起初难以完全掌握中枢。其漫长统治横跨财政调整、河患与各地起事，不能把后期危机倒推为即位当天的必然结果。",
+    "personIds": [],
+    "placeIds": [
+      "shangdu"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-two-capitals-war-to-yuan-shundi-accession"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷三十八《顺帝纪一》元统元年即位"
+      }
+    ],
+    "color": "#a7b9bb",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.7,
+        0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-dadu-salt-retail-1334",
+    "title": "大都恢复官卖食盐",
+    "aliases": [],
+    "startYear": 1334,
+    "endYear": 1334,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "元统二年，大都御史与地方官奏称食盐价高、商人牟利，请求恢复南北二城十五处官卖盐局。户部提出每局每日出售定量食盐，并规定售价、称量和巡查办法，中书省据此上奏。官卖与商贩并行的设计反映朝廷既要保障盐课，也试图压低民间食盐价格；奏议不能证明此后价格始终稳定。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十七《食货志五》盐法，元统二年大都复置官卖盐局奏议"
+      }
+    ],
+    "color": "#b9bc77",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        1.05,
+        0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-toqto-first-chancellorship",
+    "title": "脱脱入相与政治更张",
+    "aliases": [],
+    "startYear": 1340,
+    "endYear": 1344,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "脱脱在顺帝朝取代伯颜掌握中书政务，调整人事，尝试恢复科举与儒学官员的参与。改革仍受宗王、财政和地方力量制约，数年后脱脱也离开中枢。其第一次入相与后来治河、征高邮属于不同阶段，不宜概括为一次连续不变的施政。",
+    "personIds": [
+      "person-toqto"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷四十《顺帝纪三》至元六年脱脱为相；卷一百三十八《脱脱传》"
+      }
+    ],
+    "color": "#a7b9bb",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.35,
+        0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-three-histories",
+    "title": "宋辽金三史修成",
+    "aliases": [],
+    "startYear": 1343,
+    "endYear": 1345,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "顺帝朝下诏修《宋史》《辽史》《金史》，脱脱等监修，史臣在较短时间内汇编前朝实录和旧稿。三史并修回应宋、辽、金各有正统的历史记忆，但成书仓促也留下重复和错漏。此事属于元朝国家史学工程，不能把三部史书的全部内容当作同一作者写成。",
+    "personIds": [
+      "person-toqto"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷四十一《顺帝纪四》至正三年诏修三史；卷一百三十八《脱脱传》"
+      }
+    ],
+    "color": "#d3a6aa",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-famine-relief-1340s",
+    "title": "至正四年各地赈饥",
+    "aliases": [],
+    "startYear": 1344,
+    "endYear": 1344,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "至正四年，永平等路饥荒得到朝廷赈济；山东霖雨造成饥馑，官府又下令救助。年末东昌、济南、般阳、庆元和抚州等地饥民亦见赈济记录。这些逐月记载证明1344年多地发生救荒行动，却不能推断每位灾民都获得同样帮助；粮食、钞币和地方仓储的实际到达情况仍需分别考察。",
+    "personIds": [],
+    "placeIds": [
+      "jinan"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷四十一《顺帝纪四》至正四年闰二月、八月、十二月赈饥记载"
+      }
+    ],
+    "color": "#a3bbb0",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0.7,
+        0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-yellow-river-floods",
+    "title": "至正年间黄河水患",
+    "aliases": [],
+    "startYear": 1344,
+    "endYear": 1350,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "至正四年起黄河决溢和淤塞频繁，沿岸州县田地、聚落与漕运受损。河道变动并不是单一决口连续六年的同一灾情，各地受灾程度和时间不同。朝廷需要筹款、征夫和协调行省，救灾与修河费用因而成为晚元政治和民生的共同压力。",
+    "personIds": [],
+    "placeIds": [
+      "heze"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷五十一《五行志二》至正四年黄河决；卷六十六《河渠志三》"
+      }
+    ],
+    "color": "#a3bbb0",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0.35,
+        0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-ibn-battuta-quanzhou",
+    "title": "伊本·白图泰记述中国海港",
+    "aliases": [],
+    "startYear": 1346,
+    "endYear": 1346,
+    "yearPrecision": "circa",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "伊本·白图泰在游记中记述进入中国港口、见闻商舶和地方官接待，为观察十四世纪海上交通留下域外材料。其行程日期及地名识别仍有研究争议，所以本条用约年而非无争议的精确纪年。旅行叙述反映一个访客的视角，不等于港口贸易的完整统计。",
+    "personIds": [],
+    "placeIds": [
+      "quanzhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "ibn-battuta-rihla",
+        "locator": "《伊本·白图泰游记》中国行记泉州、广州段"
+      }
+    ],
+    "color": "#91b7a3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1.05,
+        -0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-zhizheng-paper-money",
+    "title": "至正交钞改革",
+    "aliases": [],
+    "startYear": 1350,
+    "endYear": 1351,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "元廷在财政紧张中发行至正交钞，试图以新钞调整旧币、税收和流通秩序。兑换和发行规模难以稳定，市场对纸币的接受受战事、盐课和地区供给影响。此项改革与早期至元钞、至大银钞有不同的政治背景，不能笼统写作“元代纸币贬值”。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十七《食货志五》钞法，至正十年更造交钞"
+      }
+    ],
+    "color": "#b9bc77",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.7,
+        -0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-jialu-river",
+    "title": "贾鲁治河",
+    "aliases": [],
+    "startYear": 1351,
+    "endYear": 1351,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "core",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "黄河多次决口后，贾鲁主持大规模修堤、疏浚和堵塞工程，调集军民与物料，试图恢复河道和漕运。工程取得局部成效，却伴随沉重征役和财政开销。河患、役夫不满与同年红巾起事相互交织，但不能把起义完全归因于一项水利工程。",
+    "personIds": [
+      "person-jia-lu"
+    ],
+    "placeIds": [
+      "heze"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-jialu-river-to-yuan-red-turban-uprising"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷六十六《河渠志三》至正十一年贾鲁塞黄河；卷一百八十七《贾鲁传》"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "《中国历史（三）》“贾鲁”条"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第八卷《中古时代·元时期》下册《疏塞并举复故道》贾鲁治河段"
+      }
+    ],
+    "color": "#83bbc4",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -0.35,
+        -0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-xu-shouhui-regime",
+    "title": "徐寿辉建立天完政权",
+    "aliases": [],
+    "startYear": 1351,
+    "endYear": 1353,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "tianwan",
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "蕲州、黄州一带起事者推徐寿辉为领袖，建立天完政权并向长江中游扩张。它与刘福通在淮北的红巾军同处元末起义浪潮，却有自己的领导和地域基础。史书常以“贼”概括其成员，分析政权组织仍须看城镇、军队与地方赋税的实际变化。",
+    "personIds": [],
+    "placeIds": [
+      "qizhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷四十二《顺帝纪五》至正十一年徐寿辉起事及称帝"
+      }
+    ],
+    "color": "#a7b9bb",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.35,
+        -0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-red-turban-uprising",
+    "title": "红巾军起事",
+    "aliases": [],
+    "startYear": 1351,
+    "endYear": 1355,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "core",
+    "polityIds": [
+      "han-song",
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "颍州一带韩山童、刘福通的反元组织在至正十一年起事，红巾军随后扩散到淮河和中原多地。宗教口号、灾荒、赋役和地方武装共同塑造行动，队伍之间并非始终服从单一指挥。起事开启元末长期战争，但各地新政权形成还有独立过程。",
+    "personIds": [
+      "person-liu-futong"
+    ],
+    "placeIds": [
+      "yingzhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-jialu-river-to-yuan-red-turban-uprising",
+      "yuan-red-turban-uprising-to-yuan-dadu-fall"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷四十二《顺帝纪五》至正十一年颍州刘福通起兵；卷一百四十一《察罕帖木儿传》"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "《中国历史（三）》“红巾军起义”条"
+      },
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第八卷《中古时代·元时期》上册《第二节 元末农民大起义》刘福通起事段"
+      }
+    ],
+    "color": "#d7a084",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        -0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-zhang-shicheng-uprising",
+    "title": "张士诚泰州起兵",
+    "aliases": [],
+    "startYear": 1353,
+    "endYear": 1354,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan",
+      "zhang-zhou"
+    ],
+    "period": "元代",
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "盐业出身的张士诚在泰州、高邮一带起兵，利用沿海盐场和运河区域的地方联系聚众。高邮成为其政治与军事据点，朝廷随后大举围攻。盐政、私盐贸易和地方赋役是背景，但个人行动不能被简化成单一税率变化的直接结果。",
+    "personIds": [],
+    "placeIds": [
+      "gaoyou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷四十三《顺帝纪六》至正十三年张士诚据高邮；卷九十四《食货志二》盐法"
+      }
+    ],
+    "color": "#a3bbb0",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0.7,
+        -0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-toqto-gaoyou-campaign",
+    "title": "脱脱征高邮与罢相",
+    "aliases": [],
+    "startYear": 1354,
+    "endYear": 1355,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan",
+      "zhang-zhou"
+    ],
+    "period": "元代",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "脱脱率大军围攻张士诚据守的高邮，元军一度取得军事优势，却在战役进行中因朝廷诏令被罢相。主将撤换使军队指挥瓦解，围城未能结束江淮动乱。事件说明晚元朝廷内部的人事斗争可直接改变前线局势，也不能把失败完全归于战场兵力。",
+    "personIds": [
+      "person-toqto"
+    ],
+    "placeIds": [
+      "gaoyou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷四十三《顺帝纪六》至正十四年脱脱围高邮、罢相；卷一百三十八《脱脱传》"
+      }
+    ],
+    "color": "#d7a084",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.05,
+        -0.9
+      ]
+    }
+  },
+  {
+    "id": "yuan-song-pretender-han-lin-er",
+    "title": "刘福通拥立韩林儿",
+    "aliases": [],
+    "startYear": 1355,
+    "endYear": 1355,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "han-song",
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "刘福通等拥立韩林儿，建国号宋，以“小明王”名义整合部分红巾军。名号借用宋朝政治记忆，却不等于南宋政权直接复活；各路起义军仍有不同目标和控制地区。新政权的成立标志起义从地方武装行动走向竞争天下的政治宣称。",
+    "personIds": [
+      "person-liu-futong"
+    ],
+    "placeIds": [
+      "bozhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷四十四《顺帝纪七》至正十五年刘福通立韩林儿"
+      }
+    ],
+    "color": "#a7b9bb",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.05,
+        -0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-jiaoqing-fall",
+    "title": "元失集庆路",
+    "aliases": [],
+    "startYear": 1356,
+    "endYear": 1356,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "朱元璋所部攻取集庆路，即后来的南京，元朝失去长江下游重要城市。集庆的仓储、江防与地方官员为新的政权提供经营基础，战役也改变江南各势力的竞争格局。此条从元朝失守的边界记录，与后续明朝建国的政治事件分开。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷四十四《顺帝纪七》至正十六年集庆陷"
+      }
+    ],
+    "color": "#d7a084",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.7,
+        -0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-chaghan-timur-defense",
+    "title": "察罕帖木儿收复河南诸城",
+    "aliases": [],
+    "startYear": 1359,
+    "endYear": 1362,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "han-song",
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "察罕帖木儿组织地方军队在河南、山西对抗红巾军，曾夺回若干城市，成为晚元倚重的军事力量。其军队依赖地方将领、私人关系和筹粮网络，胜利并未恢复朝廷的统一控制。至正二十二年他遇害，部下继续拥兵，显示中央与地方武装关系更复杂。",
+    "personIds": [],
+    "placeIds": [
+      "kaifeng"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷一百四十一《察罕帖木儿传》河南战事与至正二十二年遇害"
+      }
+    ],
+    "color": "#d7a084",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.35,
+        -0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-zhizheng-sea-grain-crisis",
+    "title": "至正后期海漕短暂恢复与停运",
+    "aliases": [],
+    "startYear": 1359,
+    "endYear": 1363,
+    "yearPrecision": "range",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "basic",
+    "polityIds": [
+      "yuan",
+      "zhang-zhou"
+    ],
+    "period": "元代",
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 2,
+    "summary": "元末江南战事使海漕长期中断，至正十九年朝廷再派员赴江浙征粮，借张士诚的粮与方国珍的船恢复北运。1360至1363年每年入京约十一万至十三万石，远低于早期规模；至正二十三年张士诚拒绝续运，史志称东南粟给京师至此停止。海运的衰落加重大都供给压力，但不能单独解释元朝失去首都。",
+    "personIds": [],
+    "placeIds": [
+      "beijing",
+      "hangzhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-sea-transport-to-yuan-zhizheng-sea-grain-crisis",
+      "yuan-zhizheng-sea-grain-crisis-to-yuan-dadu-fall"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷九十七《食货志五》海运，至正十九年至二十三年征运、五月入京及九月止运"
+      }
+    ],
+    "color": "#b9bc77",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        -0.6
+      ]
+    }
+  },
+  {
+    "id": "yuan-dadu-fall",
+    "title": "元顺帝夜出大都北撤",
+    "aliases": [],
+    "startYear": 1368,
+    "endYear": 1368,
+    "yearPrecision": "exact",
+    "eraId": "yuan",
+    "editorialPeriodId": "yuan",
+    "detailLevel": "core",
+    "polityIds": [
+      "ming",
+      "yuan"
+    ],
+    "period": "元代",
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "至正二十八年闰七月，元顺帝在清宁殿召集后妃与皇太子议定避兵，未采纳臣下留守之谏，夜半打开健德门北行。朝廷此前已命淮王帖木儿不花监国守京，皇室撤离与城内守御因而分开。本条止于宫廷离城的决定及行动，元廷在北方仍有延续，不能把君主退离旧都等同于政权当日完全消失。",
+    "personIds": [
+      "person-yuan-shundi"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "yuan-red-turban-uprising-to-yuan-dadu-fall",
+      "yuan-zhizheng-sea-grain-crisis-to-yuan-dadu-fall",
+      "yuan-withdrawal-to-ming-occupation"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "yuanshi-zhonghua-1976",
+        "locator": "《元史》卷四十七《顺帝纪十》至正二十八年闰七月乙丑监国、丙寅清宁殿议北行及夜开健德门条",
+        "note": "据维基文库《元史》卷047在线录文核对；此条只计宫廷离城，不计其后八月明军接管，未校勘所列点校本。"
+      },
+      {
+        "sourceId": "mingshi-zhonghua-1974",
+        "locator": "《明史》卷二《太祖本纪二》洪武元年闰七月丙寅克通州、元帝趋上都条",
+        "note": "据维基文库《明史》卷2在线录文核对；未校勘所列点校本。"
+      }
+    ],
+    "color": "#a7b9bb",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.35,
+        -0.6
+      ]
+    }
+  }
+]

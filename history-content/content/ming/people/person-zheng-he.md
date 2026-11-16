@@ -8,8 +8,11 @@ deathYear: 1433
 roleIds: []
 eventIds:
   - zheng-he
+  - zheng-he-first-voyage
+  - zheng-he-seventh-voyage
 sourceIds:
   - bai-shouyi-general-history
+  - mingshi-zhonghua-1974
 yearPrecision: exact
 birthplaceId: null
 placeIds: []

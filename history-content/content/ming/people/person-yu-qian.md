@@ -7,9 +7,12 @@ birthYear: 1398
 deathYear: 1457
 roleIds: []
 eventIds:
+  - beijing-defense-1449
+  - duomen-coup
   - tumu
 sourceIds:
   - bai-shouyi-general-history
+  - mingshi-zhonghua-1974
 yearPrecision: exact
 birthplaceId: null
 placeIds: []

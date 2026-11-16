@@ -8,6 +8,7 @@ deathYear: 1908
 roleIds: []
 eventIds:
   - boxer
+  - imperial-exams-abolished
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

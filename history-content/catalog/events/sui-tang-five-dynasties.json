@@ -1,0 +1,6773 @@
+[
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 604,
+    "eraId": "sui-tang",
+    "id": "sui-kaihuang-treasury",
+    "influence": 4,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.9,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [
+      "person-yang-jian"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [
+      "sui-kaihuang-treasury-to-sui-grand-canal"
+    ],
+    "startYear": 581,
+    "summary": "隋文帝时期朝廷清查户口、整顿赋役与仓储，使中央积累粮食与布帛储备。所谓“府库充实”是正史对政绩的概括，也涉及对民间资源的集中；财政改善为统一战争与官僚治理提供条件，同时不能抹去征收负担。",
+    "title": "开皇财政积储",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二十四《食货志》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷175《陈纪》，581年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 605,
+    "eraId": "sui-tang",
+    "id": "sui-three-provinces",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.35,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 581,
+    "summary": "隋廷承接北朝官制并重新调整尚书、门下、内史等机构职掌，诏令起草、审议与执行逐渐分开。官署分工尚随皇帝和时局变化，不能把后世定型的三省六部原样投射到隋初；这一改革为唐制提供了重要制度资源。",
+    "title": "隋朝三省分工形成",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二十八《百官志下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4f8d8d",
+    "endYear": 583,
+    "eraId": "sui-tang",
+    "id": "sui-new-capital",
+    "influence": 2,
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -1.35,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 582,
+    "summary": "隋文帝命高颎、宇文恺等规划营建新都大兴城，以应对旧长安水土、空间和行政设施的问题。规整的宫城、皇城和坊市体系服务于统一王朝的礼仪与管理需求；唐长安后来承袭并扩展这一城市格局。",
+    "title": "大兴城营建",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷一《高祖纪上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 583,
+    "eraId": "sui-tang",
+    "id": "sui-revises-laws",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.9,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [
+      "person-su-wei"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 583,
+    "summary": "开皇年间朝廷修定律令，删减酷刑与繁密条款，确立以十二篇为主体的法典结构。法律文本并不等同于所有地方的实际执行，但它使中央治理有了相对统一的规范，也成为唐律继受和调整的重要基础。",
+    "title": "开皇律修定",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二十五《刑法志》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4d7aa4",
+    "endYear": 603,
+    "eraId": "sui-tang",
+    "id": "sui-tujue-split",
+    "influence": 2,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0.45,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui",
+      "eastern-turkic",
+      "western-turkic"
+    ],
+    "relationIds": [],
+    "startYear": 583,
+    "summary": "隋朝面对突厥内部的继承争端与东西势力分化，采用册封、通婚、互市和军事压力相结合的办法维护北部边境。各部联盟不断变化，不能把东、西突厥视为固定不变的两个国家；边境贸易与战备始终交织。",
+    "title": "隋与东西突厥的分合外交",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷八十四《北狄传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 604,
+    "eraId": "sui-tang",
+    "id": "sui-equal-field",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.45,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 583,
+    "summary": "隋政府延续北朝均田、租调和户籍制度，核查隐漏人口并试图把农户纳入统一赋役簿籍。登记数字增长既反映人口恢复，也有原先漏籍者重入统计的因素；田地分配与实际占有之间仍存在距离。地方授田仍取决于可分配土地与官府丈量。",
+    "title": "隋朝均田与户籍整顿",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二十四《食货志》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 584,
+    "eraId": "sui-tang",
+    "id": "sui-guangtong-canal",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.45,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 584,
+    "summary": "隋廷在关中与黄河之间开凿广通渠，将潼关以东的粮食更便捷地送往京师。运粮水道缓解首都供应压力，也提示关中政治中心长期依靠东部财赋；它与炀帝时期贯通南北的运河工程不是同一工程。",
+    "title": "广通渠开凿",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二十四《食货志》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 584,
+    "eraId": "sui-tang",
+    "id": "sui-kaoji-officials",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 584,
+    "summary": "隋文帝整顿地方官考核与任用，把州县长官纳入中央任免和考绩秩序。郡县治理从门阀和地方关系中逐步转向朝廷可调度的官僚体系，然而考课成效仍取决于监察与具体人事，不能视为一次完成。",
+    "title": "隋朝考课制度整顿",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二十八《百官志下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 604,
+    "eraId": "sui-tang",
+    "id": "sui-yicang",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.9,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 585,
+    "summary": "隋朝推行义仓，令民间按收成储粮以备荒年，并在州县逐步形成仓储安排。制度意在缓解灾荒与粮价波动，但征收和保管也给地方官吏带来权力；其运作效果须结合地区、年份和实际放赈考察。放粮救荒与仓粮挪用都是衡量义仓的关键。",
+    "title": "开皇义仓推行",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二十四《食货志》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 605,
+    "eraId": "sui-tang",
+    "id": "sui-keju-exams",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.35,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 587,
+    "summary": "隋代官员选拔中出现秀才、明经等分科举荐与考试安排，朝廷试图扩大门第以外的取士渠道。它尚不是成熟的唐宋科举，荐举、家世和朝廷选考并存；但分科取士的制度实践深刻影响了后续官僚来源。",
+    "title": "隋代分科取士兴起",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二十八《百官志下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 591,
+    "eraId": "sui-tang",
+    "id": "sui-jiangnan-governance",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.9,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [
+      "sui-jiangnan-revolt-to-sui-jiangnan-governance"
+    ],
+    "startYear": 589,
+    "summary": "灭陈后隋廷改置州县、清查户籍并派官治理江南，试图把南朝旧地纳入统一行政体系。地方豪强和旧官僚并非立即接受新法，江南出现抵抗与镇压；这一过程展示了军事统一之后的治理难题。新官署的设置也触发了高智慧等人的反抗。",
+    "title": "隋朝接收江南州县",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二《高祖纪下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 591,
+    "eraId": "sui-tang",
+    "id": "sui-jiangnan-revolt",
+    "influence": 4,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.35,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [
+      "person-yang-su"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [
+      "sui-jiangnan-revolt-to-sui-jiangnan-governance"
+    ],
+    "startYear": 590,
+    "summary": "隋灭陈后对江南州县和民众实施新政，地方旧势力与民众起兵反抗，朝廷调兵平定。起事与灭陈战役相隔一段时期，反映军事统一后的行政与社会冲突；各地参与者不同，不能把它概括为陈朝的统一复国战争。",
+    "title": "平陈后江南反隋起事",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二《高祖纪下》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷177《隋纪》，590年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#8b6655",
+    "endYear": 604,
+    "eraId": "sui-tang",
+    "id": "sui-ruzheng-mapping",
+    "influence": 2,
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 590,
+    "summary": "隋朝通过输籍、貌阅等措施辨别年龄和身份，追索依附豪强而未在官府登记的人口。它提高国家征税与征役的能力，也改变百姓与地方大族的关系；史书所见户口增长并不能简单等同于自然人口激增。",
+    "title": "隋朝户籍括户",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二十四《食货志》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 607,
+    "eraId": "sui-tang",
+    "id": "sui-changes-counties",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.45,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 590,
+    "summary": "隋朝对州、郡、县层级反复调整，以减少南北分治时代遗留的重叠官署和冗员。名称与辖区在文帝、炀帝时期并不完全相同，地方行政的整合是连续过程；唐初州县制度在此基础上重新安排。州县裁并改变官员编制与赋税上送路径。",
+    "title": "隋朝州县层级调整",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二十八《百官志下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#7862a9",
+    "endYear": 595,
+    "eraId": "sui-tang",
+    "id": "sui-renshou-palace",
+    "influence": 2,
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        1.35,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 593,
+    "summary": "隋文帝在岐州营建仁寿宫，宫殿作为避暑与政治活动场所，征发工匠和民夫甚众。宏大建筑体现统一王朝的资源调度，也引出有关劳役、营造者功过与皇室生活的记载；不可仅把它视为建筑风格演进。",
+    "title": "仁寿宫营建",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二《高祖纪下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#8a668e",
+    "endYear": 601,
+    "eraId": "sui-tang",
+    "id": "sui-jiaobu-buddhism",
+    "influence": 2,
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        -1.35,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 601,
+    "summary": "隋文帝下诏在多地建舍利塔，以佛教仪式联结皇权、地方官和寺院网络。诏令的传播依赖州县与僧众，宗教活动同时具有政治象征和地方社会意义；建塔的地点、次数与灵验叙事需分别看待。舍利分送和地方建塔使诏令进入各地寺院。",
+    "title": "仁寿舍利塔诏建",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二《高祖纪下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4d7aa4",
+    "endYear": 609,
+    "eraId": "sui-tang",
+    "id": "sui-renshi-silk",
+    "influence": 2,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.9,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 603,
+    "summary": "裴矩等人在张掖接触西域商使，朝廷借商贸信息了解诸国道路、物产与政治局势。隋代西域经营与对吐谷浑、突厥的关系相互牵连，朝廷图籍所描绘的路线不意味着各地都已稳定纳入统治。裴矩编写《西域图记》整合商旅所报信息。",
+    "title": "隋朝西域商路再开",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷六十七《裴矩传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 604,
+    "eraId": "sui-tang",
+    "id": "sui-yangdi-accession",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.45,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [
+      "person-yang-guang"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 604,
+    "summary": "隋文帝去世后杨广即位，朝廷政策重心转向东都建设、水运与边疆远征。关于太子更替和文帝死因，正史叙述含有强烈道德判断，具体传闻不宜当作确证；即位后的大规模工程则有连续史料可考。东都营建随后改变了朝廷的政治活动中心。",
+    "title": "隋炀帝即位",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷三《炀帝纪上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 605,
+    "eraId": "sui-tang",
+    "id": "sui-tongji-canal",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.9,
+        -0.35
+      ]
+    },
+    "parentId": "sui-grand-canal",
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [
+      "sui-tongji-canal-part-of-sui-grand-canal"
+    ],
+    "startYear": 605,
+    "summary": "大业元年朝廷动员民夫开通济渠，沟通黄河与淮河方向的水运，服务东都和江淮之间的粮物调拨。它是隋代运河体系的重要一段，既依托已有水系，也伴随沉重征役；不能和永济渠混同。东都经此获得从江淮运输粮物的新通道。",
+    "title": "通济渠开凿",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷三《炀帝纪上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4f8d8d",
+    "endYear": 606,
+    "eraId": "sui-tang",
+    "id": "sui-luoyang-capital",
+    "influence": 2,
+    "layout": {
+      "lane": "science",
+      "offset": [
+        0,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 605,
+    "summary": "隋炀帝命营东都洛阳，宫城、里坊与交通设施的建设汇集各地工匠和物资。东都连接黄河、洛水与运河线路，便利王朝调度东部资源；同时高强度征役成为大业时期社会负担的重要组成。宫城和城郭的营造延续了不止一年。",
+    "title": "东都洛阳营建",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷三《炀帝纪上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [
+      "sui-tongji-canal",
+      "sui-yongji-canal",
+      "sui-jiangnan-canal"
+    ],
+    "color": "#b58b38",
+    "endYear": 610,
+    "eraId": "sui-tang",
+    "id": "sui-grand-canal",
+    "influence": 4,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.45,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [
+      "person-yang-guang"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [
+      "sui-tongji-canal-part-of-sui-grand-canal",
+      "sui-yongji-canal-part-of-sui-grand-canal",
+      "sui-jiangnan-canal-part-of-sui-grand-canal",
+      "sui-kaihuang-treasury-to-sui-grand-canal"
+    ],
+    "startYear": 605,
+    "summary": "通济渠、永济渠与江南河等水道先后开凿或整治，连通黄河、淮河、长江与北方边镇。各段工程时间、功能和旧河道基础不同，不应写成同一年一次挖成；运输网络长期促进南北物资流动，征役却加剧隋末危机。",
+    "title": "隋大运河体系形成",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷二十四《食货志》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷180《隋纪》，605年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 608,
+    "eraId": "sui-tang",
+    "id": "sui-yongji-canal",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        1.35,
+        0
+      ]
+    },
+    "parentId": "sui-grand-canal",
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [
+      "sui-yongji-canal-part-of-sui-grand-canal"
+    ],
+    "startYear": 608,
+    "summary": "隋廷开永济渠使水运由黄河地区通向涿郡方向，朝廷借此供应北部边疆及高句丽战争准备。北方水道与南方通济渠作用不同；工程所需劳役与战争转输共同压迫沿线社会。涿郡成为北方军粮和兵员集结的终点之一。",
+    "title": "永济渠开凿",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷三《炀帝纪上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#69804a",
+    "endYear": 609,
+    "eraId": "sui-tang",
+    "id": "sui-qiang-toyuhun",
+    "influence": 2,
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        0.9,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 608,
+    "summary": "隋炀帝对青海一带的吐谷浑展开大规模军事行动，并设置郡县以图控制西域交通。朝廷所宣示的行政版图与边地实际控制未必一致，长途驻军和转输加重财政负担；这一西北经营也影响唐初边疆格局。",
+    "title": "隋军进击吐谷浑",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷三《炀帝纪上》，大业四年至五年吐谷浑事"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 610,
+    "eraId": "sui-tang",
+    "id": "sui-jiangnan-canal",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -1.35,
+        0.35
+      ]
+    },
+    "parentId": "sui-grand-canal",
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [
+      "sui-jiangnan-canal-part-of-sui-grand-canal"
+    ],
+    "startYear": 610,
+    "summary": "隋炀帝在江南修开水道，连接京口与余杭，扩大江南粮物和地方交通的水运范围。它与北方、淮河诸渠一道构成后称隋大运河的网络；具体水路利用旧河道和自然水系，不宜视为完全新辟的单一河槽。",
+    "title": "江南河开凿",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷三《炀帝纪上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#8b6655",
+    "endYear": 618,
+    "eraId": "sui-tang",
+    "id": "sui-rebellions",
+    "influence": 4,
+    "layout": {
+      "lane": "society",
+      "offset": [
+        1.35,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [
+      "person-yang-guang"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [
+      "sui-korean-campaign-to-sui-rebellions",
+      "sui-rebellions-to-tang-founded"
+    ],
+    "startYear": 611,
+    "summary": "山东、河南和江淮等地起事不断，征役、灾荒、战争转输与地方秩序崩坏共同提供了动员条件。各支力量来源和目标并不相同，既有农民军，也有地方豪强与旧官僚；多中心割据逐步瓦解隋的财政和军事控制。",
+    "title": "隋末群雄并起",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷四《炀帝纪下》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷181《隋纪五》，大业七年王薄起事；卷182《隋纪六》，大业九年杨玄感黎阳起兵；卷183《隋纪七》，大业十三年李渊起兵"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 612,
+    "eraId": "sui-tang",
+    "id": "sui-salsu-retreat",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.45,
+        -0.7
+      ]
+    },
+    "parentId": "sui-korean-campaign",
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui",
+      "goguryeo"
+    ],
+    "relationIds": [
+      "sui-salsu-retreat-part-of-sui-korean-campaign"
+    ],
+    "startYear": 612,
+    "summary": "第一次高句丽远征中，隋军深入后遭遇补给困难，回撤途中在萨水一带惨败。史书对出征和生还人数的夸张数字须审慎看待；战役暴露了跨辽东的距离、粮运和指挥问题，也影响朝廷继续征战的成本。",
+    "title": "萨水之战与隋军撤退",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷六十《宇文述传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [
+      "sui-salsu-retreat"
+    ],
+    "color": "#c84c36",
+    "endYear": 614,
+    "eraId": "sui-tang",
+    "id": "sui-korean-campaign",
+    "influence": 4,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.9,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [
+      "person-yang-guang"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "sui",
+      "goguryeo"
+    ],
+    "relationIds": [
+      "sui-korean-campaign-to-sui-rebellions",
+      "sui-salsu-retreat-part-of-sui-korean-campaign"
+    ],
+    "startYear": 612,
+    "summary": "隋炀帝多次发动对高句丽的大规模征伐，军队远赴辽东，水陆转输与后勤组织极为艰巨。围城与回师的结果未达预期，士卒损失和频繁征役削弱王朝统治；战争与国内民变相互加剧，但不能把亡隋归于单一战役。",
+    "title": "隋征高句丽",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷四《炀帝纪下》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷181《隋纪》，612年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 613,
+    "eraId": "sui-tang",
+    "id": "sui-yang-xuangan-revolt",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 613,
+    "summary": "杨玄感利用朝廷东征之际在黎阳起兵，攻向洛阳，地方精英和军队内部的不满由此显露。起兵最终失败，却牵制远征部署并促使朝廷加重镇压；它与各地农民起事并非同一组织。洛阳守军抵挡叛军，杨玄感最终败亡。",
+    "title": "杨玄感起兵",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷七十《杨玄感传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#8b6655",
+    "endYear": 618,
+    "eraId": "sui-tang",
+    "id": "sui-wagang-rise",
+    "influence": 2,
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0.45,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 613,
+    "summary": "翟让、李密等人聚集瓦岗力量，控制河南粮仓与交通要道，吸纳逃亡者及部分士人。瓦岗内部领导权与政治目标多次变化，最终未建立稳定统一政权；其活动显示隋末中央对粮道和地方秩序的失控。",
+    "title": "瓦岗军兴起",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷七十《李密传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4d7aa4",
+    "endYear": 615,
+    "eraId": "sui-tang",
+    "id": "sui-yanmen-siege",
+    "influence": 2,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0.9,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 615,
+    "summary": "东突厥始毕可汗围困隋炀帝于雁门，隋廷求援并动员各地兵马，随后突厥撤围。事件说明北方联盟已随隋朝国势与边境政策变化而松动；史料中的求援经过需要与军事部署分开讨论。围城期间的求援暴露了隋与突厥关系恶化。",
+    "title": "雁门之围",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷四《炀帝纪下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 617,
+    "eraId": "sui-tang",
+    "id": "sui-li-yuan-taiyuan",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.35,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "隋代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 617,
+    "summary": "李渊在太原起兵南下，取得长安并拥立隋宗室，先以隋臣名义掌握关中政权。起兵与各地反隋势力并行，后来的唐朝并非在这一年已统一全国；关中粮草和军队重组决定了其初期优势。长安政权仍保留隋恭帝的皇帝名号。",
+    "title": "李渊太原起兵",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一《高祖纪》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 618,
+    "eraId": "sui-tang",
+    "id": "sui-jiangdu-coup",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.9,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "隋末",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "sui"
+    ],
+    "relationIds": [],
+    "startYear": 618,
+    "summary": "宇文化及等人在江都发动兵变，隋炀帝被杀，留守江都的中央权力结构崩溃。各地割据势力仍在竞争，长安与洛阳也分别存在隋室名号；江都之变是隋亡关键节点，却不等于所有隋朝统治同日终止。",
+    "title": "江都兵变",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "suishu-zhonghua-1973",
+        "locator": "卷四《炀帝纪下》，大业十四年三月江都事"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 618,
+    "eraId": "tang",
+    "id": "tang-founded",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.45,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-li-yuan"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "sui-rebellions-to-tang-founded",
+      "tang-founded-to-tang-xuanwu-gate"
+    ],
+    "startYear": 618,
+    "summary": "李渊在长安接受隋恭帝禅让，定国号唐，继承关中军政资源并开始争夺各地。王世充、窦建德等势力仍控制广大地区，唐朝的建立与统一是两个阶段；唐初制度也延续并调整隋朝的法令、州县与财政安排。",
+    "title": "唐朝建立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一《高祖纪》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷185《唐纪》，618年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 749,
+    "eraId": "tang",
+    "id": "tang-military-fubing",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.35,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 618,
+    "summary": "唐初沿用关陇府兵传统，在折冲府等组织下调发卫士与地方兵役，随后制度随人口、土地与边防需求变化。府兵从未成为全部唐军的唯一来源；中后期募兵增长，旧制逐步失去原先的运作条件。边镇长期驻军逐渐改变轮番宿卫的条件。",
+    "title": "唐府兵制沿革",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷四十三《职官志二》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 621,
+    "eraId": "tang",
+    "id": "tang-early-copper-coins",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 621,
+    "summary": "唐政府铸行开元通宝，以重量与钱文规范流通货币，逐步替代先前形制不一的钱币。钱币称谓里的开元并非唐玄宗年号，此钱始于高祖武德年间；实物通行还受各地铜源和市场条件制约。统一钱文便利朝廷规定铸币重量。",
+    "title": "开元通宝铸行",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷四十八《食货志上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 621,
+    "eraId": "tang",
+    "id": "tang-hulao-campaign",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.45,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 621,
+    "summary": "李世民率唐军围攻洛阳王世充，继而在虎牢击败来援的窦建德，改变中原战局。王、窦势力随之瓦解，但河北等地仍有后续战事；这一胜利为唐取得黄河流域优势创造条件，也增强秦王集团的声望。窦建德被俘使王世充失去外援。",
+    "title": "虎牢之战",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷二《太宗纪上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 624,
+    "eraId": "tang",
+    "id": "tang-hebei-settlement",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.9,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 621,
+    "summary": "虎牢之战后唐军继续处理刘黑闼等河北力量，军事胜利与地方招抚并行。河北的归附并非单一战役的自然结果，旧部、豪强和军镇资源反复转换；此后地方治理仍是唐初的重要难题。刘黑闼再起说明军事接收尚未稳固。",
+    "title": "河北诸势力归唐",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一《高祖纪》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4d7aa4",
+    "endYear": 645,
+    "eraId": "tang",
+    "id": "tang-goguryeo-envoys",
+    "influence": 2,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        1.35,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "goguryeo"
+    ],
+    "relationIds": [],
+    "startYear": 621,
+    "summary": "唐初与高句丽之间既有册封使节，也有边境安全和辽东旧地问题，交往逐渐转向军事对抗。高句丽是拥有自身统治结构的邻国，不能将唐朝颁授的名号等同于实际管辖；外交关系随东北局势不断变化。",
+    "title": "唐与高句丽交涉",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十九上《高丽传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 749,
+    "eraId": "tang",
+    "id": "tang-zuyongdiao",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        1.35,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 624,
+    "summary": "唐初以编户、授田和成年男丁为基础征租、庸、调，为中央财政提供粮食、布帛与劳役。土地兼并、逃户和边疆驻军使制度逐渐难以照旧推行；同一名称在不同时期的实际征收差异很大。庸允许以布帛代役，征收依据是编户男丁。",
+    "title": "租庸调制运作与变化",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷四十八《食货志上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 626,
+    "eraId": "tang",
+    "id": "tang-taizong-accession",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.45,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 626,
+    "summary": "李世民在玄武门事件后即位，改以新的君臣班底处理财政恢复、法令修订与边疆事务。即位有明确年序，但“贞观之治”是后世概括的长期政治评价；不能把后续二十余年的政策成效全部压缩在即位当年。",
+    "title": "唐太宗即位",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷二《太宗纪上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 626,
+    "eraId": "tang",
+    "id": "tang-xuanwu-gate",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.9,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-li-shimin"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-founded-to-tang-xuanwu-gate",
+      "tang-xuanwu-gate-to-zhenguan"
+    ],
+    "startYear": 626,
+    "summary": "秦王李世民与太子李建成、齐王李元吉的权力争夺在长安玄武门爆发，李世民随后成为太子并即帝位。史书多由胜利者朝廷编纂，对各方动机须保持审慎；事件改变唐初继承秩序和朝廷人事。高祖随即改立李世民为太子。",
+    "title": "玄武门之变",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷二《太宗纪上》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷191《唐纪》，626年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "childIds": [],
+    "color": "#e5bc67",
+    "endYear": 649,
+    "eraId": "tang",
+    "id": "zhenguan",
+    "influence": 5,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.4,
+        0.4
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-li-shimin",
+      "person-wei-zheng",
+      "person-fang-xuanling"
+    ],
+    "placeIds": [],
+    "polityIds": [],
+    "relationIds": [
+      "tang-xuanwu-gate-to-zhenguan"
+    ],
+    "startYear": 627,
+    "summary": "纳谏、任贤与制度修整，塑造唐初政治气象。唐太宗即位后减轻赋役、整顿吏治，并以开放姿态听取群臣意见。魏征等人的直谏成为后世政治叙事中的典范。稳定的制度与社会恢复，为唐朝此后的繁荣及更广阔的对外交流奠定了基础。",
+    "themeIds": [],
+    "title": "贞观之治",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第六卷《中古时代·隋唐时期》，贞观之治的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“贞观之治”条，事件经过与历史影响部分"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#8a668e",
+    "endYear": 664,
+    "eraId": "tang",
+    "id": "tang-buddhist-translation",
+    "influence": 4,
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0.45,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-xuanzang"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-buddhist-translation-to-tang-zhenguan-geography"
+    ],
+    "startYear": 629,
+    "summary": "玄奘西行访求佛典，回国后在长安组织译经与论辩，带动佛教知识、地理记述和中亚交通信息的传播。取经路线与译场活动跨越数十年，不应压成一次旅行；后世文学神话也须与史料记载区分。译经活动始于玄奘645年返唐之后。",
+    "title": "玄奘求法与译经",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十一《方伎传》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷一百九十八《唐纪十四》，贞观十九年玄奘还京"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#69804a",
+    "endYear": 630,
+    "eraId": "tang",
+    "id": "tang-east-turkic-collapse",
+    "influence": 2,
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        0,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "eastern-turkic"
+    ],
+    "relationIds": [],
+    "startYear": 630,
+    "summary": "唐军在李靖等统率下击败颉利可汗，东突厥汗国失去原有政治中心，唐朝继而安置部众并调整北方边防。草原社会并未因此消失，部族迁徙、内附和后来的复兴仍持续改变唐与北方的关系。颉利被俘后部众的安置成为边政新问题。",
+    "title": "唐灭东突厥汗国",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十四上《突厥传上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [
+      "tang-yonghui-code"
+    ],
+    "color": "#9b7a45",
+    "endYear": 653,
+    "eraId": "tang",
+    "id": "tang-zhenguan-law",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.9,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-zhangsun-wuji"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-yonghui-code-part-of-tang-zhenguan-law"
+    ],
+    "startYear": 637,
+    "summary": "贞观时期的律令修订在637年前后形成较稳定的法典，规定刑名和官民身份秩序。永徽年间又以此为基础编订律疏，653年颁行解释文本。两次修律分属不同朝廷和阶段；条文的连续性以及注疏的司法用途，应分别观察。",
+    "title": "贞观律至永徽律疏",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷五十《刑法志》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 790,
+    "eraId": "tang",
+    "id": "tang-anxi-protectorate",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.35,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 640,
+    "summary": "唐朝在西域设置安西都护府，治所和所辖随高昌、西突厥、吐蕃与地方绿洲局势而变。都护府的名称有连续性，但不同年代的实际兵力与控制范围并不相同；它是唐朝经营丝路的重要军政节点。治所迁移反映绿洲和边疆战局的变化。",
+    "title": "安西都护府设置与迁移",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷四十《地理志三》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4d7aa4",
+    "endYear": 641,
+    "eraId": "tang",
+    "id": "tang-taizong-tibet-marriage",
+    "influence": 2,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1.35,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "tubo"
+    ],
+    "relationIds": [],
+    "startYear": 641,
+    "summary": "唐朝宗室女文成公主赴吐蕃与松赞干布成婚，婚盟连接了两大政权的使节往来与物资交流。和亲不是唐对吐蕃的直接统治，双方后来也发生长期战争；婚姻的政治意义应放在反复变化的边境关系中理解。",
+    "title": "文成公主入吐蕃",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十六上《吐蕃传上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 645,
+    "eraId": "tang",
+    "id": "tang-goguryeo-campaign",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.9,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "goguryeo"
+    ],
+    "relationIds": [],
+    "startYear": 645,
+    "summary": "唐太宗亲率军队越辽东进攻高句丽，攻取若干城池却未克安市，最终回师。战争既延续隋代辽东问题，又受东北诸国关系制约；一役失败没有终结唐朝对高句丽的战略，后续征战仍持续多年。安市城围攻不克是回师的重要背景。",
+    "title": "唐太宗征高句丽",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷三《太宗纪下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#7862a9",
+    "endYear": 646,
+    "eraId": "tang",
+    "id": "tang-zhenguan-geography",
+    "influence": 2,
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -0.45,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-buddhist-translation-to-tang-zhenguan-geography"
+    ],
+    "startYear": 646,
+    "summary": "玄奘回国后口述西行见闻，由弟子整理成《大唐西域记》，记述中亚与印度诸地的城邑、宗教和交通。文本兼含亲历、转述与佛教知识框架，需分层使用；它仍是研究七世纪跨区域交流的重要材料。辩机编次口述材料，使行程叙述成书。",
+    "title": "大唐西域记撰成",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十一《方伎传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 649,
+    "eraId": "tang",
+    "id": "tang-gaozong-accession",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 649,
+    "summary": "李治继唐太宗后即位，继续使用贞观以来的官僚与法律资源，朝廷重心逐渐转向皇后、宰相和宗室间的新权力组合。高宗一朝历时较长，边疆战争和内部政治并非同一方向变化，不能以武则天后来的掌权概括全部时期。",
+    "title": "唐高宗即位",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷四《高宗纪上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 653,
+    "eraId": "tang",
+    "id": "tang-yonghui-code",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.45,
+        0.35
+      ]
+    },
+    "parentId": "tang-zhenguan-law",
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-yonghui-code-part-of-tang-zhenguan-law"
+    ],
+    "startYear": 653,
+    "summary": "唐高宗永徽年间颁行带有疏议的法律解释，官员据此理解条文和裁断案件。它建立在贞观修律基础上，既涉及刑名也涉及社会身份与亲属秩序；后世所谓《唐律疏议》的影响不能替代对当时司法实践的考察。",
+    "title": "永徽律疏颁行",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷五十《刑法志》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 655,
+    "eraId": "tang",
+    "id": "tang-wu-empress",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.45,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 655,
+    "summary": "高宗废王皇后后立武则天为皇后，宫廷权力格局由此改变。关于旧后和萧淑妃的罪责，传统史书多带有后出政治与性别判断；武后后来参与朝政、临朝称制直至建周，是不同阶段，不能写成同年发生。",
+    "title": "武则天立后",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷六《则天皇后本纪》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#69804a",
+    "endYear": 657,
+    "eraId": "tang",
+    "id": "tang-west-turkic-campaign",
+    "influence": 2,
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        0.9,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "western-turkic"
+    ],
+    "relationIds": [],
+    "startYear": 657,
+    "summary": "苏定方等率军击败阿史那贺鲁，西突厥汗国的政治联盟解体，唐朝尝试用都护府和羁縻安排管理西域。各绿洲和草原部落仍保有地方权力，唐的军事胜利并不代表对全部地区长期稳定控制。阿史那贺鲁被俘后唐廷调整羁縻安排。",
+    "title": "唐灭西突厥阿史那贺鲁",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十四下《突厥传下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4d7aa4",
+    "endYear": 660,
+    "eraId": "tang",
+    "id": "tang-baekje-campaign",
+    "influence": 2,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1.35,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "baekje",
+      "silla"
+    ],
+    "relationIds": [],
+    "startYear": 660,
+    "summary": "唐朝与新罗合作攻灭百济，随后在朝鲜半岛设置管理机构，原百济地区又出现复国行动。联盟随共同敌人消失而改变，唐、新罗之间后来也发生冲突；不能把军事合作解释为新罗始终服从唐的单向关系。",
+    "title": "唐与新罗攻百济",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十九上《百济传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 668,
+    "eraId": "tang",
+    "id": "tang-goguryeo-fall",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.9,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "goguryeo",
+      "silla"
+    ],
+    "relationIds": [],
+    "startYear": 668,
+    "summary": "唐与新罗在长期战争后攻下平壤，高句丽旧王朝终结，唐朝试图设置安东都护府管理故地。此后原有居民、地方武装与新罗势力持续争夺空间，唐的行政名义和实际控制范围逐渐发生变化。新罗与唐对故地的利益并不完全一致。",
+    "title": "高句丽灭亡",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十九上《高丽传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 690,
+    "eraId": "tang",
+    "id": "tang-wu-regency",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 683,
+    "summary": "高宗死后，武则天以皇太后身份临朝，先后控制中宗、睿宗时期的朝政，并重组任官与政治支持。她在此阶段尚未正式改国号周；史籍关于政敌与酷吏的叙述需结合其政治立场分辨。废立中宗与睿宗使临朝权力愈发集中。",
+    "title": "武后临朝称制",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷六《则天皇后本纪》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#8a668e",
+    "endYear": 696,
+    "eraId": "tang",
+    "id": "tang-ming-tang",
+    "influence": 2,
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0.9,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "wu-zhou"
+    ],
+    "relationIds": [],
+    "startYear": 688,
+    "summary": "武则天在洛阳营建明堂，并在其中举行仪式，以建筑、经典解释和宗教象征表现新政权的正统性。明堂遭火灾后又重建，其形制与功能随时变化；后世关于奢华和神异的记载不可全作工程事实。洛阳明堂成为武周政治礼仪的场所。",
+    "title": "武周明堂营建与礼仪",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷六《则天皇后本纪》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 690,
+    "eraId": "tang",
+    "id": "tang-wu-zhou-founded",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.45,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-wu-zetian"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "wu-zhou"
+    ],
+    "relationIds": [
+      "tang-wu-zhou-founded-to-tang-wu-zhou-end"
+    ],
+    "startYear": 690,
+    "summary": "武则天在洛阳即皇帝位，改国号周，使用新的政治象征与年号，并继续组织官僚选拔和地方治理。周是唐室权力秩序中的独立国号阶段，唐朝后来复号；其政治和文化影响不能只用宫廷争斗解释。洛阳的官署仍承担新国号下的行政事务。",
+    "title": "武周建立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷六《则天皇后本纪》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷204《唐纪》，690年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#8a668e",
+    "endYear": 705,
+    "eraId": "tang",
+    "id": "tang-wu-buddhist-script",
+    "influence": 2,
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        -1.35,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "wu-zhou"
+    ],
+    "relationIds": [],
+    "startYear": 690,
+    "summary": "武周朝廷借佛典阐释、译经和寺院仪式说明女皇帝的统治合法性，宗教活动与国家礼仪交互。佛教界并非意见完全一致，政治文本也不等于民间信仰全貌；这一时期的宗教政策与国家权力密切相关。",
+    "title": "武周佛教政治象征",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷六《则天皇后本纪》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 705,
+    "eraId": "tang",
+    "id": "tang-wu-exams",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.35,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "wu-zhou"
+    ],
+    "relationIds": [],
+    "startYear": 690,
+    "summary": "武周时期通过制举、殿试等形式扩大官员来源，朝廷借选才调整旧贵族与新进士人的力量。考试机会仍受教育与社会资源限制，门荫和荐举也未消失；后世把全部科举制度归于武则天创设并不准确。",
+    "title": "武周扩大科举取士",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷四十四《职官志三》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 705,
+    "eraId": "tang",
+    "id": "tang-wu-zhou-end",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.9,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-zhang-jianzhi"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "wu-zhou"
+    ],
+    "relationIds": [
+      "tang-wu-zhou-founded-to-tang-wu-zhou-end",
+      "tang-wu-zhou-end-to-tang-zhongzong-return"
+    ],
+    "startYear": 705,
+    "summary": "张柬之等发动政变，迫使武则天退位，中宗复位，朝廷恢复唐国号。政变完成的是皇位与国号转换，武周时代形成的官僚、文学和宗教网络并未瞬间消失；新的政治集团随后仍持续争权。中宗复位重新安排了宗室与功臣权力。",
+    "title": "神龙政变与唐复号",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷七《中宗睿宗纪》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷207《唐纪》，705年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#7862a9",
+    "endYear": 710,
+    "eraId": "tang",
+    "id": "tang-jinglong-literati",
+    "influence": 2,
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0.45,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 705,
+    "summary": "中宗时期宫廷文士通过宴集、应制和文馆活动形成诗文交流圈，文学与仕进紧密相连。宫廷诗并非唐诗的全部，作者也受政治变动影响；这一阶段的形式试验为随后律诗和盛唐诗风提供资源。上官婉儿等人的宫廷活动塑造文馆风气。",
+    "title": "景龙文馆与宫廷诗",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十《文苑传上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 710,
+    "eraId": "tang",
+    "id": "tang-zhongzong-return",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-wu-zhou-end-to-tang-zhongzong-return"
+    ],
+    "startYear": 705,
+    "summary": "中宗复位后，韦后、安乐公主与宗室、宰臣争夺权力，武周旧臣也继续参与朝政。唐复号并未自动恢复贞观式政治格局；宫廷派系与地方官僚的关系成为这一时期反复变化的核心。韦后与安乐公主的势力不断增强。",
+    "title": "中宗复位后的朝廷",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷七《中宗睿宗纪》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [
+      "tang-changan-foreign-merchants"
+    ],
+    "color": "#b58b38",
+    "endYear": 755,
+    "eraId": "tang",
+    "id": "tang-changan-hubs",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.45,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-changan-foreign-merchants-part-of-tang-changan-hubs"
+    ],
+    "startYear": 705,
+    "summary": "长安的坊市、寺院和驿道聚集来自各地的商旅与使节，城市消费依赖漕运和关中腹地。其开放面貌并不意味着任何人可随意越过市禁或身份界限；贸易、宗教和日常生活在具体街区与制度约束中展开。",
+    "title": "长安坊市与国际商旅",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷四十八《食货志上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4d7aa4",
+    "endYear": 710,
+    "eraId": "tang",
+    "id": "tang-tubo-heqin-jincheng",
+    "influence": 2,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.45,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "tubo"
+    ],
+    "relationIds": [],
+    "startYear": 710,
+    "summary": "金城公主赴吐蕃成婚，唐与吐蕃继续以婚盟、使节和边境谈判处理关系。和平协议并未消除土地和军镇争议，双方在河西、陇右仍多次交战；公主个人经历不能替代两国复杂的外交史。婚盟维系使节往来而未终止边境战事。",
+    "title": "金城公主入吐蕃",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十六上《吐蕃传上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#8b6655",
+    "endYear": 713,
+    "eraId": "tang",
+    "id": "tang-taiping-princess",
+    "influence": 2,
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0.9,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 710,
+    "summary": "睿宗复位后，太平公主在任官和宫廷决策中拥有重要影响，与太子李隆基的政治联盟逐渐破裂。她的作用不能仅归为性别逸闻，女性宗室在皇位继承与官僚人事中确有现实力量；具体谋反指控仍须审慎。",
+    "title": "太平公主参政",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百八十三《外戚传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 755,
+    "eraId": "tang",
+    "id": "tang-frontier-jiedushi",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.45,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 710,
+    "summary": "唐玄宗朝沿边节度使统领驻军与边地财赋，制度适应长期边防需要，也使军政资源集中于少数将帅。安史之乱后内地藩镇与开元边镇并不完全相同，不能把后来的割据直接写作设官之初的必然结果。",
+    "title": "节度使权力扩展",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷三十八《地理志一》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 713,
+    "eraId": "tang",
+    "id": "tang-xuanzong-accession",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.35,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-li-longji"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-xuanzong-accession-to-kaiyuan"
+    ],
+    "startYear": 712,
+    "summary": "李隆基先继承皇位，又在次年击败太平公主一派，随后推进朝廷人事和财政整理。登基与完全掌握政局不是同一节点；姚崇等宰臣的任用也与此前动荡的官僚秩序有关。713年的政治清洗才使玄宗独掌中枢。",
+    "title": "唐玄宗登基与权力整合",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷八《玄宗纪上》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷210《唐纪》，712年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 716,
+    "eraId": "tang",
+    "id": "tang-yao-chong-reforms",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.35,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 713,
+    "summary": "姚崇在玄宗朝担任宰相，强调减少冗官、抑制外戚与处理地方灾害，推动开元初的行政整顿。所谓十事之说是后世高度概括，具体政策并非一人独力完成；宋璟等宰相与皇帝决策也共同塑造局面。官员任用和灾害应对是开元初政务重点。",
+    "title": "姚崇整饬政务",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷九十六《姚崇传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy",
+      "culture"
+    ],
+    "childIds": [],
+    "color": "#f0c96f",
+    "endYear": 741,
+    "eraId": "tang",
+    "id": "kaiyuan",
+    "influence": 5,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        2.1,
+        -0.6
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-li-longji",
+      "person-yao-chong",
+      "person-song-jing"
+    ],
+    "placeIds": [],
+    "polityIds": [],
+    "relationIds": [
+      "tang-xuanzong-accession-to-kaiyuan"
+    ],
+    "startYear": 713,
+    "summary": "经济文化走向高峰，长安成为世界性都会。开元前期政治相对清明，农业、手工业与商业持续发展。长安汇聚来自亚洲各地的商旅、宗教和艺术，诗歌与音乐蓬勃生长。这一盛世既展示了唐代开放气象，也为后来的结构性矛盾埋下复杂伏笔。",
+    "themeIds": [],
+    "title": "开元盛世",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第六卷《中古时代·隋唐时期》，开元盛世的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史（二）“唐”条，玄宗开元时期的政治与经济叙述"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 755,
+    "eraId": "tang",
+    "id": "tang-changan-foreign-merchants",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        1.35,
+        0.35
+      ]
+    },
+    "parentId": "tang-changan-hubs",
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-changan-foreign-merchants-part-of-tang-changan-hubs"
+    ],
+    "startYear": 713,
+    "summary": "开元时期来自中亚等地的商旅在长安东西市、邸店与寺院网络中活动，参与珠宝、香药和织物贸易。外来商人须遵守坊市与税务制度，身份、商路和居住条件各不相同。此条聚焦胡商在市场中的经营，属于长安坊市和国际商旅的城市网络。",
+    "title": "长安胡商与市场管理",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷四十八《食货志上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#7862a9",
+    "endYear": 755,
+    "eraId": "tang",
+    "id": "tang-music-jiaofang",
+    "influence": 2,
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0.9,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 714,
+    "summary": "玄宗时期教坊、梨园等机构组织乐工与舞伎，宫廷乐舞吸收中原与西域诸种曲调。宫廷记录多关注上层演出，民间和边地音乐另有传统；音乐传播中的人群流动也反映盛唐城市文化。乐工训练与演出也服务皇室宴乐。",
+    "title": "开元教坊与宫廷乐舞",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷二十八《音乐志一》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#69804a",
+    "endYear": 750,
+    "eraId": "tang",
+    "id": "tang-tubo-shenglong",
+    "influence": 2,
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        0,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "tubo"
+    ],
+    "relationIds": [],
+    "startYear": 715,
+    "summary": "吐蕃势力扩展至青海与河西周边，同唐朝围绕城堡、交通和盟友展开持久竞争。各次战役得失不同，边界不宜画成一条固定不变的线；贸易、和亲和军事对峙在同一时期并行。河陇军镇的守备牵动唐廷财政。",
+    "title": "吐蕃与唐河陇竞争",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十六上《吐蕃传上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 720,
+    "eraId": "tang",
+    "id": "tang-song-jing-justice",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.9,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 716,
+    "summary": "宋璟任相时期强调法度、官员任用和地方治理，延续开元前期调整朝政的方向。后世常将姚崇、宋璟并称良相，但两人所处政策条件并不完全相同；考核与司法成效仍须看具体案例。宋璟限制请托并强调按法任官。",
+    "title": "宋璟执政与官吏考核",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷九十六《宋璟传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4d7aa4",
+    "endYear": 753,
+    "eraId": "tang",
+    "id": "tang-abe-studies",
+    "influence": 2,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.9,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 717,
+    "summary": "日本遣唐使、留学生与僧人往返唐朝，学习律令、佛教与文艺，唐朝也通过使节了解海东局势。来访批次、路线和参与者各不相同，交流不是每年连续不断；返国后的制度转化有日本自身条件。阿倍仲麻吕等人长期留唐任官。",
+    "title": "遣唐使与留学生",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十九上《倭国日本传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 755,
+    "eraId": "tang",
+    "id": "tang-tun-tian-hex",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.9,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 720,
+    "summary": "河西与陇右军镇通过屯田、转运和市场取得粮草，边境驻军的供给依赖复杂的地方网络。屯田并不能完全自给，随战争和驻军规模扩大，财政压力持续变化；这也是盛唐边防制度的重要经济侧面。军需还须靠漕运和商人供应。",
+    "title": "河西屯田与军粮",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷四十八《食货志上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#7862a9",
+    "endYear": 761,
+    "eraId": "tang",
+    "id": "tang-wang-wei-painting",
+    "influence": 2,
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0.45,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-li-bai-poetry-to-tang-wang-wei-painting"
+    ],
+    "startYear": 720,
+    "summary": "王维在朝廷任职并创作山水诗、音乐和绘画，佛教思想与别业生活进入其艺术表达。后世传世绘画的真伪多有争议，不能把所有题名作品视为亲笔；其诗画观念对文人审美产生长远影响。辋川别业成为其诗画形象的重要载体。",
+    "title": "王维诗画与山水审美",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十下《文苑传下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4f8d8d",
+    "endYear": 725,
+    "eraId": "tang",
+    "id": "tang-kaiyuan-astronomy",
+    "influence": 2,
+    "layout": {
+      "lane": "science",
+      "offset": [
+        1.35,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-yi-xing"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 724,
+    "summary": "僧一行与相关官员参与观测和测量，为大衍历编制提供资料，并探索不同地点日影与天象的差异。测量方法和数据有时代条件，不能套用现代科学精度评价；其工作体现唐代佛教知识人与国家天文机构合作。",
+    "title": "一行测量与历法研究",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷三十五《天文志上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#7862a9",
+    "endYear": 762,
+    "eraId": "tang",
+    "id": "tang-li-bai-poetry",
+    "influence": 4,
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -0.45,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-li-bai"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-li-bai-poetry-to-tang-wang-wei-painting"
+    ],
+    "startYear": 725,
+    "summary": "李白的诗歌以多样乐府、绝句和古风表现游历、交游及政治抱负，曾入翰林而后离开宫廷。其生平并非只有醉酒逸闻，诗作创作年代也常难精确；作品流传使盛唐文化有了跨地域的表达。742年入翰林只占其漫游生涯的一段。",
+    "title": "李白诗歌与漫游",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十下《文苑传下》"
+      },
+      {
+        "sourceId": "xintangshu-zhonghua-1975",
+        "locator": "卷二百二《文艺中·李白》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4f8d8d",
+    "endYear": 729,
+    "eraId": "tang",
+    "id": "tang-dayan-calendar",
+    "influence": 2,
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -1.35,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 729,
+    "summary": "唐廷于开元十七年颁行大衍历，将一行等人此前的观测、计算和修历成果用于朝廷的朔望、节气与礼仪安排。编制工作与正式颁行是不同阶段；历法也在后来的实测与行政应用中接受检验。大衍历显示唐代国家组织天文知识的能力。",
+    "title": "大衍历颁行",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "siku-zongmu-1782",
+        "locator": "卷一百零八《子部·术数类一》，《唐开元占经》条，开元十七年颁大衍历"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 752,
+    "eraId": "tang",
+    "id": "tang-li-linfu-ministry",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.35,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 734,
+    "summary": "李林甫长期任相，控制人事和决策渠道，朝廷在边防、财政和官僚升迁上形成新的权力配置。史书多有严厉道德评价，仍须区分具体政策与人格叙事；其后期政治环境为天宝危机提供背景。宰相长期执政压缩了其他官员的升迁空间。",
+    "title": "李林甫长期执政",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百六《李林甫传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#69804a",
+    "endYear": 755,
+    "eraId": "tang",
+    "id": "tang-nanzhao-rise",
+    "influence": 2,
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        -0.45,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "nanzhao"
+    ],
+    "relationIds": [],
+    "startYear": 738,
+    "summary": "蒙舍诏在唐支持与地方竞争中逐步整合洱海周边诸诏，形成南诏政权。唐朝册封并不等于直接治理云南，南诏拥有独立的政治选择；后来双方战争说明早期联盟并非固定不变。皮逻阁兼并诸诏，洱海地区权力集中。",
+    "title": "南诏统一洱海诸部",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十七《南蛮传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 755,
+    "eraId": "tang",
+    "id": "tang-hexilongyou-transition",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.9,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 740,
+    "summary": "河西、陇右边镇扩大驻军，屯田、买马与漕运共同维持边防，但中央财政承受持续支出。唐朝对西北交通的控制仍随吐蕃和地方势力变化；盛唐经济繁荣与军事成本增长同时存在。边镇军费增长促使朝廷扩大转运。",
+    "title": "河西陇右军镇扩张",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷四十八《食货志上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4d7aa4",
+    "endYear": 754,
+    "eraId": "tang",
+    "id": "tang-jianzhen-voyage",
+    "influence": 2,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1.35,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 742,
+    "summary": "鉴真应日本僧人邀请，自唐代扬州一带多次尝试渡海，经历船难与人员离散，最终抵达日本。他在奈良参与授戒，同行僧俗也携带佛典、医药和工艺知识。历次航行与抵日后的活动分属不同阶段，不能把跨海交流写成一次顺利抵达。",
+    "title": "鉴真东渡日本",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "toda-wajo-toseiden-779",
+        "locator": "《唐大和上东征传》，天平胜宝六年二月四日入京、四月卢舍那佛殿前立戒坛授戒段"
+      },
+      {
+        "sourceId": "shoku-nihongi-797",
+        "locator": "卷十九，天平胜宝六年正月壬子条，鉴真、法进等八人随入唐副使归朝"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#8b6655",
+    "endYear": 756,
+    "eraId": "tang",
+    "id": "tang-yang-guifei-court",
+    "influence": 2,
+    "layout": {
+      "lane": "society",
+      "offset": [
+        0.9,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 745,
+    "summary": "杨贵妃受玄宗宠爱，杨氏宗族进入权力和财富网络，宫廷消费成为后世批评天宝政治的素材。私人关系与国家危机之间没有简单单因果链；传统史书和文学作品塑造的形象必须分开考察。杨氏外戚的任官与赏赐需分案考察。",
+    "title": "杨贵妃与天宝宫廷",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷五十一《后妃传上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#7862a9",
+    "endYear": 770,
+    "eraId": "tang",
+    "id": "tang-du-fu-poetry",
+    "influence": 2,
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 746,
+    "summary": "杜甫的诗作记录仕途困顿、安史战乱及漂泊生活，兼有个人情感和对民生、政治的观察。诗歌不能直接当作逐日编年史，但与史料互证能揭示时代经验；其声律与叙事影响后世诗学。成都与夔州时期的作品保留流亡经验。",
+    "title": "杜甫诗歌与战乱经验",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十下《文苑传下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 755,
+    "eraId": "tang",
+    "id": "tang-anzhou-frontier",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.35,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 747,
+    "summary": "安禄山先后取得范阳、平卢和河东军镇资源，军队、财政与个人网络在东北边地集中。节度使任命本为边防制度一部分，兼领三镇改变权力平衡；叛乱爆发还与朝廷内部冲突和具体时局有关。安禄山兼领三镇后拥有庞大边军。",
+    "title": "安禄山兼领东北军镇",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷二百《安禄山传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 751,
+    "eraId": "tang",
+    "id": "tang-talas-battle",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "abbasid-caliphate"
+    ],
+    "relationIds": [],
+    "startYear": 751,
+    "summary": "高仙芝率唐军与阿拔斯势力在中亚怛罗斯附近交战，葛逻禄等地方力量的行动影响战局，唐军失利。此役是多国竞争的一环，不能单独解释唐退出西域，更不能把造纸术西传全部归因于战俘。葛逻禄临阵变化影响唐军战局。",
+    "title": "怛罗斯之战",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百四《高仙芝传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 754,
+    "eraId": "tang",
+    "id": "tang-nanzhao-tianbao-war",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.45,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "nanzhao"
+    ],
+    "relationIds": [],
+    "startYear": 751,
+    "summary": "唐与南诏关系破裂后多次交战，唐军远征遭遇地形、疫病与补给困难，云南边疆秩序改变。双方仍与吐蕃等势力互动；史书记述伤亡数字或有夸张，战争失利也不能与安史之乱混作同一战事。南诏此后与吐蕃结盟，对唐边防不利。",
+    "title": "天宝年间唐与南诏战争",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十七《南蛮传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "childIds": [
+      "tang-changan-recovered",
+      "tang-shi-siming-rebellion"
+    ],
+    "color": "#df553b",
+    "endYear": 763,
+    "eraId": "tang",
+    "id": "anshi",
+    "influence": 5,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.7,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-an-lushan",
+      "person-shi-siming",
+      "person-li-longji",
+      "person-guo-ziyi"
+    ],
+    "placeIds": [],
+    "polityIds": [],
+    "relationIds": [
+      "anshi-to-tang-hedong-hebei-jiedushi",
+      "tang-changan-recovered-part-of-anshi",
+      "tang-shi-siming-rebellion-part-of-anshi"
+    ],
+    "startYear": 755,
+    "summary": "八年战乱改变唐朝国势与社会结构。安禄山、史思明相继起兵，战火波及北方广大地区。唐朝虽最终平乱，却付出人口流离、财政紧张与中央权威下降的代价。藩镇力量由此坐大，国家重心与赋税体系也逐渐向东南地区转移。",
+    "themeIds": [],
+    "title": "安史之乱",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第六卷《中古时代·隋唐时期》，安史之乱的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“安史之乱”条，事件经过与历史影响部分"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 756,
+    "eraId": "tang",
+    "id": "tang-suzong-lingwu",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.45,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 756,
+    "summary": "安史叛军占据长安后，太子李亨在灵武即位，唐朝形成新的战时指挥中心。玄宗仍在蜀地，两代皇帝的权力交接并不平顺；灵武朝廷通过招募、借兵和财政筹措组织收复两京。新朝廷以肃宗名义调集各路勤王兵。",
+    "title": "唐肃宗灵武即位",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷十《肃宗纪》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4d7aa4",
+    "endYear": 763,
+    "eraId": "tang",
+    "id": "tang-uyghur-alliance",
+    "influence": 2,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "uyghur-khaganate"
+    ],
+    "relationIds": [],
+    "startYear": 756,
+    "summary": "唐朝在安史之乱中借助回纥骑兵收复两京，双方以婚盟、马匹和绢帛交易维系合作。盟友有自己的利益和军队纪律，借兵并非无代价；战后互市与贡赐仍长期影响唐朝财政和北方外交。马绢交易成为战后关系的重要支柱。",
+    "title": "唐与回纥结盟平乱",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十五《回纥传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 757,
+    "eraId": "tang",
+    "id": "tang-changan-recovered",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.45,
+        -0.7
+      ]
+    },
+    "parentId": "anshi",
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-changan-recovered-part-of-anshi"
+    ],
+    "startYear": 757,
+    "summary": "唐军在回纥骑兵协助下收复长安、洛阳，两京重回唐廷控制，但安史集团并未就此瓦解。收复过程涉及军队、使节、百姓和财赋重新组织，战后地方军镇仍保有广泛兵权；这是一场长期战争中的阶段性转折。",
+    "title": "唐军收复长安与洛阳",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷十《肃宗纪》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 761,
+    "eraId": "tang",
+    "id": "tang-shi-siming-rebellion",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.9,
+        -0.35
+      ]
+    },
+    "parentId": "anshi",
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-shi-siming-rebellion-part-of-anshi"
+    ],
+    "startYear": 758,
+    "summary": "安庆绪势力衰弱后，史思明重新发动叛乱，战线再次延伸至洛阳一带。叛军内部继承争端和唐军指挥问题交错，使战事延宕；不能将安史之乱写成安禄山身亡后立即结束。史思明重新夺取洛阳后战线延长。",
+    "title": "史思明叛军再起",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷二百《史思明传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 907,
+    "eraId": "tang",
+    "id": "tang-salt-monopoly",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.9,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 758,
+    "summary": "安史以后朝廷扩大盐的专卖和税收，盐利逐渐成为军费与中央财政的重要来源。专卖依赖运输、商人与地方官僚合作，也带来走私和价格负担；其政策不断变化，不能看作一条始终不变的法令。盐利在德宗以后占财政收入更大比重。",
+    "title": "唐代盐利成为财政支柱",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷四十九《食货志下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 780,
+    "eraId": "tang",
+    "id": "tang-liu-yan-finance",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.45,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 760,
+    "summary": "刘晏主持漕运、盐法与常平等财政事务，利用商人网络和市场信息改善江淮物资转运。其措施回应战后中央粮食与军费需求，但执行依靠地方条件；将唐后期财政恢复归于一人也会遮蔽制度与商人的共同作用。",
+    "title": "刘晏整顿漕运盐利",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百二十三《刘晏传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 850,
+    "eraId": "tang",
+    "id": "tang-jianghuai-grain",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 760,
+    "summary": "唐后期中央越来越依赖江淮粮食，经运河与黄河水系送往关中和洛阳。水患、军镇控制、商运费用都会影响漕粮数量；南方财赋地位提高是长期变化，并非一场战乱后立即完成的经济重心转移。漕运中断会直接影响关中军粮。",
+    "title": "江淮漕粮北运",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷四十八《食货志上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 763,
+    "eraId": "tang",
+    "id": "tang-tubo-changan",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.35,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "tubo"
+    ],
+    "relationIds": [],
+    "startYear": 763,
+    "summary": "安史之乱余波中，吐蕃军一度进入长安，唐代宗出走，随后唐军恢复都城。此事反映西北防线削弱和朝廷调兵困难，但吐蕃并未长期统治长安；河陇问题仍继续影响唐与吐蕃关系。代宗仓促离京暴露京师防务空虚。",
+    "title": "吐蕃军短暂占据长安",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷十一《代宗纪》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 820,
+    "eraId": "tang",
+    "id": "tang-hedong-hebei-jiedushi",
+    "influence": 4,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.35,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-tian-chengsi"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "anshi-to-tang-hedong-hebei-jiedushi",
+      "tang-hedong-hebei-jiedushi-to-two-tax"
+    ],
+    "startYear": 763,
+    "summary": "平乱后部分河北节度使保持军队、财赋和地方任官控制，朝廷通过任命、征讨与承认继承反复交涉。藩镇内部差异很大，不能把所有军镇都看作独立国家；中央与地方之间存在持续的财政和政治交易。",
+    "title": "河北藩镇的世袭与朝廷关系",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百四十二《李宝臣传》"
+      },
+      {
+        "sourceId": "xintangshu-zhonghua-1975",
+        "locator": "卷二百一十《田承嗣传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 880,
+    "eraId": "tang",
+    "id": "tang-garrison-armies",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.45,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 763,
+    "summary": "神策军逐步成为守卫京师的重要禁军，军权与宫廷宦官的联系在中晚唐不断增强。禁军并非单一时期完成编制，皇帝、宦官和将领的关系也有变化；其财政供给与地方军镇相互牵连。宦官掌握神策军影响皇帝继承和朝政。",
+    "title": "神策军与禁军权力",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷四十四《职官志三》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 779,
+    "eraId": "tang",
+    "id": "tang-dezong-accession",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.9,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 779,
+    "summary": "唐德宗继位后试图重整藩镇、军费与朝廷财政，初期政策遇到地方抵抗和都城安全危机。皇帝一朝政策前后调整明显，不能简单归为削藩成功或失败；两税法与禁军变化均须放入具体阶段。泾原兵变迫使德宗重新评估削藩策略。",
+    "title": "唐德宗即位",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷十二《德宗纪上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution",
+      "economy"
+    ],
+    "childIds": [],
+    "color": "#d9a85d",
+    "endYear": 780,
+    "eraId": "tang",
+    "id": "two-tax",
+    "influence": 3,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.8,
+        -1.1
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-yang-yan",
+      "person-li-kuo"
+    ],
+    "placeIds": [],
+    "polityIds": [],
+    "relationIds": [
+      "tang-hedong-hebei-jiedushi-to-two-tax",
+      "two-tax-to-single-whip"
+    ],
+    "startYear": 780,
+    "summary": "以资产和土地为基础重整国家税制。面对均田制瓦解和旧有租庸调难以维系的现实，唐政府推行两税法，按夏秋两季征收，并更多依据财产确定税额。它回应了社会经济变化，也成为中国古代赋税制度由人丁向资产转变的重要节点。",
+    "themeIds": [],
+    "title": "两税法",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第六卷《中古时代·隋唐时期》，两税法的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“两税法”条，事件经过与历史影响部分"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 784,
+    "eraId": "tang",
+    "id": "tang-jingyuan-mutiny",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.35,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 783,
+    "summary": "泾原军经过长安时因赏赐和给养问题哗变，德宗逃往奉天，朱泚随后称帝。朝廷借各路军队平乱，暴露禁军、财政与藩镇之间的紧张关系；兵变本身与此前河北战事相连。奉天朝廷依靠勤王军恢复控制。",
+    "title": "泾原兵变与奉天避难",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷十二《德宗纪上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4d7aa4",
+    "endYear": 787,
+    "eraId": "tang",
+    "id": "tang-tubo-pingliang",
+    "influence": 2,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1.35,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang",
+      "tubo"
+    ],
+    "relationIds": [],
+    "startYear": 787,
+    "summary": "唐与吐蕃在平凉会盟时发生袭击，唐使与将领受损，双方互信进一步下降。盟约文本、边境军情和实际行动并不总是一致；一次事件也不能概括整个唐蕃外交史，此后仍有使节往来。使团被劫后双方互疑更深。",
+    "title": "平凉会盟遇袭",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百九十六下《吐蕃传下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 879,
+    "eraId": "tang",
+    "id": "tang-sea-trade-guangzhou",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.9,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 800,
+    "summary": "广州连接南海商路，外来商人和货物进入城市，政府通过市舶事务、地方征税与治安管理回应贸易。海路兴盛受到季风、战争和地方权力制约；唐末广州遭战乱破坏，也说明贸易网络的脆弱。市舶收入与海外商品共同影响岭南财政。",
+    "title": "广州海舶贸易与管理",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷四十八《食货志上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "thought"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#596c9b",
+    "endYear": 824,
+    "eraId": "tang",
+    "id": "tang-han-yu-classical",
+    "influence": 4,
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        0.45,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-han-yu"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-han-yu-classical-to-tang-bai-juyi-new-yuefu"
+    ],
+    "startYear": 802,
+    "summary": "韩愈以散文和书信批评骈偶文风，倡导古文并讨论师道、儒家传承和佛教问题。古文运动并非一人发起的单线改革，文学主张与政治处境相互影响；其作品被后世重新编入儒学谱系。《师说》集中表达了他对传道与学习的理解。",
+    "title": "韩愈倡导古文",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百六十《韩愈传》"
+      },
+      {
+        "sourceId": "xintangshu-zhonghua-1975",
+        "locator": "卷一百七十六《韩愈传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 805,
+    "eraId": "tang",
+    "id": "tang-yongzhen-reform",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.9,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-wang-shuwen"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-yongzhen-reform-to-tang-liu-zongyuan-thought"
+    ],
+    "startYear": 805,
+    "summary": "王叔文等在顺宗朝推动抑制宦官、调整财政和人事的措施，随后因皇位交接与政治反对而迅速失势。改革时间短，政策与后世文学评价常被交织；它揭示中唐宫廷权力、禁军与官僚派系的牵制。停宫市与争取神策军指挥权是不同举措。",
+    "title": "永贞革新",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷十四《顺宗宪宗纪上》"
+      },
+      {
+        "sourceId": "xintangshu-zhonghua-1975",
+        "locator": "卷一百六十八《王叔文传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "thought"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#596c9b",
+    "endYear": 819,
+    "eraId": "tang",
+    "id": "tang-liu-zongyuan-thought",
+    "influence": 2,
+    "layout": {
+      "lane": "thought",
+      "offset": [
+        1.35,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-yongzhen-reform-to-tang-liu-zongyuan-thought"
+    ],
+    "startYear": 805,
+    "summary": "柳宗元在永贞变局后长期贬居永州、柳州，写作山水记、寓言与政治论说。其文章兼具地方经验和制度思考，不能仅用失意士人形象概括；后世与韩愈并称，实则两人思想侧重不同。永州山水记使贬居经验进入散文创作。",
+    "title": "柳宗元贬谪与文章",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百六十《柳宗元传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [
+      "tang-huaixi-campaign"
+    ],
+    "color": "#c84c36",
+    "endYear": 820,
+    "eraId": "tang",
+    "id": "tang-yuanhe-reconquest",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.45,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-huaixi-campaign-part-of-tang-yuanhe-reconquest"
+    ],
+    "startYear": 806,
+    "summary": "宪宗朝先后对不服从中央的军镇用兵，并结合赦免、任命和财政谈判扩大朝廷影响。不同藩镇结局并不一致，军事胜利也未永久消除地方兵权；元和政治显示中央仍有动员能力。淮西战事以817年攻入蔡州告一段落。",
+    "title": "元和时期削藩战争",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷十四《顺宗宪宗纪上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#7862a9",
+    "endYear": 846,
+    "eraId": "tang",
+    "id": "tang-bai-juyi-new-yuefu",
+    "influence": 2,
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0.9,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-han-yu-classical-to-tang-bai-juyi-new-yuefu"
+    ],
+    "startYear": 809,
+    "summary": "白居易通过新乐府与讽谕诗描写赋役、宫廷消费和官场生活，又在地方任职时创作不同题材。作品并非透明的社会统计，却保存了中唐士人观察现实的方式；其诗歌传播范围广及东亚。《卖炭翁》等篇写出宫市对民众的侵扰。",
+    "title": "白居易新乐府与社会观察",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百六十六《白居易传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 817,
+    "eraId": "tang",
+    "id": "tang-huaixi-campaign",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0,
+        0.35
+      ]
+    },
+    "parentId": "tang-yuanhe-reconquest",
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-huaixi-campaign-part-of-tang-yuanhe-reconquest"
+    ],
+    "startYear": 815,
+    "summary": "唐廷长期围攻淮西，李愬雪夜入蔡州，俘获吴元济，结束该镇抗命。战役依赖长期围困、将领协作与地方情报，不能只写成一次夜袭传奇；此后中央对其他藩镇的态度也随局势变化。吴元济被俘使淮西军镇重新归附朝廷。",
+    "title": "平定淮西吴元济",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷十五《宪宗纪下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 825,
+    "eraId": "tang",
+    "id": "tang-mu-zong-hebei",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.35,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 820,
+    "summary": "宪宗去世后，河北多个军镇的继承和朝廷任命再次引发叛乱与妥协。元和时期的胜利没有消除当地军队对将帅的选择权；唐朝在不同地区使用征讨、册命和财政让步等手段。田氏等家族的军中地位仍影响继承。",
+    "title": "河北军镇再度动荡",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷十六《穆宗纪》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 846,
+    "eraId": "tang",
+    "id": "tang-niuli-faction",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.9,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-huichang-persecution-to-tang-niuli-faction"
+    ],
+    "startYear": 820,
+    "summary": "中晚唐宰相与科举出身官员围绕任官、边政和皇帝信任形成反复更替的政治网络，后世概称牛李党争。所谓两党成员与立场并非始终固定；把所有政策分歧归为纯粹私怨，会遮蔽具体制度和地方问题。",
+    "title": "牛李党争",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百七十二《李德裕传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 859,
+    "eraId": "tang",
+    "id": "tang-eunuch-succession",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.45,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 820,
+    "summary": "掌握禁军和宫廷信息的宦官在多次皇位交接中发挥重要作用，皇帝、宰相与军镇也各有自己的选择。宦官集团内部并非铁板一块，其权力来自制度安排与具体军权；单纯道德批评难以解释长期结构。",
+    "title": "宦官参与皇位继承",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷一百八十四《宦官传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 835,
+    "eraId": "tang",
+    "id": "tang-ganlu-incident",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 835,
+    "summary": "文宗与李训、郑注等谋图削弱宦官，事泄后宫廷发生大规模诛杀，宦官进一步控制禁军与皇帝。事件涉及复杂的官僚派系与权力安排，不只是一次秘密暗杀失败；此后朝廷政治空间受到明显压缩。李训等失败后文宗更受宦官钳制。",
+    "title": "甘露之变",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷十七下《文宗纪下》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#8a668e",
+    "endYear": 845,
+    "eraId": "tang",
+    "id": "tang-huichang-persecution",
+    "influence": 4,
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0.45,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-li-yan"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-huichang-persecution-to-tang-niuli-faction"
+    ],
+    "startYear": 845,
+    "summary": "武宗朝整顿寺院、僧尼和寺产，诏令推动大量寺院废撤，并波及部分外来宗教。政策有财政、劳役和意识形态多重背景，各地执行不一；宣宗即位后部分措施又有调整，不能写成佛教在中国彻底消失。还俗者重新进入州县户籍和赋役体系。",
+    "title": "会昌灭佛",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷十八上《武宗纪》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷248《唐纪》，845年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4f8d8d",
+    "endYear": 868,
+    "eraId": "tang",
+    "id": "tang-woodblock-buddhist",
+    "influence": 2,
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -0.9,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 868,
+    "summary": "敦煌出土的《金刚经》卷末题记纪年咸通九年，即868年，卷轴由雕版印刷的图像与经文接成。题记提供了可核对的时间锚点，实物显示佛教信众以刻版复制经文并供养家属。它证明晚唐已有成熟的雕版印刷实践，却不能据此推断印刷术始创于这一年。",
+    "title": "咸通九年《金刚经》刊印",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "bl-diamond-sutra-or8210",
+        "locator": "馆藏 Or.8210/P.2，卷末咸通九年四月十五日题记"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war",
+      "society"
+    ],
+    "childIds": [
+      "tang-huang-chao-changan",
+      "tang-huang-chao-guangzhou"
+    ],
+    "color": "#c84c36",
+    "endYear": 884,
+    "eraId": "tang",
+    "id": "huang-chao",
+    "influence": 4,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.2,
+        0.2
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [
+      "person-huang-chao",
+      "person-wang-xianzhi"
+    ],
+    "placeIds": [],
+    "polityIds": [],
+    "relationIds": [
+      "tang-huang-chao-changan-part-of-huang-chao",
+      "tang-huang-chao-guangzhou-part-of-huang-chao",
+      "huang-chao-to-tang-zhu-wen-defects"
+    ],
+    "startYear": 875,
+    "summary": "席卷多地的民变加速唐朝统治崩解。晚唐赋役沉重、灾荒频仍，王仙芝、黄巢领导的起义迅速扩展。起义军曾攻入长安，虽然最终失败，却严重削弱了中央与地方秩序。各地军镇在平乱中进一步扩张，唐朝走向不可逆的分裂。",
+    "themeIds": [],
+    "title": "黄巢起义",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第六卷《中古时代·隋唐时期》，黄巢起义的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史学科“黄巢起义”条，事件经过与历史影响部分"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "society"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#8b6655",
+    "endYear": 879,
+    "eraId": "tang",
+    "id": "tang-huang-chao-guangzhou",
+    "influence": 2,
+    "layout": {
+      "lane": "society",
+      "offset": [
+        1.35,
+        0.35
+      ]
+    },
+    "parentId": "huang-chao",
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-huang-chao-guangzhou-part-of-huang-chao"
+    ],
+    "startYear": 879,
+    "summary": "黄巢军南下进入广州，随后转而北上，显示唐末起义军可沿交通线跨区域移动。关于城市人口伤亡的传世数字和外商叙述需要来源核对；此役是黄巢起义的一段进程，而非独立于起义之外的新战争。",
+    "title": "黄巢军进入广州",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷二百下《黄巢传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 881,
+    "eraId": "tang",
+    "id": "tang-huang-chao-changan",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.35,
+        0.7
+      ]
+    },
+    "parentId": "huang-chao",
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "tang-huang-chao-changan-part-of-huang-chao"
+    ],
+    "startYear": 881,
+    "summary": "黄巢军进入长安并建立大齐政权，唐僖宗离开都城，地方军镇成为双方争夺的关键。起义军控制都城并不意味着控制全国，后续唐军与军镇反攻持续多年；城市居民和财赋网络遭到严重冲击。僖宗奔蜀后唐廷须依赖地方军镇反攻。",
+    "title": "黄巢军攻入长安",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷二百下《黄巢传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 882,
+    "eraId": "tang",
+    "id": "tang-zhu-wen-defects",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.9,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [
+      "huang-chao-to-tang-zhu-wen-defects",
+      "tang-zhu-wen-defects-to-later-liang-founded"
+    ],
+    "startYear": 882,
+    "summary": "朱温原为黄巢军将领，转而向唐朝归降，获得军镇职位并逐渐扩张河南力量。其政治转换说明晚唐起义与藩镇之间人员流动频繁；后来建立后梁不能倒推为此时已有确定的建国计划。唐廷授职使他转入讨伐起义军的序列。",
+    "title": "朱温降唐",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷二百下《黄巢传》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 904,
+    "eraId": "tang",
+    "id": "tang-zhaozong-court",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.45,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "唐代",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "tang"
+    ],
+    "relationIds": [],
+    "startYear": 888,
+    "summary": "唐昭宗试图恢复朝廷对军镇和宦官的控制，却在李茂贞、朱温等势力间反复受制。迁都、围城和人事变动显示皇帝仍有象征权威，却难以调动全国军队；唐朝衰亡是多次地方竞争的结果。朱温最终控制皇帝并推动朝廷迁徙。",
+    "title": "昭宗朝廷与藩镇角力",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiutangshu-zhonghua-1975",
+        "locator": "卷二十上《昭宗纪上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 907,
+    "eraId": "five-dynasties",
+    "id": "former-shu-founded",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.35,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "former-shu"
+    ],
+    "relationIds": [],
+    "startYear": 907,
+    "summary": "王建在成都建立前蜀，利用四川山地、盐铁和地方军队保持独立。前蜀与中原五代及南诏、后唐交往频繁，不能只视作中原割据的附庸；蜀地政治和经济有自身连续性。王建以成都官署和蜀地税源维持王国。",
+    "title": "前蜀建立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百三十六《僭伪列传三·王建》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 907,
+    "eraId": "five-dynasties",
+    "id": "later-liang-founded",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.45,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [
+      "person-zhu-wen"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "later-liang"
+    ],
+    "relationIds": [
+      "tang-zhu-wen-defects-to-later-liang-founded",
+      "later-liang-founded-to-wuyue-founded",
+      "later-liang-founded-to-later-tang-founded"
+    ],
+    "startYear": 907,
+    "summary": "朱温受唐禅建立后梁，以开封和汴河交通为统治支点。后梁控制范围主要在中原，河东、燕地和南方诸国保持独立竞争；五代的“正统”与地方政权实际并立不能混为一谈。907年受禅只是中原皇位和官署的转换。",
+    "title": "后梁建立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷三《梁太祖本纪三》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷266《后梁纪》，907年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy",
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 907,
+    "eraId": "five-dynasties",
+    "id": "later-liang-ma-yin-chu",
+    "influence": 2,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-liang",
+      "chu-ten-kingdoms"
+    ],
+    "relationIds": [],
+    "startYear": 907,
+    "summary": "后梁开平元年，朱温封湖南节度使马殷为楚王，承认其在潭州一带的实际统治。马殷接受中原朝廷册封，却继续掌握湖南军政和财政，楚与后梁形成名义臣属、地方自立的关系。此举与唐哀帝禅位是不同的册命行动，揭示五代初区域政权并立的政治安排。",
+    "title": "后梁封马殷为楚王",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "wudai-huiyao-wangpu",
+        "locator": "卷十一《封建》，梁开平元年四月封湖南节度使马殷为楚王"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 907,
+    "eraId": "five-dynasties",
+    "id": "wuyue-founded",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.9,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [
+      "person-qian-liu"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "wuyue"
+    ],
+    "relationIds": [
+      "later-liang-founded-to-wuyue-founded"
+    ],
+    "startYear": 907,
+    "summary": "钱镠在杭州建立吴越，利用钱塘江水网和海贸保持独立，并向中原五代称臣以换取安全。吴越的政治选择不同于完全对抗型政权，朝贡、贸易和军事防守共同维持其地位。杭州城防与钱塘水网支撑其长期治理。",
+    "title": "吴越建立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百三十三《世袭列传二·钱镠》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷266《后梁纪》，907年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 911,
+    "eraId": "five-dynasties",
+    "id": "later-liang-kaifeng",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.9,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-liang"
+    ],
+    "relationIds": [],
+    "startYear": 907,
+    "summary": "后梁利用汴河、黄河和中原粮运，把汴州建设为政治和军事中心。城市崛起依赖运河与军镇，不等于当时已形成后世北宋的成熟都城；战争频仍使地方赋税和仓储不断调整。汴州的漕运能力吸引军队与官署集中。",
+    "title": "后梁以汴州为中心经营",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷三《梁太祖本纪三》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#7862a9",
+    "endYear": 925,
+    "eraId": "five-dynasties",
+    "id": "former-shu-culture",
+    "influence": 2,
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -1.35,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "former-shu"
+    ],
+    "relationIds": [],
+    "startYear": 907,
+    "summary": "前蜀宫廷吸纳唐末文士，保存经籍、绘画与地方宗教传统，成都成为西南文化中心。宫廷繁华建立在地方赋税和军镇控制上，也受战争与继承问题限制；五代文化不只发生在汴洛。成都文士和绘画活动延续唐末传统。",
+    "title": "前蜀宫廷文化与蜀地文献",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百三十六《僭伪列传三·王建》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 909,
+    "eraId": "five-dynasties",
+    "id": "min-founded",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.35,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "min"
+    ],
+    "relationIds": [],
+    "startYear": 909,
+    "summary": "王审知在福州建立闽国，控制福建山海交通并与中原、吴越和南唐往来。闽国政权规模有限，内部继承和宗室竞争常影响稳定；沿海贸易与佛教网络使其具有区域特色。福州港口连接沿海与海外商路。",
+    "title": "闽国建立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百三十四《僭伪列传一·王审知》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "science"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4f8d8d",
+    "endYear": 930,
+    "eraId": "five-dynasties",
+    "id": "wuyue-sea-dikes",
+    "influence": 2,
+    "layout": {
+      "lane": "science",
+      "offset": [
+        1.35,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "wuyue"
+    ],
+    "relationIds": [],
+    "startYear": 910,
+    "summary": "吴越修筑钱塘江海塘、堤岸与水利设施，保护杭州及沿海农田和城市。工程依赖地方民力与官府组织，具体年代和规模有不同记载；海塘建设说明十国时期地方政权也能推动长期基础设施。治水保障杭州城郭与沿海农田。",
+    "title": "吴越海塘与水利",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百三十三《世袭列传二·钱镠》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 913,
+    "eraId": "five-dynasties",
+    "id": "later-liang-yanzhou-war",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.35,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-liang"
+    ],
+    "relationIds": [],
+    "startYear": 911,
+    "summary": "后梁与河东晋军围绕潞州、河北和黄河防线反复交战，双方都借用地方军镇和契丹势力。战线迁延说明中原政权无法垄断北方资源，后梁最终失去战略主动；具体战役不应压成一次决战。河东军的持续进攻消耗后梁兵力。",
+    "title": "后梁与晋争夺河北",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷七《梁太祖本纪七》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 917,
+    "eraId": "five-dynasties",
+    "id": "southern-han-founded",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.45,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "southern-han"
+    ],
+    "relationIds": [],
+    "startYear": 917,
+    "summary": "刘隐、刘岩在广州建立南汉，控制岭南港口和珠江流域，以海贸与地方税源维系政权。南汉与中原、闽、南唐和海外商路交往，文化与制度具有岭南特色；其政治独立持续至宋初。广州港税为岭南朝廷提供重要收入。",
+    "title": "南汉建立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百三十五《僭伪列传二·刘陟》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 923,
+    "eraId": "five-dynasties",
+    "id": "later-tang-founded",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.35,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [
+      "person-li-cunxu"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "later-tang"
+    ],
+    "relationIds": [
+      "later-liang-founded-to-later-tang-founded",
+      "later-tang-founded-to-later-jin-founded"
+    ],
+    "startYear": 923,
+    "summary": "李存勖于923年四月先在魏州称帝，定国号唐；同年十月后唐军攻入汴州，后梁灭亡，政权重心随后转向洛阳。称帝、灭梁和定都不是同一时点。后唐继承河东沙陀军政资源，也以唐名寻求合法性，而南方诸国仍与之并立。",
+    "title": "后唐建立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷二十九《唐庄宗本纪三》同光元年四月即位；卷三十《唐庄宗本纪四》同年十月灭梁、入洛阳"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷二百七十二《后唐纪》，同光元年称帝、灭梁与入洛阳记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 926,
+    "eraId": "five-dynasties",
+    "id": "later-tang-luoyang-capital",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.9,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-tang"
+    ],
+    "relationIds": [],
+    "startYear": 923,
+    "summary": "后唐以洛阳为都并在中原各地调度军队，宫廷与军镇之间的物资运输依靠河运和地方征发。都城选择随军事形势变化，不能把五代都城写成固定首都序列；洛阳与汴州的竞争延续了隋唐以来的交通格局。",
+    "title": "后唐都洛阳与迁移",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷三十《唐庄宗本纪四》，同光元年十月入洛阳"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "culture"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#7862a9",
+    "endYear": 926,
+    "eraId": "five-dynasties",
+    "id": "later-tang-zhangzong-arts",
+    "influence": 2,
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -0.45,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-tang"
+    ],
+    "relationIds": [],
+    "startYear": 923,
+    "summary": "李存勖本人喜好戏曲并参与伶人演出，宫廷娱乐与军政权力关系紧密。史书借此批评其荒怠，仍需区分个人表演、宫廷机构与后唐财政；五代文化并非只有战乱，戏曲传统也在此期延续。伶人参与宫廷生活并进入史书批评。",
+    "title": "后唐宫廷戏曲与乐舞",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷三十《唐庄宗本纪四》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#69804a",
+    "endYear": 936,
+    "eraId": "five-dynasties",
+    "id": "later-tang-shatuo",
+    "influence": 2,
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        0.9,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-tang"
+    ],
+    "relationIds": [],
+    "startYear": 923,
+    "summary": "沙陀及其部众在后唐、后晋等政权军队中发挥关键作用，身份既有部落纽带也有中原官爵。不能把“沙陀”视作单一民族国家，军队、婚姻与地方社会不断重组；五代政治因此具有跨区域特点。河东军队吸纳各族成员和中原官员。",
+    "title": "沙陀军人与中原政权",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷二十九《唐庄宗本纪三》，同光元年军政安排"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 924,
+    "eraId": "five-dynasties",
+    "id": "jingnan-founded",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.9,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "jingnan"
+    ],
+    "relationIds": [],
+    "startYear": 924,
+    "summary": "高季兴据江陵建立荆南，凭借长江中游交通在大国之间周旋，向多个中原政权称臣。荆南疆域狭小却掌握水陆通道，说明十国格局中地理位置与外交策略同样重要。江陵扼守长江中游的水陆交通。",
+    "title": "荆南建立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百三十三《世袭列传二·高季兴》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 925,
+    "eraId": "five-dynasties",
+    "id": "later-tang-conquers-shu",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.9,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-tang"
+    ],
+    "relationIds": [],
+    "startYear": 925,
+    "summary": "后唐军队入蜀，前蜀后主王衍出降，四川纳入后唐版图。山地交通与地方将领使接收过程复杂，后唐对蜀地控制随后仍有反复；灭蜀改变了五代中原与西南的力量平衡。王衍出降结束前蜀皇帝谱系。",
+    "title": "后唐灭前蜀",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷三十一《唐庄宗本纪五》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 933,
+    "eraId": "five-dynasties",
+    "id": "later-tang-mingzong-reforms",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [
+      "person-li-siyuan"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "later-tang"
+    ],
+    "relationIds": [],
+    "startYear": 926,
+    "summary": "后唐明宗即位后减少部分苛征，整顿州县和军镇供给，试图恢复中原生产。政策受战事、旱灾和地方官执行影响，不能视为全面复兴；其统治为五代短暂稳定提供了条件。节省征敛是明宗朝的重要政令。",
+    "title": "后唐明宗整顿赋役",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷三十五《唐明宗本纪一》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 933,
+    "eraId": "five-dynasties",
+    "id": "later-tang-tianyou-law",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.45,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-tang"
+    ],
+    "relationIds": [],
+    "startYear": 927,
+    "summary": "明宗朝重视州县奏报、户籍和刑狱文书，以恢复战争后行政秩序。地方官署仍有军镇干预和人事流动，法令落实程度因地而异；五代国家治理并非完全断裂，而是在唐制上不断修补。刑狱文书仍沿用唐代律令传统。",
+    "title": "后唐州县文书与法令",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百四十七《刑法志》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 934,
+    "eraId": "five-dynasties",
+    "id": "later-shu-founded",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.45,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-shu"
+    ],
+    "relationIds": [],
+    "startYear": 934,
+    "summary": "孟知祥在成都建立后蜀，承接前蜀地方传统并与后唐、后周保持外交和军事竞争。后蜀控制四川和汉中部分地区，拥有独立财政与文化环境；其灭亡前仍是十国中重要政权。成都再次成为独立王朝的政治中心。",
+    "title": "后蜀建立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百三十六《僭伪列传三·孟知祥》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 936,
+    "eraId": "five-dynasties",
+    "id": "later-jin-founded",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.35,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [
+      "person-shi-jingtang"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "later-jin"
+    ],
+    "relationIds": [
+      "later-tang-founded-to-later-jin-founded",
+      "later-jin-founded-to-later-han-founded"
+    ],
+    "startYear": 936,
+    "summary": "石敬瑭借契丹兵力反唐，在太原称帝并建立后晋，割让燕云部分地区作为政治代价。后晋对契丹的依赖造成长期边防压力，称帝并不等于掌握全国；河东、后唐旧部和南方政权仍有各自力量。契丹援兵与河东兵共同击败后唐。",
+    "title": "后晋建立与石敬瑭称帝",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷七十五《晋高祖本纪一》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷280《后晋纪》，936年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4d7aa4",
+    "endYear": 936,
+    "eraId": "five-dynasties",
+    "id": "later-jin-yanyun",
+    "influence": 2,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1.35,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-jin",
+      "liao"
+    ],
+    "relationIds": [],
+    "startYear": 936,
+    "summary": "后晋向契丹割让燕云十六州并纳岁币，幽州等地成为辽与中原政权长期竞争的军事通道。具体州数和边界在史料与后世叙述中有差异，不能把割让写成一次简单的地理切线；其影响延续到北宋。",
+    "title": "后晋割让燕云十六州",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷七十五《晋高祖本纪一》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 937,
+    "eraId": "five-dynasties",
+    "id": "later-jin-kaifeng",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.9,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-jin"
+    ],
+    "relationIds": [],
+    "startYear": 937,
+    "summary": "石敬瑭建立后晋后，于天福二年赴汴州，朝廷逐步将汴州作为东都和军政枢纽。汴河运输与中原州县供给支撑新政权，但河东根基与契丹边境事务仍牵制其统治。迁都改变了宫廷和官署的活动中心，不能把936年称帝与随后在汴州的经营合并为同日之事。",
+    "title": "后晋以汴州为东都",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷七十六《晋高祖本纪二》，天福二年赴汴州"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 937,
+    "eraId": "five-dynasties",
+    "id": "southern-tang-founded",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [
+      "person-li-bian"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "southern-tang"
+    ],
+    "relationIds": [
+      "southern-tang-founded-to-southern-tang-jiangnan-economy"
+    ],
+    "startYear": 937,
+    "summary": "李昪取代吴国建立南唐，控制江淮与江南部分地区，承接杨吴的官僚和水运网络。南唐与中原五代、吴越和闽国并立，国号虽称唐却不是唐朝复兴；江南经济和文化由此继续发展。937年先称齐，后来才改国号唐。",
+    "title": "南唐建立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百三十四《僭伪列传一·李昪》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷281《后晋纪》，937年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 960,
+    "eraId": "five-dynasties",
+    "id": "southern-tang-jiangnan-economy",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.45,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "southern-tang"
+    ],
+    "relationIds": [
+      "southern-tang-founded-to-southern-tang-jiangnan-economy"
+    ],
+    "startYear": 937,
+    "summary": "南唐依靠长江、淮河和地方水网维持金陵、扬州等城市的粮运与税收，手工业和文书文化亦较活跃。经济繁荣受战争、堤防和区域竞争影响，不能把江南富庶归因于单一政权政策；宋初承接了部分网络。",
+    "title": "南唐江南漕运与城市",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "xinwudaishi-zhonghua-1974",
+        "locator": "卷六十二《南唐世家第二》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 947,
+    "eraId": "five-dynasties",
+    "id": "later-jin-qidan-conquest",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.45,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-jin",
+      "liao"
+    ],
+    "relationIds": [],
+    "startYear": 946,
+    "summary": "946年末契丹军南下，后晋出帝出降，皇位和朝廷机构瓦解；次年契丹军进入汴州。占领中原的时间短暂，地方军镇和民众抵抗使契丹政权难以维持统治。后晋的覆亡跨越年末与次年，不能将出帝出降和契丹进入都城记为同一天。",
+    "title": "契丹攻灭后晋",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷八十五《晋少帝本纪五》，开运三年末出降及次年入汴"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 947,
+    "eraId": "five-dynasties",
+    "id": "later-han-founded",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [
+      "person-liu-zhiyuan"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "later-han"
+    ],
+    "relationIds": [
+      "later-jin-founded-to-later-han-founded",
+      "later-han-founded-to-later-zhou-founded"
+    ],
+    "startYear": 947,
+    "summary": "契丹攻灭后晋、进入汴州后，河东节度使刘知远于947年在太原即皇帝位，国号的称谓随后确立。契丹撤离汴州后，刘知远军队南下接收中原。太原即位早于契丹北撤，南下控制汴州又是下一阶段；后汉仍需面对地方军镇和南方诸国。",
+    "title": "后汉建立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷九十九《汉高祖本纪上》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷286《后汉纪》，947年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 950,
+    "eraId": "five-dynasties",
+    "id": "later-han-guo-wei",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.45,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-han"
+    ],
+    "relationIds": [],
+    "startYear": 948,
+    "summary": "郭威以枢密使和北面行营资源介入后汉政治，最终在兵变和朝廷冲突中取代刘氏。军队、宦官和外戚关系交错，不能把改朝换代归结为一次私人阴谋；后周建立前的政权危机体现五代权力结构。朝廷诛杀将领家属激化冲突。",
+    "title": "郭威掌握后汉朝政",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百〇一《汉隐帝本纪上》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 951,
+    "eraId": "five-dynasties",
+    "id": "later-zhou-founded",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.9,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [
+      "person-guo-wei"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "later-zhou"
+    ],
+    "relationIds": [
+      "later-han-founded-to-later-zhou-founded",
+      "later-zhou-founded-to-later-zhou-guo-rong"
+    ],
+    "startYear": 951,
+    "summary": "郭威在汴州即帝位，建立后周，整顿军队和财政并试图恢复中原秩序。后周控制范围仍有限，北汉、辽与南方十国保持并立；其制度改革和军事扩张为北宋统一奠定条件。郭威即位后仍须面对北汉竞争。",
+    "title": "后周建立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百一十《周太祖本纪一》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷290《后周纪》，951年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 951,
+    "eraId": "five-dynasties",
+    "id": "northern-han-founded",
+    "influence": 2,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.45,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "northern-han"
+    ],
+    "relationIds": [],
+    "startYear": 951,
+    "summary": "刘崇在太原建立北汉，依托河东军镇并向辽求援，与后周长期对峙。北汉疆域有限、财政压力较大，仍因地形和契丹支持保持独立；其存在阻碍了后周和北宋的北方统一。河东军队与辽援使其保持长期抵抗。",
+    "title": "北汉建立",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百三十五《僭伪列传二·刘崇》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 954,
+    "eraId": "five-dynasties",
+    "id": "later-zhou-military-reform",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.35,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-zhou"
+    ],
+    "relationIds": [],
+    "startYear": 951,
+    "summary": "郭威和后周将领重新编排禁军，削弱部分旧军头的独立性，提高朝廷直接调度能力。改革是在战争和财政约束下推进，不能视为宋代禁军制度的完整蓝本；兵员、粮饷与地方军镇仍相互牵制。禁军训练与粮饷配合提高调度能力。",
+    "title": "后周整顿禁军",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百一十《周太祖本纪一》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#4d7aa4",
+    "endYear": 960,
+    "eraId": "five-dynasties",
+    "id": "northern-han-liaison",
+    "influence": 2,
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "northern-han",
+      "liao"
+    ],
+    "relationIds": [],
+    "startYear": 951,
+    "summary": "北汉借助辽国支持抵抗后周与宋，双方以册封、出兵和边境利益维持联盟。辽并不完全控制北汉，北汉也有自身政治目标；这段关系是宋辽边境形成的重要前奏。北汉以辽援对抗后周北伐，河东防线因而长期维持。",
+    "title": "北汉与辽的军事联盟",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百三十五《僭伪列传二·刘崇》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 959,
+    "eraId": "five-dynasties",
+    "id": "later-zhou-guo-rong",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.35,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [
+      "person-chai-rong"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "later-zhou"
+    ],
+    "relationIds": [
+      "later-zhou-founded-to-later-zhou-guo-rong",
+      "later-zhou-guo-rong-to-song-founding-prelude"
+    ],
+    "startYear": 954,
+    "summary": "柴荣即位后推进军队整顿、州县治理与北伐，试图在有限时间内恢复中原统一。其改革由文臣、将领和地方官共同执行，成效随战线和寿命受限；后世宋初叙事常将其塑造成统一先驱。高平战后禁军整顿增强朝廷战力。",
+    "title": "周世宗柴荣改革",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百一十四《周世宗本纪一》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷291《后周纪》，954年相关记载"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 959,
+    "eraId": "five-dynasties",
+    "id": "later-zhou-guo-tax",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.45,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-zhou"
+    ],
+    "relationIds": [],
+    "startYear": 954,
+    "summary": "后周整顿田赋、户籍和州县转运，试图恢复战争破坏后的农业税源。史书所称减免和均定多是政令目标，实际效果因地区而异；这一财政整顿与军队扩张必须同步看待。州县重新核实户籍与田赋来源。",
+    "title": "后周均定田赋尝试",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百一十四《周世宗本纪一》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b58b38",
+    "endYear": 959,
+    "eraId": "five-dynasties",
+    "id": "later-zhou-kaifeng-works",
+    "influence": 2,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.9,
+        -0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-zhou"
+    ],
+    "relationIds": [],
+    "startYear": 954,
+    "summary": "后周修整汴州城防、河道和仓储，使汴州继续成为北方军政与粮运枢纽。工程规模和持续时间受战争限制，不能把后周城市直接等同于北宋东京；但交通基础确为宋初经营中原提供条件。汴河和城防修整便利军粮调运。",
+    "title": "后周汴州城与漕运修缮",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百一十四《周世宗本纪一》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "war"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#c84c36",
+    "endYear": 959,
+    "eraId": "five-dynasties",
+    "id": "later-zhou-northern-expedition",
+    "influence": 2,
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.9,
+        -0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-zhou",
+      "liao"
+    ],
+    "relationIds": [],
+    "startYear": 954,
+    "summary": "后周多次北伐，收复后晋割让的部分关南地区，推进到瀛莫一带。战争受契丹援军、粮运和季节限制，未能夺回全部燕云；北方边界因此仍是宋辽争夺的核心。959年柴荣病重使进军中止，关南新得州县仍需守备。",
+    "title": "后周北伐收复三关",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百一十九《周世宗本纪六》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "religion"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#8a668e",
+    "endYear": 955,
+    "eraId": "five-dynasties",
+    "id": "later-zhou-buddhist-suppression",
+    "influence": 2,
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0,
+        0.35
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-zhou"
+    ],
+    "relationIds": [],
+    "startYear": 955,
+    "summary": "柴荣下诏限制寺院、毁废无名寺并收铜铸钱，政策兼有财政、军费和国家秩序考量。执行范围与地方反应各异，不能等同于会昌灭佛的简单重复；寺院网络仍在社会中持续存在。寺院铜器被收集用于铸钱。",
+    "title": "后周毁佛与铸钱",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百一十五《周世宗本纪二》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "institution"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#9b7a45",
+    "endYear": 959,
+    "eraId": "five-dynasties",
+    "id": "later-zhou-legal-reform",
+    "influence": 2,
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.45,
+        0
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [],
+    "placeIds": [],
+    "polityIds": [
+      "later-zhou"
+    ],
+    "relationIds": [],
+    "startYear": 955,
+    "summary": "后周整理编敕、刑法和州县条令，努力使军政命令与日常司法具有较稳定的文本依据。编敕并非一次完成的法典，地方执行和旧唐律传统仍占重要位置；这些实践为宋代法制提供了过渡经验。显德年间编修《大周刑统》。",
+    "title": "后周显德编敕",
+    "yearPrecision": "range",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百一十五《周世宗本纪二》"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "politics"
+    ],
+    "themeIds": [],
+    "childIds": [],
+    "color": "#b34d43",
+    "endYear": 959,
+    "eraId": "five-dynasties",
+    "id": "song-founding-prelude",
+    "influence": 4,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.9,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "五代十国",
+    "personIds": [
+      "person-chai-rong"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "later-zhou"
+    ],
+    "relationIds": [
+      "later-zhou-guo-rong-to-song-founding-prelude"
+    ],
+    "startYear": 959,
+    "summary": "柴荣在北伐后病逝，幼主柴宗训继位，后周朝廷的禁军、枢密院与宰臣必须在新皇帝年幼时维持协作。世宗未完成的边疆战略和南方诸国仍在，继承安排令军队将领影响上升；次年的陈桥兵变属于宋代另一个事件。",
+    "title": "后周世宗去世与幼主继位",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "sui-tang-five-dynasties",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "jiuwudaishi-zhonghua-1976",
+        "locator": "卷一百一十九《周世宗本纪六》"
+      },
+      {
+        "sourceId": "zizhi-tongjian-zhonghua-1956",
+        "locator": "卷294《后周纪》，959年相关记载"
+      }
+    ]
+  }
+]

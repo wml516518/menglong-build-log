@@ -1,6 +1,7 @@
 import { cleanup, render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from './App';
+import HistorySiteApp from './HistorySiteApp';
 import { PortfolioHome } from './components/PortfolioHome';
 import { content } from './content';
 import { parseSiteDocument, parseResumeDocument, stripTranslationMetadata } from './content/schema';
@@ -236,7 +237,7 @@ describe('App', () => {
     expect(within(projects).getAllByRole('article')[0]).toContainElement(
       screen.getByRole('heading', { level: 3, name: 'History Galaxy' })
     );
-    expect(screen.getByRole('link', { name: /Enter the galaxy/ })).toHaveAttribute('href', '#/history-galaxy');
+    expect(screen.getByRole('link', { name: /Enter the galaxy/ })).toHaveAttribute('href', '/apps/history-galaxy/');
     expect(screen.queryByLabelText('三维历史时间轴')).not.toBeInTheDocument();
     expect(document.querySelector('canvas')).not.toBeInTheDocument();
   });
@@ -248,32 +249,21 @@ describe('App', () => {
     await user.click(screen.getByRole('button', { name: '中' }));
 
     expect(screen.getByRole('heading', { level: 3, name: '历史星河' })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /进入星河/ })).toHaveAttribute('href', '#/history-galaxy');
+    expect(screen.getByRole('link', { name: /进入星河/ })).toHaveAttribute('href', '/apps/history-galaxy/');
   });
 
-  it('opens History Galaxy and returns to the portfolio', async () => {
-    const user = userEvent.setup();
-    render(<App />);
-
-    await user.click(screen.getByRole('link', { name: /Enter the galaxy/ }));
-    expect(await screen.findByRole('heading', { level: 1, name: '历史星河' })).toBeInTheDocument();
-    expect(window.location.hash).toBe('#/history-galaxy');
-    expect(document.body).toHaveClass('history-route');
-    expect(document.documentElement.lang).toBe('zh-CN');
-    expect(document.title).toBe('历史星河｜中国历史3D交互时间轴');
-
-    await user.click(screen.getByRole('link', { name: '返回主页' }));
-    expect(await screen.findByText('Building practical AI tools and full-stack products.')).toBeInTheDocument();
-    expect(window.location.hash).toBe('#home');
-    expect(document.body).not.toHaveClass('history-route');
-    expect(document.title).toBe('MengLong Wang | Portfolio + Build Log');
-    expect(document.documentElement.lang).toBe('en');
-    expect(window.scrollTo).toHaveBeenCalledWith({ top: 0, behavior: 'auto' });
+  it('redirects an old history archive link without loading the scene in the portfolio', () => {
+    window.location.hash = '#/history-galaxy/event/zhenguan?q=唐';
+    const navigate = vi.fn();
+    render(<App navigate={navigate} />);
+    expect(navigate).toHaveBeenCalledWith('/apps/history-galaxy/#/history-galaxy/event/zhenguan?q=%E5%94%90');
+    expect(screen.getByRole('link', { name: '进入历史星河' })).toHaveAttribute('href', '/apps/history-galaxy/#/history-galaxy/event/zhenguan?q=%E5%94%90');
+    expect(document.querySelector('canvas')).not.toBeInTheDocument();
   });
 
   it('cleans up history viewport mode on unmount', () => {
     window.location.hash = '#/history-galaxy';
-    const { unmount } = render(<App />);
+    const { unmount } = render(<HistorySiteApp />);
     expect(document.body).toHaveClass('history-route');
     expect(document.documentElement.lang).toBe('zh-CN');
     unmount();
@@ -299,13 +289,10 @@ describe('App', () => {
     expect(scrollIntoView).not.toHaveBeenCalled();
   });
 
-  it('restores a persisted Chinese document language after leaving History Galaxy', async () => {
-    localStorage.setItem('portfolio-language', 'zh');
-    window.location.hash = '#/history-galaxy';
-    const user = userEvent.setup();
-    render(<App />);
-    await user.click(await screen.findByRole('link', { name: '返回主页' }));
-    expect(await screen.findByText('构建实用的 AI 工具和全栈产品。')).toBeInTheDocument();
+  it('opens the standalone history site at its root and links back to the portfolio', async () => {
+    render(<HistorySiteApp />);
+    expect(await screen.findByRole('link', { name: '返回主页' })).toHaveAttribute('href', '/#projects');
+    expect(window.location.hash).toBe('#/history-galaxy');
     expect(document.documentElement.lang).toBe('zh-CN');
   });
 

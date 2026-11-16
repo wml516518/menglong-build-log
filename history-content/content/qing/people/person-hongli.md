@@ -8,7 +8,16 @@ birthYear: 1711
 deathYear: 1799
 roleIds: []
 eventIds:
+  - canton-system-1757
+  - dzungar-conquest-1755
+  - jinchuan-wars
   - kangqian
+  - macartney-embassy
+  - qianlong-abdication-announced
+  - qianlong-accession
+  - qing-dzungar-war
+  - siku-quanshu
+  - yongzheng-death
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: exact

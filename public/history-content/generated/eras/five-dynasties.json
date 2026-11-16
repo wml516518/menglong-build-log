@@ -1,0 +1,2190 @@
+{
+  "eraId": "five-dynasties",
+  "events": [
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 907,
+      "eraId": "five-dynasties",
+      "id": "former-shu-founded",
+      "influence": 2,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          1.35,
+          -0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "former-shu"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百三十六《僭伪列传三·王建》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 907,
+      "summary": "王建在成都建立前蜀，利用四川山地、盐铁和地方军队保持独立。前蜀与中原五代及南诏、后唐交往频繁，不能只视作中原割据的附庸；蜀地政治和经济有自身连续性。王建以成都官署和蜀地税源维持王国。",
+      "themeIds": [],
+      "title": "前蜀建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "唐末朱温凭借宣武军和对朝廷的控制，逐步掌握中原。907年唐哀帝禅位，朱温称帝，改国号梁，后称后梁。此次受禅结束了唐室皇帝在中原的名义统治，也使汴州及其漕运网络成为新朝廷的主要支点。\n\n后梁接收部分唐末官员和州县，却无法立即控制河东晋、燕地及南方诸政权。各地对于中原朝廷的册封、朝贡和对抗方式不同。后梁建立是一项明确的皇位与国号转换，不能把随后几十年的区域并立误写成全国同步改朝。",
+      "categories": [
+        "politics"
+      ],
+      "causes": [
+        "朱温控制中原军事和唐末朝廷，迫使唐哀帝将皇位交给自己。"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "course": [
+        {
+          "description": "朱温即帝位，改国号梁，唐朝中央皇帝谱系结束。",
+          "title": "朱温受禅",
+          "year": 907
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 907,
+      "eraId": "five-dynasties",
+      "historiography": "《旧五代史·梁太祖本纪》以受禅表述法统；唐末军镇分立说明名义禅让与实控范围有别。",
+      "id": "later-liang-founded",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "河东晋和南方多国继续自立，后梁开启五代中原王朝更替而未统一全国。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          0.45,
+          0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [
+        "person-zhu-wen"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "later-liang"
+      ],
+      "relationIds": [
+        "tang-zhu-wen-defects-to-later-liang-founded",
+        "later-liang-founded-to-wuyue-founded",
+        "later-liang-founded-to-later-tang-founded"
+      ],
+      "results": [
+        "以汴州为核心的后梁朝廷建立，接收唐末部分官署与中原州县。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷三《梁太祖本纪三》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        },
+        {
+          "locator": "卷266《后梁纪》，907年相关记载",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 907,
+      "summary": "朱温受唐禅建立后梁，以开封和汴河交通为统治支点。后梁控制范围主要在中原，河东、燕地和南方诸国保持独立竞争；五代的“正统”与地方政权实际并立不能混为一谈。907年受禅只是中原皇位和官署的转换。",
+      "themeIds": [],
+      "title": "后梁建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy",
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 907,
+      "eraId": "five-dynasties",
+      "id": "later-liang-ma-yin-chu",
+      "influence": 2,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-liang",
+        "chu-ten-kingdoms"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷十一《封建》，梁开平元年四月封湖南节度使马殷为楚王",
+          "sourceId": "wudai-huiyao-wangpu"
+        }
+      ],
+      "startYear": 907,
+      "summary": "后梁开平元年，朱温封湖南节度使马殷为楚王，承认其在潭州一带的实际统治。马殷接受中原朝廷册封，却继续掌握湖南军政和财政，楚与后梁形成名义臣属、地方自立的关系。此举与唐哀帝禅位是不同的册命行动，揭示五代初区域政权并立的政治安排。",
+      "themeIds": [],
+      "title": "后梁封马殷为楚王",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "钱镠在唐末已掌握两浙军政，杭州成为其统治中心。907年后梁给予吴越王封号，吴越继续以自己的官僚、军队和税源治理地方。接受册封意味着与中原新朝建立名义上的政治关系，不等于丧失实际自主权。\n\n钱塘江及沿海水网支撑农业、交通和海上往来，吴越也持续经营海塘与城防。它与南方其他政权及中原五代并立，采取朝贡和防守相结合的策略。吴越的形成应放在唐末军镇转化为区域国家的过程中理解。",
+      "categories": [
+        "politics"
+      ],
+      "causes": [
+        "钱镠在唐末控制两浙军镇，依托杭州一带的水道、海岸防务与地方官僚形成稳定势力。"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "course": [
+        {
+          "description": "后梁授钱镠吴越王名号，承认其对两浙的统治。",
+          "title": "钱镠受封吴越王",
+          "year": 907
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 907,
+      "eraId": "five-dynasties",
+      "historiography": "《旧五代史·钱镠传》以中原册封为主线，吴越地方建设须结合区域资料理解。",
+      "id": "wuyue-founded",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "水利与海贸使吴越在五代并立时期保有区域经济活力。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          0.9,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [
+        "person-qian-liu"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "wuyue"
+      ],
+      "relationIds": [
+        "later-liang-founded-to-wuyue-founded"
+      ],
+      "results": [
+        "吴越以杭州为中心保持独立军政，仍通过中原朝廷册封维系名义臣属。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷一百三十三《世袭列传二·钱镠》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        },
+        {
+          "locator": "卷266《后梁纪》，907年相关记载",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 907,
+      "summary": "钱镠在杭州建立吴越，利用钱塘江水网和海贸保持独立，并向中原五代称臣以换取安全。吴越的政治选择不同于完全对抗型政权，朝贡、贸易和军事防守共同维持其地位。杭州城防与钱塘水网支撑其长期治理。",
+      "themeIds": [],
+      "title": "吴越建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#b58b38",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 911,
+      "eraId": "five-dynasties",
+      "id": "later-liang-kaifeng",
+      "influence": 2,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.9,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-liang"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷三《梁太祖本纪三》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 907,
+      "summary": "后梁利用汴河、黄河和中原粮运，把汴州建设为政治和军事中心。城市崛起依赖运河与军镇，不等于当时已形成后世北宋的成熟都城；战争频仍使地方赋税和仓储不断调整。汴州的漕运能力吸引军队与官署集中。",
+      "themeIds": [],
+      "title": "后梁以汴州为中心经营",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#7862a9",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 925,
+      "eraId": "five-dynasties",
+      "id": "former-shu-culture",
+      "influence": 2,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          -1.35,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "former-shu"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百三十六《僭伪列传三·王建》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 907,
+      "summary": "前蜀宫廷吸纳唐末文士，保存经籍、绘画与地方宗教传统，成都成为西南文化中心。宫廷繁华建立在地方赋税和军镇控制上，也受战争与继承问题限制；五代文化不只发生在汴洛。成都文士和绘画活动延续唐末传统。",
+      "themeIds": [],
+      "title": "前蜀宫廷文化与蜀地文献",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 909,
+      "eraId": "five-dynasties",
+      "id": "min-founded",
+      "influence": 2,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -1.35,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "min"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百三十四《僭伪列传一·王审知》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 909,
+      "summary": "王审知在福州建立闽国，控制福建山海交通并与中原、吴越和南唐往来。闽国政权规模有限，内部继承和宗室竞争常影响稳定；沿海贸易与佛教网络使其具有区域特色。福州港口连接沿海与海外商路。",
+      "themeIds": [],
+      "title": "闽国建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "science"
+      ],
+      "childIds": [],
+      "color": "#4f8d8d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 930,
+      "eraId": "five-dynasties",
+      "id": "wuyue-sea-dikes",
+      "influence": 2,
+      "layout": {
+        "lane": "science",
+        "offset": [
+          1.35,
+          0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "wuyue"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百三十三《世袭列传二·钱镠》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 910,
+      "summary": "吴越修筑钱塘江海塘、堤岸与水利设施，保护杭州及沿海农田和城市。工程依赖地方民力与官府组织，具体年代和规模有不同记载；海塘建设说明十国时期地方政权也能推动长期基础设施。治水保障杭州城郭与沿海农田。",
+      "themeIds": [],
+      "title": "吴越海塘与水利",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#c84c36",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 913,
+      "eraId": "five-dynasties",
+      "id": "later-liang-yanzhou-war",
+      "influence": 2,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          1.35,
+          -0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-liang"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷七《梁太祖本纪七》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 911,
+      "summary": "后梁与河东晋军围绕潞州、河北和黄河防线反复交战，双方都借用地方军镇和契丹势力。战线迁延说明中原政权无法垄断北方资源，后梁最终失去战略主动；具体战役不应压成一次决战。河东军的持续进攻消耗后梁兵力。",
+      "themeIds": [],
+      "title": "后梁与晋争夺河北",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 917,
+      "eraId": "five-dynasties",
+      "id": "southern-han-founded",
+      "influence": 2,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          0.45,
+          0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "southern-han"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百三十五《僭伪列传二·刘陟》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 917,
+      "summary": "刘隐、刘岩在广州建立南汉，控制岭南港口和珠江流域，以海贸与地方税源维系政权。南汉与中原、闽、南唐和海外商路交往，文化与制度具有岭南特色；其政治独立持续至宋初。广州港税为岭南朝廷提供重要收入。",
+      "themeIds": [],
+      "title": "南汉建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "李存勖继承河东晋王的军队和与后梁对抗的政治目标。923年四月，他先在魏州称帝，定国号唐；十月后唐军攻入汴州，后梁灭亡。称帝发生在灭梁之前。随后李存勖进入洛阳，将朝廷重心转向中原旧都。\n\n新朝以唐名寻求合法性，实际军事基础则来自沙陀河东和河北诸军。后唐掌握中原后仍与南方各国并立，内部也需协调军将与官僚。把即位、军事胜利和定都分别记录，才能说明后唐如何由区域军政集团成为五代中原王朝。",
+      "categories": [
+        "politics"
+      ],
+      "causes": [
+        "李存勖继承河东晋军，长期与后梁争夺河北和中原，并以复兴唐名号凝聚支持。"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "course": [
+        {
+          "description": "李存勖于同光元年四月在魏州即皇帝位，定国号唐。",
+          "title": "魏州称帝",
+          "year": 923
+        },
+        {
+          "description": "同年十月后唐军攻入汴州，后梁灭亡，李存勖随后进入洛阳。",
+          "title": "攻灭后梁",
+          "year": 923
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 923,
+      "eraId": "five-dynasties",
+      "historiography": "《旧五代史》卷二十九记即位、卷三十记灭梁，二者不能倒置；复唐国号也不等于唐室血统延续。",
+      "id": "later-tang-founded",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "沙陀军队与中原官僚在新朝廷内结合，但南方诸国仍保持独立。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -1.35,
+          -0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [
+        "person-li-cunxu"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "later-tang"
+      ],
+      "relationIds": [
+        "later-liang-founded-to-later-tang-founded",
+        "later-tang-founded-to-later-jin-founded"
+      ],
+      "results": [
+        "后唐取得中原政权，洛阳成为朝廷活动中心，后梁的皇帝谱系终止。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷二十九《唐庄宗本纪三》同光元年四月即位；卷三十《唐庄宗本纪四》同年十月灭梁、入洛阳",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        },
+        {
+          "locator": "卷二百七十二《后唐纪》，同光元年称帝、灭梁与入洛阳记载",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 923,
+      "summary": "李存勖于923年四月先在魏州称帝，定国号唐；同年十月后唐军攻入汴州，后梁灭亡，政权重心随后转向洛阳。称帝、灭梁和定都不是同一时点。后唐继承河东沙陀军政资源，也以唐名寻求合法性，而南方诸国仍与之并立。",
+      "themeIds": [],
+      "title": "后唐建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#b58b38",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 926,
+      "eraId": "five-dynasties",
+      "id": "later-tang-luoyang-capital",
+      "influence": 2,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -0.9,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-tang"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷三十《唐庄宗本纪四》，同光元年十月入洛阳",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 923,
+      "summary": "后唐以洛阳为都并在中原各地调度军队，宫廷与军镇之间的物资运输依靠河运和地方征发。都城选择随军事形势变化，不能把五代都城写成固定首都序列；洛阳与汴州的竞争延续了隋唐以来的交通格局。",
+      "themeIds": [],
+      "title": "后唐都洛阳与迁移",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#7862a9",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 926,
+      "eraId": "five-dynasties",
+      "id": "later-tang-zhangzong-arts",
+      "influence": 2,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          -0.45,
+          0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-tang"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷三十《唐庄宗本纪四》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 923,
+      "summary": "李存勖本人喜好戏曲并参与伶人演出，宫廷娱乐与军政权力关系紧密。史书借此批评其荒怠，仍需区分个人表演、宫廷机构与后唐财政；五代文化并非只有战乱，戏曲传统也在此期延续。伶人参与宫廷生活并进入史书批评。",
+      "themeIds": [],
+      "title": "后唐宫廷戏曲与乐舞",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "ethnicity"
+      ],
+      "childIds": [],
+      "color": "#69804a",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 936,
+      "eraId": "five-dynasties",
+      "id": "later-tang-shatuo",
+      "influence": 2,
+      "layout": {
+        "lane": "ethnicity",
+        "offset": [
+          0.9,
+          -0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-tang"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷二十九《唐庄宗本纪三》，同光元年军政安排",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 923,
+      "summary": "沙陀及其部众在后唐、后晋等政权军队中发挥关键作用，身份既有部落纽带也有中原官爵。不能把“沙陀”视作单一民族国家，军队、婚姻与地方社会不断重组；五代政治因此具有跨区域特点。河东军队吸纳各族成员和中原官员。",
+      "themeIds": [],
+      "title": "沙陀军人与中原政权",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 924,
+      "eraId": "five-dynasties",
+      "id": "jingnan-founded",
+      "influence": 2,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -0.9,
+          -0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "jingnan"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百三十三《世袭列传二·高季兴》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 924,
+      "summary": "高季兴据江陵建立荆南，凭借长江中游交通在大国之间周旋，向多个中原政权称臣。荆南疆域狭小却掌握水陆通道，说明十国格局中地理位置与外交策略同样重要。江陵扼守长江中游的水陆交通。",
+      "themeIds": [],
+      "title": "荆南建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#c84c36",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 925,
+      "eraId": "five-dynasties",
+      "id": "later-tang-conquers-shu",
+      "influence": 2,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -0.9,
+          0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-tang"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷三十一《唐庄宗本纪五》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 925,
+      "summary": "后唐军队入蜀，前蜀后主王衍出降，四川纳入后唐版图。山地交通与地方将领使接收过程复杂，后唐对蜀地控制随后仍有反复；灭蜀改变了五代中原与西南的力量平衡。王衍出降结束前蜀皇帝谱系。",
+      "themeIds": [],
+      "title": "后唐灭前蜀",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#b58b38",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 933,
+      "eraId": "five-dynasties",
+      "id": "later-tang-mingzong-reforms",
+      "influence": 2,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [
+        "person-li-siyuan"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "later-tang"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷三十五《唐明宗本纪一》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 926,
+      "summary": "后唐明宗即位后减少部分苛征，整顿州县和军镇供给，试图恢复中原生产。政策受战事、旱灾和地方官执行影响，不能视为全面复兴；其统治为五代短暂稳定提供了条件。节省征敛是明宗朝的重要政令。",
+      "themeIds": [],
+      "title": "后唐明宗整顿赋役",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#9b7a45",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 933,
+      "eraId": "five-dynasties",
+      "id": "later-tang-tianyou-law",
+      "influence": 2,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          0.45,
+          -0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-tang"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百四十七《刑法志》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 927,
+      "summary": "明宗朝重视州县奏报、户籍和刑狱文书，以恢复战争后行政秩序。地方官署仍有军镇干预和人事流动，法令落实程度因地而异；五代国家治理并非完全断裂，而是在唐制上不断修补。刑狱文书仍沿用唐代律令传统。",
+      "themeIds": [],
+      "title": "后唐州县文书与法令",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 934,
+      "eraId": "five-dynasties",
+      "id": "later-shu-founded",
+      "influence": 2,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -0.45,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-shu"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百三十六《僭伪列传三·孟知祥》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 934,
+      "summary": "孟知祥在成都建立后蜀，承接前蜀地方传统并与后唐、后周保持外交和军事竞争。后蜀控制四川和汉中部分地区，拥有独立财政与文化环境；其灭亡前仍是十国中重要政权。成都再次成为独立王朝的政治中心。",
+      "themeIds": [],
+      "title": "后蜀建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "后唐末帝试图调整河东节度使石敬瑭的地位，引发双方对抗。936年石敬瑭得到契丹援兵，在太原称帝并建立后晋，随后击败后唐、进入中原。他的称帝与掌握洛阳、汴州等地是连续但不同的军事政治阶段。\n\n后晋依靠契丹支持取得皇位，向契丹称臣并承诺割让燕云地区。这一安排改变了中原北部边防，也使新王朝长期承受对外依赖的压力。后晋控制中原而非全国，河东旧部和南方诸国继续影响其统治边界。",
+      "categories": [
+        "politics"
+      ],
+      "causes": [
+        "石敬瑭与后唐末帝矛盾激化，凭借河东军镇和契丹援兵挑战洛阳朝廷。"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "course": [
+        {
+          "description": "石敬瑭在契丹支持下于太原称帝，建立后晋。",
+          "title": "太原称帝",
+          "year": 936
+        },
+        {
+          "description": "契丹与河东联军击败后唐，石敬瑭取得中原皇位。",
+          "title": "入主中原",
+          "year": 936
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 936,
+      "eraId": "five-dynasties",
+      "historiography": "《旧五代史·晋高祖本纪》叙述称帝与契丹援助，割地安排须与后续实际交接分开。",
+      "id": "later-jin-founded",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "燕云边防与对契丹的依赖长期制约后晋，南方诸国仍不受其直接统治。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          1.35,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [
+        "person-shi-jingtang"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "later-jin"
+      ],
+      "relationIds": [
+        "later-tang-founded-to-later-jin-founded",
+        "later-jin-founded-to-later-han-founded"
+      ],
+      "results": [
+        "后唐灭亡，后晋接管中原，石敬瑭向契丹称臣并承担燕云割让代价。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷七十五《晋高祖本纪一》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        },
+        {
+          "locator": "卷280《后晋纪》，936年相关记载",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 936,
+      "summary": "石敬瑭借契丹兵力反唐，在太原称帝并建立后晋，割让燕云部分地区作为政治代价。后晋对契丹的依赖造成长期边防压力，称帝并不等于掌握全国；河东、后唐旧部和南方政权仍有各自力量。契丹援兵与河东兵共同击败后唐。",
+      "themeIds": [],
+      "title": "后晋建立与石敬瑭称帝",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#4d7aa4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 936,
+      "eraId": "five-dynasties",
+      "id": "later-jin-yanyun",
+      "influence": 2,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          -1.35,
+          0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-jin",
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷七十五《晋高祖本纪一》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 936,
+      "summary": "后晋向契丹割让燕云十六州并纳岁币，幽州等地成为辽与中原政权长期竞争的军事通道。具体州数和边界在史料与后世叙述中有差异，不能把割让写成一次简单的地理切线；其影响延续到北宋。",
+      "themeIds": [],
+      "title": "后晋割让燕云十六州",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#b58b38",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 937,
+      "eraId": "five-dynasties",
+      "id": "later-jin-kaifeng",
+      "influence": 2,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -0.9,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-jin"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷七十六《晋高祖本纪二》，天福二年赴汴州",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 937,
+      "summary": "石敬瑭建立后晋后，于天福二年赴汴州，朝廷逐步将汴州作为东都和军政枢纽。汴河运输与中原州县供给支撑新政权，但河东根基与契丹边境事务仍牵制其统治。迁都改变了宫廷和官署的活动中心，不能把936年称帝与随后在汴州的经营合并为同日之事。",
+      "themeIds": [],
+      "title": "后晋以汴州为东都",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "937年，长期掌握杨吴政权的徐知诰接受禅位，在江淮称帝。新政权起初国号为齐，后来徐知诰改姓李、改号唐，史称南唐。因此以937年为南唐建立的起点是一种追溯性命名，不能说受禅当日就已使用唐号。\n\n新朝继承杨吴的州县官僚、军队和水运网络，控制江淮与江南部分地区。吴越、闽和中原五代仍与之并立。南唐的政治与文学文化在这些区域竞争和交流中发展，不是唐朝旧皇室的直接复兴。",
+      "categories": [
+        "politics"
+      ],
+      "causes": [
+        "徐知诰长期掌控杨吴朝政，利用江淮官僚和军队完成政权转换。"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "course": [
+        {
+          "description": "徐知诰取代杨吴称帝，初定国号齐，建立新的江淮朝廷。",
+          "title": "徐知诰受禅建齐",
+          "year": 937
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 937,
+      "eraId": "five-dynasties",
+      "historiography": "《旧五代史·李昪传》与《资治通鉴》记录受禅和更名阶段；称齐与改唐不可写作同日。",
+      "id": "southern-tang-founded",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "徐知诰后来改姓李并改国号唐，南唐在与中原、吴越和闽并立中形成独特文化。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          0,
+          -0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [
+        "person-li-bian"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "southern-tang"
+      ],
+      "relationIds": [
+        "southern-tang-founded-to-southern-tang-jiangnan-economy"
+      ],
+      "results": [
+        "杨吴皇帝谱系结束，江淮与江南部分地区由新朝廷继续治理。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷一百三十四《僭伪列传一·李昪》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        },
+        {
+          "locator": "卷281《后晋纪》，937年相关记载",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 937,
+      "summary": "李昪取代吴国建立南唐，控制江淮与江南部分地区，承接杨吴的官僚和水运网络。南唐与中原五代、吴越和闽国并立，国号虽称唐却不是唐朝复兴；江南经济和文化由此继续发展。937年先称齐，后来才改国号唐。",
+      "themeIds": [],
+      "title": "南唐建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#b58b38",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 960,
+      "eraId": "five-dynasties",
+      "id": "southern-tang-jiangnan-economy",
+      "influence": 2,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.45,
+          -0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "southern-tang"
+      ],
+      "relationIds": [
+        "southern-tang-founded-to-southern-tang-jiangnan-economy"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷六十二《南唐世家第二》",
+          "sourceId": "xinwudaishi-zhonghua-1974"
+        }
+      ],
+      "startYear": 937,
+      "summary": "南唐依靠长江、淮河和地方水网维持金陵、扬州等城市的粮运与税收，手工业和文书文化亦较活跃。经济繁荣受战争、堤防和区域竞争影响，不能把江南富庶归因于单一政权政策；宋初承接了部分网络。",
+      "themeIds": [],
+      "title": "南唐江南漕运与城市",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#c84c36",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 947,
+      "eraId": "five-dynasties",
+      "id": "later-jin-qidan-conquest",
+      "influence": 2,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -0.45,
+          -0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-jin",
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷八十五《晋少帝本纪五》，开运三年末出降及次年入汴",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 946,
+      "summary": "946年末契丹军南下，后晋出帝出降，皇位和朝廷机构瓦解；次年契丹军进入汴州。占领中原的时间短暂，地方军镇和民众抵抗使契丹政权难以维持统治。后晋的覆亡跨越年末与次年，不能将出帝出降和契丹进入都城记为同一天。",
+      "themeIds": [],
+      "title": "契丹攻灭后晋",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "契丹军队灭后晋并进入汴州后，河东节度使刘知远首先在太原即皇帝位。此时契丹尚未撤出汴州。随后契丹北归，刘知远军队南下接收中原，并以汉号建立新的朝廷。把这几个动作倒排，会误解他取得政治主动权的时机。\n\n后汉的军政基础来自河东及旧晋官员，控制范围仍以中原为主。地方军镇和南方诸国继续保持自己的力量。后汉政权存在时间很短，其宫廷与将领关系迅速紧张，为后来郭威建立后周提供了直接背景。",
+      "categories": [
+        "politics"
+      ],
+      "causes": [
+        "契丹灭后晋后进入汴州，地方军镇与旧晋官僚重新寻找中原政治中心。"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "course": [
+        {
+          "description": "河东节度使刘知远在契丹仍据汴州时于太原称帝。",
+          "title": "太原即位",
+          "year": 947
+        },
+        {
+          "description": "契丹北撤后，刘知远率军进入中原，以汉号组织新朝廷。",
+          "title": "南下接收汴州",
+          "year": 947
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 947,
+      "eraId": "five-dynasties",
+      "historiography": "《旧五代史·汉高祖本纪上》记太原称帝早于契丹撤离，建号与入汴也须分阶段叙述。",
+      "id": "later-han-founded",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "短促的后汉政权凸显军镇、宫廷继承和外部势力对五代朝廷的持续影响。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          0,
+          -0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [
+        "person-liu-zhiyuan"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "later-han"
+      ],
+      "relationIds": [
+        "later-jin-founded-to-later-han-founded",
+        "later-han-founded-to-later-zhou-founded"
+      ],
+      "results": [
+        "后汉取得汴州和中原部分州县，依靠河东军人与旧晋官僚维持统治。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷九十九《汉高祖本纪上》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        },
+        {
+          "locator": "卷286《后汉纪》，947年相关记载",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 947,
+      "summary": "契丹攻灭后晋、进入汴州后，河东节度使刘知远于947年在太原即皇帝位，国号的称谓随后确立。契丹撤离汴州后，刘知远军队南下接收中原。太原即位早于契丹北撤，南下控制汴州又是下一阶段；后汉仍需面对地方军镇和南方诸国。",
+      "themeIds": [],
+      "title": "后汉建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#c84c36",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 950,
+      "eraId": "five-dynasties",
+      "id": "later-han-guo-wei",
+      "influence": 2,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0.45,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-han"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百〇一《汉隐帝本纪上》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 948,
+      "summary": "郭威以枢密使和北面行营资源介入后汉政治，最终在兵变和朝廷冲突中取代刘氏。军队、宦官和外戚关系交错，不能把改朝换代归结为一次私人阴谋；后周建立前的政权危机体现五代权力结构。朝廷诛杀将领家属激化冲突。",
+      "themeIds": [],
+      "title": "郭威掌握后汉朝政",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "后汉末年，皇帝与禁军将领的冲突导致郭威率军进入汴州。951年他即皇帝位，建立后周。新朝廷承接后汉的官署和部分军队，但人事重新安排，郭威开始整顿税役、军纪和州县治理。\n\n后周的成立没有结束多政权并立。刘崇在河东建立北汉，辽在北方保持影响，南方各国各有军政中心。郭威的统治着眼于恢复中原秩序，为柴荣后来的扩张提供基础；其成果应放在有限的实际控制范围内衡量。",
+      "categories": [
+        "politics"
+      ],
+      "causes": [
+        "后汉朝廷与禁军将领矛盾激化，郭威率军进入汴州并控制中原朝局。"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "course": [
+        {
+          "description": "郭威在汴州称帝，建立后周，结束后汉皇帝在中原的统治。",
+          "title": "郭威即位",
+          "year": 951
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 951,
+      "eraId": "five-dynasties",
+      "historiography": "《旧五代史·周太祖本纪》着重说明即位合法性，郭威此前与后汉的兵变须独立辨析。",
+      "id": "later-zhou-founded",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "北汉仍据河东，辽与南方诸国并立，后周改革面临持续的边境和财政压力。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          0.9,
+          0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [
+        "person-guo-wei"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "later-zhou"
+      ],
+      "relationIds": [
+        "later-han-founded-to-later-zhou-founded",
+        "later-zhou-founded-to-later-zhou-guo-rong"
+      ],
+      "results": [
+        "后周接收后汉官署与军队，开始整顿州县赋役和禁军。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷一百一十《周太祖本纪一》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        },
+        {
+          "locator": "卷290《后周纪》，951年相关记载",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 951,
+      "summary": "郭威在汴州即帝位，建立后周，整顿军队和财政并试图恢复中原秩序。后周控制范围仍有限，北汉、辽与南方十国保持并立；其制度改革和军事扩张为北宋统一奠定条件。郭威即位后仍须面对北汉竞争。",
+      "themeIds": [],
+      "title": "后周建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 951,
+      "eraId": "five-dynasties",
+      "id": "northern-han-founded",
+      "influence": 2,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -0.45,
+          -0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "northern-han"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百三十五《僭伪列传二·刘崇》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 951,
+      "summary": "刘崇在太原建立北汉，依托河东军镇并向辽求援，与后周长期对峙。北汉疆域有限、财政压力较大，仍因地形和契丹支持保持独立；其存在阻碍了后周和北宋的北方统一。河东军队与辽援使其保持长期抵抗。",
+      "themeIds": [],
+      "title": "北汉建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#9b7a45",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 954,
+      "eraId": "five-dynasties",
+      "id": "later-zhou-military-reform",
+      "influence": 2,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          1.35,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-zhou"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百一十《周太祖本纪一》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 951,
+      "summary": "郭威和后周将领重新编排禁军，削弱部分旧军头的独立性，提高朝廷直接调度能力。改革是在战争和财政约束下推进，不能视为宋代禁军制度的完整蓝本；兵员、粮饷与地方军镇仍相互牵制。禁军训练与粮饷配合提高调度能力。",
+      "themeIds": [],
+      "title": "后周整顿禁军",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#4d7aa4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 960,
+      "eraId": "five-dynasties",
+      "id": "northern-han-liaison",
+      "influence": 2,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "northern-han",
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百三十五《僭伪列传二·刘崇》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 951,
+      "summary": "北汉借助辽国支持抵抗后周与宋，双方以册封、出兵和边境利益维持联盟。辽并不完全控制北汉，北汉也有自身政治目标；这段关系是宋辽边境形成的重要前奏。北汉以辽援对抗后周北伐，河东防线因而长期维持。",
+      "themeIds": [],
+      "title": "北汉与辽的军事联盟",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "954年柴荣继郭威成为后周皇帝，随即面对北汉与辽军的挑战。高平之战后，他整顿禁军与军纪，并推动州县治理、税役调整和若干宗教政策。改革依靠将领与文臣共同执行，成效不能归于皇帝个人意志。\n\n后周随后向南方和北方扩张，取得部分战果，却未完成统一。959年北伐途中柴荣病重撤军，不久去世，年幼的柴宗训继位。军事积累与继承脆弱性同时存在，成为理解五代终局和宋初政治的重要背景。",
+      "categories": [
+        "politics"
+      ],
+      "causes": [
+        "郭威去世后柴荣继位，后周需要稳固禁军、改善财政并面对北汉与南方政权。"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "course": [
+        {
+          "description": "柴荣继承后周皇位，率军击退北汉及辽军的进攻。",
+          "title": "柴荣即位与高平战事",
+          "year": 954
+        },
+        {
+          "description": "朝廷限制部分寺院并继续调整军队与地方赋役。",
+          "title": "整顿寺院与军政",
+          "year": 955
+        },
+        {
+          "description": "柴荣向辽境推进后病重，撤军并于当年去世。",
+          "title": "北伐受阻",
+          "year": 959
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 959,
+      "eraId": "five-dynasties",
+      "historiography": "《旧五代史·周世宗本纪》按帝王功业编排，改革执行情况须结合州县与战事资料。",
+      "id": "later-zhou-guo-rong",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "柴荣的治理为后来的宋初整军与统一提供制度和军政基础，继承危机也随其早逝出现。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -1.35,
+          -0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [
+        "person-chai-rong"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "later-zhou"
+      ],
+      "relationIds": [
+        "later-zhou-founded-to-later-zhou-guo-rong",
+        "later-zhou-guo-rong-to-song-founding-prelude"
+      ],
+      "results": [
+        "后周增强禁军战力并取得部分边境成果，但北方与南方统一均未完成。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷一百一十四《周世宗本纪一》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        },
+        {
+          "locator": "卷291《后周纪》，954年相关记载",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 954,
+      "summary": "柴荣即位后推进军队整顿、州县治理与北伐，试图在有限时间内恢复中原统一。其改革由文臣、将领和地方官共同执行，成效随战线和寿命受限；后世宋初叙事常将其塑造成统一先驱。高平战后禁军整顿增强朝廷战力。",
+      "themeIds": [],
+      "title": "周世宗柴荣改革",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#b58b38",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 959,
+      "eraId": "five-dynasties",
+      "id": "later-zhou-guo-tax",
+      "influence": 2,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.45,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-zhou"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百一十四《周世宗本纪一》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 954,
+      "summary": "后周整顿田赋、户籍和州县转运，试图恢复战争破坏后的农业税源。史书所称减免和均定多是政令目标，实际效果因地区而异；这一财政整顿与军队扩张必须同步看待。州县重新核实户籍与田赋来源。",
+      "themeIds": [],
+      "title": "后周均定田赋尝试",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#b58b38",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 959,
+      "eraId": "five-dynasties",
+      "id": "later-zhou-kaifeng-works",
+      "influence": 2,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          0.9,
+          -0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-zhou"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百一十四《周世宗本纪一》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 954,
+      "summary": "后周修整汴州城防、河道和仓储，使汴州继续成为北方军政与粮运枢纽。工程规模和持续时间受战争限制，不能把后周城市直接等同于北宋东京；但交通基础确为宋初经营中原提供条件。汴河和城防修整便利军粮调运。",
+      "themeIds": [],
+      "title": "后周汴州城与漕运修缮",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#c84c36",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 959,
+      "eraId": "five-dynasties",
+      "id": "later-zhou-northern-expedition",
+      "influence": 2,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -0.9,
+          -0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-zhou",
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百一十九《周世宗本纪六》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 954,
+      "summary": "后周多次北伐，收复后晋割让的部分关南地区，推进到瀛莫一带。战争受契丹援军、粮运和季节限制，未能夺回全部燕云；北方边界因此仍是宋辽争夺的核心。959年柴荣病重使进军中止，关南新得州县仍需守备。",
+      "themeIds": [],
+      "title": "后周北伐收复三关",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "religion"
+      ],
+      "childIds": [],
+      "color": "#8a668e",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 955,
+      "eraId": "five-dynasties",
+      "id": "later-zhou-buddhist-suppression",
+      "influence": 2,
+      "layout": {
+        "lane": "religion",
+        "offset": [
+          0,
+          0.35
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-zhou"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百一十五《周世宗本纪二》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 955,
+      "summary": "柴荣下诏限制寺院、毁废无名寺并收铜铸钱，政策兼有财政、军费和国家秩序考量。执行范围与地方反应各异，不能等同于会昌灭佛的简单重复；寺院网络仍在社会中持续存在。寺院铜器被收集用于铸钱。",
+      "themeIds": [],
+      "title": "后周毁佛与铸钱",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#9b7a45",
+      "detailLevel": "basic",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 959,
+      "eraId": "five-dynasties",
+      "id": "later-zhou-legal-reform",
+      "influence": 2,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -0.45,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "later-zhou"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "卷一百一十五《周世宗本纪二》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        }
+      ],
+      "startYear": 955,
+      "summary": "后周整理编敕、刑法和州县条令，努力使军政命令与日常司法具有较稳定的文本依据。编敕并非一次完成的法典，地方执行和旧唐律传统仍占重要位置；这些实践为宋代法制提供了过渡经验。显德年间编修《大周刑统》。",
+      "themeIds": [],
+      "title": "后周显德编敕",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "959年，后周世宗柴荣在北伐后病重去世，幼子柴宗训继位。朝廷仍保有此前整顿的禁军、枢密院和州县行政体系，但新皇帝年幼，军队和宰臣如何维持协作成为当时最迫切的政治问题。\n\n后周并未因世宗去世而立即消失，北汉、辽和南方诸国也仍与之并立。继承安排改变了权力平衡，为960年的中原政权转换提供背景；该转换本身应归入下一条宋代事件，而不是提前写成959年的结果。",
+      "categories": [
+        "politics"
+      ],
+      "causes": [
+        "柴荣北伐期间病重，朝廷需要在军事行动尚未结束时安排皇位继承。"
+      ],
+      "childIds": [],
+      "color": "#b34d43",
+      "course": [
+        {
+          "description": "后周世宗病逝，幼子柴宗训继承皇位。",
+          "title": "柴荣去世",
+          "year": 959
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "sui-tang-five-dynasties",
+      "endYear": 959,
+      "eraId": "five-dynasties",
+      "historiography": "《旧五代史·周世宗本纪六》记去世与继位，后来的宋代开国叙事不应提前写进959年的行动。",
+      "id": "song-founding-prelude",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "继承局势使将领与中央机构的关系更关键，为次年的政权变化提供背景。"
+        }
+      ],
+      "influence": 4,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          0.9,
+          0.7
+        ]
+      },
+      "parentId": null,
+      "period": "五代十国",
+      "personIds": [
+        "person-chai-rong"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "later-zhou"
+      ],
+      "relationIds": [
+        "later-zhou-guo-rong-to-song-founding-prelude"
+      ],
+      "results": [
+        "后周军政继续由禁军将领、枢密使和宰臣维持，年幼皇帝难以亲自统合各方。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "卷一百一十九《周世宗本纪六》",
+          "sourceId": "jiuwudaishi-zhonghua-1976"
+        },
+        {
+          "locator": "卷294《后周纪》，959年相关记载",
+          "sourceId": "zizhi-tongjian-zhonghua-1956"
+        }
+      ],
+      "startYear": 959,
+      "summary": "柴荣在北伐后病逝，幼主柴宗训继位，后周朝廷的禁军、枢密院与宰臣必须在新皇帝年幼时维持协作。世宗未完成的边疆战略和南方诸国仍在，继承安排令军队将领影响上升；次年的陈桥兵变属于宋代另一个事件。",
+      "themeIds": [],
+      "title": "后周世宗去世与幼主继位",
+      "yearPrecision": "exact"
+    }
+  ],
+  "people": [
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "他整顿禁军、州县财政并发动南北战事，增强后周的军事能力。"
+      ],
+      "deathYear": null,
+      "evaluation": "柴荣的扩张取得局部战果而未完成统一，改革也依赖文臣、将领和地方执行。",
+      "eventIds": [
+        "later-zhou-guo-rong",
+        "song-founding-prelude"
+      ],
+      "historiography": "《旧五代史·周世宗本纪》以帝王功业组织材料，政策成效须与实际控制范围对照。",
+      "id": "person-chai-rong",
+      "identities": [],
+      "legacy": "宋初继承后周部分军政基础，柴荣的早逝又使皇位继承脆弱性显露。",
+      "name": "柴荣",
+      "placeIds": [],
+      "primaryEraId": "five-dynasties",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "jiuwudaishi-zhonghua-1976"
+      ],
+      "summary": "柴荣954年继郭威为后周皇帝，面对北汉和辽军威胁而整顿禁军。其朝廷调整州县、税役和宗教资源，并向南北展开战事。959年北伐途中病逝，幼主继位，后周军政积累与继承危机同时呈现。",
+      "timeline": [
+        {
+          "description": "柴荣继承后周皇位，率军击退北汉与辽军，随后整顿禁军。",
+          "title": "继位并指挥高平战事",
+          "year": 954
+        },
+        {
+          "description": "柴荣朝廷限制部分寺院并继续调整赋役与军政。",
+          "title": "整顿寺院和州县资源",
+          "year": 955
+        },
+        {
+          "description": "柴荣向辽境推进时患病撤军，不久去世，幼子柴宗训继位。",
+          "title": "北伐后病逝",
+          "year": 959
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "他稳定后汉末年的军政秩序，为柴荣继位后的改革留下中枢基础。"
+      ],
+      "deathYear": null,
+      "evaluation": "郭威建立的是以中原为中心的后周，北汉与南方诸政权仍保持独立。",
+      "eventIds": [
+        "later-zhou-founded"
+      ],
+      "historiography": "《旧五代史·周太祖本纪》强调即位合法性，应结合后汉末年宫廷与禁军冲突理解。",
+      "id": "person-guo-wei",
+      "identities": [],
+      "legacy": "后周朝廷的军政整理成为五代终局及宋初制度变化的一环。",
+      "name": "郭威",
+      "placeIds": [],
+      "primaryEraId": "five-dynasties",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "jiuwudaishi-zhonghua-1976"
+      ],
+      "summary": "郭威原为后汉军将，与朝廷发生冲突后进入汴州。951年他称帝建立后周，接收官署和军队，并整顿赋役与军纪。北汉在河东另立，后周未统一全国；郭威的工作主要在稳定中原政权。",
+      "timeline": [
+        {
+          "description": "郭威即帝位，接收后汉官署与禁军，并开始整顿税役和地方行政。",
+          "title": "在汴州建立后周",
+          "year": 951
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "他承接杨吴官僚和江淮水运网络，使新政权得以治理江南部分地区。"
+      ],
+      "deathYear": null,
+      "evaluation": "李昪以唐名争取合法性，政治基础则来自杨吴旧行政和地方军队。",
+      "eventIds": [
+        "southern-tang-founded"
+      ],
+      "historiography": "《旧五代史·李昪传》记初称齐与后来改唐，不能把两次国号行动写在937年同一时点。",
+      "id": "person-li-bian",
+      "identities": [],
+      "legacy": "南唐在与中原及吴越等国并立时发展江南文教与区域经济。",
+      "name": "李昪",
+      "placeIds": [],
+      "primaryEraId": "five-dynasties",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "jiuwudaishi-zhonghua-1976"
+      ],
+      "summary": "李昪原名徐知诰，长期掌握杨吴朝政。937年受禅称帝，国号起初为齐；后来改姓李、改号唐，史称南唐。他保留江淮官僚和水运体系，与中原五代及吴越、闽等政权并立。",
+      "timeline": [
+        {
+          "description": "徐知诰取代杨吴，在江淮称帝，初用齐国号。",
+          "title": "受禅建立齐国",
+          "year": 937
+        },
+        {
+          "description": "徐知诰改名李昪，改国号唐，后世称此政权为南唐。",
+          "title": "改姓李并称唐",
+          "year": 939
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "他率河东晋军结束后梁在中原的统治，建立后唐朝廷。"
+      ],
+      "deathYear": null,
+      "evaluation": "李存勖先称帝后灭梁；复唐名号体现政治合法性，并非唐室血统直接延续。",
+      "eventIds": [
+        "later-tang-founded"
+      ],
+      "historiography": "《旧五代史》卷二十九、三十分别记即位与灭梁，时间顺序应按月份区分。",
+      "id": "person-li-cunxu",
+      "identities": [],
+      "legacy": "其政权将沙陀军队与中原官僚结合，后续仍面临军将和地方统治问题。",
+      "name": "李存勖",
+      "placeIds": [],
+      "primaryEraId": "five-dynasties",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "jiuwudaishi-zhonghua-1976"
+      ],
+      "summary": "李存勖继承河东晋军，与后梁长期交战。923年四月先在魏州称帝，十月才攻灭后梁，随后进入洛阳。后唐掌握中原，但仍与南方多国并立，其军政基础和唐朝旧皇室并无直接连续性。",
+      "timeline": [
+        {
+          "description": "李存勖于同光元年四月在魏州即皇帝位，定国号唐。",
+          "title": "魏州称帝",
+          "year": 923
+        },
+        {
+          "description": "同年十月后唐军攻入汴州灭后梁，李存勖随后转入洛阳。",
+          "title": "灭梁入洛",
+          "year": 923
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "他在位时减轻部分苛征，整顿州县赋役与军镇供给。"
+      ],
+      "deathYear": null,
+      "evaluation": "明宗朝相对稳定仍受旱灾和战事制约，不能概括为全面恢复。",
+      "eventIds": [
+        "later-tang-mingzong-reforms"
+      ],
+      "historiography": "《旧五代史·唐明宗本纪》以朝廷诏令为主，政策效果需与地方情况分开。",
+      "id": "person-li-siyuan",
+      "identities": [],
+      "legacy": "其行政调整说明五代朝廷仍重视农业税源和地方官执行能力。",
+      "name": "李嗣源",
+      "placeIds": [],
+      "primaryEraId": "five-dynasties",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "jiuwudaishi-zhonghua-1976"
+      ],
+      "summary": "李嗣源在后唐庄宗死后于926年即位，是后唐明宗。他试图减轻部分苛征，整顿州县行政和军镇供给。中原生产有所恢复，却仍受灾荒、军事动员和地方执行差异影响。",
+      "timeline": [
+        {
+          "description": "李嗣源在庄宗死后取得皇位，开始调整中原军政与地方供给。",
+          "title": "继位为后唐明宗",
+          "year": 926
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "他利用河东军队和旧后晋官僚建立后汉，填补契丹撤离后的中原权力空缺。"
+      ],
+      "deathYear": null,
+      "evaluation": "刘知远的太原即位早于契丹北撤，南下与国号确立又是后续步骤。",
+      "eventIds": [
+        "later-han-founded"
+      ],
+      "historiography": "《旧五代史·汉高祖本纪上》可核即位与入汴顺序，不能用后见的统一叙事压平阶段。",
+      "id": "person-liu-zhiyuan",
+      "identities": [],
+      "legacy": "后汉短暂的军政结构为郭威崛起和后周建立提供了直接背景。",
+      "name": "刘知远",
+      "placeIds": [],
+      "primaryEraId": "five-dynasties",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "jiuwudaishi-zhonghua-1976"
+      ],
+      "summary": "刘知远原掌河东军镇。契丹灭后晋并占汴州时，他于947年先在太原即皇帝位；契丹北撤后才率军南下接收中原。后汉依靠河东将士和旧晋官僚，国祚很短，却改变了五代中原权力格局。",
+      "timeline": [
+        {
+          "description": "刘知远在契丹仍据汴州时于太原称帝，依托河东军镇组织朝廷。",
+          "title": "太原即皇帝位",
+          "year": 947
+        },
+        {
+          "description": "契丹北撤后，刘知远率军进入汴州，后汉取得中原政权。",
+          "title": "南下接收中原",
+          "year": 947
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "他经营两浙军政、海塘和区域交通，使吴越在五代并立中保持自主。"
+      ],
+      "deathYear": null,
+      "evaluation": "钱镠接受中原册封是一种外交安排，吴越的军队与地方财政仍由本朝掌握。",
+      "eventIds": [
+        "wuyue-founded"
+      ],
+      "historiography": "《旧五代史·钱镠传》侧重中原朝廷册命，地方经济和海塘工程需与区域资料互证。",
+      "id": "person-qian-liu",
+      "identities": [],
+      "legacy": "吴越的水利、海贸和城市经营影响江南区域发展。",
+      "name": "钱镠",
+      "placeIds": [],
+      "primaryEraId": "five-dynasties",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "jiuwudaishi-zhonghua-1976"
+      ],
+      "summary": "钱镠在唐末掌握两浙军镇，907年受后梁封为吴越王。他以杭州为政治中心，经营海塘、军队和海上贸易，同时通过朝贡维系与中原朝廷的关系。吴越名义臣属而实际自理，是五代地方国家的一种形态。",
+      "timeline": [
+        {
+          "description": "钱镠接受后梁册封，继续以杭州为中心治理两浙。",
+          "title": "受封吴越王",
+          "year": 907
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "他以河东军镇和契丹联盟夺取后唐皇位，重组中原朝廷。"
+      ],
+      "deathYear": null,
+      "evaluation": "后晋建国同时带来对契丹的政治依赖，燕云安排深刻影响北方边防。",
+      "eventIds": [
+        "later-jin-founded"
+      ],
+      "historiography": "《旧五代史·晋高祖本纪》记称帝与受援；割地约定和地方实际交接应分开。",
+      "id": "person-shi-jingtang",
+      "identities": [],
+      "legacy": "石敬瑭与契丹的结盟成为五代对外关系和边疆防务的关键案例。",
+      "name": "石敬瑭",
+      "placeIds": [],
+      "primaryEraId": "five-dynasties",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "jiuwudaishi-zhonghua-1976"
+      ],
+      "summary": "石敬瑭原为后唐河东节度使，与末帝冲突后求援契丹。936年他在太原称帝建立后晋，随后取得中原。向契丹称臣和割让燕云的安排使新王朝在建立之初便承担重大的边防与外交代价。",
+      "timeline": [
+        {
+          "description": "石敬瑭借契丹援军反对后唐末帝，在太原建立后晋。",
+          "title": "太原称帝",
+          "year": 936
+        },
+        {
+          "description": "后唐灭亡后石敬瑭进入中原，承诺向契丹称臣并割让燕云地区。",
+          "title": "取得中原",
+          "year": 936
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "朱温以宣武军和汴州漕运控制中原，终结唐室皇帝在中原的统治。"
+      ],
+      "deathYear": null,
+      "evaluation": "朱温建立后梁并未消除河东晋和南方诸国的独立，称帝范围与政治号召须分开。",
+      "eventIds": [
+        "later-liang-founded"
+      ],
+      "historiography": "《旧五代史·梁太祖本纪》以受禅修饰政权转换，需同时看到唐末军事胁迫。",
+      "id": "person-zhu-wen",
+      "identities": [],
+      "legacy": "其军镇夺取皇位的路径成为五代中原王朝更替的开端。",
+      "name": "朱温",
+      "placeIds": [],
+      "primaryEraId": "five-dynasties",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "jiuwudaishi-zhonghua-1976"
+      ],
+      "summary": "朱温曾参与黄巢起义，882年归附唐廷，随后以宣武军为基础扩张势力。907年他迫使唐哀帝禅位，建立后梁。新朝依托汴州和中原军队，却与河东晋及南方诸国并立。",
+      "timeline": [
+        {
+          "description": "朱温从黄巢军转投唐朝，获得朝廷任命并扩张自己的军队。",
+          "title": "归附唐廷",
+          "year": 882
+        },
+        {
+          "description": "他迫使唐哀帝禅位，在汴州称帝，改国号梁。",
+          "title": "受禅建后梁",
+          "year": 907
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    }
+  ]
+}

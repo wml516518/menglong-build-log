@@ -13,14 +13,15 @@ export interface InstancedEventFieldProps {
   events: readonly HistoryEvent[];
   excludedIds: readonly string[];
   dragOffsets: DragOffsets;
+  xPositions?: ReadonlyMap<string, number>;
   reducedMotion: boolean;
   eventOpacities?: ReadonlyMap<string, number>;
   onHover: (id: string | null) => void;
   onPromote: (event: HistoryEvent, start: StarPointerStart) => void;
 }
-export function buildEventBatch(events: readonly HistoryEvent[], excludedIds: readonly string[], dragOffsets: DragOffsets, eventOpacities?: ReadonlyMap<string, number>): EventInstance[] {
+export function buildEventBatch(events: readonly HistoryEvent[], excludedIds: readonly string[], dragOffsets: DragOffsets, eventOpacities?: ReadonlyMap<string, number>, xPositions?: ReadonlyMap<string, number>): EventInstance[] {
   const excluded = new Set(excludedIds);
-  return events.filter(event => !excluded.has(event.id)).map(event => ({ event, position: getEventPosition(event, dragOffsets[event.id]), scale: influenceToScale(event.influence), opacity: eventOpacities?.get(event.id) ?? 1 }));
+  return events.filter(event => !excluded.has(event.id)).map(event => ({ event, position: getEventPosition(event, dragOffsets[event.id], xPositions?.get(event.id)), scale: influenceToScale(event.influence), opacity: eventOpacities?.get(event.id) ?? 1 }));
 }
 export function eventForInstance(batch: readonly EventInstance[], instanceId?: number): HistoryEvent | undefined {
   return instanceId !== undefined && Number.isInteger(instanceId) && instanceId >= 0 ? batch[instanceId]?.event : undefined;
@@ -39,8 +40,8 @@ export function applyEventBatch(mesh: THREE.InstancedMesh, batch: readonly Event
   if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
   mesh.computeBoundingSphere();
 }
-export function InstancedEventField({ events, excludedIds, dragOffsets, onHover, onPromote, eventOpacities }: InstancedEventFieldProps) {
-  const batch = useMemo(() => buildEventBatch(events, excludedIds, dragOffsets, eventOpacities), [events, excludedIds, dragOffsets, eventOpacities]);
+export function InstancedEventField({ events, excludedIds, dragOffsets, onHover, onPromote, eventOpacities, xPositions }: InstancedEventFieldProps) {
+  const batch = useMemo(() => buildEventBatch(events, excludedIds, dragOffsets, eventOpacities, xPositions), [events, excludedIds, dragOffsets, eventOpacities, xPositions]);
   const core = useRef<THREE.InstancedMesh>(null), halo = useRef<THREE.InstancedMesh>(null);
   // Both fields stay static, including in reduced-motion mode. Visibility or a
   // released drag changes matrices; the render loop never rewrites instances.

@@ -1,0 +1,2114 @@
+{
+  "eraId": "song-liao-jin-xia",
+  "events": [
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 907,
+      "eraId": "song-liao-jin-xia",
+      "id": "liao-abaoji-elected",
+      "influence": 4,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -1.08,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "辽与五代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《辽史》太祖本纪",
+          "sourceId": "liaoshi-zhonghua-1974"
+        }
+      ],
+      "startYear": 907,
+      "summary": "耶律阿保机在契丹诸部争衡中取得首领地位，逐渐建立超越部落联盟的统治机构。契丹政权利用草原与农耕地区的联系扩张势力，其建立为后来辽朝经营燕云和与中原王朝并立奠定基础。阿保机由诸部共主走向皇权的过程尚未完成，首领推举与耶律氏世袭之间的冲突仍是建国前的难题。",
+      "themeIds": [],
+      "title": "阿保机成为契丹首领",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 916,
+      "eraId": "song-liao-jin-xia",
+      "id": "liao-emperor",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -0.72,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "辽与五代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《辽史》太祖本纪",
+          "sourceId": "liaoshi-zhonghua-1974"
+        }
+      ],
+      "startYear": 916,
+      "summary": "耶律阿保机正式称帝，改变契丹旧有轮流推举首领的惯例，并以皇帝名号整合诸部。皇权建设并未取消部落政治，朝廷在亲族、贵族与新设官署之间寻找平衡，形成辽初复杂的统治格局。称帝把耶律氏的统治置于皇位继承框架之内，契丹诸部轮任首领的旧俗因而受到直接挑战。",
+      "themeIds": [],
+      "title": "阿保机称帝",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 920,
+      "eraId": "song-liao-jin-xia",
+      "id": "liao-khitan-script",
+      "influence": 3,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          -0.36,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "辽与五代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《辽史》太祖本纪",
+          "sourceId": "liaoshi-zhonghua-1974"
+        }
+      ],
+      "startYear": 920,
+      "summary": "辽太祖命人创制契丹大字，以文字记录本族语言并支撑政令传播。新文字在契丹政治和文化生活中使用，也显示统治者希望摆脱单靠汉文行政的局面；其形制和后续小字的关系仍是文字史研究的重要问题。大字的颁行使契丹语有了朝廷认可的书写工具，诏令和纪事不必全由汉语文字转述。",
+      "themeIds": [],
+      "title": "契丹大字创制",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 926,
+      "eraId": "song-liao-jin-xia",
+      "id": "liao-bohai-fall",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "辽与五代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《辽史》太祖本纪",
+          "sourceId": "liaoshi-zhonghua-1974"
+        }
+      ],
+      "startYear": 926,
+      "summary": "辽军东征渤海，攻下其都城后结束这个东北地区的长期政权。征服扩大了辽朝控制的土地和人口，也使旧渤海臣民、契丹贵族与地方官吏的关系更复杂；此后建立东丹国以处理新占领区域。渤海旧都及其州县落入辽军之手后，如何安置渤海王族与臣民成为东丹建置所要处理的问题。",
+      "themeIds": [],
+      "title": "辽灭渤海",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 926,
+      "eraId": "song-liao-jin-xia",
+      "id": "liao-dongdan",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          0.36,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "辽与五代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《辽史》卷二《太祖本纪》，天显元年二月东丹国条",
+          "sourceId": "liaoshi-zhonghua-1974"
+        }
+      ],
+      "startYear": 926,
+      "summary": "辽朝在渤海故地设置东丹国，安排皇族统治新征服的人口和城镇。东丹的建立既延续当地官府组织，也使辽皇室内部的继承与权力分配出现新问题，东北地区由此进入多层级治理的阶段。太祖以皇太子耶律倍为人皇王主持东丹，将渤海故地交由皇族掌管而没有立即全盘改作契丹部落。",
+      "themeIds": [],
+      "title": "东丹国设立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 937,
+      "eraId": "song-liao-jin-xia",
+      "id": "dali-founded",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          1.08,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "辽与五代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "dali"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "“段思平”条，后晋天福二年联滇东三十七部建大理国段",
+          "sourceId": "yunnan-minzu-duan-siping"
+        }
+      ],
+      "startYear": 937,
+      "summary": "段思平在云南建立大理国，承接南诏之后当地复杂的部族和地方权力结构。大理长期经营滇西交通及与宋朝的边境往来，佛教和地方贵族在其政治文化中发挥作用，不能把云南历史仅视作中原朝廷的附属。段思平联合滇东诸部取得建国所需的军事支持，段氏王权由这些地方联盟中形成而非由宋廷授予。",
+      "themeIds": [],
+      "title": "大理国建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "diplomacy"
+      ],
+      "childIds": [],
+      "color": "#75b9aa",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 938,
+      "eraId": "song-liao-jin-xia",
+      "id": "liao-sixteen-prefectures",
+      "influence": 3,
+      "layout": {
+        "lane": "diplomacy",
+        "offset": [
+          0.72,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "辽与五代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "liao",
+        "later-jin"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《辽史》太宗本纪",
+          "sourceId": "liaoshi-zhonghua-1974"
+        }
+      ],
+      "startYear": 938,
+      "summary": "后晋石敬瑭将燕云十六州割予契丹，以换取出兵支持。辽朝由此取得长城沿线的重要州县和农耕人口，获得南下的战略基地；这片地区的归属长期成为辽宋关系和军事部署的核心议题。幽州与云州等地的城防和州县赋税一并转入辽境，使契丹取得了原先横隔南北的山口通道。",
+      "themeIds": [],
+      "title": "燕云十六州入辽",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 947,
+      "eraId": "song-liao-jin-xia",
+      "id": "liao-great-liao-name",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -1.08,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "辽与五代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《辽史》太宗本纪",
+          "sourceId": "liaoshi-zhonghua-1974"
+        }
+      ],
+      "startYear": 947,
+      "summary": "辽太宗南下中原后采用大辽国号，试图以新的王朝语言表达对农耕地区的统治。改号发生在军事胜利与当地反抗并存的背景下，辽军随后北返，说明占领中原和维持长期行政控制是两种不同的能力。太宗在汴京接受中原皇帝的礼仪与官号，但其北撤使这次国号更改未能伴随对汴京的持续占有。",
+      "themeIds": [],
+      "title": "契丹改号大辽",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 947,
+      "eraId": "song-liao-jin-xia",
+      "id": "liao-southern-northern-administration",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -0.72,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "辽与五代",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《辽史》卷四十五《百官志一·北面朝官》，国制治契丹、汉制待汉人段",
+          "sourceId": "liaoshi-zhonghua-1974"
+        }
+      ],
+      "startYear": 947,
+      "summary": "辽朝以南北面官分别处理契丹旧制事务与汉地州县政务，形成适应多种社会传统的治理框架。这套制度并非两个完全隔绝的政府，贵族权力、军政需要和地方惯例在具体施政中不断交错。北面官侧重宫帐、部族与属国事务，南面官处理汉地州县，官署分工对应两类人口的赋役习惯。",
+      "themeIds": [],
+      "title": "辽南北面官制",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "background": "辽景宗去世时耶律隆绪年幼，萧绰在宗室、大臣和属官之间维持继承秩序。她以皇太后身份参与军国决策，任用韩德让等人处理南北事务，并在与宋交兵和议和的年代持续居于权力中心。辽朝的南北面官制使契丹贵族与汉官都参与治理，摄政不是孤立的宫廷事件。宋人史书尤其注意她在边境战事中的作用；将宋辽关系全部归于一位太后的个人意志，会忽略辽朝内部的联盟、地方资源和皇帝成年后的权力安排。",
+      "categories": [
+        "politics"
+      ],
+      "causes": [
+        "辽景宗去世时圣宗年幼，朝廷需要维持军政决策。"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "course": [
+        {
+          "description": "萧绰与大臣辅佐幼帝并主持对宋边务。",
+          "title": "萧太后摄政",
+          "year": 982
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 982,
+      "eraId": "song-liao-jin-xia",
+      "historiography": "史籍常以太后个人能力解释辽的强盛，也应观察贵族与汉官的协作。",
+      "id": "liao-empress-xiao-regency",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "辽朝摄政中的宗室、汉官协作影响了宋辽相持阶段的决策能力。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          1.08,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [
+        "person-xiao-chuo"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "liao"
+      ],
+      "relationIds": [
+        "liao-empress-xiao-regency-to-chanyuan"
+      ],
+      "results": [
+        "辽朝在继承过渡中维持稳定，并形成持续摄政格局。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《辽史》圣宗本纪",
+          "sourceId": "liaoshi-zhonghua-1974"
+        },
+        {
+          "locator": "《宋史》卷四百八十六《外国传·契丹》，萧太后摄政与宋辽交涉段",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 982,
+      "summary": "辽景宗去世后，萧绰辅佐年幼的辽圣宗执政，维持朝廷军政运转。她参与任官和对宋决策，使辽朝在皇位更替时保持稳定；太后政治也依托契丹贵族与汉地官僚的合作。辽景宗去世时圣宗年幼，朝廷需要维持军政决策。",
+      "themeIds": [],
+      "title": "萧太后摄政",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 989,
+      "eraId": "song-liao-jin-xia",
+      "id": "liao-border-farms",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          -0.36,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《辽史》卷五十九《食货志上》，沿边屯田、戍兵易田积谷段",
+          "sourceId": "liaoshi-zhonghua-1974"
+        }
+      ],
+      "startYear": 989,
+      "summary": "辽朝在南部边境发展屯田，利用驻军和移民耕种以保障军粮。农业生产与游牧地区的牲畜经济并存，屯田收益受气候、战事和人口迁徙影响，显示辽朝并非只依靠草原贡赋维持国力。戍兵沿边种田并积存粮谷，使一部分边防口粮就地筹措，减少从腹地向驻军运粮的路程。",
+      "themeIds": [],
+      "title": "辽南境屯田",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "economy"
+      ],
+      "childIds": [],
+      "color": "#d9b55f",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1024,
+      "eraId": "song-liao-jin-xia",
+      "id": "liao-yanyun-tax",
+      "influence": 3,
+      "layout": {
+        "lane": "economy",
+        "offset": [
+          1.08,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《辽史》卷五十九《食货志上》，太宗籍五京丁户定赋税段",
+          "sourceId": "liaoshi-zhonghua-1974"
+        }
+      ],
+      "startYear": 1024,
+      "summary": "辽朝在燕云地区征收农业赋税和商业税，以支撑宫廷、军队及边境治理。契丹旧制与汉地州县财政并行，南部经济并非辽国的附带资源，而是维持王朝长期存在的重要基础。籍定五京丁户让户口成为征赋依据，燕云农户的谷帛收入与草原畜产一起进入辽朝财政体系。",
+      "themeIds": [],
+      "title": "辽燕云州县赋税",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1032,
+      "eraId": "song-liao-jin-xia",
+      "id": "western-xia-script",
+      "influence": 3,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          -0.36,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "western-xia"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》夏国列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1032,
+      "summary": "党项统治者推动西夏文字的创制与使用，以记录政令、佛经和地方文书。新文字借鉴汉字形体又形成独特体系，反映西夏在借用周边制度的同时建设自身文化与政治认同。西夏文使党项语能够直接写入官文书和译经，汉文仍在周边交涉中使用，文字建设遂与多语行政并行。",
+      "themeIds": [],
+      "title": "西夏文字创制",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "党项首领长期在河西积累军力、控制交通，并在宋辽之间谋取政治空间。李元昊继承家业后建立官署、军队和文字制度，称帝建大夏使这种地方权力转为明确的王朝主张。宋朝拒绝承认其帝号，随后爆发战争；辽朝与西夏也在联盟和竞争之间调整关系。河西的农牧地区、商路和多族居民都被纳入新的统治结构。用宋朝的边患叙事理解这一年，只能看到冲突的一面；西夏还在形成自己的官制、书写体系和对外秩序。",
+      "categories": [
+        "politics"
+      ],
+      "causes": [
+        "党项势力在河西与宋辽之间扩张，寻求独立王号。"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "course": [
+        {
+          "description": "李元昊称帝，建立大夏的政治与军事机构。",
+          "title": "西夏建国",
+          "year": 1038
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1038,
+      "eraId": "song-liao-jin-xia",
+      "historiography": "宋史的夏国叙述带有中原王朝视角，须结合西夏文献理解其国家建设。",
+      "id": "western-xia-founded",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "宋辽夏三方并立改变西北边境的战争、贸易与外交格局。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          0.72,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [
+        "person-li-yuanhao"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "western-xia"
+      ],
+      "relationIds": [
+        "western-xia-founded-to-song-xia-peace"
+      ],
+      "results": [
+        "西北出现并立王朝，宋夏辽关系进入新阶段。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》夏国列传",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《辽史》兴宗本纪，重熙七年夏国称帝条",
+          "sourceId": "liaoshi-zhonghua-1974"
+        }
+      ],
+      "startYear": 1038,
+      "summary": "李元昊称帝建立大夏政权，形成与宋、辽并立的西北王朝。西夏吸收中原官制，也保留党项军事和贵族传统；其建国改变河西与陕甘边境的外交、贸易和战争格局。党项势力在河西与宋辽之间扩张，寻求独立王号。",
+      "themeIds": [],
+      "title": "西夏建国",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "religion"
+      ],
+      "childIds": [],
+      "color": "#a99cbf",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1099,
+      "eraId": "song-liao-jin-xia",
+      "id": "western-xia-buddhist-printing",
+      "influence": 3,
+      "layout": {
+        "lane": "religion",
+        "offset": [
+          1.08,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "western-xia"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》夏国列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1099,
+      "summary": "西夏王室和寺院推动佛经翻译与刊刻，使佛教文献在党项语和汉语之间流通。宗教实践与文字、造纸、雕版工艺相互支持，也使河西地区成为多语言文化接触的空间。以西夏文译印佛经须把佛教术语转入党项语，译文再经刻版流通，寺院因而同时保存两种文字的经典。",
+      "themeIds": [],
+      "title": "西夏佛经刊刻",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "ethnicity"
+      ],
+      "childIds": [],
+      "color": "#b5a57b",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1113,
+      "eraId": "song-liao-jin-xia",
+      "id": "jin-jurchen-unification",
+      "influence": 3,
+      "layout": {
+        "lane": "ethnicity",
+        "offset": [
+          0.72,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "jin-jurchen"
+      ],
+      "relationIds": [
+        "jurchen-jin-founded-to-jin-jurchen-unification"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《金史》太祖本纪",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1113,
+      "summary": "完颜阿骨打在女真诸部中扩大联盟，对辽朝征税和控制提出挑战。统一过程依靠亲族关系与军事组织，也吸收东北不同族群力量，为随后建立金朝和攻辽奠定基础。阿骨打以完颜部为核心召集诸部抗辽，亲族将领统领的军队逐渐成为可共同出战的力量，改变女真分散受制的处境。",
+      "themeIds": [],
+      "title": "女真诸部整合",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "辽朝末年对女真诸部的控制与索取引起反抗，阿骨打通过亲族和部族联盟组织兵力。建立金朝以后，他用猛安谋克维持军政动员，并连续攻取辽朝据点。称帝使联盟有了更明确的王朝名号，尚未立即取得辽朝全部土地；金、辽、宋随后各自改变军事和外交选择。金朝兴起既依赖开国领袖的指挥，也依赖东北地区人口、物资和部族协作，不能只用一场战役概括建国。",
+      "categories": [
+        "politics"
+      ],
+      "causes": [
+        "女真诸部与辽朝的贡赋关系紧张，军事联盟逐渐形成。"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "course": [
+        {
+          "description": "阿骨打称帝建金，并组织对辽战争。",
+          "title": "金朝建立",
+          "year": 1115
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1115,
+      "eraId": "song-liao-jin-xia",
+      "historiography": "金史本纪突出开国君主，仍须注意诸部联盟和地方资源的作用。",
+      "id": "jurchen-jin-founded",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "新王朝的军政动员改变辽朝命运，也使宋朝面对新的北方强权。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          1.08,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [
+        "person-wanyan-aguda"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "jin-jurchen"
+      ],
+      "relationIds": [
+        "jurchen-jin-founded-to-jin-jurchen-unification",
+        "song-jin-sea-alliance-to-jurchen-jin-founded"
+      ],
+      "results": [
+        "东北王朝力量重组，辽宋金关系迅速改变。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《金史》太祖本纪",
+          "sourceId": "jinshi-zhonghua-1975"
+        },
+        {
+          "locator": "《辽史》天祚皇帝本纪，天庆五年女真称帝条",
+          "sourceId": "liaoshi-zhonghua-1974"
+        }
+      ],
+      "startYear": 1115,
+      "summary": "完颜阿骨打称帝建立金朝，女真政权以猛安谋克组织军民并向辽朝发起攻势。金的兴起改变东北权力平衡，随后与宋结盟、灭辽并南下，成为十二世纪中国北方的重要统治者。女真诸部与辽朝的贡赋关系紧张，军事联盟逐渐形成。",
+      "themeIds": [],
+      "title": "金朝建立",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1119,
+      "eraId": "song-liao-jin-xia",
+      "id": "jin-mengan-mouke",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -0.72,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "jin-jurchen"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《金史》卷四十四《兵志·猛安谋克》，编户与军政段",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1119,
+      "summary": "金朝以猛安谋克编组女真军民，将军事动员、人口管理和土地分配联系起来。制度随征服扩张而变化，进入农耕地区后又与州县官制并行，并非一套始终不变的部落组织。猛安、谋克既是领兵单位也是属户编制，女真户在平时耕作、战时出兵，军役责任随户籍一同登记。",
+      "themeIds": [],
+      "title": "金猛安谋克制度",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1122,
+      "eraId": "song-liao-jin-xia",
+      "id": "jin-liao-zhongjing",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "jin-jurchen",
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《金史》太祖本纪",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1122,
+      "summary": "金军攻占辽中京，辽朝在北方的核心防线瓦解。女真军队的推进与辽贵族内部的危机相互作用，辽国并未在一场战役中立即消失，西迁势力和地方守军仍继续活动。辽中京位于连接草原与燕云的要地，城池失守使天祚帝难以凭原有都城体系集结部众，辽廷继续退避。",
+      "themeIds": [],
+      "title": "金军夺辽中京",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "ethnicity"
+      ],
+      "childIds": [],
+      "color": "#b5a57b",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1124,
+      "eraId": "song-liao-jin-xia",
+      "id": "liao-western-migration",
+      "influence": 3,
+      "layout": {
+        "lane": "ethnicity",
+        "offset": [
+          0.72,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "liao"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《辽史》天祚皇帝本纪",
+          "sourceId": "liaoshi-zhonghua-1974"
+        }
+      ],
+      "startYear": 1124,
+      "summary": "辽朝败亡之际，耶律大石率部西行，在中亚重组契丹政治力量。西辽的形成说明辽朝历史并未随东北和燕云的失守完全终止，也把草原、河西与中亚的交流连接起来。耶律大石带走契丹部众与王朝名号，在西方重新集结军队，辽末政治力量由燕云、东北转向中亚展开活动。",
+      "themeIds": [],
+      "title": "耶律大石西迁",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1125,
+      "eraId": "song-liao-jin-xia",
+      "id": "jin-first-song-invasion",
+      "influence": 4,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -1.08,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "jin-jurchen",
+        "song-state"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《金史》太宗本纪",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1125,
+      "summary": "金朝在灭辽后转而攻宋，军队越过黄河逼近开封。宋金原有盟约因燕云交割和边境控制争议破裂，北宋朝廷在守城、求和与迁都之间摇摆，暴露长期边防准备不足。金军分路南进使太原与开封同时承压，先前共同攻辽的宋金两军转为交战，燕云联盟已无法约束金军行动。",
+      "themeIds": [],
+      "title": "金军第一次南下",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1125,
+      "eraId": "song-liao-jin-xia",
+      "id": "liao-fall",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          1.08,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "北宋辽夏金",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "liao",
+        "jin-jurchen"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《金史》太宗本纪",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1125,
+      "summary": "金军俘获辽天祚帝，辽朝在中国北方的统治结束。辽的官员、居民和制度被金朝不同程度地接收，部分契丹势力则向西迁徙；政权灭亡并不等于其文化和人口随之消失。天祚帝被俘使辽廷失去仍在流动的皇帝，金朝接收辽地的进程与耶律大石西行后的延续由此分开。",
+      "themeIds": [],
+      "title": "辽朝灭亡",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1150,
+      "eraId": "song-liao-jin-xia",
+      "id": "jin-land-allotment",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          0.36,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "jin-jurchen"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《金史》卷四十七《食货志·田制》，猛安谋克授田段",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1150,
+      "summary": "金朝把部分女真猛安谋克迁入华北，安排土地与军役，使征服军队转变为驻地社会。土地分配影响原居民权益和农业生产，女真制度也随长期定居不断发生变化。猛安谋克户迁入后需要耕地供养并承担出军，授田把驻军安置与华北田地占有直接相接，原有田主也受影响。",
+      "themeIds": [],
+      "title": "金朝授田与猛安谋克迁徙",
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "society"
+      ],
+      "childIds": [],
+      "color": "#d6a887",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1151,
+      "eraId": "song-liao-jin-xia",
+      "id": "jin-capital-zhongdu",
+      "influence": 3,
+      "layout": {
+        "lane": "society",
+        "offset": [
+          -0.72,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "jin-jurchen"
+      ],
+      "relationIds": [
+        "jin-capital-zhongdu-to-jin-capital-move"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《丰台区金中都城址地下文物埋藏区》，天德三年扩建遗址说明",
+          "sourceId": "beijing-jin-zhongdu-site"
+        }
+      ],
+      "startYear": 1151,
+      "summary": "金海陵王在辽南京旧城基础上扩建中都城，营建宫殿和城垣，为两年后的迁都准备空间。此条关注都城工程及其对城市格局的影响，与一一五三年的迁都决定不同；考古遗迹保存了城墙、水关与宫殿位置的线索。城墙划定扩建范围，水关承担城水出入，遗址让金中都营建可以从实际城市设施而非只从迁都诏令观察。",
+      "themeIds": [],
+      "title": "金中都城扩建",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1153,
+      "eraId": "song-liao-jin-xia",
+      "id": "jin-capital-move",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          0.72,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "jin-jurchen"
+      ],
+      "relationIds": [
+        "jin-capital-zhongdu-to-jin-capital-move"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《金史》海陵王本纪",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1153,
+      "summary": "金海陵王将都城迁至燕京并改称中都，把政治重心进一步移向华北。迁都便利控制汉地财赋，也引起女真旧贵族对资源和权力重新分配的不满，王朝内部矛盾随之扩大。燕京接替上京承载皇帝与中央官署，华北粮赋更近政治中心，女真发祥地在朝廷驻地格局中的地位随之改变。",
+      "themeIds": [],
+      "title": "金迁都燕京",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1161,
+      "eraId": "song-liao-jin-xia",
+      "id": "jin-southern-invasion",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -0.36,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "jin-jurchen",
+        "song-state"
+      ],
+      "relationIds": [
+        "song-caishi-battle-to-jin-southern-invasion"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《金史》海陵王本纪",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1161,
+      "summary": "金海陵王大举南下，试图跨江灭宋，采石附近水战和金廷内部变乱共同阻断攻势。战事使两国边民再遭动员与流离，也促使金朝内部重新选择皇位与对宋政策。海陵王把攻宋目标直指长江以南，后方另立世宗后，渡江受阻与皇位危机叠加，前线军心发生变化。",
+      "themeIds": [],
+      "title": "金海陵王南侵",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "institution"
+      ],
+      "childIds": [],
+      "color": "#69ae9d",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1165,
+      "eraId": "song-liao-jin-xia",
+      "id": "jin-shizong-governance",
+      "influence": 3,
+      "layout": {
+        "lane": "institution",
+        "offset": [
+          -1.08,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "jin-jurchen"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《金史》世宗本纪",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1165,
+      "summary": "金世宗即位后整顿官吏、赋役和地方秩序，努力恢复海陵王时期战争造成的损耗。其政策兼顾女真传统与华北州县治理，但人口、土地和军役矛盾并未因政治稳定而消失。世宗在海陵王南侵时即位，安定华北州县和维系女真军户成为其治政并行的任务，战争动员开始转向恢复生产。",
+      "themeIds": [],
+      "title": "金世宗治政",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "culture"
+      ],
+      "childIds": [],
+      "color": "#c5a0a4",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1173,
+      "eraId": "song-liao-jin-xia",
+      "id": "jin-jurchen-script",
+      "influence": 3,
+      "layout": {
+        "lane": "culture",
+        "offset": [
+          0,
+          0.29
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "jin-jurchen"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《金史》卷五十一《选举志一》，大定十三年女真策论进士与国子学段",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1173,
+      "summary": "金世宗大定十三年设女真国子学，并首次以女真文字举行策论进士科考试。此前女真大小字已经创制，女真学校和考试把本族文字带入官员培养制度；这一年并非文字发明或首次颁行的年代。以女真文作策论把本族语文能力纳入取士条件，国子学又提供相应教育，学校与考试成为配套安排。",
+      "themeIds": [],
+      "title": "女真国子学与策论进士科",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1211,
+      "eraId": "song-liao-jin-xia",
+      "id": "mongol-jin-war",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0.36,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "mongol-empire",
+        "jin-jurchen"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《金史》卫绍王本纪",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1211,
+      "summary": "成吉思汗率蒙古军进攻金朝，北方边防在野狐岭等战事中遭严重打击。草原骑兵的机动与金朝内部财政和指挥问题交织，战争由边境袭扰转为长期争夺华北的冲突。野狐岭位于通向金朝腹地的交通要道，边军在此失利后，蒙古骑兵得以向中都周围推进，战线不再局限于塞外。",
+      "themeIds": [],
+      "title": "蒙古攻金",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1214,
+      "eraId": "song-liao-jin-xia",
+      "id": "jin-capital-kaifeng",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          0.72,
+          -0.29
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "jin-jurchen",
+        "mongol-empire"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《金史》宣宗本纪",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1214,
+      "summary": "蒙古军逼近中都后，金宣宗迁都开封，试图依靠黄河防线维持统治。迁都使华北许多州县失去中心支持，也把财政和难民压力集中到河南，为宋金蒙关系带来新的变化。金廷离开中都使河南成为皇帝驻地，原来隔黄河支援北方的财政与军事部署转为以开封周边维持朝廷。",
+      "themeIds": [],
+      "title": "金迁都开封",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1215,
+      "eraId": "song-liao-jin-xia",
+      "id": "mongol-zhongdu-fall",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          1.08,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "mongol-empire",
+        "jin-jurchen"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《金史》宣宗本纪",
+          "sourceId": "jinshi-zhonghua-1975"
+        }
+      ],
+      "startYear": 1215,
+      "summary": "蒙古军攻占金中都，金朝失去北方旧都和大量华北资源。城市居民经历围困与战乱，金朝退守河南继续存在，蒙古则需面对占领区治理，征服并非战役结束即可完成。宣宗此前已经南迁，中都守军孤立后失城，蒙古取得的是金朝旧都而非俘获金帝，河南仍有金廷继续抗战。",
+      "themeIds": [],
+      "title": "蒙古攻占中都",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1227,
+      "eraId": "song-liao-jin-xia",
+      "id": "western-xia-fall",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -0.36,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [
+        "person-temujin"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "western-xia",
+        "mongol-empire"
+      ],
+      "relationIds": [
+        "western-xia-fall-to-mongol-rise"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《元史》太祖本纪",
+          "sourceId": "yuanshi-zhonghua-1976"
+        }
+      ],
+      "startYear": 1227,
+      "summary": "蒙古军多年攻伐后，西夏政权灭亡，河西与宁夏地区转入蒙古统治。战争造成严重破坏，西夏文字和佛教文献仍以遗存形式保存，提示政权终结与文化消散并非同一过程。西夏末主出降后，党项王朝不再以独立朝廷控制河西，原有城镇与军队归入蒙古征服后的地方安排。",
+      "themeIds": [],
+      "title": "西夏灭亡",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "蒙古军多年南下使金朝逐渐失去华北和关中据点，金哀宗转守河南。宋蒙合作攻蔡州时，城内粮食和兵员已极为困窘，哀宗在围城末期让位后自尽，金朝政权终结。旧宋金对峙格局因此消失，但河南收复与疆界归属迅速引出宋蒙矛盾。王朝灭亡是长期财政、军事和人口流失的结果，不能只把蔡州最后几日当作原因。",
+      "categories": [
+        "politics"
+      ],
+      "causes": [
+        "蒙古长期攻金，南宋也希望收复河南旧地。"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "course": [
+        {
+          "description": "金哀宗在蔡州被围，金朝在宋蒙夹击中灭亡。",
+          "title": "金朝灭亡",
+          "year": 1234
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1234,
+      "eraId": "song-liao-jin-xia",
+      "historiography": "末年本纪重于王朝结局，仍需关注战争中的居民和地方秩序。",
+      "id": "jin-fall",
+      "impacts": [
+        {
+          "dimension": "politics",
+          "text": "金朝消亡后宋蒙直接接壤，河南归属迅速成为新冲突焦点。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          0.36,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [
+        "person-wanyan-shouxu"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "jin-jurchen",
+        "mongol-empire",
+        "song-state"
+      ],
+      "relationIds": [
+        "jin-fall-to-song-mongol-alliance-talks"
+      ],
+      "results": [
+        "旧有三方关系结束，宋蒙对河南归属迅速冲突。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《金史》哀宗本纪",
+          "sourceId": "jinshi-zhonghua-1975"
+        },
+        {
+          "locator": "《元史》太宗本纪，甲午年蔡州战事条",
+          "sourceId": "yuanshi-zhonghua-1976"
+        }
+      ],
+      "startYear": 1234,
+      "summary": "蒙古军与宋军夹击下，金哀宗在蔡州败亡，金朝统治结束。华北许多地区已遭多年战争和人口流散，宋朝希望恢复故地，蒙古则要求继续控制，旧敌消失后新的宋蒙战争随即展开。蒙古长期攻金，南宋也希望收复河南旧地。",
+      "themeIds": [],
+      "title": "金朝灭亡",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1253,
+      "eraId": "song-liao-jin-xia",
+      "id": "dali-fall",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0.72,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "dali",
+        "mongol-empire"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《元史》世祖本纪",
+          "sourceId": "yuanshi-zhonghua-1976"
+        }
+      ],
+      "startYear": 1253,
+      "summary": "忽必烈率蒙古军进入云南，大理政权结束，段氏及地方势力在新统治下重新安排地位。征服打开西南方向的战略通道，也使云南多族群社会进入蒙古帝国的行政与军事网络。蒙古军越过西南山地后进入大理，忽必烈把对宋作战的视野扩至云南方向，段氏原有王权则转入蒙古支配之下。",
+      "themeIds": [],
+      "title": "蒙古灭大理",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1260,
+      "eraId": "song-liao-jin-xia",
+      "id": "mongol-kublai-accession",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -0.72,
+          -0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "mongol-empire"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《元史》世祖本纪",
+          "sourceId": "yuanshi-zhonghua-1976"
+        }
+      ],
+      "startYear": 1260,
+      "summary": "蒙哥去世后忽必烈与阿里不哥争夺大汗地位，蒙古帝国内部发生继承战争。南宋边境一度获得喘息，但新汗位竞争结束后，忽必烈继续推进对南宋的军事和行政准备。忽必烈在漠南即位，阿里不哥在漠北另立，两处推戴形成汗位竞争，蒙古对外作战须服从争夺内部兵力的需要。",
+      "themeIds": [],
+      "title": "忽必烈继承汗位",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [
+        "song-xiangyang-fall"
+      ],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1273,
+      "eraId": "song-liao-jin-xia",
+      "id": "song-xiangyang-siege",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire"
+      ],
+      "relationIds": [
+        "song-xiangyang-part-song-xiangyang-fall"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》卷四十六《度宗本纪》，咸淳四年襄樊战事条",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1268,
+      "summary": "蒙古军长期围困襄阳、樊城，切断汉水补给，逐步削弱南宋在长江中游的门户。守军依靠城墙、水军和地方支持，围城持续多年；城池陷落将改变整个江防战略。襄阳、樊城隔汉水相望，水军输粮是维持守城的关键，蒙古围军既筑垒困城，也力图截断两城与外援的水路。",
+      "themeIds": [],
+      "title": "襄阳围城",
+      "yearPrecision": "range"
+    },
+    {
+      "aliases": [],
+      "background": "襄阳与樊城隔汉水相望，多年围攻使两城之间的交通和外援愈发困难。元军运用水军、围城工事与新式炮具，先攻破樊城；吕文焕在支援无望时率襄阳守军降附。元军随后取得汉水门户、熟悉水路的人力和船只，继续向长江推进。守将的选择发生在长期围困和军民消耗之后，既不能单凭降附一词评价，也不能忽视城破对南宋战略防线的后果。",
+      "categories": [
+        "war"
+      ],
+      "causes": [
+        "襄阳长期被围，汉水补给逐步切断。"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "course": [
+        {
+          "description": "吕文焕在樊城陷落后率襄阳守军投降。",
+          "title": "襄阳失守",
+          "year": 1273
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1273,
+      "eraId": "song-liao-jin-xia",
+      "historiography": "评价守将投降须考虑多年围城、援军不足和当地居民生存压力。",
+      "id": "song-xiangyang-fall",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "汉水通道失守改变长江中游防御条件，元军获得继续南下的支点。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0.36,
+          0.29
+        ]
+      },
+      "parentId": "song-xiangyang-siege",
+      "period": "南宋金蒙",
+      "personIds": [
+        "person-lu-wenhuan"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire"
+      ],
+      "relationIds": [
+        "song-xiangyang-part-song-xiangyang-fall"
+      ],
+      "results": [
+        "南宋失去江汉门户，元军得以沿江推进。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》度宗本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《元史》世祖本纪，至元十年襄樊降附条",
+          "sourceId": "yuanshi-zhonghua-1976"
+        }
+      ],
+      "startYear": 1273,
+      "summary": "樊城被攻破后襄阳守军投降，南宋失去汉水与长江上游的重要屏障。蒙古军可以沿江推进，南宋沿线州县面临连锁压力；襄阳的失守是长期围城和外援失败的结果。襄阳长期被围，汉水补给逐步切断。",
+      "themeIds": [],
+      "title": "襄阳失守",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1275,
+      "eraId": "song-liao-jin-xia",
+      "id": "song-dingjiazhou-battle",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          0.72,
+          0.58
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》恭帝本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1275,
+      "summary": "元军沿长江东下，南宋军在丁家洲一带失利，江防迅速瓦解。军队内部指挥与长期财政困顿加剧败局，临安朝廷失去有效屏障，地方官员和居民面临撤离或归附选择。贾似道统军迎击东下元军而败，败兵沿江溃退，使江防原拟集结的主力受损，元军进逼临安的道路更为开阔。",
+      "themeIds": [],
+      "title": "丁家洲之战",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1276,
+      "eraId": "song-liao-jin-xia",
+      "id": "song-linan-surrender",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          1.08,
+          0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire"
+      ],
+      "relationIds": [
+        "song-yamen-battle-to-song-linan-surrender"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》恭帝本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1276,
+      "summary": "元军进入临安，南宋幼帝及朝廷投降，江南政治中心失守。部分官员与宗室继续在东南沿海抵抗，显示都城降服并未立即结束整个王朝战争；城市居民则需面对统治转换。谢太后与幼帝留在临安降附，出逃宗室另组朝廷，元军接受都城投降与追击沿海抗元力量遂成为两段进程。",
+      "themeIds": [],
+      "title": "临安降元",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "war"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1277,
+      "eraId": "song-liao-jin-xia",
+      "id": "song-wen-tianxiang-resistance",
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -1.08,
+          1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》文天祥列传",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1277,
+      "summary": "文天祥在东南地区组织军队抵御元军，转战江西、广东等地，后在兵败中被俘。其政治行动与诗文后来成为忠义记忆的重要来源，也应放回战时筹饷、地方支持与连续失败的现实中理解。文天祥脱离元军控制后回到南方募兵，败后仍随流亡政权转战，最终被俘使其军事抵抗转入囚禁中的政治拒降。",
+      "themeIds": [],
+      "title": "文天祥继续抗元",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "politics"
+      ],
+      "childIds": [],
+      "color": "#8fc9b8",
+      "detailLevel": "basic",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1278,
+      "eraId": "song-liao-jin-xia",
+      "id": "song-zhao-bing-succession",
+      "influence": 3,
+      "layout": {
+        "lane": "politics",
+        "offset": [
+          -0.72,
+          -1.16
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire"
+      ],
+      "relationIds": [],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》瀛国公本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        }
+      ],
+      "startYear": 1278,
+      "summary": "南宋流亡朝廷在帝昰去世后拥立幼帝赵昺，继续沿海迁徙。此时中央财政和固定疆域已极为有限，水军、地方义军与随行官员支撑最后抵抗，政权名义与实际控制相距甚远。张世杰与陆秀夫等拥立赵昺，皇帝的驻地随舰队移动，宋廷以船上朝仪和随行官署延续国号，已无稳定都城。",
+      "themeIds": [],
+      "title": "赵昺继位",
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "background": "临安投降后，南宋小朝廷沿海转移，军队、官员和家属聚集于广东海面。张世杰把船队集中在崖山防守，元军切断退路并在海上进攻，宋方最后的组织力量瓦解。海战终结了流亡朝廷，随军民众也遭受溺亡、失散和俘虏的命运。忠臣殉国的叙事保存了政治选择，却不能代替船队部署、补给困难和大量非战斗人员卷入的史实。",
+      "categories": [
+        "war"
+      ],
+      "causes": [
+        "临安失守后宋廷沿海迁徙，最后水军集中于崖山。"
+      ],
+      "childIds": [],
+      "color": "#d46148",
+      "course": [
+        {
+          "description": "张世杰率船队抵御元军，南宋水师最终败溃。",
+          "title": "崖山海战",
+          "year": 1279
+        }
+      ],
+      "detailLevel": "core",
+      "editorialPeriodId": "song-liao-jin-xia",
+      "endYear": 1279,
+      "eraId": "song-liao-jin-xia",
+      "historiography": "忠义叙事与海战过程应并读，不能忽略随军民众的命运。",
+      "id": "song-yamen-battle",
+      "impacts": [
+        {
+          "dimension": "war",
+          "text": "流亡朝廷终结，宋朝皇统在军事和政治上失去继续维持的基础。"
+        }
+      ],
+      "influence": 3,
+      "layout": {
+        "lane": "war",
+        "offset": [
+          -0.36,
+          -0.8699999999999999
+        ]
+      },
+      "parentId": null,
+      "period": "南宋金蒙",
+      "personIds": [
+        "person-zhang-shijie"
+      ],
+      "placeIds": [],
+      "polityIds": [
+        "song-state",
+        "mongol-empire"
+      ],
+      "relationIds": [
+        "song-yamen-battle-to-song-linan-surrender"
+      ],
+      "results": [
+        "宋朝流亡政权终结，军民大量伤亡。"
+      ],
+      "sourceRefs": [
+        {
+          "locator": "《宋史》瀛国公本纪",
+          "sourceId": "songshi-zhonghua-1977"
+        },
+        {
+          "locator": "《元史》世祖本纪，至元十六年崖山战事条",
+          "sourceId": "yuanshi-zhonghua-1976"
+        }
+      ],
+      "startYear": 1279,
+      "summary": "元军在广东崖山击败南宋流亡水师，赵昺死于战乱，宋朝延续的抵抗至此结束。海战是长期战争、江防崩溃和沿海撤退的终点；大量军民在败局中遭遇伤亡与离散。临安失守后宋廷沿海迁徙，最后水军集中于崖山。",
+      "themeIds": [],
+      "title": "崖山海战",
+      "yearPrecision": "exact"
+    }
+  ],
+  "people": [
+    {
+      "aliases": [],
+      "birthYear": 1003,
+      "birthplaceId": null,
+      "contributions": [
+        "称帝建立大夏，并推动西夏官制和文字建设。"
+      ],
+      "deathYear": 1048,
+      "evaluation": "西北出现并立王朝，宋夏辽关系进入新阶段。",
+      "eventIds": [
+        "western-xia-founded"
+      ],
+      "historiography": "宋史的夏国叙述带有中原王朝视角，须结合西夏文献理解其国家建设。",
+      "id": "person-li-yuanhao",
+      "identities": [
+        {
+          "description": "西夏开国皇帝，称帝建立大夏，并推动西夏官制和文字建设。",
+          "endYear": 1038,
+          "roleId": "official",
+          "startYear": 1038
+        }
+      ],
+      "legacy": "称帝建立大夏，并推动西夏官制和文字建设。",
+      "name": "李元昊",
+      "placeIds": [],
+      "primaryEraId": "song-liao-jin-xia",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "songshi-zhonghua-1977"
+      ],
+      "summary": "李元昊继承党项首领地位后，在河西扩张并于一〇三八年称帝，建立大夏。他推动官制与文字建设，也与宋朝发生持续战争。其统治同时依靠党项贵族、边地农业和贸易网络；宋朝史籍中的敌国形象不足以概括西夏自身的政治选择。",
+      "timeline": [
+        {
+          "description": "李元昊称帝，建立大夏的政治与军事机构。",
+          "title": "西夏建国",
+          "year": 1038
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1068,
+      "birthplaceId": null,
+      "contributions": [
+        "整合女真诸部并建立金朝。"
+      ],
+      "deathYear": 1123,
+      "evaluation": "东北王朝力量重组，辽宋金关系迅速改变。",
+      "eventIds": [
+        "jurchen-jin-founded"
+      ],
+      "historiography": "金史本纪突出开国君主，仍须注意诸部联盟和地方资源的作用。",
+      "id": "person-wanyan-aguda",
+      "identities": [
+        {
+          "description": "金朝开国皇帝，整合女真诸部并建立金朝。",
+          "endYear": 1115,
+          "roleId": "official",
+          "startYear": 1115
+        }
+      ],
+      "legacy": "整合女真诸部并建立金朝。",
+      "name": "完颜阿骨打",
+      "placeIds": [],
+      "primaryEraId": "song-liao-jin-xia",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "jinshi-zhonghua-1975"
+      ],
+      "summary": "完颜阿骨打在辽朝控制下整合女真诸部，一一一五年称帝建立金朝，随后展开对辽战争。他利用亲族联盟与猛安谋克组织动员军民，金朝很快成为东北和华北的重要力量。开国叙述常突出个人勇武，制度和资源整合也同样关键。",
+      "timeline": [
+        {
+          "description": "阿骨打称帝建金，并组织对辽战争。",
+          "title": "金朝建立",
+          "year": 1115
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": 1198,
+      "birthplaceId": null,
+      "contributions": [
+        "在蔡州末战中结束金朝统治。"
+      ],
+      "deathYear": 1234,
+      "evaluation": "旧有三方关系结束，宋蒙对河南归属迅速冲突。",
+      "eventIds": [
+        "jin-fall"
+      ],
+      "historiography": "末年本纪重于王朝结局，仍需关注战争中的居民和地方秩序。",
+      "id": "person-wanyan-shouxu",
+      "identities": [
+        {
+          "description": "金哀宗，在蔡州末战中结束金朝统治。",
+          "endYear": 1234,
+          "roleId": "official",
+          "startYear": 1234
+        }
+      ],
+      "legacy": "在蔡州末战中结束金朝统治。",
+      "name": "完颜守绪",
+      "placeIds": [],
+      "primaryEraId": "song-liao-jin-xia",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "jinshi-zhonghua-1975"
+      ],
+      "summary": "完颜守绪即金哀宗，在蒙古军不断进逼和华北财政枯竭的局势下继位。他试图维持河南防线，最终在蔡州围城中死去，金朝至此灭亡。末代皇帝的个人抉择无法解释多年战争造成的人口流失、军粮困难和宋蒙夹击。",
+      "timeline": [
+        {
+          "description": "金哀宗在蔡州被围，金朝在宋蒙夹击中灭亡。",
+          "title": "金朝灭亡",
+          "year": 1234
+        }
+      ],
+      "works": [],
+      "yearPrecision": "exact"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "率流亡朝廷水军在崖山抵抗元军。"
+      ],
+      "deathYear": 1279,
+      "evaluation": "宋朝流亡政权终结，军民大量伤亡。",
+      "eventIds": [
+        "song-yamen-battle"
+      ],
+      "historiography": "忠义叙事与海战过程应并读，不能忽略随军民众的命运。",
+      "id": "person-zhang-shijie",
+      "identities": [
+        {
+          "description": "南宋将领，率流亡朝廷水军在崖山抵抗元军。",
+          "endYear": 1279,
+          "roleId": "official",
+          "startYear": 1279
+        }
+      ],
+      "legacy": "率流亡朝廷水军在崖山抵抗元军。",
+      "name": "张世杰",
+      "placeIds": [],
+      "primaryEraId": "song-liao-jin-xia",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "songshi-zhonghua-1977"
+      ],
+      "summary": "张世杰在临安失守后继续护卫南宋流亡朝廷，率水军沿东南海岸转移。崖山海战中，他组织船队抵御元军，南宋最后的军事抵抗随败局瓦解。其忠义形象流传很广，随军士卒、家属和海上难民的遭遇同样是这段历史的一部分。",
+      "timeline": [
+        {
+          "description": "张世杰率船队抵御元军，南宋水师最终败溃。",
+          "title": "崖山海战",
+          "year": 1279
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    },
+    {
+      "aliases": [],
+      "birthYear": null,
+      "birthplaceId": null,
+      "contributions": [
+        "长期守襄阳，围城末期率军降元。"
+      ],
+      "deathYear": 1292,
+      "evaluation": "南宋失去江汉门户，元军得以沿江推进。",
+      "eventIds": [
+        "song-xiangyang-fall"
+      ],
+      "historiography": "评价守将投降须考虑多年围城、援军不足和当地居民生存压力。",
+      "id": "person-lu-wenhuan",
+      "identities": [
+        {
+          "description": "襄阳守将，长期守襄阳，围城末期率军降元。",
+          "endYear": 1273,
+          "roleId": "official",
+          "startYear": 1273
+        }
+      ],
+      "legacy": "长期守襄阳，围城末期率军降元。",
+      "name": "吕文焕",
+      "placeIds": [],
+      "primaryEraId": "song-liao-jin-xia",
+      "relations": [],
+      "relics": [],
+      "roleIds": [],
+      "sourceIds": [
+        "songshi-zhonghua-1977"
+      ],
+      "summary": "吕文焕长期镇守襄阳，在蒙古军多年围困中依靠城防、水军和有限援助坚持。樊城陷落后，他于一二七三年率襄阳守军投降，元军由此打开沿江进路。评价其选择须看到围城末期补给断绝和军民困境，而不能只用忠与降二字取代史实。",
+      "timeline": [
+        {
+          "description": "吕文焕在樊城陷落后率襄阳守军投降。",
+          "title": "襄阳失守",
+          "year": 1273
+        }
+      ],
+      "works": [],
+      "yearPrecision": "circa"
+    }
+  ]
+}

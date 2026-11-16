@@ -8,9 +8,14 @@ birthYear: 1782
 deathYear: 1850
 roleIds: []
 eventIds:
+  - daoguang-accession
+  - jiaqing-death
+  - lin-zexu-canton-1839
   - opium-war
 sourceIds:
   - bai-shouyi-general-history
+  - qing-shilu-zhonghua
+  - qingshigao-zhonghua-1977
 yearPrecision: exact
 birthplaceId: null
 placeIds: []

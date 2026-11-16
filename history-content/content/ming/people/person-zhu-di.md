@@ -8,9 +8,12 @@ birthYear: 1360
 deathYear: 1424
 roleIds: []
 eventIds:
+  - beijing-capital-1421
+  - jingnan-campaign
   - zheng-he
 sourceIds:
   - bai-shouyi-general-history
+  - mingshi-zhonghua-1974
 yearPrecision: exact
 birthplaceId: null
 placeIds: []

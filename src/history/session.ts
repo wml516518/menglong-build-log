@@ -1,8 +1,9 @@
 import { EXPLORER_QUERY_KEYS, parseExplorerState, serializeExplorerState, type HistoryExplorerState } from './explorer/state';
 import { CAMERA_TARGET_BOUNDS, MAX_CAMERA_DISTANCE, MIN_CAMERA_DISTANCE, STAR_OFFSET_LIMITS } from './sceneLimits';
+import { TIMELINE_LAYOUT_VERSION } from './timelineLayout';
 
 export const HISTORY_SESSION_KEY = 'history-galaxy-session-v2';
-export interface HistoryCameraState { target: readonly [number, number, number]; distance: number }
+export interface HistoryCameraState { target: readonly [number, number, number]; distance: number; timelineLayout?: typeof TIMELINE_LAYOUT_VERSION }
 export type HistoryExplorerEntityIds = Record<'eraIds' | 'personIds' | 'placeIds' | 'themeIds', ReadonlySet<string>>;
 export type HistoryFixedOffsets = Readonly<Record<string, readonly [number, number]>>;
 export interface HistorySession {
@@ -41,7 +42,10 @@ export function sanitizeHistorySession(value: unknown, validIds?: ReadonlySet<st
   const result: HistorySession = { version: 2 };
   if (record(value.camera)) {
     const camera: Partial<HistoryCameraState> = {};
-    if (tuple(value.camera.target, 3)) camera.target = value.camera.target.map((number, index) => clamp(number, CAMERA_TARGET_BOUNDS[index][0], CAMERA_TARGET_BOUNDS[index][1])) as [number, number, number];
+    if (value.camera.timelineLayout === TIMELINE_LAYOUT_VERSION) camera.timelineLayout = TIMELINE_LAYOUT_VERSION;
+    if (tuple(value.camera.target, 3)) camera.target = value.camera.target.map((number, index) => index === 0 && camera.timelineLayout
+      ? clamp(number, -4096, 4096)
+      : clamp(number, CAMERA_TARGET_BOUNDS[index][0], CAMERA_TARGET_BOUNDS[index][1])) as [number, number, number];
     if (finite(value.camera.distance)) camera.distance = clamp(value.camera.distance, MIN_CAMERA_DISTANCE, MAX_CAMERA_DISTANCE);
     if (Object.keys(camera).length) result.camera = camera;
   }

@@ -24,15 +24,15 @@ describe('history content provider', () => {
     expect(result.current.error).toBeNull();
     expect(result.current.events.find(event => event.id === 'zhenguan')?.title).toBe('贞观之治');
     expect(result.current.people.find(person => person.id === 'person-li-shimin')?.name).toBe('唐太宗');
-    expect(result.current.places).toEqual([]);
+    expect(result.current.places.find(place => place.id === 'changan')).toMatchObject({ name: '长安', coordinates: [108.94, 34.26] });
     expect(result.current.themes).toEqual([]);
     await act(async () => {
-      const event = await result.current.getEventArchive('zhenguan');
+      const event = await result.current.getEventArchiveRecord('zhenguan');
       expect(event?.background).toBeTruthy();
       expect((await result.current.getPersonArchive('person-li-shimin'))?.name).toBe('唐太宗');
-      expect(await result.current.getEventArchive('zhenguan')).toBe(event);
-      expect(await result.current.getEventArchive('missing')).toBeUndefined();
-      expect(await result.current.getEventArchive('missing')).toBeUndefined();
+      expect(await result.current.getEventArchiveRecord('zhenguan')).toBe(event);
+      expect(await result.current.getEventArchiveRecord('missing')).toBeUndefined();
+      expect(await result.current.getEventArchiveRecord('missing')).toBeUndefined();
       expect(await result.current.getPersonArchive('missing')).toBeUndefined();
     });
   });
@@ -40,9 +40,9 @@ describe('history content provider', () => {
     const { result, repair } = setup('song');
     await waitFor(() => expect(result.current.loading).toBe(false));
     let tang: unknown;
-    await act(async () => { tang = await result.current.getEventArchive('zhenguan'); });
-    let pending!: ReturnType<typeof result.current.getEventArchive>;
-    act(() => { pending = result.current.getEventArchive('chenqiao'); });
+    await act(async () => { tang = await result.current.getEventArchiveRecord('zhenguan'); });
+    let pending!: ReturnType<typeof result.current.getEventArchiveRecord>;
+    act(() => { pending = result.current.getEventArchiveRecord('chenqiao'); });
     expect(result.current.loadingEras).toContain('song');
     await act(async () => { await expect(pending).rejects.toMatchObject({ kind: 'network', eraId: 'song' }); });
     expect(result.current.eraErrors.song?.kind).toBe('network');
@@ -51,8 +51,8 @@ describe('history content provider', () => {
     await act(async () => { await result.current.retry('song'); });
     expect(result.current.eraErrors.song).toBeUndefined();
     await act(async () => {
-      expect((await result.current.getEventArchive('chenqiao'))?.title).toBe('陈桥兵变');
-      expect(await result.current.getEventArchive('zhenguan')).toBe(tang);
+      expect((await result.current.getEventArchiveRecord('chenqiao'))?.title).toBe('陈桥兵变');
+      expect(await result.current.getEventArchiveRecord('zhenguan')).toBe(tang);
     });
   });
   it('retries initialization while retaining successful index downloads', async () => {
@@ -87,4 +87,46 @@ it('resolves themes and shared catalogs lazily, preserving successful data after
     expect(await result.current.getThemeArchive('tang-journey')).toBe(theme);
   });
   expect(fixture.requests.filter(path => path.startsWith('eras/'))).toEqual([]);
+});
+
+it('loads basic/core records through the union API using visual era lookup and scoped retry', async () => {
+  const read = (path: string) => JSON.parse(readFileSync(`public/history-content/generated/${path}`, 'utf8'));
+  const manifest = read('manifest.json');
+  const legacy = read('eras/tang.json').events.find((event: { detailLevel: string }) => event.detailLevel === 'core');
+  const { sourceRefs, background, causes, course, results, impacts, historiography, ...common } = legacy;
+  const basic = { ...common, id: 'basic-example', detailLevel: 'basic', editorialPeriodId: 'sui-tang-five-dynasties', summary: '这一时期的制度调整回应社会治理需要并对后续政治与社会秩序产生影响。'.repeat(3), sourceRefs: [{ sourceId: sourceRefs[0].sourceId, locator: '唐代章节' }] };
+  const core = { ...basic, id: 'core-example', detailLevel: 'core', background, causes, course, results, impacts, historiography };
+  manifest.eventEras = { [basic.id]: 'tang', [core.id]: 'tang' };
+  manifest.legacyEventIds = [];
+  manifest.structuredEventCount = 2; manifest.legacyEventCount = 0; manifest.periodCounts = Object.fromEntries(Object.keys(manifest.periodCounts).map(id => [id, id === 'sui-tang-five-dynasties' ? 2 : 0]));
+  manifest.basicEventCount = 1; manifest.coreEventCount = 1; manifest.eventCount = 2;
+  const compact = [basic, core].map(event => {
+    const metadata: Record<string, unknown> = { ...event, year: event.startYear, sourceIds: sourceRefs.map(ref => ref.sourceId) };
+    for (const key of ['sourceRefs', 'background', 'causes', 'course', 'results', 'impacts', 'historiography']) delete metadata[key];
+    return metadata;
+  });
+  const requests: string[] = [];
+  let broken = true;
+  const loader = createHistoryContentLoader({ baseUrl: '/union/', fetchImpl: async input => {
+    const path = String(input).replace('/union/', ''); requests.push(path);
+    if (path === 'eras/tang.json' && broken) throw new Error('offline');
+    const record = path === 'manifest.json' ? manifest : path === manifest.indexes.events ? compact : path === 'eras/tang.json' ? { eraId: 'tang', events: [basic, core], people: [] } : read(path);
+    return new Response(JSON.stringify(record));
+  } });
+  const wrapper = ({ children }: { children: ReactNode }) => <HistoryContentProvider loader={loader}>{children}</HistoryContentProvider>;
+  const { result } = renderHook(useHistoryContent, { wrapper });
+  await waitFor(() => expect(result.current.loading).toBe(false));
+  expect(requests.some(path => path.startsWith('eras/'))).toBe(false);
+  await act(async () => { await expect(result.current.getEventArchiveRecord(basic.id)).rejects.toMatchObject({ eraId: 'tang' }); });
+  broken = false;
+  await act(async () => {
+    await result.current.retry('tang');
+    const archive = await result.current.getEventArchiveRecord(basic.id);
+    expect(archive).toEqual(basic); expect(archive).not.toHaveProperty('background');
+    expect(await result.current.getEventArchiveRecord(core.id)).toEqual(core);
+    expect(await result.current.getEventArchiveRecord('missing')).toBeUndefined();
+    expect('getEventArchive' in result.current).toBe(false);
+  });
+  expect(requests.filter(path => path === 'eras/tang.json')).toHaveLength(2);
+  expect(requests.filter(path => path === 'manifest.json')).toHaveLength(1);
 });

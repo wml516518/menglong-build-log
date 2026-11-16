@@ -38,7 +38,7 @@ export default function HistoryGalaxyApp({ loader }: { loader?: HistoryContentLo
 export function HistoryGalaxyExperience() {
   const content = useHistoryContent();
   const [restored] = useState(loadHistorySession);
-  const [camera, setCamera] = useState(restored?.camera);
+  const camera = useRef(restored?.camera);
   const [fixedOffsets, setFixedOffsets] = useState(restored?.fixedOffsets ?? {});
   const historyEvents = useMemo(() => compactEventsForScene(content.events, content.people), [content.events, content.people]);
   const [currentYear, setCurrentYear] = useState(DEFAULT_HISTORY_YEAR);
@@ -65,8 +65,15 @@ export function HistoryGalaxyExperience() {
     placeIds: new Set(content.places.map(place => place.id)),
     themeIds: new Set(content.themes.map(theme => theme.id))
   }), [content.manifest, content.people, content.places, content.themes]);
-  const [viewportIds, setViewportIds] = useState<ReadonlySet<string>>(() => new Set());
-  const explorer = useHistoryExplorer(searchIndexes, viewportIds, indexesReady, restored?.explorer, explorerEntityIds);
+  const viewportIds = useRef<ReadonlySet<string>>(new Set());
+  const viewportFilterActive = useRef(false);
+  const [, refreshViewport] = useState(0);
+  const handleViewportChange = useCallback((ids: ReadonlySet<string>) => {
+    viewportIds.current = ids;
+    if (viewportFilterActive.current) refreshViewport(revision => revision + 1);
+  }, []);
+  const explorer = useHistoryExplorer(searchIndexes, viewportIds.current, indexesReady, restored?.explorer, explorerEntityIds);
+  viewportFilterActive.current = explorer.state.viewportOnly;
   const handleTravelYear = useCallback((year: number) => {
     setCurrentYear(year);
     setActiveDynastyId(getDynastyForYear(year).id);
@@ -90,12 +97,15 @@ export function HistoryGalaxyExperience() {
     clearTimeout(saveTimer.current); saveTimer.current = undefined;
     if (latestSession.current) saveHistorySession(latestSession.current);
   }, []);
-  useEffect(() => {
-    if (!sessionReady) return;
-    latestSession.current = sanitizeHistorySession({ version: 2, camera, fixedOffsets: validFixedOffsets, explorer: explorer.state, selectedId: navigation.selectedEvent?.id ?? null }, validIds);
+  const scheduleSession = useCallback(() => {
     clearTimeout(saveTimer.current);
     saveTimer.current = setTimeout(flushSession, 300);
-  }, [sessionReady, camera, validFixedOffsets, explorer.state, navigation.selectedEvent?.id, validIds, flushSession]);
+  }, [flushSession]);
+  useEffect(() => {
+    if (!sessionReady) return;
+    latestSession.current = sanitizeHistorySession({ version: 2, camera: camera.current, fixedOffsets: validFixedOffsets, explorer: explorer.state, selectedId: navigation.selectedEvent?.id ?? null }, validIds);
+    scheduleSession();
+  }, [sessionReady, validFixedOffsets, explorer.state, navigation.selectedEvent?.id, validIds, scheduleSession]);
   useEffect(() => {
     sessionActive.current = true;
     window.addEventListener('pagehide', flushSession);
@@ -110,9 +120,10 @@ export function HistoryGalaxyExperience() {
   // Native pagehide and scene-release callbacks update the flush snapshot
   // synchronously, before React batches the corresponding UI state update.
   const handleCameraChange = useCallback((next: HistoryCameraState) => {
-    if (latestSession.current) latestSession.current = { ...latestSession.current, camera: next };
-    if (sessionActive.current) setCamera(next); else flushSession();
-  }, [flushSession]);
+    camera.current = next;
+    if (latestSession.current) latestSession.current = sanitizeHistorySession({ ...latestSession.current, camera: next }, validIds);
+    if (sessionActive.current) scheduleSession(); else flushSession();
+  }, [flushSession, scheduleSession, validIds]);
   const handleFixedOffsetsChange = useCallback((next: HistoryFixedOffsets) => {
     if (latestSession.current) latestSession.current = { ...latestSession.current, fixedOffsets: next };
     if (sessionActive.current) setFixedOffsets(next); else flushSession();
@@ -123,7 +134,7 @@ export function HistoryGalaxyExperience() {
 
   return (
     <main className={`history-experience ${showFallback ? 'is-timeline' : ''}`}>
-      <a className="history-home-link" href="#home" aria-label="返回主页">
+      <a className="history-home-link" href="/#projects" aria-label="返回主页">
         <ArrowLeft aria-hidden="true" size={18} />
         <span>返回主页</span>
       </a>
@@ -143,7 +154,7 @@ export function HistoryGalaxyExperience() {
                 onTravelYear={handleTravelYear}
                 searchTargetIds={explorer.searchTargetIds}
                 eventOpacities={explorer.eventOpacities}
-                onViewportChange={setViewportIds}
+                onViewportChange={handleViewportChange}
                 initialCamera={restored?.camera}
                 onCameraChange={handleCameraChange}
                 initialFixedOffsets={validFixedOffsets}
@@ -178,7 +189,7 @@ export function HistoryGalaxyExperience() {
               })()
             : '拖动星河 · 选择历史光点'}</span>
         <div><i /><i /><i /></div>
-        <small>DRAG TO ORBIT · SCROLL TO TRAVEL</small>
+        <small>滚轮缩放 · Shift + 滚轮沿时间轴移动</small>
       </div>
 
       {selectedCompactEvent ? (

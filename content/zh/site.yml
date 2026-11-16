@@ -37,11 +37,11 @@ about: 我专注于全栈开发、AI 产品和效率工具。这个网站会记�
 historyGalaxy:
   title: 历史星河
   status: 交互式 3D 作品
-  summary: 从唐朝航行至 1949 年，在历史时间轴上拖拽事件星点，探索人物与时代故事。
+  summary: 从先秦航行至 1949 年，探索 1200 个有来源的历史事件与 200 篇核心档案，在历史时间轴上阅读人物与时代故事。
   stack:
     - Three.js
     - React Three Fiber
-    - 30 个历史事件
+    - 1200 个事件 / 200 篇核心档案
   action: 进入星河
   imageAlt: 深邃三维空间中，一条发光的中国历史时间轴与众多事件星点向远方延伸
 projects:
@@ -54,10 +54,9 @@ projects:
       - DeepSeek Function Calling
       - SQLite
       - Data Dragon
-      - Render
-      - Netlify
+      - Nginx
     githubUrl: https://github.com/wml516518/lol-rag
-    liveUrl: https://lol-rag.netlify.app
+    liveUrl: /apps/lol-rag/
   - title: Weekend Merge / 周末共识局
     status: 已上线
     summary: 2–6 人周末协商 Agent，成员独立填写偏好，DeepSeek 通过受控工具调用生成三套折中方案，并在否决后只重排受影响区段。
@@ -77,33 +76,20 @@ projects:
       - React
       - Vite
       - TypeScript
-      - Netlify
+      - Nginx
+      - Cloudflare
     githubUrl: https://github.com/wml516518/menglong-build-log
-    liveUrl: https://menglong-build-log.netlify.app
+    liveUrl: /
   - title: AI Chat Playground
-    status: 前端已上线
+    status: 已上线
     summary: 带 Prompt 预设和 FastAPI 后端层的流式 AI 聊天界面。
     stack:
       - React
       - FastAPI
       - Python
-      - Render
-      - Netlify
+      - Nginx
     githubUrl: https://github.com/wml516518/ai-chat-playground
-    liveUrl: https://ai-chat-playground-menglong.netlify.app
-  - title: KnowledgeOps RAG
-    status: 前端已上线
-    summary: 公开文档问答 Demo，包含 FastAPI 检索流程、Supabase pgvector 存储和可部署的 AI 服务接线。
-    stack:
-      - React
-      - FastAPI
-      - Supabase
-      - pgvector
-      - DashScope
-      - Render
-      - Netlify
-    githubUrl: https://github.com/wml516518/knowledgeops-rag
-    liveUrl: https://knowledgeops-rag-menglong.netlify.app
+    liveUrl: /playground/
 contact:
   - label: GitHub
     value: github.com/wml516518

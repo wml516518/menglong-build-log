@@ -9,6 +9,7 @@ deathYear: 1227
 roleIds: []
 eventIds:
   - mongol-rise
+  - western-xia-fall
 sourceIds:
   - bai-shouyi-general-history
 yearPrecision: circa
@@ -26,7 +27,8 @@ evaluation: 其征服兼有广域联系扩展与大规模战争破坏。
 legacy: 其征服兼有广域联系扩展与大规模战争破坏。
 works: []
 relics: []
-historiography: 生年有不同记载，此处采用约1162年的常见说法。生平提要依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。
+historiography: >-
+  生年有不同记载，此处采用约1162年的常见说法。生平提要依据通史相关传记。关联事件包括本人活动及其后续影响，不表示人物在每个事件的代表年均直接参与。未确定的生卒年保留为空。
 ---
 
 蒙古政治军事领袖，1206年统一草原诸部后被推举为成吉思汗。其扩张深刻改变欧亚局势。

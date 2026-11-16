@@ -331,6 +331,14 @@ body[data-dragging-star="true"] .history-experience { cursor: grabbing !importan
 
 .history-experience .story-panel:focus { outline: none; }
 
+/* Keep the interactive scene outside the non-modal archive sheet. Resizing the
+   Canvas updates its aspect and picking rectangle together; no invisible layer
+   or offset hit region remains over neighboring stars. */
+.history-experience:not(.is-timeline):has(.story-panel) .scene-shell {
+  right: 444px;
+  width: calc(100% - 444px) !important;
+}
+
 .history-experience .story-topline {
   display: flex;
   align-items: center;
@@ -716,6 +724,14 @@ body[data-dragging-star="true"] .history-experience { cursor: grabbing !importan
   .history-experience:has(.history-explorer.is-mobile.is-open) .timeline-readout,
   .history-experience:has(.story-panel) .timeline-readout { visibility: hidden; }
   .history-experience .story-panel { position: fixed; top: auto; right: 0; bottom: calc(56px + env(safe-area-inset-bottom)); left: 0; width: 100%; max-height: min(58dvh, calc(100dvh - 250px - env(safe-area-inset-top) - env(safe-area-inset-bottom))); scrollbar-width: thin; color-scheme: dark; }
+  .history-experience:not(.is-timeline):has(.story-panel) .scene-shell {
+    top: max(186px, calc(170px + env(safe-area-inset-top)));
+    right: 0;
+    bottom: calc(44dvh + 56px + env(safe-area-inset-bottom));
+    width: 100% !important;
+    height: auto !important;
+  }
+  .history-experience:not(.is-timeline) .story-panel { max-height: 44dvh; }
   .history-experience .story-panel > * { flex-shrink: 0; }
   .history-experience .story-panel .story-footer { position: static; }
   .history-experience .story-panel :is(button, .icon-button) { min-width: 44px; min-height: 44px; }
@@ -726,6 +742,11 @@ body[data-dragging-star="true"] .history-experience { cursor: grabbing !importan
   .history-experience .history-home-link span { display: none; }
   .history-experience .is-mobile .explorer-panel { height: calc(100dvh - 195px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); min-height: 100px; }
   .history-experience .story-panel { max-height: calc(100dvh - 195px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); }
+  .history-experience:not(.is-timeline):has(.story-panel) .scene-shell {
+    top: 124px;
+    bottom: calc(30dvh + 56px + env(safe-area-inset-bottom));
+  }
+  .history-experience:not(.is-timeline) .story-panel { max-height: 30dvh; }
 }
 
 /* Archive prose uses the galaxy's bronze ink and Song type, without section cards. */
@@ -912,3 +933,10 @@ body[data-dragging-star="true"] .history-experience { cursor: grabbing !importan
   .history-experience .history-timeline-2d,
   .history-experience.is-timeline:has(.story-panel) .history-timeline-2d { top: 140px; }
 }
+
+.archive-detail-level { display: inline-block; padding: .2rem .55rem; border: 1px solid currentColor; border-radius: 4px; font-size: .75rem; color: #c9b27a; }
+.quick-categories, .explorer-total { color: #c2c6d1; font-size: .8rem; }
+.explorer-total { margin: 0; padding: .55rem 1rem; }
+.quick-sources { margin-top: 1.2rem; }
+.quick-sources .archive-sources { padding-left: 1.2rem; font-size: .8rem; }
+.archive-source-locator { font-weight: 500; }

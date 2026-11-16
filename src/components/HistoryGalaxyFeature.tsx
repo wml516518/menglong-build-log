@@ -15,7 +15,7 @@ export function HistoryGalaxyFeature({ project }: HistoryGalaxyFeatureProps) {
         <ul aria-label={project.stack.join(', ')}>
           {project.stack.map((item) => <li key={item}>{item}</li>)}
         </ul>
-        <a className="history-feature-link" href="#/history-galaxy">
+        <a className="history-feature-link" href="/apps/history-galaxy/">
           {project.action}
           <ArrowUpRight aria-hidden="true" size={18} />
         </a>

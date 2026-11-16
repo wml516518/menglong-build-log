@@ -1,0 +1,30 @@
+.playground { width: min(1240px, calc(100% - 32px)); margin: 0 auto; padding: 28px 0; color: #161616; }
+.playground :where(button, select, input, textarea) { font: inherit; }
+.playground :where(button, select, input, textarea, a):focus-visible { outline: 2px solid #7d241b; outline-offset: 3px; }
+.playground-back { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 32px; color: #4a453f; text-decoration: none; }
+.playground-topbar { display: flex; align-items: end; justify-content: space-between; gap: 24px; border-bottom: 1px solid #d6d1c7; padding-bottom: 22px; }
+.playground-eyebrow { color: #777066; font-size: 13px; letter-spacing: .08em; margin: 0 0 12px; }
+.playground h1 { font-size: clamp(36px, 6vw, 72px); line-height: 1.1; margin: 0; }
+.playground-health { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #c7c0b4; background: #fff; padding: 9px 12px; max-width: 100%; overflow-wrap: anywhere; }
+.playground-health svg { flex-shrink: 0; }
+.playground-workspace { display: grid; grid-template-columns: minmax(0, 280px) minmax(0, 1fr); gap: 32px; padding-top: 24px; }
+.playground-controls, .playground-chat { min-width: 0; border-top: 1px solid #161616; padding-top: 18px; }
+.playground-controls { display: grid; align-content: start; gap: 18px; }
+.playground-controls h2 { display: flex; align-items: center; gap: 8px; font-size: 18px; margin: 0; }
+.playground label { display: grid; gap: 8px; color: #4a453f; font-size: 13px; }
+.playground :where(select, input, textarea) { min-width: 0; max-width: 100%; border: 1px solid #c7c0b4; background: #fff; color: #161616; padding: 10px; }
+.playground textarea { min-height: 92px; resize: vertical; }
+.playground button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid #161616; background: #161616; color: #fff; cursor: pointer; padding: 10px 12px; }
+.playground button.secondary { border-color: #c7c0b4; background: transparent; color: #161616; }
+.playground button:disabled { cursor: not-allowed; opacity: .5; }
+.playground-messages { display: grid; align-content: start; gap: 14px; min-height: 360px; max-height: 62vh; overflow: auto; padding-right: 6px; }
+.playground-message { display: grid; grid-template-columns: 42px minmax(0, 1fr); gap: 14px; border-top: 1px solid #d6d1c7; padding-top: 14px; }
+.playground-message p { min-width: 0; overflow-wrap: anywhere; color: #2f2a24; line-height: 1.6; margin: 0; white-space: pre-wrap; }
+.playground-avatar { color: #777066; font-size: 12px; font-weight: 700; }
+.playground-error { overflow-wrap: anywhere; border: 1px solid #a83f32; color: #7d241b; margin-top: 14px; padding: 10px 12px; }
+.playground-composer { display: grid; grid-template-columns: minmax(0, 1fr) 110px; gap: 12px; margin-top: 18px; }
+@media (max-width: 760px) {
+  .playground-topbar { align-items: start; flex-direction: column; }
+  .playground-workspace, .playground-composer { grid-template-columns: minmax(0, 1fr); }
+  .playground-messages { min-height: 200px; }
+}

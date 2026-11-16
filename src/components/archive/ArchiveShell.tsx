@@ -2,15 +2,15 @@ import { ArrowLeft, RotateCcw } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { getHistoryReturnLocation, restoreHistoryReturnLocation, type ArchiveRoute } from '../../routes';
 import { useHistoryContent } from '../../history/content/store';
-import type { HistoryEventArchive, PersonArchive as PersonArchiveData, ThemeArchive as ThemeArchiveData } from '../../history/content/schema';
+import type { PersonArchive as PersonArchiveData, ThemeArchive as ThemeArchiveData } from '../../history/content/schema';
 import { ArchiveNotFound } from './ArchiveNotFound';
-import { EventArchive } from './EventArchive';
+import { EventArchive, type EventArchiveData } from './EventArchive';
 import { PersonArchive } from './PersonArchive';
 import { ThemeArchive } from './ThemeArchive';
 
-type ArchiveState = { status: 'loading' | 'error' | 'missing' } | { status: 'ready'; kind: 'event'; archive: HistoryEventArchive } | { status: 'ready'; kind: 'person'; archive: PersonArchiveData } | { status: 'ready'; kind: 'theme'; archive: ThemeArchiveData };
+type ArchiveState = { status: 'loading' | 'error' | 'missing' } | { status: 'ready'; kind: 'event'; archive: EventArchiveData } | { status: 'ready'; kind: 'person'; archive: PersonArchiveData } | { status: 'ready'; kind: 'theme'; archive: ThemeArchiveData };
 export function ArchiveShell({ route }: { route: ArchiveRoute }) {
-  const { loading, error, manifest, getEventArchive, getPersonArchive, getThemeArchive, retry } = useHistoryContent();
+  const { loading, error, manifest, getEventArchiveRecord, getPersonArchive, getThemeArchive, retry } = useHistoryContent();
   const [state, setState] = useState<ArchiveState>({ status: 'loading' });
   const [attempt, setAttempt] = useState(0);
   const main = useRef<HTMLElement>(null);
@@ -26,7 +26,7 @@ export function ArchiveShell({ route }: { route: ArchiveRoute }) {
     setState({ status: 'loading' });
     const load = async (): Promise<ArchiveState> => {
       if (route.view === 'history-event') {
-        const archive = await getEventArchive(route.id);
+        const archive = await getEventArchiveRecord(route.id);
         return archive ? { status: 'ready', kind: 'event', archive } : { status: 'missing' };
       }
       if (route.view === 'history-person') {
@@ -38,7 +38,7 @@ export function ArchiveShell({ route }: { route: ArchiveRoute }) {
     };
     void load().then(value => { if (active) setState(value); }, () => { if (active) setState({ status: 'error' }); });
     return () => { active = false; };
-  }, [loading, error, manifest, route.view, route.id, getEventArchive, getPersonArchive, getThemeArchive, attempt]);
+  }, [loading, error, manifest, route.view, route.id, getEventArchiveRecord, getPersonArchive, getThemeArchive, attempt]);
   const failed = Boolean(error) || state.status === 'error';
   return <main ref={main} className="history-archive" aria-label="历史档案" data-search={query.get('q') ?? undefined}>
     <div className="archive-layout">

@@ -1,0 +1,5934 @@
+[
+  {
+    "aliases": [],
+    "categories": [
+      "politics",
+      "war"
+    ],
+    "childIds": [],
+    "color": "#d44f39",
+    "endYear": 1644,
+    "eraId": "qing",
+    "id": "ming-fall",
+    "influence": 5,
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.9,
+        -0.5
+      ]
+    },
+    "parentId": null,
+    "period": "清代",
+    "personIds": [
+      "person-zhu-youjian",
+      "person-li-zicheng",
+      "person-wu-sangui"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "polityIds": [
+      "ming",
+      "dashun",
+      "qing"
+    ],
+    "relationIds": [],
+    "startYear": 1644,
+    "summary": "北京易主，多支力量竞逐天下。李自成军攻入北京，崇祯帝自缢，明朝中央政权终结。随后清军入关，南明、农民军与地方力量继续长期角逐。1644 年不是简单的一日改朝换代，而是此后多年战争与秩序重建的开端。",
+    "themeIds": [],
+    "title": "明朝灭亡",
+    "yearPrecision": "exact",
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十卷《中古时代·清时期》，明朝灭亡的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史（二）“明”条，明末农民战争与明朝灭亡部分"
+      }
+    ]
+  },
+  {
+    "id": "qing-entry-beijing-1644",
+    "title": "清军入北京",
+    "aliases": [],
+    "startYear": 1644,
+    "endYear": 1644,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "dashun"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "多尔衮率清军经山海关击败大顺军后进入北京，迎顺治帝迁都，并接管明朝中央官署与仓库。这一行动把东北建立的清政权转成以北京为中心的全国竞争者，但南明、农民军和地方武装仍在多地持续抵抗。",
+    "personIds": [
+      "person-dorgon"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [
+      "shanhai-pass-battle"
+    ],
+    "relationIds": [
+      "shanhai-pass-to-entry"
+    ],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.19999999999999996,
+        -0.30000000000000004
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世祖实录》顺治元年五月多尔衮入燕京、九月世祖定鼎北京条"
+      },
+      {
+        "sourceId": "mingji-beilue",
+        "locator": "《明季北略》卷二十甲申四月山海关战后清兵入京、九月迁都条"
+      }
+    ]
+  },
+  {
+    "id": "shanhai-pass-battle",
+    "title": "山海关之战",
+    "aliases": [],
+    "startYear": 1644,
+    "endYear": 1644,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "dashun"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "吴三桂引清军入关，与多尔衮合兵击败李自成大顺军，山海关由边防关隘变成王朝转换的军事枢纽。战后大顺撤离北京，清军取得进入华北的通道；吴三桂与清廷的联盟也为后来藩王权力扩张埋下伏笔。",
+    "personIds": [
+      "person-dorgon",
+      "person-wu-sangui"
+    ],
+    "placeIds": [
+      "shanhaiguan"
+    ],
+    "parentId": "qing-entry-beijing-1644",
+    "childIds": [],
+    "relationIds": [
+      "shanhai-pass-to-entry"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.19999999999999996,
+        -0.30000000000000004
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世祖实录》顺治元年四月山海关破李自成军条"
+      }
+    ]
+  },
+  {
+    "id": "jiading-resistance",
+    "title": "嘉定抗清",
+    "aliases": [],
+    "startYear": 1645,
+    "endYear": 1645,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "嘉定士民在剃发令与清军进驻压力下多次起兵，侯峒曾、黄淳耀等参与守城，城破后遭严重杀戮。反复抵抗说明江南归附并非一次完成，地方绅民、乡兵与清军之间的冲突持续改变社区人口和政治选择。",
+    "personIds": [],
+    "placeIds": [
+      "jiading"
+    ],
+    "parentId": "queue-order-1645",
+    "childIds": [],
+    "relationIds": [
+      "jiading-to-queue"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.1,
+        0.3999999999999999
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiading-tucheng",
+        "locator": "《嘉定屠城纪略》顺治二年闰六月嘉定守城及城破条"
+      }
+    ]
+  },
+  {
+    "id": "jiangyin-resistance",
+    "title": "江阴守城",
+    "aliases": [],
+    "startYear": 1645,
+    "endYear": 1645,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "江阴士民因剃发令起兵守城，推举典史阎应元等组织防御，清军久攻后破城。原本已经归附的县城重新抵抗，表明服制要求足以打破军事投降后的脆弱秩序；城破后的杀戮和守城者事迹，则通过地方笔记、祠墓与纪念活动延续为江南抗清记忆。",
+    "personIds": [],
+    "placeIds": [
+      "jiangyin"
+    ],
+    "parentId": "queue-order-1645",
+    "childIds": [],
+    "relationIds": [
+      "jiangyin-to-queue"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.1,
+        0.3999999999999999
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jiangyin-chengshouji",
+        "locator": "《江阴城守纪》顺治二年六月起兵至八月城破条"
+      }
+    ]
+  },
+  {
+    "id": "nanjing-fall-1645",
+    "title": "南京失守",
+    "aliases": [],
+    "startYear": 1645,
+    "endYear": 1645,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "southern-ming"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清军渡江逼近南京，弘光帝出逃后被俘，城内官员开门投降，弘光政权迅速瓦解。江南政治中心易手后，鲁王、隆武等政权分别在东南延续抗清，南明由南京中央转成多中心抵抗。江南财赋与官署转归清廷，抗清各部却更难取得统一的军饷和指挥。",
+    "personIds": [],
+    "placeIds": [
+      "nanjing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.1,
+        0.3999999999999999
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世祖实录》顺治二年五月大军入南京、获福王条"
+      }
+    ]
+  },
+  {
+    "id": "queue-order-1645",
+    "title": "剃发易服令",
+    "aliases": [],
+    "startYear": 1645,
+    "endYear": 1645,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "institution",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "清廷在江南颁行剃发令，要求男子改从满洲发式，以外在服制确认政治臣服。命令在江阴、嘉定等地激起强烈抵抗，使部分已降州县再度开战。头发所承载的身体伦理与王朝忠诚因而直接冲突，服从新朝不再只是官员交印纳税，也成为普通居民必须面对的生死选择。",
+    "personIds": [
+      "person-dorgon"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [
+      "jiangyin-resistance",
+      "jiading-resistance"
+    ],
+    "relationIds": [
+      "jiangyin-to-queue",
+      "jiading-to-queue"
+    ],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.1,
+        0.3999999999999999
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世祖实录》顺治二年六月谕南中文武军民剃发条"
+      },
+      {
+        "sourceId": "jiangyin-chengshouji",
+        "locator": "《江阴城守纪》顺治二年六月因剃发令起兵、八月城破条"
+      }
+    ]
+  },
+  {
+    "id": "yangzhou-fall",
+    "title": "扬州失守",
+    "aliases": [],
+    "startYear": 1645,
+    "endYear": 1645,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "southern-ming"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "多铎军围攻扬州，史可法督守数日后城破，随后的杀戮与破坏成为江北战争最惨烈的记忆之一。扬州失守打开清军南下通道，也使地方社会以墓祠、笔记和口述保存战争暴力。史可法的忠节形象与幸存者记录并行流传，但死难人数及叙事细节仍需辨别材料来源。",
+    "personIds": [],
+    "placeIds": [
+      "yangzhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.1,
+        0.3999999999999999
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "yangzhou-shiri",
+        "locator": "《扬州十日记》顺治二年四月二十五日城破后记述"
+      }
+    ]
+  },
+  {
+    "id": "jin-shenghuan-revolt",
+    "title": "金声桓反清",
+    "aliases": [],
+    "startYear": 1648,
+    "endYear": 1648,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "southern-ming"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "原降清将领金声桓在江西举兵反清，奉南明年号并控制南昌等地，清廷随后调军围攻。这场反叛显示降将与地方军权并不稳定，南明仍可借清军内部裂隙恢复部分区域，但缺乏持久协调。南昌受围后外援难至，江西战局也未能与两广的反清行动连成稳定战线。",
+    "personIds": [],
+    "placeIds": [
+      "nanchang"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.2,
+        0.19999999999999996
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世祖实录》顺治五年正月金声桓据南昌反条"
+      }
+    ]
+  },
+  {
+    "id": "qing-conquest-yunnan",
+    "title": "清军攻取云南",
+    "aliases": [],
+    "startYear": 1659,
+    "endYear": 1659,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "southern-ming"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "吴三桂等三路进军云南，攻入昆明，永历帝逃往缅甸，南明在内地的统治中心消失。云南随后由藩王军政体系控制，战争结束与地方税役重建同步展开，吴氏势力因而迅速膨胀。清廷借降将征服西南的办法取得军事成果，也留下军队、财赋与人事集中于藩府的隐患。",
+    "personIds": [
+      "person-wu-sangui"
+    ],
+    "placeIds": [
+      "kunming"
+    ],
+    "parentId": "southern-ming-resistance",
+    "childIds": [],
+    "relationIds": [
+      "yunnan-to-southern-end"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.7000000000000002,
+        1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世祖实录》顺治十六年正月大军入云南、取昆明条"
+      }
+    ]
+  },
+  {
+    "id": "southern-ming-resistance",
+    "title": "南明与郑氏抗清终局",
+    "aliases": [],
+    "startYear": 1659,
+    "endYear": 1662,
+    "yearPrecision": "range",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "southern-ming",
+      "tungning"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "昆明失守后永历帝避入缅甸，吴三桂追索并将其押回，至一六六二年在昆明处死；郑成功也于该年在台湾去世。南明主要皇统与郑氏第一代领袖相继消失，西南抗清难再维持朝廷中枢。郑经继掌台湾并继续奉明正朔，海上抵抗因此仍延续二十余年。",
+    "personIds": [
+      "person-zheng-chenggong",
+      "person-wu-sangui"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [
+      "qing-conquest-yunnan",
+      "zheng-taiwan-expedition"
+    ],
+    "relationIds": [
+      "yunnan-to-southern-end",
+      "taiwan-expedition-to-southern-end"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.5,
+        0.7999999999999998
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙元年四月永历帝伏诛条；六月海寇郑成功死条"
+      },
+      {
+        "sourceId": "yongli-shilu",
+        "locator": "《永历实录》卷二十五永历十五年入缅、十六年永历帝遇害条"
+      }
+    ]
+  },
+  {
+    "id": "shunzhi-death",
+    "title": "顺治帝去世",
+    "aliases": [],
+    "startYear": 1661,
+    "endYear": 1661,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "顺治十八年皇帝病逝，年幼的玄烨即位，由索尼、苏克萨哈、遏必隆、鳌拜四辅臣共同理政。辅政安排暂时稳定继承，却使鳌拜集团逐步掌权；康熙亲政前后的政治清理由此展开。四大臣共辅幼主取代此前摄政王体制，皇室与旗内权贵之间的权力分配重新洗牌。",
+    "personIds": [
+      "person-xuanye"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.19999999999999996,
+        0.09999999999999987
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》顺治十八年正月世祖崩、圣祖即位条"
+      }
+    ]
+  },
+  {
+    "id": "zheng-taiwan-expedition",
+    "title": "郑成功进取台湾",
+    "aliases": [],
+    "startYear": 1661,
+    "endYear": 1661,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "tungning",
+      "dutch-republic"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "郑成功率军跨海登陆台湾，围攻荷兰东印度公司据守的热兰遮城，并控制岛上主要据点。次年荷兰守军投降，郑氏把台湾建设为反清基地；当地原住民、汉人移民与殖民遗产共同进入新的治理结构。",
+    "personIds": [
+      "person-zheng-chenggong"
+    ],
+    "placeIds": [
+      "taiwan-tainan"
+    ],
+    "parentId": "southern-ming-resistance",
+    "childIds": [],
+    "relationIds": [
+      "taiwan-expedition-to-southern-end"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.19999999999999996,
+        0.09999999999999987
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "taiwan-waiji",
+        "locator": "《台湾外纪》卷十二永历十五年郑成功渡海攻台湾条"
+      }
+    ]
+  },
+  {
+    "id": "calendar-case",
+    "title": "汤若望历狱",
+    "aliases": [],
+    "startYear": 1664,
+    "endYear": 1664,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "science",
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "杨光先攻击西洋历法和天主教，辅政大臣以历法错误等罪名审判汤若望及钦天监官员。案件使天文计算卷入宫廷政治和宗教争论，康熙亲政后复验历法、平反汤若望，重新起用耶稣会士。历局职位的争夺说明官方历法既关乎观测精度，也关乎皇权授时的合法性。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4aa8a1",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        1,
+        -0.10000000000000009
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙三年审讯汤若望、五年复验历法条"
+      }
+    ]
+  },
+  {
+    "id": "kangxi-personal-rule",
+    "title": "康熙亲政",
+    "aliases": [],
+    "startYear": 1667,
+    "endYear": 1667,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "康熙六年玄烨举行亲政典礼，但军政要务仍受鳌拜集团控制，皇帝随后逐步建立自己的侍从与决策网络。亲政未使权力立即完成转移，辅臣仍能左右人事并打击政敌。直到两年后擒拿鳌拜，皇帝才进一步摆脱辅政集团，典礼与实际控制军政之间存在明显距离。",
+    "personIds": [
+      "person-xuanye"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.3,
+        -0.30000000000000004
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙六年七月亲政条"
+      }
+    ]
+  },
+  {
+    "id": "oboi-arrest",
+    "title": "康熙擒鳌拜",
+    "aliases": [],
+    "startYear": 1669,
+    "endYear": 1669,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "康熙帝动用近身侍卫逮捕鳌拜，列其专权罪状并清理党羽，辅政大臣时代由此结束。皇帝开始直接掌握军政任免，同时保留部分原有满洲贵族结构。鳌拜被拘禁而未立即处死，清理范围也有节制，使皇帝能够削弱权臣又避免把旗内政治联盟一并摧毁。",
+    "personIds": [
+      "person-xuanye"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.2999999999999998,
+        1.1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙八年五月拿鳌拜治罪条"
+      }
+    ]
+  },
+  {
+    "id": "sacred-edict-sixteen-maxims",
+    "title": "《圣谕十六条》颁布",
+    "aliases": [],
+    "startYear": 1670,
+    "endYear": 1670,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "institution",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "康熙帝颁布十六条训谕，要求地方宣讲孝悌、和睦、务农、守法等伦理和社会规范。文本通过乡约、学校和官府仪式下达基层，借儒家道德语言处理治安、赋役与宗族关系。后来的《圣谕广训》又扩充解释，使简短训条成为清代基层教化可以反复讲读的官方文本。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.5,
+        -0.5000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙九年十月颁圣谕十六条条"
+      }
+    ]
+  },
+  {
+    "id": "three-feudatories-revolt",
+    "title": "三藩之乱",
+    "aliases": [],
+    "startYear": 1673,
+    "endYear": 1681,
+    "yearPrecision": "range",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "康熙帝决定撤藩后，吴三桂在云南起兵，耿精忠、尚之信等相继响应，战火波及南方多省。清廷经过八年战争逐步分化各部并攻取昆明，地方军镇独立性被削弱，中央对南方军事财政的控制增强。战后藩王世镇及其官属体系被撤除，督抚、驻军与钱粮重新接入朝廷任命和调拨。",
+    "personIds": [
+      "person-xuanye",
+      "person-wu-sangui"
+    ],
+    "placeIds": [
+      "kunming"
+    ],
+    "parentId": null,
+    "childIds": [
+      "wu-sangui-proclaims-emperor",
+      "kunming-recovered-1681"
+    ],
+    "relationIds": [
+      "wu-emperor-to-three-feudatories",
+      "kunming-to-three-feudatories",
+      "three-feudatories-to-kangqian"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.30000000000000004,
+        -0.7000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙十二年十一月吴三桂反、二十年十月云南平条"
+      },
+      {
+        "sourceId": "shengwuji",
+        "locator": "《圣武记》卷二《康熙戡定三藩记》撤藩、吴三桂起兵及云南平定条"
+      }
+    ]
+  },
+  {
+    "id": "wu-sangui-proclaims-emperor",
+    "title": "吴三桂称帝",
+    "aliases": [],
+    "startYear": 1678,
+    "endYear": 1678,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "吴三桂在衡州称帝、国号周，试图以新王朝名义整合反清力量，却在数月后病死。其死亡使继承与指挥陷入混乱，吴周军从扩张转入守势，为清军收复西南创造条件。孙吴世璠在昆明继位后难以恢复前线优势，称帝也使吴氏与借复明号召的其他抵抗力量更难协调。",
+    "personIds": [
+      "person-wu-sangui"
+    ],
+    "placeIds": [],
+    "parentId": "three-feudatories-revolt",
+    "childIds": [],
+    "relationIds": [
+      "wu-emperor-to-three-feudatories"
+    ],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.6000000000000001,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙十七年三月吴三桂僭号、八月死条"
+      }
+    ]
+  },
+  {
+    "id": "kunming-recovered-1681",
+    "title": "清军收复昆明",
+    "aliases": [],
+    "startYear": 1681,
+    "endYear": 1681,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清军进入昆明，吴世璠自尽，持续八年的三藩战争结束，云南重新由中央任命官员治理。战争结束解除南方最大割据军镇，却留下人口流散、田地荒芜和军费负担，恢复过程延续多年。吴氏控制的藩府财产、军队与地方官职被重新清理，西南从世镇体制转入督抚统辖。",
+    "personIds": [],
+    "placeIds": [
+      "kunming"
+    ],
+    "parentId": "three-feudatories-revolt",
+    "childIds": [],
+    "relationIds": [
+      "kunming-to-three-feudatories"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.4,
+        0.2999999999999998
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙二十年十月大军入云南、吴世璠自尽条"
+      }
+    ]
+  },
+  {
+    "aliases": [],
+    "categories": [
+      "economy",
+      "politics"
+    ],
+    "childIds": [],
+    "color": "#c7ad66",
+    "endYear": 1796,
+    "eraId": "qing",
+    "id": "kangqian",
+    "influence": 5,
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -1.3,
+        0.7
+      ]
+    },
+    "parentId": null,
+    "period": "清代",
+    "personIds": [
+      "person-xuanye",
+      "person-yinzhen",
+      "person-hongli"
+    ],
+    "placeIds": [],
+    "polityIds": [
+      "qing"
+    ],
+    "relationIds": [
+      "three-feudatories-to-kangqian",
+      "taiwan-to-kangqian",
+      "dzungar-to-kangqian",
+      "yongzheng-to-kangqian",
+      "siku-to-kangqian"
+    ],
+    "startYear": 1681,
+    "summary": "长期稳定、人口增长与疆域整合并行。三藩之乱平定后，清朝进入较长稳定时期。农业扩展、人口快速增长，国家完成多边疆地区治理与制度整合。繁荣之下，土地压力、财政结构和思想控制等问题也逐步累积，盛世包含复杂面向。",
+    "themeIds": [],
+    "title": "康乾盛世",
+    "yearPrecision": "range",
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "bai-shouyi-general-history",
+        "locator": "第十卷《中古时代·清时期》，康乾盛世的事件叙述及相关人物传记"
+      },
+      {
+        "sourceId": "encyclopedia-china-history",
+        "locator": "中国历史（二）“清”条，康熙、雍正与乾隆时期的统治"
+      }
+    ]
+  },
+  {
+    "id": "penghu-battle-1683",
+    "title": "澎湖海战",
+    "aliases": [],
+    "startYear": 1683,
+    "endYear": 1683,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "tungning"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "施琅率清水师攻击澎湖，利用风向与舰队编组击败刘国轩部，郑氏失去台湾外围防线。海战胜负直接促成郑克塽议降，也显示清廷已建立跨海运输和持续作战能力。澎湖连接福建海口与台湾本岛，主力舰队在此受挫后，郑氏难再依靠海峡阻隔维持独立军政与贸易网络。",
+    "personIds": [
+      "person-shi-lang"
+    ],
+    "placeIds": [
+      "taiwan-tainan"
+    ],
+    "parentId": "taiwan-zheng-surrender",
+    "childIds": [],
+    "relationIds": [
+      "penghu-to-taiwan"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.8999999999999999,
+        -0.6000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "jinghai-jishi",
+        "locator": "《靖海纪事》康熙二十二年六月澎湖战役条"
+      }
+    ]
+  },
+  {
+    "id": "taiwan-zheng-surrender",
+    "title": "郑氏台湾归清",
+    "aliases": [],
+    "startYear": 1683,
+    "endYear": 1683,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "tungning"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "施琅率水师在澎湖击败郑氏舰队，郑克塽随后奉表投降，清廷结束与台湾郑氏二十余年的战争。台湾被设为府县隶属福建，海禁与迁界政策逐步调整；原住民、移民和海商进入新的行政与税役体系。",
+    "personIds": [
+      "person-xuanye",
+      "person-shi-lang"
+    ],
+    "placeIds": [
+      "taiwan-tainan"
+    ],
+    "parentId": null,
+    "childIds": [
+      "penghu-battle-1683"
+    ],
+    "relationIds": [
+      "penghu-to-taiwan",
+      "taiwan-to-kangqian"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.8999999999999999,
+        -0.6000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙二十二年六月澎湖捷、八月郑克塽降条"
+      },
+      {
+        "sourceId": "jinghai-jishi",
+        "locator": "《靖海纪事》康熙二十二年六月澎湖战、八月郑克塽降条"
+      }
+    ]
+  },
+  {
+    "id": "qing-sea-trade-reopened",
+    "title": "清廷展界开海",
+    "aliases": [],
+    "startYear": 1684,
+    "endYear": 1684,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "台湾归清后，朝廷解除长期海禁，在广东、福建、浙江、江南设置海关并准许民船出海贸易。开海使沿海人口复业、海外白银与商品流动恢复，也让海关税收和商船管理成为新的治理重点。商人获准领照航行，沿海防务遂由隔绝海上接济转向查验船只、征税和维持港口秩序。",
+    "personIds": [],
+    "placeIds": [
+      "guangzhou",
+      "ningbo"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.9,
+        0.09999999999999987
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙二十三年开海贸易、设粤闽浙江海关条"
+      }
+    ]
+  },
+  {
+    "id": "taiwan-prefecture-created",
+    "title": "台湾府设置",
+    "aliases": [],
+    "startYear": 1684,
+    "endYear": 1684,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "institution",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清廷采纳保留台湾意见，在台南设台湾府及台湾、凤山、诸罗三县，隶属福建省。行政建置确立长期治理，却没有覆盖全岛，移民控制、原住民边界和渡台限制仍持续调整。府县管辖主要落在西部垦殖区，东部山地的政治与土地关系不能等同于纳入同一套户籍田赋。",
+    "personIds": [],
+    "placeIds": [
+      "taiwan-tainan"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.9,
+        0.09999999999999987
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙二十三年设台湾府县条"
+      }
+    ]
+  },
+  {
+    "id": "albazin-first-siege",
+    "title": "第一次雅克萨之战",
+    "aliases": [],
+    "startYear": 1685,
+    "endYear": 1685,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "tsardom-russia"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清军围攻俄国在雅克萨修筑的堡垒，守军投降撤离后又返回重建，黑龙江边境冲突未能一次解决。清廷同时修路、造船并协调索伦等地方力量，维持水陆粮运。攻城后的撤兵未能阻止俄军重新占据据点，说明摧毁一座堡寨尚不足以固定双方对河谷和当地居民的控制。",
+    "personIds": [],
+    "placeIds": [
+      "albazin"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "albazin-one-to-nerchinsk"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.3999999999999999,
+        0.7999999999999998
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙二十四年五月攻取雅克萨条"
+      }
+    ]
+  },
+  {
+    "id": "albazin-second-siege",
+    "title": "第二次雅克萨之战",
+    "aliases": [],
+    "startYear": 1686,
+    "endYear": 1686,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "tsardom-russia"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清军再次围困雅克萨，俄军因伤病和补给困难损失严重，双方在接到议和消息后停止进攻。围城以断绝供应消耗堡内守军，清军自身也承担漫长运输压力。双方最后把据点处置、河流边界和居民归属提交使臣交涉，为尼布楚会谈创造了军事压力与停战条件。",
+    "personIds": [],
+    "placeIds": [
+      "albazin"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "albazin-two-to-nerchinsk"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.4,
+        -0.8
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙二十五年七月围雅克萨、十二月停攻条"
+      }
+    ]
+  },
+  {
+    "id": "nerchinsk-treaty",
+    "title": "《尼布楚条约》签订",
+    "aliases": [],
+    "startYear": 1689,
+    "endYear": 1689,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "tsardom-russia"
+    ],
+    "period": "清代",
+    "categories": [
+      "diplomacy",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "清俄代表在尼布楚谈判，以拉丁文等文本约定外兴安岭、额尔古纳河一带边界，并处理逃人和贸易问题。条约终止雅克萨战争，建立两国以对等文书处理边疆争端的框架；不同语言版本的地名解释仍需结合地图审读。",
+    "personIds": [
+      "person-xuanye",
+      "person-songgotu"
+    ],
+    "placeIds": [
+      "nerchinsk"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "albazin-one-to-nerchinsk",
+      "albazin-two-to-nerchinsk",
+      "atlas-to-nerchinsk",
+      "kiakhta-to-nerchinsk"
+    ],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.6,
+        -1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙二十八年七月尼布楚议定边界条"
+      },
+      {
+        "sourceId": "nerchinsk-treaty-text",
+        "locator": "《尼布楚条约》拉丁文本第一、二条边界约款"
+      }
+    ]
+  },
+  {
+    "id": "ulan-butung-battle",
+    "title": "乌兰布通之战",
+    "aliases": [],
+    "startYear": 1690,
+    "endYear": 1690,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "dzungar-khanate"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "噶尔丹军南下至乌兰布通，以驼城抵御清军炮火，双方激战后准噶尔军撤退。清军未能彻底消灭噶尔丹，却阻止其继续逼近内蒙古，并促使康熙加强对喀尔喀部的政治整合。战后追击未获决定成果，清廷须继续组织草原粮运与蒙古盟军，战争并未因一次击退而结束。",
+    "personIds": [
+      "person-xuanye",
+      "person-galdan"
+    ],
+    "placeIds": [
+      "ulan-butung"
+    ],
+    "parentId": "qing-dzungar-war",
+    "childIds": [],
+    "relationIds": [
+      "ulan-to-dzungar"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.7000000000000002,
+        -0.30000000000000004
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙二十九年八月乌兰布通战条"
+      }
+    ]
+  },
+  {
+    "id": "qing-dzungar-war",
+    "title": "清准战争",
+    "aliases": [],
+    "startYear": 1690,
+    "endYear": 1757,
+    "yearPrecision": "range",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "dzungar-khanate"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "噶尔丹率准噶尔军进入喀尔喀后与清军交战，康熙、雍正、乾隆三朝继续处理蒙古和天山南北的战争与联盟。到1757年准噶尔政权覆亡，清廷控制伊犁并重建边疆行政；长期战争也造成大规模人口损失与迁移。",
+    "personIds": [
+      "person-xuanye",
+      "person-hongli",
+      "person-galdan"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [
+      "ulan-butung-battle",
+      "jao-modo-battle",
+      "dzungar-conquest-1755",
+      "galdan-death",
+      "amursana-revolt"
+    ],
+    "relationIds": [
+      "ulan-to-dzungar",
+      "jao-to-dzungar",
+      "galdan-to-dzungar",
+      "dzungar-conquest-to-war",
+      "amursana-to-war",
+      "dzungar-to-kangqian"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.7000000000000002,
+        -0.30000000000000004
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qingshigao-zhonghua-1977",
+        "locator": "《清史稿》卷八康熙二十九年噶尔丹南下、卷十一乾隆二十二年平准噶尔条"
+      },
+      {
+        "sourceId": "perdue-china-marches-west",
+        "locator": "《中国西征》第五章噶尔丹战争、第八章进占伊犁与第九章准噶尔覆亡"
+      }
+    ]
+  },
+  {
+    "id": "dolonnor-assembly",
+    "title": "多伦诺尔会盟",
+    "aliases": [],
+    "startYear": 1691,
+    "endYear": 1691,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "喀尔喀蒙古诸部首领在多伦诺尔朝见康熙帝，接受编旗设札萨克并纳入清朝盟旗体系。会盟以封爵、礼仪和行政编制应对准噶尔压力，使外蒙古与清朝关系从临时求援转为制度化隶属。首领仍治理所属部众，但爵位、牧地秩序和军事义务逐步置于皇帝确认的框架之内。",
+    "personIds": [],
+    "placeIds": [
+      "dolonnor"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.1,
+        0.3999999999999999
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙三十年五月多伦诺尔会阅喀尔喀诸部条"
+      }
+    ]
+  },
+  {
+    "id": "edict-tolerating-christianity",
+    "title": "容教令颁布",
+    "aliases": [],
+    "startYear": 1692,
+    "endYear": 1692,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "religion",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "康熙帝准许天主教堂继续存在并允许传教士活动，肯定其历法、火炮和测绘服务。容教令使地方官不能仅以教门异端为由随意毁堂，传教网络因而获得较明确的保护。教廷后来反对中国祭祖祭孔礼仪，引发皇帝对教士忠诚和管辖权的疑虑，朝廷态度随之改变。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b27a9e",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        0.19999999999999996,
+        1.1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙三十一年二月准西洋人传教条"
+      }
+    ]
+  },
+  {
+    "id": "jao-modo-battle",
+    "title": "昭莫多之战",
+    "aliases": [],
+    "startYear": 1696,
+    "endYear": 1696,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "dzungar-khanate"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "康熙帝三路亲征噶尔丹，费扬古军在昭莫多截击准噶尔主力，噶尔丹妻阿努战死，部众大量离散。噶尔丹失去粮食、牲畜和主要战斗力量，此后难再发动同等规模的东进。胜利巩固喀尔喀诸部归清后的安全，却没有消灭仍以伊犁为中心的准噶尔政权。",
+    "personIds": [
+      "person-xuanye",
+      "person-galdan"
+    ],
+    "placeIds": [
+      "jao-modo"
+    ],
+    "parentId": "qing-dzungar-war",
+    "childIds": [],
+    "relationIds": [
+      "jao-to-dzungar"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.8,
+        -0.7000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙三十五年五月昭莫多大捷条"
+      }
+    ]
+  },
+  {
+    "id": "galdan-death",
+    "title": "噶尔丹去世",
+    "aliases": [],
+    "startYear": 1697,
+    "endYear": 1697,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "dzungar-khanate"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "昭莫多失败后噶尔丹在西北流亡中去世，其部众和遗体问题成为清廷与策妄阿拉布坦交涉对象。噶尔丹的东进战争告终，清廷得以稳定喀尔喀盟旗。策妄阿拉布坦却已控制伊犁并保有准噶尔实力，故个人死亡未使草原竞争终结，战争重心后来转向青藏与天山。",
+    "personIds": [
+      "person-galdan"
+    ],
+    "placeIds": [],
+    "parentId": "qing-dzungar-war",
+    "childIds": [],
+    "relationIds": [
+      "galdan-to-dzungar"
+    ],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.5,
+        0
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙三十六年闰三月奏报噶尔丹死条"
+      }
+    ]
+  },
+  {
+    "id": "chinese-rites-controversy",
+    "title": "中国礼仪之争升级",
+    "aliases": [],
+    "startYear": 1700,
+    "endYear": 1700,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "religion",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "耶稣会士与其他修会及罗马教廷争论祭祖、祭孔和“天”“上帝”等译名是否违反教义，争议传到清廷。康熙将祭祀视为敬祖尊师的礼制，传教士却须接受教廷裁断。双方各自声称有权解释中国礼仪，文化适应争论遂牵涉皇帝与教廷的权威边界，并为后来的禁教埋下冲突。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b27a9e",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        1.2999999999999998,
+        -0.20000000000000007
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "kangxi-rome-documents",
+        "locator": "《康熙与罗马使节关系文书》康熙三十九年前后礼仪问答条"
+      }
+    ]
+  },
+  {
+    "id": "kangxi-succession-crisis",
+    "title": "康熙储位危机",
+    "aliases": [],
+    "startYear": 1701,
+    "endYear": 1701,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "康熙晚年皇太子胤礽与皇帝、宗室及官僚集团的矛盾逐渐加深，储位竞争后来发展为两立两废。诸皇子围绕继承资格结交官员，内廷任命和奏报渠道也受牵动。这一条目记录危机累积的早期阶段，实际废太子发生在后续年份，其教训促使雍正另设秘密建储办法。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.5,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙四十七年九月废皇太子、四十八年复立条"
+      }
+    ]
+  },
+  {
+    "id": "chengde-mountain-resort",
+    "title": "承德避暑山庄营建",
+    "aliases": [],
+    "startYear": 1703,
+    "endYear": 1703,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "culture",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "康熙帝在热河修建行宫，后来扩展为避暑山庄，成为接见蒙古、西藏等边疆首领的重要政治空间。园林、寺庙和围场把巡狩、休养与多民族礼仪结合，形成北京之外的季节性权力中心。皇帝在此赐宴、接见和处理奏折，使塞外行围路线也成为维系蒙古贵族关系的政治网络。",
+    "personIds": [],
+    "placeIds": [
+      "chengde"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -1,
+        -0.40000000000000013
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "rehe-zhi",
+        "locator": "《热河志》卷三《建置》康熙四十二年始建避暑山庄条"
+      }
+    ]
+  },
+  {
+    "id": "tournon-mission",
+    "title": "铎罗使团冲突",
+    "aliases": [],
+    "startYear": 1705,
+    "endYear": 1705,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "religion",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "教皇使节铎罗到北京宣布限制中国礼仪，康熙帝坚持来华传教士须遵守利玛窦旧规并领取印票。双方都把礼仪解释权视为主权与教权问题，谈判失败后传教空间迅速收缩，澳门成为使节羁留地。",
+    "personIds": [],
+    "placeIds": [
+      "beijing",
+      "macau"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b27a9e",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        -1.5,
+        1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙四十四年召见铎罗、谕守利玛窦规矩条"
+      }
+    ]
+  },
+  {
+    "id": "imperial-atlas-survey",
+    "title": "《皇舆全览图》测绘",
+    "aliases": [],
+    "startYear": 1708,
+    "endYear": 1718,
+    "yearPrecision": "range",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "science",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "康熙帝命耶稣会士与中国官员用三角测量、天文定位等方法分省测绘，十余年完成全国地图。测绘把经纬度技术用于行政和边疆认知，但资料精度随地区而异，地图也服务于皇权展示和军事治理。",
+    "personIds": [
+      "person-xuanye",
+      "person-regis"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "atlas-to-nerchinsk"
+    ],
+    "color": "#4aa8a1",
+    "layout": {
+      "lane": "science",
+      "offset": [
+        -0.7,
+        0.7999999999999998
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙四十七年命测绘舆图、五十七年图成条"
+      },
+      {
+        "sourceId": "huangyu-quanlan-map-study",
+        "locator": "《康熙皇舆全览图》国家图书馆藏本经纬网与分省图题记"
+      }
+    ]
+  },
+  {
+    "id": "freeze-head-tax",
+    "title": "滋生人丁永不加赋",
+    "aliases": [],
+    "startYear": 1712,
+    "endYear": 1712,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "康熙帝宣布以康熙五十年丁册为常额，此后新增人口不再另加丁银，试图减轻人口增长带来的税负。政策并未立即取消丁税，却为雍正时期摊丁入亩创造条件，也使人口登记与税收征收逐渐脱钩。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        1.4,
+        -1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙五十一年二月滋生人丁永不加赋谕"
+      }
+    ]
+  },
+  {
+    "id": "kangxi-dictionary",
+    "title": "《康熙字典》刊成",
+    "aliases": [],
+    "startYear": 1716,
+    "endYear": 1716,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "culture",
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "张玉书、陈廷敬等奉敕编纂大型字书，按部首收字并汇引历代音义，于康熙五十五年刊成。字典以二百一十四部编排，综合前代字书资料，为读经、校书和刻印提供共同检索工具。官修权威扩大了它在教育和出版中的影响，收字、反切与引文讹误则持续成为后人考订对象。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0.3999999999999999,
+        -0.5000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "kangxi-zidian",
+        "locator": "《康熙字典》康熙五十五年御制序与凡例"
+      }
+    ]
+  },
+  {
+    "id": "dzungar-invasion-tibet",
+    "title": "准噶尔入藏",
+    "aliases": [],
+    "startYear": 1717,
+    "endYear": 1717,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "dzungar-khanate"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "策妄阿拉布坦派军进入西藏，杀拉藏汗并控制拉萨，试图借宗教权威扩展准噶尔影响。驻军掠夺和教派冲突引起反抗，清廷随后组织入藏远征。拉藏汗所维系的和硕特统治崩解，达赖转世认定与拉萨政权归属相互牵连，西藏由此成为清准争夺的重要战场。",
+    "personIds": [],
+    "placeIds": [
+      "lhasa"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "dzungar-tibet-to-expedition"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.4,
+        0.19999999999999996
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙五十六年奏报准噶尔兵入藏条"
+      }
+    ]
+  },
+  {
+    "id": "qing-tibet-expedition",
+    "title": "清军入藏与西藏秩序重建",
+    "aliases": [],
+    "startYear": 1720,
+    "endYear": 1720,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "dzungar-khanate"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "religion"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清军由青海、四川两路进入拉萨，逐出准噶尔军，护送七世达赖喇嘛入藏并重新安排地方权力。朝廷借宗教领袖的认可和地方贵族合作恢复拉萨秩序，同时保留驻防以防准噶尔回袭。此次入藏开辟持续介入藏务的路径，驻藏大臣等常设安排则在此后的危机中逐步形成。",
+    "personIds": [
+      "person-xuanye"
+    ],
+    "placeIds": [
+      "lhasa"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "dzungar-tibet-to-expedition",
+      "tibet-1751-to-expedition"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.6,
+        0
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙五十九年九月大军入拉萨条"
+      },
+      {
+        "sourceId": "tibetan-political-history",
+        "locator": "《西藏政治史》第八章准噶尔入藏、清军驱逐及七世达赖入藏节"
+      }
+    ]
+  },
+  {
+    "id": "zhu-yigui-uprising",
+    "title": "朱一贵起义",
+    "aliases": [],
+    "startYear": 1721,
+    "endYear": 1721,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "台湾朱一贵等因官吏苛征和地方矛盾起事，攻入府城并短暂建立政权，清廷从福建调军渡海镇压。起事各部在领导权和利益上分裂，削弱了占领府城后的防御。事件暴露新设府县对移民社会控制有限，朝廷既惩办失职官员，也重新检讨驻兵、渡台与地方保甲的安排。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.7000000000000002,
+        0.7
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清圣祖实录》康熙六十年五月台湾朱一贵乱、六月平定条"
+      }
+    ]
+  },
+  {
+    "id": "kangxi-death-yongzheng-accession",
+    "title": "康熙去世与雍正即位",
+    "aliases": [],
+    "startYear": 1722,
+    "endYear": 1722,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "康熙帝在畅春园去世，皇四子胤禛依据公布的遗诏即位，长期储位竞争至此告一段落。新帝迅速控制京师和军政人事，随后通过秘密建储、密折与清查亏空巩固权力。继承过程后来引出大量传说和争论，解释时须区分现存诏书、当时政治行动与晚出的改诏故事。",
+    "personIds": [
+      "person-xuanye",
+      "person-yinzhen"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.1,
+        -0.9000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世宗实录》康熙六十一年十一月圣祖崩、世宗即位条"
+      }
+    ]
+  },
+  {
+    "id": "yongzheng-fiscal-reforms",
+    "title": "雍正财政与行政改革",
+    "aliases": [],
+    "startYear": 1722,
+    "endYear": 1735,
+    "yearPrecision": "range",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "雍正帝整顿亏空、推行火耗归公和养廉银，并在各省逐步实施摊丁入亩、强化密折与考成。改革把部分非正式附加纳入省级公费，调整官员收入与田赋责任，也以严厉追赔约束亏欠。省份财力、土地税额和执行先后不同，账面收入增加并不等于各地百姓负担一律减轻。",
+    "personIds": [
+      "person-yinzhen"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [
+      "palace-memorial-system",
+      "huohao-gongfei",
+      "tanding-rumu"
+    ],
+    "relationIds": [
+      "palace-memorial-to-yongzheng",
+      "huohao-to-yongzheng",
+      "tanding-to-yongzheng",
+      "yongzheng-to-kangqian"
+    ],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -1.1,
+        -0.9000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世宗实录》雍正元年十二月谕清查亏空、二年山西火耗归公、五年直隶摊丁入地条"
+      },
+      {
+        "sourceId": "yongzheng-zhupi",
+        "locator": "《雍正朝汉文朱批奏折汇编》雍正二年山西火耗归公奏折、五年直隶摊丁入地奏折"
+      }
+    ]
+  },
+  {
+    "id": "palace-memorial-system",
+    "title": "密折制度扩展",
+    "aliases": [],
+    "startYear": 1723,
+    "endYear": 1723,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "institution",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "雍正帝扩大具折奏事官员范围，要求地方要员直接密报吏治、军情与社会动向，绕过常规题本。密折加快皇帝获取信息，也形成交叉监控和个人信任网络，奏折朱批成为决策执行的重要链条。多名官员对同一地方互报情况，便于皇帝核验督抚，同时使奏事资格成为特殊政治资源。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": "yongzheng-fiscal-reforms",
+    "childIds": [],
+    "relationIds": [
+      "palace-memorial-to-yongzheng"
+    ],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.19999999999999996,
+        -0.20000000000000007
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "yongzheng-zhupi",
+        "locator": "《雍正朝汉文朱批奏折汇编》雍正元年各省督抚密折与朱批"
+      }
+    ]
+  },
+  {
+    "id": "qinghai-hoshut-suppression",
+    "title": "平定青海罗卜藏丹津",
+    "aliases": [],
+    "startYear": 1723,
+    "endYear": 1723,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "罗卜藏丹津联合青海蒙古部反抗清廷，清廷命年羹尧、岳钟琪组织进剿，战事延续至次年。平乱后朝廷重编青海蒙古旗分，限制和硕特贵族干预西藏，并加强西宁方面的驻防与办事机构。青海贵族原有的跨区域权力受压缩，青藏交通、寺院与部众管理逐步转入新的行政框架。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.19999999999999996,
+        -0.20000000000000007
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世宗实录》雍正元年十月至二年二月青海用兵条"
+      }
+    ]
+  },
+  {
+    "id": "gaitu-guiliu-yongzheng",
+    "title": "西南改土归流扩展",
+    "aliases": [],
+    "startYear": 1724,
+    "endYear": 1724,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "institution",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "雍正初年清廷扩大西南改土归流，以流官府县替代部分世袭土司，并配合设汛、编户和征税，鄂尔泰后来在云贵成为主要推动者。政策使地方权力与土地支配重新分配，也引起土司、寨民和新入移民之间的冲突。各地推进先后不同，设置县署并不代表旧有社会关系立即消失。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.5,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世宗实录》雍正二年至七年鄂尔泰办理云贵改土归流条"
+      }
+    ]
+  },
+  {
+    "id": "yongzheng-christian-ban",
+    "title": "雍正禁教",
+    "aliases": [],
+    "startYear": 1724,
+    "endYear": 1724,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "religion",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "雍正帝因福建等地教案下令除少数在京技术人员外，各省传教士送往澳门并封闭教堂。禁令把礼仪争论后的不信任转成全国性行政措施，天主教公开活动受到压制。宫廷继续使用西洋技术人员，民间信徒则转入家庭聚会与隐蔽传教，形成技术任用与宗教禁止并行的局面。",
+    "personIds": [],
+    "placeIds": [
+      "macau"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b27a9e",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        1.5,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世宗实录》雍正二年正月禁各省天主教、送西洋人赴澳门条"
+      }
+    ]
+  },
+  {
+    "id": "huohao-gongfei",
+    "title": "火耗归公",
+    "aliases": [],
+    "startYear": 1725,
+    "endYear": 1725,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "雍正朝允许各省将征银熔铸损耗形成的附加统一报解，并从中支给官员养廉银和地方公费。政策把州县自行截留的火耗改为省级核定与分配，意在弥补行政经费不足并限制随意加征。新增的公款调度增强督抚监督州县的能力，但低定额之外仍可能出现额外索取。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "yongzheng-fiscal-reforms",
+    "childIds": [],
+    "relationIds": [
+      "huohao-to-yongzheng"
+    ],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.30000000000000004,
+        -1.1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世宗实录》雍正三年山西、河南火耗归公定例条"
+      }
+    ]
+  },
+  {
+    "id": "kiakhta-treaty",
+    "title": "《恰克图条约》签订",
+    "aliases": [],
+    "startYear": 1727,
+    "endYear": 1727,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "russian-empire"
+    ],
+    "period": "清代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清俄代表议定中段边界、逃人处理、官方往来和恰克图贸易，补充尼布楚条约未覆盖的蒙古边界。勘界、遣返与互市被纳入相互承认的约款，减少了草原边地逐案交涉的不确定性。恰克图后来发展为茶叶和皮毛交换的重镇，贸易启闭也成为两国处理边境争端的手段。",
+    "personIds": [
+      "person-yinzhen",
+      "person-tulishen"
+    ],
+    "placeIds": [
+      "kiachta"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "kiakhta-to-nerchinsk"
+    ],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.8,
+        0.2999999999999998
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世宗实录》雍正五年九月奏准恰克图议界条"
+      },
+      {
+        "sourceId": "kiakhta-treaty-text",
+        "locator": "《恰克图条约》第一至十一条边界、逃人、通信和贸易约款"
+      }
+    ]
+  },
+  {
+    "id": "tanding-rumu",
+    "title": "摊丁入亩推广",
+    "aliases": [],
+    "startYear": 1728,
+    "endYear": 1728,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "各省把原按人丁征收的丁银摊入田赋，按照土地和税额分担，逐步取消单独丁册征收。改革承接滋生人丁永不加赋的定额原则，使丁税与实际人口脱钩，也减少无地者单独承担丁银的压力。土地所有者的税额相应变化，佃租转嫁和各省摊法仍影响不同家庭的实际负担。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "yongzheng-fiscal-reforms",
+    "childIds": [],
+    "relationIds": [
+      "tanding-to-yongzheng",
+      "single-whip-to-tanding"
+    ],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.5,
+        1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世宗实录》雍正六年各省奏行摊丁入地条"
+      }
+    ]
+  },
+  {
+    "id": "zeng-jing-case",
+    "title": "曾静案",
+    "aliases": [],
+    "startYear": 1728,
+    "endYear": 1728,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "曾静受华夷之辨和吕留良著述影响，策动岳钟琪反清未遂，被押京审讯后获雍正帝赦免。皇帝刊行《大义觉迷录》要求全国宣讲，以公开辩论回应族属与继位合法性的挑战。乾隆后来又诛曾静并收禁该书，使原本用于辟谣的官方文本反而成为必须限制传播的政治材料。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.5,
+        1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "dayi-juemilu",
+        "locator": "《大义觉迷录》卷一曾静供词与雍正上谕"
+      }
+    ]
+  },
+  {
+    "id": "military-finance-council",
+    "title": "军机房设立",
+    "aliases": [],
+    "startYear": 1729,
+    "endYear": 1729,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "institution",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "雍正帝为处理西北军务在隆宗门内设置军机房，选亲信大臣值班承旨、拟写谕令。新机构靠近皇帝起居与决策场所，以少量人员办理机密文书，减少公开衙门间转递军报的延误。其职权由军务逐渐扩大，后来发展为常设军机处，中央决策更依赖皇帝与近臣的直接联系。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.3,
+        -0.6000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世宗实录》雍正七年西北用兵设军机房条"
+      }
+    ]
+  },
+  {
+    "id": "opium-ban-1729",
+    "title": "雍正禁烟令",
+    "aliases": [],
+    "startYear": 1729,
+    "endYear": 1729,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "institution",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "雍正帝下令查禁兴贩鸦片烟与开设烟馆，对售烟、诱人吸食和官员失察分别设罚，药用鸦片进口仍有空间。这项较早的全国禁令主要针对吸食场所与经营者，将新型消费纳入刑事治理。药材贸易与禁烟执法之间却留下界限，后来沿海走私增长并未被这道禁令阻断。",
+    "personIds": [
+      "person-yinzhen"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "opium-1800-to-ban",
+      "opium-1838-to-ban"
+    ],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.3,
+        -0.6000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世宗实录》雍正七年六月禁鸦片烟馆条"
+      },
+      {
+        "sourceId": "opium-social-life-zheng",
+        "locator": "The Social Life of Opium in China 第一章“From Medicine to Recreation”关于1729年禁令与药用进口的讨论"
+      }
+    ]
+  },
+  {
+    "id": "tibet-polhanas-order",
+    "title": "颇罗鼐主政西藏",
+    "aliases": [],
+    "startYear": 1731,
+    "endYear": 1731,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "西藏内乱后清廷支持颇罗鼐主持地方政务，并调整驻军和驻藏大臣职责，维持贵族联合治理。颇罗鼐依靠军事声望和与朝廷的合作恢复秩序，也在拉萨形成较强的世俗权力中心。此种安排依赖个人调停，其子继位后与驻藏大臣冲突，最终促成噶厦体制的重新设计。",
+    "personIds": [],
+    "placeIds": [
+      "lhasa"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.2999999999999998,
+        0.7999999999999998
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清世宗实录》雍正九年议定西藏善后章程条"
+      }
+    ]
+  },
+  {
+    "id": "grand-council-formed",
+    "title": "军机处形成",
+    "aliases": [],
+    "startYear": 1732,
+    "endYear": 1732,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "institution",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "军机房改称办理军机处，军机大臣承旨拟谕，以机密文书迅速传达皇帝决策，机构逐渐常设。军机处人员少、程序灵活，成为处理重大军政事务的枢纽。它没有取代六部的法定执行职掌，却改变了议政和信息汇总的重心，使内阁在重大政策形成中的地位相对下降。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.5,
+        -0.8
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qingshigao-zhonghua-1977",
+        "locator": "《清史稿·军机大臣年表序》雍正十年改军机房为军机处条"
+      }
+    ]
+  },
+  {
+    "id": "yanglian-silver",
+    "title": "养廉银制度定型",
+    "aliases": [],
+    "startYear": 1733,
+    "endYear": 1733,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "雍正朝从火耗归公收入中按官职和地区支给养廉银，希望提高官员正式待遇并减少额外索取。养廉银除维持官员生活，也需应付幕友、差役及办公开支，不能一概视为个人薪俸。各省可用收入与职务费用不同，待遇制度化虽减少部分陋规借口，仍未消除上下级馈送。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.7999999999999998,
+        -0.10000000000000009
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "daqing-huidian",
+        "locator": "《大清会典则例·户部》各省督抚司道府县养廉银数目"
+      }
+    ]
+  },
+  {
+    "id": "yongzheng-death",
+    "title": "雍正帝去世",
+    "aliases": [],
+    "startYear": 1735,
+    "endYear": 1735,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "雍正十三年皇帝在圆明园去世，密封建储遗诏被取出，皇四子弘历顺利即位。秘密建储首次通过实际继承接受检验，降低了公开册立太子后皇子长期结党的风险。乾隆初年继续财政整顿和军机制度，同时宽释部分宗室与政治案件，以有选择的调整塑造新君形象。",
+    "personIds": [
+      "person-yinzhen",
+      "person-hongli"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.30000000000000004,
+        -1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》雍正十三年八月世宗崩、弘历即位条"
+      }
+    ]
+  },
+  {
+    "id": "miao-rebellion-suppressed",
+    "title": "古州苗民起事平定",
+    "aliases": [],
+    "startYear": 1736,
+    "endYear": 1736,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "云贵改土归流后的征税、屯兵和土地冲突激化苗民起事，清军在雍正末、乾隆初集中镇压。平定后增设营汛和屯田，官府借军事据点向山地村寨推进。新行政秩序又伴随移民进入与耕地重新分配，军队宣告平定未能解决土地侵占和征派所引发的长期不满。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.5,
+        -0.30000000000000004
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆元年贵州古州苗乱平定条"
+      }
+    ]
+  },
+  {
+    "id": "qianlong-accession",
+    "title": "乾隆帝即位",
+    "aliases": [],
+    "startYear": 1736,
+    "endYear": 1736,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "弘历承继皇位后正式改元乾隆，初期释放部分政治犯、调整苛严案件并宣示宽政。新朝保留军机处和财政整顿成果，以宽严相济区别于雍正朝形象。即位与改元分属前后两年，此处以新年号启用为节点；此后巡幸、文化工程与边疆战争又成为新君展示权威的重要方式。",
+    "personIds": [
+      "person-hongli"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.5,
+        -0.30000000000000004
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆元年正月即位施政条"
+      }
+    ]
+  },
+  {
+    "id": "zhili-famine-relief",
+    "title": "直隶赈灾",
+    "aliases": [],
+    "startYear": 1741,
+    "endYear": 1741,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "society",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "直隶遭旱涝与歉收，朝廷蠲免钱粮、开仓平粜并拨运粮食，要求地方查户分等赈济。京畿缺粮直接关系首都供应，地方仓储不足时须借跨省运输补充。核实灾分、确定赈期和识别贫户成为救济关键，报灾迟误或冒领都可能使账册上的拨粮无法及时到达灾民手中。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b97858",
+    "layout": {
+      "lane": "society",
+      "offset": [
+        -1.2,
+        0.8999999999999999
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆六年直隶报灾、蠲赈平粜条"
+      }
+    ]
+  },
+  {
+    "id": "daqing-huidian-revision",
+    "title": "乾隆朝重修《大清会典》",
+    "aliases": [],
+    "startYear": 1742,
+    "endYear": 1742,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "institution",
+      "culture"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "朝廷启动重修《大清会典》，按衙门整理官制、职掌、礼仪与办事规则，以承接雍正以来的制度变化。编纂须从既有条文和成案中筛选可作定制的规范，后续校订刊成历时多年。会典便于官员查考职责，但呈现的是朝廷确认的制度框架，实际政务仍不断受到新上谕和地方条件调整。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        0.10000000000000009,
+        -0.7000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "daqing-huidian",
+        "locator": "《钦定大清会典》乾隆朝序与凡例"
+      }
+    ]
+  },
+  {
+    "id": "jinchuan-wars",
+    "title": "大小金川战争",
+    "aliases": [],
+    "startYear": 1747,
+    "endYear": 1776,
+    "yearPrecision": "range",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清廷两次大规模进攻川西金川土司，经历碉堡战、粮运困难和将领更换，直到一七七六年迫使索诺木投降。第一次议和保留土司权力，第二次则以围碉断粮逐步推进并在战后重设屯防。川陕民夫与粮饷长期输往山地，军事胜利以高额财政消耗和地方人口损失为代价。",
+    "personIds": [
+      "person-hongli",
+      "person-agui"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [
+      "first-jinchuan-settlement",
+      "second-jinchuan-war",
+      "jinchuan-surrender-1776"
+    ],
+    "relationIds": [
+      "first-jinchuan-to-war",
+      "second-jinchuan-to-war",
+      "jinchuan-end-to-war"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.3999999999999999,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆十二年金川用兵、四十一年平定两金川条"
+      },
+      {
+        "sourceId": "perdue-china-marches-west",
+        "locator": "《中国西征》第十章金川战争的堡寨、后勤与财政部分"
+      }
+    ]
+  },
+  {
+    "id": "first-jinchuan-settlement",
+    "title": "第一次金川议和",
+    "aliases": [],
+    "startYear": 1749,
+    "endYear": 1749,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清军久攻碉寨不下，乾隆帝更换主帅并接受莎罗奔请降，第一次金川战争以保留土司告终。议和使朝廷得以撤回难以持续补给的军队，并用请罪、宣誓和册封维持名义臣服。金川碉寨和地方军事组织仍在，邻近土司间的支配与争地问题也未解决，后来战争因而再次爆发。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "jinchuan-wars",
+    "childIds": [],
+    "relationIds": [
+      "first-jinchuan-to-war"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.10000000000000009,
+        -0.40000000000000013
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆十四年莎罗奔降、金川班师条"
+      }
+    ]
+  },
+  {
+    "id": "gyurme-namgyal-crisis",
+    "title": "珠尔默特那木札勒事件",
+    "aliases": [],
+    "startYear": 1750,
+    "endYear": 1750,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "西藏郡王珠尔默特那木札勒与驻藏大臣冲突，被诱杀后其部众袭杀驻藏大臣，拉萨陷入动荡。世俗郡王与朝廷代表相互猜忌，原靠个人威望维持的合作体制失效。清廷随后调整藏务，结束郡王世袭主政，并在次年以噶厦和达赖主持政务的安排重组地方权力。",
+    "personIds": [],
+    "placeIds": [
+      "lhasa"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.2000000000000002,
+        0.2999999999999998
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆十五年驻藏大臣被害、平乱条"
+      }
+    ]
+  },
+  {
+    "id": "dream-red-chamber",
+    "title": "《红楼梦》成书与传播",
+    "aliases": [],
+    "startYear": 1750,
+    "endYear": 1791,
+    "yearPrecision": "range",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "culture",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "曹雪芹在十八世纪中叶反复增删《石头记》，带有脂砚斋等批语的早期抄本在有限读者间传阅。程伟元、高鹗后来整理刊行一百二十回本，使家族兴衰与女性命运的叙事走向更广市场。现存抄本残缺且异文复杂，后四十回的来源与作者问题长期存在争论，不能把代表起年视作确切完稿日。",
+    "personIds": [
+      "person-cao-xueqin"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "red-chamber-to-siku"
+    ],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        1.2000000000000002,
+        0.2999999999999998
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "hongloumeng-early-manuscripts",
+        "locator": "《红楼梦》甲戌本凡例、庚辰本脂批及乾隆五十六年程甲本序"
+      },
+      {
+        "sourceId": "redology-cao-xueqin",
+        "locator": "《红楼梦新证》第六章曹雪芹著书与早期抄本传播节"
+      }
+    ]
+  },
+  {
+    "id": "tibet-regulations-1751",
+    "title": "西藏善后章程",
+    "aliases": [],
+    "startYear": 1751,
+    "endYear": 1751,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "institution",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清廷在拉萨设噶厦，由四名噶伦理政，规定重要事务由达赖喇嘛与驻藏大臣共同处理。章程结束单一世俗郡王主政，将地方行政分给集体议事的贵族官员，并提高七世达赖的政务地位。朝廷希望借多方参与避免郡王权力再度坐大，但日常施行仍须依靠藏地原有官僚与寺院网络。",
+    "personIds": [],
+    "placeIds": [
+      "lhasa"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "tibet-1751-to-expedition"
+    ],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -0.6,
+        1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆十六年议定西藏善后章程条"
+      }
+    ]
+  },
+  {
+    "id": "dzungar-conquest-1755",
+    "title": "清军进占伊犁",
+    "aliases": [],
+    "startYear": 1755,
+    "endYear": 1755,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "dzungar-khanate"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清军分路进入准噶尔，达瓦齐败逃，伊犁的原有统治迅速瓦解。阿睦尔撒纳曾协助清军进攻，却不满清廷分设汗位的安排，转而争夺准噶尔统一领导权。首次进占因而没有带来稳定臣服，朝廷从借助内争的远征转入再次征讨，天山北路随后遭受战争、疫病和人口离散。",
+    "personIds": [
+      "person-hongli"
+    ],
+    "placeIds": [
+      "ili"
+    ],
+    "parentId": "qing-dzungar-war",
+    "childIds": [],
+    "relationIds": [
+      "dzungar-conquest-to-war"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.5,
+        -0.8
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆二十年五月大军入伊犁、获达瓦齐条"
+      }
+    ]
+  },
+  {
+    "id": "amursana-revolt",
+    "title": "阿睦尔撒纳反叛",
+    "aliases": [],
+    "startYear": 1756,
+    "endYear": 1756,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "dzungar-khanate"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "阿睦尔撒纳反对清廷分封准噶尔诸部的方案，起兵后继续在伊犁一带争取部众，清军再次西征。清廷将先前的结盟者视为叛臣，军事目标也从扶植地方首领转向彻底摧毁反抗力量。反复战事与严厉杀戮叠加疫病和逃亡，使准噶尔部众及其畜牧社会遭受灾难性破坏。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "qing-dzungar-war",
+    "childIds": [],
+    "relationIds": [
+      "amursana-to-war"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.30000000000000004,
+        -0.10000000000000009
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆二十一年阿睦尔撒纳叛、再征伊犁条"
+      }
+    ]
+  },
+  {
+    "id": "canton-system-1757",
+    "title": "广州一口通商",
+    "aliases": [],
+    "startYear": 1757,
+    "endYear": 1834,
+    "yearPrecision": "range",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "乾隆帝限制欧美商船只在广州贸易，由粤海关监督行商承保、税费和外国人活动，关闭宁波等口岸。制度提高监管集中度，却让行商债务、规礼和沟通渠道问题积累，成为十八世纪末中英交涉的重要背景。",
+    "personIds": [
+      "person-hongli"
+    ],
+    "placeIds": [
+      "guangzhou"
+    ],
+    "parentId": null,
+    "childIds": [
+      "cohong-regulation",
+      "napier-canton-conflict"
+    ],
+    "relationIds": [
+      "cohong-to-canton",
+      "napier-to-canton",
+      "macartney-to-canton"
+    ],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        1,
+        0.5999999999999999
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆二十二年十一月洋船只准广东收泊条"
+      },
+      {
+        "sourceId": "canton-trade-van-dyke",
+        "locator": "《广州贸易》第二章1757年口岸限制与粤海关行商制度节"
+      }
+    ]
+  },
+  {
+    "id": "altishahr-revolt",
+    "title": "大小和卓起兵",
+    "aliases": [],
+    "startYear": 1758,
+    "endYear": 1758,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "霍集占、波罗尼都控制喀什噶尔等地并反抗清廷，清军由伊犁和甘肃方向进军天山南路。大小和卓以宗教家族威望动员地方力量，清军则须争取各城伯克、组织绿洲之间的运输。战事使清廷进一步卷入南疆城镇政治，后来的驻军与伯克管理正是在征服和地方合作中逐步建立。",
+    "personIds": [],
+    "placeIds": [
+      "kashgar"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.8,
+        -1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆二十三年大小和卓叛、进军回部条"
+      }
+    ]
+  },
+  {
+    "id": "qing-conquest-xinjiang",
+    "title": "清军平定天山南路",
+    "aliases": [],
+    "startYear": 1759,
+    "endYear": 1759,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清军追击大小和卓至帕米尔以西，二人败亡，天山南路主要城镇归清廷控制。征服把喀什噶尔、叶尔羌等绿洲纳入清朝驻防与贡赋体系，但朝廷仍利用伯克办理地方民政。随后伊犁将军统辖军政的体制逐渐形成，南疆并未立即改用内地府县，城市与驻军之间保持分层治理。",
+    "personIds": [],
+    "placeIds": [
+      "kashgar"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.5,
+        -0.30000000000000004
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆二十四年平定回部、大小和卓伏诛条"
+      }
+    ]
+  },
+  {
+    "id": "ili-general-established",
+    "title": "伊犁将军设置",
+    "aliases": [],
+    "startYear": 1760,
+    "endYear": 1760,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "institution",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "平定天山南北后，清廷开始筹划以伊犁为枢纽的驻防、屯田与边境管理，后来正式设置伊犁将军并修筑惠远等城。内地调兵与粮食长运成本高，军屯和移民垦殖因而成为维持驻军的重要办法。新体制还须联结南疆伯克与各城办事大臣，不能只凭伊犁一处直接管理全部地方事务。",
+    "personIds": [],
+    "placeIds": [
+      "ili"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.3,
+        0.3999999999999999
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆二十五年设伊犁将军条"
+      }
+    ]
+  },
+  {
+    "id": "qing-burma-war-begins",
+    "title": "清缅边境战争开始",
+    "aliases": [],
+    "startYear": 1762,
+    "endYear": 1762,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "konbaung-burma"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "云南边境土司归属、贡赋与商路纠纷日益加剧，缅甸王朝向北扩张也冲击清廷在边地的影响。原可由地方调解的争端逐渐涉及两国驻军与朝廷威信，为后来连续远征埋下条件。热带山地交通、雨季与疾病又使内地常用作战办法难以奏效，边境交涉最终升级为高耗损战争。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.2999999999999998,
+        -0.5000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆二十七年云南奏报征缅军务条"
+      }
+    ]
+  },
+  {
+    "id": "cohong-regulation",
+    "title": "广州行商制度整顿",
+    "aliases": [],
+    "startYear": 1763,
+    "endYear": 1763,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "粤海关要求特许行商为外商承保、代纳关税并处理债务，公行在官方监管下反复组织。行商既经营茶丝出口，又担保外船缴税和遵守口岸规则，商业信用因而与行政责任相连。官府摊派和外商赊欠可使单个行商破产，其他行商的连带偿付又把经营损失传遍整个广州贸易圈。",
+    "personIds": [],
+    "placeIds": [
+      "guangzhou"
+    ],
+    "parentId": "canton-system-1757",
+    "childIds": [],
+    "relationIds": [
+      "cohong-to-canton"
+    ],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.5,
+        0.19999999999999996
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "yuehaiguan-zhi",
+        "locator": "《粤海关志》卷十《商人》乾隆二十八年行商承保规条"
+      }
+    ]
+  },
+  {
+    "id": "ushi-uprising",
+    "title": "乌什起义",
+    "aliases": [],
+    "startYear": 1765,
+    "endYear": 1765,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "乌什居民因伯克与驻军勒索起兵，杀官据城，清军围攻数月后平定并严惩参与者。事后追究官员侵虐，说明清廷承认地方代理人的压迫也是动乱原因。镇压中的杀戮、迁徙和重新安置又重创城市社会，天山南路的统治成本并没有随着征服完成而自然降低。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1,
+        -0.7000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆三十年乌什变乱及平定条"
+      }
+    ]
+  },
+  {
+    "id": "qing-burma-major-campaign",
+    "title": "清军大举征缅",
+    "aliases": [],
+    "startYear": 1766,
+    "endYear": 1766,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "konbaung-burma"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清廷扩大征缅规模，试图以正规军和多路推进迫使缅甸退让，但山地交通与军粮供应持续拖累战局。此后明瑞深入缅境的行动又遭截击，朝廷仍须更换将领、筹集兵饷。连续增兵未能把纸面优势转为稳定占领，雨季疾病和漫长运输使远征的代价远超边境土司争端本身。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.30000000000000004,
+        0
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆三十一年至三十三年明瑞征缅及败亡条"
+      }
+    ]
+  },
+  {
+    "id": "qing-burma-truce",
+    "title": "清缅停战",
+    "aliases": [],
+    "startYear": 1769,
+    "endYear": 1769,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "konbaung-burma"
+    ],
+    "period": "清代",
+    "categories": [
+      "diplomacy",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "傅恒军与缅军在边境相持，双方将领议定停战、交换俘虏并撤军，朝廷虽不满仍停止大规模进攻。前线病亡和补给困难使继续作战难以为继，撤军保存了双方剩余兵力。停战没有立即带来正式朝贡与全面开放边贸，战场协议和朝廷承认之间仍经过多年交涉。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        1.1,
+        -0.20000000000000007
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆三十四年十一月征缅军议和撤还条"
+      }
+    ]
+  },
+  {
+    "id": "torghut-return",
+    "title": "土尔扈特东归",
+    "aliases": [],
+    "startYear": 1771,
+    "endYear": 1771,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "russian-empire"
+    ],
+    "period": "清代",
+    "categories": [
+      "ethnicity",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "居伏尔加河流域的土尔扈特部在渥巴锡率领下东迁，历经追击和饥病后抵达伊犁，清廷予以安置。迁徙途中大量牲畜和人口损失，使赈济、牧地分配与首领封爵成为急务。朝廷将来归部众分旗安置在新疆不同地区，既补充边地人口，也避免原有部落军力过度集中。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#6f9b65",
+    "layout": {
+      "lane": "ethnicity",
+      "offset": [
+        0.6000000000000001,
+        -1.1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆三十六年六月土尔扈特来归、赈给安置条"
+      }
+    ]
+  },
+  {
+    "id": "siku-quanshu",
+    "title": "《四库全书》纂修",
+    "aliases": [],
+    "startYear": 1772,
+    "endYear": 1782,
+    "yearPrecision": "range",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "culture",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "乾隆帝下诏征集天下图书，纪昀等分类校录，到一七八二年首部抄本告成，其他阁本誊录仍在继续。官修工程汇集散藏古籍并形成经史子集的提要体系，同时查禁和抽改被认定违碍的文字。首部全书进呈与后来《总目》刊行分属不同节点，保存文献与政治筛选也须同时考察。",
+    "personIds": [
+      "person-hongli",
+      "person-ji-yun"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [
+      "siku-book-collection",
+      "siku-censorship"
+    ],
+    "relationIds": [
+      "siku-books-to-siku",
+      "siku-censor-to-siku",
+      "siku-to-kangqian",
+      "red-chamber-to-siku"
+    ],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        -1.2,
+        -0.40000000000000013
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆三十七年正月诏访天下遗书、四十七年全书告成条"
+      },
+      {
+        "sourceId": "siku-zongmu-1782",
+        "locator": "《四库全书总目》卷首进表、凡例及经史子集提要；引1795年武英殿刻本，首部全书1782年告成另据实录"
+      }
+    ]
+  },
+  {
+    "id": "siku-book-collection",
+    "title": "四库征书",
+    "aliases": [],
+    "startYear": 1773,
+    "endYear": 1773,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "culture",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "各省督抚、藏书家和书坊奉旨进呈遗书，朝廷以赐书、题咏等奖励鼓励征集。私家藏本经地方官汇送四库馆，扩大官修人员能够校勘的书籍范围。征集又要求甄别违碍文字，藏书家须在获得荣誉与暴露敏感书籍之间权衡，进呈目录因此也留下私人藏书与国家审查相遇的痕迹。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "siku-quanshu",
+    "childIds": [],
+    "relationIds": [
+      "siku-books-to-siku"
+    ],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0.10000000000000009,
+        0.2999999999999998
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆三十八年各省访书、优奖进书条"
+      }
+    ]
+  },
+  {
+    "id": "wang-lun-uprising",
+    "title": "王伦起义",
+    "aliases": [],
+    "startYear": 1774,
+    "endYear": 1774,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "山东清水教首领王伦率众起事，攻占寿张、阳谷等地并逼近临清，清军很快集中镇压。临清连接运河漕粮与商业运输，威胁该城使地方教门冲突迅速成为朝廷军务。起事借教徒联系动员，却缺乏稳定军需与外援，失败后清廷扩大查教，并追究地方官事前失察责任。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.4,
+        1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆三十九年八月山东王伦滋事、九月平定条"
+      }
+    ]
+  },
+  {
+    "id": "second-jinchuan-war",
+    "title": "第二次金川决战",
+    "aliases": [],
+    "startYear": 1775,
+    "endYear": 1775,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "阿桂等采用围碉、断粮和步步筑垒方式推进，攻克勒乌围后继续逼近噶拉依，金川抵抗接近终局。清军以逐点夺取据寨替代早期轻进，依赖民夫、炮械和川陕粮运维持阵地。此时噶拉依尚未最终投降，长期围困所造成的饥乏和补给压力为次年的战争结束准备了条件。",
+    "personIds": [
+      "person-agui"
+    ],
+    "placeIds": [],
+    "parentId": "jinchuan-wars",
+    "childIds": [],
+    "relationIds": [
+      "second-jinchuan-to-war"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.3999999999999999,
+        -0.6000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆四十年攻克勒乌围、进围噶拉依条"
+      }
+    ]
+  },
+  {
+    "id": "jinchuan-surrender-1776",
+    "title": "金川平定",
+    "aliases": [],
+    "startYear": 1776,
+    "endYear": 1776,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "索诺木出降，清军进入噶拉依，第二次金川战争结束，主要土司被押往北京处置。战后清廷设厅、屯兵并调整土司，扩大川西直接控制；皇帝以凯旋礼仪把高成本战争塑造成武功。部分降众被迁置，屯兵和新行政机构又须长期供养，结束围城并未结束金川的财政负担。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "jinchuan-wars",
+    "childIds": [],
+    "relationIds": [
+      "jinchuan-end-to-war"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.8999999999999999,
+        0.09999999999999987
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆四十一年正月索诺木降、金川平条"
+      }
+    ]
+  },
+  {
+    "id": "siku-censorship",
+    "title": "四库禁毁书籍",
+    "aliases": [],
+    "startYear": 1778,
+    "endYear": 1778,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "culture",
+      "thought"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "各省汇报应毁、应改和存目书目，军机处与四库馆审核涉及明末清初立场、边疆称谓的文字。禁毁与抄录共享同一征书网络，地方官为避追责有时扩大搜查范围。部分书籍仅存禁毁目录，另一些则以删改本传世，后人使用四库本时因此还须与馆外旧刻和抄本核对。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "siku-quanshu",
+    "childIds": [],
+    "relationIds": [
+      "siku-censor-to-siku"
+    ],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0.3999999999999999,
+        -0.8
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "siku-archives",
+        "locator": "《办理四库全书档案》乾隆四十三年各省查缴违碍书籍清单"
+      }
+    ]
+  },
+  {
+    "id": "lin-shuangwen-uprising",
+    "title": "林爽文起义",
+    "aliases": [],
+    "startYear": 1786,
+    "endYear": 1786,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "台湾天地会首领林爽文因官府查捕起兵，攻占彰化等地，庄大田在南部响应，战事持续一年多。清廷从大陆调大军，并借地方乡勇守城与提供军需。不同籍贯和聚落的结盟加深社会分化，平乱后虽然调整行政与驻军，会党、土地竞争和分类械斗仍继续影响台湾地方秩序。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1.5,
+        0.19999999999999996
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆五十一年台湾林爽文滋事、五十二年平定条"
+      }
+    ]
+  },
+  {
+    "id": "first-gurkha-tibet-war",
+    "title": "廓尔喀第一次侵藏",
+    "aliases": [],
+    "startYear": 1788,
+    "endYear": 1788,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "gorkha-nepal"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "廓尔喀军因钱币和贸易争端进入后藏，西藏地方官议和赔款，暂时换取撤军。双方对银币兑换、欠款和商路权利各有解释，地方议和又未获清廷充分认可。赔款的停付使冲突重新爆发，显示一纸撤军协议尚未消除边地贸易利益与政治责任之间的分歧。",
+    "personIds": [],
+    "placeIds": [
+      "tashilhunpo"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1,
+        -0.7000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆五十三年廓尔喀侵藏及议和条"
+      }
+    ]
+  },
+  {
+    "id": "qing-vietnam-campaign",
+    "title": "清军入越南",
+    "aliases": [],
+    "startYear": 1788,
+    "endYear": 1788,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "tay-son-vietnam"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "后黎朝昭统帝求援，清廷派孙士毅率军进入升龙，试图恢复黎氏王位。清军依赖地方接应而深入越南，暂时占领都城却未消灭西山军。阮惠随后组织反攻，次年春节清军败退；此次行动表明接受属国旧王请求并不意味着能够维持复辟，也迫使清廷重新判断当地实际权力。",
+    "personIds": [],
+    "placeIds": [
+      "thang-long"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        1,
+        -0.7000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆五十三年出兵安南、五十四年撤兵条"
+      }
+    ]
+  },
+  {
+    "id": "qing-vietnam-withdrawal",
+    "title": "清越战争结束",
+    "aliases": [],
+    "startYear": 1789,
+    "endYear": 1789,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "tay-son-vietnam"
+    ],
+    "period": "清代",
+    "categories": [
+      "diplomacy",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清军从安南撤回后，阮惠遣使谢罪请封，乾隆帝接受其为安南国王并停止支持后黎复辟。双方通过册封恢复外交往来，使军事上的失败被纳入名义臣服的礼仪框架。后黎流亡者难再借清军返回，边界稳定和贸易恢复遂取代扶植旧王，成为清廷处理越南事务的主要目标。",
+    "personIds": [],
+    "placeIds": [
+      "thang-long"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.8,
+        0
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆五十四年阮惠请封、封安南国王条"
+      }
+    ]
+  },
+  {
+    "id": "anhui-opera-troupes-beijing",
+    "title": "徽班进京",
+    "aliases": [],
+    "startYear": 1790,
+    "endYear": 1790,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "culture",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "为庆祝乾隆八十寿辰，三庆等安徽戏班进入北京演出，徽调与昆曲、秦腔等在京城舞台交汇，后来又吸收汉调演员和声腔。宫廷庆典带来入京机会，持续演出则依靠城市戏园与观众市场。京剧的声腔和行当经历十九世纪的长期融合，不能将徽班到来视为剧种已经完整诞生。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#8e6bb8",
+    "layout": {
+      "lane": "culture",
+      "offset": [
+        0.5,
+        0.7
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "yangzhou-huafanglu",
+        "locator": "《扬州画舫录》卷五花部诸腔及乾隆五十五年徽班入京记载"
+      }
+    ]
+  },
+  {
+    "id": "second-gurkha-tibet-war",
+    "title": "廓尔喀再度侵藏",
+    "aliases": [],
+    "startYear": 1791,
+    "endYear": 1791,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "gorkha-nepal"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "廓尔喀军因前次议和赔款中断再次侵入后藏，攻入日喀则并掠夺扎什伦布寺。清廷命福康安组织援军入藏，战争牵动高原粮运、寺院财产和清廷威信。朝廷不再仅依赖地方议和，开始以大规模军事援助扭转战局，并在战后重新审查藏地官员、驻军与对外交涉规则。",
+    "personIds": [],
+    "placeIds": [
+      "tashilhunpo"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1.3,
+        -0.9000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆五十六年廓尔喀侵后藏、命福康安进剿条"
+      }
+    ]
+  },
+  {
+    "id": "gurkha-war-settlement",
+    "title": "廓尔喀战争议和",
+    "aliases": [],
+    "startYear": 1792,
+    "endYear": 1792,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "gorkha-nepal"
+    ],
+    "period": "清代",
+    "categories": [
+      "diplomacy",
+      "war"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "福康安军越喜马拉雅推进至距加德满都不远处，廓尔喀请求议和并承诺遣使朝贡、归还财物。补给困难与雨季逼近使继续深入代价高昂，停战让双方得以撤军恢复边境往来。清廷以胜利叙事加强对藏务的干预，尼泊尔则保留本国统治，朝贡关系并未转化为清军长期占领。",
+    "personIds": [],
+    "placeIds": [
+      "lhasa"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0,
+        -0.20000000000000007
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆五十七年廓尔喀乞降、班师条"
+      }
+    ]
+  },
+  {
+    "id": "macartney-embassy",
+    "title": "马戛尔尼使团访华",
+    "aliases": [],
+    "startYear": 1793,
+    "endYear": 1793,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "great-britain"
+    ],
+    "period": "清代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "英国马戛尔尼使团赴热河觐见乾隆帝，提出增开口岸、常驻使节和贸易据点等要求，多被清廷拒绝。双方在礼仪、主权和贸易制度上理解不同，使团留下大量观察记录，也预示广州体系与英国扩张之间矛盾加深。",
+    "personIds": [
+      "person-hongli",
+      "person-george-macartney"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [
+      "macartney-rejected-requests"
+    ],
+    "relationIds": [
+      "macartney-to-canton",
+      "macartney-reply-to-embassy"
+    ],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        1.2999999999999998,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆五十八年八月英吉利使臣入觐及谕复条"
+      },
+      {
+        "sourceId": "macartney-journal",
+        "locator": "《马戛尔尼使团日记》1793年9月承德觐见与贸易请求条目"
+      }
+    ]
+  },
+  {
+    "id": "macartney-rejected-requests",
+    "title": "乾隆答复英使请求",
+    "aliases": [],
+    "startYear": 1793,
+    "endYear": 1793,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "great-britain"
+    ],
+    "period": "清代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清廷以皇帝敕谕答复英王，拒绝在北京常驻使臣、增开宁波等口岸和划给岛屿，要求继续遵守广州旧制。答复体现朝贡礼仪与海关制度的既有逻辑，也未回应英国工业和亚洲贸易结构正在发生的变化。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "macartney-embassy",
+    "childIds": [],
+    "relationIds": [
+      "macartney-reply-to-embassy"
+    ],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        1.2999999999999998,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qianlong-letter-george",
+        "locator": "《乾隆帝致英王乔治三世敕书》乾隆五十八年拒绝常驻使臣、增口岸条"
+      }
+    ]
+  },
+  {
+    "id": "tibet-twenty-nine-articles",
+    "title": "《钦定藏内善后章程》",
+    "aliases": [],
+    "startYear": 1793,
+    "endYear": 1793,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "institution",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清廷在廓尔喀战争善后中拟定二十九条，规范金瓶掣签、官员任免、军队、财政、边界和对外交涉。章程提高驻藏大臣参与重大藏务的权限，并试图限制转世认定和官职授予中的家族操纵。金瓶仪式与各项条款的实施并非处处一致，须结合具体转世案例及藏地行政记录判断。",
+    "personIds": [],
+    "placeIds": [
+      "lhasa"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.2999999999999998,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "tibet-regulations-1793",
+        "locator": "《钦定藏内善后章程二十九条》第一至二十九条"
+      }
+    ]
+  },
+  {
+    "id": "qianlong-abdication-announced",
+    "title": "乾隆宣布内禅",
+    "aliases": [],
+    "startYear": 1795,
+    "endYear": 1795,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "乾隆帝宣布翌年传位皇十五子颙琰，以不超过祖父康熙在位年数，同时保留太上皇名义。公布继承者和内禅日期，使新旧皇帝的礼仪安排提前确定。此后重大军政仍由太上皇裁定，和珅维持权势，嘉庆帝须等乾隆去世才全面掌权，退位与退出决策因此并不同步。",
+    "personIds": [
+      "person-hongli",
+      "person-yongyan"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.7999999999999998,
+        -0.40000000000000013
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清高宗实录》乾隆六十年九月宣布立皇十五子、明年归政条"
+      }
+    ]
+  },
+  {
+    "id": "jiaqing-accession",
+    "title": "嘉庆帝即位",
+    "aliases": [],
+    "startYear": 1796,
+    "endYear": 1796,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "颙琰接受乾隆内禅即位，改元嘉庆，但太上皇仍掌重大任免和军政，和珅继续居权力中心。新帝须以孝道和臣礼处理父子两宫关系，初年难以独立更换权臣或改变政策。白莲教起事又迅速扩大，使名义上完成继承的朝廷同时面对战争报销、军队调度和真实决策权的问题。",
+    "personIds": [
+      "person-yongyan"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1,
+        0.2999999999999998
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清仁宗实录》嘉庆元年正月即位、尊高宗为太上皇条"
+      }
+    ]
+  },
+  {
+    "id": "white-lotus-rebellion",
+    "title": "川楚白莲教起义",
+    "aliases": [],
+    "startYear": 1796,
+    "endYear": 1804,
+    "yearPrecision": "range",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "湖北白莲教徒起事后扩展到四川、陕西，流动作战与地方教门网络使清军长期难以围堵。朝廷耗费巨额军饷，改用寨堡、乡勇和坚壁清野压缩起义军粮源，到一八〇四年结束主要战事。军费报销中的虚冒和乡村自筹防御并存，战争削弱国库，也使地方武装更深介入基层秩序。",
+    "personIds": [
+      "person-yongyan"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [
+      "white-lotus-fortified-villages",
+      "white-lotus-end-1804"
+    ],
+    "relationIds": [
+      "white-lotus-forts-to-war",
+      "white-lotus-end-to-war"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -1,
+        0.2999999999999998
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清仁宗实录》嘉庆元年正月湖北教匪起事、九年正月军务告竣条"
+      },
+      {
+        "sourceId": "white-lotus-war-dai",
+        "locator": "《The White Lotus War》第三至六章关于川楚教门动员、寨堡战略与清军财政的分析"
+      }
+    ]
+  },
+  {
+    "id": "heshen-fall",
+    "title": "和珅被诛",
+    "aliases": [],
+    "startYear": 1799,
+    "endYear": 1799,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "乾隆帝去世后，嘉庆帝立即逮捕和珅，公布二十款罪状，令其自尽并查抄家产。新帝以迅速处置权臣宣示亲政，重新掌握人事与财政，并整顿依附和珅的官场网络。抄没财产暂补国用，却无法替代持续的财政改革，白莲教军费虚报和官员馈送问题仍需另外处理。",
+    "personIds": [
+      "person-yongyan"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.19999999999999996,
+        0.09999999999999987
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清仁宗实录》嘉庆四年正月逮和珅、赐自尽条"
+      }
+    ]
+  },
+  {
+    "id": "opium-ban-1800",
+    "title": "嘉庆重申禁烟",
+    "aliases": [],
+    "startYear": 1800,
+    "endYear": 1800,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "institution",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "嘉庆帝重申查禁鸦片，要求海关和沿海官员堵截输入，将禁烟重点从烟馆与售卖扩展到海外供应。高额利润却促使商人转用隐蔽报关、海上交货与地方包庇，合法货船和走私网络相互交织。命令扩大执法责任，却缺乏足以控制海面运输的手段，输入数量后来仍继续增长。",
+    "personIds": [],
+    "placeIds": [
+      "guangzhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "opium-1800-to-ban"
+    ],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        1.1,
+        0.7999999999999998
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清仁宗实录》嘉庆五年六月严禁鸦片烟入口条"
+      }
+    ]
+  },
+  {
+    "id": "white-lotus-fortified-villages",
+    "title": "寨堡团练镇压白莲教",
+    "aliases": [],
+    "startYear": 1801,
+    "endYear": 1801,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清廷推广筑寨并堡、坚壁清野和地方团练，切断起义军粮食与人口来源，配合招抚和分区围剿。村民集中居住并轮守寨堡，清军得以缩小需要直接保护的空间。筑垒、储粮和守卫费用又转由乡村承担，官府越来越依靠地方头人组织武装，战后基层权力分配因此受到影响。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "white-lotus-rebellion",
+    "childIds": [],
+    "relationIds": [
+      "white-lotus-forts-to-war"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.7,
+        -0.8
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清仁宗实录》嘉庆六年川陕楚实行坚壁清野、筑寨团练条"
+      }
+    ]
+  },
+  {
+    "id": "white-lotus-end-1804",
+    "title": "白莲教主要战事结束",
+    "aliases": [],
+    "startYear": 1804,
+    "endYear": 1804,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清廷宣布川楚陕主要起义力量被平定，余部转为零散活动，持续八年的大规模战争告一段落。朝廷随即面临裁撤乡勇、清理军需报销和恢复流散人口生计的任务。长期虚报与冒饷使账面支出远超实际战需，宣布军务告竣也未能立即恢复国库余裕和山区生产。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": "white-lotus-rebellion",
+    "childIds": [],
+    "relationIds": [
+      "white-lotus-end-to-war"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.10000000000000009,
+        -1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清仁宗实录》嘉庆九年正月宣告川楚陕军务告竣条"
+      }
+    ]
+  },
+  {
+    "id": "canton-merchant-debt-crisis",
+    "title": "广州行商债务危机",
+    "aliases": [],
+    "startYear": 1805,
+    "endYear": 1805,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "多名广州行商因垫税、官府摊派和对外赊欠陷入破产，外商要求粤海关和其他行商共同偿还债务。行商不能只按私人契约退出交易，因为保商制度同时赋予纳税与担保责任。债务被分摊给同业并长期追偿，商业信用问题遂演变为外商向官府交涉的争端，增加整个口岸的经营成本。",
+    "personIds": [],
+    "placeIds": [
+      "guangzhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        1.4,
+        -0.30000000000000004
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "yuehaiguan-zhi",
+        "locator": "《粤海关志》卷十嘉庆十年行商欠夷债清偿案"
+      }
+    ]
+  },
+  {
+    "id": "british-macau-occupation",
+    "title": "英军占据澳门",
+    "aliases": [],
+    "startYear": 1808,
+    "endYear": 1808,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "united-kingdom"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "英国以防范法国为由派兵登陆澳门，未经清廷与葡萄牙地方当局同意，广州贸易一度中断。两广总督拒绝在英军撤离前恢复通商，英国最终退兵，事件显示军事保护借口与清朝口岸主权直接冲突。",
+    "personIds": [],
+    "placeIds": [
+      "macau"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.9,
+        -0.5000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清仁宗实录》嘉庆十三年英吉利兵入澳门、谕停贸易条"
+      }
+    ]
+  },
+  {
+    "id": "jiaqing-christian-ban",
+    "title": "嘉庆查禁天主教",
+    "aliases": [],
+    "startYear": 1811,
+    "endYear": 1811,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "religion",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "嘉庆朝继续查禁天主教，清廷要求地方追查传教、藏经和秘密聚会，对外国教士与中国信徒分别处置。自雍正禁教以来，部分信徒已依靠家族和村落维系宗教生活，查禁因此深入普通住户。保甲搜查强化身份控制，却难阻断跨地区的教士联系，隐蔽教会仍能延续。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b27a9e",
+    "layout": {
+      "lane": "religion",
+      "offset": [
+        -0.10000000000000009,
+        -0.7000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清仁宗实录》嘉庆十六年严禁天主教、查拿传教人员条"
+      }
+    ]
+  },
+  {
+    "id": "eight-trigrams-uprising",
+    "title": "天理教攻入紫禁城",
+    "aliases": [],
+    "startYear": 1813,
+    "endYear": 1813,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "天理教徒在宦官接应下由东华门、西华门攻入紫禁城，林清在京策划，李文成在河南同时起事。袭击虽迅速失败，却把秘密教门的威胁直接带入皇宫。嘉庆帝出巡期间宫禁守备失灵，朝廷随后追究内监与侍卫责任并扩大搜捕，京师安全和地方教门查缉因而被连在一起。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.6,
+        0.7
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清仁宗实录》嘉庆十八年九月天理教犯宫禁条"
+      }
+    ]
+  },
+  {
+    "id": "lintin-opium-depot",
+    "title": "伶仃洋鸦片趸船贸易",
+    "aliases": [],
+    "startYear": 1814,
+    "endYear": 1814,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "外商逐步利用珠江口海上船只储放鸦片，再由中国快艇接货，形成绕开广州正式报关的供应办法；伶仃洋趸船体系在后续年份更加成熟。买卖货款与实物交割分开，使官府难以在单一口岸截获全部货物。岛屿锚地、沿海快艇和内地烟贩相连，禁烟开始面对更分散的海上网络。",
+    "personIds": [],
+    "placeIds": [
+      "guangzhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.7000000000000002,
+        -0.9000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "yuehaiguan-zhi",
+        "locator": "《粤海关志》卷二十八嘉庆十九年查禁伶仃洋鸦片趸船条"
+      }
+    ]
+  },
+  {
+    "id": "amherst-embassy",
+    "title": "阿美士德使团访华",
+    "aliases": [],
+    "startYear": 1816,
+    "endYear": 1816,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "united-kingdom"
+    ],
+    "period": "清代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "英国阿美士德使团抵达北京附近，因觐见礼仪和临时召见程序争执未能见到嘉庆帝，被令沿内河南返。英方希望建立直接交涉渠道，清廷则仍按贡使接待规则处理。使团未获贸易制度让步，却留下沿途城市、运河和官署观察，英国对中国内地的知识继续在外交失败中积累。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        0.19999999999999996,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清仁宗实录》嘉庆二十一年七月英吉利使臣贡使未觐遣回条"
+      }
+    ]
+  },
+  {
+    "id": "grand-canal-grain-crisis",
+    "title": "漕运积弊加深",
+    "aliases": [],
+    "startYear": 1817,
+    "endYear": 1817,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "黄河淤决、运河浅阻和沿途浮费使漕粮迟滞，朝廷须反复拨款疏浚、催运并追查亏欠。漕运既供应京师旗营与官僚，也维系船户、河工和沿线衙门生计。改走海路虽可绕过部分河道障碍，却会重分税费与就业，粮食运输改革因而同时牵涉技术选择和庞大的既得利益。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        1.5,
+        -1.1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清仁宗实录》嘉庆二十二年漕船迟误、议筹海运条"
+      }
+    ]
+  },
+  {
+    "id": "jiaqing-death",
+    "title": "嘉庆帝去世",
+    "aliases": [],
+    "startYear": 1820,
+    "endYear": 1820,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "嘉庆帝在热河行宫突然去世，皇次子旻宁依据建储安排继承皇位，次年改元道光。皇帝在京外去世使遗诏查验、灵柩回京和新君权力确认同时成为急务。继承虽未引发皇子公开争位，新朝仍须承接战争后的财政压力与河工漕运问题，宫廷交接无法消除这些长期负担。",
+    "personIds": [
+      "person-yongyan",
+      "person-minning"
+    ],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.8,
+        1
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清宣宗实录》嘉庆二十五年七月仁宗崩、宣宗即位条"
+      }
+    ]
+  },
+  {
+    "id": "daoguang-accession",
+    "title": "道光帝即位",
+    "aliases": [],
+    "startYear": 1821,
+    "endYear": 1821,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "institution"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "旻宁承继皇位后启用道光年号，强调节俭、裁减宫廷开支并整顿吏治，希望恢复财政纪律。此处以改元标记新朝施政开端，实际继位发生在前一年。河工、漕运和边疆驻军仍须巨额经费，宫廷缩减用度的示范作用有限，朝廷难以仅靠皇帝个人俭约改变地方收支结构。",
+    "personIds": [
+      "person-minning"
+    ],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.5,
+        -0.6000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清宣宗实录》道光元年正月施政与裁减浮费上谕"
+      }
+    ]
+  },
+  {
+    "id": "daoguang-opium-crackdown",
+    "title": "道光初年查禁鸦片",
+    "aliases": [],
+    "startYear": 1822,
+    "endYear": 1822,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "institution",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "朝廷命广东、福建等地查禁鸦片趸船、烟馆和官员包庇，重申进口与吸食禁例。外商与本地接货者把交易移往岛屿锚地，快艇又将烟土运向沿海及内地，官府难以只靠海关验货断绝供应。禁令越严，缉私和受贿空间也随之扩大，后来的弛禁讨论正与这种执法困境相连。",
+    "personIds": [],
+    "placeIds": [
+      "guangzhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c78345",
+    "layout": {
+      "lane": "institution",
+      "offset": [
+        -1.3,
+        0.09999999999999987
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清宣宗实录》道光二年查禁广东鸦片趸船条"
+      }
+    ]
+  },
+  {
+    "id": "silver-outflow-debate",
+    "title": "白银外流争论",
+    "aliases": [],
+    "startYear": 1825,
+    "endYear": 1825,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "官员注意到鸦片进口和贸易结算推动白银外流，银价上涨使百姓以铜钱换银纳税的负担加重。讨论把海关走私、货币比价与田赋征收联系起来，为主张弛禁征税和严禁断源的两派政策提供依据。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        -0.5,
+        -0.10000000000000009
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清宣宗实录》道光五年御史奏银贵钱贱、鸦片漏银条"
+      }
+    ]
+  },
+  {
+    "id": "grain-sea-transport-trial",
+    "title": "漕粮海运试办",
+    "aliases": [],
+    "startYear": 1826,
+    "endYear": 1826,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "science"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "因运河阻塞，陶澍等试把江南漕粮由上海海运至天津，利用商船和季风缩短运输。官府招募商船承运，须另定运价、交粮验收和海损责任，显示海运能够成为河道受阻时的替代方案。试办虽较顺利，海险顾虑与运河沿线官役利益仍使政策难以立即常设。",
+    "personIds": [],
+    "placeIds": [
+      "shanghai"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.7999999999999998,
+        0.5999999999999999
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清宣宗实录》道光六年陶澍奏办漕粮海运条"
+      }
+    ]
+  },
+  {
+    "id": "jahangir-rebellion",
+    "title": "张格尔之乱",
+    "aliases": [],
+    "startYear": 1826,
+    "endYear": 1826,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "ethnicity"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "和卓后裔张格尔由浩罕方向进入喀什噶尔，借宗教家族声望和地方不满占据南疆多城。清廷从内地与伊犁调军反攻，并争取未附叛的伯克提供运输与情报。事件把绿洲内部治理与浩罕边贸势力连在一起，恢复城池控制之外，清廷还须处理跨境商人、逃人和和卓后裔活动。",
+    "personIds": [],
+    "placeIds": [
+      "kashgar"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.7999999999999998,
+        0.5999999999999999
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清宣宗实录》道光六年张格尔入卡、回疆四城失守条"
+      }
+    ]
+  },
+  {
+    "id": "jahangir-captured",
+    "title": "张格尔被俘",
+    "aliases": [],
+    "startYear": 1828,
+    "endYear": 1828,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "politics"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "清军收复南疆各城后继续追捕张格尔，其在边境再度活动时被擒，押往北京处死。首领被捕使这一轮大规模反抗失去号召中心，朝廷得以宣告军务告竣。浩罕对商贸利益的要求和南疆地方压迫却仍存在，后来清廷还须通过边境交涉与贸易让步约束和卓家族再次入境。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        0.30000000000000004,
+        -0.30000000000000004
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清宣宗实录》道光八年张格尔就擒、献俘条"
+      }
+    ]
+  },
+  {
+    "id": "opium-policy-debate",
+    "title": "鸦片弛禁严禁之争",
+    "aliases": [],
+    "startYear": 1829,
+    "endYear": 1829,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "鸦片走私屡禁不止，部分官员开始权衡以征税控制输入，另一些则主张堵截外货并惩处吸食。围绕药用、消费、白银支付和海关责任的讨论，逐步形成后来弛禁与严禁之争的问题框架。朝廷当时仍维持禁令，不能把随后许乃济、黄爵滋的具体奏议提前视为已经实行的政策。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -1.5,
+        0.3999999999999999
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清宣宗实录》道光九年各臣议鸦片弛禁与严禁奏折"
+      }
+    ]
+  },
+  {
+    "id": "east-india-company-coast-survey",
+    "title": "英国商船沿海探航",
+    "aliases": [],
+    "startYear": 1832,
+    "endYear": 1832,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "united-kingdom"
+    ],
+    "period": "清代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "英国东印度公司派“阿美士德”号沿中国海岸探查港口与市场，林赛主持商务调查，郭实腊参与翻译和观察。船只试图在广州之外接触官员与商人，多处遭遇地方阻止。返航后形成航程和贸易报告，为英国商界提供沿海水文、物产与行政反应的资料，也暴露一口通商之外的信息需求。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -0.7,
+        0.19999999999999996
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "amherst-voyage",
+        "locator": "《Report of proceedings on a voyage to the northern ports of China, in the ship Lord Amherst》（London：B. Fellowes，1833），林赛报告第1–267页，1832年厦门、福州、宁波、上海航程；附郭实腊报告第269–296页"
+      }
+    ]
+  },
+  {
+    "id": "east-india-company-monopoly-ends",
+    "title": "东印度公司对华垄断终止",
+    "aliases": [],
+    "startYear": 1833,
+    "endYear": 1833,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "united-kingdom"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "英国议会通过特许状法案，决定取消东印度公司对华贸易垄断，相关新安排于次年实行。公司不再独占合法茶叶等贸易，更多私人商人进入广州，英国政府另派商务监督。原由公司协调的商贸交涉转为政府代表的职责，清廷却仍沿用行商转呈规则，双方渠道分歧很快公开化。",
+    "personIds": [],
+    "placeIds": [],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.6000000000000001,
+        0.8999999999999999
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "charter-act-1833",
+        "locator": "《英国1833年特许状法案》取消东印度公司中国贸易专营条"
+      }
+    ]
+  },
+  {
+    "id": "napier-canton-conflict",
+    "title": "律劳卑广州冲突",
+    "aliases": [],
+    "startYear": 1834,
+    "endYear": 1834,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "united-kingdom"
+    ],
+    "period": "清代",
+    "categories": [
+      "diplomacy",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "英国商务监督律劳卑未经行商转呈直接致函两广总督，因文书礼仪和入城资格遭拒，双方中止贸易并发生炮击。律劳卑病死后冲突缓和，但政府代表与广州行商体制不兼容，预示外交渠道必须重新安排。",
+    "personIds": [],
+    "placeIds": [
+      "guangzhou"
+    ],
+    "parentId": "canton-system-1757",
+    "childIds": [],
+    "relationIds": [
+      "napier-to-canton"
+    ],
+    "color": "#4f8fb3",
+    "layout": {
+      "lane": "diplomacy",
+      "offset": [
+        -1.2,
+        -0.7000000000000001
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清宣宗实录》道光十四年英吉利夷目律劳卑闯入省城、停市条"
+      }
+    ]
+  },
+  {
+    "id": "opium-imports-surge",
+    "title": "鸦片走私激增",
+    "aliases": [],
+    "startYear": 1835,
+    "endYear": 1835,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "economy",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "沿海趸船和内地分销网络扩大，鸦片输入与白银支付显著增加，吸食从口岸传播到多省。外国商人以印度鸦片供应换取中国白银，本地快艇、烟贩与受贿官差共同维持交货。走私越出广州单一口岸，海关截查难以封堵供应，银钱兑换压力又把沿海贸易争端传向内地纳税家庭。",
+    "personIds": [],
+    "placeIds": [
+      "guangzhou"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#d4a94e",
+    "layout": {
+      "lane": "economy",
+      "offset": [
+        0.10000000000000009,
+        0
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "chouban-yiwu",
+        "locator": "《筹办夷务始末·道光朝》道光十五年广东鸦片趸船、漏银奏折"
+      }
+    ]
+  },
+  {
+    "id": "xu-naiji-legalization-memorial",
+    "title": "许乃济弛禁奏",
+    "aliases": [],
+    "startYear": 1836,
+    "endYear": 1836,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "太常寺少卿许乃济主张允许鸦片进口纳税、以货易货，并严禁官员士兵吸食，试图压缩走私和白银外流。提案得到部分官员支持但未获实施，严禁派认为合法化会扩大社会危害，政策分歧由此公开化。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        1.4,
+        0.7
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "xu-naiji-memorial",
+        "locator": "《许太常奏议》道光十六年《鸦片烟例禁愈严流弊愈大应亟请变通办理折》"
+      }
+    ]
+  },
+  {
+    "id": "huang-juezi-memorial",
+    "title": "黄爵滋严禁奏",
+    "aliases": [],
+    "startYear": 1838,
+    "endYear": 1838,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "黄爵滋上奏主张限定一年戒烟，对逾期吸食者以死罪惩处，并要求官员互相稽查。道光帝把奏折交各省督抚讨论，使是否重惩吸食者成为全国政策议题。各地答复对期限、刑罚和执行能力意见不一，严禁方向虽获支持，黄奏提出的全部办法并未因此自动成为统一定例。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.8999999999999999,
+        -0.20000000000000007
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "huang-juezi-memorial",
+        "locator": "《黄爵滋奏疏》道光十八年闰四月《严塞漏卮以培国本疏》"
+      }
+    ]
+  },
+  {
+    "id": "opium-crackdown-1838",
+    "title": "道光决定严禁鸦片",
+    "aliases": [],
+    "startYear": 1838,
+    "endYear": 1838,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "economy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "道光帝采纳严禁方向，要求各省限期查拿烟贩、烟馆和吸食官员，并召林则徐入京商议广东禁烟。政策从地方缉私提升为全国政治任务，目标包括阻止白银外流、整顿官场和切断外国供货。随后设置赴粤钦差，把内地查禁与追缴外商存烟相接，准备以集中权力突破广东长期执法困局。",
+    "personIds": [],
+    "placeIds": [
+      "beijing"
+    ],
+    "parentId": null,
+    "childIds": [],
+    "relationIds": [
+      "opium-1838-to-ban"
+    ],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        0.8999999999999999,
+        -0.20000000000000007
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "qing-shilu-zhonghua",
+        "locator": "《清宣宗实录》道光十八年十一月召林则徐入京、授钦差查办鸦片条"
+      }
+    ]
+  },
+  {
+    "id": "chuenpi-clash-1839",
+    "title": "穿鼻海战",
+    "aliases": [],
+    "startYear": 1839,
+    "endYear": 1839,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "united-kingdom"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "清水师与英国军舰在穿鼻洋交火，双方围绕贸易具结、补给与护航相互施压，冲突仍限于广东海面。战斗表明禁烟争端已军事化，但全面战争尚未正式开始；1840年英国远征舰队到来应归入近代史目录。",
+    "personIds": [],
+    "placeIds": [
+      "guangzhou"
+    ],
+    "parentId": "lin-zexu-canton-1839",
+    "childIds": [],
+    "relationIds": [
+      "chuenpi-to-lin"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.9,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "chouban-yiwu",
+        "locator": "《筹办夷务始末·道光朝》道光十九年十月穿鼻洋接仗条"
+      }
+    ]
+  },
+  {
+    "id": "humen-opium-destruction",
+    "title": "虎门销烟",
+    "aliases": [],
+    "startYear": 1839,
+    "endYear": 1839,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "united-kingdom"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "society"
+    ],
+    "themeIds": [],
+    "influence": 4,
+    "summary": "林则徐在虎门把收缴鸦片以盐卤、石灰浸化后排入海中，公开销毁持续二十余日。逐批验收、记录和销毁防止烟土再流入市场，也向民众展示严禁决心。义律此前已以英国政府名义承诺补偿缴烟商人，实物被毁后赔偿与责任争议更难通过恢复原有广州贸易自行化解。",
+    "personIds": [
+      "person-lin-zexu"
+    ],
+    "placeIds": [
+      "humen"
+    ],
+    "parentId": "lin-zexu-canton-1839",
+    "childIds": [],
+    "relationIds": [
+      "humen-to-lin"
+    ],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.9,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "lin-zexu-works",
+        "locator": "《林则徐集·日记》道光十九年四月二十二日至五月十三日虎门销烟记载"
+      }
+    ]
+  },
+  {
+    "id": "kowloon-clash",
+    "title": "九龙冲突",
+    "aliases": [],
+    "startYear": 1839,
+    "endYear": 1839,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "united-kingdom"
+    ],
+    "period": "清代",
+    "categories": [
+      "war",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 3,
+    "summary": "英国水手在九龙尖沙咀与村民冲突并致人死亡，清方要求交凶，英方以本国审判处理，司法管辖争议激化。案件把禁烟后的贸易矛盾延伸到刑事管辖和领海秩序，双方对责任与法律程序没有共同框架。",
+    "personIds": [],
+    "placeIds": [
+      "guangzhou"
+    ],
+    "parentId": "lin-zexu-canton-1839",
+    "childIds": [],
+    "relationIds": [
+      "kowloon-to-lin"
+    ],
+    "color": "#b7463d",
+    "layout": {
+      "lane": "war",
+      "offset": [
+        -0.9,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "basic",
+    "sourceRefs": [
+      {
+        "sourceId": "chouban-yiwu",
+        "locator": "《筹办夷务始末·道光朝》道光十九年九龙夷人殴毙林维喜案"
+      }
+    ]
+  },
+  {
+    "id": "lin-zexu-canton-1839",
+    "title": "林则徐广州禁烟",
+    "aliases": [],
+    "startYear": 1839,
+    "endYear": 1839,
+    "yearPrecision": "exact",
+    "eraId": "qing",
+    "polityIds": [
+      "qing",
+      "united-kingdom"
+    ],
+    "period": "清代",
+    "categories": [
+      "politics",
+      "diplomacy"
+    ],
+    "themeIds": [],
+    "influence": 5,
+    "summary": "钦差大臣林则徐到广州后封锁商馆，要求外国商人缴出鸦片并具结永不夹带，随后收缴两万余箱。行动把国内禁烟直接延伸到外国贸易和领事责任，英国政府与商人拒绝永久具结，冲突在1840年前已迅速升级。",
+    "personIds": [
+      "person-lin-zexu",
+      "person-minning"
+    ],
+    "placeIds": [
+      "guangzhou"
+    ],
+    "parentId": null,
+    "childIds": [
+      "humen-opium-destruction",
+      "kowloon-clash",
+      "chuenpi-clash-1839"
+    ],
+    "relationIds": [
+      "humen-to-lin",
+      "kowloon-to-lin",
+      "chuenpi-to-lin"
+    ],
+    "color": "#c8584b",
+    "layout": {
+      "lane": "politics",
+      "offset": [
+        -0.9,
+        0.5
+      ]
+    },
+    "editorialPeriodId": "qing",
+    "detailLevel": "core",
+    "sourceRefs": [
+      {
+        "sourceId": "lin-zexu-works",
+        "locator": "《林则徐集·奏稿》中道光十九年三月《谕各国夷人呈缴烟土稿》及缴烟奏折"
+      },
+      {
+        "sourceId": "british-china-papers-1840",
+        "locator": "《英国议会文件：中国通信》1839年义律关于缴烟、具结与商馆封锁的函件"
+      }
+    ]
+  }
+]
