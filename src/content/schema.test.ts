@@ -60,6 +60,14 @@ describe('content schema', () => {
     }, 'site.yml')).toThrow('site.yml: projects.0.githubUrl');
   });
 
+  it.each(['/', '/playground/', '/apps/lol-rag/', '/apps/history-galaxy/'])('accepts a same-origin project entry: %s', (liveUrl) => {
+    expect(parseSiteDocument({ ...validSite, projects: [{ ...validSite.projects[0], liveUrl }] }, 'site.yml').projects[0].liveUrl).toBe(liveUrl);
+  });
+
+  it.each(['//evil.example/app', '/\\evil.example', '/apps/../private', '/apps/%2e%2e/private', '/apps/a b', 'javascript:alert(1)'])('rejects unsafe project entry: %s', (liveUrl) => {
+    expect(() => parseSiteDocument({ ...validSite, projects: [{ ...validSite.projects[0], liveUrl }] }, 'site.yml')).toThrow('projects.0.liveUrl');
+  });
+
   it.each(['https://example.com', 'http://example.com', 'mailto:hello@example.com'])
   ('accepts contact protocol: %s', (href) => {
     expect(parseSiteDocument({

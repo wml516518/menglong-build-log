@@ -2,6 +2,8 @@
 
 本文面向仓库所有者，说明如何通过 Decap CMS 修改个人主页、简历和 Build Log，以及如何处理自动翻译、CI 与部署故障。
 
+> 迁移提示：当前 CMS 的生产入口和 Decap Turbo 允许来源仍指向旧 Netlify 后台。正式切换到统一域名后，需要同步更新这些配置。PR 合并后的正式发布已由自托管部署 workflow 接管；未配置 `SELF_HOST_DEPLOY_ENABLED=true` 时只会完成 CI，不会更新线上站点。
+
 ## 后台入口与权限
 
 - 生产后台：<https://menglong-build-log.netlify.app/admin/>
@@ -22,7 +24,7 @@
 4. 工作流调用 DeepSeek 翻译变化的中文字段，只把对应的 `content/en/**` 文件提交回同一个 PR。
 5. 第二次 CI 验证中英文结构、来源哈希、测试和构建。
 6. 全部检查通过后，工作流按已验证的精确提交 SHA 执行 squash merge；PR 头部发生变化时会拒绝合并。
-7. Netlify 检测到 `main` 的新提交后自动构建并发布。
+7. `main` 的新提交先由 `CI` 构建主页和历史星河；只有 `SELF_HOST_DEPLOY_ENABLED=true` 时，`Deploy static sites` 才会把已验证产物发布到服务器。
 
 因此，日常内容修改只需编辑中文并保存一次。不要为了让第一次 CI 变绿而手工补英文。
 
@@ -95,18 +97,21 @@ npm run content:check-generated
 npm run content:validate
 npm run content:check-generated
 npm test
-npm run build
+npm run build:sites
+python3 -m unittest discover -s tests/deploy
 ```
 
 ### PR 未自动合并
 
 检查 PR 是否仍为打开状态、最新提交的 CI 是否全部通过，以及 `CMS Publish` 是否因 PR SHA、作者、仓库或改动范围变化而拒绝。安全检查拒绝时不要强行扩展 CMS 权限；将代码或配置改动移到普通 PR，只保留允许的中文内容与上传资源。
 
-### Netlify 部署失败
+### 自托管发布失败
 
-现象：PR 已合并，但生产站点未更新，或 Netlify 显示构建失败。
+现象：PR 已合并，CI 通过，但生产站点未更新。
 
-处理：在 Netlify Deploys 中确认失败部署对应的 `main` 合并提交，阅读构建日志并修复根因。代码或构建配置问题通过普通 PR 修复；短暂平台故障可在原因消失后重试部署。发布成功后核对中英文页面、Build Log 和 `/admin/`，不要手工上传本地 `dist` 覆盖 Git 部署。
+处理：先检查仓库变量 `SELF_HOST_DEPLOY_ENABLED` 是否为 `true`，再查看 `Deploy static sites` 是否成功。该 workflow 只接受当前 `main` 的成功 CI 产物；失败时应检查 SSH Secrets、`DEPLOY_ROOT`、服务器磁盘和 Nginx 权限。发布成功后核对主页、历史星河 `/apps/history-galaxy/`、Build Log 和 `/admin/`，不要在服务器手工覆盖 `current` 目录。
+
+旧 Netlify 站点只作为迁移期间的回退入口。正式切换后应停止把 Netlify 当作生产发布平台，避免继续消耗旧平台额度。
 
 ## 更新翻译术语表
 
@@ -124,7 +129,7 @@ npm run build
 npm run content:translate -- --all
 npm run content:check-generated
 npm test
-npm run build
+npm run build:sites
 ```
 
 只有翻译策略的语义发生变化时才递增 `policyVersion`；单纯补充词条不需要用版本号代替实际的术语表 diff。提交前检查生成的英文表达和受保护术语是否符合预期。
@@ -135,7 +140,7 @@ npm run build
 
 1. 找到需要撤销的 CMS squash merge 提交。
 2. 在新分支执行 `git revert <merge-commit>`，保留中文与对应英文的成对回退。
-3. 提交普通 PR，运行完整 CI，并检查 Netlify Deploy Preview。
-4. 合并后等待 Netlify 发布，再核对中英文页面。
+3. 提交普通 PR，运行完整 CI，并检查 CI 上传的静态产物。
+4. 合并后等待自托管发布 workflow 完成，再核对中英文页面。
 
 不要直接在 `main` 修改历史，也不要只恢复中文或只恢复英文。若目标提交之后还有其他内容更新，应先检查 revert diff，避免连带覆盖后续修改。

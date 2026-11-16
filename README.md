@@ -1,24 +1,26 @@
 # MengLong Build Log
 
-MengLong Wang 的双语个人主页、开发日志和全栈项目集合。
+MengLong Wang 的双语个人主页、开发日志和全栈项目集合。个人主页是统一入口，历史星河、LOL RAG 和 AI Chat 都以子路径集成在同一域名下，各自独立构建和发布。
 
-- 在线主页：[menglong-build-log.netlify.app](https://menglong-build-log.netlify.app)
+- 自托管部署方案与路径：[同域名多站点部署](docs/deployment/single-domain.md)。
 - GitHub：[wml516518/menglong-build-log](https://github.com/wml516518/menglong-build-log)
 
 ## 项目内容
 
 仓库包含两个相对独立的部分：
 
-| 目录 | 内容 | 技术栈 | 部署方式 |
+| 目录 / 入口 | 内容 | 技术栈 | 部署方式 |
 | --- | --- | --- | --- |
-| `/` | 个人主页、履历、项目列表、Build Log 和历史星河 | React 19、TypeScript、Vite | Netlify |
+| `/`、`/playground/` | 个人主页、履历、项目列表、Build Log 和 AI Chat | React 19、TypeScript、Vite | 自托管静态站 + Nginx |
+| `history.html` | 独立历史星河站 `/apps/history-galaxy/` | React 19、TypeScript、Three.js、Vite | 自托管静态站 + Nginx |
 | `eat-card/` | “今天吃什么卡”微信小程序、API、管理后台和数据库脚本 | 微信小程序、Express、Supabase、DeepSeek | Render + Netlify |
 
 ### 个人主页
 
-- 首页重点展示《历史星河》，静态预览不加载 Three.js 运行时
-- `#/history-galaxy` 提供唐朝至 1949 年的完整 3D 交互历史时间轴
-- 历史星河支持七时代导航、30 个事件、星点拖拽、人物故事、移动端抽屉与 WebGL 降级
+- 首页重点展示《历史星河》入口，静态预览和主页运行时不加载 Three.js
+- `/apps/history-galaxy/` 提供先秦至 1949 年的完整 3D 交互历史时间轴
+- 历史星河支持七时代导航、1200 个事件、200 篇核心档案、星点拖拽、人物故事、移动端抽屉与 WebGL 降级
+- `/playground/` 集成带 Prompt 预设、参数调整和 SSE 流式输出的 AI Chat
 - 中英文内容切换，并使用 `localStorage` 保存语言偏好
 - 展示个人履历、技术栈、项目经历和联系方式
 - 展示项目链接、开发日志摘要、文章列表和完整正文
@@ -27,7 +29,7 @@ MengLong Wang 的双语个人主页、开发日志和全栈项目集合。
 
 ### 历史星河
 
-历史星河集成在 `#/history-galaxy`，从个人主页精选项目入口进入，提供全屏历史探索体验。
+历史星河是同一仓库中独立构建的静态站，正式入口为 `/apps/history-galaxy/`。从个人主页精选项目入口进入后提供全屏历史探索体验；发布主页不会把 Three.js 或星河数据打进主页运行时。
 
 - 唐、五代、宋、元、明、清、近代七段时代导航
 - 从先秦至 1949 年的 1200 个有来源历史事件，包含 1000 篇基础档案与 200 篇核心档案；星体大小与光效体现事件影响力
@@ -35,7 +37,7 @@ MengLong Wang 的双语个人主页、开发日志和全栈项目集合。
 - 点击事件触发选中特效、相机聚焦和人物故事面板
 - 键盘左右键切换事件，`Escape` 关闭故事
 - 移动端底部故事抽屉，以及 WebGL 不可用时的二维降级浏览
-- 使用 Three.js、React Three Fiber、Drei 和 Postprocessing；首页静态预览不加载 Three.js 运行时
+- 使用 Three.js、React Three Fiber、Drei 和 Postprocessing；主页静态预览不加载 Three.js 运行时
 
 ### 今天吃什么卡
 
@@ -60,7 +62,7 @@ npm run content:check-generated # 校验英文内容与源内容哈希、字段�
 
 `dev`、`test`、`build` 前自动编译。`public/history-content/generated/` 与 `src/history/generated/` 为忽略提交的生成目录，请修改内容源后重新编译。首屏仅加载紧凑索引，完整档案按时代懒加载并缓存；新增时代、事件及人物后重新编译即可复用搜索、筛选和档案引擎。七段快捷导航提供唐至近代的跳转入口；先秦、秦汉、魏晋等事件也可通过搜索、时代筛选和二维年表访问。
 
-档案地址为 `#/history-galaxy/event/<id>`、`#/history-galaxy/person/<id>` 和 `#/history-galaxy/theme/<id>`。搜索、年代和分类等筛选保存在 URL 中；相机、已选事件和释放后的拖动偏移使用版本化本地会话保存。浏览器返回可恢复探索上下文。
+独立站内部仍使用 Hash 路由：`/apps/history-galaxy/#/history-galaxy/event/<id>`、`.../person/<id>` 和 `.../theme/<id>`。搜索、年代和分类等筛选保存在 URL 中；相机、已选事件和释放后的拖动偏移使用版本化本地会话保存。浏览器返回可恢复探索上下文。旧主页的 `#/history-galaxy/...` 链接会保留查询参数和档案 ID 并跳转到新地址。
 
 场景按总览、时代、时期、近景四档 LOD 控制星点、标签和关系线预算，手机使用更小预算。屏幕空间四叉树在 Worker 中聚合相邻光点，近距离按语义组区分，点击聚类可放大；选中、搜索目标和影响力 5 的事件优先保留，保护集合可以超过普通预算。批量星体使用实例化绘制。
 
@@ -82,7 +84,8 @@ npm run dev
 Vite 默认在 `http://localhost:5173` 启动开发服务器。
 
 - 个人主页：`http://localhost:5173/`
-- 历史星河：`http://localhost:5173/#/history-galaxy`
+- AI Chat：`http://localhost:5173/playground/`
+- 历史星河：运行 `npm run dev:history` 后打开 `http://localhost:5173/apps/history-galaxy/history.html`
 - Build Log：`http://localhost:5173/#/build-log`
 
 ## 项目结构
@@ -94,10 +97,14 @@ Vite 默认在 `http://localhost:5173` 启动开发服务器。
 | `content/zh/`、`content/en/` | 中文源内容与自动生成的英文内容 |
 | `src/posts.ts` | Build Log 内容解析 |
 | `src/HistoryGalaxyApp.tsx`、`src/history/` | 历史星河入口、事件数据和空间映射 |
+| `src/HistorySiteApp.tsx`、`src/history-main.tsx` | 独立历史星河站入口 |
 | `src/scene/` | 3D 场景、事件星体、相机和选中特效 |
+| `src/playground/` | 主页 `/playground/` 的 AI Chat 前端 |
 | `src/components/` | 主页精选项目、日志组件、历史导航和故事面板 |
+| `scripts/activate-release.py`、`scripts/deploy-static.sh` | 分应用原子发布与回滚 |
+| `deploy/nginx/` | 同域名静态路由和 API 反向代理模板 |
 | `eat-card/` | 独立的小程序、API、管理后台与数据库脚本 |
-| `netlify.toml` | 根站点构建与 SPA fallback 配置 |
+| `netlify.toml` | 迁移期间保留的旧 Netlify 配置 |
 
 ## 测试与构建
 
@@ -113,7 +120,9 @@ GitHub Actions 会在向 `main` 分支推送或提交 Pull Request 时自动执�
 
 ## 内容管理后台
 
-仓库所有者可在 [生产内容后台](https://menglong-build-log.netlify.app/admin/) 使用 GitHub 账号登录，编辑中文主页、简历和 Build Log。保存后，Decap Turbo 会创建或更新 `cms/*` PR；GitHub Actions 自动生成英文、运行 CI、按已验证提交执行 squash merge，随后由 Netlify 发布。
+仓库所有者可通过现有 Decap 内容后台使用 GitHub 账号登录，编辑中文主页、简历和 Build Log。保存后，Decap Turbo 会创建或更新 `cms/*` PR；GitHub Actions 自动生成英文、运行 CI、按已验证提交执行 squash merge。
+
+目前 CMS 的站点地址和 Decap Turbo 允许来源仍指向旧 Netlify 后台。迁移到正式域名后需要同步更新这些配置；这只是后台入口迁移，不改变中文唯一人工编辑源和 PR 审核流程。具体凭据与故障恢复见 [`docs/cms-operations.md`](docs/cms-operations.md)。
 
 - 只编辑 `content/zh/**`；`content/en/**` 是生成结果，不应手工修改。
 - 后台不提供绕过 CI 的直接发布，保存一次即可等待自动流程完成。
@@ -151,18 +160,13 @@ relatedProject: 示例项目
 
 ### 个人主页
 
-根目录的 [`netlify.toml`](netlify.toml) 固定 Node.js 20、`npm run build` 构建命令、`dist` 发布目录和单页应用重定向规则。
+主页 `/` 与 AI Chat `/playground/` 使用 `npm run build`，产物为 `dist/`；独立历史站 `/apps/history-galaxy/` 使用 `npm run build:history`，产物为 `dist-history/`。`npm run build:sites` 构建两者。
 
-一个 Netlify 站点部署个人主页、`#/history-galaxy`、`#/build-log` 及文章详情等全部 Hash 路由，无需为历史星河创建独立站点。`netlify.toml` 是构建设置的来源，生产产物输出到 `dist/`。
+LOL RAG 在独立仓库构建并发布到 `/apps/lol-rag/`。Weekend Merge 保留现有服务器部署和独立地址。KnowledgeOps RAG 保留开发日志，不再列为主要在线项目。
 
-以下是推荐部署流程；本文更新不代表已经推送 GitHub 或执行 Netlify 部署。将 Netlify 项目连接到此 GitHub 仓库后，可配置：
+CI 检查中英文内容、测试和两套构建，并上传各自的静态产物。只有启用 `SELF_HOST_DEPLOY_ENABLED=true` 并配置服务器凭据后，成功的 `main` push CI 才会触发自托管发布。每个应用使用自己的版本目录和 `current` 链接，主页发布不覆盖其他应用。
 
-- `main` 分支合并后自动构建并发布生产站点
-- Pull Request 自动生成 Deploy Preview，合并前即可检查页面
-- GitHub Actions 的 `test-and-build` 任务负责测试和生产构建校验
-- 建议设置分支规则，要求 Pull Request 和 CI 通过后才能合并到 `main`
-
-代码更新流程是：新建分支、提交 Pull Request、检查 CI 与 Deploy Preview，然后合并。日常内容更新优先使用 CMS 自动发布流程。两种方式都无需手动上传 `dist`。
+当前线上已手工部署到 `wml.ailoong.net.cn`：主页、历史星河和 LOL RAG 均由 Nginx 从 `/srv/portfolio/static` 提供，AI Chat 与 LOL RAG 后端分别监听 `127.0.0.1:8001`、`8002`，公网入口由 Cloudflare Tunnel 转发。GitHub Actions 自动发布仍需配置服务器凭据和 `SELF_HOST_DEPLOY_ENABLED=true` 后启用。Nginx 路由、Cloudflare/HTTPS 配置说明见[部署手册](docs/deployment/single-domain.md)。`netlify.toml` 仅保留为迁移期间的旧平台配置。
 
 ### Eat Card API
 

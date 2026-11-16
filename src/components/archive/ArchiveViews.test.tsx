@@ -1,7 +1,7 @@
 import { act, render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import HistoryRoutes from '../../HistoryRoutes';
-import App from '../../App';
+import App from '../../HistorySiteApp';
 import { archiveFixture } from '../../../tests/fixtures/historyArchives';
 import type { ArchiveRoute } from '../../routes';
 

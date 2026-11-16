@@ -59,6 +59,23 @@ it('sends ranked search targets to protection and the exact selected event to th
   expect(screen.getByRole('dialog', { name: '贞观之治' })).toHaveFocus();
 });
 
+it('keeps camera reporting and unfiltered viewport updates outside the full catalog render path', async () => {
+  await act(async () => { render(<HistoryGalaxyApp loader={loader()} />); });
+  await waitFor(() => expect(boundary.scene?.events).toHaveLength(productionCount));
+  await act(async () => {});
+  const initialScene = boundary.scene;
+  for (let index = 0; index < 5; index++) {
+    act(() => initialScene.onCameraChange({ target: [index, 1, 0], distance: 30 + index }));
+    act(() => initialScene.onViewportChange(new Set(index % 2 ? ['zhenguan'] : ['anshi'])));
+  }
+  expect(boundary.scene).toBe(initialScene);
+  act(() => window.dispatchEvent(new Event('pagehide')));
+  expect(JSON.parse(localStorage.getItem('history-galaxy-session-v2')!).camera).toEqual({ target: [4, 1, 0], distance: 34 });
+  await userEvent.click(screen.getByRole('checkbox', { name: '仅当前视野' }));
+  expect(boundary.scene.eventOpacities.get('anshi')).toBe(1);
+  expect(boundary.scene.eventOpacities.get('zhenguan')).toBe(0.15);
+});
+
 it('restores camera and released offsets into WebGL and debounces changed state before a pagehide flush', async () => {
   localStorage.setItem('history-galaxy-session-v2', JSON.stringify({ version: 2, selectedId: 'zhenguan', camera: { target: [-12, 2, 1], distance: 24 }, fixedOffsets: { zhenguan: [1.2, -0.5], removed: [1, 1] } }));
   await act(async () => { render(<HistoryGalaxyApp loader={loader()} />); });

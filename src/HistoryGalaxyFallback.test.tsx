@@ -1,6 +1,6 @@
 import { act, render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import App from './App';
+import App from './HistorySiteApp';
 import HistoryGalaxyApp from './HistoryGalaxyApp';
 import { createHistoryContentLoader } from './history/content/loader';
 import { parseExplorerState } from './history/explorer/state';

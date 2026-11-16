@@ -1,7 +1,9 @@
 .superpowers/
 .worktrees/
 node_modules/
+.playwright-cli/
 dist/
+dist-history/
 public/history-content/generated/
 src/history/generated/
 .env
@@ -14,6 +16,8 @@ output/playwright/
 vite.config.d.ts
 vite.config.js
 .DS_Store
+__pycache__/
+*.py[cod]
 
 # Local Netlify folder
 .netlify

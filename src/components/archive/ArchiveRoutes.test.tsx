@@ -1,6 +1,6 @@
 import { act, cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import App from '../../App';
+import App from '../../HistorySiteApp';
 import { getHistoryReturnLocation, rememberHistoryLocation, restoreHistoryReturnLocation } from '../../routes';
 import { createHistoryContentLoader } from '../../history/content/loader';
 import { HISTORY_SESSION_KEY, loadHistorySession } from '../../history/session';

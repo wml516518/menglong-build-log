@@ -27,7 +27,7 @@ describe('History Galaxy app', () => {
   it('provides a route back to the portfolio homepage', async () => {
     await act(async () => { render(<HistoryGalaxyApp loader={testLoader()} />); });
 
-    expect(screen.getByRole('link', { name: '返回主页' })).toHaveAttribute('href', '#home');
+    expect(screen.getByRole('link', { name: '返回主页' })).toHaveAttribute('href', '/#projects');
   });
 
   beforeEach(() => {

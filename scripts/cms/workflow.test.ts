@@ -10,7 +10,14 @@ it('keeps ordinary CI secret-free and validates content before tests', () => {
   expect(ci.on).toHaveProperty('push'); expect(ci.on).toHaveProperty('pull_request');
   expect(ci.permissions).toEqual({ contents: 'read' });
   const runs = ci.jobs['test-and-build'].steps.map(s => s.run).filter(Boolean);
-  expect(runs).toEqual(['npm ci', 'npm run content:validate', 'npm run content:check-generated', 'npm test', 'npm run build']);
+  expect(runs).toEqual([
+    'npm ci',
+    'npm run content:validate',
+    'npm run content:check-generated',
+    'npm test',
+    'npm run build:sites',
+    'python3 -m unittest discover -s tests/deploy'
+  ]);
   expect(JSON.stringify(ci)).not.toContain('secrets.');
 });
 it('isolates default-branch tools, gates secrets, pins PR checkout and merge', () => {

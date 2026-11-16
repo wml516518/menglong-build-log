@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:history": "vite --config vite.history.config.ts",
     "build": "tsc -b && vite build",
+    "build:history": "npm run history:compile && tsc -b && vite build --config vite.history.config.ts",
+    "build:sites": "npm run build && npm run build:history",
     "history:compile": "tsx scripts/history-content.ts compile",
     "history:check": "tsx scripts/history-content.ts check",
     "predev": "npm run history:compile",

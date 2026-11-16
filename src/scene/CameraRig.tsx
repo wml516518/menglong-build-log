@@ -64,6 +64,7 @@ export function CameraRig({ selectedEvent, selectedPosition, resetSignal, select
   const dateX = timeline?.yearToX ?? yearToX, calendarYear = timeline?.xToYear ?? xToYear;
   const minX = timeline?.minX ?? -31, maxX = timeline?.maxX ?? 31;
   const camera = useThree((state) => state.camera);
+  const scene = useThree((state) => state.scene);
   const gl = useThree((state) => state.gl);
   const controls = useRef<OrbitControlsImpl>(null);
   const travelTarget = useRef(initialCamera?.target ? new THREE.Vector3(...initialCamera.target) : selectedEvent ? new THREE.Vector3(...(selectedPosition ?? getEventPosition(selectedEvent))) : new THREE.Vector3(dateX(DEFAULT_HISTORY_YEAR), 0.8, 0));
@@ -171,6 +172,10 @@ export function CameraRig({ selectedEvent, selectedPosition, resetSignal, select
       sinceReport.current += delta;
       if (!lastReported.current || sinceReport.current >= 0.2) reportCamera();
       const distance = camera.position.distanceTo(controls.current.target);
+      if (scene.fog instanceof THREE.Fog) {
+        scene.fog.near = Math.max(20, distance * 0.7);
+        scene.fog.far = Math.max(76, distance * 2.4);
+      }
       const previous = lastDistance.current;
       const level = getLodLevel(distance, previous?.level);
       if (!previous || level !== previous.level || Math.abs(distance - previous.distance) >= Math.max(0.5, previous.distance * 0.02)) {
