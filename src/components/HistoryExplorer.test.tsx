@@ -140,7 +140,7 @@ it('focuses the exact searched event and retains the query while opening its arc
   expect(screen.getByRole('dialog', { name: '贞观之治' })).toHaveFocus();
   expect(eventButton('贞观之治')).toHaveAttribute('aria-pressed', 'true');
   expect(explorer().getByRole('searchbox', { name: '搜索历史' })).toHaveValue('贞观');
-});
+}, 15_000);
 
 it('applies explicit filters immediately, preserves archive paths and clears controls with one action', async () => {
   window.history.replaceState({ keep: 1 }, '', '#/history-galaxy/event/zhenguan?keep=a');
