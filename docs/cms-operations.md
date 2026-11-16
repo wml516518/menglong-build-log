@@ -2,11 +2,11 @@
 
 本文面向仓库所有者，说明如何通过 Decap CMS 修改个人主页、简历和 Build Log，以及如何处理自动翻译、CI 与部署故障。
 
-> 迁移提示：当前 CMS 的生产入口和 Decap Turbo 允许来源仍指向旧 Netlify 后台。正式切换到统一域名后，需要同步更新这些配置。PR 合并后的正式发布已由自托管部署 workflow 接管；未配置 `SELF_HOST_DEPLOY_ENABLED=true` 时只会完成 CI，不会更新线上站点。
+> CMS 生产入口与 Decap Turbo 站点的后台地址均已切换到统一域名。PR 合并后的正式发布由自托管部署 workflow 接管；未配置 `SELF_HOST_DEPLOY_ENABLED=true` 时只会完成 CI，不会更新线上站点。
 
 ## 后台入口与权限
 
-- 生产后台：<https://menglong-build-log.netlify.app/admin/>
+- 生产后台：<https://wml.ailoong.net.cn/admin/>
 - 登录方式：使用仓库所有者的 GitHub 账号登录 Decap Turbo。
 - 后台只编辑 `content/zh/**` 中文源内容和 `public/uploads/**` 上传资源。
 - `content/en/**` 是自动生成内容，不要在后台、GitHub 网页或本地手工修改。
