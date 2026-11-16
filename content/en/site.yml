@@ -1,6 +1,6 @@
 _translation:
   policyVersion: 1
-  sourceHash: 127107f43f56f298ae0d8939e26d61b7461d4fd922d3f6bf2253daa9a084cf8f
+  sourceHash: 716663608c0099114797b26effe51f420d93485967fd4adb54b1aed46dbff3d5
 about: 'I focus on full-stack development, AI products, and productivity tools. This site will document my portfolio roadmap, starting from a personal homepage and gradually expanding into deployable AI applications. I will also continuously record the technical choices and iteration process in real projects.'
 contact:
   - href: 'https://github.com/wml516518'
@@ -61,11 +61,12 @@ projects:
     stack:
       - React
       - TypeScript
-      - Gemini Function Calling
-      - Netlify Functions
+      - DeepSeek Function Calling
+      - Node.js / SQLite
+      - Cloudflare Tunnel
       - Open-Meteo
     status: Live
-    summary: An observable two-person weekend planning Agent that generates three compromises and replans only affected stops after feedback.
+    summary: 'Two-person to six-person weekend negotiation AI Agent, where members independently fill in preferences; DeepSeek generates three compromise plans through controlled tool calling, and after feedback, only reorders affected segments.'
     title: Weekend Merge
   - githubUrl: 'https://github.com/wml516518/menglong-build-log'
     liveUrl: /
