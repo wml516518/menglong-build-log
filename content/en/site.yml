@@ -1,6 +1,6 @@
 _translation:
   policyVersion: 1
-  sourceHash: 716663608c0099114797b26effe51f420d93485967fd4adb54b1aed46dbff3d5
+  sourceHash: db77488440618a9e16594e2178f2e2bfd536f67cb61d3fad878e784680c5f047
 about: 'I focus on full-stack development, AI products, and productivity tools. This site will document my portfolio roadmap, starting from a personal homepage and gradually expanding into deployable AI applications. I will also continuously record the technical choices and iteration process in real projects.'
 contact:
   - href: 'https://github.com/wml516518'
@@ -44,6 +44,19 @@ profile:
   role: Full-stack Developer
   secondaryAction: Read Log
 projects:
+  - githubUrl: 'https://github.com/wml516518/StockAI'
+    liveUrl: /apps/stockai/
+    stack:
+      - Vue 3
+      - .NET 10
+      - ASP.NET Core
+      - Python
+      - EF Core
+      - SQLite
+      - Docker
+    status: Live
+    summary: 'A one-stop stock research platform with watchlists, screening, AI analysis, backtesting, technical indicators, and price alerts, built with Vue, ASP.NET Core, and Python services.'
+    title: StockAI Stock Research Platform
   - githubUrl: 'https://github.com/wml516518/lol-rag'
     liveUrl: /apps/lol-rag/
     stack:

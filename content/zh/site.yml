@@ -45,6 +45,19 @@ historyGalaxy:
   action: 进入星河
   imageAlt: 深邃三维空间中，一条发光的中国历史时间轴与众多事件星点向远方延伸
 projects:
+  - title: StockAI 股票研究平台
+    status: 已上线
+    summary: 自选股、智能选股、AI 分析、回测、技术指标与价格提醒的一站式股票研究平台，采用 Vue、ASP.NET Core 与 Python 多服务架构。
+    stack:
+      - Vue 3
+      - .NET 10
+      - ASP.NET Core
+      - Python
+      - EF Core
+      - SQLite
+      - Docker
+    githubUrl: https://github.com/wml516518/StockAI
+    liveUrl: /apps/stockai/
   - title: LOL-RAG 英雄联盟数据 Agent
     status: 已上线
     summary: 基于官方 Data Dragon 数据 + 示例攻略语料：Agent 在结构化查询与向量检索之间自主路由，对话页展示可折叠的工具调用轨迹。

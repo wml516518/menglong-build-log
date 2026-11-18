@@ -18,7 +18,10 @@ npm run build       # 主页、Build Log、AI Chat → dist/
 npm run build:history  # 历史星河 → dist-history/
 ```
 
-改动后的最低验收：四个入口 `/`、`/playground/`、`/apps/history-galaxy/`、`/apps/lol-rag/` 全部 200，两个 health 返回 `status: ok`。
+改动后的最低验收：五个入口 `/`、`/playground/`、`/apps/history-galaxy/`、
+`/apps/lol-rag/`、`/apps/stockai/` 全部 200（StockAI 是 Basic Auth，未认证
+401 也视为入口可达），两个 health 返回 `status: ok`，StockAI health 返回
+`status: OK`。
 
 ## CMS
 
