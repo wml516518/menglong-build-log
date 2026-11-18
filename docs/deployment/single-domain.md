@@ -1,5 +1,7 @@
 # 同域名部署手册
 
+> 迁移过程中踩过的具体问题（Cloudflare、Nginx、macOS 打包、Python 3.6、Turbo 后台地址等）见 [踩坑清单](pitfalls.md)。改部署链路前先读。
+
 ## 访问与构建
 
 | 应用 | 地址 | 构建 | 产物 | 服务器目录 |
@@ -17,14 +19,14 @@ AI Chat 前端复用中文预设、参数与 SSE 交互，集成在主页 `/play
 
 需要确认正式域名、SSH 主机与端口、发布用户、是否使用宝塔、已有 Nginx 配置和后端运行位置。静态站统一放在 `/srv/portfolio/static`，后端与密钥目录留在其外；默认端口 `8001`、`8002` 是模板参数，正式启用时与实际环境核对。
 
-安装 Nginx、Python 3、tar，准备由发布用户拥有的 `/srv/portfolio`。Nginx worker 必须能读取此目录的父目录及内容。服务器静态托管不要求 Node，Node 20 的构建在 CI 完成。
+安装 Nginx、Python 3、tar，准备由发布用户拥有的 `/srv/portfolio/static`。Nginx worker 必须能读取此目录的父目录及内容。服务器静态托管不要求 Node，Node 20 的构建在 CI 完成。
 
 首次发布应先上传 home、history、lol-rag 三个产物，再启用新域名入口，避免主页链接指向尚未安装的应用。当前线上已按此顺序完成。启用 GitHub 自动发布前，手动上传任一构建目录后可在服务器执行：
 
 ```bash
-python3 activate-release.py home first-home /absolute/path/to/home-build --root /srv/portfolio
-python3 activate-release.py history first-history /absolute/path/to/history-build --root /srv/portfolio
-python3 activate-release.py lol-rag first-lol /absolute/path/to/lol-build --root /srv/portfolio
+python3 activate-release.py home first-home /absolute/path/to/home-build --root /srv/portfolio/static
+python3 activate-release.py history first-history /absolute/path/to/history-build --root /srv/portfolio/static
+python3 activate-release.py lol-rag first-lol /absolute/path/to/lol-build --root /srv/portfolio/static
 ```
 
 只允许 app 为 home/history/lol-rag。每次发布写入 `<app>/releases/<release>`，验证入口后原子切换 `<app>/current`，不会删除其他应用。旧 assets 保留供已打开页面加载懒加载模块。旧版本和 incoming 会占用磁盘，应在完成验证后按自己的保留周期清理，切勿删除当前链接所指目录。
