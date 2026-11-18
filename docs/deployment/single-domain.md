@@ -9,9 +9,14 @@
 | 个人主页、Build Log、AI Chat | `/`、`/#/build-log`、`/playground/` | `npm run build` | `dist/` | `/srv/portfolio/static/home/current/` |
 | 历史星河 | `/apps/history-galaxy/` | `npm run build:history` | `dist-history/` | `/srv/portfolio/static/history/current/` |
 | LOL RAG（独立仓库） | `/apps/lol-rag/` | 在 frontend 执行 `npm run build:self-host` | `frontend/dist/` | `/srv/portfolio/static/lol-rag/current/` |
+| StockAI（独立仓库） | `/apps/stockai/` | `VITE_BASE_PATH=/apps/stockai/ npm run build` | `frontend/dist/` | Docker Compose，`127.0.0.1:18081` |
 | Weekend Merge | `https://weekendmerge.ailoong.net.cn` | 沿用现状 | 沿用现状 | 不变 |
 
 历史星河内部仍使用 `#/history-galaxy/event/...` 等 Hash 路由。根地址会自动打开星河；旧主页的星河链接保留档案 ID 和筛选参数并跳转到新路径。两个构建入口相互独立；发布主页不需要把星河打进主页运行时。
+
+StockAI 由 `wml516518/StockAI` 的 CI/CD 独立构建并以 Docker Compose 运行，
+主页 Nginx 只负责把 `/apps/stockai/` 反向代理到 `http://127.0.0.1:18081/`，
+不把它的前端产物放进 `/srv/portfolio/static`。
 
 AI Chat 前端复用中文预设、参数与 SSE 交互，集成在主页 `/playground/`，不会在首页加载聊天页面。后端复用原 AIChatPlayground FastAPI；模型 API key 继续只放后端环境文件。KnowledgeOps 的仓库、开发日志和简历中的实际经历不删除，仅撤下主要在线项目卡片。
 
