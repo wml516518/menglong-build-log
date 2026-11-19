@@ -10,7 +10,8 @@ export const validSiteFixture = {
     latestBuildLog: '最新日志', allPosts: '全部文章', backToPosts: '返回文章',
     postNotFound: '未找到文章', readArticle: '阅读文章', tags: '标签', education: '教育经历',
     skills: '技术栈', certifications: '资格证书', languages: '语言能力',
-    experience: '工作经历', selectedProjects: '项目经验', technicalChallenge: '技术难点与处理'
+    experience: '工作经历', selectedProjects: '项目经验', technicalChallenge: '技术难点与处理',
+    technicalDetails: '技术详解', hideTechnicalDetails: '收起技术详解'
   },
   about: '专注全栈与 AI 产品。',
   homeSectionOrder: ['buildLog', 'projects', 'resume', 'experience', 'resumeProjects', 'about', 'contact'],

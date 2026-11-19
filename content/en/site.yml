@@ -1,6 +1,6 @@
 _translation:
   policyVersion: 1
-  sourceHash: a9d818291c39a0835605a8863dabe8236995a78dae176dddf95dd6ebdd765e57
+  sourceHash: b3fc905485339838ebf0ddbfa338b5145f391b91be71e2170c9dcfd7a1b1b745
 about: 'I focus on full-stack development, AI products, and productivity tools. This site will document my portfolio roadmap, starting from a personal homepage and gradually expanding into deployable AI applications. I will also continuously record the technical choices and iteration process in real projects.'
 contact:
   - href: 'https://github.com/wml516518'
@@ -163,6 +163,8 @@ sections:
   skills: Skills
   tags: Tags
   technicalChallenge: Technical challenge and failure handling
+  technicalDetails: View technical details
+  hideTechnicalDetails: Hide technical details
 seo:
   buildLogTitle: Build Log | MengLong Wang
   description: 'MengLong Wang''s personal homepage, project portfolio, and public build log.'

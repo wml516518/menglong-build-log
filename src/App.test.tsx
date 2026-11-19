@@ -113,6 +113,7 @@ describe('App', () => {
     render(<App />);
 
     expect(screen.getAllByText('Weekend Merge').length).toBeGreaterThanOrEqual(2);
+    expect(screen.getAllByRole('button', { name: /View technical details/ })).toHaveLength(6);
     const projectSection = document.getElementById('projects')!;
     const englishCard = within(projectSection).getByRole('heading', { level: 3, name: 'Weekend Merge' }).closest('article')!;
     expect(within(englishCard).getByRole('link', { name: 'Live' }))
@@ -122,9 +123,19 @@ describe('App', () => {
     expect(screen.getByText(
       'Two-person to six-person weekend negotiation AI Agent, where members independently fill in preferences; DeepSeek generates three compromise plans through controlled tool calling, and after feedback, only reorders affected segments.'
     )).toBeInTheDocument();
+    expect(within(englishCard).queryByText(/Agent orchestration failure: keep plans deliverable/))
+      .not.toBeInTheDocument();
+    const englishDetails = within(englishCard).getByRole('button', {
+      name: /View technical details.*Agent orchestration failure/i
+    });
+    expect(englishDetails).toHaveAttribute('aria-expanded', 'false');
+    await user.click(englishDetails);
+    expect(englishDetails).toHaveAttribute('aria-expanded', 'true');
     expect(within(englishCard).getByText(/Agent orchestration failure: keep plans deliverable/))
-      .toBeInTheDocument();
+      .toBeVisible();
     expect(within(englishCard).getByText(/contract validation/i)).toBeInTheDocument();
+    expect(within(englishCard).getByRole('button', { name: /Hide technical details/ }))
+      .toHaveAttribute('aria-expanded', 'true');
 
     await user.click(screen.getByRole('button', { name: '中' }));
 
@@ -132,7 +143,15 @@ describe('App', () => {
     expect(screen.getByText(
       '2–6 人周末协商 Agent，成员独立填写偏好，DeepSeek 通过受控工具调用生成三套折中方案，并在否决后只重排受影响区段。'
     )).toBeInTheDocument();
-    expect(screen.getByText(/Agent 编排失败时，怎样让计划仍然可交付/)).toBeInTheDocument();
+    const chineseCard = within(projectSection).getByRole('heading', { level: 3, name: 'Weekend Merge / 周末共识局' }).closest('article')!;
+    expect(within(chineseCard).getByRole('button', { name: /收起技术详解.*Agent 编排失败/ }))
+      .toHaveAttribute('aria-expanded', 'true');
+    await user.click(within(chineseCard).getByRole('button', { name: /收起技术详解.*Agent 编排失败/ }));
+    expect(within(chineseCard).queryByText(/Agent 编排失败时，怎样让计划仍然可交付/))
+      .not.toBeInTheDocument();
+    await user.click(within(chineseCard).getByRole('button', { name: /^技术详解.*Agent 编排失败/ }));
+    expect(within(chineseCard).getByText(/Agent 编排失败时，怎样让计划仍然可交付/))
+      .toBeVisible();
     expect(screen.getByText(
       '面向 2–6 人周末协商的可观察 AI Agent，成员通过邀请链接独立填写偏好，DeepSeek 调用受控工具生成三套折中行程，并在否决地点后仅重排受影响区段。'
     )).toBeInTheDocument();

@@ -4,7 +4,7 @@ import { translationGlossary } from './hash';
 
 // Explicit field allowlists; label lists additionally preserve exact glossary tokens.
 const navKeys = ['projects', 'buildLog', 'resume', 'about', 'contact'];
-const sectionKeys = [...navKeys, 'latestBuildLog', 'allPosts', 'backToPosts', 'postNotFound', 'readArticle', 'tags', 'education', 'skills', 'certifications', 'languages', 'experience', 'selectedProjects', 'technicalChallenge'];
+const sectionKeys = [...navKeys, 'latestBuildLog', 'allPosts', 'backToPosts', 'postNotFound', 'readArticle', 'tags', 'education', 'skills', 'certifications', 'languages', 'experience', 'selectedProjects', 'technicalChallenge', 'technicalDetails', 'hideTechnicalDetails'];
 const profileKeys = ['name', 'role', 'eyebrow', 'headline', 'intro', 'primaryAction', 'secondaryAction'];
 const basicKeys = ['name', 'gender', 'birthDate', 'location', 'email', 'github', 'role'];
 

@@ -73,6 +73,8 @@ collections:
               - { label: 工作经历, name: experience, widget: string, required: true }
               - { label: 项目经验, name: selectedProjects, widget: string, required: true }
               - { label: 技术难点标题, name: technicalChallenge, widget: string, required: true }
+              - { label: 技术详解按钮, name: technicalDetails, widget: string, required: true }
+              - { label: 收起技术详解按钮, name: hideTechnicalDetails, widget: string, required: true }
           - label: 关于内容
             name: about
             widget: text

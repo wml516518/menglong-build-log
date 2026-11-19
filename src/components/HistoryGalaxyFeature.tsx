@@ -1,24 +1,34 @@
 import { ArrowUpRight } from 'lucide-react';
 import type { FeaturedProject } from '../content';
+import { TechnicalChallengeDetails } from './TechnicalChallengeDetails';
 
 type HistoryGalaxyFeatureProps = {
   project: FeaturedProject;
+  panelLabel: string;
+  showDetailsLabel: string;
+  hideDetailsLabel: string;
 };
 
-export function HistoryGalaxyFeature({ project }: HistoryGalaxyFeatureProps) {
+export function HistoryGalaxyFeature({
+  project,
+  panelLabel,
+  showDetailsLabel,
+  hideDetailsLabel
+}: HistoryGalaxyFeatureProps) {
   return (
     <article className="history-feature">
       <div className="history-feature-copy">
         <p className="history-feature-status">{project.status}</p>
         <h3>{project.title}</h3>
         <p className="history-feature-summary">{project.summary}</p>
-        <div className="technical-challenge">
-          <p className="technical-challenge-label">{project.technicalChallenge.title}</p>
-          <p>{project.technicalChallenge.situation}</p>
-          <ul>
-            {project.technicalChallenge.response.map((item) => <li key={item}>{item}</li>)}
-          </ul>
-        </div>
+        <TechnicalChallengeDetails
+          challenge={project.technicalChallenge}
+          panelLabel={panelLabel}
+          showLabel={showDetailsLabel}
+          hideLabel={hideDetailsLabel}
+          className="history-details"
+          panelClassName="history-technical-challenge"
+        />
         <ul aria-label={project.stack.join(', ')}>
           {project.stack.map((item) => <li key={item}>{item}</li>)}
         </ul>
