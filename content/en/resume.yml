@@ -1,6 +1,6 @@
 _translation:
   policyVersion: 1
-  sourceHash: 090324d6114e844d2b565a8de6c7a39eccc7f6e9e81d26f426306bf306c23f93
+  sourceHash: f038d532bd41a47b057d13cc88cd08111371ba668d402837ef8872500295faa2
 basics:
   birthDate:
     label: Date of Birth
@@ -242,4 +242,4 @@ skills:
       - n8n
       - Coze
       - Ollama
-summary: 'I am a full-stack developer based in Shanghai, focusing on practical AI tools and deployable engineering projects. My capabilities cover frontend, backend, and DevOps workflows. I develop AI Agent applications using AI Coding approaches, including Claude, ChatGPT, Deepseek, GLM, and others.'
+summary: 'Nearly 10 years of full-stack and industry software R&D experience, long-term user of .NET/C#, and familiar with React, Vue, TypeScript, SQL Server/MySQL/SQLite, Redis, Linux, Docker, and CI/CD; able to independently complete requirements analysis, architecture and database design, front-end and back-end development, testing, deployment, and online issue diagnosis. In the past two years, focused on AI Agent and in-vehicle voice products, with hands-on experience in Intent/Slot, tool invocation and controlled orchestration, Function Calling, RAG, Prompt Engineering, multi-turn context and memory, NLU evaluation, multilingual TTS, etc., and participated in complete delivery from protocol design to launch verification for Google AAA, Microsoft InCarVA, Weekend Merge, etc. Previously long-term responsible for medical imaging information systems and enterprise management platforms, valuing interface contracts, data consistency, observability, performance optimization, and cross-team collaboration, able to decompose complex business requirements into stable, maintainable, and deployable full-stack solutions.'
