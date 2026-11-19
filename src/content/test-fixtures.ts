@@ -10,18 +10,24 @@ export const validSiteFixture = {
     latestBuildLog: '最新日志', allPosts: '全部文章', backToPosts: '返回文章',
     postNotFound: '未找到文章', readArticle: '阅读文章', tags: '标签', education: '教育经历',
     skills: '技术栈', certifications: '资格证书', languages: '语言能力',
-    experience: '工作经历', selectedProjects: '项目经验'
+    experience: '工作经历', selectedProjects: '项目经验', technicalChallenge: '技术难点与处理'
   },
   about: '专注全栈与 AI 产品。',
   homeSectionOrder: ['buildLog', 'projects', 'resume', 'experience', 'resumeProjects', 'about', 'contact'],
   historyGalaxy: {
     title: '历史星河', status: '交互式 3D 作品', summary: '探索中国历史。',
-    stack: ['Three.js'], action: '进入星河', imageAlt: '历史时间轴'
+    stack: ['Three.js'], action: '进入星河', imageAlt: '历史时间轴',
+    technicalChallenge: {
+      title: '大数据量渲染', situation: '低性能设备可能掉帧。', response: ['使用 LOD 与二维降级。']
+    }
   },
   projects: [{
     title: '个人主页', status: '已上线', summary: '双语作品集。', stack: ['React'],
     githubUrl: 'https://github.com/wml516518/menglong-build-log',
-    liveUrl: 'https://menglong-build-log.netlify.app'
+    liveUrl: 'https://menglong-build-log.netlify.app',
+    technicalChallenge: {
+      title: '双语内容一致性', situation: '翻译可能滞后。', response: ['用内容哈希阻止陈旧翻译发布。']
+    }
   }],
   contact: [{ label: '邮箱', value: 'wml565868@gmail.com', href: 'mailto:wml565868@gmail.com' }],
   seo: {

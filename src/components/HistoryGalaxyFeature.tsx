@@ -12,6 +12,13 @@ export function HistoryGalaxyFeature({ project }: HistoryGalaxyFeatureProps) {
         <p className="history-feature-status">{project.status}</p>
         <h3>{project.title}</h3>
         <p className="history-feature-summary">{project.summary}</p>
+        <div className="technical-challenge">
+          <p className="technical-challenge-label">{project.technicalChallenge.title}</p>
+          <p>{project.technicalChallenge.situation}</p>
+          <ul>
+            {project.technicalChallenge.response.map((item) => <li key={item}>{item}</li>)}
+          </ul>
+        </div>
         <ul aria-label={project.stack.join(', ')}>
           {project.stack.map((item) => <li key={item}>{item}</li>)}
         </ul>

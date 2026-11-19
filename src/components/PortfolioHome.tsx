@@ -23,12 +23,12 @@ export function PortfolioHome({ copy, posts }: { copy: SiteContent; posts: Build
           <HistoryGalaxyFeature project={copy.historyGalaxy} />
           {copy.projects.map((project) => (
             <article className="project-row" key={project.title}>
-              <div>
+              <div className="project-title">
                 <p>{project.status}</p>
                 <h3>{project.title}</h3>
               </div>
-              <p>{project.summary}</p>
-              <ul>
+              <p className="project-summary">{project.summary}</p>
+              <ul className="project-stack">
                 {project.stack.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
@@ -44,6 +44,17 @@ export function PortfolioHome({ copy, posts }: { copy: SiteContent; posts: Build
                     GitHub
                   </a>
                 ) : null}
+              </div>
+              <div className="project-challenge">
+                <p className="technical-challenge-label">
+                  {copy.sections.technicalChallenge} · {project.technicalChallenge.title}
+                </p>
+                <div>
+                  <p>{project.technicalChallenge.situation}</p>
+                  <ul>
+                    {project.technicalChallenge.response.map((item) => <li key={item}>{item}</li>)}
+                  </ul>
+                </div>
               </div>
             </article>
           ))}

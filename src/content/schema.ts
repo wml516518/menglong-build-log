@@ -18,6 +18,11 @@ const httpUrl = z.string().trim().url().refine(
 );
 const projectUrl = z.union([httpUrl, z.string().trim().regex(/^\/(?:[a-z0-9]+(?:-[a-z0-9]+)*\/)*$/)]);
 const href = z.union([httpUrl, z.string().trim().regex(/^mailto:[^\s]+$/)]);
+const technicalChallengeSchema = z.object({
+  title: copy,
+  situation: copy,
+  response: z.array(copy).min(1)
+}).strict();
 const translationMetadataSchema = z.object({
   sourceHash: copy,
   policyVersion: z.number()
@@ -41,15 +46,17 @@ export const siteDocumentSchema = z.object({
     projects: copy, buildLog: copy, resume: copy, about: copy, contact: copy,
     latestBuildLog: copy, allPosts: copy, backToPosts: copy, postNotFound: copy,
     readArticle: copy, tags: copy, education: copy, skills: copy, certifications: copy,
-    languages: copy, experience: copy, selectedProjects: copy
+    languages: copy, experience: copy, selectedProjects: copy, technicalChallenge: copy
   }).strict(),
   about: copy,
   homeSectionOrder: homeSectionOrderSchema,
   historyGalaxy: z.object({
-    title: copy, status: copy, summary: copy, stack: z.array(copy), action: copy, imageAlt: copy
+    title: copy, status: copy, summary: copy, stack: z.array(copy), action: copy, imageAlt: copy,
+    technicalChallenge: technicalChallengeSchema
   }).strict(),
   projects: z.array(z.object({
-    title: copy, status: copy, summary: copy, stack: z.array(copy), githubUrl: httpUrl, liveUrl: projectUrl
+    title: copy, status: copy, summary: copy, stack: z.array(copy), githubUrl: httpUrl,
+    liveUrl: projectUrl, technicalChallenge: technicalChallengeSchema
   }).strict()),
   contact: z.array(z.object({ label: copy, value: copy, href }).strict()),
   seo: z.object({

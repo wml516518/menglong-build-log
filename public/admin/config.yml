@@ -72,6 +72,7 @@ collections:
               - { label: 语言能力, name: languages, widget: string, required: true }
               - { label: 工作经历, name: experience, widget: string, required: true }
               - { label: 项目经验, name: selectedProjects, widget: string, required: true }
+              - { label: 技术难点标题, name: technicalChallenge, widget: string, required: true }
           - label: 关于内容
             name: about
             widget: text
@@ -91,6 +92,18 @@ collections:
                 field: { label: 技术, name: item, widget: string, required: true }
               - { label: 按钮文案, name: action, widget: string, required: true }
               - { label: 图片说明, name: imageAlt, widget: string, required: true }
+              - label: 技术难点与故障处理
+                name: technicalChallenge
+                widget: object
+                required: true
+                fields:
+                  - { label: 难点标题, name: title, widget: string, required: true }
+                  - { label: 具体表现, name: situation, widget: text, required: true }
+                  - label: 处理策略
+                    name: response
+                    widget: list
+                    required: true
+                    field: { label: 策略, name: item, widget: text, required: true }
           - label: 项目列表
             name: projects
             widget: list
@@ -107,6 +120,18 @@ collections:
                 field: { label: 技术, name: item, widget: string, required: true }
               - { label: GitHub 地址, name: githubUrl, widget: string, required: true }
               - { label: 在线地址, name: liveUrl, widget: string, required: true }
+              - label: 技术难点与故障处理
+                name: technicalChallenge
+                widget: object
+                required: true
+                fields:
+                  - { label: 难点标题, name: title, widget: string, required: true }
+                  - { label: 具体表现, name: situation, widget: text, required: true }
+                  - label: 处理策略
+                    name: response
+                    widget: list
+                    required: true
+                    field: { label: 策略, name: item, widget: text, required: true }
           - label: 联系方式
             name: contact
             widget: list
