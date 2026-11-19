@@ -397,6 +397,9 @@ body.history-route {
 .portfolio-site .project-row {
   display: grid;
   grid-template-columns: 0.8fr 1.1fr 0.9fr auto;
+  grid-template-areas:
+    "title summary stack links"
+    "challenge challenge challenge challenge";
   gap: 28px;
   border-top: 1px solid #d8d4ca;
   padding: 22px 0;
@@ -407,12 +410,18 @@ body.history-route {
   margin-bottom: 0;
 }
 
-.portfolio-site .project-row > p {
+.portfolio-site .project-row .project-title {
+  grid-area: title;
+}
+
+.portfolio-site .project-row .project-summary {
+  grid-area: summary;
   color: #3f3b35;
   line-height: 1.55;
 }
 
-.portfolio-site .project-row ul {
+.portfolio-site .project-row .project-stack {
+  grid-area: stack;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -421,16 +430,55 @@ body.history-route {
   padding: 0;
 }
 
-.portfolio-site .project-row li {
+.portfolio-site .project-row .project-stack li {
   border: 1px solid #c8c2b7;
   font-size: 12px;
   padding: 6px 8px;
 }
 
 .portfolio-site .project-links {
+  grid-area: links;
   display: flex;
   gap: 8px;
   justify-content: flex-end;
+}
+
+.portfolio-site .project-challenge {
+  grid-area: challenge;
+  display: grid;
+  grid-template-columns: minmax(160px, 0.45fr) minmax(0, 1fr);
+  gap: 24px;
+  border-left: 3px solid #6b7562;
+  background: #eeeae1;
+  padding: 16px 18px;
+}
+
+.portfolio-site .project-challenge > div > p {
+  color: #3f3b35;
+  line-height: 1.55;
+  margin: 0 0 10px;
+}
+
+.portfolio-site .project-challenge ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.portfolio-site .project-challenge li {
+  color: #3f3b35;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.portfolio-site .technical-challenge-label {
+  color: #263024;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .portfolio-site .project-links a {
@@ -714,6 +762,19 @@ body.history-route {
     justify-content: flex-start;
   }
 
+  .portfolio-site .project-row {
+    grid-template-areas:
+      "title"
+      "summary"
+      "stack"
+      "links"
+      "challenge";
+  }
+
+  .portfolio-site .project-challenge {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .portfolio-site .resume-facts,
   .portfolio-site .skill-groups {
     grid-template-columns: 1fr;
@@ -742,6 +803,36 @@ body.history-route {
   background: #17191e;
   color: #f6f4ef;
   overflow-wrap: anywhere;
+}
+
+.portfolio-site .history-feature .technical-challenge {
+  display: grid;
+  gap: 10px;
+  border-left: 3px solid #c7a95d;
+  margin: 18px 0;
+  padding-left: 16px;
+}
+
+.portfolio-site .history-feature .technical-challenge > p {
+  color: #d8d0c0;
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.portfolio-site .history-feature .technical-challenge ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.portfolio-site .history-feature .technical-challenge li {
+  color: #d8d0c0;
+  border: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 0;
 }
 
 .portfolio-site .history-feature > * {

@@ -122,6 +122,9 @@ describe('App', () => {
     expect(screen.getByText(
       'Two-person to six-person weekend negotiation AI Agent, where members independently fill in preferences; DeepSeek generates three compromise plans through controlled tool calling, and after feedback, only reorders affected segments.'
     )).toBeInTheDocument();
+    expect(within(englishCard).getByText(/Agent orchestration failure: keep plans deliverable/))
+      .toBeInTheDocument();
+    expect(within(englishCard).getByText(/contract validation/i)).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: '中' }));
 
@@ -129,6 +132,7 @@ describe('App', () => {
     expect(screen.getByText(
       '2–6 人周末协商 Agent，成员独立填写偏好，DeepSeek 通过受控工具调用生成三套折中方案，并在否决后只重排受影响区段。'
     )).toBeInTheDocument();
+    expect(screen.getByText(/Agent 编排失败时，怎样让计划仍然可交付/)).toBeInTheDocument();
     expect(screen.getByText(
       '面向 2–6 人周末协商的可观察 AI Agent，成员通过邀请链接独立填写偏好，DeepSeek 调用受控工具生成三套折中行程，并在否决地点后仅重排受影响区段。'
     )).toBeInTheDocument();

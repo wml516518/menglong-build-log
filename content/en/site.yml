@@ -1,6 +1,6 @@
 _translation:
   policyVersion: 1
-  sourceHash: db77488440618a9e16594e2178f2e2bfd536f67cb61d3fad878e784680c5f047
+  sourceHash: a9d818291c39a0835605a8863dabe8236995a78dae176dddf95dd6ebdd765e57
 about: 'I focus on full-stack development, AI products, and productivity tools. This site will document my portfolio roadmap, starting from a personal homepage and gradually expanding into deployable AI applications. I will also continuously record the technical choices and iteration process in real projects.'
 contact:
   - href: 'https://github.com/wml516518'
@@ -16,6 +16,13 @@ historyGalaxy:
     - Three.js
     - React Three Fiber
     - 1200 events / 200 core archives
+  technicalChallenge:
+    title: Keep 1,200 events responsive with reliable fallbacks
+    situation: Rendering every event and label in the overview quickly exhausts the main thread and GPU. A failed search Worker, archive chunk, or WebGL initialization can also break the interactive experience.
+    response:
+      - Four LOD levels adapt to camera distance; a Worker-backed quadtree clusters nearby stars, while instancing keeps each frame within budget and selected, searched, or high-impact events remain visible.
+      - The first load includes only the compact index. Full archives load lazily by period, and a failed chunk preserves the summary with a scoped retry instead of blocking other events.
+      - Search falls back to local prefix matching when its Worker fails, and WebGL failure switches to a 2D timeline so filtering, search, stories, and archives remain available.
   status: Interactive 3D experience
   summary: 'Travel from pre-Qin times to 1949, explore 1200 sourced historical events and 200 core archives, and read the people and stories along the timeline.'
   title: History Galaxy
@@ -54,6 +61,13 @@ projects:
       - EF Core
       - SQLite
       - Docker
+    technicalChallenge:
+      title: Prevent stale market data from looking live when providers fail
+      situation: Quotes, fundamentals, and news come from separate upstreams. Any provider can time out, rate-limit, or return an empty response; silently swallowing those failures mixes data from different times and confidence levels.
+      response:
+        - The Python data service applies timeouts, retries, and multi-provider fallbacks, while ASP.NET Core normalizes stock codes, response shapes, and error boundaries so provider differences do not leak into the UI.
+        - Successful results enter a SQLite cache with expiry. On upstream failure, only explicitly marked stale fallback is allowed and its data timestamp remains visible, so old quotes cannot appear to be live.
+        - Each container has its own health check, and deployment verifies the database volume, login, and routes. A failed release keeps the existing volume so a provider outage does not become data loss.
     status: Live
     summary: 'A one-stop stock research platform with watchlists, screening, AI analysis, backtesting, technical indicators, and price alerts, built with Vue, ASP.NET Core, and Python services.'
     title: StockAI Stock Research Platform
@@ -66,6 +80,13 @@ projects:
       - SQLite
       - Data Dragon
       - Nginx
+    technicalChallenge:
+      title: Prevent invented answers when retrieval fails
+      situation: The guide corpus may miss a relevant passage, and lexical retrieval may return similar content from the wrong version or context. If the model fills those gaps from general knowledge, the result sounds credible but cannot be verified.
+      response:
+        - Champion and item facts use structured lookups; only strategy questions enter knowledge retrieval, followed by a minimum relevance threshold to reject weak matches.
+        - A miss returns “insufficient information.” The chat exposes tool calls and retrieved passages, and answers must use tool evidence rather than presenting model knowledge as official data.
+        - A regression set covers version mismatches, synonyms, aliases, and complete retrieval misses, tracking retrieval rate, answer accuracy, and unsupported-answer rate separately.
     status: Live
     summary: 'Based on official Data Dragon data + sample strategy corpus: the Agent autonomously routes between structured queries and vector retrieval, and the chat page displays a collapsible tool-call trace.'
     title: LOL-RAG League of Legends Data Agent
@@ -78,6 +99,13 @@ projects:
       - Node.js / SQLite
       - Cloudflare Tunnel
       - Open-Meteo
+    technicalChallenge:
+      title: 'Agent orchestration failure: keep plans deliverable'
+      situation: A model may return an invalid structure, skip a required tool, time out, or fail upstream. Blind retries can duplicate charges, while accepting the output can violate budgets, travel constraints, or member requirements.
+      response:
+        - Shared Zod schemas validate model output, tool inputs, and candidate plans. Deterministic code recalculates budgets, routes, and member constraints so contract validation prevents invalid plans from reaching the UI.
+        - The orchestrator bounds model turns and tool calls. The Worker persists jobs and events, so refreshes and polling never invoke the Agent twice; interrupted work is marked failed and only its owner can retry.
+        - A clearly labeled rule-planner takes over when the model is unavailable, delivering a constraints-safe baseline without requesting weather data or inventing live information.
     status: Live
     summary: 'Two-person to six-person weekend negotiation AI Agent, where members independently fill in preferences; DeepSeek generates three compromise plans through controlled tool calling, and after feedback, only reorders affected segments.'
     title: Weekend Merge
@@ -89,6 +117,13 @@ projects:
       - TypeScript
       - Nginx
       - Cloudflare
+    technicalChallenge:
+      title: Keep bilingual content and static releases in sync
+      situation: A CMS edit may violate the content schema, or English may become stale after Chinese changes. A failed build or upload can also leave pages, posts, and assets from different releases.
+      response:
+        - Zod validates the homepage and resume, while a source-content hash detects stale translations. CI blocks missing fields, obsolete English, and unsafe URLs.
+        - Every release rebuilds all four site entries from source, then requires tests, a production build, and PR validation before `main` can publish.
+        - Each package is published to its own versioned directory and activated atomically. A failed check restores the previous release instead of serving a mix of old and new assets.
     status: Live
     summary: A bilingual portfolio front door and public project journal.
     title: Personal Homepage + Build Log
@@ -99,6 +134,13 @@ projects:
       - FastAPI
       - Python
       - Nginx
+    technicalChallenge:
+      title: Keep streaming chat state trustworthy after interruptions
+      situation: An SSE response can stop mid-answer, while a model request may time out, lack configuration, or emit an unparsable event. Treating partial text as complete, or showing the raw upstream error, leaves users unsure whether to wait or retry.
+      response:
+        - The backend keeps model credentials and maps provider failures to stable states. The frontend parses SSE event by event and appends only complete, validated events.
+        - Offline, timeout, and request failures produce distinct user-facing messages. Existing conversation remains intact, the interrupted answer is marked incomplete, and retrying does not clear context.
+        - The UI never exposes keys, internal URLs, or stack traces. Tests cover event order, parse failures, and error states so one failure cannot leave the page stuck in “generating.”
     status: Live
     summary: A streaming chat interface with prompt presets and a FastAPI backend layer.
     title: AI Chat Playground
@@ -120,6 +162,7 @@ sections:
   selectedProjects: Selected Projects
   skills: Skills
   tags: Tags
+  technicalChallenge: Technical challenge and failure handling
 seo:
   buildLogTitle: Build Log | MengLong Wang
   description: 'MengLong Wang''s personal homepage, project portfolio, and public build log.'

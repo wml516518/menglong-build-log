@@ -32,6 +32,7 @@ sections:
   projects: 项目
   languages: 语言能力
   latestBuildLog: 最新构建日志
+  technicalChallenge: 技术难点与处理
 about: 我专注于全栈开发、AI 产品和效率工具。这个网站会记录我的作品路线，从个人主页开始，逐步扩展到可部署的 AI
   应用。我也会持续记录真实项目中的技术选择与迭代过程。
 historyGalaxy:
@@ -42,6 +43,13 @@ historyGalaxy:
     - Three.js
     - React Three Fiber
     - 1200 个事件 / 200 篇核心档案
+  technicalChallenge:
+    title: 1200 个事件如何保持流畅且可降级
+    situation: 总览若同时渲染全部星点和标签，会迅速压满主线程与 GPU；搜索 Worker、档案分包或 WebGL 初始化任一失败，也可能让复杂交互失效。
+    response:
+      - 按镜头远近设置四档 LOD，在 Worker 中用四叉树聚合相邻星点，并通过实例化绘制控制每帧预算；选中、搜索结果和重点事件始终优先保留。
+      - 首屏只加载紧凑索引，完整档案按时代懒加载；分包失败时保留摘要并只重试当前档案，不阻断其他事件浏览。
+      - Worker 不可用时回退到本地前缀搜索，WebGL 不可用时切换到二维时间轴，让筛选、搜索、故事和档案阅读继续工作。
   action: 进入星河
   imageAlt: 深邃三维空间中，一条发光的中国历史时间轴与众多事件星点向远方延伸
 projects:
@@ -56,6 +64,13 @@ projects:
       - EF Core
       - SQLite
       - Docker
+    technicalChallenge:
+      title: 多数据源失败时，如何避免把旧数据当成实时数据
+      situation: 行情、财务和新闻来自不同上游，任何一个服务都可能超时、限流或返回空数据；如果后端静默吞掉错误，页面就会把不同时间、不同可信度的结果混在一起。
+      response:
+        - Python 数据服务设置超时、重试和多数据源回退，ASP.NET Core 再统一处理股票代码、响应结构和错误边界，避免把供应商差异泄漏到 UI。
+        - 成功结果写入带过期时间的 SQLite 缓存；上游失败时只允许显式标记的旧缓存回退，并保留数据时间，不能让过期行情看起来像实时值。
+        - 三个容器分别做健康检查，部署前验证数据库卷、登录和路由；发布失败保留原数据卷，避免一次市场数据源故障演变成数据丢失。
     githubUrl: https://github.com/wml516518/StockAI
     liveUrl: /apps/stockai/
   - title: LOL-RAG 英雄联盟数据 Agent
@@ -68,6 +83,13 @@ projects:
       - SQLite
       - Data Dragon
       - Nginx
+    technicalChallenge:
+      title: 召回失败时，如何避免模型编造答案
+      situation: 攻略语料可能漏召回，字面检索也可能命中相似但版本或语境不对的内容；如果模型直接依靠常识补齐，就会生成听起来可信却无法核实的数据。
+      response:
+        - 英雄、装备等精确数据走结构化查询，只有攻略问题才进入知识检索，再用最低相关度阈值过滤弱结果。
+        - 未命中时返回“资料不足”，并在对话中展示工具调用和召回片段；回答必须基于工具结果，不能把模型常识伪装成官方数据。
+        - 用版本错配、同义说法、别名和完全无召回建立回归集，分别观察召回率、答案正确率与无依据回答率。
     githubUrl: https://github.com/wml516518/lol-rag
     liveUrl: /apps/lol-rag/
   - title: Weekend Merge / 周末共识局
@@ -80,6 +102,13 @@ projects:
       - Node.js / SQLite
       - Cloudflare Tunnel
       - Open-Meteo
+    technicalChallenge:
+      title: Agent 编排失败时，怎样让计划仍然可交付
+      situation: 模型可能返回非法结构、漏调工具，或在超时和上游故障时中断；直接重试容易重复扣费，放任结果又可能生成超预算、交通冲突或违反成员约束的行程。
+      response:
+        - 用共享 Zod 契约校验模型输出、工具输入和最终方案；预算、路线与成员约束由确定性代码重新计算，非法方案不会进入候选列表。
+        - Orchestrator 限制模型轮次和工具调用次数；Worker 持久化任务与事件，刷新或轮询不会重复调用 Agent，中断则明确标记失败并只允许发起人重试。
+        - 模型不可用时切换到标记清楚的 rule-planner，先交付满足硬约束的基础方案，同时不请求天气、不编造实时信息。
     githubUrl: https://github.com/wml516518/weekend-merge
     liveUrl: https://weekendmerge.ailoong.net.cn
   - title: 个人主页 + 构建日志
@@ -91,6 +120,13 @@ projects:
       - TypeScript
       - Nginx
       - Cloudflare
+    technicalChallenge:
+      title: 双语内容与静态发布如何保持一致
+      situation: CMS 编辑可能写出不符合结构的内容，中文更新后英文翻译也可能过期；如果构建或发布失败，直接覆盖线上文件还会让页面、日志和资源处在不同版本。
+      response:
+        - 用 Zod 校验主页与简历结构，并记录中文源内容哈希；CI 会阻止字段遗漏、翻译陈旧或 URL 不安全的发布。
+        - 每次从干净内容重新构建四个站点入口，先跑测试和构建，再在 PR 中验证，最后才允许 `main` 自动发布。
+        - 发布包使用独立版本目录和原子切换，保留上一版路径；检查失败时恢复旧版本，避免线上出现半套新资源。
     githubUrl: https://github.com/wml516518/menglong-build-log
     liveUrl: /
   - title: AI Chat Playground
@@ -101,6 +137,13 @@ projects:
       - FastAPI
       - Python
       - Nginx
+    technicalChallenge:
+      title: 流式回答中断后，怎样让状态仍可信
+      situation: SSE 可能在回答中途断开，模型也可能超时、未配置或返回不可解析的事件；若把半段文本当作完成，或直接显示上游异常，用户就无法判断该等待还是重试。
+      response:
+        - 后端保管模型密钥并把供应商错误映射成稳定状态，前端逐事件解析 SSE，只追加已经完整收到并校验过的事件。
+        - 断网、超时和请求失败分别显示可理解的中文提示，保留已有对话并把当前回答标记为未完成，重试不会清空上下文。
+        - 界面不暴露密钥、内部地址或原始堆栈；测试覆盖流式顺序、解析失败和错误状态，避免一次异常让页面永久停在“生成中”。
     githubUrl: https://github.com/wml516518/ai-chat-playground
     liveUrl: /playground/
 contact:

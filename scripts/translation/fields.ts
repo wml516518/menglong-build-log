@@ -4,7 +4,7 @@ import { translationGlossary } from './hash';
 
 // Explicit field allowlists; label lists additionally preserve exact glossary tokens.
 const navKeys = ['projects', 'buildLog', 'resume', 'about', 'contact'];
-const sectionKeys = [...navKeys, 'latestBuildLog', 'allPosts', 'backToPosts', 'postNotFound', 'readArticle', 'tags', 'education', 'skills', 'certifications', 'languages', 'experience', 'selectedProjects'];
+const sectionKeys = [...navKeys, 'latestBuildLog', 'allPosts', 'backToPosts', 'postNotFound', 'readArticle', 'tags', 'education', 'skills', 'certifications', 'languages', 'experience', 'selectedProjects', 'technicalChallenge'];
 const profileKeys = ['name', 'role', 'eyebrow', 'headline', 'intro', 'primaryAction', 'secondaryAction'];
 const basicKeys = ['name', 'gender', 'birthDate', 'location', 'email', 'github', 'role'];
 
@@ -17,9 +17,13 @@ function sitePaths(source: SiteDocument): string[] {
     ...navKeys.map(key => `nav.${key}`),
     ...profileKeys.map(key => `profile.${key}`),
     ...sectionKeys.map(key => `sections.${key}`), 'about',
-    ...['title', 'status', 'summary', 'action', 'imageAlt'].map(key => `historyGalaxy.${key}`),
+    ...['title', 'status', 'summary', 'action', 'imageAlt', 'technicalChallenge.title', 'technicalChallenge.situation'].map(key => `historyGalaxy.${key}`),
+    ...source.historyGalaxy.technicalChallenge.response.map((_, index) => `historyGalaxy.technicalChallenge.response.${index}`),
     ...localizedItems(source.historyGalaxy.stack, 'historyGalaxy.stack'),
-    ...source.projects.flatMap((_, index) => ['title', 'status', 'summary'].map(key => `projects.${index}.${key}`)),
+    ...source.projects.flatMap((item, index) => [
+      ...['title', 'status', 'summary', 'technicalChallenge.title', 'technicalChallenge.situation'].map(key => `projects.${index}.${key}`),
+      ...item.technicalChallenge.response.map((_, responseIndex) => `projects.${index}.technicalChallenge.response.${responseIndex}`)
+    ]),
     ...source.contact.map((_, index) => `contact.${index}.label`),
     ...['homeTitle', 'buildLogTitle', 'description'].map(key => `seo.${key}`)
   ];
