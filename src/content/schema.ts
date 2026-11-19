@@ -46,7 +46,8 @@ export const siteDocumentSchema = z.object({
     projects: copy, buildLog: copy, resume: copy, about: copy, contact: copy,
     latestBuildLog: copy, allPosts: copy, backToPosts: copy, postNotFound: copy,
     readArticle: copy, tags: copy, education: copy, skills: copy, certifications: copy,
-    languages: copy, experience: copy, selectedProjects: copy, technicalChallenge: copy
+    languages: copy, experience: copy, selectedProjects: copy, technicalChallenge: copy,
+    technicalDetails: copy, hideTechnicalDetails: copy
   }).strict(),
   about: copy,
   homeSectionOrder: homeSectionOrderSchema,

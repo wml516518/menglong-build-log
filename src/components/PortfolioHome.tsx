@@ -3,6 +3,7 @@ import type { SiteContent, HomeSectionId } from '../content/schema';
 import type { BuildLogPost } from '../posts';
 import { BuildLogPreview } from './BuildLogPreview';
 import { HistoryGalaxyFeature } from './HistoryGalaxyFeature';
+import { TechnicalChallengeDetails } from './TechnicalChallengeDetails';
 
 export function PortfolioHome({ copy, posts }: { copy: SiteContent; posts: BuildLogPost[] }) {
   const sectionRenderers: Record<HomeSectionId, () => ReactNode> = {
@@ -20,9 +21,14 @@ export function PortfolioHome({ copy, posts }: { copy: SiteContent; posts: Build
           <h2>{copy.sections.projects}</h2>
         </div>
         <div className="project-list">
-          <HistoryGalaxyFeature project={copy.historyGalaxy} />
+          <HistoryGalaxyFeature
+            project={copy.historyGalaxy}
+            panelLabel={copy.sections.technicalChallenge}
+            showDetailsLabel={copy.sections.technicalDetails}
+            hideDetailsLabel={copy.sections.hideTechnicalDetails}
+          />
           {copy.projects.map((project) => (
-            <article className="project-row" key={project.title}>
+            <article className="project-row" key={project.githubUrl}>
               <div className="project-title">
                 <p>{project.status}</p>
                 <h3>{project.title}</h3>
@@ -45,17 +51,14 @@ export function PortfolioHome({ copy, posts }: { copy: SiteContent; posts: Build
                   </a>
                 ) : null}
               </div>
-              <div className="project-challenge">
-                <p className="technical-challenge-label">
-                  {copy.sections.technicalChallenge} · {project.technicalChallenge.title}
-                </p>
-                <div>
-                  <p>{project.technicalChallenge.situation}</p>
-                  <ul>
-                    {project.technicalChallenge.response.map((item) => <li key={item}>{item}</li>)}
-                  </ul>
-                </div>
-              </div>
+              <TechnicalChallengeDetails
+                challenge={project.technicalChallenge}
+                panelLabel={copy.sections.technicalChallenge}
+                showLabel={copy.sections.technicalDetails}
+                hideLabel={copy.sections.hideTechnicalDetails}
+                className="project-details"
+                panelClassName="project-challenge"
+              />
             </article>
           ))}
         </div>
