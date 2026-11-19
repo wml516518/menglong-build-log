@@ -20,8 +20,12 @@ basics:
   role:
     label: 定位
     value: 全栈开发者
-summary: 我是一名位于上海的全栈开发者，关注实用AI 工具和可部署工程项目，能力覆盖前端、后端与 DevOps 工作流，用AI
-  Coding的方式开发AI Agent应用，包括Claude、ChatGPT、Deepseek、GLM等。
+summary: 拥有近 10 年全栈与行业软件研发经验，长期使用 .NET/C#，并熟悉 React、Vue、TypeScript、SQL
+  Server/MySQL/SQLite、Redis、Linux、Docker 与
+  CI/CD；能够独立完成需求分析、架构与数据库设计、前后端开发、测试、部署和线上问题定位。近两年聚焦 AI Agent 与车载语音产品，具备
+  Intent/Slot、工具调用与受控编排、Function Calling、RAG、Prompt Engineering、多轮上下文与记忆、NLU
+  评测、多语种 TTS 等落地经验，并参与 Google AAA、Microsoft InCarVA、Weekend Merge
+  等从协议设计到上线验证的完整交付。此前长期负责医疗影像信息系统与企业管理平台，重视接口契约、数据一致性、可观测性、性能优化和跨团队协作，能够把复杂业务需求拆解为稳定、可维护、可部署的全栈解决方案。
 education:
   - school: 河南财政金融学院
     detail: 计算机软件（大专），2013.09 - 2016.06。
@@ -92,12 +96,14 @@ projects:
       - Prompt Engineering
       - 多语种 TTS
   - name: Weekend Merge / 周末共识局
-    period: '2026.11'
-    description: 面向 2–6 人周末协商的可观察 AI Agent，成员通过邀请链接独立填写偏好，DeepSeek 调用受控工具生成三套折中行程，并在否决地点后仅重排受影响区段。
+    period: "2026.11"
+    description: 面向 2–6 人周末协商的可观察 AI Agent，成员通过邀请链接独立填写偏好，DeepSeek
+      调用受控工具生成三套折中行程，并在否决地点后仅重排受影响区段。
     highlights:
       - 设计受控规划状态机，通过天气、地点检索、路线、预算和方案校验五个白名单工具完成行程编排，并限制模型请求与工具调用次数。
       - 使用共享 Zod 契约和确定性逻辑校验预算、路线、时间、避让条件与锁定站点，通过 NDJSON 渐进返回可观察执行证据。
-      - 实现仅调整受影响区段的局部重排；使用 Node.js、SQLite、PM2 和 Cloudflare Tunnel 提供多人小组持久化与生产入口，模型失败时显式降级到规则规划。
+      - 实现仅调整受影响区段的局部重排；使用 Node.js、SQLite、PM2 和 Cloudflare Tunnel
+        提供多人小组持久化与生产入口，模型失败时显式降级到规则规划。
     stack:
       - React
       - TypeScript
