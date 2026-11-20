@@ -25,7 +25,7 @@ npm run build:history  # 历史星河 → dist-history/
 
 ## CMS
 
-`/admin/` 走 Decap Turbo，`public/admin/config.yml` 的 `turbo_site_id` 与 Turbo 站点 `MengLong Portfolio` 绑定。Turbo 站点的 `Admin interface URL(s)` 必须是 `https://wml.ailoong.net.cn/admin/`，否则登录报 `redirect_to origin ... is not the admin URL`。改后台地址是 Turbo 后台操作，不需要改代码。
+`/admin/` 走 Decap Turbo，`public/admin/config.yml` 的 `turbo_site_id` 与 Turbo 站点 `MengLong Portfolio` 绑定。Turbo 站点的 `Admin interface URL(s)` 必须是 `https://wml.ailoong.net.cn/admin/`，否则登录报 `redirect_to origin ... is not the admin URL`。改后台地址是 Turbo 后台操作，不需要改代码。`public/admin/index.html` 使用手动初始化加载 `bootstrap.js`，确保草稿 PR 中的自动生成英文不会覆盖中文编辑内容；改动后运行 `src/admin-bootstrap.test.ts` 验证。
 
 ## 历史记录
 
