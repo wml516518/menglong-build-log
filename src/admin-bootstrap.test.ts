@@ -17,22 +17,30 @@ const createCms = (diffs: DraftDiff[]) => {
       return path.startsWith('content/zh/') ? '中文源内容' : 'Generated English';
     }
   }
-  const backends = new Map<string, { BackendClass: typeof TurboBackend }>([
-    ['turbo-github', { BackendClass: TurboBackend }]
+  const turbo = {
+    BackendClass: TurboBackend,
+    init: (...args: unknown[]) => new TurboBackend(...args)
+  };
+  const backends = new Map<string, typeof turbo>([
+    ['turbo-github', turbo]
   ]);
-  let initializedConfig: { backend: { name: string }; locale: string };
+  let initArgs: unknown[] | undefined;
+  let registeredName: string | undefined;
   const CMS = {
     getBackend: (name: string) => backends.get(name),
     registerBackend: (name: string, BackendClass: typeof TurboBackend) => {
-      backends.set(name, { BackendClass });
+      registeredName = name;
+      backends.set(name, { BackendClass, init: (...args) => new BackendClass(...args) });
     },
-    init: ({ config }: { config: typeof initializedConfig }) => {
-      initializedConfig = config;
-    }
+    init: (...args: unknown[]) => { initArgs = args; }
   };
   runInNewContext(readFileSync('public/admin/bootstrap.js', 'utf8'), { CMS, window: { CMS } });
-  const Backend = backends.get(initializedConfig!.backend.name)!.BackendClass;
-  return { backend: new Backend(), Backend, TurboBackend, draft, config: initializedConfig! };
+  const Backend = turbo.BackendClass;
+  return {
+    backend: new Backend(), Backend, TurboBackend, draft, turbo,
+    get initArgs() { return initArgs; },
+    get registeredName() { return registeredName; }
+  };
 };
 
 describe('Chinese CMS draft loading', () => {
@@ -75,9 +83,13 @@ describe('Chinese CMS draft loading', () => {
     expect((await backend.unpublishedEntry()).diffs).toEqual([]);
   });
 
-  it('preserves Turbo configuration loading and initializes Chinese UI', () => {
-    const { config, Backend, TurboBackend } = createCms([]);
-    expect(Backend.preloadConfig).toBe(TurboBackend.preloadConfig);
-    expect(config.locale).toBe('zh_Hans');
+  it('replaces the existing backend without bypassing config.yml loading', () => {
+    const cms = createCms([]);
+
+    expect(cms.Backend).not.toBe(cms.TurboBackend);
+    expect(cms.Backend.prototype instanceof cms.TurboBackend).toBe(true);
+    expect(cms.turbo.BackendClass).toBe(cms.Backend);
+    expect(cms.initArgs).toEqual([]);
+    expect(cms.registeredName).toBeUndefined();
   });
 });

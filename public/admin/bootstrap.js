@@ -24,11 +24,9 @@
     }
   }
 
-  cms.registerBackend('turbo-github-chinese-source', ChineseSourceBackend);
-  cms.init({
-    config: {
-      backend: { name: 'turbo-github-chinese-source' },
-      locale: 'zh_Hans'
-    }
-  });
+  turbo.BackendClass = ChineseSourceBackend;
+  turbo.init = function () {
+    return new ChineseSourceBackend(...arguments);
+  };
+  cms.init();
 })();
