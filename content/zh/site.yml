@@ -55,45 +55,45 @@ historyGalaxy:
   action: 进入星河
   imageAlt: 深邃三维空间中，一条发光的中国历史时间轴与众多事件星点向远方延伸
 projects:
-  - title: StockAI 股票研究平台
-    status: 已上线
-    summary: 自选股、智能选股、AI 分析、回测、技术指标与价格提醒的一站式股票研究平台，采用 Vue、ASP.NET Core 与 Python 多服务架构。
+  - title: Requirement Review Agent / 需求评审助手
+    status: 源码开源
+    summary: 面向需求文档的多角色评审助手，提取 PDF 文字与流程图候选页，生成 Mermaid 草稿，并按产品、测试、用户或自定义角色输出结构化评审结论。
     stack:
-      - Vue 3
-      - .NET 10
-      - ASP.NET Core
+      - React
+      - PDF.js
       - Python
-      - EF Core
-      - SQLite
-      - Docker
+      - PyMuPDF
+      - Mermaid
+      - OpenAI Compatible
+      - Render
     technicalChallenge:
-      title: 多数据源失败时，如何避免把旧数据当成实时数据
-      situation: 行情、财务和新闻来自不同上游，任何一个服务都可能超时、限流或返回空数据；如果后端静默吞掉错误，页面就会把不同时间、不同可信度的结果混在一起。
+      title: 流程图识别出错时，如何避免评审建立在错误结构上
+      situation: 扫描件、复杂表格和跨页流程可能被误判成普通文本；如果把错误节点和连接交给模型，评审就会围绕一张不存在或缺失分支的流程展开。
       response:
-        - Python 数据服务设置超时、重试和多数据源回退，ASP.NET Core 再统一处理股票代码、响应结构和错误边界，避免把供应商差异泄漏到 UI。
-        - 成功结果写入带过期时间的 SQLite 缓存；上游失败时只允许显式标记的旧缓存回退，并保留数据时间，不能让过期行情看起来像实时值。
-        - 三个容器分别做健康检查，部署前验证数据库卷、登录和路由；发布失败保留原数据卷，避免一次市场数据源故障演变成数据丢失。
-    githubUrl: https://github.com/wml516518/StockAI
-    liveUrl: /apps/stockai/
-  - title: LOL-RAG 英雄联盟数据 Agent
-    status: 已上线
-    summary: 基于官方 Data Dragon 数据 + 示例攻略语料：Agent 在结构化查询与向量检索之间自主路由，对话页展示可折叠的工具调用轨迹。
+        - 先用文字密度、图片块、线条和色块识别候选页，再让视觉模型复核截图、Mermaid 草稿与页面文字；低置信结果只作为线索，不直接进入结论。
+        - 普通页优先转 Markdown，关键流程图和表格才限量发截图；模型必须核对节点、条件分支、泳道和异常路径，减少截图被当成唯一事实的风险。
+        - 后端视觉插件不可用时回退到浏览器启发式算法；模型不可用时切换到本地规则评审，并在页面和报告中标明降级模式。
+    githubUrl: https://github.com/wml516518/requirement-review-agent
+    liveUrl: https://github.com/wml516518/requirement-review-agent
+  - title: KnowledgeOps RAG / 企业知识库问答
+    status: 源码开源
+    summary: 面向技术团队知识库的通用 RAG 问答，文档分块后写入 pgvector，支持相关度过滤、证据引用与演示数据兜底。
     stack:
       - React
       - FastAPI
-      - DeepSeek Function Calling
-      - SQLite
-      - Data Dragon
-      - Nginx
+      - Supabase pgvector
+      - DashScope Embeddings
+      - DeepSeek
+      - TypeScript
     technicalChallenge:
       title: 召回失败时，如何避免模型编造答案
-      situation: 攻略语料可能漏召回，字面检索也可能命中相似但版本或语境不对的内容；如果模型直接依靠常识补齐，就会生成听起来可信却无法核实的数据。
+      situation: 技术文档可能存在版本差异、别名或相似段落，字面检索容易召回错误上下文；如果模型用常识补齐，回答会听起来可信却无法追溯到来源。
       response:
-        - 英雄、装备等精确数据走结构化查询，只有攻略问题才进入知识检索，再用最低相关度阈值过滤弱结果。
-        - 未命中时返回“资料不足”，并在对话中展示工具调用和召回片段；回答必须基于工具结果，不能把模型常识伪装成官方数据。
-        - 用版本错配、同义说法、别名和完全无召回建立回归集，分别观察召回率、答案正确率与无依据回答率。
-    githubUrl: https://github.com/wml516518/lol-rag
-    liveUrl: /apps/lol-rag/
+        - 分块保留标题层级和上下文边界，向量检索后用相关度阈值过滤弱结果；版本号、接口名等关键事实优先匹配精确来源。
+        - 没有足够证据时明确回答“资料不足”，并展示来源片段；回答必须引用检索结果，不把模型常识包装成知识库内容。
+        - 用版本错配、同义说法、别名和无召回用例建立回归集，分别观察召回率、答案正确率与无依据回答率，再决定调整分块或检索参数。
+    githubUrl: https://github.com/wml516518/knowledgeops-rag
+    liveUrl: https://github.com/wml516518/knowledgeops-rag
   - title: Weekend Merge / 周末共识局
     status: 已上线
     summary: 2–6 人周末协商 Agent，成员独立填写偏好，DeepSeek 通过受控工具调用生成三套折中方案，并在否决后只重排受影响区段。
