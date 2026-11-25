@@ -1,6 +1,6 @@
 _translation:
   policyVersion: 1
-  sourceHash: b3fc905485339838ebf0ddbfa338b5145f391b91be71e2170c9dcfd7a1b1b745
+  sourceHash: fc224dbd492f3325a47444f7cafbace1a9683e1f541f120c9c9cc8fa5b3017f6
 about: 'I focus on full-stack development, AI products, and productivity tools. This site will document my portfolio roadmap, starting from a personal homepage and gradually expanding into deployable AI applications. I will also continuously record the technical choices and iteration process in real projects.'
 contact:
   - href: 'https://github.com/wml516518'
@@ -51,45 +51,45 @@ profile:
   role: Full-stack Developer
   secondaryAction: Read Log
 projects:
-  - githubUrl: 'https://github.com/wml516518/StockAI'
-    liveUrl: /apps/stockai/
+  - githubUrl: 'https://github.com/wml516518/requirement-review-agent'
+    liveUrl: 'https://github.com/wml516518/requirement-review-agent'
     stack:
-      - Vue 3
-      - .NET 10
-      - ASP.NET Core
+      - React
+      - PDF.js
       - Python
-      - EF Core
-      - SQLite
-      - Docker
+      - PyMuPDF
+      - Mermaid
+      - OpenAI Compatible
+      - Render
     technicalChallenge:
-      title: Prevent stale market data from looking live when providers fail
-      situation: Quotes, fundamentals, and news come from separate upstreams. Any provider can time out, rate-limit, or return an empty response; silently swallowing those failures mixes data from different times and confidence levels.
+      title: 'Flowchart misclassification: keep reviews grounded in the right structure'
+      situation: Scanned pages, complex tables, and flows spanning pages can be mistaken for plain text. If wrong nodes or missing branches reach the model, the review evaluates a flow that does not exist or omits critical paths.
       response:
-        - The Python data service applies timeouts, retries, and multi-provider fallbacks, while ASP.NET Core normalizes stock codes, response shapes, and error boundaries so provider differences do not leak into the UI.
-        - Successful results enter a SQLite cache with expiry. On upstream failure, only explicitly marked stale fallback is allowed and its data timestamp remains visible, so old quotes cannot appear to be live.
-        - Each container has its own health check, and deployment verifies the database volume, login, and routes. A failed release keeps the existing volume so a provider outage does not become data loss.
-    status: Live
-    summary: 'A one-stop stock research platform with watchlists, screening, AI analysis, backtesting, technical indicators, and price alerts, built with Vue, ASP.NET Core, and Python services.'
-    title: StockAI Stock Research Platform
-  - githubUrl: 'https://github.com/wml516518/lol-rag'
-    liveUrl: /apps/lol-rag/
+        - Detect candidate pages from text density, image blocks, lines, and color regions, then ask a vision model to reconcile screenshots, Mermaid drafts, and page text. Low-confidence findings remain clues rather than conclusions.
+        - Convert ordinary pages to Markdown first and send screenshots only for critical flowcharts and tables in bounded batches. Require the model to check nodes, conditional branches, swimlanes, and exception paths so screenshots are not treated as the only source of truth.
+        - Fall back from the server visual plugin to browser heuristics when the backend is unavailable, and from model review to local rules when the model fails, with the degraded mode clearly marked in the page and report.
+    status: Open source
+    summary: 'A multi-role reviewer for requirement documents that extracts PDF text and flowchart candidates, drafts Mermaid diagrams, and returns structured findings from product, QA, user, or custom roles.'
+    title: Requirement Review Agent
+  - githubUrl: 'https://github.com/wml516518/knowledgeops-rag'
+    liveUrl: 'https://github.com/wml516518/knowledgeops-rag'
     stack:
       - React
       - FastAPI
-      - DeepSeek Function Calling
-      - SQLite
-      - Data Dragon
-      - Nginx
+      - Supabase pgvector
+      - DashScope Embeddings
+      - DeepSeek
+      - TypeScript
     technicalChallenge:
       title: Prevent invented answers when retrieval fails
-      situation: The guide corpus may miss a relevant passage, and lexical retrieval may return similar content from the wrong version or context. If the model fills those gaps from general knowledge, the result sounds credible but cannot be verified.
+      situation: Technical documents can differ by version, use aliases, or contain similar passages. Lexical retrieval can return the wrong context, and general-knowledge completions sound credible while remaining unverifiable.
       response:
-        - Champion and item facts use structured lookups; only strategy questions enter knowledge retrieval, followed by a minimum relevance threshold to reject weak matches.
-        - A miss returns “insufficient information.” The chat exposes tool calls and retrieved passages, and answers must use tool evidence rather than presenting model knowledge as official data.
-        - A regression set covers version mismatches, synonyms, aliases, and complete retrieval misses, tracking retrieval rate, answer accuracy, and unsupported-answer rate separately.
-    status: Live
-    summary: 'Based on official Data Dragon data + sample strategy corpus: the Agent autonomously routes between structured queries and vector retrieval, and the chat page displays a collapsible tool-call trace.'
-    title: LOL-RAG League of Legends Data Agent
+        - Preserve heading hierarchy and context boundaries during chunking, filter weak vector results with a relevance threshold, and match versioned or interface-specific facts against precise sources first.
+        - Answer “insufficient information” when evidence is weak and show source passages; every answer must cite retrieved evidence instead of presenting general knowledge as knowledge-base content.
+        - Build regression cases for version mismatches, synonyms, aliases, and complete misses, then track recall, answer accuracy, and unsupported-answer rate to decide whether chunking or retrieval settings need adjustment.
+    status: Open source
+    summary: 'A general-purpose RAG assistant for technical team knowledge bases. Documents are chunked into Supabase pgvector, with relevance filtering, cited evidence, and demo-data fallback.'
+    title: KnowledgeOps RAG
   - githubUrl: 'https://github.com/wml516518/weekend-merge'
     liveUrl: 'https://weekendmerge.ailoong.net.cn'
     stack:
