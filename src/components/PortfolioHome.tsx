@@ -40,7 +40,7 @@ export function PortfolioHome({ copy, posts }: { copy: SiteContent; posts: Build
                 ))}
               </ul>
               <div className="project-links">
-                {project.liveUrl ? (
+                {project.liveUrl && project.liveUrl !== project.githubUrl ? (
                   <a href={project.liveUrl} target="_blank" rel="noreferrer">
                     Live
                   </a>

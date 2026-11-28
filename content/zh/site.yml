@@ -55,6 +55,27 @@ historyGalaxy:
   action: 进入星河
   imageAlt: 深邃三维空间中，一条发光的中国历史时间轴与众多事件星点向远方延伸
 projects:
+  - title: AI Passport / ESP32 宠物徽章
+    status: 项目介绍 / 源码开源
+    summary: 面向 ESP32-C3 的宠物徽章程序：长按进入语音页，麦克风采集推流到本地桥接服务，经 ASR、LLM 和 TTS 返回回答；宠物形象随对话状态和互动次数变化，屏幕同步显示识别文本与回复。
+    stack:
+      - ESP-IDF 5.5.3
+      - ESP32-C3
+      - LVGL
+      - ES8311 / I2S
+      - WebSocket
+      - Python Bridge
+      - Whisper
+      - DeepSeek
+    technicalChallenge:
+      title: 无 PSRAM 设备如何承载语音、UI 与宠物动画
+      situation: ESP32-C3 只有有限内部 RAM，语音采集、网络推流、LVGL 渲染和中文字库必须共存；按键回调也不能阻塞，否则采集和界面会同时受影响。
+      response:
+        - 用非阻塞按键事件进入语音页，采集、播放、WiFi、WebSocket 和界面刷新放在任务与状态机中推进，慢操作不占用回调线程。
+        - 按 16 kHz / 16-bit / 单声道分块采集并经 WebSocket 推流，语音链路只在按键期间工作；完成一轮对话后同步宠物互动计数和形象状态。
+        - 退出页面时释放屏幕缓冲和网络会话，避免与 LVGL 或 WiFi 启动争抢内存；识别文本、回复和状态经锁保护的共享缓存更新到 UI。
+    githubUrl: https://github.com/wml516518/ai-passport
+    liveUrl: https://github.com/wml516518/ai-passport
   - title: Requirement Review Agent / 需求评审助手
     status: 源码开源
     summary: 面向需求文档的多角色评审助手，提取 PDF 文字与流程图候选页，生成 Mermaid 草稿，并按产品、测试、用户或自定义角色输出结构化评审结论。
