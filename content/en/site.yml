@@ -1,6 +1,6 @@
 _translation:
   policyVersion: 1
-  sourceHash: fc224dbd492f3325a47444f7cafbace1a9683e1f541f120c9c9cc8fa5b3017f6
+  sourceHash: 155c6975941fdfe43ed57fc4cdfc3cc8ac2ececd231dbbd6c5ceef00365f9830
 about: 'I focus on full-stack development, AI products, and productivity tools. This site will document my portfolio roadmap, starting from a personal homepage and gradually expanding into deployable AI applications. I will also continuously record the technical choices and iteration process in real projects.'
 contact:
   - href: 'https://github.com/wml516518'
@@ -51,6 +51,27 @@ profile:
   role: Full-stack Developer
   secondaryAction: Read Log
 projects:
+  - githubUrl: 'https://github.com/wml516518/ai-passport'
+    liveUrl: 'https://github.com/wml516518/ai-passport'
+    stack:
+      - ESP-IDF 5.5.3
+      - ESP32-C3
+      - LVGL
+      - ES8311 / I2S
+      - WebSocket
+      - Python Bridge
+      - Whisper
+      - DeepSeek
+    technicalChallenge:
+      title: 'Carrying voice, UI, and pet animation without PSRAM'
+      situation: The ESP32-C3 has limited internal RAM while audio capture, network streaming, LVGL rendering, and a CJK font must coexist. Button callbacks also cannot block, or capture and the UI degrade together.
+      response:
+        - Non-blocking button events enter the voice page; capture, playback, Wi-Fi, WebSocket, and display updates run through tasks and state machines so slow work never occupies callback threads.
+        - Audio is captured in 16 kHz / 16-bit / mono chunks and streamed over WebSocket only while the key is held. A completed turn updates the pet interaction count and mascot state.
+        - Leaving the page releases the screen buffer and network session before conflicting with LVGL or Wi-Fi startup; ASR text, replies, and status reach the UI through lock-protected shared caches.
+    status: Introduction / Open source
+    summary: 'An ESP32-C3 pet badge: a long press enters a voice page, microphone audio streams to a local bridge for ASR, LLM, and TTS, and the pet reacts to conversation state and completed interactions while showing recognized text and replies.'
+    title: AI Passport ESP32 Pet Badge
   - githubUrl: 'https://github.com/wml516518/requirement-review-agent'
     liveUrl: 'https://github.com/wml516518/requirement-review-agent'
     stack:

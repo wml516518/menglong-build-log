@@ -113,7 +113,7 @@ describe('App', () => {
     render(<App />);
 
     expect(screen.getAllByText('Weekend Merge').length).toBeGreaterThanOrEqual(2);
-    expect(screen.getAllByRole('button', { name: /View technical details/ })).toHaveLength(6);
+    expect(screen.getAllByRole('button', { name: /View technical details/ })).toHaveLength(7);
     const projectSection = document.getElementById('projects')!;
     const englishCard = within(projectSection).getByRole('heading', { level: 3, name: 'Weekend Merge' }).closest('article')!;
     expect(within(englishCard).getByRole('link', { name: 'Live' }))
@@ -155,6 +155,31 @@ describe('App', () => {
     expect(screen.getByText(
       '面向 2–6 人周末协商的可观察 AI Agent，成员通过邀请链接独立填写偏好，DeepSeek 调用受控工具生成三套折中行程，并在否决地点后仅重排受影响区段。'
     )).toBeInTheDocument();
+  });
+
+  it('introduces AI Passport without presenting a hardware demo', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    const projectSection = document.getElementById('projects')!;
+    const englishCard = within(projectSection).getByRole('heading', {
+      level: 3,
+      name: 'AI Passport ESP32 Pet Badge'
+    }).closest('article')!;
+    expect(within(englishCard).getByText('Introduction / Open source')).toBeInTheDocument();
+    expect(within(englishCard).getByRole('link', { name: 'GitHub' }))
+      .toHaveAttribute('href', 'https://github.com/wml516518/ai-passport');
+    expect(within(englishCard).queryByRole('link', { name: 'Live' })).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: '中' }));
+
+    const chineseCard = within(projectSection).getByRole('heading', {
+      level: 3,
+      name: 'AI Passport / ESP32 宠物徽章'
+    }).closest('article')!;
+    expect(within(chineseCard).getByText('项目介绍 / 源码开源')).toBeInTheDocument();
+    expect(within(chineseCard).getByText(/长按进入语音页/)).toBeInTheDocument();
+    expect(within(chineseCard).queryByRole('link', { name: /Live|在线/ })).not.toBeInTheDocument();
   });
 
   it('opens the complete build log index from the homepage', async () => {
